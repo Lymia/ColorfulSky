@@ -138,7 +138,7 @@
 				#Number of veins of silver ore per chunk. Set 0 to disable.
 				#Default: 0 if Silent's Mechanisms is installed when config is created, 2 otherwise
 				#Range: > 0
-				veinCount = 2
+				veinCount = 0
 
 			[world.generation.ores.chaos]
 				#Number of chaos ore veins per chunk (overworld and mod dimensions)
@@ -172,28 +172,28 @@
 		[world.generation.regionSize]
 			#Region size for the overworld only (not modded dimensions)
 			#Range: > 0
-			overworld = 10
+			overworld = 16
 			#Region size for The Nether dimension
 			#Range: > 0
-			the_nether = 6
+			the_nether = 8
 			#Region size for The End dimension
 			#Range: > 0
-			the_end = 6
+			the_end = 8
 			#Region size for non-vanilla dimensions.
 			#Overworld gems will attempt to spawn, but may be unable to depending on the stone in the world.
 			#Range: > 0
-			others = 8
+			others = 12
 
 		#Number of veins of gems to spawn per chunk, by dimension. 'others' is all non-vanilla dimensions.
 		[world.generation.veinCounts]
 			#Range: 0 ~ 100
-			overworld = 10
+			overworld = 6
 			#Range: 0 ~ 100
-			the_nether = 10
+			the_nether = 6
 			#Range: 0 ~ 100
-			the_end = 10
+			the_end = 6
 			#Range: 0 ~ 100
-			others = 10
+			others = 6
 
 		#Gem weights control how frequently certain gems are selected over others when generating ores.
 		#Higher values increase the chances of that gem being selecting, lower values decrease chances.
