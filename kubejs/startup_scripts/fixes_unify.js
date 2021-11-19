@@ -1,9 +1,11 @@
 onEvent('recipes', e => {
+    e.printExamples("thermal:smelter")
+
     function unifyMetalRecipies(name, ingotItem, dustItem, blockItem, nuggetItem) {
-        e.replaceInput(nuggetItem, `#forge:nuggets/${name}`)
-        e.replaceInput(dustItem, `#forge:dusts/${name}`)
-        e.replaceInput(ingotItem, `#forge:ingots/${name}`)
-        e.replaceInput(blockItem, `#forge:storage_blocks/${name}`)
+        e.replaceInput(`#forge:nuggets/${name}`, `#forge:nuggets/${name}`)
+        e.replaceInput(`#forge:dusts/${name}`, `#forge:dusts/${name}`)
+        e.replaceInput(`#forge:ingots/${name}`, `#forge:ingots/${name}`)
+        e.replaceInput(`#forge:storage_blocks/${name}`, `#forge:storage_blocks/${name}`)
 
         e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
         e.replaceOutput(`#forge:dusts/${name}`, dustItem)
@@ -56,4 +58,6 @@ onEvent('recipes', e => {
     unifyMetalRecipies('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
     unifyMetalRecipies('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
     unifyMetalRecipies('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+    
+    // TODO: Fix arc furnace recycling producing the wrong ores.
 })
