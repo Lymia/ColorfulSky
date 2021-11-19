@@ -1,0 +1,6 @@
+{
+  "inventory": {
+    "0:0": "{id:\"silentgear:blueprint_package\",tag:{silentlib.LootContainer:{LootTable:\"silentgear:starter_blueprints\"}},Count:1b}"
+  },
+  "wipeBlacklist": []
+}

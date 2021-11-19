@@ -1,0 +1,101 @@
+
+#Welcome to The Graveyard Config!
+#
+#Here, you can disable structures to spawn, change their chance of spawning, change their separation and also change their salt.
+#Additionally, you can turn the graveyard fog particles on and set the chance of spawning them (higher numbers = lower chance of spawning).
+#Graveyard fog particles spawn from graveyard moss and add an atmospheric and spooky element while exploring.
+#
+#To disable a structure to spawn, simply go to the corresponding structure and change true to false.
+#
+#The Graveyard uses the vanilla structure spawning system. That is -
+#- Separation is the minimum chunks between structures
+#- Spacing is the average chunks between structures (Spacing value needs to be higher than Separation value!)
+#- Salt is a special field that gives structures unique spawning positions. (Only change if you know what you are doing!)
+#
+#Notice: reducing the generation settings will increase the risk of structures overlapping. Especially jigsaw structures are unpredictable!
+["Large Birch Tree"]
+	#Large Birch Tree Salt
+	large_birch_tree_salt = 304812394
+	#Large Birch Tree Separation
+	large_birch_tree_separation = 12
+	#Large Birch Tree Generation
+	large_birch_tree = true
+	#Large Birch Tree Spacing
+	large_birch_tree_spacing = 14
+
+["Medium Walled Graveyard"]
+	#Medium Walled Graveyard Separation
+	medium_walled_graveyard_separation = 14
+	#Medium Walled Graveyard Salt
+	medium_walled_graveyard_salt = 379123039
+	#Medium Walled Graveyard Generation
+	medium_walled_graveyard = true
+	#Medium Walled Graveyard Spacing
+	medium_walled_graveyard_spacing = 16
+
+["Mushroom Grave"]
+	#Mushroom Grave Generation
+	mushroom_grave = true
+	#Mushroom Grave Spacing
+	mushroom_grave_spacing = 24
+	#Mushroom Grave Separation
+	mushroom_grave_separation = 18
+	#Mushroom Grave Salt
+	mushroom_grave_salt = 598017285
+
+["Small Grave"]
+	#Small Grave Generation
+	small_grave = true
+	#Small Grave Spacing
+	small_grave_spacing = 12
+	#Small Grave Salt
+	small_grave_salt = 240451934
+	#Small Grave Separation
+	small_grave_separation = 8
+
+["Small Walled Graveyard"]
+	#Small Walled Graveyard Spacing
+	small_walled_graveyard_spacing = 20
+	#Small Walled Graveyard Generation
+	small_walled_graveyard = true
+	#Small Walled Graveyard Separation
+	small_walled_graveyard_separation = 18
+	#Small Walled Graveyard Salt
+	small_walled_graveyard_salt = 1690192399
+
+["Small Walled Graveyard Desert"]
+	#Small Walled Graveyard Desert Separation
+	small_walled_graveyard_desert_separation = 28
+	#Small Walled Graveyard Desert Generation
+	small_walled_graveyard_desert = true
+	#Small Walled Graveyard Desert Spacing
+	small_walled_graveyard_desert_spacing = 32
+	#Small Walled Graveyard Desert Salt
+	small_walled_graveyard_desert_salt = 661903018
+
+["Small Walled Graveyard Savanna"]
+	#Small Walled Graveyard Savanna Spacing
+	small_walled_graveyard_savanna_spacing = 14
+	#Small Walled Graveyard Savanna Separation
+	small_walled_graveyard_savanna_separation = 12
+	#Small Walled Graveyard Savanna Salt
+	small_walled_graveyard_savanna_salt = 451235912
+	#Small Walled Graveyard Savanna Generation
+	small_walled_graveyard_savanna = true
+
+["Large Walled Graveyard"]
+	#Large Walled Graveyard Generation
+	large_walled_graveyard = true
+	#Large Walled Graveyard Separation
+	large_walled_graveyard_separation = 9
+	#Large Walled Graveyard Spacing
+	large_walled_graveyard_spacing = 11
+	#Large Walled Graveyard Salt
+	large_walled_graveyard_salt = 739017628
+
+["Graveyard Fog Particle"]
+	#Graveyard Fog Particle Generation Chance (1 in ...)
+	fog_particle_chance = 50
+	#Graveyard Fog Particle Generation
+	fog_particle = true
+
