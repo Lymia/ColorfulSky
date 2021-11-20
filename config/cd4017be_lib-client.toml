@@ -1,0 +1,13 @@
+#Whether the item's main tooltip requires holding down shift.
+info_need_shift = false
+#Maximum cache size for complex nbt dependent item models.
+#Range: 0 ~ 65536
+item_model_cache = 64
+
+#The ingame localization editor allows writing translations for my mods by pressing F4 in game.
+[lang_editor]
+	#The relative path from game dir to store the generated localization files.
+	path = "../../src/resources/assets/cd4017be_lib/lang"
+	#Set true to enable the ingame localization editor.
+	enable = false
+

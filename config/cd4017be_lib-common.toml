@@ -1,0 +1,4 @@
+#Network packets send within the same tick are combined if smaller that this amount of bytes.
+#Range: 0 ~ 255
+packet_chain_threshold = 255
+
