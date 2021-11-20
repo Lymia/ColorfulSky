@@ -1,4 +1,4 @@
-config.json
+#config.json
 crash-reports
 local
 logs
@@ -13,3 +13,5 @@ screenshots
 usercache.json
 usernamecache.json
 woot
+*.bak
+*.bak.*
