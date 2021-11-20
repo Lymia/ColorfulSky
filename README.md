@@ -72,6 +72,7 @@ Colorful Sky is a general purpose modpack.
 - [Macaw's Trapdoors](https://www.curseforge.com/minecraft/mc-mods/macaws-trapdoors)
 - [Macaw's Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)
 - [MorePaths](https://www.curseforge.com/minecraft/mc-mods/morepaths)
+- [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light)
 
 ### Magic Mods
 
@@ -96,6 +97,7 @@ Colorful Sky is a general purpose modpack.
 - [Environmental Tech](https://www.curseforge.com/minecraft/mc-mods/environmental-tech)
 - [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 - [Immersive Petroleum](https://www.curseforge.com/minecraft/mc-mods/immersive-petroleum)
+- [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)
 - [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism)
 - [Refined Storage](https://www.curseforge.com/minecraft/mc-mods/refined-storage)
     - [Cable Tiers](https://www.curseforge.com/minecraft/mc-mods/cable-tiers)
@@ -116,6 +118,7 @@ Colorful Sky is a general purpose modpack.
 - [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)
 - [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 - [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
+- [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
 - [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
 - [Redstone Control 2](https://www.curseforge.com/minecraft/mc-mods/redstone-control-2)
 - [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
