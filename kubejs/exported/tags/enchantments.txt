@@ -1,1 +1,6 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 18, 2021 10:39:50 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
+
+#allurement:unusable_on_horse_armor
+- minecraft:aqua_affinity
+- allurement:alleviating
+- allurement:vengeance

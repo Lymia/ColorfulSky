@@ -1,8 +1,6 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 18, 2021 10:39:50 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
 
 #forge:relocation_not_supported
-- mekanismgenerators:advanced_solar_generator
-- mekanismgenerators:wind_generator
 - mekanism:cardboard_box
 - mekanism:bounding_block
 - mekanism:advanced_bounding_block
@@ -70,6 +68,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - immersiveengineering:mv_relay
 - immersiveengineering:hv_conn
 - immersiveengineering:hv_relay
+- mekanismgenerators:advanced_solar_generator
+- mekanismgenerators:wind_generator
 - fluxnetworks:flux_plug
 - fluxnetworks:flux_point
 - fluxnetworks:flux_controller
@@ -85,8 +85,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:relocation_not_supported
 
 #forge:immovable
-- mekanismgenerators:advanced_solar_generator
-- mekanismgenerators:wind_generator
 - mekanism:cardboard_box
 - mekanism:bounding_block
 - mekanism:advanced_bounding_block
@@ -154,6 +152,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - immersiveengineering:mv_relay
 - immersiveengineering:hv_conn
 - immersiveengineering:hv_relay
+- mekanismgenerators:advanced_solar_generator
+- mekanismgenerators:wind_generator
 - fluxnetworks:flux_plug
 - fluxnetworks:flux_point
 - fluxnetworks:flux_controller

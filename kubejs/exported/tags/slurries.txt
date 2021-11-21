@@ -1,7 +1,13 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 18, 2021 10:39:50 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
+
+#mekanism:dirty/zinc
+- jaopca:mekanism_dirty.zinc
 
 #mekanism:dirty/ironwood
 - jaopca:mekanism_dirty.ironwood
+
+#mekanism:dirty/chromium
+- jaopca:mekanism_dirty.chromium
 
 #mekanism:dirty
 - mekanism:dirty_iron
@@ -11,23 +17,33 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - mekanism:dirty_tin
 - mekanism:dirty_lead
 - mekanism:dirty_uranium
+- jaopca:mekanism_dirty.adamantium
 - jaopca:mekanism_dirty.aluminum
 - jaopca:mekanism_dirty.azure_silver
+- jaopca:mekanism_dirty.chromium
+- jaopca:mekanism_dirty.cobalt
 - jaopca:mekanism_dirty.crimson_iron
 - jaopca:mekanism_dirty.draconium
 - jaopca:mekanism_dirty.ironwood
 - jaopca:mekanism_dirty.knightmetal
+- jaopca:mekanism_dirty.mythril
 - jaopca:mekanism_dirty.nickel
+- jaopca:mekanism_dirty.platinum
 - jaopca:mekanism_dirty.silver
+- jaopca:mekanism_dirty.thallasium
+- jaopca:mekanism_dirty.thorium
+- jaopca:mekanism_dirty.titanium
+- jaopca:mekanism_dirty.tungsten
+- jaopca:mekanism_dirty.zinc
 
 #mekanism:clean/knightmetal
 - jaopca:mekanism_clean.knightmetal
 
-#mekanism:dirty/draconium
-- jaopca:mekanism_dirty.draconium
-
 #mekanism:dirty/nickel
 - jaopca:mekanism_dirty.nickel
+
+#mekanism:clean/cobalt
+- jaopca:mekanism_clean.cobalt
 
 #mekanism:clean
 - mekanism:clean_iron
@@ -37,14 +53,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - mekanism:clean_tin
 - mekanism:clean_lead
 - mekanism:clean_uranium
+- jaopca:mekanism_clean.adamantium
 - jaopca:mekanism_clean.aluminum
 - jaopca:mekanism_clean.azure_silver
+- jaopca:mekanism_clean.chromium
+- jaopca:mekanism_clean.cobalt
 - jaopca:mekanism_clean.crimson_iron
 - jaopca:mekanism_clean.draconium
 - jaopca:mekanism_clean.ironwood
 - jaopca:mekanism_clean.knightmetal
+- jaopca:mekanism_clean.mythril
 - jaopca:mekanism_clean.nickel
+- jaopca:mekanism_clean.platinum
 - jaopca:mekanism_clean.silver
+- jaopca:mekanism_clean.thallasium
+- jaopca:mekanism_clean.thorium
+- jaopca:mekanism_clean.titanium
+- jaopca:mekanism_clean.tungsten
+- jaopca:mekanism_clean.zinc
+
+#mekanism:dirty/tungsten
+- jaopca:mekanism_dirty.tungsten
 
 #mekanism:clean/crimson_iron
 - jaopca:mekanism_clean.crimson_iron
@@ -55,6 +84,42 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #mekanism:dirty/azure_silver
 - jaopca:mekanism_dirty.azure_silver
 
+#mekanism:clean/draconium
+- jaopca:mekanism_clean.draconium
+
+#mekanism:clean/aluminum
+- jaopca:mekanism_clean.aluminum
+
+#mekanism:clean/titanium
+- jaopca:mekanism_clean.titanium
+
+#mekanism:clean/azure_silver
+- jaopca:mekanism_clean.azure_silver
+
+#mekanism:clean/zinc
+- jaopca:mekanism_clean.zinc
+
+#mekanism:dirty/aluminum
+- jaopca:mekanism_dirty.aluminum
+
+#mekanism:dirty/thallasium
+- jaopca:mekanism_dirty.thallasium
+
+#mekanism:dirty/knightmetal
+- jaopca:mekanism_dirty.knightmetal
+
+#mekanism:dirty/thorium
+- jaopca:mekanism_dirty.thorium
+
+#mekanism:clean/tungsten
+- jaopca:mekanism_clean.tungsten
+
+#mekanism:clean/thorium
+- jaopca:mekanism_clean.thorium
+
+#mekanism:dirty/draconium
+- jaopca:mekanism_dirty.draconium
+
 #mekanism:clean/nickel
 - jaopca:mekanism_clean.nickel
 
@@ -64,20 +129,35 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #mekanism:dirty/crimson_iron
 - jaopca:mekanism_dirty.crimson_iron
 
-#mekanism:clean/draconium
-- jaopca:mekanism_clean.draconium
+#mekanism:clean/thallasium
+- jaopca:mekanism_clean.thallasium
 
-#mekanism:clean/aluminum
-- jaopca:mekanism_clean.aluminum
+#mekanism:clean/platinum
+- jaopca:mekanism_clean.platinum
 
-#mekanism:clean/azure_silver
-- jaopca:mekanism_clean.azure_silver
+#mekanism:clean/chromium
+- jaopca:mekanism_clean.chromium
 
-#mekanism:dirty/aluminum
-- jaopca:mekanism_dirty.aluminum
+#mekanism:clean/adamantium
+- jaopca:mekanism_clean.adamantium
 
-#mekanism:dirty/knightmetal
-- jaopca:mekanism_dirty.knightmetal
+#mekanism:clean/mythril
+- jaopca:mekanism_clean.mythril
+
+#mekanism:dirty/platinum
+- jaopca:mekanism_dirty.platinum
+
+#mekanism:dirty/mythril
+- jaopca:mekanism_dirty.mythril
+
+#mekanism:dirty/cobalt
+- jaopca:mekanism_dirty.cobalt
+
+#mekanism:dirty/titanium
+- jaopca:mekanism_dirty.titanium
+
+#mekanism:dirty/adamantium
+- jaopca:mekanism_dirty.adamantium
 
 #mekanism:clean/silver
 - jaopca:mekanism_clean.silver

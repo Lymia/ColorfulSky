@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 18, 2021 10:39:50 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
 
 #endergetic:not_balloon_attachable
 - upgrade_aquatic:flare
@@ -17,6 +17,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:ender_dragon
 
 #iceandfire:scares_cockatrices
+
+#buzzier_bees:moobloom_hostiles
+- minecraft:zombie
+- minecraft:zombie_villager
+- minecraft:stray
+- minecraft:drowned
 
 #mowziesmobs:barakoa
 - mowziesmobs:barako
@@ -68,6 +74,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #iceandfire:lightning_dragon_targets
 - #iceandfire:dragon_targets
+
+#extraboats:sitting_mobs
+- savageandravage:griefer
+- savageandravage:executioner
+- savageandravage:iceologer
+- savageandravage:skeleton_villager
 
 #botania:cocoon/rare_aquatic
 - minecraft:dolphin
@@ -188,6 +200,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:witch
 - blue_skies:summoner
 - blue_skies:alchemist
+- savageandravage:griefer
+- savageandravage:executioner
+- savageandravage:iceologer
 
 #industrialforegoing:mob_imprisonment_tool_blacklist
 - artifacts:mimic
@@ -198,6 +213,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #ars_nouveau:disintegration_whitelist
 
 #projecte:blacklist/interdiction
+
+#cavesandcliffs:freeze_immune_entity_types
+- minecraft:stray
+- minecraft:polar_bear
+- minecraft:snow_golem
+- minecraft:wither
 
 #iceandfire:dragon_targets
 - minecraft:cow
@@ -222,6 +243,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:piglin
 - minecraft:hoglin
 - minecraft:zoglin
+
+#cavesandcliffs:powder_snow_walkable_mobs
+- minecraft:rabbit
+- minecraft:endermite
+- minecraft:silverfish
+- minecraft:fox
 
 #botania:cocoon/common_aquatic
 - minecraft:cod
@@ -276,6 +303,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:skeleton
 - minecraft:stray
 - minecraft:wither_skeleton
+- savageandravage:skeleton_villager
 
 #iceandfire:cyclops_unliftables
 - minecraft:ravager
@@ -283,12 +311,31 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #ars_nouveau:drygmy_blacklist
 - minecraft:iron_golem
 
+#cavesandcliffs:axolotl_always_hostiles
+- minecraft:drowned
+- minecraft:guardian
+- minecraft:elder_guardian
+
 #minecraft:arrows
 - minecraft:arrow
 - minecraft:spectral_arrow
 - projecte:homing_arrow
+- savageandravage:mischief_arrow
 
 #projecte:blacklist/swrg
+
+#cavesandcliffs:axolotl_hunt_targets
+- minecraft:tropical_fish
+- minecraft:pufferfish
+- minecraft:salmon
+- minecraft:cod
+- minecraft:squid
+- cavesandcliffs:glow_squid
+- upgrade_aquatic:nautilus?
+- upgrade_aquatic:perch?
+- upgrade_aquatic:thrasher?
+- upgrade_aquatic:great_thrasher?
+- upgrade_aquatic:glow_squid?
 
 #blue_skies:nature_allies
 - blue_skies:starlit_crusher
@@ -323,3 +370,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:pufferfish
 - minecraft:salmon
 - minecraft:tropical_fish
+
+#cavesandcliffs:freeze_hurt_extra_types
+- minecraft:strider
+- minecraft:blaze
+- minecraft:magma_cube

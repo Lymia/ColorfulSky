@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 18, 2021 10:39:50 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
 
 #forge:oxygen
 - mekanism:oxygen
@@ -114,8 +114,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:experience
 - xreliquary:xp_juice_still
-- cyclic:xpjuice
 - cofh_core:experience
+- sophisticatedbackpacks:xp_still
+- cyclic:xpjuice
 
 #forge:slime
 - cyclic:slime
@@ -166,9 +167,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - decorative_blocks:flowing_thatch
 
 #forge:honey
+- cofh_core:honey
 - inspirations:honey?
 - cyclic:honey
-- cofh_core:honey
 
 #forge:creosote
 - thermal:creosote

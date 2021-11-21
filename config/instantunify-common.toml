@@ -1,7 +1,7 @@
 #Tag names that shouldn't be unified (supports regex)
 blacklist = ["minecraft:.+", "forge:glass.+"]
 #Tag names that should be unified (supports regex)
-whitelist = ["forge:(ingots|nuggets)\\/(copper|aluminum|lead|nickel|silver|tin|uranium|tungsten|steel|bronze|constantan|electrum)"]
+whitelist = ["forge:(ingots|nuggets)\\/(copper|aluminum|lead|nickel|silver|tin|uranium|tnugsten|steel|bronze|constantan|electrum)"]
 #Allowed Values: USE_WHITELIST, USE_BLACKLIST, USE_BOTH_LISTS, USE_NO_LIST
 listMode = "USE_BOTH_LISTS"
 #Preferred Mods

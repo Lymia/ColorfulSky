@@ -13,3 +13,7 @@
 	#The color of this material.
 	color = 14002277
 
+[mekanism]
+	#The base to use in Mekanism's Combiner to recreate ores.
+	ore_base = "#forge:cobblestone"
+
