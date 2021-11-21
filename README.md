@@ -26,7 +26,6 @@ Colorful Sky is a general purpose modpack.
 - [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked)
 - [BetterNether Reforged](https://www.curseforge.com/minecraft/mc-mods/betternether-reforged)
 - [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)
-- [Nether Ores Plus+](https://www.curseforge.com/minecraft/mc-mods/nether-ores-plus)
 - [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
 - [Orcinus's Caves](https://www.curseforge.com/minecraft/mc-mods/orcinuss-caves)
 - [The Endergetic Expansion](https://www.curseforge.com/minecraft/mc-mods/endergetic)

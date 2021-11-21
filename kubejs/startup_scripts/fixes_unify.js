@@ -2,15 +2,15 @@ onEvent('recipes', e => {
     e.printExamples("thermal:smelter")
 
     function unifyMetalRecipies(name, ingotItem, dustItem, blockItem, nuggetItem) {
-        e.replaceInput(`#forge:nuggets/${name}`, `#forge:nuggets/${name}`)
-        e.replaceInput(`#forge:dusts/${name}`, `#forge:dusts/${name}`)
-        e.replaceInput(`#forge:ingots/${name}`, `#forge:ingots/${name}`)
-        e.replaceInput(`#forge:storage_blocks/${name}`, `#forge:storage_blocks/${name}`)
+        if (nuggetItem) e.replaceInput(`#forge:nuggets/${name}`, `#forge:nuggets/${name}`)
+        if (ingotItem) e.replaceInput(`#forge:ingots/${name}`, `#forge:ingots/${name}`)
+        if (dustItem) e.replaceInput(`#forge:dusts/${name}`, `#forge:dusts/${name}`)
+        if (blockItem) e.replaceInput(`#forge:storage_blocks/${name}`, `#forge:storage_blocks/${name}`)
 
-        e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
-        e.replaceOutput(`#forge:dusts/${name}`, dustItem)
-        e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
-        e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
+        if (nuggetItem) e.replaceOutput(`#forge:nuggets/${name}`, nuggetItem)
+        if (ingotItem) e.replaceOutput(`#forge:ingots/${name}`, ingotItem)
+        if (dustItem) e.replaceOutput(`#forge:dusts/${name}`, dustItem)
+        if (blockItem) e.replaceOutput(`#forge:storage_blocks/${name}`, blockItem)
     }
     function unifyMetal(name, ingotItem, dustItem, blockItem, nuggetItem) {
         unifyMetalRecipies(name, ingotItem, dustItem, blockItem, nuggetItem)
@@ -52,7 +52,11 @@ onEvent('recipes', e => {
     unifyMetal('silver', 'thermal:silver_ingot', 'thermal:silver_dust', 'thermal:silver_block', 'thermal:silver_nugget')
     unifyMetal('tin', 'thermal:tin_ingot', 'thermal:tin_dust', 'thermal:tin_block', 'thermal:tin_nugget')
     unifyMetal('uranium', 'mekanism:ingot_uranium', 'mekanism:dust_uranium', 'mekanism:block_uranium', 'mekanism:nugget_uranium')
+    unifyMetalRecipies('tungsten', 'stalwart_dungeons:tungsten_ingot', undefined, undefined, undefined)
 
+    // Conflated modded ores (they aren't meant to be the same, but it doesn't hurt the game design to make them so)
+    unifyMetal('starmetal', 'astralsorcery:starmetal_ore', 'astralsorcery:stardust', 'astralsorcery:starmetal', undefined)
+    
     // Unify alloys
     unifyMetalRecipies('steel', 'mekanism:ingot_steel', 'mekanism:dust_steel', 'mekanism:block_steel', 'mekanism:nugget_steel')
     unifyMetalRecipies('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
