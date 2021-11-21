@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#blue_skies:tools/wooden_axes",
+    "blue_skies:pyrope_axe",
+    "blue_skies:diopside_axe",
+    "blue_skies:aquite_axe",
+    "blue_skies:charoite_axe",
+    "blue_skies:horizonite_axe"
+  ]
+}
