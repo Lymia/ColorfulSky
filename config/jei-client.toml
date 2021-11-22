@@ -4,7 +4,7 @@
 	#Allowed Values: INVENTORY, MOUSE_PICKUP
 	GiveMode = "MOUSE_PICKUP"
 	#Debug mode enabled
-	DebugMode = false
+	DebugMode = true
 	#Display search bar in the center
 	CenterSearch = true
 	#Max. recipe gui height
@@ -39,12 +39,12 @@
 	ColorSearchMode = "DISABLED"
 	#Search mode for resources IDs (prefix: &)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
-	ResourceIdSearchMode = "DISABLED"
+	ResourceIdSearchMode = "ENABLED"
 	#Search mode for Tooltips (prefix: #)
 	#Allowed Values: ENABLED, REQUIRE_PREFIX, DISABLED
 	TooltipSearchMode = "ENABLED"
 	#Search advanced tooltips (visible with F3+H)
-	SearchAdvancedTooltips = false
+	SearchAdvancedTooltips = true
 
 [modname]
 	#Formatting for mod name tooltip

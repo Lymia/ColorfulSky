@@ -521,7 +521,7 @@
 	"Glowshroom Underground Biome" = false
 	"Lush Underground Biome" = false
 	"Overgrown Underground Biome" = false
-	"Permafrost Underground Biome" = false
+	"Permafrost Underground Biome" = true
 	"Sandstone Underground Biome" = false
 	"Slime Underground Biome" = false
 	"Spider Nest Underground Biome" = false
@@ -1364,7 +1364,7 @@
 		#Allowed values: [0,1]
 		"Crystal Chance" = 0.16
 		#Allowed values: [0,1]
-		"Crystal Cluster Chance" = 0.2
+		"Crystal Cluster Chance" = 0.165
 		#Allowed values: [0,1]
 		"Crystal Cluster On Sides Chance" = 0.6
 		#Allowed values: [0,1]
@@ -1377,17 +1377,17 @@
 
 		[world.cave_crystal_underground_biome.biome_settings]
 			#Allowed values: [0,)
-			Rarity = 400
+			Rarity = 125
 			#Allowed values: [0,255]
 			"Min Y Level" = 0
 			#Allowed values: [0,255]
 			"Max Y Level" = 64
 			#Allowed values: [0,)
-			"Horizontal Size" = 42
+			"Horizontal Size" = 35
 			#Allowed values: [0,)
-			"Vertical Size" = 18
+			"Vertical Size" = 35
 			#Allowed values: [0,)
-			"Horizontal Variation" = 22
+			"Horizontal Variation" = 8
 			#Allowed values: [0,)
 			"Vertical Variation" = 8
 
@@ -1542,15 +1542,15 @@
 
 		[world.permafrost_underground_biome.biome_settings]
 			#Allowed values: [0,)
-			Rarity = 80
+			Rarity = 40
 			#Allowed values: [0,255]
 			"Min Y Level" = 0
 			#Allowed values: [0,255]
 			"Max Y Level" = 64
 			#Allowed values: [0,)
-			"Horizontal Size" = 26
+			"Horizontal Size" = 50
 			#Allowed values: [0,)
-			"Vertical Size" = 14
+			"Vertical Size" = 40
 			#Allowed values: [0,)
 			"Horizontal Variation" = 14
 			#Allowed values: [0,)
@@ -1573,15 +1573,15 @@
 
 		[world.sandstone_underground_biome.biome_settings]
 			#Allowed values: [0,)
-			Rarity = 80
+			Rarity = 50
 			#Allowed values: [0,255]
 			"Min Y Level" = 0
 			#Allowed values: [0,255]
 			"Max Y Level" = 64
 			#Allowed values: [0,)
-			"Horizontal Size" = 26
+			"Horizontal Size" = 40
 			#Allowed values: [0,)
-			"Vertical Size" = 14
+			"Vertical Size" = 26
 			#Allowed values: [0,)
 			"Horizontal Variation" = 14
 			#Allowed values: [0,)

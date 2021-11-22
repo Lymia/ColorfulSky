@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 11:41:57 PM
 
 #mekanism:dirty_dusts/platinum
 - jaopca:mekanism_dirty_dusts.platinum
@@ -348,6 +348,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:dusts/invar
 - thermal:invar_dust
 
+#mekanism:dirty_dusts/elementium
+- jaopca:mekanism_dirty_dusts.elementium
+
 #forge:storage_blocks/wood
 - jaopca:storage_blocks.wood
 
@@ -413,6 +416,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:soul_sand
 - minecraft:soul_sand
 - minecraft:soul_soil
+
+#bloodmagic:gravels/horizonite
+- jaopca:bloodmagic_gravels.horizonite
 
 #silentgems:fluffy_blocks
 - silentgems:white_fluffy_block
@@ -607,7 +613,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - silentgear:knife_template
 
 #forge:storage_blocks/ventium
-- jaopca:storage_blocks.ventium
 - blue_skies:ventium_block
 - blue_skies:ventium_block
 
@@ -767,7 +772,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - decorative_blocks_abnormals:cherry_beam
 
 #forge:storage_blocks/diopside
-- jaopca:storage_blocks.diopside
 - blue_skies:diopside_block
 - blue_skies:diopside_block
 
@@ -1122,6 +1126,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #botania:petals/red
 - #botania:petals/black
 
+#forge:ores/cincinnasite
+- betternether:cincinnasite_ore
+
 #forge:dusts/fluorite
 - mekanism:dust_fluorite
 
@@ -1167,6 +1174,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #mekanism:shards/tin
 - mekanism:shard_tin
+
+#forge:dusts/chorundum
+- jaopca:dusts.chorundum
 
 #forge:storage_blocks/ruby
 - thermal:ruby_block
@@ -1394,19 +1404,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:mekanism_crystals.aluminum
 - jaopca:mekanism_crystals.azure_silver
 - jaopca:mekanism_crystals.chromium
+- jaopca:mekanism_crystals.cincinnasite
 - jaopca:mekanism_crystals.cobalt
 - jaopca:mekanism_crystals.crimson_iron
 - jaopca:mekanism_crystals.draconium
+- jaopca:mekanism_crystals.elementium
+- jaopca:mekanism_crystals.falsite
+- jaopca:mekanism_crystals.horizonite
 - jaopca:mekanism_crystals.ironwood
 - jaopca:mekanism_crystals.knightmetal
 - jaopca:mekanism_crystals.mythril
 - jaopca:mekanism_crystals.nickel
 - jaopca:mekanism_crystals.platinum
 - jaopca:mekanism_crystals.silver
+- jaopca:mekanism_crystals.starmetal
 - jaopca:mekanism_crystals.thallasium
 - jaopca:mekanism_crystals.thorium
 - jaopca:mekanism_crystals.titanium
 - jaopca:mekanism_crystals.tungsten
+- jaopca:mekanism_crystals.ventium
 - jaopca:mekanism_crystals.zinc
 
 #forge:wools/red
@@ -2154,6 +2170,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:nuggets/osmium
 - mekanism:nugget_osmium
 
+#bloodmagic:fragments/horizonite
+- jaopca:bloodmagic_fragments.horizonite
+
 #byg:sythian_stems
 - byg:sythian_stem
 - byg:stripped_sythian_stem
@@ -2342,7 +2361,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - silentgems:chrysoprase_block
 
 #forge:storage_blocks/horizonite
-- jaopca:storage_blocks.horizonite
 - blue_skies:horizonite_block
 - blue_skies:horizonite_block
 
@@ -2493,6 +2511,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - byg:zelkova_wood
 - byg:stripped_zelkova_wood
 
+#mekanism:crystals/elementium
+- jaopca:mekanism_crystals.elementium
+
 #forge:ores/adamantium
 - oreclumps:raw_adamantium
 
@@ -2578,6 +2599,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - blue_skies:aquite_axe
 - blue_skies:charoite_axe
 - blue_skies:horizonite_axe
+
+#forge:dusts/diopside
+- jaopca:dusts.diopside
 
 #forge:dusts/cobalt
 - jaopca:dusts.cobalt
@@ -2722,19 +2746,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:mekanism_shards.aluminum
 - jaopca:mekanism_shards.azure_silver
 - jaopca:mekanism_shards.chromium
+- jaopca:mekanism_shards.cincinnasite
 - jaopca:mekanism_shards.cobalt
 - jaopca:mekanism_shards.crimson_iron
 - jaopca:mekanism_shards.draconium
+- jaopca:mekanism_shards.elementium
+- jaopca:mekanism_shards.falsite
+- jaopca:mekanism_shards.horizonite
 - jaopca:mekanism_shards.ironwood
 - jaopca:mekanism_shards.knightmetal
 - jaopca:mekanism_shards.mythril
 - jaopca:mekanism_shards.nickel
 - jaopca:mekanism_shards.platinum
 - jaopca:mekanism_shards.silver
+- jaopca:mekanism_shards.starmetal
 - jaopca:mekanism_shards.thallasium
 - jaopca:mekanism_shards.thorium
 - jaopca:mekanism_shards.titanium
 - jaopca:mekanism_shards.tungsten
+- jaopca:mekanism_shards.ventium
 - jaopca:mekanism_shards.zinc
 
 #charm:barrels
@@ -3851,6 +3881,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #bloodmagic:fragments/tungsten
 - jaopca:bloodmagic_fragments.tungsten
 
+#mekanism:crystals/falsite
+- jaopca:mekanism_crystals.falsite
+
 #projecte:alchemical_bags
 - projecte:white_alchemical_bag
 - projecte:orange_alchemical_bag
@@ -4246,19 +4279,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:mekanism_clumps.aluminum
 - jaopca:mekanism_clumps.azure_silver
 - jaopca:mekanism_clumps.chromium
+- jaopca:mekanism_clumps.cincinnasite
 - jaopca:mekanism_clumps.cobalt
 - jaopca:mekanism_clumps.crimson_iron
 - jaopca:mekanism_clumps.draconium
+- jaopca:mekanism_clumps.elementium
+- jaopca:mekanism_clumps.falsite
+- jaopca:mekanism_clumps.horizonite
 - jaopca:mekanism_clumps.ironwood
 - jaopca:mekanism_clumps.knightmetal
 - jaopca:mekanism_clumps.mythril
 - jaopca:mekanism_clumps.nickel
 - jaopca:mekanism_clumps.platinum
 - jaopca:mekanism_clumps.silver
+- jaopca:mekanism_clumps.starmetal
 - jaopca:mekanism_clumps.thallasium
 - jaopca:mekanism_clumps.thorium
 - jaopca:mekanism_clumps.titanium
 - jaopca:mekanism_clumps.tungsten
+- jaopca:mekanism_clumps.ventium
 - jaopca:mekanism_clumps.zinc
 
 #forge:saplings/avocado
@@ -4726,6 +4765,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - blue_skies:lunar_vine
 - blue_skies:dusk_vine
 - blue_skies:maple_vine
+
+#mekanism:dirty_dusts/starmetal
+- jaopca:mekanism_dirty_dusts.starmetal
 
 #immersiveengineering:circuits/logic
 - immersiveengineering:electron_tube
@@ -5268,6 +5310,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:vegetables/turnips
 - croptopia:turnip
 
+#bloodmagic:fragments/falsite
+- jaopca:bloodmagic_fragments.falsite
+
 #forge:egg_rolls
 - croptopia:egg_roll
 
@@ -5394,6 +5439,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:pork_and_beanss
 - croptopia:pork_and_beans
 
+#mekanism:clumps/starmetal
+- jaopca:mekanism_clumps.starmetal
+
 #forge:saplings/peach
 - croptopia:peach_sapling
 
@@ -5428,6 +5476,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:cooked_beef
 - minecraft:cooked_beef
 - farmersdelight:beef_patty
+
+#bloodmagic:fragments/elementium
+- jaopca:bloodmagic_fragments.elementium
+
+#bloodmagic:gravels/elementium
+- jaopca:bloodmagic_gravels.elementium
 
 #forge:storage_blocks/morganite
 - silentgems:morganite_block
@@ -5496,11 +5550,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - botania:solegnolia_chibi
 - botania:tangleberrie_chibi
 
+#mekanism:crystals/cincinnasite
+- jaopca:mekanism_crystals.cincinnasite
+
 #forge:coins/constantan
 - thermal:constantan_coin
 
 #forge:wools/yellow
 - minecraft:yellow_wool
+
+#forge:dusts/ventium
+- jaopca:dusts.ventium
 
 #elementalcraft:infusable/crossbows
 - minecraft:crossbow
@@ -5584,7 +5644,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - croptopia:blueberry_seed
 
 #forge:storage_blocks/charoite
-- jaopca:storage_blocks.charoite
 - blue_skies:charoite_block
 - blue_skies:charoite_block
 
@@ -6017,6 +6076,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #silentgems:glowroses/garnet
 - silentgems:garnet_glowrose
 
+#mekanism:clumps/horizonite
+- jaopca:mekanism_clumps.horizonite
+
 #forge:jams/blackberry_jam
 - croptopia:blackberry_jam
 
@@ -6446,6 +6508,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:salmon
 - farmersdelight:salmon_slice
 
+#forge:ores/chorundum
+- stalwart_dungeons:chorundum_ore
+
 #forge:ores/kyanite
 - silentgems:kyanite_ore
 
@@ -6467,6 +6532,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #blue_skies:cobblestone
 - blue_skies:turquoise_cobblestone
 - blue_skies:lunar_cobblestone
+
+#forge:ores/starmetal
+- astralsorcery:starmetal_ore
 
 #silentgear:blueprints/dagger
 - silentgear:dagger_blueprint
@@ -6747,10 +6815,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:bloodmagic_fragments.aluminum
 - jaopca:bloodmagic_fragments.azure_silver
 - jaopca:bloodmagic_fragments.chromium
+- jaopca:bloodmagic_fragments.cincinnasite
 - jaopca:bloodmagic_fragments.cobalt
 - jaopca:bloodmagic_fragments.copper
 - jaopca:bloodmagic_fragments.crimson_iron
 - jaopca:bloodmagic_fragments.draconium
+- jaopca:bloodmagic_fragments.elementium
+- jaopca:bloodmagic_fragments.falsite
+- jaopca:bloodmagic_fragments.horizonite
 - jaopca:bloodmagic_fragments.ironwood
 - jaopca:bloodmagic_fragments.knightmetal
 - jaopca:bloodmagic_fragments.lead
@@ -6759,13 +6831,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:bloodmagic_fragments.osmium
 - jaopca:bloodmagic_fragments.platinum
 - jaopca:bloodmagic_fragments.silver
+- jaopca:bloodmagic_fragments.starmetal
 - jaopca:bloodmagic_fragments.thallasium
 - jaopca:bloodmagic_fragments.thorium
 - jaopca:bloodmagic_fragments.tin
 - jaopca:bloodmagic_fragments.titanium
 - jaopca:bloodmagic_fragments.tungsten
 - jaopca:bloodmagic_fragments.uranium
+- jaopca:bloodmagic_fragments.ventium
 - jaopca:bloodmagic_fragments.zinc
+
+#forge:dusts/charoite
+- jaopca:dusts.charoite
 
 #silents_mechanisms:chunks/azure_silver
 - silentgear:azure_silver_chunks
@@ -7026,6 +7103,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - savageandravage:blast_proof_slab
 - savageandravage:blast_proof_vertical_slab
 
+#forge:dusts/aquite
+- jaopca:dusts.aquite
+
 #elementalcraft:infusable/shields
 
 #forge:storage_blocks/dragonsteel_lightning
@@ -7260,6 +7340,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:wires/copper
 - immersiveengineering:wire_copper
 
+#bloodmagic:gravels/falsite
+- jaopca:bloodmagic_gravels.falsite
+
 #forge:glass_panes/cyan
 - minecraft:cyan_stained_glass_pane
 
@@ -7407,6 +7490,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:yellow_cake_uranium
 - mekanism:yellow_cake_uranium
+
+#mekanism:dirty_dusts/falsite
+- jaopca:mekanism_dirty_dusts.falsite
 
 #forge:vegetables/rhubarb
 - croptopia:rhubarb
@@ -7704,6 +7790,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #refinedstorage:silicon
 - refinedstorage:silicon
 
+#forge:ores/dragonstone
+- mythicbotany:dragonstone_ore
+
 #iceandfire:mob_skulls
 - #iceandfire:dragon_skulls
 - iceandfire:hippogryph_skull
@@ -7734,6 +7823,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - aquaculture:diamond_fishing_rod?
 - aquaculture:neptunium_fishing_rod?
 
+#mekanism:dirty_dusts/cincinnasite
+- jaopca:mekanism_dirty_dusts.cincinnasite
+
 #forge:sponge
 - minecraft:sponge
 
@@ -7742,6 +7834,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:ingots/manasteel
 - botania:manasteel_ingot
+
+#forge:ores/elementium
+- mythicbotany:elementium_ore
 
 #forge:dusts/carnelian
 - jaopca:dusts.carnelian
@@ -8138,6 +8233,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - refinedstorage:blue_relay
 - refinedstorage:yellow_relay
 
+#forge:dusts/falsite
+- jaopca:dusts.falsite
+
 #forge:magma_block
 - minecraft:magma_block
 
@@ -8296,6 +8394,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:dusts/kyanite
 - jaopca:dusts.kyanite
 
+#mekanism:dirty_dusts/ventium
+- jaopca:mekanism_dirty_dusts.ventium
+
 #forge:storage_blocks/manasteel
 - botania:manasteel_block
 
@@ -8408,7 +8509,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - mekanism:shard_lead
 
 #forge:storage_blocks/aquite
-- jaopca:storage_blocks.aquite
 - blue_skies:aquite_block
 - blue_skies:aquite_block
 
@@ -8587,21 +8687,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:dusts.ametrine
 - jaopca:dusts.ammolite
 - jaopca:dusts.aquamarine
+- jaopca:dusts.aquite
 - jaopca:dusts.benitoite
 - jaopca:dusts.biotite
 - jaopca:dusts.black_diamond
 - jaopca:dusts.bort
 - jaopca:dusts.carnelian
 - jaopca:dusts.cats_eye
+- jaopca:dusts.charoite
+- jaopca:dusts.chorundum
 - jaopca:dusts.chromium
 - jaopca:dusts.chrysoprase
+- jaopca:dusts.cincinnasite
 - jaopca:dusts.citrine
 - jaopca:dusts.cobalt
 - jaopca:dusts.coral
+- jaopca:dusts.diopside
+- jaopca:dusts.dragonstone
+- jaopca:dusts.elementium
 - jaopca:dusts.euclase
+- jaopca:dusts.falsite
 - jaopca:dusts.garnet
 - jaopca:dusts.green_sapphire
 - jaopca:dusts.heliodor
+- jaopca:dusts.horizonite
 - jaopca:dusts.iolite
 - jaopca:dusts.ironwood
 - jaopca:dusts.jade
@@ -8634,6 +8743,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:dusts.topaz
 - jaopca:dusts.tungsten
 - jaopca:dusts.turquoise
+- jaopca:dusts.ventium
 - jaopca:dusts.yellow_diamond
 - jaopca:dusts.zinc
 - jaopca:dusts.zircon
@@ -8646,6 +8756,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:glass/yellow
 - minecraft:yellow_stained_glass
+
+#mekanism:crystals/horizonite
+- jaopca:mekanism_crystals.horizonite
 
 #autumnity:snail_breeding_items
 - farmersdelight:nether_salad
@@ -8682,6 +8795,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - silentgear:shears_blueprint
 - silentgear:shears_template
 
+#bloodmagic:gravels/ventium
+- jaopca:bloodmagic_gravels.ventium
+
 #forge:storage_blocks/neptunium
 - aquaculture:neptunium_block
 
@@ -8699,6 +8815,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:ores/anthracite
 - byg:anthracite_ore
+
+#mekanism:shards/starmetal
+- jaopca:mekanism_shards.starmetal
 
 #forge:ores/inferium
 - mysticalagriculture:inferium_ore
@@ -9155,6 +9274,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - minecraft:rabbit
 - #forge:raw_duck
 - #forge:raw_venison
+
+#bloodmagic:fragments/ventium
+- jaopca:bloodmagic_fragments.ventium
 
 #mekanism:crystals/iron
 - mekanism:crystal_iron
@@ -11370,6 +11492,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:ingots/dragonsteel_lightning
 - iceandfire:dragonsteel_lightning_ingot
 
+#mekanism:clumps/falsite
+- jaopca:mekanism_clumps.falsite
+
 #envirocore:litherite_slabs
 - envirocore:litherite_slab
 - envirocore:litherite_brick_slab
@@ -11390,6 +11515,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:ingots/terrasteel
 - botania:terrasteel_ingot
+
+#bloodmagic:gravels/cincinnasite
+- jaopca:bloodmagic_gravels.cincinnasite
 
 #aquaculture:turtle_edible
 - #minecraft:small_flowers
@@ -11883,6 +12011,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - twilightforest:twilight_oak_wood
 - twilightforest:stripped_twilight_oak_wood
 
+#mekanism:shards/horizonite
+- jaopca:mekanism_shards.horizonite
+
 #forge:gravel
 - minecraft:gravel
 
@@ -12043,6 +12174,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:beers
 - croptopia:beer
+
+#mekanism:crystals/ventium
+- jaopca:mekanism_crystals.ventium
 
 #forge:seeds/turnip
 - croptopia:turnip_seed
@@ -12326,6 +12460,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:storage_blocks/citrine
 - silentgems:citrine_block
+
+#mekanism:clumps/elementium
+- jaopca:mekanism_clumps.elementium
 
 #chisel:wool/green
 - chisel:wool/green/legacy
@@ -12644,6 +12781,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:wool/red
 - minecraft:red_wool
+
+#mekanism:shards/elementium
+- jaopca:mekanism_shards.elementium
 
 #forge:dusts/apatite
 - thermal:apatite_dust
@@ -12984,6 +13124,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #forge:wool/gray
 - minecraft:gray_wool
+
+#forge:dusts/horizonite
+- jaopca:dusts.horizonite
 
 #forge:saplings/fig
 - croptopia:fig_sapling
@@ -13870,7 +14013,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:ores/rose_quartz
 - #forge:ores/tektite
 - #forge:ores/pearl
-- betternether:cincinnaite_ore
+- betternether:cincinnasite_ore
 - betternether:nether_lapis_ore
 - betternether:nether_ruby_ore
 - stalwart_dungeons:tungsten_ore
@@ -14678,6 +14821,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - waystones:red_sharestone
 - waystones:black_sharestone
 
+#mekanism:clumps/cincinnasite
+- jaopca:mekanism_clumps.cincinnasite
+
 #elementalcraft:shards/fire
 - elementalcraft:fire_shard
 - elementalcraft:powerful_fire_shard
@@ -15041,6 +15187,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:toast_with_jam
 - croptopia:toast_with_jam
 
+#mekanism:clumps/ventium
+- jaopca:mekanism_clumps.ventium
+
 #forge:chocolates
 - croptopia:chocolate
 
@@ -15253,20 +15402,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:storage_blocks/pearl
 - jaopca:storage_blocks.adamantium
 - jaopca:storage_blocks.aeternium
-- jaopca:storage_blocks.aquite
 - jaopca:storage_blocks.brick
-- jaopca:storage_blocks.charoite
 - jaopca:storage_blocks.chorundum
 - jaopca:storage_blocks.chromium
 - jaopca:storage_blocks.cincinnasite
 - jaopca:storage_blocks.cobalt
-- jaopca:storage_blocks.diopside
 - jaopca:storage_blocks.dragonstone
 - jaopca:storage_blocks.ender_pearl
-- jaopca:storage_blocks.falsite
 - jaopca:storage_blocks.hellforged
 - jaopca:storage_blocks.hop_graphite
-- jaopca:storage_blocks.horizonite
 - jaopca:storage_blocks.lithium
 - jaopca:storage_blocks.mana_diamond
 - jaopca:storage_blocks.moonstone_shard
@@ -15286,7 +15430,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:storage_blocks.thorium
 - jaopca:storage_blocks.titanium
 - jaopca:storage_blocks.tungsten
-- jaopca:storage_blocks.ventium
 - jaopca:storage_blocks.wood
 - jaopca:storage_blocks.zinc
 
@@ -15479,6 +15622,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - blue_skies:lunar_stonebrick
 - blue_skies:mossy_lunar_stonebrick
 - blue_skies:cracked_lunar_stonebrick
+
+#mekanism:crystals/starmetal
+- jaopca:mekanism_crystals.starmetal
+
+#mekanism:shards/falsite
+- jaopca:mekanism_shards.falsite
 
 #forge:ingots/fireite
 - elementalcraft:fireite_ingot
@@ -15987,8 +16136,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - thermal:slag
 - immersiveengineering:slag
 
+#mekanism:dirty_dusts/horizonite
+- jaopca:mekanism_dirty_dusts.horizonite
+
 #forge:storage_blocks/falsite
-- jaopca:storage_blocks.falsite
 - blue_skies:falsite_block
 - blue_skies:falsite_block
 
@@ -16170,6 +16321,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - betterendforge:lucernia_bark
 - betterendforge:lucernia_stripped_log
 - betterendforge:lucernia_stripped_bark
+
+#forge:dusts/elementium
+- jaopca:dusts.elementium
 
 #forge:dusts/crimson_steel
 - silentgear:crimson_steel_dust
@@ -16452,6 +16606,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - upgrade_aquatic:river_stairs
 - endergetic:poise_stairs
 
+#mekanism:shards/cincinnasite
+- jaopca:mekanism_shards.cincinnasite
+
 #forge:ores/cats_eye
 - silentgems:cats_eye_ore
 
@@ -16502,10 +16659,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:bloodmagic_gravels.aluminum
 - jaopca:bloodmagic_gravels.azure_silver
 - jaopca:bloodmagic_gravels.chromium
+- jaopca:bloodmagic_gravels.cincinnasite
 - jaopca:bloodmagic_gravels.cobalt
 - jaopca:bloodmagic_gravels.copper
 - jaopca:bloodmagic_gravels.crimson_iron
 - jaopca:bloodmagic_gravels.draconium
+- jaopca:bloodmagic_gravels.elementium
+- jaopca:bloodmagic_gravels.falsite
+- jaopca:bloodmagic_gravels.horizonite
 - jaopca:bloodmagic_gravels.ironwood
 - jaopca:bloodmagic_gravels.knightmetal
 - jaopca:bloodmagic_gravels.lead
@@ -16514,12 +16675,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:bloodmagic_gravels.osmium
 - jaopca:bloodmagic_gravels.platinum
 - jaopca:bloodmagic_gravels.silver
+- jaopca:bloodmagic_gravels.starmetal
 - jaopca:bloodmagic_gravels.thallasium
 - jaopca:bloodmagic_gravels.thorium
 - jaopca:bloodmagic_gravels.tin
 - jaopca:bloodmagic_gravels.titanium
 - jaopca:bloodmagic_gravels.tungsten
 - jaopca:bloodmagic_gravels.uranium
+- jaopca:bloodmagic_gravels.ventium
 - jaopca:bloodmagic_gravels.zinc
 
 #mekanism:enriched
@@ -16958,6 +17121,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #silentgems:glowroses/benitoite
 - silentgems:benitoite_glowrose
+
+#forge:dusts/dragonstone
+- jaopca:dusts.dragonstone
 
 #forge:pecan_pies
 - croptopia:pecan_pie
@@ -17443,6 +17609,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:grains/barley
 - croptopia:barley
 
+#bloodmagic:fragments/starmetal
+- jaopca:bloodmagic_fragments.starmetal
+
 #forge:storage_blocks/ivory_psimetal
 - psi:ivory_psimetal_block
 
@@ -17530,6 +17699,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - iceandfire:dragonscale_green
 - iceandfire:dragonscale_bronze
 - iceandfire:dragonscale_gray
+
+#mekanism:shards/ventium
+- jaopca:mekanism_shards.ventium
 
 #xnet:advanced_connectors
 - xnet:advanced_connector_blue
@@ -18537,6 +18709,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #silentgems:glowroses/spinel
 - silentgems:spinel_glowrose
 
+#bloodmagic:gravels/starmetal
+- jaopca:bloodmagic_gravels.starmetal
+
 #forge:ingots/mythril
 - oreclumps:mythril_ingot
 
@@ -18592,6 +18767,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 #forge:fruits/elderberries
 - croptopia:elderberry
 
+#bloodmagic:fragments/cincinnasite
+- jaopca:bloodmagic_fragments.cincinnasite
+
 #silentgems:glowroses/malachite
 - silentgems:malachite_glowrose
 
@@ -18618,19 +18796,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:mekanism_dirty_dusts.aluminum
 - jaopca:mekanism_dirty_dusts.azure_silver
 - jaopca:mekanism_dirty_dusts.chromium
+- jaopca:mekanism_dirty_dusts.cincinnasite
 - jaopca:mekanism_dirty_dusts.cobalt
 - jaopca:mekanism_dirty_dusts.crimson_iron
 - jaopca:mekanism_dirty_dusts.draconium
+- jaopca:mekanism_dirty_dusts.elementium
+- jaopca:mekanism_dirty_dusts.falsite
+- jaopca:mekanism_dirty_dusts.horizonite
 - jaopca:mekanism_dirty_dusts.ironwood
 - jaopca:mekanism_dirty_dusts.knightmetal
 - jaopca:mekanism_dirty_dusts.mythril
 - jaopca:mekanism_dirty_dusts.nickel
 - jaopca:mekanism_dirty_dusts.platinum
 - jaopca:mekanism_dirty_dusts.silver
+- jaopca:mekanism_dirty_dusts.starmetal
 - jaopca:mekanism_dirty_dusts.thallasium
 - jaopca:mekanism_dirty_dusts.thorium
 - jaopca:mekanism_dirty_dusts.titanium
 - jaopca:mekanism_dirty_dusts.tungsten
+- jaopca:mekanism_dirty_dusts.ventium
 - jaopca:mekanism_dirty_dusts.zinc
 
 #forge:fences
@@ -18675,6 +18859,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 
 #mekanism:dirty_dusts/osmium
 - mekanism:dirty_dust_osmium
+
+#forge:dusts/cincinnasite
+- jaopca:dusts.cincinnasite
 
 #forge:fruits/olives
 - croptopia:olive

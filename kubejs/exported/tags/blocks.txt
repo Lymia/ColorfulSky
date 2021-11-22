@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 8:38:32 AM
+To refresh this file, delete it and run /reload command again! Last updated: Nov 21, 2021 11:41:57 PM
 
 #forge:ores/biotite
 - quark:biotite_ore
@@ -644,7 +644,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:dirt
 
 #forge:storage_blocks/ventium
-- jaopca:storage_blocks.ventium
 - blue_skies:ventium_block
 - blue_skies:ventium_block
 
@@ -1371,7 +1370,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - decorative_blocks_abnormals:cherry_beam
 
 #forge:storage_blocks/diopside
-- jaopca:storage_blocks.diopside
 - blue_skies:diopside_block
 - blue_skies:diopside_block
 
@@ -3456,7 +3454,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - silentgems:chrysoprase_block
 
 #forge:storage_blocks/horizonite
-- jaopca:storage_blocks.horizonite
 - blue_skies:horizonite_block
 - blue_skies:horizonite_block
 
@@ -6464,7 +6461,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:ores/rose_quartz
 - #forge:ores/tektite
 - #forge:ores/pearl
-- betternether:cincinnaite_ore
+- betternether:cincinnasite_ore
 - betternether:nether_lapis_ore
 - betternether:nether_ruby_ore
 - stalwart_dungeons:tungsten_ore
@@ -7995,7 +7992,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - extrastorage:block_4096k
 
 #forge:storage_blocks/charoite
-- jaopca:storage_blocks.charoite
 - blue_skies:charoite_block
 - blue_skies:charoite_block
 
@@ -8421,20 +8417,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:storage_blocks/pearl
 - jaopca:storage_blocks.adamantium
 - jaopca:storage_blocks.aeternium
-- jaopca:storage_blocks.aquite
 - jaopca:storage_blocks.brick
-- jaopca:storage_blocks.charoite
 - jaopca:storage_blocks.chorundum
 - jaopca:storage_blocks.chromium
 - jaopca:storage_blocks.cincinnasite
 - jaopca:storage_blocks.cobalt
-- jaopca:storage_blocks.diopside
 - jaopca:storage_blocks.dragonstone
 - jaopca:storage_blocks.ender_pearl
-- jaopca:storage_blocks.falsite
 - jaopca:storage_blocks.hellforged
 - jaopca:storage_blocks.hop_graphite
-- jaopca:storage_blocks.horizonite
 - jaopca:storage_blocks.lithium
 - jaopca:storage_blocks.mana_diamond
 - jaopca:storage_blocks.moonstone_shard
@@ -8454,7 +8445,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - jaopca:storage_blocks.thorium
 - jaopca:storage_blocks.titanium
 - jaopca:storage_blocks.tungsten
-- jaopca:storage_blocks.ventium
 - jaopca:storage_blocks.wood
 - jaopca:storage_blocks.zinc
 
@@ -9370,7 +9360,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - #forge:dirt
 
 #forge:storage_blocks/falsite
-- jaopca:storage_blocks.falsite
 - blue_skies:falsite_block
 - blue_skies:falsite_block
 
@@ -12578,7 +12567,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Nov
 - blue_skies:falsite_ore
 
 #forge:storage_blocks/aquite
-- jaopca:storage_blocks.aquite
 - blue_skies:aquite_block
 - blue_skies:aquite_block
 
