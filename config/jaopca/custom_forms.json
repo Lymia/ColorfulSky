@@ -1,0 +1,8 @@
+[
+    {
+        "name": "colorfulsky_raw_ore",
+        "secondaryName": "colorfulsky:raw_ore",
+        "type": "item",
+        "materialTypes": ["ingot"]
+    }
+]

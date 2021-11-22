@@ -1,6 +1,6 @@
-# Colorful Sky - Alpha 1
+# Colorful Skies - Alpha 1
 
-Colorful Sky is a general purpose modpack.
+Colorful Skies is a general purpose modpack.
 
 ## Mod list
 
