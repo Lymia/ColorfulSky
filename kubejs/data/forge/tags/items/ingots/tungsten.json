@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "stalwart_dungeons:tungsten_ingot"
-  ]
-}
+{"replace": false, "values": ["oreclumps:tungsten_ingot", "stalwart_dungeons:tungsten_ingot"]}

@@ -1,7 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "darkerdepths:aridrock_gold_ore",
-    "darkerdepths:limestone_gold_ore"
-  ]
-}
+{"replace": true, "values": ["#minecraft:gold_ores", "cavesandcliffs:deepslate_gold_ore", "darkerdepths:aridrock_gold_ore", "darkerdepths:limestone_gold_ore"]}

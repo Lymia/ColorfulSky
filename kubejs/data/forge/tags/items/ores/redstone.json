@@ -1,1 +1,1 @@
-../../blocks/ores/redstone.json
+{"replace": true, "values": ["byg:cryptic_redstone_ore", "cavesandcliffs:deepslate_redstone_ore", "darkerdepths:aridrock_redstone_ore", "darkerdepths:limestone_redstone_ore", "minecraft:redstone_ore"]}

@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "stalwart_dungeons:chorundum_ore"
-  ]
-}
+{"replace": true, "values": ["stalwart_dungeons:chorundum_ore"]}

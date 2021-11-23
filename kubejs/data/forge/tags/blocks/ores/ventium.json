@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "blue_skies:ventium_ore"
-  ]
-}
+{"replace": true, "values": ["blue_skies:ventium_ore"]}

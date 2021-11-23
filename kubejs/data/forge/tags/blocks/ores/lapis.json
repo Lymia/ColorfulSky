@@ -1,8 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "betternether:nether_lapis_ore",
-    "darkerdepths:aridrock_lapis_ore",
-    "darkerdepths:limestone_lapis_ore"
-  ]
-}
+{"replace": true, "values": ["betternether:nether_lapis_ore", "cavesandcliffs:deepslate_lapis_ore", "darkerdepths:aridrock_lapis_ore", "darkerdepths:limestone_lapis_ore", "minecraft:lapis_ore"]}

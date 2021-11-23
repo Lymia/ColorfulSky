@@ -1,10 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "betternether:cincinnasite_ore",
-    "betternether:nether_lapis_ore",
-    "betternether:nether_ruby_ore",
-    "stalwart_dungeons:tungsten_ore",
-    "stalwart_dungeons:chorundum_ore"
-  ]
-}
+{"replace": false, "values": ["betternether:cincinnasite_ore", "betternether:nether_lapis_ore", "betternether:nether_ruby_ore", "stalwart_dungeons:chorundum_ore", "stalwart_dungeons:tungsten_ore"]}

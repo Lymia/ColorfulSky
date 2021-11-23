@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "blue_skies:moonstone"
-  ]
-}
+{"replace": false, "values": ["blue_skies:moonstone", "silentgems:moonstone"]}

@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "betternether:cincinnasite_ore"
-  ]
-}
+{"replace": true, "values": ["betternether:cincinnasite_ore"]}

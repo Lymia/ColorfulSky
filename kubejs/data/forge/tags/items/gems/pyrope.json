@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "blue_skies:pyrope_gem"
-  ]
-}
+{"replace": false, "values": ["blue_skies:pyrope_gem", "silentgems:pyrope"]}

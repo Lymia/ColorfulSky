@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "astralsorcery:stardust"
-  ]
-}
+{"replace": false, "values": ["astralsorcery:stardust", "silentgear:starmetal_dust"]}

@@ -1,6 +1,1 @@
-{
-  "replace": true,
-  "values": [
-    "astralsorcery:starmetal_ingot"
-  ]
-}
+{"replace": false, "values": ["astralsorcery:starmetal_ingot"]}

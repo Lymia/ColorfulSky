@@ -1,0 +1,102 @@
+$flags ITEM BLOCK
+
+#forge:ores
+- betternether:cincinnasite_ore
+- betternether:nether_lapis_ore
+- betternether:nether_ruby_ore
+- stalwart_dungeons:tungsten_ore
+- stalwart_dungeons:chorundum_ore
+
+$flags OVERRIDE ITEM BLOCK
+
+#forge:ores/aquite
+- blue_skies:everbright_aquite_ore
+- blue_skies:everdawn_aquite_ore
+
+#forge:ores/charoite
+- blue_skies:everbright_charoite_ore
+- blue_skies:everdawn_charoite_ore
+- blue_skies:everbright_charoite_ore
+- blue_skies:everdawn_charoite_ore
+
+#forge:ores/chorundum
+- stalwart_dungeons:chorundum_ore
+
+#forge:ores/cincinnasite
+- betternether:cincinnasite_ore
+
+#forge:ores/coal
+- cavesandcliffs:deepslate_coal_ore
+- minecraft:coal_ore
+- darkerdepths:aridrock_coal_ore
+- darkerdepths:limestone_coal_ore
+
+#forge:ores/diopside
+- blue_skies:everbright_diopside_ore
+- blue_skies:everdawn_diopside_ore
+
+#forge:ores/dragonstone
+- mythicbotany:dragonstone_ore
+
+#forge:ores/elementium
+- mythicbotany:elementium_ore
+
+#forge:ores/falsite
+- blue_skies:falsite_ore
+
+#forge:ores/gold
+- cavesandcliffs:deepslate_gold_ore
+- #minecraft:gold_ores
+- darkerdepths:aridrock_gold_ore
+- darkerdepths:limestone_gold_ore
+
+#forge:ores/horizonite
+- blue_skies:horizonite_ore
+
+#forge:ores/iron
+- cavesandcliffs:deepslate_iron_ore
+- minecraft:iron_ore
+- darkerdepths:aridrock_iron_ore
+- darkerdepths:limestone_iron_ore
+
+#forge:ores/lapis
+- cavesandcliffs:deepslate_lapis_ore
+- minecraft:lapis_ore
+- betternether:nether_lapis_ore
+- darkerdepths:aridrock_lapis_ore
+- darkerdepths:limestone_lapis_ore
+
+#forge:ores/moonstone
+- silentgems:moonstone_ore
+- blue_skies:everbright_moonstone_ore
+- blue_skies:everdawn_moonstone_ore
+- blue_skies:everbright_moonstone_ore
+- blue_skies:everdawn_moonstone_ore
+
+#forge:ores/pyrope
+- silentgems:pyrope_ore
+- blue_skies:everbright_pyrope_ore
+- blue_skies:everdawn_pyrope_ore
+- blue_skies:everbright_pyrope_ore
+- blue_skies:everdawn_pyrope_ore
+
+#forge:ores/redstone
+- cavesandcliffs:deepslate_redstone_ore
+- minecraft:redstone_ore
+- byg:cryptic_redstone_ore
+- darkerdepths:aridrock_redstone_ore
+- darkerdepths:limestone_redstone_ore
+
+#forge:ores/ruby
+- thermal:ruby_ore
+- silentgems:ruby_ore
+- betternether:nether_ruby_ore
+
+#forge:ores/starmetal
+- astralsorcery:starmetal_ore
+
+#forge:ores/tungsten
+- stalwart_dungeons:tungsten_ore
+
+#forge:ores/ventium
+- blue_skies:ventium_ore

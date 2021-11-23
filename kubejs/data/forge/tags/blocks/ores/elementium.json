@@ -1,6 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "mythicbotany:elementium_ore"
-  ]
-}
+{"replace": true, "values": ["mythicbotany:elementium_ore"]}

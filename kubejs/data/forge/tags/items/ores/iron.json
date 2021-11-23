@@ -1,1 +1,1 @@
-../../blocks/ores/iron.json
+{"replace": true, "values": ["cavesandcliffs:deepslate_iron_ore", "darkerdepths:aridrock_iron_ore", "darkerdepths:limestone_iron_ore", "minecraft:iron_ore"]}

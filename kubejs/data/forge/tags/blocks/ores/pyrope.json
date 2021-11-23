@@ -1,7 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "blue_skies:everbright_pyrope_ore",
-    "blue_skies:everdawn_pyrope_ore"
-  ]
-}
+{"replace": true, "values": ["blue_skies:everbright_pyrope_ore", "blue_skies:everdawn_pyrope_ore", "silentgems:pyrope_ore"]}

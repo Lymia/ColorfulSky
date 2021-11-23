@@ -1,7 +1,1 @@
-{
-  "replace": false,
-  "values": [
-    "darkerdepths:aridrock_coal_ore",
-    "darkerdepths:limestone_coal_ore"
-  ]
-}
+{"replace": true, "values": ["cavesandcliffs:deepslate_coal_ore", "darkerdepths:aridrock_coal_ore", "darkerdepths:limestone_coal_ore", "minecraft:coal_ore"]}

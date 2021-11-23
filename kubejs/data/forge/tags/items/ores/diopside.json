@@ -1,1 +1,1 @@
-../../blocks/ores/diopside.json
+{"replace": true, "values": ["blue_skies:everbright_diopside_ore", "blue_skies:everdawn_diopside_ore"]}
