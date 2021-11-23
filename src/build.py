@@ -6,13 +6,14 @@ import os
 import os.path
 import shutil
 
+print("Generating configuration files...")
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
-print("Copying static files...")
+print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
 shutil.copytree("static", "../kubejs")
 
-print("Generating tag files...")
+print("- Generating tag files...")
 tags = gen.tags.TagConfigs()
 for tag_file in glob.glob('tags/*.txt'):
     gen.tags.parse_config(tags, tag_file)
