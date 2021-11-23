@@ -46,6 +46,7 @@ for mod in manifest["files"]:
 print("- Rendering markdown...")
 open("../build_dist/modlist.html", "w").write(markdown.markdown(modlist_str))
 open("../build_dist/readme.html", "w").write(markdown.markdown(open("../README.md").read()))
+open("../build_dist/license.html", "w").write(markdown.markdown(open("../LICENSE.md").read()))
 
 print("- Zipping distribution files...")
 shutil.make_archive("../dist/Colorful Skies - "+current_version, 'zip', "../build_dist")
