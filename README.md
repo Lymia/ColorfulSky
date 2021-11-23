@@ -126,3 +126,7 @@ Colorful Skies is a general purpose modpack.
 - [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
 - [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
+
+### Resource Packs
+
+- [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)

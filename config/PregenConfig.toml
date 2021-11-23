@@ -19,6 +19,8 @@
 	#Defines how many Players have to be online for the Processor to Auto Pause, -1 = Disabled. It is Inclusive 2 = Allows 1 Player
 	#Range: > -1
 	"Player Limit" = -1
+	#Override increases the Watchdog Kill switch to a minimum of 10 minutes instead of 60 seconds. Because Heavy modpacks cause spikes that can last 60 seconds during pregen and saving, this just reduces crashes by minecraft itself and leaves the killswitch
+	"Disable Watchdog Override" = false
 
 [client]
 

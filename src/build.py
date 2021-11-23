@@ -9,7 +9,7 @@ import shutil
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 print("Copying static files...")
-shutil.rmtree("../kubejs")
+shutil.rmtree("../kubejs", ignore_errors=True)
 shutil.copytree("static", "../kubejs")
 
 print("Generating tag files...")

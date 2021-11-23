@@ -1,0 +1,5 @@
+[ Textures ]
+
+Some textures are here so JAPOCA's color detection works correctly. I would rather not mess too much with manually correcting those.
+Others are here because, well... they are new content, and therefore are loaded in a place where they can't be disabled.
+All other textures are loaded with OpenLoader.

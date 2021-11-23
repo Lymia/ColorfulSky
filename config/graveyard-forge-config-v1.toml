@@ -4,6 +4,7 @@
 #Here, you can disable structures to spawn, change their chance of spawning, change their separation and also change their salt.
 #Additionally, you can turn the graveyard fog particles on and set the chance of spawning them (higher numbers = lower chance of spawning).
 #Graveyard fog particles spawn from graveyard moss and add an atmospheric and spooky element while exploring.
+#Furthermore, you can disable biomes, set their spawning weight and remove/edit the biome fog.
 #
 #To disable a structure to spawn, simply go to the corresponding structure and change true to false.
 #
@@ -98,4 +99,44 @@
 	fog_particle_chance = 50
 	#Graveyard Fog Particle Generation
 	fog_particle = true
+
+["Haunted House"]
+	#Haunted House Generation
+	haunted_house = true
+	#Haunted House Separation
+	haunted_house_separation = 20
+	#Haunted House Spacing
+	haunted_house_spacing = 25
+	#Haunted House Salt
+	haunted_house_salt = 529239621
+
+["Haunted Forest"]
+	#Haunted Forest Fog
+	haunted_forest_fog = true
+	#Haunted Forest Fog Density
+	haunted_forest_fog_density = 0.02
+	#Haunted Forest Fog MaxY
+	haunted_forest_fogMaxY = 256
+	#Haunted Forest Fog MinY
+	haunted_forest_fogMinY = 62
+
+["Haunted Lakes"]
+	#Haunted Lakes Fog
+	haunted_lakes_fog = true
+	#Haunted Lakes Fog Density
+	haunted_lakes_fog_density = 0.015
+	#Haunted Lakes Fog MaxY
+	haunted_lakes_fogMaxY = 256
+	#Haunted Lakes Fog MinY
+	haunted_lakes_fogMinY = 62
+
+["Eroded Haunted Forest"]
+	#Eroded Haunted Forest Fog
+	eroded_haunted_forest_fog = true
+	#Eroded Haunted Forest Fog Density
+	eroded_haunted_forest_fog_density = 0.01
+	#Eroded Haunted Forest Fog MaxY
+	eroded_haunted_forest_fogMaxY = 256
+	#Eroded Haunted Forest Fog MinY
+	eroded_haunted_forest_fogMinY = 62
 

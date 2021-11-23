@@ -1,0 +1,3 @@
+version:2586
+resourcePacks:["inmemory:jaopca","vanilla","mod_resources","quark:emote_resources","packmenu","openloader/resources/ColorfulSky_AssetReplacements","file/DP+Pack+16x+1.2.0.zip"]
+incompatibleResourcePacks:["inmemory:jaopca","quark:emote_resources","packmenu","file/DP+Pack+16x+1.2.0.zip"]
