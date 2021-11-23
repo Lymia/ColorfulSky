@@ -32,9 +32,10 @@ print("- Generating manifest...")
 manifest = json.loads(open("manifest.json", "r").read())
 manifest["name"] = "Colorful Skies"
 manifest["author"] = "AuroraAmissa"
-manifest["files"].append(
-    {'projectID': 411890, 'fileID': 3094111, 'required': True} # Darkpuppey's Modded Overhauls
-)
+manifest["files"] += [
+    {'projectID': 411890, 'fileID': 3094111, 'required': True}, # Darkpuppey's Modded Overhauls
+    {'projectID': 515892, 'fileID': 3427177, 'required': True}, # ProjectE Retexture
+]
 open("../build_dist/manifest.json", "w").write(json.dumps(manifest))
 
 print("- Generating full modlist...")
@@ -42,8 +43,8 @@ curse = cursepy.CurseClient()
 modlist_str = ""
 for mod in manifest["files"]:
     addon = curse.addon(mod["projectID"])
-    print("  - "+addon.name)
-    modlist_str += "- ["+addon.name+"]("+addon.url+") ([Download]("+addon.url+"/files/"+str(mod["fileID"])+"))\n"
+    print(f"  - {addon.name}")
+    modlist_str += f"- [{addon.name}]({addon.url}) ([Download]({addon.url}/files/{mod["fileID"]}))\n"
 
 print("- Rendering markdown...")
 open("../build_dist/modlist.html", "w").write(markdown.markdown(modlist_str))
@@ -51,7 +52,7 @@ open("../build_dist/readme.html", "w").write(markdown.markdown(open("../README.m
 open("../build_dist/license.html", "w").write(markdown.markdown(open("../LICENSE.md").read()))
 
 print("- Zipping distribution files...")
-shutil.make_archive("../dist/Colorful Skies - "+current_version, 'zip', "../build_dist")
+shutil.make_archive(f"../dist/Colorful Skies - {current_version}", 'zip', "../build_dist")
 
 print("- Cleaning up...")
 shutil.rmtree("../build_dist", ignore_errors=True)

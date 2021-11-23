@@ -17,3 +17,4 @@
 *.bak.*
 /kubejs
 /dist
+/build_*

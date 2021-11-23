@@ -21,6 +21,11 @@ Colorful Skies is a general purpose modpack.
 - [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)
 - [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)
 
+### Resource Packs
+
+- [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
+- []ProjectE Retexture](https://www.curseforge.com/minecraft/texture-packs/projecte-retexture)
+
 ### Worldgen and Environmental Mods
 
 - [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked)
@@ -126,7 +131,3 @@ Colorful Skies is a general purpose modpack.
 - [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
 - [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)
-
-### Resource Packs
-
-- [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
