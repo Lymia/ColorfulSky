@@ -35,6 +35,7 @@ manifest["author"] = "AuroraAmissa"
 manifest["files"] += [
     {'projectID': 411890, 'fileID': 3094111, 'required': True}, # Darkpuppey's Modded Overhauls
     {'projectID': 515892, 'fileID': 3427177, 'required': True}, # ProjectE Retexture
+    {'projectID': 490095, 'fileID': 3376785, 'required': True}, # Simple CT
 ]
 open("../build_dist/manifest.json", "w").write(json.dumps(manifest))
 

@@ -1,7 +1,7 @@
 {
   "__comment": "Instructions: https://mods.blakebr0.com/docs/cucumber/tags-config",
   "forge:ingots/aluminum": "immersiveengineering:ingot_aluminum",
-  "forge:ingots/brass": "null",
+  "forge:ingots/brass": "emendatusenigmatica:brass_ingot",
   "forge:ingots/bronze": "thermal:bronze_ingot",
   "forge:ingots/chrome": "null",
   "forge:ingots/constantan": "thermal:constantan_ingot",

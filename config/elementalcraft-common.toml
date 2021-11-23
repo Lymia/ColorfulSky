@@ -409,7 +409,7 @@
 		#Range: 1 ~ 100
 		inertCrystalSize = 9
 		#Disable creation of inertCrystals.
-		disableInertCrystal = false
+		disableInertCrystal = true
 		#max Y level of inert crystal.
 		#Range: 1 ~ 256
 		inertCrystalYMax = 64

@@ -7,8 +7,6 @@ $flags ITEM BLOCK
 - stalwart_dungeons:tungsten_ore
 - stalwart_dungeons:chorundum_ore
 
-$flags OVERRIDE ITEM BLOCK
-
 #forge:ores/aquite
 - blue_skies:everbright_aquite_ore
 - blue_skies:everdawn_aquite_ore

@@ -25,12 +25,14 @@ Colorful Skies is a general purpose modpack.
 
 - [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
 - []ProjectE Retexture](https://www.curseforge.com/minecraft/texture-packs/projecte-retexture)
+- [Simple Connected Textures](https://www.curseforge.com/minecraft/texture-packs/simple-ct)
 
 ### Worldgen and Environmental Mods
 
 - [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked)
 - [BetterNether Reforged](https://www.curseforge.com/minecraft/mc-mods/betternether-reforged)
 - [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)
+- [Emendatus Enigmatica](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica)
 - [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
 - [Orcinus's Caves](https://www.curseforge.com/minecraft/mc-mods/orcinuss-caves)
 - [The Endergetic Expansion](https://www.curseforge.com/minecraft/mc-mods/endergetic)
@@ -77,6 +79,7 @@ Colorful Skies is a general purpose modpack.
 - [Macaw's Windows](https://www.curseforge.com/minecraft/mc-mods/macaws-windows)
 - [MorePaths](https://www.curseforge.com/minecraft/mc-mods/morepaths)
 - [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light)
+- [Tinkers' Mechworks](https://www.curseforge.com/minecraft/mc-mods/tinkers-mechworks)
 
 ### Magic Mods
 

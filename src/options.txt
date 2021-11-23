@@ -1,3 +1,3 @@
 version:2586
-resourcePacks:["inmemory:jaopca","vanilla","mod_resources","quark:emote_resources","file/DP+Pack+16x+1.2.0.zip","packmenu","openloader/resources/DarkpuppeyCompat","file/Exchange_Extended_v1.0.zip","openloader/resources/ColorfulSky_AssetReplacements"]
-incompatibleResourcePacks:["inmemory:jaopca","quark:emote_resources","file/DP+Pack+16x+1.2.0.zip"]
+resourcePacks:["inmemory:jaopca","vanilla","mod_resources","quark:emote_resources","packmenu","file/DP+Pack+16x+1.2.0.zip","openloader/resources/DarkpuppeyCompat","file/Exchange_Extended_v1.0.zip","openloader/resources/ColorfulSky_AssetReplacements","file/Simple-CT-1.1.0.zip"]
+incompatibleResourcePacks:["inmemory:jaopca","quark:emote_resources","file/DP+Pack+16x+1.2.0.zip","file/Simple-CT-1.1.0.zip"]

@@ -39,7 +39,7 @@
 	#The list of biome IDs that Prosperity Ore veins can spawn in.
 	prosperityBiomeWhitelist = []
 	#Should Inferium Ore generate in the world?
-	generateInferiumOre = true
+	generateInferiumOre = false
 	#The maximum amount of Soulstone blocks that can spawn in a vein.
 	#Range: 0 ~ 64
 	soulstoneSpawnSize = 64
@@ -66,7 +66,7 @@
 	#Range: 0 ~ 256
 	prosperitySpawnHeight = 50
 	#Should Prosperity Ore generate in the world?
-	generateProsperityOre = true
+	generateProsperityOre = false
 	#The list of biome IDs that Soulstone veins can spawn in.
 	soulstoneBiomeWhitelist = []
 
