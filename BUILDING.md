@@ -1,6 +1,6 @@
 This repository is designed to be used with the instance folder. I use GDLauncher, but Twitch App should work just as well. To prepare this for use:
 
-1. Install the needed Python modules with `pip3 install cursepy markdown`.
+1. Install the needed Python modules with `pip3 install cursepy markdown toml`.
 2. Run the `src/dist.py` Python script to get an updated `.zip` for the modpack, and import it into the launcher of your choice.
 3. Copy the `mods` and `resourcepacks` folders into the repository.
 4. Register the source repository as an instance in your launcher of choice.

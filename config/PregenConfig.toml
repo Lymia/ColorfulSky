@@ -29,7 +29,7 @@
 		#Allowed Values: START, CENTER, END
 		horizontal-alignment = "START"
 		#Defines if the Pregen Overlay should be enabled
-		pregen-overlay = true
+		pregen-overlay = false
 		#Defines the Vertical Alignment of the UI, top to bottom
 		#Allowed Values: START, CENTER, END
 		vertical-alignment = "START"
@@ -44,7 +44,7 @@
 		#Reference to save which dimension is currently detailed
 		detailed-dimension = "minecraft:overworld"
 		#Defines if the Profiler Overlay should be enabled
-		profiler-overlay = true
+		profiler-overlay = false
 		#Defines the Vertical Alignment of the UI, top to bottom
 		#Allowed Values: START, CENTER, END
 		vertical-alignment = "START"

@@ -2,6 +2,7 @@ import glob
 import os
 import os.path
 import json
+import re
 import shutil
 
 def dir_for_texture(tag):
@@ -28,3 +29,5 @@ def make_pack(name, description, kind):
             }
         }))
     return path
+def js_minify_simple(js):
+    return re.sub(r"^\s+", "", js, flags=re.MULTILINE)
