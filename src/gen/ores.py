@@ -127,8 +127,22 @@ add_strata("raw_marble", "astralsorcery:block/marble_raw", "astralsorcery:marble
 # TODO
 
 # Ore overrides
+add_ore_override("coal", "stone", "minecraft:coal_ore")
+add_ore_override("coal", "deepslate", "cavesandcliffs:deepslate_coal_ore")
 add_ore_override("iron", "stone", "minecraft:iron_ore")
 add_ore_override("iron", "deepslate", "cavesandcliffs:deepslate_iron_ore")
+add_ore_override("gold", "stone", "minecraft:gold_ore")
+add_ore_override("gold", "deepslate", "cavesandcliffs:deepslate_gold_ore")
+add_ore_override("diamond", "stone", "minecraft:diamond_ore")
+add_ore_override("diamond", "deepslate", "cavesandcliffs:deepslate_diamond_ore")
+add_ore_override("copper", "stone", "cavesandcliffs:copper_ore")
+add_ore_override("copper", "deepslate", "cavesandcliffs:deepslate_copper_ore")
+add_ore_override("redstone", "stone", "minecraft:redstone_ore")
+add_ore_override("redstone", "deepslate", "cavesandcliffs:deepslate_redstone_ore")
+add_ore_override("lapis", "stone", "minecraft:lapis_ore")
+add_ore_override("lapis", "deepslate", "cavesandcliffs:deepslate_lapis_ore")
+add_ore_override("emerald", "stone", "minecraft:emerald_ore")
+add_ore_override("emerald", "deepslate", "cavesandcliffs:deepslate_emerald_ore")
 
 ############################
 # Worldgen from EE configs #
@@ -189,12 +203,19 @@ def record_for_pair(otype, strata):
 
 # Creates a list of all ores we generate/need to generate.
 all_ores = []
-ee_unused = []
 for otype in ore_types.values():
     for strata in ore_stratas.values():
         if strata.category in otype.categories and not otype.disabled and not strata.disabled:
-            all_ores.append(record_for_pair(otype, strata))
-        elif not strata.custom and not otype.custom:
+            all_ores.append(record_for_pair(otype, strata))            
+
+# Find all unused EE ores to eventually remove them from JEI.
+ee_unused = []
+for otype in ore_types.values():
+    for strata in ore_stratas.values():
+        is_ee = not strata.custom and not otype.custom
+        not_default = not ore_block_for_ore(otype, strata).startswith("emendatusenigmatica:")
+        not_enabled = otype.disabled or strata.disabled
+        if is_ee and (not_default or not_enabled):
             ee_unused.append(name_for_ore_ee(otype, strata))
 
 ###########################
@@ -239,7 +260,7 @@ def make_worldgen():
                     ore.minHeight = min_y
                     ore.maxHeight = max_y
                     ore.squared = true
-                    ore.setWorldgenLayer('TOP_LAYER_MODIFICATION') // as late as possible for purposes of avoiding later layers changing the stone type on us
+                    ore.setWorldgenLayer('vegetal_decoration') // as late as practical for purposes of avoiding later layers changing the stone type on us
                 }});
             }};
             {accum}
