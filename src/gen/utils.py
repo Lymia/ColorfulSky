@@ -30,4 +30,10 @@ def make_pack(name, description, kind):
         }))
     return path
 def js_minify_simple(js):
-    return re.sub(r"^\s+", "", js, flags=re.MULTILINE)
+    js = re.sub(r" +", " ", js, flags=re.MULTILINE)
+    js = re.sub(r"^\s+", "", js, flags=re.MULTILINE)
+    js = re.sub(r"\n+", "\n", js, flags=re.MULTILINE)
+    js = re.sub(r",\s+", ",", js, flags=re.MULTILINE)
+    js = re.sub(r"\(\s+", "(", js, flags=re.MULTILINE)
+    js = re.sub(r"\s+\)", ")", js, flags=re.MULTILINE)
+    return js

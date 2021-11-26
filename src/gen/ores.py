@@ -3,6 +3,29 @@ import types
 
 from gen.utils import *
 
+twilight_forest_biomes = [
+    "twilightforest:clearing",
+    "twilightforest:dark_forest_center",
+    "twilightforest:dark_forest",
+    "twilightforest:dense_forest",
+    "twilightforest:dense_mushroom_forest",
+    "twilightforest:enchanted_forest",
+    "twilightforest:final_plateau",
+    "twilightforest:firefly_forest",
+    "twilightforest:fire_swamp",
+    "twilightforest:forest",
+    "twilightforest:glacier",
+    "twilightforest:highlands",
+    "twilightforest:lake",
+    "twilightforest:mushroom_forest",
+    "twilightforest:oak_savannah",
+    "twilightforest:snowy_forest",
+    "twilightforest:spooky_forest",
+    "twilightforest:stream",
+    "twilightforest:swamp",
+    "twilightforest:thornlands",
+]
+
 ###################################
 # Ore Type and Strata definitions #
 ###################################
@@ -52,17 +75,17 @@ def add_strata(name, texture, parent_stone, category, is_custom=False, disabled=
     ore_stratas[record.name] = record
 
 # EE built-in types
-add_type("coal", 3, 3, 0, "gem", "overworld")
-add_type("iron", 3, 3, 1, "metal", "overworld")
-add_type("gold", 3, 3, 2, "metal", "overworld", "nether")
-add_type("diamond", 3, 3, 2, "gem", "overworld")
-add_type("emerald", 3, 3, 2, "gem", "overworld")
-add_type("lapis", 3, 3, 1, "gem", "overworld", "nether")
-add_type("redstone", 3, 3, 2, "gem", "overworld")
+add_type("coal", 3, 3, 0, "gem", "overworld", "twilightforest")
+add_type("iron", 3, 3, 1, "metal", "overworld", "twilightforest")
+add_type("gold", 3, 3, 2, "metal", "overworld", "twilightforest", "nether")
+add_type("diamond", 3, 3, 2, "gem", "overworld", "twilightforest")
+add_type("emerald", 3, 3, 2, "gem", "overworld", "twilightforest")
+add_type("lapis", 3, 3, 1, "gem", "overworld", "twilightforest", "nether")
+add_type("redstone", 3, 3, 2, "gem", "overworld", "twilightforest")
 add_type("quartz", 3, 3, 2, "gem", "overworld", "nether")
-add_type("copper", 3, 3, 1, "ingot", "overworld")
-add_type("aluminum", 3, 3, 1, "ingot", "overworld", "end")
-add_type("silver", 3, 3, 2, "ingot", "overworld", "end")
+add_type("copper", 3, 3, 1, "ingot", "overworld", "twilightforest")
+add_type("aluminum", 3, 3, 1, "ingot", "overworld", "twilightforest", "end")
+add_type("silver", 3, 3, 2, "ingot", "overworld", "twilightforest", "end")
 add_type("lead", 3, 3, 2, "ingot", "overworld")
 add_type("nickel", 3, 3, 2, "ingot", "overworld")
 add_type("uranium", 3, 3, 2, "ingot", "overworld", "nether")
@@ -70,8 +93,8 @@ add_type("osmium", 3, 3, 1, "ingot", "overworld", "end")
 add_type("fluorite", 3, 3, 1, "gem", "overworld", "end")
 add_type("apatite", 3, 3, 1, "gem", "overworld", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("sulfur", 3, 3, 1, "gem", "overworld", "nether")
-add_type("dimensional", 3, 3, 1, "gem", "overworld", "nether", "end")
-add_type("arcane", 3, 3, 1, "gem", "overworld", "end")
+add_type("dimensional", 3, 3, 1, "gem", "overworld", "twilightforest", "nether", "end")
+add_type("arcane", 3, 3, 1, "gem", "overworld", "twilightforest", "end")
 
 add_type("bitumen", 3, 3, 0, "-", "-", disabled = True)
 add_type("cinnabar", 3, 3, 0, "-", "-", disabled = True)
@@ -231,29 +254,45 @@ def worldgen_data(record):
     else:
         return None
 def worldgen_for_ore(record):
+    otype = ore_types[record.otype]
+    strata = ore_stratas[record.strata]
     data = worldgen_data(record)
     if data == None:
         return ""
     else:
+        biome_list_id = "all"
+        if strata.category == "overworld":
+            twf = "twilightforest" in otype.categories
+            ovw = "overworld" in otype.categories
+            if twf and not ovw:
+                biome_list_id = "twf"
+            if not twf and ovw:
+                biome_list_id = "ovw"
+        
         return f"""gen_ore({
             repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)}, 
-            {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}
-        );"""
+            {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
+        )\n"""
 def make_worldgen():
     accum = ""
     for ore in all_ores:
         accum += worldgen_for_ore(ore)
     js = f"""
         onEvent('worldgen.add', event => {{
-            var gen_ore = function(block, parent_stone, cluster_size, cluster_count, min_y, max_y) {{
+            var twb = {repr(twilight_forest_biomes)}
+            var twf = {{ "blacklist": false, "values": twb }}
+            var ovw = {{ "blacklist": true, "values": twb }}
+            var all = {{ "blacklist": true, "values": [] }}
+            var gen_ore = function(block, parent_stone, cluster_size, cluster_count, min_y, max_y, biomes) {{
                 if(!Block.getBlock(block)) console.error(`No such block: ${{block}}`);
                 if(parent_stone[0] != "#" && !Block.getBlock(parent_stone)) console.error(`No such block: ${{parent_stone}}`);
                 event.addOre(ore => {{
                     ore.block = block
                     ore.spawnsIn.blacklist = false
                     ore.spawnsIn.values = [parent_stone]
-                    ore.biomes.blacklist = true
-                    ore.biomes.values = []
+                    ore.biomes = biomes
+                    ore.biomes.blacklist = biome_blacklist
+                    ore.biomes.values = biomes
                     ore.clusterMinSize = cluster_size
                     ore.clusterMaxSize = cluster_size
                     ore.clusterCount = cluster_count
@@ -261,8 +300,8 @@ def make_worldgen():
                     ore.maxHeight = max_y
                     ore.squared = true
                     ore.setWorldgenLayer('vegetal_decoration') // as late as practical for purposes of avoiding later layers changing the stone type on us
-                }});
-            }};
+                }})
+            }}
             {accum}
         }})
     """
