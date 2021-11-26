@@ -25,7 +25,7 @@ uuid_locking = false
 #Settings that are not reversible without consequences.
 ["Dimension Settings"]
 	#If true, Twilight Forest will generate as a void except for Major Structures
-	skylightForest = false
+	skylightForest = true
 	#If true, players spawning for the first time will spawn in the Twilight Forest.
 	newPlayersSpawnInTF = false
 	#If true, giant Twilight Oaks will also spawn in void worlds

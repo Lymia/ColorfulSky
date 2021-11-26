@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import gen.biome_fix
 import gen.fix_models
 import gen.tags
 import glob
@@ -30,6 +31,10 @@ pack = make_pack("ColorfulSky_BlueSkiesFix", "Colorful Sky - Blue Skies Fix", "d
 shutil.unpack_archive(find_mod("blue_skies"), "../build_config/blueskies", "zip")
 os.makedirs(f"{pack}/data/forge/tags")
 gen.tags.generate_group_redirect("blue_skies", "forge", "../build_config/blueskies", pack)
+
+print("- Generating Twilight Forest incompatibility fix...")
+shutil.unpack_archive(find_mod("twilightforest"), "../build_config/twilightforest", "zip")
+gen.biome_fix.fix_biomes("../build_config/twilightforest", "../kubejs")
 
 print("- Generating Draconic Evolution/ProjectE compatibility fix...")
 pack = make_pack("DarkpuppeyCompat", "Darkpuppey's Modded Overhauls - 1.16.5 Compatibility Patch", "resources")
