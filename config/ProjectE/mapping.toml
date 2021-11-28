@@ -216,6 +216,46 @@
 		#Recipe mapper for Mystical Agriculture infusion recipes
 		enabled = true
 
+	[CraftingMapper.CreateSplashingMapper]
+		#Create Splashing Mapper
+		enabled = true
+
+	[CraftingMapper.CreateCrushingMapper]
+		#Create Crushing Mapper
+		enabled = true
+
+	[CraftingMapper.CreateCuttingMapper]
+		#Create Cutting Mapper
+		enabled = true
+
+	[CraftingMapper.CreateDeployerApplicationMapper]
+		#Create Deployer Application Mapper
+		enabled = true
+
+	[CraftingMapper.CreateMillingMapper]
+		#Create Milling Mapper
+		enabled = true
+
+	[CraftingMapper.CreateBASINMapper]
+		#Create BASIN Mapper
+		enabled = true
+
+	[CraftingMapper.CreateCompactingMapper]
+		#Create Compacting Mapper
+		enabled = true
+
+	[CraftingMapper.CreateCUTTINGMapper]
+		#Create CUTTING Mapper
+		enabled = true
+
+	[CraftingMapper.CreateSandpaperPolishingMapper]
+		#Create Sandpaper Polishing Mapper
+		enabled = true
+
+	[CraftingMapper.CreatePressingMapper]
+		#Create Pressing Mapper
+		enabled = true
+
 [ProjectEIntegrationRecipeMapper]
 
 	[ProjectEIntegrationRecipeMapper.IceAndFireDragonForgeMapper]

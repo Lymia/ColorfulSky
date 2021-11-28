@@ -98,6 +98,7 @@ Colorful Skies is a general purpose modpack.
 
 ### Tech Mods
 
+- [Create](https://www.curseforge.com/minecraft/mc-mods/create)
 - [Cyclic](https://www.curseforge.com/minecraft/mc-mods/cyclic)
 - [Draconic Evolution](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution)
 - [Flux Networks](https://www.curseforge.com/minecraft/mc-mods/flux-networks)
@@ -116,6 +117,14 @@ Colorful Skies is a general purpose modpack.
 - [Woot](https://www.curseforge.com/minecraft/mc-mods/woot)
 - [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 
+### Automation & Control Mods
+- [Ranged Wireless Redstone](https://www.curseforge.com/minecraft/mc-mods/ranged-wireless-redstone)
+- [Redstone Control 2](https://www.curseforge.com/minecraft/mc-mods/redstone-control-2)
+- [Redstone Pen](https://www.curseforge.com/minecraft/mc-mods/redstone-pen)
+- [Tiny Gates](https://www.curseforge.com/minecraft/mc-mods/tiny-gates)
+- [Tiny Redstone](https://www.curseforge.com/minecraft/mc-mods/tiny-redstone)
+- [TIS-3D](https://www.curseforge.com/minecraft/mc-mods/tis-3d)
+
 ### Utility Mods
 
 - [Allurement](https://www.curseforge.com/minecraft/mc-mods/allurement)
@@ -124,13 +133,12 @@ Colorful Skies is a general purpose modpack.
 - [Ender Storage](https://www.curseforge.com/minecraft/mc-mods/ender-storage-1-8)
 - [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)
 - [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
-- [More Red](https://www.curseforge.com/minecraft/mc-mods/more-red)
 - [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
-- [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass)
-- [Redstone Control 2](https://www.curseforge.com/minecraft/mc-mods/redstone-control-2)
+- [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass
 - [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
 - [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
+- [Tiny Chests](https://www.curseforge.com/minecraft/mc-mods/tinychest)
 - [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)

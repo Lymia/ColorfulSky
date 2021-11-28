@@ -1,3 +1,4 @@
+import gen.ore_model
 import toml
 import types
 
@@ -33,10 +34,10 @@ twilight_forest_biomes = [
 ore_types = {}
 ore_stratas = {}
 
-def add_type(name, strength, resistance, harvest_level, kind, *categories, disabled=False):
+def add_type(name, strength, resistance, harvest_level, kind, *categories, is_custom=False, disabled=False):
     record = types.SimpleNamespace()
     record.name = name
-    record.custom = False
+    record.custom = is_custom
     record.disabled = disabled
     record.strength = strength
     record.resistance = resistance
@@ -46,6 +47,10 @@ def add_type(name, strength, resistance, harvest_level, kind, *categories, disab
     record.worldgen = {}
     record.overrides = {}
     record.spawn_modifier = {}
+    if is_custom:
+        record.texture = f"colorfulsky:blocks/ore_overlays/{name}"
+    else:
+        record.texture = f"emendatusenigmatica:blocks/overlays/{name}"
     ore_types[record.name] = record
 def add_worldgen(name, cluster_size, cluster_count, chance, height_range, target="default"):
     record = types.SimpleNamespace()
@@ -58,7 +63,7 @@ def add_worldgen(name, cluster_size, cluster_count, chance, height_range, target
 def add_ore_override(name, strata, block):
     ore_types[name].overrides[strata] = block
 
-def add_strata(name, texture, parent_stone, category, is_custom=False, disabled=False):
+def add_strata(name, texture, parent_stone, category, is_custom=False, disabled=False, material="rock", harvest_tool="pickaxe"):
     record = types.SimpleNamespace()
     record.name = name
     record.custom = is_custom
@@ -72,6 +77,8 @@ def add_strata(name, texture, parent_stone, category, is_custom=False, disabled=
     record.texture = texture
     record.parent_stone = parent_stone
     record.category = category
+    record.material = material
+    record.harvest_tool = harvest_tool
     ore_stratas[record.name] = record
 
 # EE built-in types
@@ -90,11 +97,12 @@ add_type("lead", 3, 3, 2, "ingot", "overworld")
 add_type("nickel", 3, 3, 2, "ingot", "overworld")
 add_type("uranium", 3, 3, 2, "ingot", "overworld", "nether")
 add_type("osmium", 3, 3, 1, "ingot", "overworld", "end")
+add_type("zinc", 3, 3, 2, "ingot", "overworld", "end")
 add_type("fluorite", 3, 3, 1, "gem", "overworld", "end")
 add_type("apatite", 3, 3, 1, "gem", "overworld", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("sulfur", 3, 3, 1, "gem", "overworld", "nether")
-add_type("dimensional", 3, 3, 1, "gem", "overworld", "twilightforest", "nether", "end")
 add_type("arcane", 3, 3, 1, "gem", "overworld", "twilightforest", "end")
+add_type("dimensional", 3, 3, 1, "gem", "overworld", "twilightforest", "nether", "end")
 
 add_type("bitumen", 3, 3, 0, "-", "-", disabled = True)
 add_type("cinnabar", 3, 3, 0, "-", "-", disabled = True)
@@ -107,7 +115,6 @@ add_type("peridot", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how t
 add_type("potassium_nitrate", 3, 3, 0, "-", "-", disabled = True)
 add_type("ruby", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("sapphire", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
-add_type("zinc", 3, 3, 0, "-", "-", disabled = True)
 
 # EE built-in strata
 add_strata("stone", "minecraft:block/stone", "minecraft:stone", "overworld")
@@ -122,10 +129,10 @@ add_strata("basalt", "minecraft:block/basalt_side",  "minecraft:basalt", "nether
 add_strata("soul_soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether")
 add_strata("end_stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end")
 
-add_strata("gabbro", None, None, "overworld", disabled=True)
-add_strata("c_limestone", None, None, "overworld", disabled=True),
-add_strata("scoria", None, None, "overworld", disabled=True),
-add_strata("weathered_limestone", None, None, "overworld", disabled=True),
+add_strata("gabbro", "create:block/palettes/gabbro/plain", "create:gabbro", "overworld", disabled=True)
+add_strata("c_limestone", "create:block/palettes/limestone/plain", "create:limestone", "overworld", disabled=True),
+add_strata("scoria", "create:block/palettes/natural_scoria", "create:natural_scoria", "overworld", disabled=True),
+add_strata("weathered_limestone", "create:block/palettes/weathered_limestone/plain", "create:weathered_limestone", "overworld", disabled=True),
 
 add_strata("jasper", "quark:block/jasper", "quark:jasper", "overworld")
 add_strata("marble", "quark:block/marble", "quark:marble", "overworld")
@@ -147,7 +154,7 @@ add_strata("violecite", "betterendforge:block/violecite", "betterendforge:violec
 add_strata("raw_marble", "astralsorcery:block/marble_raw", "astralsorcery:marble_raw", "overworld")
 
 # Custom strata
-# TODO
+add_strata("clay", "minecraft:block/clay", "minecraft:clay", "overworld", is_custom=True, material="clay", harvest_tool="shovel")
 
 # Ore overrides
 add_ore_override("coal", "stone", "minecraft:coal_ore")
@@ -238,7 +245,8 @@ for otype in ore_types.values():
         is_ee = not strata.custom and not otype.custom
         not_default = not ore_block_for_ore(otype, strata).startswith("emendatusenigmatica:")
         not_enabled = otype.disabled or strata.disabled
-        if is_ee and (not_default or not_enabled):
+        not_used = strata.category not in otype.categories
+        if is_ee and (not_default or not_enabled or not_used):
             ee_unused.append(name_for_ore_ee(otype, strata))
 
 ###########################
@@ -270,14 +278,16 @@ def worldgen_for_ore(record):
                 biome_list_id = "ovw"
         
         return f"""gen_ore({
-            repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)}, 
+            repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
             {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
         )\n"""
-def make_worldgen():
+def make_worldgen(datapack):
     accum = ""
     for ore in all_ores:
         accum += worldgen_for_ore(ore)
-    js = f"""
+        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores")
+        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores/{ore.otype}")
+    datapack.add_script("add_worldgen_ores", f"""
         onEvent('worldgen.add', event => {{
             var twb = {repr(twilight_forest_biomes)}
             var twf = {{ "blacklist": false, "values": twb }}
@@ -290,9 +300,8 @@ def make_worldgen():
                     ore.block = block
                     ore.spawnsIn.blacklist = false
                     ore.spawnsIn.values = [parent_stone]
-                    ore.biomes = biomes
-                    ore.biomes.blacklist = biome_blacklist
-                    ore.biomes.values = biomes
+                    ore.biomes.blacklist = biomes.blacklist
+                    ore.biomes.values = biomes.values
                     ore.clusterMinSize = cluster_size
                     ore.clusterMaxSize = cluster_size
                     ore.clusterCount = cluster_count
@@ -304,5 +313,31 @@ def make_worldgen():
             }}
             {accum}
         }})
-    """
-    return f"// Autogenerated by build script\n{js_minify_simple(js)}\n"
+    """)
+
+def make_blocks(datapack):
+    accum = ""
+    for ore in all_ores:
+        if ore.needs_new_block:
+            otype = ore_types[ore.otype]
+            strata = ore_stratas[ore.strata]
+            model = gen.ore_model.ore_model(ore_types[ore.otype].texture, ore_stratas[ore.strata].texture)
+            datapack.add_model(ore.name, model, "block")
+            accum += f"""gen_blk(
+                {repr(ore.ore_block)}, {otype.strength}, {otype.resistance},
+                {repr(strata.harvest_tool)}, {otype.harvest_level}, {repr(strata.material)}
+            )\n"""
+    datapack.add_script("create_custom_ores", f"""
+        onEvent('block.registry', event => {{
+            var gen_blk = function(ore_name, hardness, resistance, harvest_tool, harvest_level, material) {{
+                event.create(ore_name)
+                    .hardness(hardness).resistance(resistance)
+                    .harvestTool(harvest_tool, harvest_level).material(material)
+            }}
+            {accum}
+        }})
+    """)
+
+def remove_unused(datapack):
+    for item in ee_unused:
+        datapack.remove_name(item)

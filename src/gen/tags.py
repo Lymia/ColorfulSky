@@ -4,12 +4,7 @@ import os.path
 
 from gen.utils import *
 
-class TagConfigs(object):
-    should_override = set({})
-    block_tags = {}
-    item_tags = {}
-
-def parse_config(tags, f):
+def parse_config(datapack, f):
     flag_override = False
     flag_block = False
     flag_item = False
@@ -37,15 +32,15 @@ def parse_config(tags, f):
             if head.startswith('#'):
                 tag = head[1:]
                 if flag_override:
-                    tags.should_override.add(tag)
+                    datapack.tags.mark_override(tag)
                 current_tag = tag
                 continue
             if head == '-':
                 assert(current_tag != None)
                 if flag_block:
-                    tags.block_tags.setdefault(current_tag, set({})).add(args[0])
+                    datapack.tags.add_block_tag(args[0], current_tag)
                 if flag_item:
-                    tags.item_tags.setdefault(current_tag, set({})).add(args[0])
+                    datapack.tags.add_item_tag(args[0], current_tag)
                 continue
             if head.startswith('//'):
                 continue
@@ -54,33 +49,24 @@ def parse_config(tags, f):
             
             raise Exception("Tag config parse failure")
 
-def generate_tag_file(tag, kind, values, override, target):
-    values = sorted(list(values))
-    json_str = json.dumps({
-        "replace": override,
-        "values": values
-    })
-    
-    target_file = f"{target}{dir_for_tag(tag, kind)}"
-    os.makedirs(os.path.dirname(target_file), exist_ok = True)    
-    with open(target_file, "w") as fd:
-        fd.write(json_str)
-    
-def generate_tags(tags, target):
-    for tag in tags.block_tags:
-        generate_tag_file(tag, "blocks", tags.block_tags[tag], tag in tags.should_override, target)
-    for tag in tags.item_tags:
-        generate_tag_file(tag, "items", tags.item_tags[tag], tag in tags.should_override, target)
-        
-def generate_group_redirect(group_from, group_to, mod, target):
+def add_from_json(datapack, tag, is_block, json):
+    if "replace" in json and json["replace"]:
+        datapack.tags.mark_override(tag)
+    if "values" in json:
+        for name in json["values"]:
+            if is_block:
+                datapack.tags.add_block_tag(name, tag)
+            else:
+                datapack.tags.add_item_tag(name, tag)
+def generate_group_redirect(datapack, mod, group_from, group_to):
     for model in glob.glob(f"{mod}/data/{group_from}/tags/**/*.json"):
         head_len = len(mod)+6+len(group_from)+1
-        from_tag = model[head_len+5:-5].split("/", 1)[1]
-        target_path = f"{target}/data/{group_to}/{model[head_len:]}"
+        tag_type, tag_name = model[head_len+5:-5].split("/", 1)
+        full_tag = f"{group_to}:{tag_name}"
+        with open(model) as fd:
+            data = json.loads(fd.read())
 
-        os.makedirs(os.path.dirname(target_path), exist_ok = True)
-        with open(target_path, "w") as fd:
-            fd.write(json.dumps({
-                "replace": False,
-                "values": [f"#{group_from}:{from_tag}"]
-            }))
+        if tag_type == "blocks":
+            add_from_json(datapack, full_tag, True, data)
+        if tag_type == "items":
+            add_from_json(datapack, full_tag, False, data)

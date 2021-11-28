@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import gen.biome_fix
+import gen.data
 import gen.fix_models
 import gen.tags
 import glob
@@ -15,7 +16,7 @@ shutil.rmtree("../build_config", ignore_errors=True)
 os.makedirs("../build_config")
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
-tags = gen.tags.TagConfigs()
+model = gen.data.DatapackModel()
 
 print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
@@ -24,13 +25,12 @@ os.makedirs("../kubejs/startup_scripts/generated")
 
 print("- Parsing tag files...")
 for tag_file in glob.glob('tags/*.txt'):
-    gen.tags.parse_config(tags, tag_file)
+    gen.tags.parse_config(model, tag_file)
 
 print("- Generating Blue Skies fix...")
 pack = make_pack("ColorfulSky_BlueSkiesFix", "Colorful Sky - Blue Skies Fix", "data")
 shutil.unpack_archive(find_mod("blue_skies"), "../build_config/blueskies", "zip")
-os.makedirs(f"{pack}/data/forge/tags")
-gen.tags.generate_group_redirect("blue_skies", "forge", "../build_config/blueskies", pack)
+gen.tags.generate_group_redirect(model, "../build_config/blueskies", "blue_skies", "forge")
 
 print("- Generating Twilight Forest incompatibility fix...")
 shutil.unpack_archive(find_mod("twilightforest"), "../build_config/twilightforest", "zip")
@@ -46,10 +46,12 @@ gen.fix_models.generate_model_fixes("../build_config/dp", "../build_config/pe", 
 
 print("- Generating ore-related configuration...")
 import gen.ores
-open("../kubejs/startup_scripts/generated/worldgen_ores.js", "w").write(gen.ores.make_worldgen())
+gen.ores.make_worldgen(model)
+gen.ores.make_blocks(model)
+gen.ores.remove_unused(model)
 
 print("- Generating configuration...")
-gen.tags.generate_tags(tags, "../kubejs/data/")
+gen.data.generate_datapack_files(model, "../kubejs/")
 
 print("- Cleaning up...")
 shutil.rmtree("../build_config", ignore_errors=True)
