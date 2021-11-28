@@ -12,6 +12,7 @@ from gen.utils import *
 current_version = "Alpha 1"
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
+set_release()
 
 import build # lazy way!
 

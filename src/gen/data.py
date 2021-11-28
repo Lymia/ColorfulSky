@@ -23,7 +23,8 @@ class DatapackModel(object):
     tags = TagConfig()
     removed_names = []
     generated_scripts = {}
-    generated_models = {}
+    i18n_strings = {}
+    textures = {}
     
     def _find_name(self, field, prefix, sname, value):
         name = f"{prefix}{sname}"
@@ -38,12 +39,9 @@ class DatapackModel(object):
         self.removed_names.append(name)
     def add_script(self, name, script):
         return self._find_name(self.generated_scripts, "", name, js_minify_simple(f"console.log('Running: {name}.js')\n{script}"))
-    def add_model(self, name, model, kind):
-        name = self._find_name(self.generated_models, f"{kind}/", name, json.dumps(model))
-        if kind == "block":
-            namefrag = name[len(kind)+1:]
-            self.generated_models[f"item/{namefrag}"] = json.dumps({"parent": f"colorfulsky:block/{namefrag}"})
-        return name
+    
+    def add_i18n(self, group, name, value):
+        self.i18n_strings.setdefault(group, {})[name] = value
 
 def generate_tag_file(tag, kind, values, override, target):
     values = sorted(list(values))
@@ -76,9 +74,9 @@ def make_remove_unused(datapack, target):
 def generate_datapack_files(datapack, target):
     generate_tags(datapack.tags, target)
     make_remove_unused(datapack, target)
+    for group in datapack.i18n_strings:
+        with open_mkdir(f"{target}/assets/{group}/lang/en_us.json") as fd:
+            fd.write(json.dumps(datapack.i18n_strings[group]))
     for name in datapack.generated_scripts:
         with open_mkdir(f"{target}/startup_scripts/generated/{name}.js") as fd:
             fd.write(datapack.generated_scripts[name])
-    for name in datapack.generated_models:
-        with open_mkdir(f"{target}/assets/colorfulsky/models/{name}.json") as fd:
-            fd.write(datapack.generated_models[name])

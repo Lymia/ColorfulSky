@@ -72,7 +72,7 @@
 			#  <1 to make it a chance.
 			#  0 to disable.
 			#Range: 0.0 ~ 512.0
-			frequency = 0.015625
+			frequency = 0
 			# 
 			#Range: > 0
 			minHeight = 30
