@@ -19,6 +19,7 @@ class Mod(Enum):
     DarkerDepths = 26
     TwilightForest = 27
     EmendatusEnigmatica = 28
+    InfernalExpansion = 29
 
 mod_prefixes = {
     Mod.BlueSkies: "blue_skies",
@@ -30,6 +31,7 @@ mod_prefixes = {
     Mod.DarkerDepths: "darkerdepths",
     Mod.TwilightForest: "twilightforest",
     Mod.EmendatusEnigmatica: "EmendatusEnigmatica",
+    Mod.InfernalExpansion: "infernal-expansion",
 }
 fixed_paths = {
     Mod.ColorfulSkyOres: "../openloader/resources/ColorfulSkyOres",

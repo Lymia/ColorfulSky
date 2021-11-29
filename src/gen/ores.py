@@ -3,6 +3,12 @@ import types
 
 from gen.utils import *
 
+# TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria)
+# TODO: Make Soulium a normal ore
+# TODO: Darker Depths unneeded definitions
+# TODO: Some external ores in Blue Skies world.
+# TODO: Figure out how to unscrew Alfheim
+
 twilight_forest_biomes = [
     "twilightforest:clearing",
     "twilightforest:dark_forest_center",
@@ -46,6 +52,7 @@ def add_type(name, display_name, strength, resistance, harvest_level, kind, *cat
     record.categories = categories
     record.worldgen = {}
     record.overrides = {}
+    record.no_generation = set({})
     record.spawn_modifier = {}
     if is_custom:
         record.texture = f"constellation:blocks/ore_overlays/{name}"
@@ -62,6 +69,8 @@ def add_worldgen(name, cluster_size, cluster_count, chance, height_range, target
     ore_types[name].worldgen[target] = record
 def add_ore_override(name, strata, block):
     ore_types[name].overrides[strata] = block
+def add_unneeded(name, strata):
+    ore_types[name].no_generation.add(strata)
 
 def add_strata(name, display_name, texture, parent_stone, category, is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe"):
     record = types.SimpleNamespace()
@@ -127,8 +136,8 @@ add_strata("gravel", "Gravel", None, None, "overworld", disabled=True)
 add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether")
 add_strata("blackstone", "Blackstone", "minecraft:block/blackstone",  "minecraft:blackstone", "nether")
 add_strata("basalt", "Basalt", "minecraft:block/basalt_side",  "minecraft:basalt", "nether")
-add_strata("soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether")
 add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end")
+add_strata("soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether", disabled=True)
 
 add_strata("gabbro", "Gabbro", "create:block/palettes/gabbro/plain", "create:gabbro", "overworld")
 add_strata("c_limestone", "Limestone", "create:block/palettes/limestone/plain", "create:limestone", "overworld", disabled=True),
@@ -142,9 +151,9 @@ add_strata("deepslate", "Deepslate", "quark:block/backport/deepslate", "quark:de
 
 add_strata("mossy_stone", "Mossy Stone", "byg:block/mossy_stone", "byg:mossy_stone", "overworld")
 add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether")
-add_strata("subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether")
+add_strata("subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", disabled=True)
 add_strata("blue_netherrack", "Blue Netherrack", "byg:block/blue_netherrack", "byg:blue_netherrack", "nether")
-add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether")
+add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether", disabled=True)
 add_strata("ether_stone", "Ether Stone", "byg:block/ether_stone", "byg:ether_stone", "nether")
 add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "nether")
 
@@ -166,12 +175,23 @@ add_strata("travertine", "Travertine", "byg:block/travertine", "byg:travertine",
 add_strata("soapstone", "Soapstone", "byg:block/soapstone", "byg:soapstone", "overworld", is_custom=True)
 add_strata("q_limestone", "Limestone", "quark:block/limestone", "quark:limestone", "overworld", is_custom=True)
 
+add_strata("quartzite", "Quartzite", "byg:block/quartzite_sand", "byg:quartzite_sand", "nether", is_custom=True, material="sand", harvest_tool="shovel")
+add_strata("scoria_stone", "Scoria Stone", "byg:block/scoria_stone", "byg:scoria_stone", "nether", is_custom=True),
+add_strata("s_soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether", is_custom=True, material="dirt", harvest_tool="shovel")
+add_strata("s_nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether", is_custom=True, material="dirt", harvest_tool="shovel")
+add_strata("s_subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", is_custom=True, material="dirt", harvest_tool="shovel")
+add_strata("dullstone", "Dullstone", "infernalexp:block/dullstone", "infernalexp:dullstone", "nether", is_custom=True),
+add_strata("shimmerstone", "Shimmerstone", "infernalexp:block/glowdust_stone", "infernalexp:glowdust_stone", "nether", is_custom=True),
+
 # Ore overrides
 for ore in ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"]:
     add_ore_override(ore, "stone", f"minecraft:{ore}_ore")
     add_ore_override(ore, "deepslate", f"cavesandcliffs:deepslate_{ore}_ore")
 add_ore_override("copper", "stone", "cavesandcliffs:copper_ore")
 add_ore_override("copper", "deepslate", "cavesandcliffs:deepslate_copper_ore")
+
+# Unneeded ores
+add_unneeded("quartz", "quartzite")
 
 ####################
 # Worldgen configs #
@@ -274,7 +294,11 @@ def record_for_pair(otype, strata):
 all_ores = []
 for strata in ore_stratas.values():
     for otype in ore_types.values():
-        if strata.category in otype.categories and not otype.disabled and not strata.disabled:
+        if (
+            strata.category in otype.categories and 
+            not otype.disabled and not strata.disabled and 
+            strata.name not in otype.no_generation
+        ):
             all_ores.append(record_for_pair(otype, strata))            
 
 # Find all unused EE ores to eventually remove them from JEI.
@@ -283,7 +307,7 @@ for strata in ore_stratas.values():
     for otype in ore_types.values():
         is_ee = not strata.custom and not otype.custom
         not_default = not ore_block_for_ore(otype, strata).startswith("emendatusenigmatica:")
-        not_enabled = otype.disabled or strata.disabled
+        not_enabled = otype.disabled or strata.disabled or strata.name in otype.no_generation
         not_used = strata.category not in otype.categories
         if is_ee and (not_default or not_enabled or not_used):
             ee_unused.append(name_for_ore_ee(otype, strata))

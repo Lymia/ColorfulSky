@@ -10,8 +10,6 @@ let remove_seed_list = [
     "copper",
     "apatite",
     "iron",
-    "nether_quartz",
-    "glowstone",
     "redstone",
     "tin",
     "bronze",
@@ -54,7 +52,6 @@ let remove_seed_list = [
     "draconium",
 ];
 let disable_essence_recipe_list = [
-    "quartz",
     "astralsorcery/aquamarine",
     "charcoal",
     "refinedstorage/quartz_enriched_iron_ingot",
@@ -75,7 +72,6 @@ let disable_essence_recipe_list = [
 ];
 let replacements_list = [
     ["coal", "fire"], // stone
-    ["nether_quartz", "air"], // several stone types
     ["aquamarine", "water"], // marble
     ["netherite", "wither_skeleton"], // pigstep!!
     ["gold", "blaze"], // pigstep!!

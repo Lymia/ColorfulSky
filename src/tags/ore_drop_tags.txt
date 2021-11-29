@@ -4,37 +4,14 @@ $flags ITEM
 - silentgear:starmetal_dust
 - astralsorcery:stardust
 
-#forge:gems/aquite
-- blue_skies:aquite_gem
-
-#forge:gems/charoite
-- blue_skies:charoite
-
 #forge:gems/chorundum
 - stalwart_dungeons:chorundum
 
-#forge:gems/diopside
-- blue_skies:diopside_gem
-
 #forge:gems/moonstone
 - silentgems:moonstone
-- blue_skies:moonstone
-
-#forge:gems/moonstone_shard
-- blue_skies:moonstone_shard
 
 #forge:gems/pyrope
 - silentgems:pyrope
-- blue_skies:pyrope_gem
-
-#forge:ingots/cincinnasite
-- betternether:cincinnasite_ingot
-
-#forge:ingots/falsite
-- blue_skies:falsite_ingot
-
-#forge:ingots/horizonite
-- blue_skies:horizonite_ingot
 
 #forge:ingots/starmetal
 - astralsorcery:starmetal_ingot
@@ -42,6 +19,3 @@ $flags ITEM
 #forge:ingots/tungsten
 - oreclumps:tungsten_ingot
 - stalwart_dungeons:tungsten_ingot
-
-#forge:ingots/ventium
-- blue_skies:ventium_ingot
