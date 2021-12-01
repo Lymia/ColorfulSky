@@ -97,7 +97,7 @@ add_type("coal", "Coal", 3, 3, 0, "gem", "overworld", "twilightforest")
 add_type("iron", "Iron", 3, 3, 1, "metal", "overworld", "twilightforest")
 add_type("gold", "Gold", 3, 3, 2, "metal", "overworld", "twilightforest", "nether")
 add_type("diamond", "Diamond", 3, 3, 2, "gem", "overworld", "twilightforest")
-add_type("emerald", "Emerald", 3, 3, 2, "gem", "overworld", "twilightforest")
+add_type("emerald", "Emerald", 3, 3, 2, "gem", "overworld", "twilightforest", "end")
 add_type("lapis", "Lapis", 3, 3, 1, "gem", "overworld", "twilightforest", "nether")
 add_type("redstone", "Redstone", 3, 3, 2, "gem", "overworld", "twilightforest")
 add_type("quartz", "Quartz", 3, 3, 2, "gem", "overworld", "nether")
@@ -204,64 +204,36 @@ add_unneeded("coal", "ether_stone") # Anthracite
 ####################
 
 add_worldgen('coal', 17, 15, 1, (0, 120), target = 'overworld')
-add_worldgen('coal', 17, 15, 1, (30, 150), target = 'nether')
-add_worldgen('coal', 17, 15, 1, (20, 140), target = 'end')
 add_worldgen('iron', 11, 17, 1, (0, 64), target = 'overworld')
-add_worldgen('iron', 11, 17, 1, (30, 94), target = 'nether')
-add_worldgen('iron', 11, 17, 1, (20, 84), target = 'end')
 add_worldgen('gold', 8, 7, 1, (0, 32), target = 'overworld')
 add_worldgen('gold', 8, 7, 1, (30, 62), target = 'nether')
-add_worldgen('gold', 8, 7, 1, (20, 52), target = 'end')
 add_worldgen('diamond', 8, 3, 1, (0, 16), target = 'overworld')
-add_worldgen('diamond', 8, 3, 1, (30, 46), target = 'nether')
-add_worldgen('diamond', 8, 3, 1, (20, 36), target = 'end')
 add_worldgen('emerald', 4, 3, 1, (100, 212), target = 'overworld')
-add_worldgen('emerald', 4, 3, 1, (72, 184), target = 'nether')
 add_worldgen('emerald', 4, 3, 1, (120, 232), target = 'end')
 add_worldgen('lapis', 7, 4, 1, (0, 16), target = 'overworld')
 add_worldgen('lapis', 7, 4, 1, (30, 46), target = 'nether')
-add_worldgen('lapis', 7, 4, 1, (20, 36), target = 'end')
 add_worldgen('redstone', 11, 8, 1, (0, 16), target = 'overworld')
-add_worldgen('redstone', 11, 8, 1, (30, 46), target = 'nether')
-add_worldgen('redstone', 11, 8, 1, (20, 36), target = 'end')
 add_worldgen('quartz', 14, 16, 1, (10, 110), target = 'overworld')
 add_worldgen('quartz', 14, 16, 1, (40, 140), target = 'nether')
-add_worldgen('quartz', 14, 16, 1, (30, 130), target = 'end')
 add_worldgen('copper', 7, 17, 1, (44, 60), target = 'overworld')
-add_worldgen('copper', 7, 17, 1, (74, 90), target = 'nether')
-add_worldgen('copper', 7, 17, 1, (64, 80), target = 'end')
 add_worldgen('aluminum', 5, 8, 1, (50, 70), target = 'overworld')
-add_worldgen('aluminum', 5, 8, 1, (80, 100), target = 'nether')
 add_worldgen('aluminum', 5, 8, 1, (70, 90), target = 'end')
 add_worldgen('silver', 5, 8, 1, (30, 38), target = 'overworld')
-add_worldgen('silver', 5, 8, 1, (60, 68), target = 'nether')
 add_worldgen('silver', 5, 8, 1, (50, 58), target = 'end')
 add_worldgen('lead', 5, 8, 1, (32, 40), target = 'overworld')
-add_worldgen('lead', 5, 8, 1, (62, 70), target = 'nether')
-add_worldgen('lead', 5, 8, 1, (52, 60), target = 'end')
 add_worldgen('nickel', 4, 8, 1, (24, 40), target = 'overworld')
-add_worldgen('nickel', 4, 8, 1, (54, 70), target = 'nether')
-add_worldgen('nickel', 4, 8, 1, (44, 60), target = 'end')
 add_worldgen('uranium', 6, 6, 1, (4, 20), target = 'overworld')
 add_worldgen('uranium', 6, 6, 1, (34, 50), target = 'nether')
-add_worldgen('uranium', 6, 6, 1, (24, 40), target = 'end')
 add_worldgen('osmium', 6, 15, 1, (20, 44), target = 'overworld')
-add_worldgen('osmium', 6, 15, 1, (50, 74), target = 'nether')
 add_worldgen('osmium', 6, 15, 1, (40, 64), target = 'end')
 add_worldgen('zinc', 5, 9, 1, (34, 50), target = 'overworld')
-add_worldgen('zinc', 5, 9, 1, (64, 80), target = 'nether')
 add_worldgen('zinc', 5, 9, 1, (54, 70), target = 'end')
 add_worldgen('fluorite', 9, 5, 1, (0, 32), target = 'overworld')
-add_worldgen('fluorite', 9, 5, 1, (30, 62), target = 'nether')
 add_worldgen('fluorite', 9, 5, 1, (20, 52), target = 'end')
 add_worldgen('apatite', 22, 2, 1, (64, 128), target = 'overworld')
-add_worldgen('apatite', 22, 2, 1, (94, 158), target = 'nether')
-add_worldgen('apatite', 22, 2, 1, (84, 148), target = 'end')
 add_worldgen('sulfur', 7, 3, 1, (0, 16), target = 'overworld')
 add_worldgen('sulfur', 7, 3, 1, (30, 46), target = 'nether')
-add_worldgen('sulfur', 7, 3, 1, (20, 36), target = 'end')
 add_worldgen('arcane', 6, 5, 1, (20, 46), target = 'overworld')
-add_worldgen('arcane', 6, 5, 1, (50, 76), target = 'nether')
 add_worldgen('arcane', 6, 5, 1, (40, 66), target = 'end')
 add_worldgen('dimensional', 2, 2, 1, (0, 20), target = 'overworld')
 add_worldgen('dimensional', 2, 2, 1, (30, 50), target = 'nether')
@@ -365,24 +337,7 @@ def make_worldgen(datapack):
             var twf = {{ "blacklist": false, "values": twb }}
             var ovw = {{ "blacklist": true, "values": twb }}
             var all = {{ "blacklist": true, "values": [] }}
-            var gen_ore = function(block, parent_stone, cluster_size, cluster_count, min_y, max_y, biomes) {{
-                if(!Block.getBlock(block)) console.error(`No such block: ${{block}}`);
-                if(parent_stone[0] != "#" && !Block.getBlock(parent_stone)) console.error(`No such block: ${{parent_stone}}`);
-                event.addOre(ore => {{
-                    ore.block = block
-                    ore.spawnsIn.blacklist = false
-                    ore.spawnsIn.values = [parent_stone]
-                    ore.biomes.blacklist = biomes.blacklist
-                    ore.biomes.values = biomes.values
-                    ore.clusterMinSize = cluster_size
-                    ore.clusterMaxSize = cluster_size
-                    ore.clusterCount = cluster_count
-                    ore.minHeight = min_y
-                    ore.maxHeight = max_y
-                    ore.squared = true
-                    ore.setWorldgenLayer('top_layer_modification')
-                }})
-            }}
+            var gen_ore = bind_gen_ore(event)
             {accum}
         }})
     """)
@@ -402,11 +357,7 @@ def make_blocks(datapack, moddata):
             )\n"""
     datapack.add_script("create_custom_ores", f"""
         onEvent('block.registry', event => {{
-            var gen_blk = function(ore_name, hardness, resistance, harvest_tool, harvest_level, material, texture) {{
-                var block = event.create(ore_name)
-                block.material(material).fullBlock(true).texture(texture)
-                block.requiresTool(true).hardness(hardness).resistance(resistance).harvestTool(harvest_tool, harvest_level)
-            }}
+            var gen_blk = bind_gen_blk(event)
             {accum}
         }})
     """)
@@ -423,11 +374,10 @@ def make_tags(datapack):
         datapack.tags.add_both_tag(ore.ore_block, f"forge:ores")
         datapack.tags.add_both_tag(ore.ore_block, f"forge:ores/{ore.otype}")
         datapack.tags.add_both_tag(ore.ore_block, "constellation:generated_ores")
-    for ore in ee_unused:
-        datapack.tags.add_both_tag(ore.ore_block, "constellation:unused/ores")
 
 def make_ores(datapack, moddata):
     make_i18n(datapack)
     make_worldgen(datapack)
     make_blocks(datapack, moddata)
+    make_tags(datapack)
     remove_unused(datapack)

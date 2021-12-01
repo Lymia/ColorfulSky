@@ -27,7 +27,6 @@ moddata = gen.mod_data.ModData("../build_config/mods")
 print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
 shutil.copytree("static", "../kubejs")
-os.makedirs("../kubejs/startup_scripts/generated")
 
 print("- Adding static tags...")
 for tag_file in glob.glob('tags/*.txt'):
@@ -49,6 +48,7 @@ gen.ores.make_ores(datapack, moddata)
 
 print("- Unifying materials...")
 gen.unify.unify_tags(datapack)
+gen.unify.write_configs()
 
 print("- Generating misc data...")
 datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")

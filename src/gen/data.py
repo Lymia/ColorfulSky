@@ -76,7 +76,7 @@ class DatapackModel(object):
         self.removed_names.append(name)
         
     def process_script(self, name, script):
-        return js_minify_simple(f"console.log('Running: {name}.js')\n{script}")
+        return js_minify_simple(script)
     def add_client_script(self, name, script):
         return self._find_name(self.generated_client_scripts, "", name, self.process_script(name, script))
     def add_script(self, name, script):
@@ -103,14 +103,8 @@ def generate_tags(tags, target):
                     generate_tag_file(tag, kind, tags.tags[kind][tag], tag in tags.should_override, target)
 
 def make_remove_unused(datapack, target):
-    json = js_minify_simple(f"""
-        console.log("Running: _remove_unused.js")
-        var all = {repr(sorted(set(datapack.removed_names)))}
-        var doAll = function(f) {{ all.forEach(f) }}
-        onEvent('jei.hide.items', e => {{ doAll(x => e.hide(x)) }})
-        onEvent('jei.hide.fluids', e => {{ doAll(x => e.hide(x)) }})
-    """, priority = 1000)
-    with open_mkdir(f"{target}/client_scripts/generated/_remove_unused.js") as fd:
+    json = js_minify_simple(f"hide_events({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
+    with open_mkdir(f"{target}/client_scripts/generated_remove_unused.js") as fd:
         fd.write(json)
     
 def generate_datapack_files(datapack, target):
@@ -120,8 +114,8 @@ def generate_datapack_files(datapack, target):
         with open_mkdir(f"{target}/assets/{group}/lang/en_us.json") as fd:
             fd.write(json.dumps(datapack.i18n_strings[group]))
     for name in datapack.generated_scripts:
-        with open_mkdir(f"{target}/startup_scripts/generated/{name}.js") as fd:
+        with open_mkdir(f"{target}/startup_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_scripts[name])
     for name in datapack.generated_client_scripts:
-        with open_mkdir(f"{target}/client_scripts/generated/{name}.js") as fd:
+        with open_mkdir(f"{target}/client_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_client_scripts[name])

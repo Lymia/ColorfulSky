@@ -12,5 +12,4 @@ onEvent('worldgen.remove', e => {
         "cavesandcliffs:ore_diamond",
         "cavesandcliffs:ore_lapis",
     ])
-    e.printFeatures()
 })

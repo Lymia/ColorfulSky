@@ -1,3 +1,5 @@
+import toml
+
 from gen.utils import *
 
 # TODO: Use EE-style graphics for Create/Blood Magic/Mekanism
@@ -31,7 +33,7 @@ tag_slurries = ["aluminum", "nickel", "silver", "thallasium", "zinc"]
 
 # Definitions for unused technical mod items
 unused_gears = [
-    "lapis", "quartz", "enderium", "emerald", "uranium", "osmium", "zinc", "brass", "steel", "cast_iron",
+    "lapis", "quartz", "enderium", "emerald", "uranium", "osmium", "zinc", "brass", "steel", "cast_iron", "redstone",
 ]
 unused_materials = [
     "certus_quartz", "charged_certus_quartz", "fluix", "potassium_nitrate",
@@ -50,9 +52,11 @@ def delete_item(datapack, item, tag):
 def unify_tags(datapack):
     accum = ""
     preferred = {}
+    has_kind = {}
     
     # Find preferred items
     for kind in unify_list:
+        has_kind.setdefault(kind, set({})) # ensure group exists
         for unify_group in unify_groups:
             if ":" not in unify_group:
                 unify_group = f"forge:{unify_group}"
@@ -69,6 +73,7 @@ def unify_tags(datapack):
                     if found_item != None:
                         break
                 preferred[tag] = found_item or items[0]
+                has_kind.setdefault(kind, set({})).add(unify_group)
                 
     # Remove non-preferred items
     for tag in preferred:
@@ -110,19 +115,28 @@ def unify_tags(datapack):
         cluster_name = f"emendatusenigmatica:{kind}_cluster"
         if cluster_name in datapack.tags.get_item_tag(f"forge:clusters/{kind}"):
             datapack.tags.add_item_tag(cluster_name, f"forge:ores/{kind}")
-            
+
     # Mark slurries as slurries
     for kind in tag_slurries:
         datapack.tags.add_tag("slurries", f"emendatusenigmatica:dirty_{kind}", f"mekanism:dirty/{kind}")
         datapack.tags.add_tag("slurries", f"emendatusenigmatica:clean_{kind}", f"mekanism:clean/{kind}")
     
-    # Unify non-preferred items in recipies
-    for tag in preferred:
-        preferred_item = preferred[tag]
-        accum += f"e.replaceInput('#{tag}', {repr(preferred_item)})\n"
-        accum += f"e.replaceOutput('#{tag}', {repr(preferred_item)})\n"
+    # Unify smelting recipies
+    for kind in unify_list:
+        if "forge:ingots" in has_kind[kind]:
+            accum += f"r.unify_ingot({repr(kind)})\n"
+    
+    # Generate script
     datapack.add_script("unify_materials", f"""
         onEvent('recipes', e => {{
+            var r = bind_recipies(e, {repr(preferred)})
             {accum}
         }})
     """)
+
+def write_configs():
+    with open("configs/jaopca_main.toml") as fd:
+        main = toml.loads(fd.read())
+    main["itemSelection"]["preferredMods"] = preference_list
+    with open("../config/jaopca/main.toml", "w") as fd:
+        fd.write(toml.dumps(main))
