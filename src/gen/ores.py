@@ -3,7 +3,7 @@ import types
 
 from gen.utils import *
 
-# TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria)
+# TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria, Ether Stone)
 # TODO: Make Soulium a normal ore
 # TODO: Darker Depths unneeded definitions
 # TODO: Some external ores in Blue Skies world.
@@ -72,11 +72,12 @@ def add_ore_override(name, strata, block):
 def add_unneeded(name, strata):
     ore_types[name].no_generation.add(strata)
 
-def add_strata(name, display_name, texture, parent_stone, category, is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe"):
+def add_strata(name, display_name, texture, parent_stone, category, is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe", primary=False):
     record = types.SimpleNamespace()
     record.name = name
     record.display_name = display_name
     record.custom = is_custom
+    record.primary = primary
     record.disabled = disabled
     if is_custom:
         record.ee_suffix = None
@@ -115,28 +116,28 @@ add_type("arcane", "Source Gem", 3, 3, 1, "gem", "overworld", "twilightforest", 
 add_type("dimensional", "Dimensional Shard", 3, 3, 1, "gem", "overworld", "twilightforest", "nether", "end")
 
 add_type("bitumen", "-", 3, 3, 0, "-", "-", disabled = True)
+add_type("tin", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("cinnabar", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("charged_certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("cobalt", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("iridium", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("nickel", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("peridot", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("potassium_nitrate", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("ruby", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 
 # EE built-in strata
-add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld")
+add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld", primary=True)
 add_strata("andesite", "Andesite", "minecraft:block/andesite",  "minecraft:andesite", "overworld")
 add_strata("granite", "Granite", "minecraft:block/granite",  "minecraft:granite", "overworld")
 add_strata("diorite", "Diorite", "minecraft:block/diorite",  "minecraft:diorite", "overworld")
 add_strata("sand", "Sand", None, None, "overworld", disabled=True)
 add_strata("gravel", "Gravel", None, None, "overworld", disabled=True)
-add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether")
+add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether", primary=True)
 add_strata("blackstone", "Blackstone", "minecraft:block/blackstone",  "minecraft:blackstone", "nether")
 add_strata("basalt", "Basalt", "minecraft:block/basalt_side",  "minecraft:basalt", "nether")
-add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end")
+add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end", primary=True)
 add_strata("soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether", disabled=True)
 
 add_strata("gabbro", "Gabbro", "create:block/palettes/gabbro/plain", "create:gabbro", "overworld")
@@ -150,16 +151,16 @@ add_strata("slate", "Slate", "quark:block/slate", "quark:slate", "overworld")
 add_strata("deepslate", "Deepslate", "quark:block/backport/deepslate", "quark:deepslate", "overworld")
 
 add_strata("mossy_stone", "Mossy Stone", "byg:block/mossy_stone", "byg:mossy_stone", "overworld")
-add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether")
 add_strata("subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", disabled=True)
 add_strata("blue_netherrack", "Blue Netherrack", "byg:block/blue_netherrack", "byg:blue_netherrack", "nether")
 add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether", disabled=True)
-add_strata("ether_stone", "Ether Stone", "byg:block/ether_stone", "byg:ether_stone", "nether")
 add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "nether")
 
 add_strata("flavolite", "Flavolite", "betterendforge:block/flavolite", "betterendforge:flavolite", "end")
 add_strata("sulphuric_rock", "Sulphuric Rock", "betterendforge:block/sulphuric_rock", "betterendforge:sulphuric_rock", "end")
 add_strata("violecite", "Violecite", "betterendforge:block/violecite", "betterendforge:violecite", "end")
+add_strata("ether_stone", "Ether Stone", "byg:block/ether_stone", "byg:ether_stone", "end")
+add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "end")
 
 add_strata("raw_marble", "Marble", "astralsorcery:block/marble_raw", "astralsorcery:marble_raw", "overworld", disabled=True)
 
@@ -174,6 +175,7 @@ add_strata("red_rock", "Red Rock", "byg:block/red_rock", "byg:red_rock", "overwo
 add_strata("travertine", "Travertine", "byg:block/travertine", "byg:travertine", "overworld", is_custom=True)
 add_strata("soapstone", "Soapstone", "byg:block/soapstone", "byg:soapstone", "overworld", is_custom=True)
 add_strata("q_limestone", "Limestone", "quark:block/limestone", "quark:limestone", "overworld", is_custom=True)
+add_strata("shale", "Shale", "darkerdepths:block/shale", "darkerdepths:shale", "overworld", is_custom=True)
 
 add_strata("quartzite", "Quartzite", "byg:block/quartzite_sand", "byg:quartzite_sand", "nether", is_custom=True, material="sand", harvest_tool="shovel")
 add_strata("scoria_stone", "Scoria Stone", "byg:block/scoria_stone", "byg:scoria_stone", "nether", is_custom=True),
@@ -189,9 +191,13 @@ for ore in ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"]:
     add_ore_override(ore, "deepslate", f"cavesandcliffs:deepslate_{ore}_ore")
 add_ore_override("copper", "stone", "cavesandcliffs:copper_ore")
 add_ore_override("copper", "deepslate", "cavesandcliffs:deepslate_copper_ore")
+add_ore_override("quartz", "netherrack", "minecraft:nether_quartz_ore")
+add_ore_override("quartz", "blue_netherrack", "byg:blue_nether_quartz_ore")
 
 # Unneeded ores
 add_unneeded("quartz", "quartzite")
+add_unneeded("coal", "brimstone") # Lignite
+add_unneeded("coal", "ether_stone") # Anthracite
 
 ####################
 # Worldgen configs #
@@ -353,8 +359,6 @@ def make_worldgen(datapack):
     accum = ""
     for ore in all_ores:
         accum += worldgen_for_ore(ore)
-        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores")
-        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores/{ore.otype}")
     datapack.add_script("add_worldgen_ores", f"""
         onEvent('worldgen.add', event => {{
             var twb = {repr(twilight_forest_biomes)}
@@ -410,6 +414,17 @@ def make_blocks(datapack, moddata):
 def remove_unused(datapack):
     for item in ee_unused:
         datapack.remove_name(item)
+    for ore in all_ores:
+        if not ore_stratas[ore.strata].primary:
+            datapack.remove_name(ore.ore_block)
+
+def make_tags(datapack):
+    for ore in all_ores:
+        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores")
+        datapack.tags.add_both_tag(ore.ore_block, f"forge:ores/{ore.otype}")
+        datapack.tags.add_both_tag(ore.ore_block, "constellation:generated_ores")
+    for ore in ee_unused:
+        datapack.tags.add_both_tag(ore.ore_block, "constellation:unused/ores")
 
 def make_ores(datapack, moddata):
     make_i18n(datapack)

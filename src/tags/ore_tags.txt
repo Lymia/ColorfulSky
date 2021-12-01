@@ -1,17 +1,14 @@
 $flags ITEM BLOCK
 
 #forge:ores
-- stalwart_dungeons:tungsten_ore
-- stalwart_dungeons:chorundum_ore
+- #forge:ores/chorundum
+- #forge:ores/dragonstone
+- #forge:ores/elementium
+- #forge:ores/starmetal
+- #forge:ores/tungsten
 
 #forge:ores/chorundum
 - stalwart_dungeons:chorundum_ore
-
-#forge:ores/coal
-- cavesandcliffs:deepslate_coal_ore
-- minecraft:coal_ore
-- darkerdepths:aridrock_coal_ore
-- darkerdepths:limestone_coal_ore
 
 #forge:ores/dragonstone
 - mythicbotany:dragonstone_ore
@@ -19,43 +16,29 @@ $flags ITEM BLOCK
 #forge:ores/elementium
 - mythicbotany:elementium_ore
 
-#forge:ores/gold
-- cavesandcliffs:deepslate_gold_ore
-- #minecraft:gold_ores
-- darkerdepths:aridrock_gold_ore
-- darkerdepths:limestone_gold_ore
-
-#forge:ores/iron
-- cavesandcliffs:deepslate_iron_ore
-- minecraft:iron_ore
-- darkerdepths:aridrock_iron_ore
-- darkerdepths:limestone_iron_ore
-
-#forge:ores/lapis
-- cavesandcliffs:deepslate_lapis_ore
-- minecraft:lapis_ore
-- darkerdepths:aridrock_lapis_ore
-- darkerdepths:limestone_lapis_ore
-
-#forge:ores/moonstone
-- silentgems:moonstone_ore
-
-#forge:ores/pyrope
-- silentgems:pyrope_ore
-
-#forge:ores/redstone
-- cavesandcliffs:deepslate_redstone_ore
-- minecraft:redstone_ore
-- byg:cryptic_redstone_ore
-- darkerdepths:aridrock_redstone_ore
-- darkerdepths:limestone_redstone_ore
-
-#forge:ores/ruby
-- thermal:ruby_ore
-- silentgems:ruby_ore
-
 #forge:ores/starmetal
 - astralsorcery:starmetal_ore
 
 #forge:ores/tungsten
 - stalwart_dungeons:tungsten_ore
+
+$flags ITEM
+
+#forge:dusts
+- #forge:dusts/starmetal
+- #forge:gems/chorundum
+- #forge:ingots/starmetal
+- #forge:ingots/tungsten
+
+#forge:dusts/starmetal
+- silentgear:starmetal_dust
+- astralsorcery:stardust
+
+#forge:gems/chorundum
+- stalwart_dungeons:chorundum
+
+#forge:ingots/starmetal
+- astralsorcery:starmetal_ingot
+
+#forge:ingots/tungsten
+- stalwart_dungeons:tungsten_ingot

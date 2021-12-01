@@ -1,0 +1,901 @@
+$flags ITEM
+
+// From src/dump_tags.py
+$flags ITEM NO_GENERATE
+
+#mekanism:clumps
+- emendatusenigmatica:aluminum_clump
+- emendatusenigmatica:apatite_clump
+- emendatusenigmatica:arcane_clump
+- emendatusenigmatica:bitumen_clump
+- emendatusenigmatica:certus_quartz_clump
+- emendatusenigmatica:charged_certus_quartz_clump
+- emendatusenigmatica:cinnabar_clump
+- emendatusenigmatica:cloggrum_clump
+- emendatusenigmatica:coal_clump
+- emendatusenigmatica:cobalt_clump
+- emendatusenigmatica:diamond_clump
+- emendatusenigmatica:dimensional_clump
+- emendatusenigmatica:emerald_clump
+- emendatusenigmatica:fluorite_clump
+- emendatusenigmatica:froststeel_clump
+- emendatusenigmatica:iesnium_clump
+- emendatusenigmatica:iridium_clump
+- emendatusenigmatica:lapis_clump
+- emendatusenigmatica:nebu_clump
+- emendatusenigmatica:nickel_clump
+- emendatusenigmatica:peridot_clump
+- emendatusenigmatica:potassium_nitrate_clump
+- emendatusenigmatica:quartz_clump
+- emendatusenigmatica:redstone_clump
+- emendatusenigmatica:regalium_clump
+- emendatusenigmatica:ruby_clump
+- emendatusenigmatica:sapphire_clump
+- emendatusenigmatica:silver_clump
+- emendatusenigmatica:sulfur_clump
+- emendatusenigmatica:thallasium_clump
+- emendatusenigmatica:utherium_clump
+- emendatusenigmatica:zinc_clump
+- mekanism:clump_copper
+- mekanism:clump_gold
+- mekanism:clump_iron
+- mekanism:clump_lead
+- mekanism:clump_osmium
+- mekanism:clump_tin
+- mekanism:clump_uranium
+#mekanism:clumps/aluminum
+- emendatusenigmatica:aluminum_clump
+#mekanism:clumps/apatite
+- emendatusenigmatica:apatite_clump
+#mekanism:clumps/arcane
+- emendatusenigmatica:arcane_clump
+#mekanism:clumps/azure_silver
+#mekanism:clumps/bitumen
+- emendatusenigmatica:bitumen_clump
+#mekanism:clumps/certus_quartz
+- emendatusenigmatica:certus_quartz_clump
+#mekanism:clumps/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_clump
+#mekanism:clumps/cinnabar
+- emendatusenigmatica:cinnabar_clump
+#mekanism:clumps/cloggrum
+- emendatusenigmatica:cloggrum_clump
+#mekanism:clumps/coal
+- emendatusenigmatica:coal_clump
+#mekanism:clumps/cobalt
+- emendatusenigmatica:cobalt_clump
+#mekanism:clumps/copper
+- mekanism:clump_copper
+#mekanism:clumps/crimson_iron
+#mekanism:clumps/diamond
+- emendatusenigmatica:diamond_clump
+#mekanism:clumps/dimensional
+- emendatusenigmatica:dimensional_clump
+#mekanism:clumps/draconium
+#mekanism:clumps/elementium
+#mekanism:clumps/emerald
+- emendatusenigmatica:emerald_clump
+#mekanism:clumps/fluorite
+- emendatusenigmatica:fluorite_clump
+#mekanism:clumps/froststeel
+- emendatusenigmatica:froststeel_clump
+#mekanism:clumps/gold
+- mekanism:clump_gold
+#mekanism:clumps/iesnium
+- emendatusenigmatica:iesnium_clump
+#mekanism:clumps/iridium
+- emendatusenigmatica:iridium_clump
+#mekanism:clumps/iron
+- mekanism:clump_iron
+#mekanism:clumps/ironwood
+#mekanism:clumps/knightmetal
+#mekanism:clumps/lapis
+- emendatusenigmatica:lapis_clump
+#mekanism:clumps/lead
+- mekanism:clump_lead
+#mekanism:clumps/nebu
+- emendatusenigmatica:nebu_clump
+#mekanism:clumps/nickel
+- emendatusenigmatica:nickel_clump
+#mekanism:clumps/osmium
+- mekanism:clump_osmium
+#mekanism:clumps/peridot
+- emendatusenigmatica:peridot_clump
+#mekanism:clumps/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_clump
+#mekanism:clumps/quartz
+- emendatusenigmatica:quartz_clump
+#mekanism:clumps/redstone
+- emendatusenigmatica:redstone_clump
+#mekanism:clumps/regalium
+- emendatusenigmatica:regalium_clump
+#mekanism:clumps/ruby
+- emendatusenigmatica:ruby_clump
+#mekanism:clumps/sapphire
+- emendatusenigmatica:sapphire_clump
+#mekanism:clumps/silver
+- emendatusenigmatica:silver_clump
+#mekanism:clumps/starmetal
+#mekanism:clumps/sulfur
+- emendatusenigmatica:sulfur_clump
+#mekanism:clumps/thallasium
+- emendatusenigmatica:thallasium_clump
+#mekanism:clumps/tin
+- mekanism:clump_tin
+#mekanism:clumps/tungsten
+#mekanism:clumps/uranium
+- mekanism:clump_uranium
+#mekanism:clumps/utherium
+- emendatusenigmatica:utherium_clump
+#mekanism:clumps/zinc
+- emendatusenigmatica:zinc_clump
+
+#mekanism:crystals
+- emendatusenigmatica:aluminum_crystal
+- emendatusenigmatica:apatite_crystal
+- emendatusenigmatica:arcane_crystal
+- emendatusenigmatica:bitumen_crystal
+- emendatusenigmatica:certus_quartz_crystal
+- emendatusenigmatica:charged_certus_quartz_crystal
+- emendatusenigmatica:cinnabar_crystal
+- emendatusenigmatica:cloggrum_crystal
+- emendatusenigmatica:coal_crystal
+- emendatusenigmatica:cobalt_crystal
+- emendatusenigmatica:diamond_crystal
+- emendatusenigmatica:dimensional_crystal
+- emendatusenigmatica:emerald_crystal
+- emendatusenigmatica:fluorite_crystal
+- emendatusenigmatica:froststeel_crystal
+- emendatusenigmatica:iesnium_crystal
+- emendatusenigmatica:iridium_crystal
+- emendatusenigmatica:lapis_crystal
+- emendatusenigmatica:nebu_crystal
+- emendatusenigmatica:nickel_crystal
+- emendatusenigmatica:peridot_crystal
+- emendatusenigmatica:potassium_nitrate_crystal
+- emendatusenigmatica:quartz_crystal
+- emendatusenigmatica:redstone_crystal
+- emendatusenigmatica:regalium_crystal
+- emendatusenigmatica:ruby_crystal
+- emendatusenigmatica:sapphire_crystal
+- emendatusenigmatica:silver_crystal
+- emendatusenigmatica:sulfur_crystal
+- emendatusenigmatica:thallasium_crystal
+- emendatusenigmatica:utherium_crystal
+- emendatusenigmatica:zinc_crystal
+- mekanism:crystal_copper
+- mekanism:crystal_gold
+- mekanism:crystal_iron
+- mekanism:crystal_lead
+- mekanism:crystal_osmium
+- mekanism:crystal_tin
+- mekanism:crystal_uranium
+#mekanism:crystals/aluminum
+- emendatusenigmatica:aluminum_crystal
+#mekanism:crystals/apatite
+- emendatusenigmatica:apatite_crystal
+#mekanism:crystals/arcane
+- emendatusenigmatica:arcane_crystal
+#mekanism:crystals/azure_silver
+#mekanism:crystals/bitumen
+- emendatusenigmatica:bitumen_crystal
+#mekanism:crystals/certus_quartz
+- emendatusenigmatica:certus_quartz_crystal
+#mekanism:crystals/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_crystal
+#mekanism:crystals/cinnabar
+- emendatusenigmatica:cinnabar_crystal
+#mekanism:crystals/cloggrum
+- emendatusenigmatica:cloggrum_crystal
+#mekanism:crystals/coal
+- emendatusenigmatica:coal_crystal
+#mekanism:crystals/cobalt
+- emendatusenigmatica:cobalt_crystal
+#mekanism:crystals/copper
+- mekanism:crystal_copper
+#mekanism:crystals/crimson_iron
+#mekanism:crystals/diamond
+- emendatusenigmatica:diamond_crystal
+#mekanism:crystals/dimensional
+- emendatusenigmatica:dimensional_crystal
+#mekanism:crystals/draconium
+#mekanism:crystals/elementium
+#mekanism:crystals/emerald
+- emendatusenigmatica:emerald_crystal
+#mekanism:crystals/fluorite
+- emendatusenigmatica:fluorite_crystal
+#mekanism:crystals/froststeel
+- emendatusenigmatica:froststeel_crystal
+#mekanism:crystals/gold
+- mekanism:crystal_gold
+#mekanism:crystals/iesnium
+- emendatusenigmatica:iesnium_crystal
+#mekanism:crystals/iridium
+- emendatusenigmatica:iridium_crystal
+#mekanism:crystals/iron
+- mekanism:crystal_iron
+#mekanism:crystals/ironwood
+#mekanism:crystals/knightmetal
+#mekanism:crystals/lapis
+- emendatusenigmatica:lapis_crystal
+#mekanism:crystals/lead
+- mekanism:crystal_lead
+#mekanism:crystals/nebu
+- emendatusenigmatica:nebu_crystal
+#mekanism:crystals/nickel
+- emendatusenigmatica:nickel_crystal
+#mekanism:crystals/osmium
+- mekanism:crystal_osmium
+#mekanism:crystals/peridot
+- emendatusenigmatica:peridot_crystal
+#mekanism:crystals/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_crystal
+#mekanism:crystals/quartz
+- emendatusenigmatica:quartz_crystal
+#mekanism:crystals/redstone
+- emendatusenigmatica:redstone_crystal
+#mekanism:crystals/regalium
+- emendatusenigmatica:regalium_crystal
+#mekanism:crystals/ruby
+- emendatusenigmatica:ruby_crystal
+#mekanism:crystals/sapphire
+- emendatusenigmatica:sapphire_crystal
+#mekanism:crystals/silver
+- emendatusenigmatica:silver_crystal
+#mekanism:crystals/starmetal
+#mekanism:crystals/sulfur
+- emendatusenigmatica:sulfur_crystal
+#mekanism:crystals/thallasium
+- emendatusenigmatica:thallasium_crystal
+#mekanism:crystals/tin
+- mekanism:crystal_tin
+#mekanism:crystals/tungsten
+#mekanism:crystals/uranium
+- mekanism:crystal_uranium
+#mekanism:crystals/utherium
+- emendatusenigmatica:utherium_crystal
+#mekanism:crystals/zinc
+- emendatusenigmatica:zinc_crystal
+
+#mekanism:dirty_dusts
+- emendatusenigmatica:aluminum_dirty_dust
+- emendatusenigmatica:apatite_dirty_dust
+- emendatusenigmatica:arcane_dirty_dust
+- emendatusenigmatica:bitumen_dirty_dust
+- emendatusenigmatica:certus_quartz_dirty_dust
+- emendatusenigmatica:charged_certus_quartz_dirty_dust
+- emendatusenigmatica:cinnabar_dirty_dust
+- emendatusenigmatica:cloggrum_dirty_dust
+- emendatusenigmatica:coal_dirty_dust
+- emendatusenigmatica:cobalt_dirty_dust
+- emendatusenigmatica:diamond_dirty_dust
+- emendatusenigmatica:dimensional_dirty_dust
+- emendatusenigmatica:emerald_dirty_dust
+- emendatusenigmatica:fluorite_dirty_dust
+- emendatusenigmatica:froststeel_dirty_dust
+- emendatusenigmatica:iesnium_dirty_dust
+- emendatusenigmatica:iridium_dirty_dust
+- emendatusenigmatica:lapis_dirty_dust
+- emendatusenigmatica:nebu_dirty_dust
+- emendatusenigmatica:nickel_dirty_dust
+- emendatusenigmatica:peridot_dirty_dust
+- emendatusenigmatica:potassium_nitrate_dirty_dust
+- emendatusenigmatica:quartz_dirty_dust
+- emendatusenigmatica:redstone_dirty_dust
+- emendatusenigmatica:regalium_dirty_dust
+- emendatusenigmatica:ruby_dirty_dust
+- emendatusenigmatica:sapphire_dirty_dust
+- emendatusenigmatica:silver_dirty_dust
+- emendatusenigmatica:sulfur_dirty_dust
+- emendatusenigmatica:thallasium_dirty_dust
+- emendatusenigmatica:utherium_dirty_dust
+- emendatusenigmatica:zinc_dirty_dust
+- mekanism:dirty_dust_copper
+- mekanism:dirty_dust_gold
+- mekanism:dirty_dust_iron
+- mekanism:dirty_dust_lead
+- mekanism:dirty_dust_osmium
+- mekanism:dirty_dust_tin
+- mekanism:dirty_dust_uranium
+#mekanism:dirty_dusts/aluminum
+- emendatusenigmatica:aluminum_dirty_dust
+#mekanism:dirty_dusts/apatite
+- emendatusenigmatica:apatite_dirty_dust
+#mekanism:dirty_dusts/arcane
+- emendatusenigmatica:arcane_dirty_dust
+#mekanism:dirty_dusts/azure_silver
+#mekanism:dirty_dusts/bitumen
+- emendatusenigmatica:bitumen_dirty_dust
+#mekanism:dirty_dusts/certus_quartz
+- emendatusenigmatica:certus_quartz_dirty_dust
+#mekanism:dirty_dusts/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_dirty_dust
+#mekanism:dirty_dusts/cinnabar
+- emendatusenigmatica:cinnabar_dirty_dust
+#mekanism:dirty_dusts/cloggrum
+- emendatusenigmatica:cloggrum_dirty_dust
+#mekanism:dirty_dusts/coal
+- emendatusenigmatica:coal_dirty_dust
+#mekanism:dirty_dusts/cobalt
+- emendatusenigmatica:cobalt_dirty_dust
+#mekanism:dirty_dusts/copper
+- mekanism:dirty_dust_copper
+#mekanism:dirty_dusts/crimson_iron
+#mekanism:dirty_dusts/diamond
+- emendatusenigmatica:diamond_dirty_dust
+#mekanism:dirty_dusts/dimensional
+- emendatusenigmatica:dimensional_dirty_dust
+#mekanism:dirty_dusts/draconium
+#mekanism:dirty_dusts/elementium
+#mekanism:dirty_dusts/emerald
+- emendatusenigmatica:emerald_dirty_dust
+#mekanism:dirty_dusts/fluorite
+- emendatusenigmatica:fluorite_dirty_dust
+#mekanism:dirty_dusts/froststeel
+- emendatusenigmatica:froststeel_dirty_dust
+#mekanism:dirty_dusts/gold
+- mekanism:dirty_dust_gold
+#mekanism:dirty_dusts/iesnium
+- emendatusenigmatica:iesnium_dirty_dust
+#mekanism:dirty_dusts/iridium
+- emendatusenigmatica:iridium_dirty_dust
+#mekanism:dirty_dusts/iron
+- mekanism:dirty_dust_iron
+#mekanism:dirty_dusts/ironwood
+#mekanism:dirty_dusts/knightmetal
+#mekanism:dirty_dusts/lapis
+- emendatusenigmatica:lapis_dirty_dust
+#mekanism:dirty_dusts/lead
+- mekanism:dirty_dust_lead
+#mekanism:dirty_dusts/nebu
+- emendatusenigmatica:nebu_dirty_dust
+#mekanism:dirty_dusts/nickel
+- emendatusenigmatica:nickel_dirty_dust
+#mekanism:dirty_dusts/osmium
+- mekanism:dirty_dust_osmium
+#mekanism:dirty_dusts/peridot
+- emendatusenigmatica:peridot_dirty_dust
+#mekanism:dirty_dusts/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_dirty_dust
+#mekanism:dirty_dusts/quartz
+- emendatusenigmatica:quartz_dirty_dust
+#mekanism:dirty_dusts/redstone
+- emendatusenigmatica:redstone_dirty_dust
+#mekanism:dirty_dusts/regalium
+- emendatusenigmatica:regalium_dirty_dust
+#mekanism:dirty_dusts/ruby
+- emendatusenigmatica:ruby_dirty_dust
+#mekanism:dirty_dusts/sapphire
+- emendatusenigmatica:sapphire_dirty_dust
+#mekanism:dirty_dusts/silver
+- emendatusenigmatica:silver_dirty_dust
+#mekanism:dirty_dusts/starmetal
+#mekanism:dirty_dusts/sulfur
+- emendatusenigmatica:sulfur_dirty_dust
+#mekanism:dirty_dusts/thallasium
+- emendatusenigmatica:thallasium_dirty_dust
+#mekanism:dirty_dusts/tin
+- mekanism:dirty_dust_tin
+#mekanism:dirty_dusts/tungsten
+#mekanism:dirty_dusts/uranium
+- mekanism:dirty_dust_uranium
+#mekanism:dirty_dusts/utherium
+- emendatusenigmatica:utherium_dirty_dust
+#mekanism:dirty_dusts/zinc
+- emendatusenigmatica:zinc_dirty_dust
+
+#mekanism:shards
+- emendatusenigmatica:aluminum_shard
+- emendatusenigmatica:apatite_shard
+- emendatusenigmatica:arcane_shard
+- emendatusenigmatica:bitumen_shard
+- emendatusenigmatica:certus_quartz_shard
+- emendatusenigmatica:charged_certus_quartz_shard
+- emendatusenigmatica:cinnabar_shard
+- emendatusenigmatica:cloggrum_shard
+- emendatusenigmatica:coal_shard
+- emendatusenigmatica:cobalt_shard
+- emendatusenigmatica:diamond_shard
+- emendatusenigmatica:dimensional_shard
+- emendatusenigmatica:emerald_shard
+- emendatusenigmatica:fluorite_shard
+- emendatusenigmatica:froststeel_shard
+- emendatusenigmatica:iesnium_shard
+- emendatusenigmatica:iridium_shard
+- emendatusenigmatica:lapis_shard
+- emendatusenigmatica:nebu_shard
+- emendatusenigmatica:nickel_shard
+- emendatusenigmatica:peridot_shard
+- emendatusenigmatica:potassium_nitrate_shard
+- emendatusenigmatica:quartz_shard
+- emendatusenigmatica:redstone_shard
+- emendatusenigmatica:regalium_shard
+- emendatusenigmatica:ruby_shard
+- emendatusenigmatica:sapphire_shard
+- emendatusenigmatica:silver_shard
+- emendatusenigmatica:sulfur_shard
+- emendatusenigmatica:thallasium_shard
+- emendatusenigmatica:utherium_shard
+- emendatusenigmatica:zinc_shard
+- mekanism:shard_copper
+- mekanism:shard_gold
+- mekanism:shard_iron
+- mekanism:shard_lead
+- mekanism:shard_osmium
+- mekanism:shard_tin
+- mekanism:shard_uranium
+#mekanism:shards/aluminum
+- emendatusenigmatica:aluminum_shard
+#mekanism:shards/apatite
+- emendatusenigmatica:apatite_shard
+#mekanism:shards/arcane
+- emendatusenigmatica:arcane_shard
+#mekanism:shards/azure_silver
+#mekanism:shards/bitumen
+- emendatusenigmatica:bitumen_shard
+#mekanism:shards/certus_quartz
+- emendatusenigmatica:certus_quartz_shard
+#mekanism:shards/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_shard
+#mekanism:shards/cinnabar
+- emendatusenigmatica:cinnabar_shard
+#mekanism:shards/cloggrum
+- emendatusenigmatica:cloggrum_shard
+#mekanism:shards/coal
+- emendatusenigmatica:coal_shard
+#mekanism:shards/cobalt
+- emendatusenigmatica:cobalt_shard
+#mekanism:shards/copper
+- mekanism:shard_copper
+#mekanism:shards/crimson_iron
+#mekanism:shards/diamond
+- emendatusenigmatica:diamond_shard
+#mekanism:shards/dimensional
+- emendatusenigmatica:dimensional_shard
+#mekanism:shards/draconium
+#mekanism:shards/elementium
+#mekanism:shards/emerald
+- emendatusenigmatica:emerald_shard
+#mekanism:shards/fluorite
+- emendatusenigmatica:fluorite_shard
+#mekanism:shards/froststeel
+- emendatusenigmatica:froststeel_shard
+#mekanism:shards/gold
+- mekanism:shard_gold
+#mekanism:shards/iesnium
+- emendatusenigmatica:iesnium_shard
+#mekanism:shards/iridium
+- emendatusenigmatica:iridium_shard
+#mekanism:shards/iron
+- mekanism:shard_iron
+#mekanism:shards/ironwood
+#mekanism:shards/knightmetal
+#mekanism:shards/lapis
+- emendatusenigmatica:lapis_shard
+#mekanism:shards/lead
+- mekanism:shard_lead
+#mekanism:shards/nebu
+- emendatusenigmatica:nebu_shard
+#mekanism:shards/nickel
+- emendatusenigmatica:nickel_shard
+#mekanism:shards/osmium
+- mekanism:shard_osmium
+#mekanism:shards/peridot
+- emendatusenigmatica:peridot_shard
+#mekanism:shards/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_shard
+#mekanism:shards/quartz
+- emendatusenigmatica:quartz_shard
+#mekanism:shards/redstone
+- emendatusenigmatica:redstone_shard
+#mekanism:shards/regalium
+- emendatusenigmatica:regalium_shard
+#mekanism:shards/ruby
+- emendatusenigmatica:ruby_shard
+#mekanism:shards/sapphire
+- emendatusenigmatica:sapphire_shard
+#mekanism:shards/silver
+- emendatusenigmatica:silver_shard
+#mekanism:shards/starmetal
+#mekanism:shards/sulfur
+- emendatusenigmatica:sulfur_shard
+#mekanism:shards/thallasium
+- emendatusenigmatica:thallasium_shard
+#mekanism:shards/tin
+- mekanism:shard_tin
+#mekanism:shards/tungsten
+#mekanism:shards/uranium
+- mekanism:shard_uranium
+#mekanism:shards/utherium
+- emendatusenigmatica:utherium_shard
+#mekanism:shards/zinc
+- emendatusenigmatica:zinc_shard
+
+#create:crushed_ores
+- create:crushed_aluminum_ore
+- create:crushed_brass
+- create:crushed_copper_ore
+- create:crushed_gold_ore
+- create:crushed_iron_ore
+- create:crushed_lead_ore
+- create:crushed_nickel_ore
+- create:crushed_osmium_ore
+- create:crushed_platinum_ore
+- create:crushed_quicksilver_ore
+- create:crushed_silver_ore
+- create:crushed_tin_ore
+- create:crushed_uranium_ore
+- create:crushed_zinc_ore
+- emendatusenigmatica:ancient_debris_crushed
+- emendatusenigmatica:apatite_crushed
+- emendatusenigmatica:arcane_crushed
+- emendatusenigmatica:bitumen_crushed
+- emendatusenigmatica:bronze_crushed
+- emendatusenigmatica:certus_quartz_crushed
+- emendatusenigmatica:charged_certus_quartz_crushed
+- emendatusenigmatica:cinnabar_crushed
+- emendatusenigmatica:cloggrum_crushed
+- emendatusenigmatica:coal_crushed
+- emendatusenigmatica:cobalt_crushed
+- emendatusenigmatica:constantan_crushed
+- emendatusenigmatica:diamond_crushed
+- emendatusenigmatica:dimensional_crushed
+- emendatusenigmatica:electrum_crushed
+- emendatusenigmatica:emerald_crushed
+- emendatusenigmatica:enderium_crushed
+- emendatusenigmatica:fluorite_crushed
+- emendatusenigmatica:froststeel_crushed
+- emendatusenigmatica:iesnium_crushed
+- emendatusenigmatica:invar_crushed
+- emendatusenigmatica:iridium_crushed
+- emendatusenigmatica:lapis_crushed
+- emendatusenigmatica:lumium_crushed
+- emendatusenigmatica:nebu_crushed
+- emendatusenigmatica:peridot_crushed
+- emendatusenigmatica:potassium_nitrate_crushed
+- emendatusenigmatica:quartz_crushed
+- emendatusenigmatica:redstone_crushed
+- emendatusenigmatica:regalium_crushed
+- emendatusenigmatica:ruby_crushed
+- emendatusenigmatica:sapphire_crushed
+- emendatusenigmatica:signalum_crushed
+- emendatusenigmatica:steel_crushed
+- emendatusenigmatica:sulfur_crushed
+- emendatusenigmatica:thallasium_crushed
+- emendatusenigmatica:utherium_crushed
+#create:crushed_ores/ancient_debris
+- emendatusenigmatica:ancient_debris_crushed
+#create:crushed_ores/apatite
+- emendatusenigmatica:apatite_crushed
+#create:crushed_ores/arcane
+- emendatusenigmatica:arcane_crushed
+#create:crushed_ores/azure_silver
+#create:crushed_ores/bitumen
+- emendatusenigmatica:bitumen_crushed
+#create:crushed_ores/bronze
+- emendatusenigmatica:bronze_crushed
+#create:crushed_ores/certus_quartz
+- emendatusenigmatica:certus_quartz_crushed
+#create:crushed_ores/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_crushed
+#create:crushed_ores/cinnabar
+- emendatusenigmatica:cinnabar_crushed
+#create:crushed_ores/cloggrum
+- emendatusenigmatica:cloggrum_crushed
+#create:crushed_ores/coal
+- emendatusenigmatica:coal_crushed
+#create:crushed_ores/cobalt
+- emendatusenigmatica:cobalt_crushed
+#create:crushed_ores/constantan
+- emendatusenigmatica:constantan_crushed
+#create:crushed_ores/crimson_iron
+#create:crushed_ores/diamond
+- emendatusenigmatica:diamond_crushed
+#create:crushed_ores/dimensional
+- emendatusenigmatica:dimensional_crushed
+#create:crushed_ores/draconium
+#create:crushed_ores/electrum
+- emendatusenigmatica:electrum_crushed
+#create:crushed_ores/elementium
+#create:crushed_ores/emerald
+- emendatusenigmatica:emerald_crushed
+#create:crushed_ores/enderium
+- emendatusenigmatica:enderium_crushed
+#create:crushed_ores/fluorite
+- emendatusenigmatica:fluorite_crushed
+#create:crushed_ores/froststeel
+- emendatusenigmatica:froststeel_crushed
+#create:crushed_ores/iesnium
+- emendatusenigmatica:iesnium_crushed
+#create:crushed_ores/invar
+- emendatusenigmatica:invar_crushed
+#create:crushed_ores/iridium
+- emendatusenigmatica:iridium_crushed
+#create:crushed_ores/ironwood
+#create:crushed_ores/knightmetal
+#create:crushed_ores/lapis
+- emendatusenigmatica:lapis_crushed
+#create:crushed_ores/lumium
+- emendatusenigmatica:lumium_crushed
+#create:crushed_ores/nebu
+- emendatusenigmatica:nebu_crushed
+#create:crushed_ores/peridot
+- emendatusenigmatica:peridot_crushed
+#create:crushed_ores/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_crushed
+#create:crushed_ores/quartz
+- emendatusenigmatica:quartz_crushed
+#create:crushed_ores/redstone
+- emendatusenigmatica:redstone_crushed
+#create:crushed_ores/regalium
+- emendatusenigmatica:regalium_crushed
+#create:crushed_ores/ruby
+- emendatusenigmatica:ruby_crushed
+#create:crushed_ores/sapphire
+- emendatusenigmatica:sapphire_crushed
+#create:crushed_ores/signalum
+- emendatusenigmatica:signalum_crushed
+#create:crushed_ores/starmetal
+#create:crushed_ores/steel
+- emendatusenigmatica:steel_crushed
+#create:crushed_ores/sulfur
+- emendatusenigmatica:sulfur_crushed
+#create:crushed_ores/thallasium
+- emendatusenigmatica:thallasium_crushed
+#create:crushed_ores/tungsten
+#create:crushed_ores/utherium
+- emendatusenigmatica:utherium_crushed
+
+#bloodmagic:fragments
+- emendatusenigmatica:aluminum_fragment
+- emendatusenigmatica:apatite_fragment
+- emendatusenigmatica:arcane_fragment
+- emendatusenigmatica:bitumen_fragment
+- emendatusenigmatica:certus_quartz_fragment
+- emendatusenigmatica:charged_certus_quartz_fragment
+- emendatusenigmatica:cinnabar_fragment
+- emendatusenigmatica:cloggrum_fragment
+- emendatusenigmatica:coal_fragment
+- emendatusenigmatica:cobalt_fragment
+- emendatusenigmatica:copper_fragment
+- emendatusenigmatica:diamond_fragment
+- emendatusenigmatica:dimensional_fragment
+- emendatusenigmatica:emerald_fragment
+- emendatusenigmatica:fluorite_fragment
+- emendatusenigmatica:froststeel_fragment
+- emendatusenigmatica:iesnium_fragment
+- emendatusenigmatica:iridium_fragment
+- emendatusenigmatica:lapis_fragment
+- emendatusenigmatica:lead_fragment
+- emendatusenigmatica:nebu_fragment
+- emendatusenigmatica:nickel_fragment
+- emendatusenigmatica:osmium_fragment
+- emendatusenigmatica:peridot_fragment
+- emendatusenigmatica:potassium_nitrate_fragment
+- emendatusenigmatica:quartz_fragment
+- emendatusenigmatica:redstone_fragment
+- emendatusenigmatica:regalium_fragment
+- emendatusenigmatica:ruby_fragment
+- emendatusenigmatica:sapphire_fragment
+- emendatusenigmatica:silver_fragment
+- emendatusenigmatica:sulfur_fragment
+- emendatusenigmatica:thallasium_fragment
+- emendatusenigmatica:tin_fragment
+- emendatusenigmatica:uranium_fragment
+- emendatusenigmatica:utherium_fragment
+- emendatusenigmatica:zinc_fragment
+#bloodmagic:fragments/aluminum
+- emendatusenigmatica:aluminum_fragment
+#bloodmagic:fragments/apatite
+- emendatusenigmatica:apatite_fragment
+#bloodmagic:fragments/arcane
+- emendatusenigmatica:arcane_fragment
+#bloodmagic:fragments/azure_silver
+#bloodmagic:fragments/bitumen
+- emendatusenigmatica:bitumen_fragment
+#bloodmagic:fragments/certus_quartz
+- emendatusenigmatica:certus_quartz_fragment
+#bloodmagic:fragments/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_fragment
+#bloodmagic:fragments/cinnabar
+- emendatusenigmatica:cinnabar_fragment
+#bloodmagic:fragments/cloggrum
+- emendatusenigmatica:cloggrum_fragment
+#bloodmagic:fragments/coal
+- emendatusenigmatica:coal_fragment
+#bloodmagic:fragments/cobalt
+- emendatusenigmatica:cobalt_fragment
+#bloodmagic:fragments/copper
+- emendatusenigmatica:copper_fragment
+#bloodmagic:fragments/crimson_iron
+#bloodmagic:fragments/diamond
+- emendatusenigmatica:diamond_fragment
+#bloodmagic:fragments/dimensional
+- emendatusenigmatica:dimensional_fragment
+#bloodmagic:fragments/draconium
+#bloodmagic:fragments/elementium
+#bloodmagic:fragments/emerald
+- emendatusenigmatica:emerald_fragment
+#bloodmagic:fragments/fluorite
+- emendatusenigmatica:fluorite_fragment
+#bloodmagic:fragments/froststeel
+- emendatusenigmatica:froststeel_fragment
+#bloodmagic:fragments/gold
+- bloodmagic:goldfragment
+#bloodmagic:fragments/iesnium
+- emendatusenigmatica:iesnium_fragment
+#bloodmagic:fragments/iridium
+- emendatusenigmatica:iridium_fragment
+#bloodmagic:fragments/iron
+- bloodmagic:ironfragment
+#bloodmagic:fragments/ironwood
+#bloodmagic:fragments/knightmetal
+#bloodmagic:fragments/lapis
+- emendatusenigmatica:lapis_fragment
+#bloodmagic:fragments/lead
+- emendatusenigmatica:lead_fragment
+#bloodmagic:fragments/nebu
+- emendatusenigmatica:nebu_fragment
+#bloodmagic:fragments/netherite_scrap
+- bloodmagic:fragment_netherite_scrap
+#bloodmagic:fragments/nickel
+- emendatusenigmatica:nickel_fragment
+#bloodmagic:fragments/osmium
+- emendatusenigmatica:osmium_fragment
+#bloodmagic:fragments/peridot
+- emendatusenigmatica:peridot_fragment
+#bloodmagic:fragments/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_fragment
+#bloodmagic:fragments/quartz
+- emendatusenigmatica:quartz_fragment
+#bloodmagic:fragments/redstone
+- emendatusenigmatica:redstone_fragment
+#bloodmagic:fragments/regalium
+- emendatusenigmatica:regalium_fragment
+#bloodmagic:fragments/ruby
+- emendatusenigmatica:ruby_fragment
+#bloodmagic:fragments/sapphire
+- emendatusenigmatica:sapphire_fragment
+#bloodmagic:fragments/silver
+- emendatusenigmatica:silver_fragment
+#bloodmagic:fragments/starmetal
+#bloodmagic:fragments/sulfur
+- emendatusenigmatica:sulfur_fragment
+#bloodmagic:fragments/thallasium
+- emendatusenigmatica:thallasium_fragment
+#bloodmagic:fragments/tin
+- emendatusenigmatica:tin_fragment
+#bloodmagic:fragments/tungsten
+#bloodmagic:fragments/uranium
+- emendatusenigmatica:uranium_fragment
+#bloodmagic:fragments/utherium
+- emendatusenigmatica:utherium_fragment
+#bloodmagic:fragments/zinc
+- emendatusenigmatica:zinc_fragment
+
+#bloodmagic:gravels
+- emendatusenigmatica:aluminum_gravel
+- emendatusenigmatica:apatite_gravel
+- emendatusenigmatica:arcane_gravel
+- emendatusenigmatica:bitumen_gravel
+- emendatusenigmatica:certus_quartz_gravel
+- emendatusenigmatica:charged_certus_quartz_gravel
+- emendatusenigmatica:cinnabar_gravel
+- emendatusenigmatica:cloggrum_gravel
+- emendatusenigmatica:coal_gravel
+- emendatusenigmatica:cobalt_gravel
+- emendatusenigmatica:copper_gravel
+- emendatusenigmatica:diamond_gravel
+- emendatusenigmatica:dimensional_gravel
+- emendatusenigmatica:emerald_gravel
+- emendatusenigmatica:fluorite_gravel
+- emendatusenigmatica:froststeel_gravel
+- emendatusenigmatica:iesnium_gravel
+- emendatusenigmatica:iridium_gravel
+- emendatusenigmatica:lapis_gravel
+- emendatusenigmatica:lead_gravel
+- emendatusenigmatica:nebu_gravel
+- emendatusenigmatica:nickel_gravel
+- emendatusenigmatica:osmium_gravel
+- emendatusenigmatica:peridot_gravel
+- emendatusenigmatica:potassium_nitrate_gravel
+- emendatusenigmatica:quartz_gravel
+- emendatusenigmatica:redstone_gravel
+- emendatusenigmatica:regalium_gravel
+- emendatusenigmatica:ruby_gravel
+- emendatusenigmatica:sapphire_gravel
+- emendatusenigmatica:silver_gravel
+- emendatusenigmatica:sulfur_gravel
+- emendatusenigmatica:thallasium_gravel
+- emendatusenigmatica:tin_gravel
+- emendatusenigmatica:uranium_gravel
+- emendatusenigmatica:utherium_gravel
+- emendatusenigmatica:zinc_gravel
+#bloodmagic:gravels/aluminum
+- emendatusenigmatica:aluminum_gravel
+#bloodmagic:gravels/apatite
+- emendatusenigmatica:apatite_gravel
+#bloodmagic:gravels/arcane
+- emendatusenigmatica:arcane_gravel
+#bloodmagic:gravels/azure_silver
+#bloodmagic:gravels/bitumen
+- emendatusenigmatica:bitumen_gravel
+#bloodmagic:gravels/certus_quartz
+- emendatusenigmatica:certus_quartz_gravel
+#bloodmagic:gravels/charged_certus_quartz
+- emendatusenigmatica:charged_certus_quartz_gravel
+#bloodmagic:gravels/cinnabar
+- emendatusenigmatica:cinnabar_gravel
+#bloodmagic:gravels/cloggrum
+- emendatusenigmatica:cloggrum_gravel
+#bloodmagic:gravels/coal
+- emendatusenigmatica:coal_gravel
+#bloodmagic:gravels/cobalt
+- emendatusenigmatica:cobalt_gravel
+#bloodmagic:gravels/copper
+- emendatusenigmatica:copper_gravel
+#bloodmagic:gravels/crimson_iron
+#bloodmagic:gravels/diamond
+- emendatusenigmatica:diamond_gravel
+#bloodmagic:gravels/dimensional
+- emendatusenigmatica:dimensional_gravel
+#bloodmagic:gravels/draconium
+#bloodmagic:gravels/elementium
+#bloodmagic:gravels/emerald
+- emendatusenigmatica:emerald_gravel
+#bloodmagic:gravels/fluorite
+- emendatusenigmatica:fluorite_gravel
+#bloodmagic:gravels/froststeel
+- emendatusenigmatica:froststeel_gravel
+#bloodmagic:gravels/gold
+- bloodmagic:goldgravel
+#bloodmagic:gravels/iesnium
+- emendatusenigmatica:iesnium_gravel
+#bloodmagic:gravels/iridium
+- emendatusenigmatica:iridium_gravel
+#bloodmagic:gravels/iron
+- bloodmagic:irongravel
+#bloodmagic:gravels/ironwood
+#bloodmagic:gravels/knightmetal
+#bloodmagic:gravels/lapis
+- emendatusenigmatica:lapis_gravel
+#bloodmagic:gravels/lead
+- emendatusenigmatica:lead_gravel
+#bloodmagic:gravels/nebu
+- emendatusenigmatica:nebu_gravel
+#bloodmagic:gravels/netherite_scrap
+- bloodmagic:gravel_netherite_scrap
+#bloodmagic:gravels/nickel
+- emendatusenigmatica:nickel_gravel
+#bloodmagic:gravels/osmium
+- emendatusenigmatica:osmium_gravel
+#bloodmagic:gravels/peridot
+- emendatusenigmatica:peridot_gravel
+#bloodmagic:gravels/potassium_nitrate
+- emendatusenigmatica:potassium_nitrate_gravel
+#bloodmagic:gravels/quartz
+- emendatusenigmatica:quartz_gravel
+#bloodmagic:gravels/redstone
+- emendatusenigmatica:redstone_gravel
+#bloodmagic:gravels/regalium
+- emendatusenigmatica:regalium_gravel
+#bloodmagic:gravels/ruby
+- emendatusenigmatica:ruby_gravel
+#bloodmagic:gravels/sapphire
+- emendatusenigmatica:sapphire_gravel
+#bloodmagic:gravels/silver
+- emendatusenigmatica:silver_gravel
+#bloodmagic:gravels/starmetal
+#bloodmagic:gravels/sulfur
+- emendatusenigmatica:sulfur_gravel
+#bloodmagic:gravels/thallasium
+- emendatusenigmatica:thallasium_gravel
+#bloodmagic:gravels/tin
+- emendatusenigmatica:tin_gravel
+#bloodmagic:gravels/tungsten
+#bloodmagic:gravels/uranium
+- emendatusenigmatica:uranium_gravel
+#bloodmagic:gravels/utherium
+- emendatusenigmatica:utherium_gravel
+#bloodmagic:gravels/zinc
+- emendatusenigmatica:zinc_gravel

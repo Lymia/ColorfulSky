@@ -4,10 +4,10 @@ import os.path
 
 from gen.utils import *
 
-def parse_config(datapack, f):
+def parse_config(datapack, f, strict = True):
+    flag_no_generate = False
     flag_override = False
-    flag_block = False
-    flag_item = False
+    flag_kinds = ["blocks", "items"]
     current_tag = None
     
     with open(f, 'r') as fd:
@@ -17,37 +17,46 @@ def parse_config(datapack, f):
             head = words[0]
             args = words[1:]
             
-            if head.startswith('$'):
+            if head == '$flags':
+                flag_no_generate = False
                 flag_override = False
-                flag_block = False
-                flag_item = False
-                for flag in words:
-                    if flag == "OVERRIDE":
+                flag_kinds.clear()
+                for flag in words[1:]:
+                    if flag == "NO_GENERATE":
+                        flag_no_generate = True
+                    elif flag == "OVERRIDE":
                         flag_override = True
-                    if flag == "BLOCK":
-                        flag_block = True
-                    if flag == "ITEM":
-                        flag_item = True
+                    elif flag == "BLOCK":
+                        flag_kinds.append("blocks")
+                    elif flag == "ITEM":
+                        flag_kinds.append("items")
+                    elif flag == "SLURRY":
+                        flag_kinds.append("slurries")
+                    else:
+                        raise Exception(f"Unknown tag flag: {flag}")
                 continue
             if head.startswith('#'):
                 tag = head[1:]
+                if flag_no_generate:
+                    datapack.tags.mark_no_generate(tag)
                 if flag_override:
                     datapack.tags.mark_override(tag)
+                for kind in flag_kinds:
+                    datapack.tags.get_tag(kind, tag)
                 current_tag = tag
                 continue
             if head == '-':
                 assert(current_tag != None)
-                if flag_block:
-                    datapack.tags.add_block_tag(args[0], current_tag)
-                if flag_item:
-                    datapack.tags.add_item_tag(args[0], current_tag)
+                datapack.tags.add_tag(flag_kinds, args[0], current_tag, generated = not flag_no_generate)
+                continue
+            
+            if not strict:
                 continue
             if head.startswith('//'):
                 continue
             if head.strip() == '':
                 continue
-            
-            raise Exception("Tag config parse failure")
+            raise Exception(f"Tag config parse failure: {line}")
 
 def add_from_json(datapack, tag, is_block, json):
     if "replace" in json and json["replace"]:

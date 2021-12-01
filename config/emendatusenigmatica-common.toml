@@ -22,6 +22,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Coal Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -43,6 +45,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Coal Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -64,6 +68,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Iron Config"]
 
@@ -87,6 +93,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Iron Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -108,6 +116,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Iron Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -129,6 +139,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Gold Config"]
 
@@ -152,6 +164,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Gold Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -173,6 +187,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Gold Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -194,6 +210,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Diamond Config"]
 
@@ -217,6 +235,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Diamond Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -238,6 +258,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Diamond Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -259,6 +281,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Emerald Config"]
 
@@ -282,6 +306,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Emerald Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -303,6 +329,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Emerald Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -324,6 +352,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Lapis Lazuli Config"]
 
@@ -347,6 +377,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Lapis Lazuli Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -368,6 +400,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Lapis Lazuli Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -389,6 +423,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Redstone Config"]
 
@@ -412,6 +448,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Redstone Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -433,6 +471,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Redstone Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -454,6 +494,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Nether Quartz Config"]
 
@@ -477,6 +519,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Nether Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -498,6 +542,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Nether Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -519,6 +565,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Copper Config"]
 
@@ -542,6 +590,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Copper Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -563,6 +613,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Copper Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -584,6 +636,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Aluminum Config"]
 
@@ -607,6 +661,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Aluminum Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -628,6 +684,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Aluminum Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -649,6 +707,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Silver Config"]
 
@@ -672,6 +732,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Silver Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -693,6 +755,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Silver Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -714,6 +778,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Lead Config"]
 
@@ -737,6 +803,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Lead Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -758,6 +826,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Lead Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -779,6 +849,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Nickel Config"]
 
@@ -802,6 +874,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Nickel Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -823,6 +897,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Nickel Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -844,6 +920,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Uranium Config"]
 
@@ -867,6 +945,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Uranium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -888,6 +968,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Uranium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -909,6 +991,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Osmium Config"]
 
@@ -932,6 +1016,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Osmium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -953,6 +1039,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Osmium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -974,6 +1062,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Tin Config"]
 
@@ -997,6 +1087,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Tin Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1018,6 +1110,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Tin Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1039,6 +1133,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Zinc Config"]
 
@@ -1062,6 +1158,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Zinc Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1083,6 +1181,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Zinc Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1104,6 +1204,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Cobalt Config"]
 
@@ -1127,6 +1229,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Cobalt Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1148,6 +1252,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Cobalt Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1169,6 +1275,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Iridium Config"]
 
@@ -1192,6 +1300,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Iridium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1213,6 +1323,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Iridium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1234,6 +1346,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Certus Quartz Config"]
 
@@ -1257,6 +1371,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Certus Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1278,6 +1394,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Certus Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1299,6 +1417,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Charged Certus Quartz Config"]
 
@@ -1322,6 +1442,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Charged Certus Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1343,6 +1465,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Charged Certus Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1364,6 +1488,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Fluorite Config"]
 
@@ -1387,6 +1513,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Fluorite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1408,6 +1536,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Fluorite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1429,6 +1559,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Bitumen Config"]
 
@@ -1452,6 +1584,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Bitumen Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1473,6 +1607,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Bitumen Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1494,6 +1630,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Cinnabar Config"]
 
@@ -1517,6 +1655,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Cinnabar Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1538,6 +1678,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Cinnabar Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1559,6 +1701,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Apatite Config"]
 
@@ -1582,6 +1726,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Apatite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1603,6 +1749,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Apatite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1624,6 +1772,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Sulfur Config"]
 
@@ -1647,6 +1797,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Sulfur Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1668,6 +1820,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Sulfur Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1689,6 +1843,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Potassium Nitrate Config"]
 
@@ -1712,6 +1868,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Potassium Nitrate Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1733,6 +1891,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Potassium Nitrate Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1754,6 +1914,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Arcane Config"]
 
@@ -1777,6 +1939,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Arcane Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1798,6 +1962,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Arcane Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1819,6 +1985,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Dimensional Shard Config"]
 
@@ -1842,6 +2010,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Dimensional Shard Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1863,6 +2033,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Dimensional Shard Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1884,6 +2056,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Ruby Config"]
 
@@ -1907,6 +2081,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Ruby Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1928,6 +2104,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Ruby Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1949,6 +2127,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Sapphire Config"]
 
@@ -1972,6 +2152,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Sapphire Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1993,6 +2175,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Sapphire Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2014,6 +2198,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 ["Peridot Config"]
 
@@ -2037,6 +2223,8 @@
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 
 	["Peridot Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -2058,6 +2246,8 @@
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 
 	["Peridot Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2079,6 +2269,8 @@
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 
 #World Gen - Ore Generation on Strata Stone Type
 ["Stratum Config: minecraft_stone"]

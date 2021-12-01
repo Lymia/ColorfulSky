@@ -4,7 +4,9 @@ import gen.biome_fix
 import gen.data
 import gen.fix_models
 import gen.mod_data
+import gen.ores
 import gen.tags
+import gen.unify
 import glob
 import os
 import os.path
@@ -43,8 +45,10 @@ shutil.unpack_archive(find_pack("DP+Pack"), "../build_config/dp", "zip")
 gen.fix_models.generate_model_fixes("../build_config/dp", moddata.unpack_jar(Mod.DraconicEvolution), pack)
 
 print("- Generating ores and worldgen configuration...")
-import gen.ores
 gen.ores.make_ores(datapack, moddata)
+
+print("- Unifying materials...")
+gen.unify.unify_tags(datapack)
 
 print("- Generating misc data...")
 datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")

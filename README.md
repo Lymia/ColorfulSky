@@ -30,9 +30,9 @@ Colorful Skies is a general purpose modpack.
 ### Worldgen and Environmental Mods
 
 - [BetterEnd Reforked](https://www.curseforge.com/minecraft/mc-mods/betterend-re-forked)
-- [BetterNether Reforged](https://www.curseforge.com/minecraft/mc-mods/betternether-reforged)
 - [Darker Depths](https://www.curseforge.com/minecraft/mc-mods/darker-depths)
 - [Emendatus Enigmatica](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica)
+- [Infernal Expansion](https://www.curseforge.com/minecraft/mc-mods/infernal-expansion)
 - [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
 - [Orcinus's Caves](https://www.curseforge.com/minecraft/mc-mods/orcinuss-caves)
 - [The Endergetic Expansion](https://www.curseforge.com/minecraft/mc-mods/endergetic)
@@ -58,6 +58,7 @@ Colorful Skies is a general purpose modpack.
 - [Silent's Gems](https://www.curseforge.com/minecraft/mc-mods/silents-gems)
 - [Stalwart Dungeons](https://www.curseforge.com/minecraft/mc-mods/stalwart-dungeons)
 - [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
+- [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
 
 ### Building Mods
 
@@ -91,6 +92,7 @@ Colorful Skies is a general purpose modpack.
     - [MythicBotany](https://www.curseforge.com/minecraft/mc-mods/mythicbotany)
 - [Eidolon](https://www.curseforge.com/minecraft/mc-mods/eidolon)
 - [ElementalCraft](https://www.curseforge.com/minecraft/mc-mods/elemental-craft)
+- [Mana and Artifice](https://www.curseforge.com/minecraft/mc-mods/mana-and-artifice)
 - [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)
 - [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte)
 - [Psi](https://www.curseforge.com/minecraft/mc-mods/psi)

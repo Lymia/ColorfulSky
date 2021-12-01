@@ -51,23 +51,26 @@ def group(name):
 def path(name):
     return name.split(":", 1)[1]
 
+def short_tag(tag):
+    if ":" in tag:
+        return tag
+    else:
+        return f"forge:{tag}"
+
 zopflipng = zopfli.ZopfliPNG()
 def compose_textures(moddata, target, base, overlay):
-    print(f"  - Composing texture {base} and {overlay} to {target}")
-    
     base_img = Image.open(moddata.find_texture(base)).convert('RGBA')
     overlay_img = Image.open(moddata.find_texture(overlay)).convert('RGBA')
     target_path = f"../kubejs/assets/{group(target)}/textures/{path(target)}.png"
     os.makedirs(os.path.dirname(target_path), exist_ok = True)
     Image.alpha_composite(base_img, overlay_img).save(target_path)
-    
-    if is_release():
-        pngquant.quant_image(target_path)
-        with open(target_path, "rb") as fd:
-            image_data = zopflipng.optimize(fd.read())
-        with open(target_path, "wb") as fd:
-            fd.write(image_data)
-            
+def compress_texture(target_path):
+    pngquant.quant_image(target_path)
+    with open(target_path, "rb") as fd:
+        image_data = zopflipng.optimize(fd.read())
+    with open(target_path, "wb") as fd:
+        fd.write(image_data)
+
 INTERNAL_FLAG_IS_RELEASE = False
 def is_release():
     return INTERNAL_FLAG_IS_RELEASE

@@ -40,6 +40,7 @@ onEvent('recipes', e => {
         }
     }
     
+    /*
     // Unify vanilla (give or take) ores
     unifyMetal('iron', 'minecraft:iron_ingot', 'thermal:iron_dust', 'minecraft:iron_block', 'minecraft:iron_nugget')
     unifyMetal('gold', 'minecraft:gold_ingot', 'thermal:gold_dust', 'minecraft:gold_block', 'minecraft:gold_nugget')
@@ -62,6 +63,7 @@ onEvent('recipes', e => {
     unifyMetalRecipies('bronze', 'thermal:bronze_ingot', 'thermal:bronze_dust', 'thermal:bronze_block', 'thermal:bronze_nugget')
     unifyMetalRecipies('constantan', 'thermal:constantan_ingot', 'thermal:constantan_dust', 'thermal:constantan_block', 'thermal:constantan_nugget')
     unifyMetalRecipies('electrum', 'thermal:electrum_ingot', 'thermal:electrum_dust', 'thermal:electrum_block', 'thermal:electrum_nugget')
+    */
     
     // TODO: Fix arc furnace recycling producing the wrong ores.
 })

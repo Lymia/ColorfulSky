@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
+# TODO: Compress textures in resource packs
+
 import cursepy
+import glob
 import os
 import os.path
 import json
@@ -20,6 +23,10 @@ print("Creating modpack distribution file...")
 shutil.rmtree("../build_dist", ignore_errors=True)
 os.makedirs("../build_dist")
 os.makedirs("../dist", exist_ok=True)
+
+print("- Removing backup files...")
+for path in glob.glob(f"../config/**.bak"):
+    os.remove(path)
 
 print("- Copying files...")
 shutil.copytree("../config", "../build_dist/config")
@@ -45,13 +52,19 @@ curse = cursepy.CurseClient()
 modlist_str = ""
 for mod in manifest["files"]:
     addon = curse.addon(mod["projectID"])
+    fileId = mod["fileID"]
     print(f"  - {addon.name}")
-    modlist_str += f"- [{addon.name}]({addon.url}) ([Download]({addon.url}/files/{mod["fileID"]}))\n"
+    modlist_str += f"- [{addon.name}]({addon.url}) ([Download]({addon.url}/files/{fileId}))\n"
 
 print("- Rendering markdown...")
 open("../build_dist/modlist.html", "w").write(markdown.markdown(modlist_str))
 open("../build_dist/readme.html", "w").write(markdown.markdown(open("../README.md").read()))
 open("../build_dist/license.html", "w").write(markdown.markdown(open("../LICENSE.md").read()))
+
+print("- Compressing pngs...")
+for path in glob.glob(f"../dist/**.png"):
+    print(f"- Compressing {path}")
+    compress_texture(path)
 
 print("- Zipping distribution files...")
 shutil.make_archive(f"../dist/Colorful Skies - {current_version}", 'zip', "../build_dist")

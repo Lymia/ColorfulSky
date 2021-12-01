@@ -4,7 +4,7 @@
 
 ["This value sets the cavern cave generation size, Big number = Small Cavern Generation"]
 	#Range: 1.0 ~ 10.0
-	" XZ Size Value" = 1.0
+	" XZ Size Value" = 1.2
 
 ["This value sets the cavern cave generation height, Big number = Shorter Height Cavern Generation"]
 	#Range: 1.0 ~ 20.0
@@ -12,7 +12,7 @@
 
 ["This value sets the tunnel cave generation size, Big number = Small Tunnel Cave Generation"]
 	#Range: 1.0 ~ 10.0
-	" XZ Size Value" = 1.2
+	" XZ Size Value" = 1.4
 
 ["This value sets the tunnel cave generation height, Big number = Shorter Height Tunnel Cave Generation"]
 	#Range: 1.0 ~ 20.0
