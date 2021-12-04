@@ -59,6 +59,7 @@ class DatapackModel(object):
     tags = TagConfig()
     removed_names = []
     generated_scripts = {}
+    generated_server_scripts = {}
     generated_client_scripts = {}
     i18n_strings = {}
     textures = {}
@@ -79,6 +80,8 @@ class DatapackModel(object):
         return js_minify_simple(script)
     def add_client_script(self, name, script):
         return self._find_name(self.generated_client_scripts, "", name, self.process_script(name, script))
+    def add_server_script(self, name, script):
+        return self._find_name(self.generated_server_scripts, "", name, self.process_script(name, script))
     def add_script(self, name, script):
         return self._find_name(self.generated_scripts, "", name, self.process_script(name, script))
     
@@ -116,6 +119,9 @@ def generate_datapack_files(datapack, target):
     for name in datapack.generated_scripts:
         with open_mkdir(f"{target}/startup_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_scripts[name])
+    for name in datapack.generated_server_scripts:
+        with open_mkdir(f"{target}/server_scripts/generated_{name}.js") as fd:
+            fd.write(datapack.generated_server_scripts[name])
     for name in datapack.generated_client_scripts:
         with open_mkdir(f"{target}/client_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_client_scripts[name])

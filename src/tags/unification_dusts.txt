@@ -1,16 +1,5 @@
 $flags ITEM
 
-#forge:dusts/arcane_ash
-- #mana-and-artifice:dusts/arcane_ash
-#forge:dusts/arcane_compound
-- #mana-and-artifice:dusts/arcane_compound
-#forge:dusts/bone_ash
-- #mana-and-artifice:dusts/bone_ash
-#forge:dusts/purified_vinteum
-- #mana-and-artifice:dusts/purified_vinteum
-#forge:dusts/vinteum
-- #mana-and-artifice:dusts/vinteum
-
 // From src/dump_tags.py
 $flags ITEM NO_GENERATE
 
@@ -63,11 +52,6 @@ $flags ITEM NO_GENERATE
 - #forge:dusts/tin
 - #forge:dusts/tyrian_steel
 - #forge:dusts/wood
-- #mana-and-artifice:dusts/arcane_ash
-- #mana-and-artifice:dusts/arcane_compound
-- #mana-and-artifice:dusts/bone_ash
-- #mana-and-artifice:dusts/purified_vinteum
-- #mana-and-artifice:dusts/vinteum
 - #silentgems:corrupted_dusts
 - betterendforge:ender_dust
 - create:powdered_obsidian

@@ -1,10 +1,5 @@
 $flags ITEM
 
-#forge:ingots/purified_vinteum
-- #mana-and-artifice:ingots/purified_vinteum
-#forge:ingots/vinteum
-- #mana-and-artifice:ingots/vinteum
-
 // From src/dump_tags.py
 $flags ITEM NO_GENERATE
 
@@ -51,8 +46,6 @@ $flags ITEM NO_GENERATE
 - #forge:ingots/terrasteel
 - #forge:ingots/tin
 - #forge:ingots/tyrian_steel
-- #mana-and-artifice:ingots/purified_vinteum
-- #mana-and-artifice:ingots/vinteum
 - aquaculture:neptunium_ingot
 - betterendforge:aeternium_ingot
 - betterendforge:terminite_ingot
@@ -329,7 +322,6 @@ $flags ITEM NO_GENERATE
 - #forge:gems/turquoise
 - #forge:gems/yellow_diamond
 - #forge:gems/zircon
-- #mana-and-artifice:gems/chimerite
 - ars_nouveau:mana_gem
 - byg:ametrine_gems
 - emendatusenigmatica:apatite_gem

@@ -27,6 +27,10 @@ moddata = gen.mod_data.ModData("../build_config/mods")
 print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
 shutil.copytree("static", "../kubejs")
+shutil.rmtree("../kubejs/common_scripts")
+for file in glob.glob("static/common_scripts/*.js"):
+    shutil.copy(file, "../kubejs/client_scripts")
+    shutil.copy(file, "../kubejs/server_scripts")
 
 print("- Adding static tags...")
 for tag_file in glob.glob('tags/*.txt'):

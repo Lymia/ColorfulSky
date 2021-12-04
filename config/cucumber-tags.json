@@ -11,7 +11,7 @@
   "forge:ingots/invar": "thermal:invar_ingot",
   "forge:ingots/iridium": "libvulpes:ingotiridium",
   "forge:ingots/lead": "thermal:lead_ingot",
-  "forge:ingots/mithril": "null",
+  "forge:ingots/mithril": "ttigraas:mithril",
   "forge:ingots/nickel": "thermal:nickel_ingot",
   "forge:dusts/niter": "thermal:niter_dust",
   "forge:ingots/platinum": "oreclumps:platinum_ingot",

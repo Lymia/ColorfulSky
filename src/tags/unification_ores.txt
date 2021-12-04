@@ -117,7 +117,6 @@ $flags ITEM BLOCK OVERRIDE
 - create:zinc_ore
 - eidolon:lead_ore
 - elementalcraft:crystalore
-
 - iceandfire:amythest_ore
 - iceandfire:copper_ore
 - iceandfire:sapphire_ore
@@ -128,7 +127,6 @@ $flags ITEM BLOCK OVERRIDE
 - immersiveengineering:ore_nickel
 - immersiveengineering:ore_silver
 - immersiveengineering:ore_uranium
-- mana-and-artifice:vinteum_ore
 - minecraft:coal_ore
 - minecraft:diamond_ore
 - minecraft:emerald_ore

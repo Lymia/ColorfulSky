@@ -1,56 +1,6 @@
 // Remove all mysticalagriculture essences that represent non-trival materials.
 // The modpack is designed to require ProjectE for those instead.
 
-let remove_seed_list = [
-    "coal",
-    "rubber",
-    "silicon",
-    "sulfur",
-    "aluminum",
-    "copper",
-    "apatite",
-    "iron",
-    "redstone",
-    "tin",
-    "bronze",
-    "zinc",
-    "brass",
-    "silver",
-    "lead",
-    "manasteel",
-    "aquamarine",
-    "quartz_enriched_iron",
-    "gold",
-    "lapis_lazuli",
-    "steel",
-    "nickel",
-    "constantan",
-    "electrum",
-    "invar",
-    "mithril",
-    "tungsten",
-    "titanium",
-    "uranium",
-    "chrome",
-    "ruby",
-    "sapphire",
-    "signalum",
-    "lumium",
-    "hop_graphite",
-    "elementium",
-    "osmium",
-    "flourite",
-    "refined_glowstone",
-    "refined_obsidian",
-    "diamond",
-    "emerald",
-    "netherite",
-    "platinum",
-    "iridium",
-    "enderium",
-    "terrasteel",
-    "draconium",
-];
 let disable_essence_recipe_list = [
     "astralsorcery/aquamarine",
     "charcoal",
@@ -92,12 +42,6 @@ onEvent('recipes', e => {
     disable_essence_recipe_list.forEach(x => e.remove({id: `mysticalagriculture:essence/${x}`}))
     // Replace essences with ones that are still accessible
     replacements_list.forEach(x => e.replaceInput(`mysticalagriculture:${x[0]}_essence`, `mysticalagriculture:${x[1]}_essence`))
-})
-
-// Hide unwanted essences from JEI.
-events.listen('jei.hide.items', (event) => {
-    remove_seed_list.forEach(x => event.hide(`mysticalagriculture:${x}_seeds`))
-    remove_seed_list.forEach(x => event.hide(`mysticalagriculture:${x}_essence`))
 })
 
 // TODO: Add new recipies for various mods.

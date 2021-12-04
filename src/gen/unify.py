@@ -3,6 +3,7 @@ import toml
 from gen.utils import *
 
 # TODO: Use EE-style graphics for Create/Blood Magic/Mekanism
+# TODO: Unify deepslate
 
 ###############
 # Definitions #
@@ -127,7 +128,7 @@ def unify_tags(datapack):
             accum += f"r.unify_ingot({repr(kind)})\n"
     
     # Generate script
-    datapack.add_script("unify_materials", f"""
+    datapack.add_server_script("unify_materials", f"""
         onEvent('recipes', e => {{
             var r = bind_recipies(e, {repr(preferred)})
             {accum}
