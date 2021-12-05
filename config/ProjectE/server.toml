@@ -5,7 +5,7 @@
 	[server.difficulty]
 		#Adjusting this ratio changes how much EMC is received when burning a item. For example setting this to 0.5 will return half of the EMC cost.
 		#Range: 0.1 ~ 1.0
-		covalenceLoss = 0.5
+		covalenceLoss = 0.2
 		#How rounding occurs when Covalence Loss results in a burn value less than 1 EMC. If true the value will be rounded up to 1. If false the value will be rounded down to 0.
 		covalenceLossRounding = true
 		#Amount of damage Katar 'C' key deals
@@ -40,7 +40,7 @@
 				repair = 20
 				#Delay between Harvest Goddess trying to grow and harvest while in the pedestal.
 				#Range: > -1
-				harvest = 10
+				harvest = 40
 				#Delay between Archangel Smite shooting arrows while in the pedestal.
 				#Range: > -1
 				archangel = 40
@@ -49,19 +49,19 @@
 				volcanite = 20
 				#Delay between Soul Stone healing 0.5 hearts while in the pedestal.
 				#Range: > -1
-				soul = 10
+				soul = 100
 				#Delay between Evertide Amulet trying to start rain while in the pedestal.
 				#Range: > -1
 				evertide = 20
 				#Delay between Body Stone healing 0.5 shanks while in the pedestal.
 				#Range: > -1
-				body = 10
+				body = 100
 				#Delay between Ignition Ring trying to light entities on fire while in the pedestal.
 				#Range: > -1
 				ignition = 40
 				#Delay between Life Stone healing both food and hunger by 0.5 shank/heart while in the pedestal.
 				#Range: > -1
-				life = 5
+				life = 100
 				#Delay between SWRG trying to smite mobs while in the pedestal.
 				#Range: > -1
 				swrg = 70
@@ -70,16 +70,16 @@
 			[server.cooldown.cooldown.player]
 				#Delay between Talisman of Repair trying to repair player items while in a player's inventory.
 				#Range: > -1
-				repair = 20
+				repair = 50
 				#Delay between feed attempts while in a player's inventory. (Body Stone, Life Stone, Gem Helmet)
 				#Range: > -1
-				feed = 20
+				feed = 100
 				#Delay between heal attempts while in a player's inventory. (Soul Stone, Life Stone, Gem Helmet)
 				#Range: > -1
-				heal = 20
+				heal = 100
 				#A cooldown for firing projectiles
 				#Range: > -1
-				projectile = 0
+				projectile = 20
 				#A cooldown for Gem Chestplate explosion
 				#Range: > -1
 				gemChest = 0

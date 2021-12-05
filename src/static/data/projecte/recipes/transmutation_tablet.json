@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OSO",
+    "SDS",
+    "OSO"
+  ],
+  "key": {
+    "S": {
+      "tag": "forge:stone"
+    },
+    "D": {
+      "item": "projecte:dark_matter"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "projecte:transmutation_tablet"
+  }
+}

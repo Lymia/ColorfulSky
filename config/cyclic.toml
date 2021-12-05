@@ -274,13 +274,13 @@
 	#####################################################################################
 	[cyclic.command]
 		#True means only players with OP can use this /cyclic command
-		dev = false
+		dev = true
 		#True means only players with OP can use this /cyclic command
 		ping = false
 		#True means only players with OP can use this /cyclic command
 		health = true
 		#True means only players with OP can use this /cyclic command
-		gethome = false
+		gethome = true
 		#True means only players with OP can use this /cyclic command
 		home = true
 		#True means only players with OP can use this /cyclic command

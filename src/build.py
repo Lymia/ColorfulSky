@@ -2,6 +2,7 @@
 
 import gen.biome_fix
 import gen.data
+import gen.emc_fix
 import gen.fix_models
 import gen.mod_data
 import gen.ores
@@ -49,6 +50,9 @@ gen.fix_models.generate_model_fixes("../build_config/dp", moddata.unpack_jar(Mod
 
 print("- Generating ores and worldgen configuration...")
 gen.ores.make_ores(datapack, moddata)
+
+print("- Generating EMC configuration...")
+gen.emc_fix.make_emc_config()
 
 print("- Unifying materials...")
 gen.unify.unify_tags(datapack)

@@ -3,7 +3,7 @@
 	#When the next EMC mapping occurs write the results to config/ProjectE/pregenerated_emc.json and only ever run the mapping again when that file does not exist, this setting is set to false, or an error occurred parsing that file.
 	pregenerate = false
 	#Want to take a look at the internals of EMC Calculation? Enable this to write all the conversions and setValue-Commands to config/ProjectE/mappingdump.json
-	dumpEverythingToFile = false
+	dumpEverythingToFile = true
 	#Log known EMC Exploits. This can not and will not find all possible exploits. This will only find exploits that result in fixed/custom emc values that the algorithm did not overwrite. Exploits that derive from conversions that are unknown to ProjectE will not be found.
 	logEMCExploits = true
 
@@ -47,7 +47,7 @@
 
 	[CraftingMapper.BotaniaManaInfusionMapper]
 		#null
-		enabled = true
+		enabled = false
 
 	[CraftingMapper.VanillaRecipeTypes]
 		#Maps the different vanilla recipe types.
@@ -162,7 +162,7 @@
 
 	[CraftingMapper.ImmersiveEngineeringSawmillMapper]
 		#Recipe mapper for Immersive Engineering Sawmill recipes
-		enabled = true
+		enabled = false
 
 	[CraftingMapper.BloodMagicAlchemyTableMapper]
 		#null
@@ -226,7 +226,7 @@
 
 	[CraftingMapper.CreateCuttingMapper]
 		#Create Cutting Mapper
-		enabled = true
+		enabled = false
 
 	[CraftingMapper.CreateDeployerApplicationMapper]
 		#Create Deployer Application Mapper
@@ -246,7 +246,7 @@
 
 	[CraftingMapper.CreateCUTTINGMapper]
 		#Create CUTTING Mapper
-		enabled = true
+		enabled = false
 
 	[CraftingMapper.CreateSandpaperPolishingMapper]
 		#Create Sandpaper Polishing Mapper

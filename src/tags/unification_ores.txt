@@ -263,14 +263,12 @@ $flags ITEM BLOCK OVERRIDE
 - darkerdepths:aridrock_iron_ore
 - darkerdepths:limestone_iron_ore
 - minecraft:iron_ore
-#forge:ores/ironwood
-- twilightforest:ironwood_raw
+// ores/ironwood unmodified
 #forge:ores/jade
 - silentgems:jade_ore
 #forge:ores/jasper
 - silentgems:jasper_ore
-#forge:ores/knightmetal
-- twilightforest:armor_shard_cluster
+// ores/knightmetal unmodified
 #forge:ores/kunzite
 - silentgems:kunzite_ore
 #forge:ores/kyanite
