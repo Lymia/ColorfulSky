@@ -126,7 +126,6 @@ $flags ITEM NO_GENERATE
 - mekanism:dust_osmium
 - mekanism:dust_tin
 - mekanism:dust_uranium
-- psi:psidust
 - silentgems:chaos_dust
 #forge:dusts/agate
 #forge:dusts/alexandrite

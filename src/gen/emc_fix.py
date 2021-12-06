@@ -4,15 +4,25 @@ emc_table = {
     # Adjustments to account for modded worldgen and biomes making some materials cheap.
     "minecraft:gravel": 1,
     "minecraft:flint": 1,
+    "#constellation:grass": 1,
+    "#constellation:vines": 4,
     "#forge:sand": 1,
+    "#forge:dirt": 1,
     "#forge:stone": 1,
     "#forge:end_stones": 1,
     "#forge:netherrack": 1,
+    "#minecraft:base_stone_overworld": 1,
+    "#minecraft:base_stone_nether": 1,
+    "#minecraft:base_stone_end": 1,
     "#mythicbotany:base_stone_alfheim": 1,
     "minecraft:clay": 1, # modded recipies and lush caverns
     "minecraft:clay_ball": 1,
-    "minecraft:quartz": 4, # quartz biomes
+    "#forge:gems/quartz": 4, # quartz biomes
     "minecraft:glowstone_dust": 4, # glowstone biomes
+    "infernalexp:dimstone": 10,
+    "infernalexp:dullstone": 4,
+    "infernalexp:glownuggets": 1,
+    "minecraft:nether_brick": 1,
         
     # Reduce the cost of some items, as Botania can produce them relatively easily
     "minecraft:name_tag": 128,
@@ -41,12 +51,20 @@ emc_table = {
     "minecraft:dead_fire_coral": 16,
     "minecraft:dead_horn_coral": 16,
     
-    # Misc fixes to common materials
+    # Misc fixes to vanilla materials
     "minecraft:bone": 32,
     "minecraft:gunpowder": 32,
+    "minecraft:firework_rocket": 32,
     "#forge:dyes": 4,
     "minecraft:prismarine_crystals": 320,
     "minecraft:redstone_block": 576,
+    "minecraft:dragon_head": 32000,
+    "#forge:chests/wooden": 64,
+    "#forge:chests/trapped": 198,
+    "minecraft:wither_skeleton_skull": 256,
+    "minecraft:blaze_rod": 768,
+    "minecraft:magma_cream": 16,
+    "minecraft:magma_block": 64,
     
     # Various foods need updates for farming changes.
     "minecraft:paper": 2,
@@ -55,22 +73,27 @@ emc_table = {
     "#forge:cooked_fishes": 64,
     "byg:delphinium": 16,
     
-    # Farmer's Delight is a mess EMC-wise
-    "farmersdelight:tree_bark": 0,
-    "farmersdelight:cabbage_leaf": 16, 
-    "farmersdelight:ham": 96,
-    "farmersdelight:wild_onions": 36,
-    "farmersdelight:brown_mushroom_colony": 80,
-    "farmersdelight:red_mushroom_colony": 80,
-    "farmersdelight:cod_slice": 30,
-    "farmersdelight:cooked_cod_slice": 30,
-    "farmersdelight:salmon_slice": 30,
-    "farmersdelight:cooked_salmon_slice": 30,
-    "farmersdelight:pike_slice": 30,
-    "farmersdelight:cooked_pike_slice": 30,
-    "farmersdelight:perch_slice": 30,
-    "farmersdelight:cooked_perch_slice": 30,
+    # Misc mods
+    "ars_nouveau:mana_fiber": 4,
+    "astralsorcery:starmetal_ingot": 256,
+    "astralsorcery:stardust": 256,
+    "fluxnetworks:flux_dust": 64,
+    "savageandravage:creeper_spores": 128,
     
+    # BetterEnd
+    "betterendforge:bolux_mushroom": 16,
+    "betterendforge:neon_cactus": 4,
+    "betterendforge:end_lily_leaf": 16,
+    "betterendforge:end_lily_leaf_dried": 16,
+    "betterendforge:pond_anemone": 16,
+    "betterendforge:bulb_vine": 16,
+    "betterendforge:glowing_bulb": 16,
+    "betterendforge:thallasium_ingot": 1024,
+    # TODO: Tools and related
+    
+    # TODO: Blood Magic
+    # TODO: Blue Skies
+
     # Botania EMC values
     # We're valuing 1 EMC ~= 25 Mana for this.
     "#botania:petal": 8,
@@ -121,8 +144,68 @@ emc_table = {
     "extrabotany:nightmarefuel": 128,
     "extrabotany:friedchicken": 128,
     "extrabotany:aerialite": 30000,
-    "extrabotany:heromedal": 30000,
-    "extrabotany:orichalcos": 80000,
+    "mythicbotany:dream_cherry": 128,
+    # NOTE: Medal of Heroism and Orichalcos intentionally omitted.
+
+    # TODO: BYG
+    
+    # Caves and Cliffs backport
+    "cavesandcliffs:exposed_copper": 1152,
+    "cavesandcliffs:weathered_copper": 1152,
+    "cavesandcliffs:oxidized_copper": 1152,
+    "cavesandcliffs:glow_berries": 16,
+    # TODO: Finish decorative blocks
+    
+    # TODO: Croptopia (oh god)
+    # TODO: Cyclic
+    # TODO: Darker Depths
+    # TODO: Eidolon
+    # TODO: Elementalcraft
+    
+    # Enigmatic Legacy
+    # NOTE: Everything intentionally omittted.
+    
+    # TODO: Environmental Tech
+        
+    # Farmer's Delight is a mess EMC-wise
+    "farmersdelight:tree_bark": 0,
+    "farmersdelight:cabbage_leaf": 16, 
+    "farmersdelight:ham": 96,
+    "farmersdelight:wild_onions": 36,
+    "farmersdelight:brown_mushroom_colony": 80,
+    "farmersdelight:red_mushroom_colony": 80,
+    "farmersdelight:cod_slice": 30,
+    "farmersdelight:cooked_cod_slice": 30,
+    "farmersdelight:salmon_slice": 30,
+    "farmersdelight:cooked_salmon_slice": 30,
+    "farmersdelight:pike_slice": 30,
+    "farmersdelight:cooked_pike_slice": 30,
+    "farmersdelight:perch_slice": 30,
+    "farmersdelight:cooked_perch_slice": 30,
+    # TODO: Everything else still
+    
+    # TODO: The Graveyard (?)
+    # TODO: Ice and Fire
+    # TODO: Immersive Engineering (?)
+    # TODO: Infernal Expansion
+    # TODO: Quark
+    
+    # Silent Gear
+    "silentgear:crimson_iron_ingot": 512,
+    "silentgear:azure_silver_ingot": 1024,
+    "silentgear:sinew": 128,
+    "silentgear:fine_silk": 1024,
+    "silentgear:fluffy_puff": 16,
+    
+    # TODO: Silent's Gems (oh no)
+    # TODO: Stalwart Dungeons
+    # TODO: Thermal Series
+    # TODO: Twilight Forest (oh no)
+    # TODO: Upgrade Aquatic
+    # TODO: Woot
+}
+emc_tags = {
+    
 }
 
 def make_emc_config():

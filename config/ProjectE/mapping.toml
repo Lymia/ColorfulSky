@@ -226,7 +226,7 @@
 
 	[CraftingMapper.CreateCuttingMapper]
 		#Create Cutting Mapper
-		enabled = false
+		enabled = true
 
 	[CraftingMapper.CreateDeployerApplicationMapper]
 		#Create Deployer Application Mapper
@@ -246,7 +246,7 @@
 
 	[CraftingMapper.CreateCUTTINGMapper]
 		#Create CUTTING Mapper
-		enabled = false
+		enabled = true
 
 	[CraftingMapper.CreateSandpaperPolishingMapper]
 		#Create Sandpaper Polishing Mapper

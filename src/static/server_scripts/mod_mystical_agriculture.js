@@ -45,3 +45,5 @@ onEvent('recipes', e => {
 })
 
 // TODO: Add new recipies for various mods.
+
+// TODO: Potential hitlist: SGear materials (Sinew, etc)

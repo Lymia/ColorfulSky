@@ -3,7 +3,7 @@ import types
 
 from gen.utils import *
 
-# TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria, Ether Stone)
+# TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria, Ether Stone, Deepslate)
 # TODO: Make Soulium a normal ore
 # TODO: Darker Depths unneeded definitions
 # TODO: Some external ores in Blue Skies world.

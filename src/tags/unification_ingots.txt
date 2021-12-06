@@ -46,7 +46,6 @@ $flags ITEM NO_GENERATE
 - #forge:ingots/terrasteel
 - #forge:ingots/tin
 - #forge:ingots/tyrian_steel
-- aquaculture:neptunium_ingot
 - betterendforge:aeternium_ingot
 - betterendforge:terminite_ingot
 - betterendforge:thallasium_ingot
@@ -86,9 +85,6 @@ $flags ITEM NO_GENERATE
 - mekanism:ingot_osmium
 - mekanism:ingot_tin
 - mekanism:ingot_uranium
-- psi:ebony_psimetal
-- psi:ivory_psimetal
-- psi:psimetal
 - silentgems:silver_ingot
 - tmechworks:aluminum_ingot
 - tmechworks:copper_ingot
@@ -148,8 +144,6 @@ $flags ITEM NO_GENERATE
 - iceandfire:dragonsteel_lightning_ingot
 #forge:ingots/drenched_iron
 - elementalcraft:drenched_iron_ingot
-#forge:ingots/ebony_psimetal
-- psi:ebony_psimetal
 #forge:ingots/electrum
 - emendatusenigmatica:electrum_ingot
 - immersiveengineering:ingot_electrum
@@ -178,8 +172,6 @@ $flags ITEM NO_GENERATE
 - minecraft:iron_ingot
 #forge:ingots/ironwood
 - twilightforest:ironwood_ingot
-#forge:ingots/ivory_psimetal
-- psi:ivory_psimetal
 #forge:ingots/knightmetal
 - twilightforest:knightmetal_ingot
 #forge:ingots/lead
@@ -193,8 +185,6 @@ $flags ITEM NO_GENERATE
 - thermal:lumium_ingot
 #forge:ingots/manasteel
 - botania:manasteel_ingot
-#forge:ingots/neptunium
-- aquaculture:neptunium_ingot
 #forge:ingots/nether_brick
 - minecraft:nether_brick
 #forge:ingots/netherite
@@ -208,8 +198,6 @@ $flags ITEM NO_GENERATE
 - mekanism:ingot_osmium
 #forge:ingots/pewter
 - eidolon:pewter_ingot
-#forge:ingots/psimetal
-- psi:psimetal
 #forge:ingots/refined_glowstone
 - mekanism:ingot_refined_glowstone
 #forge:ingots/refined_obsidian
@@ -340,7 +328,6 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:sapphire_gem
 - emendatusenigmatica:silicon_gem
 - emendatusenigmatica:sulfur_gem
-- psi:psigem
 #forge:gems/agate
 - silentgems:agate
 #forge:gems/alexandrite
@@ -466,8 +453,6 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:potassium_nitrate_gem
 #forge:gems/prismarine
 - minecraft:prismarine_crystals
-#forge:gems/psigem
-- psi:psigem
 #forge:gems/pyrope
 - silentgems:pyrope
 #forge:gems/quartz

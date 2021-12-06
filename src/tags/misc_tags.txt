@@ -1,3 +1,54 @@
+$flags ITEM BLOCK
+#forge:stone
+- darkerdepths:shale
+- darkerdepths:aridrock
+- darkerdepths:grimestone
+
+#constellation:grass
+- betterendforge:chorus_grass
+- betterendforge:cave_grass
+- betterendforge:crystal_grass
+- betterendforge:amber_grass
+- betterendforge:bushy_grass
+- betterendforge:jungle_grass
+- betterendforge:blooming_cooksonia
+- betterendforge:salteago
+- betterendforge:vaiolush_fern
+- betterendforge:fracturn
+- betterendforge:globulagus
+- betterendforge:inflexia
+- betterendforge:clawfern
+- betterendforge:aeridium
+- betterendforge:orango
+- betterendforge:lutebus
+- betterendforge:lamellarium
+- betterendforge:small_jellyshroom
+- betterendforge:bulb_moss
+- betterendforge:tube_worm
+- betterendforge:jungle_fern
+- betterendforge:ruscus
+
+#minecraft:small_flowers
+- betterendforge:umbrella_moss
+- betterendforge:creeping_moss
+- betterendforge:shadow_plant 
+- betterendforge:twisted_umbrella_moss
+- betterendforge:purple_polypore
+- betterendforge:aurant_polypore
+- betterendforge:tail_moss
+- betterendforge:cyan_moss
+- betterendforge:twisted_moss
+
+#minecraft:tall_flowers
+- betterendforge:umbrella_moss_tall
+- betterendforge:twisted_umbrella_moss_tall
+
+#constellation:vines
+- betterendforge:dense_vine
+- betterendforge:twisted_vine
+- betterendforge:jungle_vine
+- betterendforge:rubinea
+
 $flags ITEM BLOCK OVERRIDE
 
 // Remove botania functional flowers from this list to fix EMC calculations.

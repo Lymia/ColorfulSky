@@ -9,8 +9,23 @@ $flags ITEM BLOCK
 
 #forge:storage_blocks
 - #forge:storage_blocks/hellforged
+- #forge:storage_blocks/manasteel
+- #forge:storage_blocks/elementium
+- #forge:storage_blocks/mana_diamond
+- #forge:storage_blocks/dragonstone
+- #forge:storage_blocks/terrasteel
 #forge:storage_blocks/hellforged
 - bloodmagic:dungeon_metal
+#forge:storage_blocks/manasteel
+- botania:manasteel_block
+#forge:storage_blocks/elementium
+- botania:elementium_block
+#forge:storage_blocks/mana_diamond
+- botania:mana_diamond_block
+#forge:storage_blocks/dragonstone
+- botania:dragonstone_block
+#forge:storage_blocks/terrasteel
+- botania:terrasteel_block
 
 // From src/dump_tags.py
 $flags ITEM BLOCK NO_GENERATE
@@ -94,7 +109,6 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/moldavite
 - #forge:storage_blocks/moonstone
 - #forge:storage_blocks/morganite
-- #forge:storage_blocks/neptunium
 - #forge:storage_blocks/netherite
 - #forge:storage_blocks/nickel
 - #forge:storage_blocks/niter
@@ -144,9 +158,6 @@ $flags ITEM BLOCK NO_GENERATE
 - create:brass_block
 - create:copper_block
 - create:zinc_block
-- eidolon:arcane_gold_block
-- eidolon:lead_block
-- eidolon:pewter_block
 - emendatusenigmatica:aluminum_block
 - emendatusenigmatica:apatite_block
 - emendatusenigmatica:arcane_block
@@ -192,10 +203,6 @@ $flags ITEM BLOCK NO_GENERATE
 - immersiveengineering:storage_silver
 - immersiveengineering:storage_steel
 - immersiveengineering:storage_uranium
-- psi:ebony_psimetal_block
-- psi:ivory_psimetal_block
-- psi:psigem_block
-- psi:psimetal_block
 - tmechworks:aluminum_block
 - tmechworks:copper_block
 #forge:storage_blocks/aeternium
@@ -227,8 +234,6 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:aquamarine_block
 #forge:storage_blocks/arcane
 - emendatusenigmatica:arcane_block
-#forge:storage_blocks/arcane_gold
-- eidolon:arcane_gold_block
 #forge:storage_blocks/arctic_fur
 - twilightforest:arctic_fur_block
 #forge:storage_blocks/azure_electrum
@@ -340,8 +345,6 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/dragonstone
 #forge:storage_blocks/drenched_iron
 - elementalcraft:drenched_iron_block
-#forge:storage_blocks/ebony_psimetal
-- psi:ebony_psimetal_block
 #forge:storage_blocks/electrum
 - emendatusenigmatica:electrum_block
 - immersiveengineering:storage_electrum
@@ -403,8 +406,6 @@ $flags ITEM BLOCK NO_GENERATE
 - minecraft:iron_block
 #forge:storage_blocks/ironwood
 - twilightforest:ironwood_block
-#forge:storage_blocks/ivory_psimetal
-- psi:ivory_psimetal_block
 #forge:storage_blocks/jade
 - silentgems:jade_block
 #forge:storage_blocks/jasper
@@ -418,7 +419,6 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/lapis
 - minecraft:lapis_block
 #forge:storage_blocks/lead
-- eidolon:lead_block
 - emendatusenigmatica:lead_block
 - immersiveengineering:storage_lead
 - mekanism:block_lead
@@ -450,8 +450,6 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/morganite
 - silentgems:morganite_block
 #forge:storage_blocks/nebu
-#forge:storage_blocks/neptunium
-- aquaculture:neptunium_block
 #forge:storage_blocks/nether_brick
 #forge:storage_blocks/netherite
 - minecraft:netherite_block
@@ -480,17 +478,11 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:peridot_block
 #forge:storage_blocks/petcoke
 - immersivepetroleum:petcoke_block
-#forge:storage_blocks/pewter
-- eidolon:pewter_block
 #forge:storage_blocks/phosphophyllite
 - silentgems:phosphophyllite_block
 #forge:storage_blocks/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_block
 #forge:storage_blocks/prismarine
-#forge:storage_blocks/psigem
-- psi:psigem_block
-#forge:storage_blocks/psimetal
-- psi:psimetal_block
 #forge:storage_blocks/pyrope
 - silentgems:pyrope_block
 #forge:storage_blocks/quartz

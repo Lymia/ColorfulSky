@@ -545,7 +545,7 @@
 				"Is Blacklist" = true
 
 			[world.big_dungeon.biome_config.biomes]
-				Biomes = []
+				Biomes = ["minecraft:the_end", "minecraft:end_midlands", "minecraft:end_highlands", "minecraft:end_barrens", "minecraft:small_end_islands", "betterendforge:megalake", "betterendforge:crystal_mountains", "betterendforge:foggy_mushroomland", "betterendforge:megalake_grove", "betterendforge:dust_wastelands", "betterendforge:painted_mountains", "betterendforge:chorus_forest", "betterendforge:shadow_forest", "betterendforge:blossoming_spires", "betterendforge:sulphur_springs", "betterendforge:amber_land", "betterendforge:umbrella_jungle", "betterendforge:glowing_grasslands", "betterendforge:dragon_graveyards", "betterendforge:lantern_woods", "betterendforge:dry_shrubland", "betterendforge:neon_oasis", "betterendforge:ice_starfield", "betterendforge:empty_end_cave", "betterendforge:empty_smaragdant_cave", "betterendforge:lush_smaragdant_cave", "betterendforge:empty_aurora_cave", "betterendforge:lush_aurora_cave", "betterendforge:umbra_valley", "betterendforge:end_cave", "betterendforge:jade_cave", "byg:ivis_fields", "byg:nightshade_forest", "byg:ethereal_islands", "byg:viscal_isles", "byg:bulbis_gardens", "byg:shattered_desert", "byg:shulkren_forest", "byg:purpur_peaks", "byg:cryptic_wastes", "byg:shattered_viscal_isles", "byg:bulbis_gardens_edge", "byg:ethereal_forest", "byg:ethereal_clearing", "byg:shattered_desert_isles", "byg:imparius_grove", "byg:imparius_clearing", "endergetic:poise_forest", "outer_end:azure_forest", "outer_end:crystal_crag"]
 				"Is Blacklist" = true
 
 	[world.big_stone_clusters]
@@ -1885,7 +1885,7 @@
 	"Auto Walk Keybind" = true
 	"Back Button Keybind" = true
 	"Chest Searching" = true
-	"Greener Grass" = true
+	"Greener Grass" = false
 	"Improved Mount Hud" = true
 	"Improved Tooltips" = true
 	"Usage Ticker" = false

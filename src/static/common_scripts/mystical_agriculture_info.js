@@ -49,4 +49,7 @@ let remove_seed_list = [
     "enderium",
     "terrasteel",
     "draconium",
+    "firey_ingot",
+    "steeleaf",
+    "knightmetal",
 ];

@@ -31,5 +31,5 @@ let remove_items_list = [
     "projecte:life_stone", // The soul stone is already sliiightly powerful on its own
     "projecte:hyperkinetic_lens", // Power level is just excessive by any standard
     "projecte:catalytic_lens",
-    "projecte:nova_catalyst", // big boom :(
+    "projecte:nova_cataclysm", // big boom :(
 ];

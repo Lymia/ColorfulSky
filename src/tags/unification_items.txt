@@ -189,7 +189,6 @@ $flags ITEM NO_GENERATE
 - #forge:nuggets/moldavite
 - #forge:nuggets/moonstone
 - #forge:nuggets/morganite
-- #forge:nuggets/neptunium
 - #forge:nuggets/nickel
 - #forge:nuggets/onyx
 - #forge:nuggets/opal
@@ -403,8 +402,6 @@ $flags ITEM NO_GENERATE
 - silentgems:moonstone_shard
 #forge:nuggets/morganite
 - silentgems:morganite_shard
-#forge:nuggets/neptunium
-- aquaculture:neptunium_nugget
 #forge:nuggets/nickel
 - emendatusenigmatica:nickel_nugget
 - immersiveengineering:nugget_nickel
