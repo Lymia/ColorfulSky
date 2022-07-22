@@ -1,5 +1,5 @@
 {
-  "configVersion": 2,
+  "configVersion": 5,
   "renderNametagsThroughWalls": true,
   "blockEntityWhitelist": [
     "create:rope_pulley",
@@ -7,8 +7,18 @@
     "create:hose_pulley",
     "betterend:eternal_pedestal"
   ],
+  "entityWhitelist": [
+    "botania:mana_burst"
+  ],
   "tracingDistance": 128,
   "debugMode": false,
   "sleepDelay": 10,
-  "hitboxLimit": 50
+  "hitboxLimit": 50,
+  "skipMarkerArmorStands": true,
+  "tickCulling": true,
+  "tickCullingWhitelist": [
+    "minecraft:boat",
+    "minecraft:firework_rocket"
+  ],
+  "disableF3": false
 }

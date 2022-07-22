@@ -6,8 +6,12 @@
 	#Time in ticks the logging player is invulnerable, 20 ticks = 1sec. Default is 50secs = 1000 ticks
 	#Range: 0 ~ 50000
 	invulnerabilityTime = 1000
+	#Enables the protection for dimension changes too, default: true
+	dimensionprotection = true
+	#Enables the protection for respawning too, default: true
+	respawnprotection = true
 
 [debug]
-	#Wether to enable debug log outputs, default: false
+	#Whether to enable debug log outputs, default: false
 	debugLog = false
 
