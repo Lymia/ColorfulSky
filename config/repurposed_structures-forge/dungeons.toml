@@ -24,7 +24,7 @@ shulkerBoxInEndDungeons = true
 	#Range: 0 ~ 1000
 	swampDungeonAttemptsPerChunk = 8
 	#Range: 0 ~ 1000
-	endDungeonAttemptsPerChunk = 12
+	endDungeonAttemptsPerChunk = 0
 	#Range: 0 ~ 1000
 	netherDungeonAttemptsPerChunk = 12
 	#Range: 0 ~ 1000

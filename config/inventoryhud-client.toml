@@ -24,7 +24,7 @@
 	#Is Armor Damage HUD enabled
 	ArmorDamage = true
 	#Show/Hide armor
-	showInv = true
+	showInv = false
 	#Armor HUD durability view (PERCENTAGE, DAMAGE, DAMAGE LEFT)
 	#Allowed Values: PERCENTAGE, DAMAGE, DAMAGE_LEFT, OFF
 	armView = "OFF"
