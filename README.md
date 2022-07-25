@@ -47,6 +47,7 @@ Colorful Skies is a general purpose modpack.
 - [Blue Skies](https://www.curseforge.com/minecraft/mc-mods/blue-skies)
 - [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
 - [Dungeons Plus](https://www.curseforge.com/minecraft/mc-mods/dungeons-plus)
+- [Feywilds](https://www.curseforge.com/minecraft/mc-mods/feywild)
 - [Ice and Fire: Dragons](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons)
 - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
 - [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs)
