@@ -293,4 +293,6 @@
 	APICustomEMCMapper = true
 	#Loads json files within datapacks (data/<domain>/pe_custom_conversions/*.json) to add values and conversions
 	CustomConversionMapper = true
+	#Adds EMC to DivineRPG
+	DivineRPGMapper = true
 

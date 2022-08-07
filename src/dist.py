@@ -39,12 +39,14 @@ shutil.copyfile("options.txt", "../build_dist/options.txt")
 print("- Generating manifest...")
 manifest = json.loads(open("manifest.json", "r").read())
 manifest["name"] = "Colorful Skies"
+manifest["version"] = "1.0"
 manifest["author"] = "AuroraAmissa"
 manifest["files"] += [
     {'projectID': 411890, 'fileID': 3094111, 'required': True}, # Darkpuppey's Modded Overhauls
     {'projectID': 515892, 'fileID': 3427177, 'required': True}, # ProjectE Retexture
     {'projectID': 490095, 'fileID': 3376785, 'required': True}, # Simple CT
     {'projectID': 548052, 'fileID': 3758577, 'required': True}, # Feywild Redux
+    {'projectID': 436186, 'fileID': 3623594, 'required': True}, # Glass Panes CTM Fix
 ]
 open("../build_dist/manifest.json", "w").write(json.dumps(manifest))
 

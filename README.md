@@ -21,9 +21,19 @@ Colorful Skies is a general purpose modpack.
 - [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)
 - Various small mods by [Serilum](https://www.curseforge.com/members/serilum/projects)
 
+### Optimization & Graphics Mods
+
+- [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)
+- [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)
+- [Radon](https://www.curseforge.com/minecraft/mc-mods/radon)
+- [Roadrunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner)
+- [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)
+
 ### Resource Packs
 
 - [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
+- [Feywild Redux](https://www.curseforge.com/minecraft/texture-packs/feywild-redux)
+- [Glass Panes CTM Fix](https://www.curseforge.com/minecraft/texture-packs/glass-panes-ctm-fix)
 - [ProjectE Retexture](https://www.curseforge.com/minecraft/texture-packs/projecte-retexture)
 - [Simple Connected Textures](https://www.curseforge.com/minecraft/texture-packs/simple-ct)
 
@@ -36,8 +46,8 @@ Colorful Skies is a general purpose modpack.
 - [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
 - [Orcinus's Caves](https://www.curseforge.com/minecraft/mc-mods/orcinuss-caves)
 - [Sky Villages](https://www.curseforge.com/minecraft/mc-mods/sky-villages-forge)
+- [Stoneholm, Underground Villages](https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge)
 - [The Endergetic Expansion](https://www.curseforge.com/minecraft/mc-mods/endergetic)
-- [The Graveyard](https://www.curseforge.com/minecraft/mc-mods/the-graveyard-forge)
 - [Upgrade Aquatic](https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic)
 - [YUNG's](https://www.curseforge.com/members/yungnickyoung/projects) worldgen series
 
@@ -58,11 +68,11 @@ Colorful Skies is a general purpose modpack.
 - [Stalwart Dungeons](https://www.curseforge.com/minecraft/mc-mods/stalwart-dungeons)
 - [Tiny Chests](https://www.curseforge.com/minecraft/mc-mods/tinychest)
 - [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
+- [Wesley's Roguelike Dungeons](https://www.curseforge.com/minecraft/mc-mods/wesleys-roguelike-dungeons)
 - [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
 
 ### Building Mods
 
-- [Absent By Design](https://www.curseforge.com/minecraft/mc-mods/absent-by-design)
 - [Bamboo Blocks](https://www.curseforge.com/minecraft/mc-mods/bamboo-blocks)
 - [Chisel](https://www.curseforge.com/minecraft/mc-mods/chisel)
 - [Comforts](https://www.curseforge.com/minecraft/mc-mods/comforts)
@@ -87,7 +97,6 @@ Colorful Skies is a general purpose modpack.
 - [Enigmatic Legacy](https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy)
 - [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)
 - [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte)
-- [Reliquary](https://www.curseforge.com/minecraft/mc-mods/reliquary-v1-3)
 
 ### Tech Mods
 

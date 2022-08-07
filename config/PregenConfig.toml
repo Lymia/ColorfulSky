@@ -69,6 +69,4 @@
 		large-hover = true
 		#If you need to refresh the Supporter info set this to true and on the next game restart it will automatically update the info.
 		update-supporters = false
-		#Range: > -2147483648
-		info = 458752
 
