@@ -22,6 +22,7 @@ import build # lazy way!
 print("Creating modpack distribution file...")
 shutil.rmtree("../build_dist", ignore_errors=True)
 os.makedirs("../build_dist")
+os.makedirs("../build_dist/overrides")
 os.makedirs("../dist", exist_ok=True)
 
 print("- Removing backup files...")
@@ -29,12 +30,15 @@ for path in glob.glob(f"../config/**.bak"):
     os.remove(path)
 
 print("- Copying files...")
-shutil.copytree("../config", "../build_dist/config")
-shutil.copytree("../defaultconfigs", "../build_dist/defaultconfigs")
-shutil.copytree("../kubejs", "../build_dist/kubejs")
-shutil.copytree("../openloader", "../build_dist/openloader")
-shutil.copytree("../packmenu", "../build_dist/packmenu")
-shutil.copyfile("options.txt", "../build_dist/options.txt")
+shutil.copytree("../config", "../build_dist/overrides/config")
+shutil.copytree("../defaultconfigs", "../build_dist/overrides/defaultconfigs")
+shutil.copytree("../kubejs", "../build_dist/overrides/kubejs")
+shutil.copytree("../openloader", "../build_dist/overrides/openloader")
+shutil.copytree("../packmenu", "../build_dist/overrides/packmenu")
+shutil.copyfile("options.txt", "../build_dist/overrides/options.txt")
+
+print("- Removing transient configurations")
+shutil.rmtree("../build_dist/overrides/config/oculus.properties", ignore_errors=True)
 
 print("- Generating manifest...")
 manifest = json.loads(open("manifest.json", "r").read())
