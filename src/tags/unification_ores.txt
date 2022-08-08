@@ -1,14 +1,6 @@
 $flags ITEM BLOCK OVERRIDE
 
 #forge:ores
-- #blue_skies:ores/aquite
-- #blue_skies:ores/charoite
-- #blue_skies:ores/diopside
-- #blue_skies:ores/falsite
-- #blue_skies:ores/horizonite
-- #blue_skies:ores/moonstone
-- #blue_skies:ores/pyrope
-- #blue_skies:ores/ventium
 - #forge:ores/agate
 - #forge:ores/alexandrite
 - #forge:ores/amber
@@ -230,8 +222,6 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/elementium
 - mythicbotany:elementium_ore
 #forge:ores/emerald
-- blue_skies:everbright_emerald_ore
-- blue_skies:everdawn_emerald_ore
 - cavesandcliffs:deepslate_emerald_ore
 - minecraft:emerald_ore
 #forge:ores/ender

@@ -37,9 +37,6 @@ print("- Adding static tags...")
 for tag_file in glob.glob('tags/*.txt'):
     gen.tags.parse_config(datapack, tag_file)
 
-print("- Creating Blue Skies tag fix...")
-gen.tags.generate_group_redirect(datapack, moddata.unpack_jar(Mod.BlueSkies), "blue_skies", "forge")
-
 print("- Creating Twilight Forest biomes fix...")
 gen.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")
 

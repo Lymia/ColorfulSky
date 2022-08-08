@@ -765,13 +765,6 @@ $flags ITEM NO_GENERATE
 #forge:rods/uranium
 - emendatusenigmatica:uranium_rod
 #forge:rods/wooden
-- blue_skies:bluebright_stick
-- blue_skies:cherry_stick
-- blue_skies:dusk_stick
-- blue_skies:frostbright_stick
-- blue_skies:lunar_stick
-- blue_skies:maple_stick
-- blue_skies:starlit_stick
 - immersiveengineering:stick_treated
 - minecraft:stick
 - silentgear:netherwood_stick

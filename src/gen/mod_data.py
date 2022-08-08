@@ -10,7 +10,6 @@ from gen.utils import *
 class Mod(Enum):
     Vanilla = 0
     ColorfulSkyOres = 10
-    BlueSkies = 20
     DraconicEvolution = 21
     Create = 22
     Quark = 23
@@ -22,7 +21,6 @@ class Mod(Enum):
     InfernalExpansion = 29
 
 mod_prefixes = {
-    Mod.BlueSkies: "blue_skies",
     Mod.DraconicEvolution: "Draconic-Evolution",
     Mod.Create: "create-mc",
     Mod.Quark: "Quark-",

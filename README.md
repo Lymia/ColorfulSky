@@ -54,7 +54,6 @@ Colorful Skies is a general purpose modpack.
 ### Adventure Mods
 
 - [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
-- [Blue Skies](https://www.curseforge.com/minecraft/mc-mods/blue-skies)
 - [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
 - [Dungeons Plus](https://www.curseforge.com/minecraft/mc-mods/dungeons-plus)
 - [Feywilds](https://www.curseforge.com/minecraft/mc-mods/feywild)
@@ -100,6 +99,7 @@ Colorful Skies is a general purpose modpack.
 
 ### Tech Mods
 
+- [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create)
 - [Cyclic](https://www.curseforge.com/minecraft/mc-mods/cyclic)
 - [Draconic Evolution](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution)
@@ -108,6 +108,7 @@ Colorful Skies is a general purpose modpack.
 - [Immersive Engineering](https://www.curseforge.com/minecraft/mc-mods/immersive-engineering)
 - [Immersive Petroleum](https://www.curseforge.com/minecraft/mc-mods/immersive-petroleum)
 - [Mekanism](https://www.curseforge.com/minecraft/mc-mods/mekanism)
+- [Modular Powersuits](https://www.curseforge.com/minecraft/mc-mods/modular-powersuits)
 - [Refined Storage](https://www.curseforge.com/minecraft/mc-mods/refined-storage)
     - [Cable Tiers](https://www.curseforge.com/minecraft/mc-mods/cable-tiers)
     - [ExtraStorage](https://www.curseforge.com/minecraft/mc-mods/extrastorage)
@@ -134,10 +135,10 @@ Colorful Skies is a general purpose modpack.
 - [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 - [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
 - [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass & [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
-- [Neat](https://www.curseforge.com/minecraft/mc-mods/neat)
 - [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
 - [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)
 - [Torchmaster](https://www.curseforge.com/minecraft/mc-mods/torchmaster)
+- [ToroHealth Damage Indicators](https://www.curseforge.com/minecraft/mc-mods/torohealth-damage-indicators)
 - [Waystones](https://www.curseforge.com/minecraft/mc-mods/waystones)

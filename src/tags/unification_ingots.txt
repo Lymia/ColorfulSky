@@ -4,9 +4,6 @@ $flags ITEM
 $flags ITEM NO_GENERATE
 
 #forge:ingots
-- #blue_skies:ingots/falsite
-- #blue_skies:ingots/horizonite
-- #blue_skies:ingots/ventium
 - #create:create_ingots
 - #forge:ingots/azure_electrum
 - #forge:ingots/azure_silver
@@ -245,10 +242,6 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:zinc_ingot
 
 #forge:gems
-- #blue_skies:gems/aquite
-- #blue_skies:gems/charoite
-- #blue_skies:gems/diopside
-- #blue_skies:gems/pyrope
 - #elementalcraft:gems/input
 - #forge:gems/agate
 - #forge:gems/alexandrite
