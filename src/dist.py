@@ -50,17 +50,7 @@ manifest["files"] += [
 ]
 open("../build_dist/manifest.json", "w").write(json.dumps(manifest))
 
-print("- Generating full modlist...")
-curse = cursepy.CurseClient()
-modlist_str = ""
-for mod in manifest["files"]:
-    addon = curse.addon(mod["projectID"])
-    fileId = mod["fileID"]
-    print(f"  - {addon.name}")
-    modlist_str += f"- [{addon.name}]({addon.url}) ([Download]({addon.url}/files/{fileId}))\n"
-
 print("- Rendering markdown...")
-open("../build_dist/modlist.html", "w").write(markdown.markdown(modlist_str))
 open("../build_dist/readme.html", "w").write(markdown.markdown(open("../README.md").read()))
 open("../build_dist/license.html", "w").write(markdown.markdown(open("../LICENSE.md").read()))
 
