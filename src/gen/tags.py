@@ -67,15 +67,3 @@ def add_from_json(datapack, tag, is_block, json):
                 datapack.tags.add_block_tag(name, tag)
             else:
                 datapack.tags.add_item_tag(name, tag)
-def generate_group_redirect(datapack, mod, group_from, group_to):
-    for model in glob.glob(f"{mod}/data/{group_from}/tags/**/*.json"):
-        head_len = len(mod)+6+len(group_from)+1
-        tag_type, tag_name = model[head_len+5:-5].split("/", 1)
-        full_tag = f"{group_to}:{tag_name}"
-        with open(model) as fd:
-            data = json.loads(fd.read())
-
-        if tag_type == "blocks":
-            add_from_json(datapack, full_tag, True, data)
-        if tag_type == "items":
-            add_from_json(datapack, full_tag, False, data)

@@ -268,6 +268,18 @@
 		#Maps Mekanism pigment mixer recipes.
 		enabled = true
 
+	[CraftingMapper.TinkersConstructCastingMapper]
+		#ProjectE-Integration Recipe Mapper for Tinkers Construct Casting Mapper. Required Mods: [tconstruct]
+		enabled = true
+
+	[CraftingMapper.TinkersConstructMeltingMapper]
+		#ProjectE-Integration Recipe Mapper for Tinkers Construct Melting Mapper. Required Mods: [tconstruct]
+		enabled = true
+
+	[CraftingMapper.TinkersConstructAlloyingMapper]
+		#ProjectE-Integration Recipe Mapper for Tinkers Construct Alloying Mapper. Required Mods: [tconstruct]
+		enabled = true
+
 [ProjectEIntegrationRecipeMapper]
 
 	[ProjectEIntegrationRecipeMapper.IceAndFireDragonForgeMapper]
