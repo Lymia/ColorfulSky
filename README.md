@@ -139,7 +139,7 @@ Colorful Skies is a general purpose modpack.
 - [Iron Chests](https://www.curseforge.com/minecraft/mc-mods/iron-chests)
 - [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 - [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
-- [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass & [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
+- [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass) & [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
 - [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
