@@ -4,7 +4,7 @@
 	#Allowed Values: INVENTORY, MOUSE_PICKUP
 	GiveMode = "MOUSE_PICKUP"
 	#Debug mode enabled
-	DebugMode = true
+	DebugMode = false
 	#Display search bar in the center
 	CenterSearch = true
 	#Max. recipe gui height

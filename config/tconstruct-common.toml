@@ -5,10 +5,10 @@
 	shouldSpawnWithTinkersBook = false
 	#If non-empty, only this material will be shown on tools in creative and JEI (or the first valid material if this is invalid for the tool).
 	#If empty, all materials will show
-	showOnlyToolMaterial = "rose_gold"
+	showOnlyToolMaterial = "tconstruct:rose_gold"
 	#If non-empty, only material will be shown on parts in creative and JEI (or the first valid material if this is invalid for the part).
 	#If empty, all materials will show
-	showOnlyPartMaterial = "rose_gold"
+	showOnlyPartMaterial = "tconstruct:rose_gold"
 	#If true, tables such as the part builder and tinker station will show all variants. If false shows only a variant with a default texture.
 	showAllTableVariants = false
 	#If true, anvils will show all metal variants. If false, shows only a variant with the default texture
@@ -25,9 +25,9 @@
 	#Allows converting wither bones to regular bones
 	witherBoneConversion = true
 	#Slimealls not being usable in vanilla recipes that require slimeballs. Config option exists to disable easily in case this fix is redundant to another mod
-	slimeRecipeFix = true
+	slimeRecipeFix = false
 	#Fixes clear glass not being usable in vanilla recipes that require glass. Config option exists to disable easily in case this fix is redundant to another mod
-	glassRecipeFix = true
+	glassRecipeFix = false
 	#Number of nuggets produced when an ore block is melted in the melter. 9 would give 1 ingot
 	#Range: 1 ~ 45
 	melterNuggetsPerOre = 12

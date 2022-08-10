@@ -2,3 +2,4 @@ startupQoL/startup_times.json
 *.bak
 environmental
 oculus.properties
+.*
