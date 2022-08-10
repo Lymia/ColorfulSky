@@ -20,6 +20,7 @@ $flags ITEM BLOCK OVERRIDE
 - #forge:ores/cinnabar
 - #forge:ores/citrine
 - #forge:ores/coal
+- #forge:ores/cobalt
 - #forge:ores/copper
 - #forge:ores/coral
 - #forge:ores/crimson_iron
@@ -68,6 +69,7 @@ $flags ITEM BLOCK OVERRIDE
 - #forge:ores/sodalite
 - #forge:ores/soulium
 - #forge:ores/spinel
+- #forge:ores/starmetal
 - #forge:ores/sulfur
 - #forge:ores/sunstone
 - #forge:ores/tanzanite
@@ -107,6 +109,9 @@ $flags ITEM BLOCK OVERRIDE
 - cavesandcliffs:deepslate_redstone_ore
 - create:copper_ore
 - create:zinc_ore
+- draconicevolution:end_draconium_ore
+- draconicevolution:nether_draconium_ore
+- draconicevolution:overworld_draconium_ore
 - eidolon:lead_ore
 - elementalcraft:crystalore
 - iceandfire:amythest_ore
@@ -119,13 +124,6 @@ $flags ITEM BLOCK OVERRIDE
 - immersiveengineering:ore_nickel
 - immersiveengineering:ore_silver
 - immersiveengineering:ore_uranium
-- minecraft:coal_ore
-- minecraft:diamond_ore
-- minecraft:emerald_ore
-- minecraft:gold_ore
-- minecraft:iron_ore
-- minecraft:lapis_ore
-- minecraft:redstone_ore
 - rftoolsbase:dimensionalshard_end
 - rftoolsbase:dimensionalshard_nether
 - rftoolsbase:dimensionalshard_overworld
@@ -134,8 +132,6 @@ $flags ITEM BLOCK OVERRIDE
 - silentgems:multi_ore_classic
 - silentgems:multi_ore_dark
 - silentgems:multi_ore_light
-- stalwart_dungeons:chorundum_ore
-- stalwart_dungeons:tungsten_ore
 - tmechworks:aluminum_ore
 - tmechworks:copper_ore
 #forge:ores/agate
@@ -182,8 +178,6 @@ $flags ITEM BLOCK OVERRIDE
 - silentgems:cats_eye_ore
 #forge:ores/certus_quartz
 #forge:ores/charged_certus_quartz
-#forge:ores/chorundum
-- stalwart_dungeons:chorundum_ore
 #forge:ores/chrysoprase
 - silentgems:chrysoprase_ore
 #forge:ores/cinnabar
@@ -192,17 +186,18 @@ $flags ITEM BLOCK OVERRIDE
 - silentgems:citrine_ore
 #forge:ores/coal
 - cavesandcliffs:deepslate_coal_ore
-- darkerdepths:aridrock_coal_ore
-- darkerdepths:limestone_coal_ore
 - minecraft:coal_ore
 #forge:ores/cobalt
+- tconstruct:cobalt_ore
 #forge:ores/copper
 - cavesandcliffs:copper_ore
 - cavesandcliffs:deepslate_copper_ore
+- cavesandcliffs:raw_copper
 - create:copper_ore
 - iceandfire:copper_ore
 - immersiveengineering:ore_copper
 - mekanism:copper_ore
+- tconstruct:copper_ore
 - thermal:copper_ore
 - tmechworks:copper_ore
 #forge:ores/coral
@@ -217,10 +212,6 @@ $flags ITEM BLOCK OVERRIDE
 - draconicevolution:end_draconium_ore
 - draconicevolution:nether_draconium_ore
 - draconicevolution:overworld_draconium_ore
-#forge:ores/dragonstone
-- mythicbotany:dragonstone_ore
-#forge:ores/elementium
-- mythicbotany:elementium_ore
 #forge:ores/emerald
 - cavesandcliffs:deepslate_emerald_ore
 - minecraft:emerald_ore
@@ -236,9 +227,7 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/gold
 - #minecraft:gold_ores
 - cavesandcliffs:deepslate_gold_ore
-- darkerdepths:aridrock_gold_ore
-- darkerdepths:limestone_gold_ore
-- minecraft:gold_ore
+- cavesandcliffs:raw_gold
 #forge:ores/green_sapphire
 - silentgems:green_sapphire_ore
 #forge:ores/heliodor
@@ -250,23 +239,22 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/iridium
 #forge:ores/iron
 - cavesandcliffs:deepslate_iron_ore
-- darkerdepths:aridrock_iron_ore
-- darkerdepths:limestone_iron_ore
+- cavesandcliffs:raw_iron
 - minecraft:iron_ore
-// ores/ironwood unmodified
+#forge:ores/ironwood
+- twilightforest:ironwood_raw
 #forge:ores/jade
 - silentgems:jade_ore
 #forge:ores/jasper
 - silentgems:jasper_ore
-// ores/knightmetal unmodified
+#forge:ores/knightmetal
+- twilightforest:armor_shard_cluster
 #forge:ores/kunzite
 - silentgems:kunzite_ore
 #forge:ores/kyanite
 - silentgems:kyanite_ore
 #forge:ores/lapis
 - cavesandcliffs:deepslate_lapis_ore
-- darkerdepths:aridrock_lapis_ore
-- darkerdepths:limestone_lapis_ore
 - minecraft:lapis_ore
 #forge:ores/lead
 - eidolon:lead_ore
@@ -280,6 +268,8 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/malachite
 - silentgems:malachite_ore
 #forge:ores/mana
+- ars_nouveau:arcane_ore
+#forge:ores/mana_gem
 - ars_nouveau:arcane_ore
 #forge:ores/moldavite
 - silentgems:moldavite_ore
@@ -309,6 +299,7 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/phosphophyllite
 - silentgems:phosphophyllite_ore
 #forge:ores/potassium_nitrate
+#forge:ores/propserity
 #forge:ores/prosperity
 - mysticalagriculture:prosperity_ore
 #forge:ores/pyrope
@@ -318,8 +309,6 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/redstone
 - byg:cryptic_redstone_ore
 - cavesandcliffs:deepslate_redstone_ore
-- darkerdepths:aridrock_redstone_ore
-- darkerdepths:limestone_redstone_ore
 - minecraft:redstone_ore
 #forge:ores/rose_quartz
 - silentgems:rose_quartz_ore
@@ -331,8 +320,11 @@ $flags ITEM BLOCK OVERRIDE
 - thermal:sapphire_ore
 #forge:ores/silver
 - darkerdepths:aridrock_silver_ore
+- darkerdepths:aridrock_silver_ore?
 - darkerdepths:limestone_silver_ore
+- darkerdepths:limestone_silver_ore?
 - darkerdepths:silver_ore
+- darkerdepths:silver_ore?
 - iceandfire:silver_ore
 - immersiveengineering:ore_silver
 - silentgems:silver_ore
@@ -344,7 +336,7 @@ $flags ITEM BLOCK OVERRIDE
 #forge:ores/spinel
 - silentgems:spinel_ore
 #forge:ores/starmetal
-- astralsorcery:starmetal_ore
+- astralsorcery:starmetal_ore?
 #forge:ores/sulfur
 - thermal:sulfur_ore
 #forge:ores/sunstone
@@ -360,8 +352,6 @@ $flags ITEM BLOCK OVERRIDE
 - thermal:tin_ore
 #forge:ores/topaz
 - silentgems:topaz_ore
-#forge:ores/tungsten
-- stalwart_dungeons:tungsten_ore
 #forge:ores/turquoise
 - silentgems:turquoise_ore
 #forge:ores/uranium
@@ -373,3 +363,57 @@ $flags ITEM BLOCK OVERRIDE
 - create:zinc_ore
 #forge:ores/zircon
 - silentgems:zircon_ore
+
+// Additional changes not derived from dump_tags.py
+$flags BLOCK
+#forge:ores/iron
+- !cavesandcliffs:raw_iron
+#forge:ores/gold
+- !cavesandcliffs:raw_gold
+#forge:ores/copper
+- !cavesandcliffs:raw_copper
+#forge:ores/ironwood
+- !twilightforest:ironwood_raw
+#forge:ores/knightmetal
+- !twilightforest:armor_shard_cluster
+
+$flags ITEM BLOCK
+
+#forge:ores
+- #forge:ores/chorundum
+- #forge:ores/dragonstone
+- #forge:ores/elementium
+- #forge:ores/tungsten
+
+#forge:ores/chorundum
+- stalwart_dungeons:chorundum_ore
+
+#forge:ores/dragonstone
+- mythicbotany:dragonstone_ore
+
+#forge:ores/elementium
+- mythicbotany:elementium_ore
+
+#forge:ores/tungsten
+- stalwart_dungeons:tungsten_ore
+
+// darker depths
+#forge:ores/coal
+- darkerdepths:aridrock_coal_ore
+- darkerdepths:limestone_coal_ore
+
+#forge:ores/gold
+- darkerdepths:aridrock_gold_ore
+- darkerdepths:limestone_gold_ore
+
+#forge:ores/iron
+- darkerdepths:aridrock_iron_ore
+- darkerdepths:limestone_iron_ore
+
+#forge:ores/lapis
+- darkerdepths:aridrock_lapis_ore
+- darkerdepths:limestone_lapis_ore
+
+#forge:ores/redstone
+- darkerdepths:aridrock_redstone_ore
+- darkerdepths:limestone_redstone_ore

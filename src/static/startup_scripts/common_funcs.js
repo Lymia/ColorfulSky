@@ -16,7 +16,7 @@ let bind_gen_ore = function(e) {
             ore.minHeight = min_y
             ore.maxHeight = max_y
             ore.squared = true
-            ore.setWorldgenLayer('top_layer_modification')
+            ore.worldgenLayer = 'top_layer_modification'
         })
     }
 }
@@ -24,7 +24,7 @@ let bind_gen_ore = function(e) {
 let bind_gen_blk = function(e) {
     return function(ore_name, hardness, resistance, harvest_tool, harvest_level, material, texture) {
         var block = e.create(ore_name)
-        block.material(material).fullBlock(true).texture(texture)
+        block.material(material).fullBlock(true).textureAll(texture)
         block.requiresTool(true).hardness(hardness).resistance(resistance).harvestTool(harvest_tool, harvest_level)
     }
 }

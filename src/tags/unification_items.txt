@@ -11,12 +11,14 @@ $flags ITEM NO_GENERATE
 - #forge:gears/electrum
 - #forge:gears/emerald
 - #forge:gears/enderium
+- #forge:gears/flux_infused
 - #forge:gears/gold
 - #forge:gears/invar
 - #forge:gears/iron
 - #forge:gears/lapis
 - #forge:gears/lead
 - #forge:gears/lumium
+- #forge:gears/netherite
 - #forge:gears/nickel
 - #forge:gears/quartz
 - #forge:gears/ruby
@@ -83,6 +85,8 @@ $flags ITEM NO_GENERATE
 #forge:gears/enderium
 - emendatusenigmatica:enderium_gear
 - thermal:enderium_gear
+#forge:gears/flux_infused
+- redstone_arsenal:flux_gear?
 #forge:gears/gold
 - emendatusenigmatica:gold_gear
 - thermal:gold_gear
@@ -103,6 +107,8 @@ $flags ITEM NO_GENERATE
 #forge:gears/lumium
 - emendatusenigmatica:lumium_gear
 - thermal:lumium_gear
+#forge:gears/netherite
+- thermal:netherite_gear
 #forge:gears/nickel
 - emendatusenigmatica:nickel_gear
 - thermal:nickel_gear
@@ -138,6 +144,7 @@ $flags ITEM NO_GENERATE
 #forge:nuggets
 - #forge:nuggets/agate
 - #forge:nuggets/alexandrite
+- #forge:nuggets/alfsteel
 - #forge:nuggets/amber
 - #forge:nuggets/amethyst
 - #forge:nuggets/ametrine
@@ -154,6 +161,7 @@ $flags ITEM NO_GENERATE
 - #forge:nuggets/cats_eye
 - #forge:nuggets/chrysoprase
 - #forge:nuggets/citrine
+- #forge:nuggets/cobalt
 - #forge:nuggets/constantan
 - #forge:nuggets/copper
 - #forge:nuggets/coral
@@ -168,17 +176,21 @@ $flags ITEM NO_GENERATE
 - #forge:nuggets/emerald
 - #forge:nuggets/enderium
 - #forge:nuggets/euclase
+- #forge:nuggets/fairy
 - #forge:nuggets/fireite
 - #forge:nuggets/fluorite
+- #forge:nuggets/flux_infused
 - #forge:nuggets/garnet
 - #forge:nuggets/gold
 - #forge:nuggets/green_sapphire
 - #forge:nuggets/heliodor
+- #forge:nuggets/hepatizon
 - #forge:nuggets/invar
 - #forge:nuggets/iolite
 - #forge:nuggets/iron
 - #forge:nuggets/jade
 - #forge:nuggets/jasper
+- #forge:nuggets/knightslime
 - #forge:nuggets/kunzite
 - #forge:nuggets/kyanite
 - #forge:nuggets/lead
@@ -186,6 +198,7 @@ $flags ITEM NO_GENERATE
 - #forge:nuggets/lumium
 - #forge:nuggets/malachite
 - #forge:nuggets/manasteel
+- #forge:nuggets/manyullyn
 - #forge:nuggets/moldavite
 - #forge:nuggets/moonstone
 - #forge:nuggets/morganite
@@ -195,15 +208,21 @@ $flags ITEM NO_GENERATE
 - #forge:nuggets/pearl
 - #forge:nuggets/peridot
 - #forge:nuggets/phosphophyllite
+- #forge:nuggets/pig_iron
 - #forge:nuggets/pyrope
+- #forge:nuggets/queens_slime
 - #forge:nuggets/refined_glowstone
 - #forge:nuggets/refined_obsidian
+- #forge:nuggets/rose_gold
 - #forge:nuggets/rose_quartz
 - #forge:nuggets/ruby
 - #forge:nuggets/sapphire
 - #forge:nuggets/signalum
+- #forge:nuggets/silicon_bronze
 - #forge:nuggets/silver
+- #forge:nuggets/slimesteel
 - #forge:nuggets/sodalite
+- #forge:nuggets/soulsteel
 - #forge:nuggets/spinel
 - #forge:nuggets/steel
 - #forge:nuggets/sunstone
@@ -264,6 +283,8 @@ $flags ITEM NO_GENERATE
 - silentgems:agate_shard
 #forge:nuggets/alexandrite
 - silentgems:alexandrite_shard
+#forge:nuggets/alfsteel
+- mythicbotany:alfsteel_nugget?
 #forge:nuggets/aluminum
 - emendatusenigmatica:aluminum_nugget
 - immersiveengineering:nugget_aluminum
@@ -311,6 +332,7 @@ $flags ITEM NO_GENERATE
 - silentgems:citrine_shard
 #forge:nuggets/cobalt
 - emendatusenigmatica:cobalt_nugget
+- tconstruct:cobalt_nugget
 #forge:nuggets/constantan
 - emendatusenigmatica:constantan_nugget
 - immersiveengineering:nugget_constantan
@@ -321,6 +343,7 @@ $flags ITEM NO_GENERATE
 - iceandfire:copper_nugget
 - immersiveengineering:nugget_copper
 - mekanism:nugget_copper
+- tconstruct:copper_nugget
 - thermal:copper_nugget
 - tmechworks:copper_nugget
 #forge:nuggets/coral
@@ -350,10 +373,14 @@ $flags ITEM NO_GENERATE
 - thermal:enderium_nugget
 #forge:nuggets/euclase
 - silentgems:euclase_shard
+#forge:nuggets/fairy
+- materialis:fairy_nugget
 #forge:nuggets/fireite
 - elementalcraft:fireite_nugget
 #forge:nuggets/fluorite
 - silentgems:fluorite_shard
+#forge:nuggets/flux_infused
+- redstone_arsenal:flux_nugget?
 #forge:nuggets/garnet
 - silentgems:garnet_shard
 #forge:nuggets/gold
@@ -362,6 +389,8 @@ $flags ITEM NO_GENERATE
 - silentgems:green_sapphire_shard
 #forge:nuggets/heliodor
 - silentgems:heliodor_shard
+#forge:nuggets/hepatizon
+- tconstruct:hepatizon_nugget
 #forge:nuggets/invar
 - emendatusenigmatica:invar_nugget
 - thermal:invar_nugget
@@ -377,6 +406,8 @@ $flags ITEM NO_GENERATE
 #forge:nuggets/jasper
 - silentgems:jasper_shard
 #forge:nuggets/knightmetal
+#forge:nuggets/knightslime
+- tconstruct:knightslime_nugget
 #forge:nuggets/kunzite
 - silentgems:kunzite_shard
 #forge:nuggets/kyanite
@@ -396,12 +427,18 @@ $flags ITEM NO_GENERATE
 - silentgems:malachite_shard
 #forge:nuggets/manasteel
 - botania:manasteel_nugget
+#forge:nuggets/manyullyn
+- tconstruct:manyullyn_nugget
 #forge:nuggets/moldavite
 - silentgems:moldavite_shard
 #forge:nuggets/moonstone
 - silentgems:moonstone_shard
 #forge:nuggets/morganite
 - silentgems:morganite_shard
+#forge:nuggets/netherite
+- tconstruct:netherite_nugget
+#forge:nuggets/netherite_scrap
+- tconstruct:debris_nugget
 #forge:nuggets/nickel
 - emendatusenigmatica:nickel_nugget
 - immersiveengineering:nugget_nickel
@@ -421,12 +458,18 @@ $flags ITEM NO_GENERATE
 - eidolon:pewter_nugget
 #forge:nuggets/phosphophyllite
 - silentgems:phosphophyllite_shard
+#forge:nuggets/pig_iron
+- tconstruct:pig_iron_nugget
 #forge:nuggets/pyrope
 - silentgems:pyrope_shard
+#forge:nuggets/queens_slime
+- tconstruct:queens_slime_nugget
 #forge:nuggets/refined_glowstone
 - mekanism:nugget_refined_glowstone
 #forge:nuggets/refined_obsidian
 - mekanism:nugget_refined_obsidian
+#forge:nuggets/rose_gold
+- tconstruct:rose_gold_nugget
 #forge:nuggets/rose_quartz
 - silentgems:rose_quartz_shard
 #forge:nuggets/ruby
@@ -436,14 +479,20 @@ $flags ITEM NO_GENERATE
 #forge:nuggets/signalum
 - emendatusenigmatica:signalum_nugget
 - thermal:signalum_nugget
+#forge:nuggets/silicon_bronze
+- tconstruct:tinkers_bronze_nugget
 #forge:nuggets/silver
 - emendatusenigmatica:silver_nugget
 - iceandfire:silver_nugget
 - immersiveengineering:nugget_silver
 - silentgems:silver_nugget
 - thermal:silver_nugget
+#forge:nuggets/slimesteel
+- tconstruct:slimesteel_nugget
 #forge:nuggets/sodalite
 - silentgems:sodalite_shard
+#forge:nuggets/soulsteel
+- tconstruct:soulsteel_nugget
 #forge:nuggets/spinel
 - silentgems:spinel_shard
 #forge:nuggets/starmetal
@@ -471,7 +520,6 @@ $flags ITEM NO_GENERATE
 - thermal:tin_nugget
 #forge:nuggets/topaz
 - silentgems:topaz_shard
-#forge:nuggets/tungsten
 #forge:nuggets/turquoise
 - silentgems:turquoise_shard
 #forge:nuggets/tyrian_steel
@@ -499,6 +547,7 @@ $flags ITEM NO_GENERATE
 - #forge:plates/iron
 - #forge:plates/lead
 - #forge:plates/lumium
+- #forge:plates/netherite
 - #forge:plates/nickel
 - #forge:plates/signalum
 - #forge:plates/silver
@@ -605,6 +654,8 @@ $flags ITEM NO_GENERATE
 #forge:plates/lumium
 - emendatusenigmatica:lumium_plate
 - thermal:lumium_plate
+#forge:plates/netherite
+- thermal:netherite_plate
 #forge:plates/nickel
 - emendatusenigmatica:nickel_plate
 - immersiveengineering:plate_nickel
@@ -689,6 +740,35 @@ $flags ITEM NO_GENERATE
 - createaddition:copper_rod
 - createaddition:gold_rod
 - createaddition:iron_rod
+- emendatusenigmatica:aluminum_rod
+- emendatusenigmatica:brass_rod
+- emendatusenigmatica:bronze_rod
+- emendatusenigmatica:cast_iron_rod
+- emendatusenigmatica:cobalt_rod
+- emendatusenigmatica:constantan_rod
+- emendatusenigmatica:copper_rod
+- emendatusenigmatica:diamond_rod
+- emendatusenigmatica:electrum_rod
+- emendatusenigmatica:emerald_rod
+- emendatusenigmatica:enderium_rod
+- emendatusenigmatica:gold_rod
+- emendatusenigmatica:invar_rod
+- emendatusenigmatica:iridium_rod
+- emendatusenigmatica:iron_rod
+- emendatusenigmatica:lapis_rod
+- emendatusenigmatica:lead_rod
+- emendatusenigmatica:lumium_rod
+- emendatusenigmatica:nickel_rod
+- emendatusenigmatica:osmium_rod
+- emendatusenigmatica:peridot_rod
+- emendatusenigmatica:ruby_rod
+- emendatusenigmatica:sapphire_rod
+- emendatusenigmatica:signalum_rod
+- emendatusenigmatica:silver_rod
+- emendatusenigmatica:steel_rod
+- emendatusenigmatica:tin_rod
+- emendatusenigmatica:uranium_rod
+- emendatusenigmatica:zinc_rod
 #forge:rods/aluminum
 - emendatusenigmatica:aluminum_rod
 - immersiveengineering:stick_aluminum

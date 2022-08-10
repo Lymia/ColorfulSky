@@ -1,5 +1,18 @@
 $flags ITEM
 
+#forge:dusts/starmetal
+- astralsorcery:stardust
+
+// is this still needed, or just legacy?
+#forge:dusts
+- #forge:dusts/chorundum
+- #forge:dusts/dragonstone
+- #forge:dusts/elementium
+
+#forge:dusts/chorundum
+#forge:dusts/dragonstone
+#forge:dusts/elementium
+
 // From src/dump_tags.py
 $flags ITEM NO_GENERATE
 
@@ -24,6 +37,7 @@ $flags ITEM NO_GENERATE
 - #forge:dusts/ender_pearl
 - #forge:dusts/enderium
 - #forge:dusts/fluorite
+- #forge:dusts/flux_infused
 - #forge:dusts/glowstone
 - #forge:dusts/gold
 - #forge:dusts/invar
@@ -126,6 +140,7 @@ $flags ITEM NO_GENERATE
 - mekanism:dust_osmium
 - mekanism:dust_tin
 - mekanism:dust_uranium
+- rftoolsbase:dimensionalshard
 - silentgems:chaos_dust
 #forge:dusts/agate
 #forge:dusts/alexandrite
@@ -167,7 +182,6 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:charcoal_dust
 - mekanism:dust_charcoal
 #forge:dusts/charged_certus_quartz
-#forge:dusts/chorundum
 #forge:dusts/chrysoprase
 #forge:dusts/cinnabar
 - emendatusenigmatica:cinnabar_dust
@@ -213,12 +227,10 @@ $flags ITEM NO_GENERATE
 - draconicevolution:draconium_dust
 #forge:dusts/draconium_awakened
 - draconicevolution:awakened_draconium_dust
-#forge:dusts/dragonstone
 #forge:dusts/electrum
 - emendatusenigmatica:electrum_dust
 - immersiveengineering:dust_electrum
 - thermal:electrum_dust
-#forge:dusts/elementium
 #forge:dusts/emerald
 - emendatusenigmatica:emerald_dust
 - mekanism:dust_emerald
@@ -236,6 +248,8 @@ $flags ITEM NO_GENERATE
 #forge:dusts/fluorite
 - emendatusenigmatica:fluorite_dust
 - mekanism:dust_fluorite
+#forge:dusts/flux_infused
+- redstone_arsenal:flux_dust?
 #forge:dusts/froststeel
 - emendatusenigmatica:froststeel_dust
 #forge:dusts/garnet
@@ -299,6 +313,7 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:nebu_dust
 #forge:dusts/netherite
 - mekanism:dust_netherite
+- thermal:netherite_dust
 #forge:dusts/netherite_scrap
 - bloodmagic:sand_netherite
 #forge:dusts/nickel
@@ -359,7 +374,6 @@ $flags ITEM NO_GENERATE
 #forge:dusts/sodalite
 #forge:dusts/spinel
 #forge:dusts/starmetal
-- astralsorcery:stardust
 - silentgear:starmetal_dust
 #forge:dusts/steel
 - emendatusenigmatica:steel_dust
@@ -382,7 +396,6 @@ $flags ITEM NO_GENERATE
 - mekanism:dust_tin
 - thermal:tin_dust
 #forge:dusts/topaz
-#forge:dusts/tungsten
 #forge:dusts/turquoise
 #forge:dusts/tyrian_steel
 - silentgear:tyrian_steel_dust

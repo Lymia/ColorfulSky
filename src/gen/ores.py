@@ -168,7 +168,7 @@ add_strata("raw_marble", "Marble", "astralsorcery:block/marble_raw", "astralsorc
 add_strata("clay", "Clay", "minecraft:block/clay", "minecraft:clay", "overworld", is_custom=True, material="clay", harvest_tool="shovel")
 add_strata("dolomite", "Dolomite", "create:block/palettes/dolomite/plain", "create:dolomite", "overworld", is_custom=True)
 add_strata("aridrock", "Aridrock", "darkerdepths:block/aridrock", "darkerdepths:aridrock", "overworld", is_custom=True)
-add_strata("grimestone", "Grimestone", "darkerdepths:block/grimestone", "darkerdepths:grimestone", "overworld", is_custom=True)
+add_strata("grimestone", "Grimestone", "darkerdepths:block/grimestone", "darkerdepths:grimestone", "overworld", is_custom=True) # TODO: Sided
 add_strata("dd_limestone", "Limestone", "darkerdepths:block/limestone", "darkerdepths:limestone", "overworld", is_custom=True)
 add_strata("dacite", "Dacite", "byg:block/dacite", "byg:dacite", "overworld", is_custom=True)
 add_strata("red_rock", "Red Rock", "byg:block/red_rock", "byg:red_rock", "overworld", is_custom=True)

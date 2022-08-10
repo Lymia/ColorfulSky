@@ -23,3 +23,5 @@
 /shaderpacks
 /*.old
 /tconplanner
+/craftdumper
+*.kate-swp

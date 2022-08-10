@@ -1,15 +1,29 @@
 $flags ITEM
 
+#forge:gems
+- #forge:gems/chorundum
+
+#forge:gems/chorundum
+- stalwart_dungeons:chorundum
+
+#forge:ingots
+- #forge:ingots/tungsten
+
+#forge:ingots/tungsten
+- stalwart_dungeons:tungsten_ingot
+
 // From src/dump_tags.py
 $flags ITEM NO_GENERATE
 
 #forge:ingots
 - #create:create_ingots
+- #forge:ingots/alfsteel
 - #forge:ingots/azure_electrum
 - #forge:ingots/azure_silver
 - #forge:ingots/blaze_gold
 - #forge:ingots/brick
 - #forge:ingots/bronze
+- #forge:ingots/cobalt
 - #forge:ingots/constantan
 - #forge:ingots/copper
 - #forge:ingots/crimson_iron
@@ -20,23 +34,38 @@ $flags ITEM NO_GENERATE
 - #forge:ingots/electrum
 - #forge:ingots/elementium
 - #forge:ingots/enderium
+- #forge:ingots/fairy
 - #forge:ingots/fiery
 - #forge:ingots/fireite
+- #forge:ingots/flux_infused
 - #forge:ingots/gold
+- #forge:ingots/hepatizon
 - #forge:ingots/invar
 - #forge:ingots/iron
 - #forge:ingots/ironwood
 - #forge:ingots/knightmetal
+- #forge:ingots/knightslime
 - #forge:ingots/lead
 - #forge:ingots/lumium
 - #forge:ingots/manasteel
+- #forge:ingots/manyullyn
 - #forge:ingots/nether_brick
 - #forge:ingots/netherite
 - #forge:ingots/nickel
+- #forge:ingots/pig_iron
+- #forge:ingots/pink_slime
+- #forge:ingots/queens_slime
 - #forge:ingots/refined_glowstone
 - #forge:ingots/refined_obsidian
+- #forge:ingots/refined_radiance
+- #forge:ingots/rose_gold
+- #forge:ingots/shadow_steel
 - #forge:ingots/signalum
+- #forge:ingots/silicon_bronze
 - #forge:ingots/silver
+- #forge:ingots/slimesteel
+- #forge:ingots/soulsteel
+- #forge:ingots/starmetal
 - #forge:ingots/steel
 - #forge:ingots/steeleaf
 - #forge:ingots/swift_alloy
@@ -83,10 +112,14 @@ $flags ITEM NO_GENERATE
 - mekanism:ingot_tin
 - mekanism:ingot_uranium
 - silentgems:silver_ingot
+- tconstruct:scorched_brick
+- tconstruct:seared_brick
 - tmechworks:aluminum_ingot
 - tmechworks:copper_ingot
 #forge:ingots/aeternium
 - betterendforge:aeternium_ingot
+#forge:ingots/alfsteel
+- mythicbotany:alfsteel_ingot?
 #forge:ingots/aluminum
 - emendatusenigmatica:aluminum_ingot
 - immersiveengineering:ingot_aluminum
@@ -112,6 +145,7 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:cast_iron_ingot
 #forge:ingots/cobalt
 - emendatusenigmatica:cobalt_ingot
+- tconstruct:cobalt_ingot
 #forge:ingots/constantan
 - emendatusenigmatica:constantan_ingot
 - immersiveengineering:ingot_constantan
@@ -123,6 +157,7 @@ $flags ITEM NO_GENERATE
 - iceandfire:copper_ingot
 - immersiveengineering:ingot_copper
 - mekanism:ingot_copper
+- tconstruct:copper_ingot
 - thermal:copper_ingot
 - tmechworks:copper_ingot
 #forge:ingots/crimson_iron
@@ -150,14 +185,20 @@ $flags ITEM NO_GENERATE
 #forge:ingots/enderium
 - emendatusenigmatica:enderium_ingot
 - thermal:enderium_ingot
+#forge:ingots/fairy
+- materialis:fairy_ingot
 #forge:ingots/fiery
 - twilightforest:fiery_ingot
 #forge:ingots/fireite
 - elementalcraft:fireite_ingot
+#forge:ingots/flux_infused
+- redstone_arsenal:flux_ingot?
 #forge:ingots/gold
 - minecraft:gold_ingot
 #forge:ingots/hellforged
 - bloodmagic:ingot_hellforged
+#forge:ingots/hepatizon
+- tconstruct:hepatizon_ingot
 #forge:ingots/hop_graphite
 - immersiveengineering:ingot_hop_graphite
 #forge:ingots/invar
@@ -171,6 +212,8 @@ $flags ITEM NO_GENERATE
 - twilightforest:ironwood_ingot
 #forge:ingots/knightmetal
 - twilightforest:knightmetal_ingot
+#forge:ingots/knightslime
+- tconstruct:knightslime_ingot
 #forge:ingots/lead
 - eidolon:lead_ingot
 - emendatusenigmatica:lead_ingot
@@ -182,10 +225,14 @@ $flags ITEM NO_GENERATE
 - thermal:lumium_ingot
 #forge:ingots/manasteel
 - botania:manasteel_ingot
+#forge:ingots/manyullyn
+- tconstruct:manyullyn_ingot
 #forge:ingots/nether_brick
 - minecraft:nether_brick
 #forge:ingots/netherite
 - minecraft:netherite_ingot
+#forge:ingots/netherite_scrap
+- minecraft:netherite_scrap
 #forge:ingots/nickel
 - emendatusenigmatica:nickel_ingot
 - immersiveengineering:ingot_nickel
@@ -195,13 +242,27 @@ $flags ITEM NO_GENERATE
 - mekanism:ingot_osmium
 #forge:ingots/pewter
 - eidolon:pewter_ingot
+#forge:ingots/pig_iron
+- tconstruct:pig_iron_ingot
+#forge:ingots/pink_slime
+- industrialforegoing:pink_slime_ingot?
+#forge:ingots/queens_slime
+- tconstruct:queens_slime_ingot
 #forge:ingots/refined_glowstone
 - mekanism:ingot_refined_glowstone
 #forge:ingots/refined_obsidian
 - mekanism:ingot_refined_obsidian
+#forge:ingots/refined_radiance
+- create:refined_radiance?
+#forge:ingots/rose_gold
+- tconstruct:rose_gold_ingot
+#forge:ingots/shadow_steel
+- create:shadow_steel?
 #forge:ingots/signalum
 - emendatusenigmatica:signalum_ingot
 - thermal:signalum_ingot
+#forge:ingots/silicon_bronze
+- tconstruct:tinkers_bronze_ingot
 #forge:ingots/silver
 - darkerdepths:silver_ingot
 - emendatusenigmatica:silver_ingot
@@ -209,8 +270,12 @@ $flags ITEM NO_GENERATE
 - immersiveengineering:ingot_silver
 - silentgems:silver_ingot
 - thermal:silver_ingot
+#forge:ingots/slimesteel
+- tconstruct:slimesteel_ingot
+#forge:ingots/soulsteel
+- tconstruct:soulsteel_ingot
 #forge:ingots/starmetal
-- astralsorcery:starmetal_ingot
+- astralsorcery:starmetal_ingot?
 #forge:ingots/steel
 - emendatusenigmatica:steel_ingot
 - immersiveengineering:ingot_steel
@@ -229,8 +294,6 @@ $flags ITEM NO_GENERATE
 - emendatusenigmatica:tin_ingot
 - mekanism:ingot_tin
 - thermal:tin_ingot
-#forge:ingots/tungsten
-- stalwart_dungeons:tungsten_ingot
 #forge:ingots/tyrian_steel
 - silentgear:tyrian_steel_ingot
 #forge:ingots/uranium
@@ -364,8 +427,6 @@ $flags ITEM NO_GENERATE
 - silentgems:chaos_crystal
 #forge:gems/charged_certus_quartz
 - emendatusenigmatica:charged_certus_quartz_gem
-#forge:gems/chorundum
-- stalwart_dungeons:chorundum
 #forge:gems/chrysoprase
 - silentgems:chrysoprase
 #forge:gems/cinnabar
@@ -486,4 +547,3 @@ $flags ITEM NO_GENERATE
 - silentgems:yellow_diamond
 #forge:gems/zircon
 - silentgems:zircon
-

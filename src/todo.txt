@@ -3,10 +3,15 @@
 - Rebalance all material stats for both TiC and Silent's Gear.
 - Finish work on ore textures
     - Be sure to fix particles for EE ores!
+    - Remove Bioite tbh
 - Unify ore processing
 - Do another sweep for EMC exploits.
 - Basic quests toolchain.
 - Mystical Agriculture/etc recipes
+    - Consider removing armor/weapons/augments (and corresponding documentation)
+    - Consider rebalancing essence costs.
+- Remove documentation for removed items in Cyclic
 - Do another round of material unifications.
 - WRD needs way better rewards, maybe try to cut off the darker depths thing too.
 - StarterKit (+ Tinker's Construct at least)
+- Rework curio slots.

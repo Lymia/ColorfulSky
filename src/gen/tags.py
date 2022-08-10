@@ -47,7 +47,11 @@ def parse_config(datapack, f, strict = True):
                 continue
             if head == '-':
                 assert(current_tag != None)
-                datapack.tags.add_tag(flag_kinds, args[0], current_tag, generated = not flag_no_generate)
+                tag = args[0]
+                if tag[0] == '!':
+                    datapack.tags.remove_tag(flag_kinds, tag[1:], current_tag, generated = not flag_no_generate)
+                else:
+                    datapack.tags.add_tag(flag_kinds, tag, current_tag, generated = not flag_no_generate)
                 continue
             
             if not strict:

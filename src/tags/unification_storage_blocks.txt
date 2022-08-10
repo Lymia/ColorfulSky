@@ -27,12 +27,18 @@ $flags ITEM BLOCK
 #forge:storage_blocks/terrasteel
 - botania:terrasteel_block
 
+#forge:storage_blocks/alfsteel
+- constellation:dummy?
+#forge:storage_blocks/flux_infused
+- constellation:dummy?
+
 // From src/dump_tags.py
 $flags ITEM BLOCK NO_GENERATE
 
 #forge:storage_blocks
 - #forge:storage_blocks/agate
 - #forge:storage_blocks/alexandrite
+- #forge:storage_blocks/alfsteel
 - #forge:storage_blocks/amber
 - #forge:storage_blocks/amethyst
 - #forge:storage_blocks/ametrine
@@ -45,6 +51,7 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/bamboo
 - #forge:storage_blocks/benitoite
 - #forge:storage_blocks/biotite
+- #forge:storage_blocks/bitumen
 - #forge:storage_blocks/black_diamond
 - #forge:storage_blocks/blaze_gold
 - #forge:storage_blocks/bort
@@ -61,6 +68,7 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/citrine
 - #forge:storage_blocks/coal
 - #forge:storage_blocks/coal_coke
+- #forge:storage_blocks/cobalt
 - #forge:storage_blocks/constantan
 - #forge:storage_blocks/copper
 - #forge:storage_blocks/coral
@@ -75,14 +83,17 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/emerald
 - #forge:storage_blocks/enderium
 - #forge:storage_blocks/euclase
+- #forge:storage_blocks/fairy
 - #forge:storage_blocks/fiery
 - #forge:storage_blocks/fireite
 - #forge:storage_blocks/fluorite
+- #forge:storage_blocks/flux_infused
 - #forge:storage_blocks/garnet
 - #forge:storage_blocks/gold
 - #forge:storage_blocks/green_sapphire
 - #forge:storage_blocks/gunpowder
 - #forge:storage_blocks/heliodor
+- #forge:storage_blocks/hepatizon
 - #forge:storage_blocks/invar
 - #forge:storage_blocks/iolite
 - #forge:storage_blocks/iron
@@ -90,6 +101,7 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/jade
 - #forge:storage_blocks/jasper
 - #forge:storage_blocks/knightmetal
+- #forge:storage_blocks/knightslime
 - #forge:storage_blocks/kunzite
 - #forge:storage_blocks/kyanite
 - #forge:storage_blocks/lapis
@@ -98,6 +110,7 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/lumium
 - #forge:storage_blocks/malachite
 - #forge:storage_blocks/manasteel
+- #forge:storage_blocks/manyullyn
 - #forge:storage_blocks/moldavite
 - #forge:storage_blocks/moonstone
 - #forge:storage_blocks/morganite
@@ -110,18 +123,26 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/pearl
 - #forge:storage_blocks/peridot
 - #forge:storage_blocks/phosphophyllite
+- #forge:storage_blocks/pig_iron
 - #forge:storage_blocks/pyrope
 - #forge:storage_blocks/quartz
+- #forge:storage_blocks/queens_slime
 - #forge:storage_blocks/redstone
 - #forge:storage_blocks/refined_glowstone
 - #forge:storage_blocks/refined_obsidian
+- #forge:storage_blocks/rose_gold
 - #forge:storage_blocks/rose_quartz
 - #forge:storage_blocks/ruby
 - #forge:storage_blocks/sapphire
 - #forge:storage_blocks/signalum
+- #forge:storage_blocks/silicon_bronze
 - #forge:storage_blocks/silver
+- #forge:storage_blocks/slag
+- #forge:storage_blocks/slimesteel
 - #forge:storage_blocks/sodalite
+- #forge:storage_blocks/soulsteel
 - #forge:storage_blocks/spinel
+- #forge:storage_blocks/starmetal
 - #forge:storage_blocks/steel
 - #forge:storage_blocks/steeleaf
 - #forge:storage_blocks/sugar_cane
@@ -129,6 +150,7 @@ $flags ITEM BLOCK NO_GENERATE
 - #forge:storage_blocks/sunstone
 - #forge:storage_blocks/swift_alloy
 - #forge:storage_blocks/tanzanite
+- #forge:storage_blocks/tar
 - #forge:storage_blocks/tektite
 - #forge:storage_blocks/terrasteel
 - #forge:storage_blocks/tin
@@ -150,6 +172,11 @@ $flags ITEM BLOCK NO_GENERATE
 - create:brass_block
 - create:copper_block
 - create:zinc_block
+- draconicevolution:awakened_draconium_block
+- draconicevolution:draconium_block
+- eidolon:arcane_gold_block
+- eidolon:lead_block
+- eidolon:pewter_block
 - emendatusenigmatica:aluminum_block
 - emendatusenigmatica:apatite_block
 - emendatusenigmatica:arcane_block
@@ -202,6 +229,8 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:agate_block
 #forge:storage_blocks/alexandrite
 - silentgems:alexandrite_block
+#forge:storage_blocks/alfsteel
+- mythicbotany:alfsteel_block?
 #forge:storage_blocks/aluminum
 - emendatusenigmatica:aluminum_block
 - immersiveengineering:storage_aluminum
@@ -226,6 +255,8 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:aquamarine_block
 #forge:storage_blocks/arcane
 - emendatusenigmatica:arcane_block
+#forge:storage_blocks/arcane_gold
+- eidolon:arcane_gold_block
 #forge:storage_blocks/arctic_fur
 - twilightforest:arctic_fur_block
 #forge:storage_blocks/azure_electrum
@@ -277,7 +308,6 @@ $flags ITEM BLOCK NO_GENERATE
 - thermal:charcoal_block
 #forge:storage_blocks/charged_certus_quartz
 - emendatusenigmatica:charged_certus_quartz_block
-#forge:storage_blocks/chorundum
 #forge:storage_blocks/chrysoprase
 - silentgems:chrysoprase_block
 #forge:storage_blocks/cinnabar
@@ -298,6 +328,7 @@ $flags ITEM BLOCK NO_GENERATE
 - immersivepetroleum:petcoke_block
 #forge:storage_blocks/cobalt
 - emendatusenigmatica:cobalt_block
+- tconstruct:cobalt_block
 #forge:storage_blocks/coke
 - emendatusenigmatica:coke_block
 #forge:storage_blocks/constantan
@@ -312,6 +343,7 @@ $flags ITEM BLOCK NO_GENERATE
 - iceandfire:copper_block
 - immersiveengineering:storage_copper
 - mekanism:block_copper
+- tconstruct:copper_block
 - thermal:copper_block
 - tmechworks:copper_block
 #forge:storage_blocks/coral
@@ -352,6 +384,8 @@ $flags ITEM BLOCK NO_GENERATE
 - thermal:enderium_block
 #forge:storage_blocks/euclase
 - silentgems:euclase_block
+#forge:storage_blocks/fairy
+- materialis:fairy_block
 #forge:storage_blocks/fiery
 - twilightforest:fiery_block
 #forge:storage_blocks/fire_dragon_scale
@@ -365,13 +399,17 @@ $flags ITEM BLOCK NO_GENERATE
 - emendatusenigmatica:fluix_block
 #forge:storage_blocks/fluorite
 - emendatusenigmatica:fluorite_block
+- mekanism:block_fluorite
 - silentgems:fluorite_block
+#forge:storage_blocks/flux_infused
+- redstone_arsenal:flux_metal_block?
 #forge:storage_blocks/froststeel
 #forge:storage_blocks/garnet
 - silentgems:garnet_block
 #forge:storage_blocks/glowstone
 - minecraft:glowstone
 #forge:storage_blocks/gold
+- cavesandcliffs:raw_gold_block
 - minecraft:gold_block
 #forge:storage_blocks/graphite
 #forge:storage_blocks/green_sapphire
@@ -381,6 +419,8 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/heliodor
 - silentgems:heliodor_block
 #forge:storage_blocks/hellforged
+#forge:storage_blocks/hepatizon
+- tconstruct:hepatizon_block
 #forge:storage_blocks/hop_graphite
 #forge:storage_blocks/ice_dragon_scale
 - iceandfire:dragonscale_blue
@@ -395,6 +435,7 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/iridium
 - emendatusenigmatica:iridium_block
 #forge:storage_blocks/iron
+- cavesandcliffs:raw_iron_block
 - minecraft:iron_block
 #forge:storage_blocks/ironwood
 - twilightforest:ironwood_block
@@ -404,6 +445,8 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:jasper_block
 #forge:storage_blocks/knightmetal
 - twilightforest:knightmetal_block
+#forge:storage_blocks/knightslime
+- tconstruct:knightslime_block
 #forge:storage_blocks/kunzite
 - silentgems:kunzite_block
 #forge:storage_blocks/kyanite
@@ -411,6 +454,7 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/lapis
 - minecraft:lapis_block
 #forge:storage_blocks/lead
+- eidolon:lead_block
 - emendatusenigmatica:lead_block
 - immersiveengineering:storage_lead
 - mekanism:block_lead
@@ -435,6 +479,8 @@ $flags ITEM BLOCK NO_GENERATE
 #forge:storage_blocks/mana_diamond
 #forge:storage_blocks/manasteel
 - botania:manasteel_block
+#forge:storage_blocks/manyullyn
+- tconstruct:manyullyn_block
 #forge:storage_blocks/moldavite
 - silentgems:moldavite_block
 #forge:storage_blocks/moonstone
@@ -470,8 +516,13 @@ $flags ITEM BLOCK NO_GENERATE
 - silentgems:peridot_block
 #forge:storage_blocks/petcoke
 - immersivepetroleum:petcoke_block
+#forge:storage_blocks/pewter
+- eidolon:pewter_block
 #forge:storage_blocks/phosphophyllite
 - silentgems:phosphophyllite_block
+#forge:storage_blocks/pig_iron
+- tconstruct:pig_iron_block
+#forge:storage_blocks/pink_slime
 #forge:storage_blocks/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_block
 #forge:storage_blocks/prismarine
@@ -486,13 +537,18 @@ $flags ITEM BLOCK NO_GENERATE
 - botania:red_quartz
 - botania:sunny_quartz
 - minecraft:quartz_block
+#forge:storage_blocks/queens_slime
+- tconstruct:queens_slime_block
 #forge:storage_blocks/redstone
 - minecraft:redstone_block
 #forge:storage_blocks/refined_glowstone
 - mekanism:block_refined_glowstone
 #forge:storage_blocks/refined_obsidian
 - mekanism:block_refined_obsidian
+#forge:storage_blocks/refined_radiance
 #forge:storage_blocks/regalium
+#forge:storage_blocks/rose_gold
+- tconstruct:rose_gold_block
 #forge:storage_blocks/rose_quartz
 - silentgems:rose_quartz_block
 #forge:storage_blocks/ruby
@@ -507,10 +563,13 @@ $flags ITEM BLOCK NO_GENERATE
 - iceandfire:sapphire_block
 - silentgems:sapphire_block
 - thermal:sapphire_block
+#forge:storage_blocks/shadow_steel
 #forge:storage_blocks/signalum
 - emendatusenigmatica:signalum_block
 - thermal:signalum_block
 #forge:storage_blocks/silicon
+#forge:storage_blocks/silicon_bronze
+- tconstruct:tinkers_bronze_block
 #forge:storage_blocks/silver
 - emendatusenigmatica:silver_block
 - iceandfire:silver_block
@@ -519,11 +578,16 @@ $flags ITEM BLOCK NO_GENERATE
 - thermal:silver_block
 #forge:storage_blocks/slag
 - thermal:slag_block
+#forge:storage_blocks/slimesteel
+- tconstruct:slimesteel_block
 #forge:storage_blocks/sodalite
 - silentgems:sodalite_block
+#forge:storage_blocks/soulsteel
+- tconstruct:soulsteel_block
 #forge:storage_blocks/spinel
 - silentgems:spinel_block
 #forge:storage_blocks/starmetal
+- astralsorcery:starmetal?
 #forge:storage_blocks/steel
 - emendatusenigmatica:steel_block
 - immersiveengineering:storage_steel
@@ -555,7 +619,6 @@ $flags ITEM BLOCK NO_GENERATE
 - thermal:tin_block
 #forge:storage_blocks/topaz
 - silentgems:topaz_block
-#forge:storage_blocks/tungsten
 #forge:storage_blocks/turquoise
 - silentgems:turquoise_block
 #forge:storage_blocks/tyrian_steel
@@ -573,32 +636,3 @@ $flags ITEM BLOCK NO_GENERATE
 - emendatusenigmatica:zinc_block
 #forge:storage_blocks/zircon
 - silentgems:zircon_block
-#refinedstorage:storage_blocks
-- #refinedstorage:storage_blocks/fluids
-- #refinedstorage:storage_blocks/items
-#refinedstorage:storage_blocks/fluids
-- #refinedstorage:storage_blocks/fluids/1048576k
-- #refinedstorage:storage_blocks/fluids/16384k
-- #refinedstorage:storage_blocks/fluids/262144k
-- #refinedstorage:storage_blocks/fluids/65536k
-#refinedstorage:storage_blocks/fluids/1048576k
-- extrastorage:block_1048576k_fluid
-#refinedstorage:storage_blocks/fluids/16384k
-- extrastorage:block_16384k_fluid
-#refinedstorage:storage_blocks/fluids/262144k
-- extrastorage:block_262144k_fluid
-#refinedstorage:storage_blocks/fluids/65536k
-- extrastorage:block_65536k_fluid
-#refinedstorage:storage_blocks/items
-- #refinedstorage:storage_blocks/items/1024k
-- #refinedstorage:storage_blocks/items/16384k
-- #refinedstorage:storage_blocks/items/256k
-- #refinedstorage:storage_blocks/items/4096k
-#refinedstorage:storage_blocks/items/1024k
-- extrastorage:block_1024k
-#refinedstorage:storage_blocks/items/16384k
-- extrastorage:block_16384k
-#refinedstorage:storage_blocks/items/256k
-- extrastorage:block_256k
-#refinedstorage:storage_blocks/items/4096k
-- extrastorage:block_4096k
