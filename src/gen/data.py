@@ -42,6 +42,15 @@ class TagConfig(object):
     def get_tag(self, kind, tag):
         assert(tag != None)
         return self.tags.setdefault(kind, {}).setdefault(tag, set({}))
+    
+    def remove_name(self, name):
+        for kind_name in self.tags:
+            kind = self.tags[kind_name]
+            for tag in kind:
+                tag_data = kind[tag]
+                if name in tag_data:
+                    self.should_override.add(tag)
+                    tag_data.remove(name)
         
     def get_block_tag(self, tag):
         return self.get_tag("blocks", tag)
@@ -75,6 +84,7 @@ class DatapackModel(object):
     
     def remove_name(self, name):
         self.removed_names.append(name)
+        self.tags.remove_name(name)
         
     def process_script(self, name, script):
         return js_minify_simple(script)
@@ -108,6 +118,9 @@ def generate_tags(tags, target):
 def make_remove_unused(datapack, target):
     json = js_minify_simple(f"hide_events({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
     with open_mkdir(f"{target}/client_scripts/generated_remove_unused.js") as fd:
+        fd.write(json)
+    json = js_minify_simple(f"remove_items({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
+    with open_mkdir(f"{target}/server_scripts/generated_remove_unused.js") as fd:
         fd.write(json)
     
 def generate_datapack_files(datapack, target):

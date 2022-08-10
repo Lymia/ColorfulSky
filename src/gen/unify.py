@@ -12,7 +12,7 @@ from gen.utils import *
 # Definitions for unification
 unify_list = [
     "coal", "iron", "gold", "diamond", "emerald", "lapis", "redstone", "quartz", "copper", # Vanilla
-    "aluminum", "silver", "lead", "nickel", "uranium",  "osmium", "zinc", # Modded Metals
+    "silver", "lead", "nickel", "uranium",  "osmium", "zinc", # Modded Metals
     "bronze", "brass", "constantan", "electrum", "steel", "invar", "signalum", "lumium", "enderium", # Alloys
 ]
 unify_groups = [
@@ -39,7 +39,7 @@ unused_gears = [
 unused_materials = [
     "certus_quartz", "charged_certus_quartz", "fluix", "potassium_nitrate",
     "iesnium", "regalium", "utherium", "froststeel", "cloggrum", "nebu",
-    "cast_iron", "iridium", "cobalt",
+    "cast_iron", "iridium", "cobalt", "aluminum",
 ]
 
 ########
@@ -106,9 +106,9 @@ def unify_tags(datapack):
         delete_item(datapack, f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
         
     # Remove molten metals entirely. (No Tinker's Construct)
-    for item in datapack.tags.get_item_tag("constellation:remove_buckets"):
+    for item in list(datapack.tags.get_item_tag("constellation:remove_buckets")):
         datapack.remove_name(item)
-    for item in datapack.tags.get_item_tag("constellation:remove_molten"):
+    for item in list(datapack.tags.get_item_tag("constellation:remove_molten")):
         datapack.remove_name(item)
     
     # Mark clusters as ores

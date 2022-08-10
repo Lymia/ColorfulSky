@@ -1,0 +1,15 @@
+{
+  "block.immersiveengineering.alu_fence": "Tin Fence",
+  "block.immersiveengineering.alu_post": "Tin Post",
+  "block.immersiveengineering.alu_wallmount": "Tin Wallmount",
+  "block.immersiveengineering.alu_slope": "Tin Structural Arm",
+  "block.immersiveengineering.alu_scaffolding_standard": "Tin Scaffolding",
+  "block.immersiveengineering.alu_scaffolding_grate_top": "Tin Scaffolding",
+  "block.immersiveengineering.alu_scaffolding_wooden_top": "Tin Scaffolding",
+  "block.immersiveengineering.slab_alu_scaffolding_standard": "Tin Scaffolding Slab",
+  "block.immersiveengineering.slab_alu_scaffolding_grate_top": "Tin Scaffolding Slab",
+  "block.immersiveengineering.slab_alu_scaffolding_wooden_top": "Tin Scaffolding Slab",
+  "block.immersiveengineering.stairs_alu_scaffolding_standard": "Tin Scaffolding Stairs",
+  "block.immersiveengineering.stairs_alu_scaffolding_grate_top": "Tin Scaffolding Stairs",
+  "block.immersiveengineering.stairs_alu_scaffolding_wooden_top": "Tin Scaffolding Stairs"
+}

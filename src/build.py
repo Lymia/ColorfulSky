@@ -4,6 +4,7 @@ import gen.biome_fix
 import gen.data
 import gen.emc_fix
 import gen.fix_models
+import gen.misc_fixes
 import gen.mod_data
 import gen.ores
 import gen.tags
@@ -54,6 +55,9 @@ gen.emc_fix.make_emc_config()
 print("- Unifying materials...")
 gen.unify.unify_tags(datapack)
 gen.unify.write_configs()
+
+print("- Applying misc fixes...")
+gen.misc_fixes.add_fixes(datapack)
 
 print("- Generating misc data...")
 datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")

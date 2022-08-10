@@ -2,3 +2,4 @@
 - Mystical Agriculture is similarly nerfed
 - Silent's Gems has the 1.17+ gameplay backported to 1.16.
 - Silent's Gems and Tinker's Construct stats have been generally unified to improve consistancy.
+- Removed Aluminum entirely, replacing it with gold (in the case of Immersive Engineering) and other materials (in the case of mechworks).

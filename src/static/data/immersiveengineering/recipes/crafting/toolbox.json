@@ -1,0 +1,1 @@
+{"type":"minecraft:crafting_shaped","pattern":["ppp","rcr"],"key":{"p":{"tag":"forge:plates/tin"},"r":{"tag":"forge:dyes/red"},"c":{"item":"immersiveengineering:crate"}},"result":{"item":"immersiveengineering:toolbox"}}
