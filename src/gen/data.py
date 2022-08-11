@@ -13,6 +13,10 @@ class TagConfig(object):
         self.should_override.add(tag)
     def mark_no_generate(self, tag):
         self.no_generate.add(tag)
+    def force_generate(self, tag):
+        if tag in self.no_generate:
+            self.no_generate.remove(tag)
+        
         
     def add_tag(self, kind, name, tag, generated = True):
         if type(kind) == str:
@@ -35,9 +39,7 @@ class TagConfig(object):
                 tag_data = self.get_tag(k, t)
                 if name in tag_data:
                     if generated:
-                        self.should_override.add(t)
-                        if t in self.no_generate:
-                            self.no_generate.remove(t)
+                        self.force_generate(t)
                     tag_data.remove(name)
     def get_tag(self, kind, tag):
         assert(tag != None)
@@ -49,7 +51,7 @@ class TagConfig(object):
             for tag in kind:
                 tag_data = kind[tag]
                 if name in tag_data:
-                    self.should_override.add(tag)
+                    self.force_generate(tag)
                     tag_data.remove(name)
         
     def get_block_tag(self, tag):
@@ -72,6 +74,7 @@ class DatapackModel(object):
     generated_client_scripts = {}
     i18n_strings = {}
     textures = {}
+    new_files = {}
     
     def _find_name(self, field, prefix, sname, value):
         name = f"{prefix}{sname}"
@@ -97,6 +100,12 @@ class DatapackModel(object):
     
     def add_i18n(self, group, name, value):
         self.i18n_strings.setdefault(group, {})[name] = value
+    def add_json_asset(self, name, json_data):
+        name = "assets/" + name
+        self.new_files[name] = json.dumps(json_data)
+    def add_json_data(self, name, json_data):
+        name = "data/" + name
+        self.new_files[name] = json.dumps(json_data)
 
 def generate_tag_file(tag, kind, values, override, target):
     values = sorted(list(values))
@@ -138,3 +147,6 @@ def generate_datapack_files(datapack, target):
     for name in datapack.generated_client_scripts:
         with open_mkdir(f"{target}/client_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_client_scripts[name])
+    for name in datapack.new_files:
+        with open_mkdir(f"{target}/{name}") as fd:
+            fd.write(datapack.new_files[name])

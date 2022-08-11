@@ -22,9 +22,9 @@ let bind_gen_ore = function(e) {
 }
 
 let bind_gen_blk = function(e) {
-    return function(ore_name, hardness, resistance, harvest_tool, harvest_level, material, texture) {
+    return function(ore_name, display_name, hardness, resistance, harvest_tool, harvest_level, material, texture) {
         var block = e.create(ore_name)
-        block.material(material).fullBlock(true).textureAll(texture)
+        block.material(material).fullBlock(true).textureAll(texture).displayName(display_name)
         block.requiresTool(true).hardness(hardness).resistance(resistance).harvestTool(harvest_tool, harvest_level)
     }
 }

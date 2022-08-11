@@ -500,7 +500,7 @@
 [world]
 	"Big Dungeon" = true
 	"Big Stone Clusters" = true
-	Biotite = true
+	Biotite = false
 	"Blossom Trees" = true
 	"Cave Roots" = false
 	"Chorus Vegetation" = true
@@ -2041,7 +2041,7 @@
 	"Overlay Shader" = false
 	Pallet = false
 	Shiba = false
-	"Microcrafting Helper" = false
+	"Microcrafting Helper" = true
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
