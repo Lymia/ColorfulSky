@@ -26,7 +26,7 @@
     "endCityFailChance [default: 5]": 5,
     "layers": {
       "bigIslands": {
-        "distance[1-8192] [default: 300.0]": 300.0,
+        "distance[1-8192] [default: 300.0]": 250.0,
         "scale[0.1-1024] [default: 200.0]": 200.0,
         "averageHeight[0-255] [default: 70]": 70,
         "heightVariation[0-255] [default: 10]": 10,
@@ -34,7 +34,7 @@
         "hasCentralIsland [default: false]": false
       },
       "mediumIslands": {
-        "distance[1-8192] [default: 150.0]": 150.0,
+        "distance[1-8192] [default: 150.0]": 125.0,
         "scale[0.1-1024] [default: 100.0]": 100.0,
         "averageHeight[0-255] [default: 70]": 70,
         "heightVariation[0-255] [default: 20]": 20,
@@ -42,7 +42,7 @@
         "hasCentralIsland [default: true]": true
       },
       "smallIslands": {
-        "distance[1-8192] [default: 60.0]": 60.0,
+        "distance[1-8192] [default: 60.0]": 45.0,
         "scale[0.1-1024] [default: 50.0]": 50.0,
         "averageHeight[0-255] [default: 70]": 70,
         "heightVariation[0-255] [default: 30]": 30,

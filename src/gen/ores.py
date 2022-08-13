@@ -1,3 +1,4 @@
+import json
 import toml
 import types
 
@@ -10,26 +11,26 @@ from gen.utils import *
 # TODO: Figure out how to unscrew Alfheim
 
 twilight_forest_biomes = [
-    "twilightforest:clearing",
-    "twilightforest:dark_forest_center",
-    "twilightforest:dark_forest",
-    "twilightforest:dense_forest",
-    "twilightforest:dense_mushroom_forest",
-    "twilightforest:enchanted_forest",
-    "twilightforest:final_plateau",
-    "twilightforest:firefly_forest",
-    "twilightforest:fire_swamp",
-    "twilightforest:forest",
-    "twilightforest:glacier",
-    "twilightforest:highlands",
-    "twilightforest:lake",
-    "twilightforest:mushroom_forest",
-    "twilightforest:oak_savannah",
-    "twilightforest:snowy_forest",
-    "twilightforest:spooky_forest",
-    "twilightforest:stream",
-    "twilightforest:swamp",
-    "twilightforest:thornlands",
+    "twilight:clearing",
+    "twilight:dark_forest_center",
+    "twilight:dark_forest",
+    "twilight:dense_forest",
+    "twilight:dense_mushroom_forest",
+    "twilight:enchanted_forest",
+    "twilight:final_plateau",
+    "twilight:firefly_forest",
+    "twilight:fire_swamp",
+    "twilight:forest",
+    "twilight:glacier",
+    "twilight:highlands",
+    "twilight:lake",
+    "twilight:mushroom_forest",
+    "twilight:oak_savannah",
+    "twilight:snowy_forest",
+    "twilight:spooky_forest",
+    "twilight:stream",
+    "twilight:swamp",
+    "twilight:thornlands",
 ]
 
 ###################################
@@ -82,13 +83,12 @@ def add_ore_override(name, strata, block, override_texture = False):
 def add_unneeded(name, strata):
     ore_types[name].no_generation.add(strata)
 
-def add_strata(name, display_name, texture, parent_stone, category, 
-               is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe", primary=False):
+def add_strata(name, display_name, texture, parent_stone, *categories, 
+               is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe"):
     record = types.SimpleNamespace()
     record.name = name
     record.display_name = display_name
     record.custom = is_custom
-    record.primary = primary
     record.disabled = disabled
     if is_custom:
         record.ee_suffix = None
@@ -98,53 +98,61 @@ def add_strata(name, display_name, texture, parent_stone, category,
         record.ee_suffix = f"_{name}"
     record.texture = texture
     record.parent_stone = parent_stone
-    record.category = category
+    record.categories = categories
     record.material = material
     record.harvest_tool = harvest_tool
     ore_stratas[record.name] = record
 
-# EE built-in types
-add_type("coal", "Coal", 3, 3, 0, "gem", "overworld", "twilightforest",
+# Built-in ore types
+add_type("coal", "Coal", 3, 3, 0, "gem", "overworld", "twilight",
          drop_name="minecraft:coal")
-add_type("iron", "Iron", 3, 3, 1, "ingot", "overworld", "twilightforest",
+add_type("iron", "Iron", 3, 3, 1, "ingot", "overworld", "twilight",
          min_count=1, max_count=2)
-add_type("gold", "Gold", 3, 3, 2, "ingot", "overworld", "twilightforest", "nether")
-add_type("diamond", "Diamond", 3, 3, 2, "gem", "overworld", "twilightforest",
+add_type("gold", "Gold", 3, 3, 2, "ingot", "overworld", "nether")
+add_type("diamond", "Diamond", 3, 3, 2, "gem", "overworld", "twilight",
          drop_name="minecraft:diamond")
-add_type("emerald", "Emerald", 3, 3, 2, "gem", "overworld", "twilightforest", "end",
+add_type("emerald", "Emerald", 3, 3, 2, "gem", "end",
          drop_name="minecraft:emerald")
-add_type("lapis", "Lapis", 3, 3, 1, "gem", "overworld", "twilightforest", "nether",
+add_type("lapis", "Lapis", 3, 3, 1, "gem", "overworld", "nether",
          drop_name="minecraft:lapis_lazuli", min_count=4, max_count=9)
-add_type("redstone", "Redstone", 3, 3, 2, "gem", "overworld", "twilightforest",
+add_type("redstone", "Redstone", 3, 3, 2, "gem", "overworld",
          drop_name="minecraft:redstone", min_count=4, max_count=5)
-add_type("quartz", "Quartz", 3, 3, 2, "gem", "overworld", "nether",
+add_type("quartz", "Quartz", 3, 3, 2, "gem", "nether",
          drop_name="minecraft:quartz")
-add_type("copper", "Copper", 3, 3, 1, "ingot", "overworld", "twilightforest",
+add_type("copper", "Copper", 3, 3, 1, "ingot", "overworld",
          min_count=2, max_count=3)
-add_type("silver", "Silver", 3, 3, 2, "ingot", "overworld", "twilightforest", "end")
-add_type("lead", "Lead", 3, 3, 2, "ingot", "overworld")
-add_type("nickel", "Nickel", 3, 3, 2, "ingot", "overworld")
-add_type("uranium", "Uranium", 3, 3, 2, "ingot", "overworld", "nether")
-add_type("osmium", "Osmium", 3, 3, 1, "ingot", "overworld", "end")
+add_type("silver", "Silver", 3, 3, 2, "ingot", "twilight", "end")
+add_type("lead", "Lead", 3, 3, 2, "ingot", "twilight")
+add_type("nickel", "Nickel", 3, 3, 2, "ingot", "twilight")
+add_type("uranium", "Uranium", 3, 3, 2, "ingot", "nether")
+add_type("osmium", "Osmium", 3, 3, 1, "ingot", "twilight", "end")
 add_type("zinc", "Zinc", 3, 3, 2, "ingot", "overworld", "end")
 add_type("fluorite", "Fluorite", 3, 3, 1, "gem", "end",
          drop_name="emendatusenigmatica:fluorite_gem", min_count=2, max_count=4)
-add_type("apatite", "Apatite", 3, 3, 1, "gem", "overworld",
-         drop_name="emendatusenigmatica:apatite_gem", min_count=4, max_count=9)
-add_type("sulfur", "Sulfur", 3, 3, 1, "gem", "overworld", "nether",
+add_type("sulfur", "Sulfur", 3, 3, 1, "gem", "nether",
          drop_name="emendatusenigmatica:sulfur_gem", min_count=3, max_count=5)
-add_type("arcane", "Source Gem", 3, 3, 1, "gem", "overworld", "twilightforest", "end",
+add_type("arcane", "Source Gem", 3, 3, 1, "gem", "twilight", "end",
          drop_name="emendatusenigmatica:arcane_gem")
-add_type("dimensional", "Dimensional Shard", 3, 3, 1, "gem", "overworld", "twilightforest", "nether", "end",
+add_type("dimensional", "Dimensional Shard", 3, 3, 1, "gem", "twilight", "nether", "end",
          drop_name="emendatusenigmatica:dimensional_gem", min_count=4, max_count=5)
+add_type("cobalt", "Cobalt", 3, 3, 2, "ingot", "nether")
+add_type("tin", "Tin", 3, 3, 1, "ingot", "overworld")
 
-add_type("aluminum", "Aluminum", 3, 3, 1, "ingot", "overworld", "twilightforest", "end", disabled = True)
+# TODO: Crimson Iron
+# TODO: Geode
+# TODO: Thallasium
+# TODO: Azure Silver
+# TODO: Rock Crystal (maybe?)
+
+# Unused ore types
+add_type("aluminum", "Aluminum", 3, 3, 1, "ingot", "overworld", "twilight", "end", disabled = True)
+add_type("apatite", "Apatite", 3, 3, 1, "gem", "overworld",
+         drop_name="emendatusenigmatica:apatite_gem", min_count=4, max_count=9,
+         disabled = True)
 add_type("bitumen", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("tin", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("cinnabar", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("charged_certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("cobalt", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("iridium", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("peridot", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 add_type("potassium_nitrate", "-", 3, 3, 0, "-", "-", disabled = True)
@@ -152,16 +160,16 @@ add_type("ruby", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how
 add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
 
 # EE built-in strata
-add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld", primary=True)
+add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld")
 add_strata("andesite", "Andesite", "minecraft:block/andesite",  "minecraft:andesite", "overworld")
 add_strata("granite", "Granite", "minecraft:block/granite",  "minecraft:granite", "overworld")
 add_strata("diorite", "Diorite", "minecraft:block/diorite",  "minecraft:diorite", "overworld")
 add_strata("sand", "Sand", None, None, "overworld", disabled=True)
 add_strata("gravel", "Gravel", None, None, "overworld", disabled=True)
-add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether", primary=True)
+add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether")
 add_strata("blackstone", "Blackstone", "minecraft:block/blackstone",  "minecraft:blackstone", "nether")
 add_strata("basalt", "Basalt", "minecraft:block/basalt_side",  "minecraft:basalt", "nether")
-add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end", primary=True)
+add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end")
 add_strata("soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether", disabled=True)
 
 add_strata("gabbro", "Gabbro", "create:block/palettes/gabbro/plain", "create:gabbro", "overworld")
@@ -178,13 +186,13 @@ add_strata("mossy_stone", "Mossy Stone", "byg:block/mossy_stone", "byg:mossy_sto
 add_strata("subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", disabled=True)
 add_strata("blue_netherrack", "Blue Netherrack", "byg:block/blue_netherrack", "byg:blue_netherrack", "nether")
 add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether", disabled=True)
-add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "nether")
+add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether")
 
+add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "end")
 add_strata("flavolite", "Flavolite", "betterendforge:block/flavolite", "betterendforge:flavolite", "end")
 add_strata("sulphuric_rock", "Sulphuric Rock", "betterendforge:block/sulphuric_rock", "betterendforge:sulphuric_rock", "end")
 add_strata("violecite", "Violecite", "betterendforge:block/violecite", "betterendforge:violecite", "end")
 add_strata("ether_stone", "Ether Stone", "byg:block/ether_stone", "byg:ether_stone", "end")
-add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "end")
 
 add_strata("raw_marble", "Marble", "astralsorcery:block/marble_raw", "astralsorcery:marble_raw", "overworld", disabled=True)
 
@@ -199,6 +207,7 @@ add_strata("red_rock", "Red Rock", "byg:block/red_rock", "byg:red_rock", "overwo
 add_strata("soapstone", "Soapstone", "byg:block/soapstone", "byg:soapstone", "overworld", is_custom=True)
 add_strata("q_limestone", "Limestone", "quark:block/limestone", "quark:limestone", "overworld", is_custom=True)
 add_strata("shale", "Shale", "darkerdepths:block/shale", "darkerdepths:shale", "overworld", is_custom=True)
+add_strata("umbralith", "Umbralith", "betterendforge:block/umbralith", "betterendforge:umbralith", "end", is_custom=True)
 
 add_strata("travertine", "Travertine", "byg:block/travertine", "byg:travertine", "nether", is_custom=True)
 add_strata("quartzite", "Quartzite", "byg:block/quartzite_sand", "byg:quartzite_sand", "nether", is_custom=True, material="sand", harvest_tool="shovel")
@@ -230,37 +239,48 @@ add_unneeded("coal", "ether_stone") # Anthracite
 # Worldgen configs #
 ####################
 
-add_worldgen('coal', 17, 15, 1, (0, 120), target = 'overworld')
-add_worldgen('iron', 13, 17, 1, (0, 64), target = 'overworld')
-add_worldgen('gold', 10, 7, 1, (0, 32), target = 'overworld')
-add_worldgen('gold', 13, 17, 1, (30, 62), target = 'nether')
+add_worldgen('coal', 13, 21, 1, (20, 120), target = 'overworld')
+add_worldgen('iron', 13, 13, 1, (0, 64), target = 'overworld')
+add_worldgen('copper', 9, 13, 1, (15, 60), target = 'overworld')
+add_worldgen('gold', 9, 8, 1, (10, 30), target = 'overworld')
+add_worldgen('redstone', 11, 6, 1, (0, 20), target = 'overworld')
+add_worldgen('tin', 9, 10, 1, (20, 40), target = 'overworld')
+add_worldgen('zinc', 9, 10, 1, (30, 50), target = 'overworld')
+add_worldgen('lapis', 9, 6, 1, (10, 30), target = 'overworld')
 add_worldgen('diamond', 8, 3, 1, (0, 16), target = 'overworld')
-add_worldgen('emerald', 4, 3, 1, (100, 212), target = 'overworld')
-add_worldgen('emerald', 4, 3, 1, (120, 232), target = 'end')
-add_worldgen('lapis', 7, 4, 1, (0, 16), target = 'overworld')
-add_worldgen('lapis', 7, 4, 1, (30, 46), target = 'nether')
-add_worldgen('redstone', 11, 8, 1, (0, 16), target = 'overworld')
-add_worldgen('quartz', 7, 4, 1, (10, 50), target = 'overworld')
-add_worldgen('quartz', 17, 16, 1, (40, 140), target = 'nether')
-add_worldgen('copper', 7, 17, 1, (44, 60), target = 'overworld')
-add_worldgen('silver', 5, 8, 1, (30, 38), target = 'overworld')
-add_worldgen('silver', 13, 15, 1, (40, 68), target = 'end')
-add_worldgen('lead', 5, 8, 1, (32, 40), target = 'overworld')
-add_worldgen('nickel', 4, 8, 1, (24, 40), target = 'overworld')
-add_worldgen('uranium', 6, 6, 1, (4, 20), target = 'overworld')
-add_worldgen('uranium', 6, 6, 1, (34, 50), target = 'nether')
-add_worldgen('osmium', 6, 15, 1, (20, 44), target = 'overworld')
-add_worldgen('osmium', 13, 15, 1, (40, 64), target = 'end')
-add_worldgen('zinc', 5, 9, 1, (34, 50), target = 'overworld')
-add_worldgen('zinc', 8, 11, 1, (54, 70), target = 'end')
-add_worldgen('fluorite', 9, 7, 1, (20, 52), target = 'end')
-add_worldgen('apatite', 22, 2, 1, (64, 128), target = 'overworld')
-add_worldgen('sulfur', 17, 13, 1, (30, 140), target = 'nether')
-add_worldgen('arcane', 6, 5, 1, (20, 46), target = 'overworld')
-add_worldgen('arcane', 6, 5, 1, (40, 66), target = 'end')
-add_worldgen('dimensional', 2, 2, 1, (0, 20), target = 'overworld')
+# TODO: Geode
+
+add_worldgen('quartz', 17, 21, 1, (20, 140), target = 'nether')
+add_worldgen('gold', 13, 15, 1, (10, 60), target = 'nether')
+add_worldgen('sulfur', 13, 15, 1, (20, 140), target = 'nether')
+add_worldgen('lapis', 13, 9, 1, (10, 60), target = 'nether')
+add_worldgen('cobalt', 8, 5, 1, (40, 80), target = 'nether')
+# TODO: Crimson Iron
+add_worldgen('uranium', 8, 5, 1, (25, 45), target = 'nether')
+# TODO: Geode
 add_worldgen('dimensional', 3, 4, 1, (10, 60), target = 'nether')
+
+# TODO: Thallasium
+# TODO: Azure Silver
+add_worldgen('osmium', 13, 15, 1, (40, 64), target = 'end')
+add_worldgen('zinc', 8, 11, 1, (54, 70), target = 'end')
+add_worldgen('arcane', 6, 5, 1, (40, 66), target = 'end')
+add_worldgen('silver', 13, 15, 1, (40, 68), target = 'end')
+add_worldgen('fluorite', 9, 7, 1, (20, 52), target = 'end')
+# TODO: Geode
 add_worldgen('dimensional', 3, 4, 1, (10, 60), target = 'end')
+add_worldgen('emerald', 3, 4, 1, (10, 60), target = 'end')
+
+add_worldgen('coal', 17, 15, 1, (0, 120), target = 'twilight')
+add_worldgen('iron', 13, 17, 1, (0, 64), target = 'twilight')
+add_worldgen('nickel', 4, 8, 1, (24, 40), target = 'twilight')
+add_worldgen('lead', 5, 8, 1, (32, 40), target = 'twilight')
+add_worldgen('osmium', 6, 15, 1, (20, 44), target = 'twilight')
+add_worldgen('arcane', 6, 5, 1, (40, 66), target = 'twilight')
+add_worldgen('diamond', 8, 3, 1, (0, 16), target = 'twilight')
+add_worldgen('silver', 5, 8, 1, (30, 38), target = 'twilight')
+# TODO: Geode
+add_worldgen('dimensional', 2, 2, 1, (0, 20), target = 'twilight')
 
 ###########################
 # Ore list generator code #
@@ -289,14 +309,30 @@ def record_for_pair(otype, strata):
     record.otype = otype.name
     record.strata = strata.name
     record.needs_new_block = block_name.startswith("constellation:")
+    
+    if "overworld" in otype.categories or "twilight" in otype.categories:
+        record.primary = strata.name == "stone"
+    elif "nether" in otype.categories:
+        record.primary = strata.name == "netherrack"
+    elif "end" in otype.categories:
+        record.primary = strata.name == "end_stone"
+        
+    record.categories = sorted(list(set(otype.categories).intersection(set(strata.categories))))
+        
     return record
+
+def is_strata_used(otype, strata):
+    for category in strata.categories:
+        if category in otype.categories:
+            return True
+    return False
 
 # Creates a list of all ores we generate/need to generate.
 all_ores = []
 for strata in ore_stratas.values():
     for otype in ore_types.values():
         if (
-            strata.category in otype.categories and 
+            is_strata_used(otype, strata) and 
             not otype.disabled and not strata.disabled and 
             strata.name not in otype.no_generation
         ):
@@ -309,7 +345,7 @@ for strata in ore_stratas.values():
         is_ee = not strata.custom and not otype.custom
         not_default = not ore_block_for_ore(otype, strata).startswith("emendatusenigmatica:")
         not_enabled = otype.disabled or strata.disabled or strata.name in otype.no_generation
-        not_used = strata.category not in otype.categories
+        not_used = not is_strata_used(otype, strata)
         if is_ee and (not_default or not_enabled or not_used):
             ee_unused.append(name_for_ore_ee(otype, strata))
 
@@ -323,38 +359,29 @@ def make_i18n(datapack):
         strata = ore_stratas[ore.strata]
         datapack.add_i18n(group(ore.ore_block), f"block.{group(ore.ore_block)}.{path(ore.ore_block)}", f"{strata.display_name} {otype.display_name} Ore")
 
-def worldgen_data(record):
-    category = ore_stratas[record.strata].category
-    if category in ore_types[record.otype].worldgen:
-        return ore_types[record.otype].worldgen[category]
-    elif "overworld" in ore_types[record.otype].worldgen:
-        return ore_types[record.otype].worldgen["overworld"]
-    else:
-        return None
-def worldgen_for_ore(record):
+def worldgen_for_ore(record, category):
     otype = ore_types[record.otype]
     strata = ore_stratas[record.strata]
-    data = worldgen_data(record)
-    if data == None:
+    if not category in otype.worldgen:
+        print(f"[ WARN ] Missing category {category} for {record.ore_block}")
         return ""
-    else:
-        biome_list_id = "all"
-        if strata.category == "overworld":
-            twf = "twilightforest" in otype.categories
-            ovw = "overworld" in otype.categories
-            if twf and not ovw:
-                biome_list_id = "twf"
-            if not twf and ovw:
-                biome_list_id = "ovw"
-        return f"""gen_ore({
-            repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
-            {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
-        )\n"""
+    data = otype.worldgen[category]
+
+    biome_list_id = "all"
+    if category == "overworld":
+        biome_list_id = "ovw"
+    elif category == "twilight":
+        biome_list_id = "twf"
+    return f"""gen_ore({
+        repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
+        {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
+    )\n"""
 def make_worldgen(datapack):
     accum = ""
     for ore in all_ores:
-        accum += worldgen_for_ore(ore)
-    datapack.add_script("add_worldgen_ores", f"""
+        for category in ore.categories:
+            accum += worldgen_for_ore(ore, category)
+    datapack.add_startup_script("add_worldgen_ores", f"""
         onEvent('worldgen.add', event => {{
             var twb = {repr(twilight_forest_biomes)}
             var twf = {{ "blacklist": false, "values": twb }}
@@ -377,7 +404,7 @@ def make_blocks(datapack):
                 {repr(strata.harvest_tool)}, {otype.harvest_level}, {repr(strata.material)},
                 {repr(texture)}
             )\n"""
-    datapack.add_script("create_custom_ores", f"""
+    datapack.add_startup_script("create_custom_ores", f"""
         onEvent('block.registry', event => {{
             var gen_blk = bind_gen_blk(event)
             {accum}
@@ -452,8 +479,34 @@ def remove_unused(datapack):
     for item in ee_unused:
         datapack.remove_name(item)
     for ore in all_ores:
-        if not ore_stratas[ore.strata].primary:
-            datapack.remove_name(ore.ore_block)
+        if not ore.primary:
+            datapack.hide_name(ore.ore_block)
+
+def make_tooltips(datapack):
+    data = {}
+    for ore in all_ores:
+        if ore.primary:
+            otype = ore_types[ore.otype]
+            strata = ore_stratas[ore.strata]
+
+            locales = []
+            if "overworld" in otype.categories:
+                locales.append("Overworld")
+            if "twilight" in otype.categories:
+                locales.append("Twilight Forest")
+            if "nether" in otype.categories:
+                locales.append("Nether")
+            if "end" in otype.categories:
+                locales.append("End")
+                
+            if len(locales) == 1:
+                data[ore.ore_block] = f"the {locales[0]}"
+            elif len(locales) >= 2:
+                data[ore.ore_block] = f"the {locales[0]} and {locales[1]}"
+            elif len(locales) >= 3:
+                data[ore.ore_block] = f"the {', '.join(locales[:-1])} and {locales[-1]})"
+    
+    datapack.add_client_script("worldgen_ore_locations", f"found_in_events({json.dumps(data)})")
 
 def make_tags(datapack):
     for ore in all_ores:
@@ -467,5 +520,6 @@ def make_ores(datapack, moddata):
     make_blocks(datapack)
     make_textures(datapack, moddata)
     make_tags(datapack)
+    make_tooltips(datapack)
     make_loot_tables(datapack)
     remove_unused(datapack)

@@ -48,7 +48,7 @@ unused_materials = [
 
 def delete_item(datapack, item, tag):
     if item in datapack.tags.get_item_tag(tag):
-        datapack.remove_name(item)
+        datapack.unify_name(item)
         datapack.tags.remove_tag(["blocks", "items"], item, [tag, tag.split("/")[0]])
 def unify_tags(datapack):
     accum = ""
@@ -81,11 +81,11 @@ def unify_tags(datapack):
         items = sorted(datapack.tags.get_item_tag(tag))
         for item in items:
             if item != preferred[tag]:
-                datapack.remove_name(item)
+                datapack.unify_name(item)
                 
     # Removed unused items
     for kind in unused_materials + unused_gears:
-        datapack.remove_name(f"emendatusenigmatica:{kind}_gear")
+        datapack.unify_name(f"emendatusenigmatica:{kind}_gear")
     for kind in unused_materials + ore_processing_gems:
         delete_item(datapack, f"emendatusenigmatica:{kind}_clump", f"mekanism:clumps/{kind}")
         delete_item(datapack, f"emendatusenigmatica:{kind}_crystal", f"mekanism:crystals/{kind}")
@@ -104,13 +104,7 @@ def unify_tags(datapack):
         delete_item(datapack, f"emendatusenigmatica:{kind}_cluster", f"forge:clusters/{kind}")
         delete_item(datapack, f"emendatusenigmatica:{kind}_plate", f"forge:plates/{kind}")
         delete_item(datapack, f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
-        
-    # Remove molten metals entirely. (No Tinker's Construct)
-    for item in list(datapack.tags.get_item_tag("constellation:remove_buckets")):
-        datapack.remove_name(item)
-    for item in list(datapack.tags.get_item_tag("constellation:remove_molten")):
-        datapack.remove_name(item)
-    
+            
     # Mark clusters as ores
     for kind in unify_list:
         cluster_name = f"emendatusenigmatica:{kind}_cluster"

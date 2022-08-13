@@ -1,0 +1,55 @@
+Design notes: Nether is considered a primary mining dimension, and somewhere that can be mined relatively early.
+Design notes: The End can maybe be conisdered higher accessibility than usual. Will probably not have the Dragon automatically spawn, and make it more a normal dimension to allow "desynched" play better.
+Design notes: The Twilight Forest is similarly considered a "main" dimension. Maybe disable progression, tbh? That can be annoying for using it as a main world.
+Design notes: Alfheim is a "special" dimension that should not be considered for distributing ores
+
+[ Overworld (10 ores) ]
+Common: Coal, Iron, Copper
+Uncommon: Gold, Redstone, Tin, Zinc
+Rare: Lapis, Diamond, Geode
+Trace: Dimensional Shards, Rock Crystal, Emerald
+
+[ Nether (8 ores) ]
+Common: Quartz, Gold, Sulfur
+Uncommon: Lapis, Cobalt, Crimson Iron
+Rare: Uranium, Geode
+Trace: Dimensional Shards
+
+[ End (8 ores) ]
+Common: Thallasium, Azure Silver, Osmium
+Uncommon: Zinc, Arcane Gem, Silver
+Rare: Fluorite, Emerald, Geode
+Trace: Dimensional Shards, Rock Crystal
+
+[ Twilight Forest (9 ores) ]
+Common: Coal, Iron, Nickel
+Uncommon: Lead, Osmium, Arcane Gem
+Rare: Diamond, Silver, Geode
+Trace: Dimensional Shards, Rock Crystal, (Lots of stuff in hills)
+
+[ Alfheim ]
+Common: Elementium, Gold
+Uncommon: Dragonstone, Fey Gem
+
+[ Removal/Replacement Notes ]
+Aluminum is replaced with Tin/Nickel/Gold depending on context.
+Cinnabar is replaced with Fluorite.
+Draconium is a drop from dragons and probably some ore of Azure Silver.
+Prosperity Ore is replaced with a recipe to make Prosparity Shards from... something that isn't rare? Maybe Amethyst.
+Soulium should be similarly replaced with something commonish to the Nether.
+Ender Ore should be replaced with some other material, most likely.
+All Silent's Gems ores are replaced with a single Geode ore that drops random types
+Apatite should probably be replaced as well - Its uses are pretty narrow.
+Figure out how to replace the two BetterEnd ores that don't really do anything.
+Chaos Crystals should be replaced, or droped from Geodes at an acceptable rate.
+Ender Essence is replaced with Aurora Crystals from Better End.
+Inert Crystal Ore is replaced with a Salt>Inert Crystal smelting recipe.
+
+Take care of the unique End trace ores. Maybe they don't need to be replaced?? (BetterEnd mod)
+Anthracite and Lignite are somewhat redundant with Coal. Candidates for removal for simplicity.
+Infernium Ore is just removed. Mobs drop this stuff already.
+
+[ "Treasure" Ores ]
+Biome specific: Ametrine, Pendorite, Emeraldite
+Stalwart Dungeons: Tungsten, Chorundum
+Astral Sorcery: Starmetal

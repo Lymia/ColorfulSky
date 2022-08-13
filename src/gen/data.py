@@ -14,6 +14,7 @@ class TagConfig(object):
     def mark_no_generate(self, tag):
         self.no_generate.add(tag)
     def force_generate(self, tag):
+        self.mark_override(tag)
         if tag in self.no_generate:
             self.no_generate.remove(tag)
         
@@ -69,7 +70,9 @@ class TagConfig(object):
 class DatapackModel(object):
     tags = TagConfig()
     removed_names = []
-    generated_scripts = {}
+    unified_names = []
+    hidden_names = []
+    generated_startup_scripts = {}
     generated_server_scripts = {}
     generated_client_scripts = {}
     i18n_strings = {}
@@ -85,7 +88,13 @@ class DatapackModel(object):
         field[name] = value
         return name
     
+    def hide_name(self, name):
+        self.hidden_names.append(name)
+    def unify_name(self, name):
+        self.hidden_names.append(name)
+        self.unified_names.append(name)
     def remove_name(self, name):
+        self.hidden_names.append(name)
         self.removed_names.append(name)
         self.tags.remove_name(name)
         
@@ -95,8 +104,8 @@ class DatapackModel(object):
         return self._find_name(self.generated_client_scripts, "", name, self.process_script(name, script))
     def add_server_script(self, name, script):
         return self._find_name(self.generated_server_scripts, "", name, self.process_script(name, script))
-    def add_script(self, name, script):
-        return self._find_name(self.generated_scripts, "", name, self.process_script(name, script))
+    def add_startup_script(self, name, script):
+        return self._find_name(self.generated_startup_scripts, "", name, self.process_script(name, script))
     
     def add_i18n(self, group, name, value):
         self.i18n_strings.setdefault(group, {})[name] = value
@@ -125,7 +134,11 @@ def generate_tags(tags, target):
                     generate_tag_file(tag, kind, tags.tags[kind][tag], tag in tags.should_override, target)
 
 def make_remove_unused(datapack, target):
-    json = js_minify_simple(f"hide_events({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
+    json = js_minify_simple(f"""
+        hide_events(false, {repr(sorted(set(datapack.removed_names)))})
+        hide_events(true, {repr(sorted(set(datapack.hidden_names)))})
+        unify_events({repr(sorted(set(datapack.unified_names)))})
+    """, priority = 1000)
     with open_mkdir(f"{target}/client_scripts/generated_remove_unused.js") as fd:
         fd.write(json)
     json = js_minify_simple(f"remove_items({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
@@ -138,9 +151,9 @@ def generate_datapack_files(datapack, target):
     for group in datapack.i18n_strings:
         with open_mkdir(f"{target}/assets/{group}/lang/en_us.json") as fd:
             fd.write(json.dumps(datapack.i18n_strings[group]))
-    for name in datapack.generated_scripts:
+    for name in datapack.generated_startup_scripts:
         with open_mkdir(f"{target}/startup_scripts/generated_{name}.js") as fd:
-            fd.write(datapack.generated_scripts[name])
+            fd.write(datapack.generated_startup_scripts[name])
     for name in datapack.generated_server_scripts:
         with open_mkdir(f"{target}/server_scripts/generated_{name}.js") as fd:
             fd.write(datapack.generated_server_scripts[name])

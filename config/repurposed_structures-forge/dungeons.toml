@@ -1,7 +1,7 @@
 #
 # Whether End Dungeons spawns Shulker Boxes. if false, spawns regular Chests instead.
 #(Configuredfeatures are unable to be overridden by datapack due to bad Forge hook placement. Hence this config option)
-shulkerBoxInEndDungeons = true
+shulkerBoxInEndDungeons = false
 
 #-----------------------------------------------------------------------------------------
 # How many positions Repurposed Structures Dungeons will pick per chunk to check if it can spawn at those positions.
@@ -24,7 +24,7 @@ shulkerBoxInEndDungeons = true
 	#Range: 0 ~ 1000
 	swampDungeonAttemptsPerChunk = 8
 	#Range: 0 ~ 1000
-	endDungeonAttemptsPerChunk = 0
+	endDungeonAttemptsPerChunk = 8
 	#Range: 0 ~ 1000
 	netherDungeonAttemptsPerChunk = 12
 	#Range: 0 ~ 1000

@@ -27,7 +27,11 @@
 - ... Could I make Draconium and Azure Silver related materials somehow??
 
 - Unify Alloying
-
 - Yeet Ender Crystals in favor of aurora crystals
-
 - Figure out Rock Crystal ores
+- Nuke glowroses
+
+- Figure out how to make enchanting not a mess... matrix enchanting is so cool, but there's some stuff that tries to buff enchanting.
+
+- TODO: Ores to target: BYG gold ores. Cryptic Redstone ore.
+- Do not untag unified ores.

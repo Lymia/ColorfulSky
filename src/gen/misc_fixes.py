@@ -76,6 +76,7 @@ remove_items_list = [
     
     # Remove Bort
     "silentgear:bort",
+    "silentgear:bort_block",
     
     # Remove aluminium
     "immersiveengineering:sheetmetal_aluminum",
