@@ -1,0 +1,23 @@
+["Better Caves"."Underground Generation".Caves]
+"Cave Spawn Chance" = 50.0
+
+["Better Caves"."Underground Generation".Caves."Type 1 Caves"]
+"Type 1 Cave Priority" = 0
+
+["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
+"Type 2 Cave Priority" = 5
+
+["Better Caves"."Underground Generation".Caves."Type 2 Caves"."Advanced Settings"]
+"Fractal Frequency" = 0.01
+
+["Better Caves"."Underground Generation".Caverns]
+"Cavern Spawn Chance" = 0
+
+["Better Caves"."Underground Generation".Caverns."Floored Caverns"]
+"Floored Cavern Priority" = 0
+
+["Better Caves"."Underground Generation".Ravines]
+"Enable Ravines" = false
+
+["Better Caves"."Underground Generation".Miscellaneous]
+"Liquid Altitude" = 0

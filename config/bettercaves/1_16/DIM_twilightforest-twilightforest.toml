@@ -1,0 +1,25 @@
+["Better Caves"."Underground Generation".Caves."Type 1 Caves"]
+"Type 1 Cave Maximum Altitude" = 60
+
+["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
+"Type 2 Cave Maximum Altitude" = 60
+
+["Better Caves"."Underground Generation".Caves."Surface Caves"]
+"Surface Cave Minimum Altitude" = 25
+"Surface Cave Maximum Altitude" = 50
+"Surface Cave Density" = 10
+
+["Better Caves"."Underground Generation".Caverns]
+"Cavern Spawn Chance" = 0
+
+["Better Caves"."Underground Generation".Caverns."Liquid Caverns"]
+"Liquid Cavern Maximum Altitude" = 15
+
+["Better Caves"."Underground Generation".Caverns."Floored Caverns"]
+"Floored Cavern Maximum Altitude" = 15
+
+["Better Caves"."Underground Generation"."Water Regions"]
+"Water Region Spawn Chance" = 100.0
+
+["Better Caves"."Underground Generation".Miscellaneous]
+"Liquid Altitude" = 7

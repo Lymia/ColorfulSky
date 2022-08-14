@@ -1,0 +1,15 @@
+["Better Caves"."Underground Generation".Caves."Surface Caves"]
+"Enable Surface Caves" = false
+
+["Better Caves"."Underground Generation".Caves."Type 1 Caves"]
+"Type 1 Cave Maximum Altitude" = 128
+
+["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
+"Type 2 Cave Maximum Altitude" = 128
+	
+["Better Caves"."Underground Generation"."Water Regions"]
+"Water Region Spawn Chance" = 0.0
+
+["Better Caves"."Underground Generation".Miscellaneous]
+"Liquid Altitude" = 31
+"Override Surface Detection" = true

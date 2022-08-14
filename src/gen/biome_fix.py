@@ -11,5 +11,3 @@ def fix_biomes(mod, target):
         os.makedirs(os.path.dirname(target_path), exist_ok = True)
         with open(target_path, "w") as fd:
             fd.write(json.dumps(biome))
-
-        

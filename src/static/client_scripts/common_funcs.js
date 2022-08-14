@@ -28,7 +28,7 @@ let found_in_events = function(location_list) {
         for (var key in location_list) {
             var value = location_list[key]
             tooltip.addAdvanced(key, (item, advanced, text) => {
-                text.add(1, `Found in ${value}.`)
+                text.add(1, `Found in the ${value}.`)
             })
         }
     })
