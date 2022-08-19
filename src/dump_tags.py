@@ -8,10 +8,8 @@ import sys
 
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 datapack = gen.data.DatapackModel()
-gen.tags.parse_config(datapack, "exported/tags/blocks.txt", strict = False)
-gen.tags.parse_config(datapack, "exported/tags/items.txt", strict = False)
-gen.tags.parse_config(datapack, "exported/tags/fluids.txt", strict = False)
-gen.tags.parse_config(datapack, "exported/tags/gases.txt", strict = False)
+gen.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
+gen.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
 
 for tag in sorted(datapack.tags.tags["items"].keys()):
     if sys.argv[1] in tag:

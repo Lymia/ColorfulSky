@@ -7,6 +7,7 @@ import gen.fix_models
 import gen.misc_fixes
 import gen.mod_data
 import gen.ores
+import gen.silents_gems_rework
 import gen.tags
 import gen.unify
 import glob
@@ -34,12 +35,19 @@ for file in glob.glob("static/common_scripts/*.js"):
     shutil.copy(file, "../kubejs/client_scripts")
     shutil.copy(file, "../kubejs/server_scripts")
 
+print("- Loading exported tags...")
+gen.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
+gen.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
+
 print("- Adding static tags...")
 for tag_file in glob.glob('tags/*.txt'):
     gen.tags.parse_config(datapack, tag_file)
 
 print("- Creating Twilight Forest biomes fix...")
 gen.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")
+
+print("- Executing Silent's Gems rework...")
+gen.silents_gems_rework.apply_rework(datapack)
 
 print("- Creating Draconic Evolution resource pack compatibility...")
 pack = make_pack("DarkpuppeyCompat", "Darkpuppey's Modded Overhauls - 1.16.5 Compatibility Patch", "resources")

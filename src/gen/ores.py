@@ -68,11 +68,10 @@ def add_type(name, display_name, strength, resistance, harvest_level, kind, *cat
     else:
         record.texture = f"emendatusenigmatica:blocks/overlays/{name}"
     ore_types[record.name] = record
-def add_worldgen(name, cluster_size, cluster_count, chance, height_range, target="default"):
+def add_worldgen(name, cluster_size, cluster_count, height_range, target="default"):
     record = types.SimpleNamespace()
     record.cluster_size = cluster_size
     record.cluster_count = cluster_count
-    record.chance = chance
     record.min_y = height_range[0]
     record.max_y = height_range[1]
     ore_types[name].worldgen[target] = record
@@ -238,48 +237,48 @@ add_unneeded("coal", "ether_stone") # Anthracite
 # Worldgen configs #
 ####################
 
-add_worldgen('coal', 13, 21, 1, (20, 120), target = 'overworld')
-add_worldgen('iron', 14, 12, 1, (0, 64), target = 'overworld')
-add_worldgen('copper', 10, 13, 1, (15, 60), target = 'overworld')
-add_worldgen('gold', 9, 9, 1, (12, 29), target = 'overworld')
-add_worldgen('redstone', 11, 6, 1, (0, 23), target = 'overworld')
-add_worldgen('tin', 8, 9, 1, (21, 41), target = 'overworld')
-add_worldgen('zinc', 7, 10, 1, (30, 52), target = 'overworld')
-add_worldgen('lapis', 9, 6, 1, (11, 30), target = 'overworld')
-add_worldgen('diamond', 9, 3, 1, (0, 16), target = 'overworld')
+add_worldgen('coal', 13, 21, (10, 100), target = 'overworld')
+add_worldgen('iron', 11, 13, (10, 64), target = 'overworld')
+add_worldgen('copper', 7, 13, (15, 60), target = 'overworld')
+add_worldgen('gold', 8, 9, (10, 30), target = 'overworld')
+add_worldgen('redstone', 11, 8, (5, 25), target = 'overworld')
+add_worldgen('tin', 7, 11, (20, 40), target = 'overworld')
+add_worldgen('zinc', 7, 11, (30, 50), target = 'overworld')
+add_worldgen('lapis', 7, 5, (0, 20), target = 'overworld')
+add_worldgen('diamond', 9, 3, (0, 16), target = 'overworld')
 # TODO: Geode
 
-add_worldgen('quartz', 17, 19, 1, (21, 128), target = 'nether')
-add_worldgen('gold', 13, 15, 1, (10, 60), target = 'nether')
-add_worldgen('sulfur', 12, 13, 1, (22, 128), target = 'nether')
-add_worldgen('lapis', 13, 9, 1, (11, 60), target = 'nether')
-add_worldgen('cobalt', 8, 5, 1, (42, 80), target = 'nether')
+add_worldgen('quartz', 17, 21, (20, 128), target = 'nether')
+add_worldgen('gold', 13, 17, (20, 128), target = 'nether')
+add_worldgen('sulfur', 13, 13, (20, 128), target = 'nether')
+add_worldgen('lapis', 13, 9, (10, 60), target = 'nether')
+add_worldgen('cobalt', 8, 6, (40, 80), target = 'nether')
 # TODO: Crimson Iron
-add_worldgen('uranium', 8, 5, 1, (25, 45), target = 'nether')
+add_worldgen('uranium', 8, 5, (25, 45), target = 'nether')
 # TODO: Geode
-add_worldgen('dimensional', 3, 4, 1, (10, 60), target = 'nether')
+add_worldgen('dimensional', 3, 5, (10, 60), target = 'nether')
 
 # TODO: Thallasium
 # TODO: Azure Silver
-add_worldgen('osmium', 13, 15, 1, (40, 64), target = 'end')
-add_worldgen('zinc', 8, 11, 1, (54, 70), target = 'end')
-add_worldgen('arcane', 6, 5, 1, (40, 66), target = 'end')
-add_worldgen('silver', 13, 15, 1, (40, 68), target = 'end')
-add_worldgen('fluorite', 9, 7, 1, (20, 52), target = 'end')
+add_worldgen('osmium', 13, 21, (10, 90), target = 'end')
+add_worldgen('zinc', 8, 17, (10, 90), target = 'end')
+add_worldgen('arcane', 6, 11, (10, 90), target = 'end')
+add_worldgen('silver', 13, 21, (10, 90), target = 'end')
+add_worldgen('fluorite', 8, 11, (10, 90), target = 'end')
 # TODO: Geode
-add_worldgen('dimensional', 3, 4, 1, (10, 60), target = 'end')
-add_worldgen('emerald', 3, 4, 1, (10, 60), target = 'end')
+add_worldgen('dimensional', 3, 7, (10, 60), target = 'end')
+add_worldgen('emerald', 3, 7, (10, 60), target = 'end')
 
-add_worldgen('coal', 13, 15, 1, (0, 64), target = 'twilight')
-add_worldgen('iron', 11, 7, 1, (0, 42), target = 'twilight')
-add_worldgen('nickel', 7, 7, 1, (15, 30), target = 'twilight')
-add_worldgen('lead', 8, 6, 1, (0, 16), target = 'twilight')
-add_worldgen('osmium', 8, 9, 1, (8, 20), target = 'twilight')
-add_worldgen('arcane', 5, 6, 1, (2, 25), target = 'twilight')
-add_worldgen('diamond', 8, 3, 1, (0, 16), target = 'twilight')
-add_worldgen('silver', 6, 5, 1, (10, 34), target = 'twilight')
+add_worldgen('coal', 13, 17, (0, 64), target = 'twilight')
+add_worldgen('iron', 11, 11, (0, 40), target = 'twilight')
+add_worldgen('nickel', 8, 9, (15, 30), target = 'twilight')
+add_worldgen('lead', 8, 9, (0, 15), target = 'twilight')
+add_worldgen('osmium', 8, 9, (10, 20), target = 'twilight')
+add_worldgen('arcane', 6, 6, (0, 25), target = 'twilight')
+add_worldgen('diamond', 8, 3, (0, 15), target = 'twilight')
+add_worldgen('silver', 8, 7, (10, 35), target = 'twilight')
 # TODO: Geode
-add_worldgen('dimensional', 3, 4, 1, (0, 16), target = 'twilight')
+add_worldgen('dimensional', 3, 5, (0, 16), target = 'twilight')
 
 ###########################
 # Ore list generator code #
@@ -372,7 +371,7 @@ def worldgen_for_ore(record, category):
         biome_list_id = "twf"
     else:
         biome_list_id = "all"
-    return f"""gen_ore({
+    return f"""add_gen_ore({
         repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
         {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
     )\n"""
@@ -382,14 +381,13 @@ def make_worldgen(datapack):
         for category in ore.categories:
             accum += worldgen_for_ore(ore, category)
     datapack.add_startup_script("add_worldgen_ores", f"""
-        onEvent('worldgen.add', event => {{
+        {{
             var twb = {repr(twilight_forest_biomes)}
             var twf = {{ "blacklist": false, "values": twb }}
             var ovw = {{ "blacklist": true, "values": twb }}
             var all = {{ "blacklist": true, "values": [] }}
-            var gen_ore = bind_gen_ore(event)
             {accum}
-        }})
+        }}
     """)
 
 def make_blocks(datapack):

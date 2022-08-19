@@ -280,6 +280,10 @@
 		#ProjectE-Integration Recipe Mapper for Tinkers Construct Alloying Mapper. Required Mods: [tconstruct]
 		enabled = true
 
+	[CraftingMapper.TouhoutLittleMaidAltarMapper]
+		#ProjectE-Integration Recipe Mapper for Touhout Little Maid Altar Mapper. Required Mods: [touhou_little_maid]
+		enabled = true
+
 [ProjectEIntegrationRecipeMapper]
 
 	[ProjectEIntegrationRecipeMapper.IceAndFireDragonForgeMapper]

@@ -1,9 +1,6 @@
 - Backport Silent's Gear 1.17+ design to 1.16
-- Add Tinker's Construct
 - Rebalance all material stats for both TiC and Silent's Gear.
 - Finish work on ore textures
-    - Be sure to fix particles for EE ores!
-    - Remove Bioite tbh
     - Do the Silent's Gems rework already.
 - Unify ore processing
 - Do another sweep for EMC exploits.
@@ -17,10 +14,8 @@
 - WRD needs way better rewards, maybe try to cut off the darker depths thing too.
 - StarterKit (+ Tinker's Construct at least)
 - Rework curio slots.
-- Remove tags from all removed items for cleanness.
 - Unify BetterEnd Sulfur at minimum
 
-- Shove Fluorite into the end, is lategame stuff anyway.
 - Saltpeter and Niter...
 - YEET CINNABAR. :T (Replace with Fluorite? Makes it a single ore replication material.)
 - What to do about Draconium? Is important material.
@@ -34,4 +29,10 @@
 - Figure out how to make enchanting not a mess... matrix enchanting is so cool, but there's some stuff that tries to buff enchanting.
 
 - TODO: Ores to target: BYG gold ores. Cryptic Redstone ore.
-- Do not untag unified ores.
+- Token Enchanting needs its gems updated.
+- The Starmetal thing is terrible, fix it.
+- Silent's Gems loot tables.
+
+- Update manifest again!!
+
+- Loot rework

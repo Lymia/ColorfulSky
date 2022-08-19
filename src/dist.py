@@ -38,7 +38,10 @@ shutil.copytree("../packmenu", "../build_dist/overrides/packmenu")
 shutil.copyfile("options.txt", "../build_dist/overrides/options.txt")
 
 print("- Removing transient configurations")
-shutil.rmtree("../build_dist/overrides/config/oculus.properties", ignore_errors=True)
+delete_file("../build_dist/overrides/config/oculus.properties")
+delete_file("../build_dist/overrides/config/ProjectE/mappingdump.json")
+shutil.rmtree("../build_dist/overrides/config/brandon3055/ResourceCache", ignore_errors=True)
+shutil.rmtree("../build_dist/overrides/config/brandon3055/ProjectIntelligence", ignore_errors=True)
 
 print("- Generating manifest...")
 manifest = json.loads(open("manifest.json", "r").read())

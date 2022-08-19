@@ -176,7 +176,7 @@
 	[world.bort]
 		#Attempts to place individual bort ore blocks per chunk.
 		#Range: 0 ~ 1000
-		count = 4
+		count = 0
 
 	[world.crimsonIron]
 		#Veins of crimson iron ore per chunk

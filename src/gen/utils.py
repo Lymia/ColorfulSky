@@ -9,6 +9,10 @@ import zopfli
 
 from PIL import Image
 
+def delete_file(f):
+    if os.path.exists(f):
+        os.remove(f)
+
 def dir_for_texture(tag):
     words = tag.split(":")
     return f"{words[0]}/textures/{words[1]}.png"

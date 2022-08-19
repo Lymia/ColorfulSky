@@ -21,7 +21,7 @@
 			#Determines the weight of spawning for Deepslate.
 			DeepslateSpawnWeight = 2
 			#Determines if Deepslate Ores should generate underground.
-			GenerateDeepslateOres = true
+			GenerateDeepslateOres = false
 
 	["World Generation"."Feature Generation"]
 		#Determines if Glow Lichen should generate underground.

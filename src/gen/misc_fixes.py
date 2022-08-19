@@ -116,7 +116,13 @@ remove_items_list = [
     "quark:smooth_biotite_vertical_slab",
     "quark:biotite",
 ]
+hide_items_list = [
+    "silentgems:soul_gem", # spam
+]
 
 def add_fixes(data):
     for item in remove_items_list:
         data.remove_name(item)
+    for item in hide_items_list:
+        data.hide_name(item)
+

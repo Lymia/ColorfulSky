@@ -32,10 +32,10 @@ Common: Elementium, Gold
 Uncommon: Dragonstone, Fey Gem
 
 [ Removal/Replacement Notes ]
-Aluminum is replaced with Tin/Nickel/Gold depending on context.
+Aluminum is replaced with Tin/Nickel/Gold depending on context. (done)
 Cinnabar is replaced with Fluorite.
 Draconium is a drop from dragons and probably some ore of Azure Silver.
-Prosperity Ore is replaced with a recipe to make Prosparity Shards from... something that isn't rare? Maybe Amethyst.
+Prosperity Ore is replaced with a recipe from smelting salt.
 Soulium should be similarly replaced with something commonish to the Nether.
 Ender Ore should be replaced with some other material, most likely.
 All Silent's Gems ores are replaced with a single Geode ore that drops random types

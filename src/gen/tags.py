@@ -4,10 +4,10 @@ import os.path
 
 from gen.utils import *
 
-def parse_config(datapack, f, strict = True):
-    flag_no_generate = False
+def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["blocks", "items"]):
+    flag_no_generate = no_generate
     flag_override = False
-    flag_kinds = ["blocks", "items"]
+    flag_kinds = kinds
     current_tag = None
     
     with open(f, 'r') as fd:
