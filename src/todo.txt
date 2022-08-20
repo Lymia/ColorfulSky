@@ -26,7 +26,8 @@
 - Figure out Rock Crystal ores
 - Nuke glowroses
 
-- Figure out how to make enchanting not a mess... matrix enchanting is so cool, but there's some stuff that tries to buff enchanting.
+- Make matrix enchanter work in recipies
+- Change Seven Rings to have funny message about enchanting. :)
 
 - TODO: Ores to target: BYG gold ores. Cryptic Redstone ore.
 - Token Enchanting needs its gems updated.
@@ -36,3 +37,8 @@
 - Update manifest again!!
 
 - Loot rework
+- See if I have a better way to make caverns work. One of the mods in particular is crusty...
+- Nuke most machines from having EMC values.
+- Configure Slice of Life
+- Finish retexturing Silent's Gems
+- Silent's Gems in Geodes and Geodes in ores.

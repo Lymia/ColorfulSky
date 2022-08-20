@@ -48,8 +48,7 @@ unused_materials = [
 
 def delete_item(datapack, item, tag):
     if item in datapack.tags.get_item_tag(tag):
-        datapack.unify_name(item)
-        datapack.tags.remove_tag(["blocks", "items"], item, [tag, tag.split("/")[0]])
+        datapack.remove_name(item)
 def unify_tags(datapack):
     accum = ""
     preferred = {}
