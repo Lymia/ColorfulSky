@@ -5,7 +5,7 @@ import shutil
 import urllib.request
 
 from enum import Enum
-from gen.utils import *
+from pack_helper.utils import *
 
 class Mod(Enum):
     Vanilla = 0
@@ -36,7 +36,7 @@ fixed_paths = {
 }
 
 def retrieve_minecraft_jar(target):
-    if not os.path.exists("minecraft.jar"):
+    if not os.path.exists("run/minecraft.jar"):
         print(f"  - Downloading Minecraft .jar")
         manifest = urllib.request.urlopen("https://launchermeta.mojang.com/mc/game/version_manifest.json").read()
         manifest = json.loads(manifest)
@@ -44,11 +44,11 @@ def retrieve_minecraft_jar(target):
             if version["id"] == "1.16.5":
                 version_manifest = urllib.request.urlopen(version["url"]).read()
                 version_manifest = json.loads(version_manifest)
-                urllib.request.urlretrieve(version_manifest["downloads"]["client"]["url"], "minecraft.jar")
-                return "minecraft.jar"
+                urllib.request.urlretrieve(version_manifest["downloads"]["client"]["url"], "run/minecraft.jar")
+                return "run/minecraft.jar"
         raise Exception("Version 1.16.5 not found.")
     else:
-        return "minecraft.jar"
+        return "run/minecraft.jar"
 
 class ModData(object):
     unpacked = {}

@@ -1,6 +1,6 @@
 import toml
 
-from gen.utils import *
+from pack_helper.utils import *
 
 # TODO: Use EE-style graphics for Create/Blood Magic/Mekanism
 # TODO: Unify deepslate

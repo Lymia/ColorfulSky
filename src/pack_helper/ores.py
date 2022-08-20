@@ -2,7 +2,7 @@ import json
 import toml
 import types
 
-from gen.utils import *
+from pack_helper.utils import *
 
 # TODO: Sided blocks (Grimestone, Blackstone, Brimstone, Basalt, Scoria, Ether Stone, Deepslate)
 # TODO: Darker Depths unneeded definitions

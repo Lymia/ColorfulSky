@@ -10,7 +10,7 @@ import json
 import markdown
 import shutil
 
-from gen.utils import *
+from pack_helper.utils import *
 
 current_version = "Alpha 1"
 

@@ -4,7 +4,7 @@ import os.path
 import json
 import shutil
 
-from gen.utils import *
+from pack_helper.utils import *
 
 exclude = [
     "projecte:",

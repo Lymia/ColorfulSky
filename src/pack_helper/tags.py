@@ -2,7 +2,7 @@ import json
 import os
 import os.path
 
-from gen.utils import *
+from pack_helper.utils import *
 
 def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["blocks", "items"]):
     flag_no_generate = no_generate

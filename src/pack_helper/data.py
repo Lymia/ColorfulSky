@@ -2,7 +2,7 @@ import json
 import os
 import os.path
 
-from gen.utils import *
+from pack_helper.utils import *
 
 class TagConfig(object):
     should_override = set({})

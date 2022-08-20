@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 
-import gen.biome_fix
-import gen.data
-import gen.emc_fix
-import gen.fix_models
-import gen.misc_fixes
-import gen.mod_data
-import gen.ores
-import gen.silents_gems_rework
-import gen.tags
-import gen.unify
 import glob
 import os
 import os.path
+import pack_helper.biome_fix
+import pack_helper.data
+import pack_helper.emc_fix
+import pack_helper.fix_models
+import pack_helper.misc_fixes
+import pack_helper.mod_data
+import pack_helper.ores
+import pack_helper.silents_gems_rework
+import pack_helper.tags
+import pack_helper.unify
 import shutil
 
-from gen.utils import *
-from gen.mod_data import Mod
+from pack_helper.utils import *
+from pack_helper.mod_data import Mod
 
 print("Generating configuration files...")
 if is_release():
-    shutil.rmtree("../build_config", ignore_errors=True)
-os.makedirs("../build_config", exist_ok = True)
+    shutil.rmtree("run", ignore_errors=True)
+os.makedirs("run", exist_ok = True)
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
-datapack = gen.data.DatapackModel()
-moddata = gen.mod_data.ModData("../build_config/mods")
+datapack = pack_helper.data.DatapackModel()
+moddata = pack_helper.mod_data.ModData("run/mods")
 
 print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
@@ -36,43 +36,43 @@ for file in glob.glob("static/common_scripts/*.js"):
     shutil.copy(file, "../kubejs/server_scripts")
 
 print("- Loading exported tags...")
-gen.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
-gen.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
+pack_helper.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
+pack_helper.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
 
 print("- Adding static tags...")
 for tag_file in glob.glob('tags/*.txt'):
-    gen.tags.parse_config(datapack, tag_file)
+    pack_helper.tags.parse_config(datapack, tag_file)
 
 print("- Creating Twilight Forest biomes fix...")
-gen.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")
+pack_helper.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")
 
 print("- Executing Silent's Gems rework...")
-gen.silents_gems_rework.apply_rework(datapack)
+pack_helper.silents_gems_rework.apply_rework(datapack)
 
 print("- Creating Draconic Evolution resource pack compatibility...")
 pack = make_pack("DarkpuppeyCompat", "Darkpuppey's Modded Overhauls - 1.16.5 Compatibility Patch", "resources")
-shutil.unpack_archive(find_pack("DP+Pack"), "../build_config/dp", "zip")
-gen.fix_models.generate_model_fixes("../build_config/dp", moddata.unpack_jar(Mod.DraconicEvolution), pack)
+shutil.unpack_archive(find_pack("DP+Pack"), "run/dp", "zip")
+pack_helper.fix_models.generate_model_fixes("run/dp", moddata.unpack_jar(Mod.DraconicEvolution), pack)
 
 print("- Generating ores and worldgen configuration...")
-gen.ores.make_ores(datapack, moddata)
+pack_helper.ores.make_ores(datapack, moddata)
 
 print("- Generating EMC configuration...")
-gen.emc_fix.make_emc_config()
+pack_helper.emc_fix.make_emc_config()
 
 print("- Unifying materials...")
-gen.unify.unify_tags(datapack)
-gen.unify.write_configs()
+pack_helper.unify.unify_tags(datapack)
+pack_helper.unify.write_configs()
 
 print("- Applying misc fixes...")
-gen.misc_fixes.add_fixes(datapack)
+pack_helper.misc_fixes.add_fixes(datapack)
 
 print("- Generating misc data...")
 datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")
 datapack.add_i18n("constellation", "group.constellation", "Constellation")
 
 print("- Writing configuration...")
-gen.data.generate_datapack_files(datapack, "../kubejs/")
+pack_helper.data.generate_datapack_files(datapack, "../kubejs/")
 
 print("- Cleaning up...")
-shutil.rmtree("../build_config/dp", ignore_errors=True)
+shutil.rmtree("run/dp", ignore_errors=True)
