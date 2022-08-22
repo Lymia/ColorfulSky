@@ -351,7 +351,7 @@ for strata in ore_stratas.values():
 # Datapack generator code #
 ###########################
 
-def make_i18n(datapack):
+def make_i18n():
     for ore in all_ores:
         otype = ore_types[ore.otype]
         strata = ore_stratas[ore.strata]
@@ -375,7 +375,7 @@ def worldgen_for_ore(record, category):
         repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
         {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
     )\n"""
-def make_worldgen(datapack):
+def make_worldgen():
     accum = ""
     for ore in all_ores:
         for category in ore.categories:
@@ -390,7 +390,7 @@ def make_worldgen(datapack):
         }}
     """)
 
-def make_blocks(datapack):
+def make_blocks():
     accum = ""
     for ore in all_ores:
         if ore.needs_new_block:
@@ -409,7 +409,7 @@ def make_blocks(datapack):
         }})
     """)
         
-def make_textures(datapack, moddata):
+def make_textures():
     for ore in all_ores:
         otype = ore_types[ore.otype]
         strata = ore_stratas[ore.strata]
@@ -430,7 +430,7 @@ def make_textures(datapack, moddata):
             datapack.add_json_asset(f"{group(ore.ore_block)}/models/block/{path(ore.ore_block)}.json", json)
         compose_textures(moddata, texture, ore_stratas[ore.strata].texture, ore_types[ore.otype].texture)
 
-def make_loot_tables(datapack):
+def make_loot_tables():
     for ore in all_ores:
         otype = ore_types[ore.otype]
         ore_block = ore.ore_block
@@ -485,14 +485,14 @@ def make_loot_tables(datapack):
         }
         datapack.add_json_data(f"{group(ore_block)}/loot_tables/blocks/{path(ore_block)}.json", json)
 
-def remove_unused(datapack):
+def remove_unused():
     for item in ee_unused:
         datapack.remove_name(item)
     for ore in all_ores:
         if not ore.primary:
             datapack.hide_name(ore.ore_block)
 
-def make_tooltips(datapack):
+def make_tooltips():
     data = {}
     for ore in all_ores:
         if ore.primary:
@@ -518,18 +518,17 @@ def make_tooltips(datapack):
     
     datapack.add_client_script("worldgen_ore_locations", f"found_in_events({json.dumps(data)})")
 
-def make_tags(datapack):
+def make_tags():
     for ore in all_ores:
         datapack.tags.add_both_tag(ore.ore_block, f"forge:ores")
         datapack.tags.add_both_tag(ore.ore_block, f"forge:ores/{ore.otype}")
         datapack.tags.add_both_tag(ore.ore_block, "constellation:generated_ores")
 
-def make_ores(datapack, moddata):
-    make_i18n(datapack)
-    make_worldgen(datapack)
-    make_blocks(datapack)
-    make_textures(datapack, moddata)
-    make_tags(datapack)
-    make_tooltips(datapack)
-    make_loot_tables(datapack)
-    remove_unused(datapack)
+make_i18n()
+make_worldgen()
+make_blocks()
+make_textures()
+make_tags()
+make_tooltips()
+make_loot_tables()
+remove_unused()

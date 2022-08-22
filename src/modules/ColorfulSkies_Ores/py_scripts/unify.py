@@ -46,10 +46,10 @@ unused_materials = [
 # Code #
 ########
 
-def delete_item(datapack, item, tag):
+def delete_item(item, tag):
     if item in datapack.tags.get_item_tag(tag):
         datapack.remove_name(item)
-def unify_tags(datapack):
+def unify_tags():
     accum = ""
     preferred = {}
     has_kind = {}
@@ -86,23 +86,23 @@ def unify_tags(datapack):
     for kind in unused_materials + unused_gears:
         datapack.unify_name(f"emendatusenigmatica:{kind}_gear")
     for kind in unused_materials + ore_processing_gems:
-        delete_item(datapack, f"emendatusenigmatica:{kind}_clump", f"mekanism:clumps/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_crystal", f"mekanism:crystals/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_dirty_dust", f"mekanism:dirty_dusts/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_shard", f"mekanism:shards/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_fragment", f"bloodmagic:fragments/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_gravel", f"bloodmagic:gravels/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_crushed", f"create:crushed_ores/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_clump", f"mekanism:clumps/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_crystal", f"mekanism:crystals/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_dirty_dust", f"mekanism:dirty_dusts/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_shard", f"mekanism:shards/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_fragment", f"bloodmagic:fragments/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_gravel", f"bloodmagic:gravels/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_crushed", f"create:crushed_ores/{kind}")
     for kind in unused_materials:
-        delete_item(datapack, f"emendatusenigmatica:{kind}_ingot", f"forge:ingots/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_block", f"forge:storage_blocks/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_nugget", f"forge:nuggets/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_gem", f"forge:gems/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_dust", f"forge:dusts/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_chunk", f"forge:chunks/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_cluster", f"forge:clusters/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_plate", f"forge:plates/{kind}")
-        delete_item(datapack, f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_ingot", f"forge:ingots/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_block", f"forge:storage_blocks/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_nugget", f"forge:nuggets/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_gem", f"forge:gems/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_dust", f"forge:dusts/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_chunk", f"forge:chunks/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_cluster", f"forge:clusters/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_plate", f"forge:plates/{kind}")
+        delete_item(f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
             
     # Mark clusters as ores
     for kind in unify_list:
@@ -129,8 +129,12 @@ def unify_tags(datapack):
     """)
 
 def write_configs():
+    # TODO: Make this use a different code path
     with open("configs/jaopca_main.toml") as fd:
         main = toml.loads(fd.read())
     main["itemSelection"]["preferredMods"] = preference_list
     with open("../config/jaopca/main.toml", "w") as fd:
         fd.write(toml.dumps(main))
+
+unify_tags()
+write_configs()

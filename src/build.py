@@ -9,10 +9,9 @@ import pack_helper.emc_fix
 import pack_helper.fix_models
 import pack_helper.misc_fixes
 import pack_helper.mod_data
-import pack_helper.ores
+import pack_helper.modules
 import pack_helper.silents_gems_rework
 import pack_helper.tags
-import pack_helper.unify
 import shutil
 
 from pack_helper.utils import *
@@ -26,6 +25,11 @@ os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 datapack = pack_helper.data.DatapackModel("../kubejs", "../config", "../openloader")
 moddata = pack_helper.mod_data.ModData("run/mods")
+
+print("- Initializing modules...")
+modules = pack_helper.modules.ModuleLoader()
+modules.execute_init()
+modules.execute_early()
 
 print("- Copying static files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
@@ -54,18 +58,14 @@ pack = make_pack("DarkpuppeyCompat", "Darkpuppey's Modded Overhauls - 1.16.5 Com
 shutil.unpack_archive(find_pack("DP+Pack"), "run/dp", "zip")
 pack_helper.fix_models.generate_model_fixes("run/dp", moddata.unpack_jar(Mod.DraconicEvolution), pack)
 
-print("- Generating ores and worldgen configuration...")
-pack_helper.ores.make_ores(datapack, moddata)
-
 print("- Generating EMC configuration...")
 pack_helper.emc_fix.make_emc_config()
 
-print("- Unifying materials...")
-pack_helper.unify.unify_tags(datapack)
-pack_helper.unify.write_configs()
-
 print("- Applying misc fixes...")
 pack_helper.misc_fixes.add_fixes(datapack)
+
+print("- Running modules...")
+modules.execute(datapack, moddata)
 
 print("- Generating misc data...")
 datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")
