@@ -129,10 +129,10 @@ def unify_tags():
     """)
 
 def write_configs():
-    # TODO: Make this use a different code path
-    with open("configs/jaopca_main.toml") as fd:
+    with open(f"{mod_path}/configs/jaopca_main.toml") as fd:
         main = toml.loads(fd.read())
     main["itemSelection"]["preferredMods"] = preference_list
+    # TODO: Do this through datapack, rather than assuming location of `config`
     with open("../config/jaopca/main.toml", "w") as fd:
         fd.write(toml.dumps(main))
 

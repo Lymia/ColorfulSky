@@ -188,3 +188,9 @@ class DatapackModel(object):
             for group in self._i18n_strings[lang]:
                 data = json.dumps(self._i18n_strings[lang][group])
                 self._write_if_not_exists(f"{self._kubejs_dir}/assets/{group}/lang/en_us.json", data)
+
+        # Copy kubejs configuration
+        res_dir = f"{os.path.dirname(__file__)}/config"
+        self._copy_from_if_not_exists(f"{self._kubejs_dir}/config/client.properties", f"{res_dir}/client.properties")
+        self._copy_from_if_not_exists(f"{self._kubejs_dir}/config/common.properties", f"{res_dir}/common.properties")
+        self._write_if_not_exists(f"{self._kubejs_dir}/README.md", "See this modpack's repository.")
