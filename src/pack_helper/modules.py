@@ -1,6 +1,7 @@
 import glob
 import importlib.util
 import os.path
+import pack_helper.tags
 import sys
 
 class Script(object):
@@ -34,6 +35,8 @@ class Module(object):
         self.js_server_scripts = []
         self.js_startup_scripts = []
         
+        self.tags = []
+        
         # Load Python scripts
         self._load_scripts_py(self.py_scripts, "py_scripts")
         self._load_scripts_py(self.py_init_scripts, "py_init_scripts")
@@ -43,11 +46,11 @@ class Module(object):
         self._load_scripts_js(self.js_client_scripts, "client_scripts")
         self._load_scripts_js(self.js_server_scripts, "server_scripts")
         self._load_scripts_js(self.js_startup_scripts, "startup_scripts")
-        for script_path in glob.glob(f"{path}/common_scripts/*.js"):
-            script_name = os.path.basename(script_path)[:-3]
-            self.js_common_scripts.append((script_name, script_path))
+        
+        # Load tags
+        for tags_path in glob.glob(f"{self.path}/tags/*.txt"):
+            self.tags.append(tags_path)
             
-        # TODO: Load other resources.
     def _load_scripts_py(self, target, kind):
         for script_path in glob.glob(f"{self.path}/{kind}/*.py"):
             script_name = os.path.basename(script_path)[:-3]
@@ -59,10 +62,17 @@ class Module(object):
     
     def execute_init(self):
         sys.path.append(f"{self.path}/py_path/")
-    def execute_early(self):
+    
+    def execute_early(self, datapack, moddata):
         # Execute any early scripts in the module
         for script in self.py_init_scripts:
             script.execute(datapack, moddata)
+            
+        # Load tags
+        for tag_file in self.tags:
+            print(f"  - Loading tags from '{tag_file}'")
+            pack_helper.tags.parse_config(datapack, tag_file)
+            
     def execute(self, datapack, moddata):
         # Execute any scripts in the module
         for script in self.py_scripts:
@@ -70,7 +80,12 @@ class Module(object):
             script.execute(datapack, moddata)
         
         # Copy Javascript scripts
-        self._copy_scripts_js(datapack, self.js_common_scripts, "common_scripts")
+        for script in self.js_common_scripts:
+            script_name, script_path = script
+            print(f"  - Copying '{script_path}'")
+            datapack._kubejs_copy_script(f"client_scripts/{self.module_name}-{script_name}", ".js", script_path)
+            datapack._kubejs_copy_script(f"server_scripts/{self.module_name}-{script_name}", ".js", script_path)
+            datapack._kubejs_copy_script(f"startup_scripts/{self.module_name}-{script_name}", ".js", script_path)
         self._copy_scripts_js(datapack, self.js_client_scripts, "client_scripts")
         self._copy_scripts_js(datapack, self.js_server_scripts, "server_scripts")
         self._copy_scripts_js(datapack, self.js_startup_scripts, "startup_scripts")
@@ -105,9 +120,9 @@ class ModuleLoader(object):
     def execute_init(self):
         for module in self.modules:
             module.execute_init()
-    def execute_early(self):
+    def execute_early(self, datapack, moddata):
         for module in self.modules:
-            module.execute_early()
+            module.execute_early(datapack, moddata)
     def execute(self, datapack, moddata):
         for module in self.modules:
             module.execute(datapack, moddata)

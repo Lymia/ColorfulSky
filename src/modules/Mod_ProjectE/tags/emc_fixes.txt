@@ -1,0 +1,9 @@
+$flags ITEM BLOCK
+
+#minecraft:small_flowers
+- !#botania:special_flowers
+
+$flags ITEM
+
+#forge:dyes/yellow
+- !mekanism:dust_sulfur

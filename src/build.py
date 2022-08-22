@@ -27,7 +27,6 @@ moddata = pack_helper.mod_data.ModData("run/mods")
 print("- Initializing modules...")
 modules = pack_helper.modules.ModuleLoader()
 modules.execute_init()
-modules.execute_early()
 
 print("- Removing old files...")
 shutil.rmtree("../kubejs", ignore_errors=True)
@@ -35,10 +34,6 @@ shutil.rmtree("../kubejs", ignore_errors=True)
 print("- Loading exported tags...")
 pack_helper.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
 pack_helper.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
-
-print("- Adding static tags...")
-for tag_file in glob.glob('tags/*.txt'):
-    pack_helper.tags.parse_config(datapack, tag_file)
 
 print("- Creating Twilight Forest biomes fix...")
 pack_helper.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")
@@ -52,11 +47,8 @@ print("- Applying misc fixes...")
 pack_helper.misc_fixes.add_fixes(datapack)
 
 print("- Running modules...")
+modules.execute_early(datapack, moddata)
 modules.execute(datapack, moddata)
-
-print("- Generating misc data...")
-datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")
-datapack.add_i18n("constellation", "group.constellation", "Constellation")
 
 print("- Writing configuration...")
 datapack._finalize()
