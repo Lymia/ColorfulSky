@@ -34,6 +34,7 @@ shutil.rmtree("../kubejs", ignore_errors=True)
 print("- Loading exported tags...")
 pack_helper.tags.parse_config(datapack, "tags_reference/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
 pack_helper.tags.parse_config(datapack, "tags_reference/items.txt", strict = False, no_generate = True, kinds = ["items"])
+pack_helper.tags.parse_config(datapack, "tags_reference/fluids.txt", strict = False, no_generate = True, kinds = ["fluids"])
 
 print("- Creating Twilight Forest biomes fix...")
 pack_helper.biome_fix.fix_biomes(moddata.unpack_jar(Mod.TwilightForest), "../kubejs")

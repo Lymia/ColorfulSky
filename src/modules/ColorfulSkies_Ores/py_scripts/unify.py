@@ -3,7 +3,7 @@ import toml
 from pack_helper.utils import *
 
 # TODO: Use EE-style graphics for Create/Blood Magic/Mekanism
-# TODO: Unify deepslate
+# TODO: Fluid unification
 
 ###############
 # Definitions #
@@ -47,7 +47,7 @@ unused_materials = [
 ########
 
 def delete_item(item, tag):
-    if item in datapack.tags.get_item_tag(tag):
+    if item in datapack.tags.get_item_tag(tag) or item in datapack.tags.get_fluid_tag(tag):
         datapack.remove_name(item)
 def unify_tags():
     accum = ""
@@ -103,6 +103,8 @@ def unify_tags():
         delete_item(f"emendatusenigmatica:{kind}_cluster", f"forge:clusters/{kind}")
         delete_item(f"emendatusenigmatica:{kind}_plate", f"forge:plates/{kind}")
         delete_item(f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
+        delete_item(f"emendatusenigmatica:molten_{kind}", f"forge:molten/{kind}")
+        delete_item(f"emendatusenigmatica:molten_{kind}_bucket", f"forge:buckets/{kind}")
             
     # Mark clusters as ores
     for kind in unify_list:

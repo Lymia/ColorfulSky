@@ -30,6 +30,8 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                         flag_kinds.append("blocks")
                     elif flag == "ITEM":
                         flag_kinds.append("items")
+                    elif flag == "FLUID":
+                        flag_kinds.append("fluids")
                     elif flag == "SLURRY":
                         flag_kinds.append("slurries")
                     else:

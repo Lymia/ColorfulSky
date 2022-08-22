@@ -59,6 +59,8 @@ class TagConfig(object):
         return self.get_tag("blocks", tag)
     def get_item_tag(self, tag):
         return self.get_tag("items", tag)
+    def get_fluid_tag(self, tag):
+        return self.get_tag("fluids", tag)
 
     def add_block_tag(self, name, tag):
         self.add_tag("blocks", name, tag)

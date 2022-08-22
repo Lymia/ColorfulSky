@@ -19,32 +19,15 @@ let bind_recipies = function(preferred_list) {
         }
     }
     
-    let remove_inputs_list = { smelt: {} }
-    let remove_outputs_list = { smelt: {} }
-    let check_filtered_item = function(kind) {
-        let inputs = remove_inputs_list[kind]
-        let outputs = remove_outputs_list[kind]
-        return function(recipe) {
-            return !check_recipe_has_input(recipe, inputs) || !check_recipe_has_output(recipe, outputs)
-        }
-    }
-    
     let tag_exists = function(tag) {
         return !ingredient.of(`#${tag}`).stacks.empty
     }
     let unify_smelting = function(kind) {        
-        // Remove existing vanilla smelting recipies
-        ["ores", "dusts", "chunks"].forEach(type => {
-            ingredient.of(`#forge:${type}/${kind}`).stacks.forEach(x => {
-                remove_inputs_list["smelt"][x.getId()] = true
-            })
-        })
-        ingredient.of(`#forge:ingots/${kind}`).stacks.forEach(x => {
-            remove_outputs_list["smelt"][x.getId()] = true
-        })
-        
-        // Add unified smelting recipes
         let ingotItem = find_preferred(`forge:ingots/${kind}`)
+
+        // Unify smelting recipes
+        remove_recipe_by_processing_output("minecraft:smelting", `#forge:ingots/${kind}`)
+        remove_recipe_by_processing_output("minecraft:blasting", `#forge:ingots/${kind}`)
         run_on_recipies(e => {
             ["ores", "dusts", "chunks"].forEach(type => {
                 if (tag_exists(`forge:${type}/${kind}`)) {
@@ -70,8 +53,6 @@ let bind_recipies = function(preferred_list) {
     for (tag in preferred_list) {
         unify_one(tag, preferred_list[tag])
     }
-    filter_items("minecraft:smelting", check_filtered_item("smelt"))
-    filter_items("minecraft:blasting", check_filtered_item("smelt"))
     
     return {
         unify_ingot: function(kind) {

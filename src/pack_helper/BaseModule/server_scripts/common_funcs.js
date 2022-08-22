@@ -1,25 +1,13 @@
 // priority: 1000
 
-let remove_recipe_by_output, remove_recipe_by_id
-let run_on_recipies, filter_items
+let remove_recipe_by_output, remove_recipe_by_id, remove_recipe_by_processing_output, run_on_recipies
 
-let check_recipe_has_input = function(recipe, list) {
-    let len = recipe.inputItems.size()
-    for (let i = 0; i < len; i++) {
-        let stack = recipe.inputItems.get(i)
-        if (list[stack.toString()]) {
-            return true
-        }
-    }
-    return false
-}
-let check_recipe_has_output = function(recipe, list) {
+let check_recipe_has_output = function(recipe, list, check_chance) {
     let len = recipe.outputItems.size()
     for (let i = 0; i < len; i++) {
         let stack = recipe.outputItems.get(i)
-        if (list[stack.getId().toString()]) {
-            return true
-        }
+        if (check_chance && stack.getChance() <= 1.0) continue
+        if (list[stack.getId().toString()]) return true
     }
     return false
 }
@@ -27,49 +15,41 @@ let check_recipe_has_output = function(recipe, list) {
 {
     let recipe_removed_ids = {}
     let recipe_removed_outputs = {}
+    let recipe_removed_processing_outputs = {}
     let recipe_closure = []
-    let recipe_remove_closure = {}
 
     remove_recipe_by_output = function(value) {
-        recipe_removed_outputs[value] = true
+        ingredient.of(value).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
     }
     remove_recipe_by_id = function(value) {
         recipe_removed_ids[value] = true
     }
+    remove_recipe_by_processing_output = function(kind, value) {
+        if (!recipe_removed_processing_outputs[kind]) recipe_removed_processing_outputs[kind] = {}
+        ingredient.of(value).stacks.forEach(value => recipe_removed_processing_outputs[kind][value.getId().toString()] = true)
+    }
     run_on_recipies = function(closure) {
         recipe_closure.push(closure)
     }
-    filter_items = function(type, closure) {
-        if (!recipe_remove_closure[type]) recipe_remove_closure[type] = []
-        recipe_remove_closure[type].push(closure)
-    }
 
     onEvent("recipes", e => {
-        // process recipies in one pass
+        // delete recipies (efficiently)
         e.forEachRecipeAsync(true, recipe => {
-            // check if the recipe needs to be removed
             if (recipe_removed_ids[recipe.getId().toString()]) {
                 recipe.setGroup("constellation:removed")
                 return
-            } else if (check_recipe_has_output(recipe, recipe_removed_outputs)) {
+            } else if (check_recipe_has_output(recipe, recipe_removed_outputs, false)) {
                 recipe.setGroup("constellation:removed")
                 return
             }
-            if (recipe_remove_closure[recipe.type.toString()]) {
-                let list = recipe_remove_closure[recipe.type.toString()]
-                let len = list.length
-                for (let i = 0; i < len; i++) {
-                    let checker = list[i]
-                    if (!checker(recipe)) {
-                        console.log("closure " + recipe.getId())
-                        recipe.setGroup("constellation:removed")
-                        return
-                    }
-                }
+            
+            let process_list = recipe_removed_processing_outputs[recipe.getType()]
+            if (process_list && check_recipe_has_output(recipe, process_list, true)) {
+                console.log("processing "+recipe.getId().toString())
+                recipe.setGroup("constellation:removed")
+                return
             }
         })
-        
-        // delete removed recipies
         e.remove({ group: "constellation:removed" })
         
         // run custom processing steps
