@@ -5,9 +5,10 @@ import os.path
 from pack_helper.utils import *
 
 class TagConfig(object):
-    _should_override = set({})
-    _no_generate = set({})
-    _tags = {}
+    def __init__(self):
+        self._should_override = set({})
+        self._no_generate = set({})
+        self._tags = {}
     
     def mark_override(self, tag):
         self._should_override.add(tag)
@@ -67,16 +68,16 @@ class TagConfig(object):
         self.add_tag(["blocks", "items"], name, tag)
 
 class DatapackModel(object):
-    tags = TagConfig()
-    _removed_names = []
-    _unified_names = []
-    _hidden_names = []
-    _i18n_strings = {}
-    
     def __init__(self, kubejs_dir, config_dir, openloader_dir):
         self._kubejs_dir = kubejs_dir
         self._config_dir = config_dir
         self._openloader_dir = openloader_dir
+        
+        self.tags = TagConfig()
+        self._removed_names = []
+        self._unified_names = []
+        self._hidden_names = []
+        self._i18n_strings = {}
         
     ##
     ## Private methods
@@ -88,20 +89,32 @@ class DatapackModel(object):
         if os.path.exists(path):
             raise Exception(f"File '{path}' already exists!")
         self._write_file(path, data)
-    def _generate_script(self, kind, name, script, priority):
-        # Minify/process the script
-        script = js_minify_simple(script, priority = priority)
-        
-        # Find an open path for the script
-        target_path = f"{self._kubejs_dir}/{kind}/colorfulskies_gen_{name}.js"
+    def _write_maybe_rename(self, prefix, extension, data):
+        target_path = f"{prefix}{extension}"
         i = 0
         while os.path.exists(target_path):
-            target_path = f"{self._kubejs_dir}/{kind}/colorfulskies_gen_{name}_{i}.js"
+            target_path = f"{prefix}_{i}{extension}"
             i += 1
-        
-        # Write script to path
-        self._write_if_not_exists(target_path, script)
+        self._write_if_not_exists(target_path, data)
+    def _generate_script(self, kind, name, script, priority):
+        script = js_minify_simple(script, priority = priority)
+        self._write_maybe_rename(f"{self._kubejs_dir}/{kind}/Generated-{name}", ".js", script)
 
+    def _copy_from_if_not_exists(self, path, source):
+        with open(source, "r") as fd:
+            data = fd.read()
+        self._write_if_not_exists(path, data)
+    def _copy_from_maybe_rename(self, prefix, extension, source):
+        with open(source, "r") as fd:
+            data = fd.read()
+        self._write_maybe_rename(prefix, extension, data)
+    
+    ##
+    ## Private API methods
+    ##
+    def _kubejs_copy_script(self, prefix, extension, source):
+        self._copy_from_maybe_rename(f"{self._kubejs_dir}/{prefix}", extension, source)
+    
     ##
     ## Public API methods
     ##
