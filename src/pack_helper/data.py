@@ -5,20 +5,19 @@ import os.path
 from pack_helper.utils import *
 
 class TagConfig(object):
-    should_override = set({})
-    no_generate = set({})
-    tags = {}
+    _should_override = set({})
+    _no_generate = set({})
+    _tags = {}
     
     def mark_override(self, tag):
-        self.should_override.add(tag)
+        self._should_override.add(tag)
     def mark_no_generate(self, tag):
-        self.no_generate.add(tag)
+        self._no_generate.add(tag)
     def force_generate(self, tag):
         self.mark_override(tag)
-        if tag in self.no_generate:
-            self.no_generate.remove(tag)
-        
-        
+        if tag in self._no_generate:
+            self._no_generate.remove(tag)
+
     def add_tag(self, kind, name, tag, generated = True):
         if type(kind) == str:
             kind = [kind]
@@ -27,8 +26,8 @@ class TagConfig(object):
         for k in kind:
             for t in tag:
                 if generated:
-                    if t in self.no_generate:
-                        self.no_generate.remove(t)
+                    if t in self._no_generate:
+                        self._no_generate.remove(t)
                 self.get_tag(k, t).add(name)
     def remove_tag(self, kind, name, tag, generated = True):
         if type(kind) == str:
@@ -44,11 +43,11 @@ class TagConfig(object):
                     tag_data.remove(name)
     def get_tag(self, kind, tag):
         assert(tag != None)
-        return self.tags.setdefault(kind, {}).setdefault(tag, set({}))
+        return self._tags.setdefault(kind, {}).setdefault(tag, set({}))
     
     def remove_name(self, name):
-        for kind_name in self.tags:
-            kind = self.tags[kind_name]
+        for kind_name in self._tags:
+            kind = self._tags[kind_name]
             for tag in kind:
                 tag_data = kind[tag]
                 if name in tag_data:
@@ -69,97 +68,96 @@ class TagConfig(object):
 
 class DatapackModel(object):
     tags = TagConfig()
-    removed_names = []
-    unified_names = []
-    hidden_names = []
-    generated_startup_scripts = {}
-    generated_server_scripts = {}
-    generated_client_scripts = {}
-    i18n_strings = {}
-    textures = {}
-    new_files = {}
+    _removed_names = []
+    _unified_names = []
+    _hidden_names = []
+    _i18n_strings = {}
     
-    def _find_name(self, field, prefix, sname, value):
-        name = f"{prefix}{sname}"
+    def __init__(self, kubejs_dir, config_dir, openloader_dir):
+        self._kubejs_dir = kubejs_dir
+        self._config_dir = config_dir
+        self._openloader_dir = openloader_dir
+        
+    ##
+    ## Private methods
+    ##
+    def _write_if_not_exists(self, path, data):
+        if os.path.exists(path):
+            raise Exception(f"File '{path}' already exists!")
+        with open_mkdir(path) as fd:
+            fd.write(data)
+    def _generate_script(self, kind, name, script, priority):
+        # Minify/process the script
+        script = js_minify_simple(script, priority = priority)
+        
+        # Find an open path for the script
+        target_path = f"{self._kubejs_dir}/{kind}/colorfulskies_gen_{name}.js"
         i = 0
-        while name in field or name.startswith("_"):
-            name = f"{prefix}S{i}_{sname}"
-            i += 0
-        field[name] = value
-        return name
-    
+        while os.path.exists(target_path):
+            target_path = f"{self._kubejs_dir}/{kind}/colorfulskies_gen_{name}_{i}.js"
+            i += 1
+        
+        # Write script to path
+        self._write_if_not_exists(target_path, script)
+
+    ##
+    ## Public API methods
+    ##
     def hide_name(self, name):
-        self.hidden_names.append(name)
+        self._hidden_names.append(name)
     def unify_name(self, name):
-        self.hidden_names.append(name)
-        self.unified_names.append(name)
+        self._hidden_names.append(name)
+        self._unified_names.append(name)
     def remove_name(self, name):
-        self.hidden_names.append(name)
-        self.removed_names.append(name)
+        self._hidden_names.append(name)
+        self._removed_names.append(name)
         self.tags.remove_name(name)
         
-    def process_script(self, name, script):
-        return js_minify_simple(script)
-    def add_client_script(self, name, script):
-        return self._find_name(self.generated_client_scripts, "", name, self.process_script(name, script))
-    def add_server_script(self, name, script):
-        return self._find_name(self.generated_server_scripts, "", name, self.process_script(name, script))
-    def add_startup_script(self, name, script):
-        return self._find_name(self.generated_startup_scripts, "", name, self.process_script(name, script))
+    def add_client_script(self, name, script, priority = 0):
+        self._generate_script("client_scripts", name, script, priority)
+    def add_server_script(self, name, script, priority = 0):
+        self._generate_script("server_scripts", name, script, priority)
+    def add_startup_script(self, name, script, priority = 0):
+        self._generate_script("startup_scripts", name, script, priority)
+
+    def add_json_asset(self, name, json_data):
+        self._write_if_not_exists(f"{self._kubejs_dir}/assets/{name}", json.dumps(json_data))
+    def add_json_data(self, name, json_data):
+        self._write_if_not_exists(f"{self._kubejs_dir}/data/{name}", json.dumps(json_data))
     
     def add_i18n(self, group, name, value):
-        self.i18n_strings.setdefault(group, {})[name] = value
-    def add_json_asset(self, name, json_data):
-        name = "assets/" + name
-        self.new_files[name] = json.dumps(json_data)
-    def add_json_data(self, name, json_data):
-        name = "data/" + name
-        self.new_files[name] = json.dumps(json_data)
+        self._i18n_strings.setdefault(group, {})[name] = value
 
-def generate_tag_file(tag, kind, values, override, target):
-    values = sorted(list(values))
-    json_str = json.dumps({
-        "replace": override,
-        "values": values
-    })
+    ##
+    ## Modpack finalization methods
+    ##
+    def _generate_tag_file(self, tag, kind, values, override):
+        values = sorted(list(values))
+        json_str = json.dumps({
+            "replace": override,
+            "values": values
+        })
+        self._write_if_not_exists(f"{self._kubejs_dir}/data/{dir_for_tag(tag, kind)}", json_str)
+    def _generate_tags(self, tags):
+        for kind in tags._tags:
+            for tag in tags._tags[kind]:
+                if tag in tags._should_override or len(tags._tags[kind][tag]) != 0:
+                    if tag not in tags._no_generate:
+                        self._generate_tag_file(tag, kind, tags._tags[kind][tag], tag in tags._should_override)
     
-    target_file = f"{target}/data/{dir_for_tag(tag, kind)}"
-    with open_mkdir(target_file) as fd:
-        fd.write(json_str)
-def generate_tags(tags, target):
-    for kind in tags.tags:
-        for tag in tags.tags[kind]:
-            if tag in tags.should_override or len(tags.tags[kind][tag]) != 0:
-                if tag not in tags.no_generate:
-                    generate_tag_file(tag, kind, tags.tags[kind][tag], tag in tags.should_override, target)
-
-def make_remove_unused(datapack, target):
-    json = js_minify_simple(f"""
-        hide_events(false, {repr(sorted(set(datapack.removed_names)))})
-        hide_events(true, {repr(sorted(set(datapack.hidden_names)))})
-        unify_events({repr(sorted(set(datapack.unified_names)))})
-    """, priority = 1000)
-    with open_mkdir(f"{target}/client_scripts/generated_remove_unused.js") as fd:
-        fd.write(json)
-    json = js_minify_simple(f"remove_items({repr(sorted(set(datapack.removed_names)))})", priority = 1000)
-    with open_mkdir(f"{target}/server_scripts/generated_remove_unused.js") as fd:
-        fd.write(json)
-    
-def generate_datapack_files(datapack, target):
-    generate_tags(datapack.tags, target)
-    make_remove_unused(datapack, target)
-    for group in datapack.i18n_strings:
-        with open_mkdir(f"{target}/assets/{group}/lang/en_us.json") as fd:
-            fd.write(json.dumps(datapack.i18n_strings[group]))
-    for name in datapack.generated_startup_scripts:
-        with open_mkdir(f"{target}/startup_scripts/generated_{name}.js") as fd:
-            fd.write(datapack.generated_startup_scripts[name])
-    for name in datapack.generated_server_scripts:
-        with open_mkdir(f"{target}/server_scripts/generated_{name}.js") as fd:
-            fd.write(datapack.generated_server_scripts[name])
-    for name in datapack.generated_client_scripts:
-        with open_mkdir(f"{target}/client_scripts/generated_{name}.js") as fd:
-            fd.write(datapack.generated_client_scripts[name])
-    for name in datapack.new_files:
-        with open_mkdir(f"{target}/{name}") as fd:
-            fd.write(datapack.new_files[name])
+    def _make_remove_unused(self):
+        json = f"""
+            hide_events(false, {repr(sorted(set(self._removed_names)))})
+            hide_events(true, {repr(sorted(set(self._hidden_names)))})
+            unify_events({repr(sorted(set(self._unified_names)))})
+        """
+        self.add_client_script("remove_unused", json)
+        
+        json = f"remove_items({repr(sorted(set(self._removed_names)))})"
+        self.add_server_script("remove_unused", json)
+    def _finalize(self):
+        self._generate_tags(self.tags)
+        self._make_remove_unused()
+        for group in self._i18n_strings:
+            data = json.dumps(self._i18n_strings[group])
+            self._write_if_not_exists(f"{self._kubejs_dir}/assets/{group}/lang/en_us.json", data)

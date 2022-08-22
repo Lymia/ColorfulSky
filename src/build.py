@@ -24,7 +24,7 @@ if is_release():
 os.makedirs("run", exist_ok = True)
 os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
-datapack = pack_helper.data.DatapackModel()
+datapack = pack_helper.data.DatapackModel("../kubejs", "../config", "../openloader")
 moddata = pack_helper.mod_data.ModData("run/mods")
 
 print("- Copying static files...")
@@ -72,7 +72,7 @@ datapack.add_i18n("constellation", "itemGroup.constellation", "Constellation")
 datapack.add_i18n("constellation", "group.constellation", "Constellation")
 
 print("- Writing configuration...")
-pack_helper.data.generate_datapack_files(datapack, "../kubejs/")
+datapack._finalize()
 
 print("- Cleaning up...")
 shutil.rmtree("run/dp", ignore_errors=True)
