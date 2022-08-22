@@ -83,7 +83,7 @@ class DatapackModel(object):
     ## Private methods
     ##
     def _write_file(self, path, data):
-        with open_mkdir(path) as fd:
+        with open_mkdir(path, mode = "wb" if type(data) == bytes else "w") as fd:
             fd.write(data)
     def _write_if_not_exists(self, path, data):
         if os.path.exists(path):
@@ -101,11 +101,11 @@ class DatapackModel(object):
         self._write_maybe_rename(f"{self._kubejs_dir}/{kind}/Generated-{name}", ".js", script)
 
     def _copy_from_if_not_exists(self, path, source):
-        with open(source, "r") as fd:
+        with open(source, "rb") as fd:
             data = fd.read()
         self._write_if_not_exists(path, data)
     def _copy_from_maybe_rename(self, prefix, extension, source):
-        with open(source, "r") as fd:
+        with open(source, "rb") as fd:
             data = fd.read()
         self._write_maybe_rename(prefix, extension, data)
     
@@ -114,6 +114,8 @@ class DatapackModel(object):
     ##
     def _kubejs_copy_script(self, prefix, extension, source):
         self._copy_from_maybe_rename(f"{self._kubejs_dir}/{prefix}", extension, source)
+    def _copy_data(self, name, kind, source):
+        self._copy_from_if_not_exists(f"{self._kubejs_dir}/{kind}/{name}", source)
     
     ##
     ## Public API methods

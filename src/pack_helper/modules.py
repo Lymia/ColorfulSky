@@ -74,6 +74,20 @@ class Module(object):
         self._copy_scripts_js(datapack, self.js_client_scripts, "client_scripts")
         self._copy_scripts_js(datapack, self.js_server_scripts, "server_scripts")
         self._copy_scripts_js(datapack, self.js_startup_scripts, "startup_scripts")
+        
+        # Copy assets and data
+        self._copy_data(datapack, "assets")
+        self._copy_data(datapack, "data")
+        
+    def _copy_data(self, datapack, kind):
+        if os.path.exists(f"{self.path}/{kind}"):
+            print(f"  - Copying {kind} from '{self.path}/{kind}'")
+            heading_len = len(f"{self.path}/{kind}/")
+            for file_path in glob.glob(f"{self.path}/{kind}/**", recursive = True):
+                short_path = file_path[heading_len:]
+                if os.path.isfile(file_path):
+                    datapack._copy_data(short_path, kind, file_path)
+                    
     def _copy_scripts_js(self, datapack, target, kind):
         for script in target:
             script_name, script_path = script
