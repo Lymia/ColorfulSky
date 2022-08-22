@@ -1,3 +1,5 @@
+// TODO: Rework this to remove specific tags rather than its current operation.
+
 $flags ITEM BLOCK
 #forge:stone
 - darkerdepths:shale

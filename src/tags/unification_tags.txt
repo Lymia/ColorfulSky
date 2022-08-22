@@ -1,0 +1,123 @@
+//
+// Raw ore chunks
+//
+
+$flags ITEM
+
+#forge:chunks
+- cavesandcliffs:raw_iron
+- cavesandcliffs:raw_gold
+- cavesandcliffs:raw_copper
+- silentgear:raw_azure_silver
+- silentgear:raw_crimson_iron
+
+#forge:chunks/iron
+- cavesandcliffs:raw_iron
+#forge:chunks/gold
+- cavesandcliffs:raw_gold
+#forge:chunks/copper
+- cavesandcliffs:raw_copper
+
+#forge:chunks/azure_silver
+- silentgear:raw_azure_silver
+#forge:chunks/crimson_iron
+- silentgear:raw_crimson_iron
+
+//
+// Dusts
+//
+
+$flags ITEM
+
+#forge:dusts/starmetal
+- astralsorcery:stardust
+
+// 
+// Ores
+//
+
+$flags BLOCK
+#forge:ores/iron
+- !cavesandcliffs:raw_iron
+#forge:ores/gold
+- !cavesandcliffs:raw_gold
+#forge:ores/copper
+- !cavesandcliffs:raw_copper
+#forge:ores/ironwood
+- !twilightforest:ironwood_raw
+#forge:ores/knightmetal
+- !twilightforest:armor_shard_cluster
+
+$flags ITEM BLOCK
+
+#forge:ores
+- #forge:ores/chorundum
+- #forge:ores/dragonstone
+- #forge:ores/elementium
+- #forge:ores/tungsten
+
+#forge:ores/chorundum
+- stalwart_dungeons:chorundum_ore
+
+#forge:ores/dragonstone
+- mythicbotany:dragonstone_ore
+
+#forge:ores/elementium
+- mythicbotany:elementium_ore
+
+#forge:ores/tungsten
+- stalwart_dungeons:tungsten_ore
+
+// darker depths
+#forge:ores/coal
+- darkerdepths:aridrock_coal_ore
+- darkerdepths:limestone_coal_ore
+
+#forge:ores/gold
+- darkerdepths:aridrock_gold_ore
+- darkerdepths:limestone_gold_ore
+
+#forge:ores/iron
+- darkerdepths:aridrock_iron_ore
+- darkerdepths:limestone_iron_ore
+
+#forge:ores/lapis
+- darkerdepths:aridrock_lapis_ore
+- darkerdepths:limestone_lapis_ore
+
+#forge:ores/redstone
+- darkerdepths:aridrock_redstone_ore
+- darkerdepths:limestone_redstone_ore
+
+//
+// Storage Blocks
+//
+
+$flags ITEM BLOCK
+
+#constellation:raw_storage_blocks/iron
+- cavesandcliffs:raw_iron_block
+#constellation:raw_storage_blocks/gold
+- cavesandcliffs:raw_gold_block
+#constellation:raw_storage_blocks/copper
+- cavesandcliffs:raw_copper_block
+
+#forge:storage_blocks
+- #forge:storage_blocks/hellforged
+- #forge:storage_blocks/manasteel
+- #forge:storage_blocks/elementium
+- #forge:storage_blocks/mana_diamond
+- #forge:storage_blocks/dragonstone
+- #forge:storage_blocks/terrasteel
+#forge:storage_blocks/hellforged
+- bloodmagic:dungeon_metal
+#forge:storage_blocks/manasteel
+- botania:manasteel_block
+#forge:storage_blocks/elementium
+- botania:elementium_block
+#forge:storage_blocks/mana_diamond
+- botania:mana_diamond_block
+#forge:storage_blocks/dragonstone
+- botania:dragonstone_block
+#forge:storage_blocks/terrasteel
+- botania:terrasteel_block

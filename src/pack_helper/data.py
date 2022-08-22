@@ -81,11 +81,13 @@ class DatapackModel(object):
     ##
     ## Private methods
     ##
+    def _write_file(self, path, data):
+        with open_mkdir(path) as fd:
+            fd.write(data)
     def _write_if_not_exists(self, path, data):
         if os.path.exists(path):
             raise Exception(f"File '{path}' already exists!")
-        with open_mkdir(path) as fd:
-            fd.write(data)
+        self._write_file(path, data)
     def _generate_script(self, kind, name, script, priority):
         # Minify/process the script
         script = js_minify_simple(script, priority = priority)
@@ -104,29 +106,38 @@ class DatapackModel(object):
     ## Public API methods
     ##
     def hide_name(self, name):
+        """Hides an item/block from JEI."""
         self._hidden_names.append(name)
     def unify_name(self, name):
+        """Marks an item/block as being unified with another."""
         self._hidden_names.append(name)
         self._unified_names.append(name)
     def remove_name(self, name):
+        """Marks an item/block as being removed entirely from the modpack."""
         self._hidden_names.append(name)
         self._removed_names.append(name)
         self.tags.remove_name(name)
         
     def add_client_script(self, name, script, priority = 0):
+        """Adds a KubeJS client script."""
         self._generate_script("client_scripts", name, script, priority)
     def add_server_script(self, name, script, priority = 0):
+        """Adds a KubeJS server script."""
         self._generate_script("server_scripts", name, script, priority)
     def add_startup_script(self, name, script, priority = 0):
+        """Adds a KubeJS startup script."""
         self._generate_script("startup_scripts", name, script, priority)
 
     def add_json_asset(self, name, json_data):
+        """Adds an JSON resource pack file."""
         self._write_if_not_exists(f"{self._kubejs_dir}/assets/{name}", json.dumps(json_data))
     def add_json_data(self, name, json_data):
+        """Adds an JSON data pack file."""
         self._write_if_not_exists(f"{self._kubejs_dir}/data/{name}", json.dumps(json_data))
     
-    def add_i18n(self, group, name, value):
-        self._i18n_strings.setdefault(group, {})[name] = value
+    def add_i18n(self, group, name, value, lang = "en_us"):
+        """Adds a translation string to override."""
+        self._i18n_strings.setdefault(lang, {}).setdefault(group, {})[name] = value
 
     ##
     ## Modpack finalization methods
@@ -158,6 +169,7 @@ class DatapackModel(object):
     def _finalize(self):
         self._generate_tags(self.tags)
         self._make_remove_unused()
-        for group in self._i18n_strings:
-            data = json.dumps(self._i18n_strings[group])
-            self._write_if_not_exists(f"{self._kubejs_dir}/assets/{group}/lang/en_us.json", data)
+        for lang in self._i18n_strings:
+            for group in self._i18n_strings[lang]:
+                data = json.dumps(self._i18n_strings[lang][group])
+                self._write_if_not_exists(f"{self._kubejs_dir}/assets/{group}/lang/en_us.json", data)
