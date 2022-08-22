@@ -382,10 +382,10 @@ def make_worldgen():
             accum += worldgen_for_ore(ore, category)
     datapack.add_startup_script("add_worldgen_ores", f"""
         {{
-            var twb = {repr(twilight_forest_biomes)}
-            var twf = {{ "blacklist": false, "values": twb }}
-            var ovw = {{ "blacklist": true, "values": twb }}
-            var all = {{ "blacklist": true, "values": [] }}
+            let twb = {repr(twilight_forest_biomes)}
+            let twf = {{ "blacklist": false, "values": twb }}
+            let ovw = {{ "blacklist": true, "values": twb }}
+            let all = {{ "blacklist": true, "values": [] }}
             {accum}
         }}
     """)
@@ -404,7 +404,7 @@ def make_blocks():
             )\n"""
     datapack.add_startup_script("create_custom_ores", f"""
         onEvent('block.registry', event => {{
-            var gen_blk = bind_gen_blk(event)
+            let gen_blk = bind_gen_blk(event)
             {accum}
         }})
     """)

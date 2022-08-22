@@ -1,3 +1,1 @@
-onEvent('recipes', e => {
-    e.remove({ id: "immersiveengineering:crusher/nether_gold" })
-})
+remove_recipe_by_id("immersiveengineering:crusher/nether_gold")

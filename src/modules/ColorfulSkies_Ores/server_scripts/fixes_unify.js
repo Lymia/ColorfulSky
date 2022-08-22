@@ -1,6 +1,4 @@
 onEvent('recipes', e => {
-    e.printExamples("thermal:smelter")
-
     function unifyMetalRecipies(name, ingotItem, dustItem, blockItem, nuggetItem) {
         if (nuggetItem) e.replaceInput(`#forge:nuggets/${name}`, `#forge:nuggets/${name}`)
         if (ingotItem) e.replaceInput(`#forge:ingots/${name}`, `#forge:ingots/${name}`)

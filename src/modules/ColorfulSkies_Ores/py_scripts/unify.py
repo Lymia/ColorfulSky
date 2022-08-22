@@ -122,10 +122,10 @@ def unify_tags():
     
     # Generate script
     datapack.add_server_script("unify_materials", f"""
-        onEvent('recipes', e => {{
-            var r = bind_recipies(e, {repr(preferred)})
+        {{
+            let r = bind_recipies({repr(preferred)})
             {accum}
-        }})
+        }}
     """)
 
 def write_configs():
