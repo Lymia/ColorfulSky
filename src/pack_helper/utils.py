@@ -63,12 +63,6 @@ def short_tag(tag):
         return f"forge:{tag}"
 
 zopflipng = zopfli.ZopfliPNG()
-def compose_textures(moddata, target, base, overlay):
-    base_img = Image.open(moddata.find_texture(base)).convert('RGBA')
-    overlay_img = Image.open(moddata.find_texture(overlay)).convert('RGBA')
-    target_path = f"../kubejs/assets/{group(target)}/textures/{path(target)}.png"
-    os.makedirs(os.path.dirname(target_path), exist_ok = True)
-    Image.alpha_composite(base_img, overlay_img).save(target_path)
 def compress_texture(target_path):
     pngquant.quant_image(target_path)
     with open(target_path, "rb") as fd:

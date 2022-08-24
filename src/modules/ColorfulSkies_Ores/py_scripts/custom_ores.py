@@ -63,10 +63,6 @@ def add_type(name, display_name, strength, resistance, harvest_level, kind, *cat
     record.cluster_name = cluster_name
     record.min_count = min_count
     record.max_count = max_count
-    if is_custom:
-        record.texture = f"constellation:blocks/ore_overlays/{name}"
-    else:
-        record.texture = f"emendatusenigmatica:blocks/overlays/{name}"
     ore_types[record.name] = record
 def add_worldgen(name, cluster_size, cluster_count, height_range, target="default"):
     record = types.SimpleNamespace()
@@ -428,7 +424,11 @@ def make_textures():
                 },
             }
             datapack.add_json_asset(f"{group(ore.ore_block)}/models/block/{path(ore.ore_block)}.json", json)
-        compose_textures(moddata, texture, ore_stratas[ore.strata].texture, ore_types[ore.otype].texture)
+            
+        target_path = f"{group(texture)}/textures/{path(texture)}.png"
+        source_xcf = f"{mod_path}/ore_overlays.xcf"
+        base_png = moddata.find_texture(ore_stratas[ore.strata].texture)
+        datapack.compose_texture(target_path, source_xcf, ore.otype, base_png)
 
 def make_loot_tables():
     for ore in all_ores:

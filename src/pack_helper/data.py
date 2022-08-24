@@ -2,6 +2,7 @@ import json
 import os
 import os.path
 
+from pack_helper.gimp import *
 from pack_helper.utils import *
 
 class TagConfig(object):
@@ -81,6 +82,9 @@ class DatapackModel(object):
         self._hidden_names = []
         self._i18n_strings = {}
         
+        self._gimp_loaded = {}
+        self._gimp_actions = []
+        
     ##
     ## Private methods
     ##
@@ -110,6 +114,11 @@ class DatapackModel(object):
         with open(source, "rb") as fd:
             data = fd.read()
         self._write_maybe_rename(prefix, extension, data)
+        
+    def _gimp_load_xcf(self, path):
+        return self._gimp_loaded.setdefault(path, GimpImageElement.load_xcf(path))
+    def _gimp_load_png(self, path):
+        return self._gimp_loaded.setdefault(path, GimpImageElement.load_png(path))
     
     ##
     ## Private API methods
@@ -155,10 +164,28 @@ class DatapackModel(object):
     def add_i18n(self, group, name, value, lang = "en_us"):
         """Adds a translation string to override."""
         self._i18n_strings.setdefault(lang, {}).setdefault(group, {})[name] = value
+        
+    def compose_texture(self, target_path, overlay_source, overlay_layer, base_source):
+        """Composes a texture using GIMP."""
+        overlay = self._gimp_load_xcf(overlay_source)
+        base = self._gimp_load_png(base_source)
+        
+        scope = overlay.mutable_scope()
+        target = scope.get_layer_by_name(overlay_layer)
+        new_layer = scope.new_layer(parent = target)
+        scope.copy_image_to_layer(new_layer, base)
+        scope.save_png(f"{self._kubejs_dir}/assets/{target_path}", layer = target)
+        scope.delete_layer(new_layer)
+
+        self._gimp_actions.append(scope)
 
     ##
     ## Modpack finalization methods
     ##
+    def _finalize_gimp(self, gimp, max_processes = 16, process_chunk = None):
+        gimp.execute_actions(self._gimp_actions)
+        self._gimp_actions = []
+
     def _generate_tag_file(self, tag, kind, values, override):
         values = sorted(list(values))
         json_str = json.dumps({

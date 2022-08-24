@@ -6,6 +6,7 @@ import os.path
 import pack_helper.biome_fix
 import pack_helper.data
 import pack_helper.fix_models
+import pack_helper.gimp
 import pack_helper.misc_fixes
 import pack_helper.mod_data
 import pack_helper.modules
@@ -50,6 +51,11 @@ pack_helper.misc_fixes.add_fixes(datapack)
 print("- Running modules...")
 modules.execute_early(datapack, moddata)
 modules.execute(datapack, moddata)
+
+print("- Processing images...")
+pack_helper.gimp.reset("run")
+gimp = pack_helper.gimp.GimpContext("run")
+datapack._finalize_gimp(gimp)
 
 print("- Writing configuration...")
 datapack._finalize()
