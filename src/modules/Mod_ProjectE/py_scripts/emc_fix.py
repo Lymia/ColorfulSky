@@ -209,10 +209,9 @@ emc_tags = {
 }
 
 def make_emc_config():
-    data = { "entries": [] }
+    config = datapack.get_json_config("ProjectE/custom_emc.json", create = True)
+    config["entries"] = []
     for entry in emc_table:
-        data["entries"].append({ "item": entry, "emc": emc_table[entry] })
-    # TODO: Do this through datapack
-    open("../config/ProjectE/custom_emc.json", "w").write(json.dumps(data))
+        config["entries"].append({ "item": entry, "emc": emc_table[entry] })
 
 make_emc_config()

@@ -40,7 +40,7 @@ class Module(object):
         # Load Python scripts
         self._load_scripts_py(self.py_scripts, "py_scripts")
         self._load_scripts_py(self.py_init_scripts, "py_init_scripts")
-            
+        
         # Load KubeJS scripts
         self._load_scripts_js(self.js_common_scripts, "common_scripts")
         self._load_scripts_js(self.js_client_scripts, "client_scripts")
@@ -67,12 +67,18 @@ class Module(object):
         # Execute any early scripts in the module
         for script in self.py_init_scripts:
             script.execute(datapack, moddata)
-            
+        
         # Load tags
         for tag_file in self.tags:
             print(f"  - Loading tags from '{tag_file}'")
             pack_helper.tags.parse_config(datapack, tag_file)
-            
+        
+        # Load toml configuration
+        if os.path.exists(f"{self.path}/config"):
+            print(f"  - Loading configuration from '{self.path}/config'")
+            for short_path, file_path in self.find_all_files("config"):
+                datapack._load_toml(short_path, file_path)
+    
     def execute(self, datapack, moddata):
         # Execute any scripts in the module
         for script in self.py_scripts:
@@ -93,30 +99,34 @@ class Module(object):
         # Copy assets and data
         self._copy_data(datapack, "assets")
         self._copy_data(datapack, "data")
-        
+    
     def _copy_data(self, datapack, kind):
         if os.path.exists(f"{self.path}/{kind}"):
             print(f"  - Copying {kind} from '{self.path}/{kind}'")
-            heading_len = len(f"{self.path}/{kind}/")
-            for file_path in glob.glob(f"{self.path}/{kind}/**", recursive = True):
-                short_path = file_path[heading_len:]
-                if os.path.isfile(file_path):
-                    datapack._copy_data(short_path, kind, file_path)
-                    
+            for short_path, file_path in self.find_all_files(kind):
+                datapack._copy_data(short_path, kind, file_path)
+    
     def _copy_scripts_js(self, datapack, target, kind):
         for script in target:
             script_name, script_path = script
             print(f"  - Copying '{script_path}'")
             datapack._kubejs_copy_script(f"{kind}/{self.module_name}-{script_name}", ".js", script_path)
+    
+    def find_all_files(self, kind):
+        heading_len = len(f"{self.path}/{kind}/")
+        for file_path in glob.glob(f"{self.path}/{kind}/**", recursive = True):
+            short_path = file_path[heading_len:]
+            if os.path.isfile(file_path):
+                yield short_path, file_path
 
 class ModuleLoader(object):
     modules = []
-    
+
     def __init__(self):
         self.modules.append(Module(f"{os.path.dirname(__file__)}/BaseModule"))
         for script_path in glob.glob(f"modules/*"):
             self.modules.append(Module(script_path))
-    
+
     def execute_init(self):
         for module in self.modules:
             module.execute_init()
