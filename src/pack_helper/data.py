@@ -201,11 +201,13 @@ class DatapackModel(object):
         self._gimp_actions.append(scope)
 
     def get_json_config(self, path, create = False):
+        """Returns a mutable object containing a JSON configuration file."""
         if create and not path in self._config_json:
             self._mark_config_exists(path)
             self._config_json[path] = {}
         return self._config_json[path]
     def get_toml_config(self, path, create = False):
+        """Returns a mutable object containing a TOML configuration file."""
         if create and not path in self._config_toml:
             self._mark_config_exists(path)
             self._config_toml[path] = {}

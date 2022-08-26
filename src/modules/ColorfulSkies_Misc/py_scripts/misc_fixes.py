@@ -120,9 +120,10 @@ hide_items_list = [
     "silentgems:soul_gem", # spam
 ]
 
-def add_fixes(data):
+def add_fixes():
     for item in remove_items_list:
-        data.remove_name(item)
+        datapack.remove_name(item)
     for item in hide_items_list:
-        data.hide_name(item)
+        datapack.hide_name(item)
 
+add_fixes()

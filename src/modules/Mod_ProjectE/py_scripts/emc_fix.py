@@ -204,9 +204,6 @@ emc_table = {
     # TODO: Upgrade Aquatic
     # TODO: Woot
 }
-emc_tags = {
-    
-}
 
 def make_emc_config():
     config = datapack.get_json_config("ProjectE/custom_emc.json", create = True)

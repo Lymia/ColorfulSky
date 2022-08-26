@@ -13,26 +13,39 @@ let check_recipe_has_output = function(recipe, list, check_chance) {
 }
 
 {
-    let recipe_removed_ids = {}
-    let recipe_removed_outputs = {}
-    let recipe_removed_processing_outputs = {}
+    let recipe_removed_ids = []
+    let raw_recipe_removed_outputs = []
+    let raw_recipe_removed_processing_outputs = {}
     let recipe_closure = []
 
     remove_recipe_by_output = function(value) {
-        ingredient.of(value).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
+        raw_recipe_removed_outputs.push(value)
     }
     remove_recipe_by_id = function(value) {
         recipe_removed_ids[value] = true
     }
     remove_recipe_by_processing_output = function(kind, value) {
-        if (!recipe_removed_processing_outputs[kind]) recipe_removed_processing_outputs[kind] = {}
-        ingredient.of(value).stacks.forEach(value => recipe_removed_processing_outputs[kind][value.getId().toString()] = true)
+        if (!raw_recipe_removed_processing_outputs[kind]) raw_recipe_removed_processing_outputs[kind] = []
+        raw_recipe_removed_processing_outputs[kind].push(value)
     }
     run_on_recipies = function(closure) {
         recipe_closure.push(closure)
     }
 
     onEvent("recipes", e => {
+        let recipe_removed_outputs = {}
+        let recipe_removed_processing_outputs = {}
+        
+        raw_recipe_removed_outputs.forEach(i => 
+            ingredient.of(i).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
+        )
+        for (kind in raw_recipe_removed_processing_outputs) {
+            recipe_removed_processing_outputs[kind] = {}
+            raw_recipe_removed_processing_outputs[kind].forEach(i =>
+                ingredient.of(i).stacks.forEach(value => recipe_removed_processing_outputs[kind][value.getId().toString()] = true)
+            )
+        }
+        
         // delete recipies (efficiently)
         e.forEachRecipeAsync(true, recipe => {
             if (recipe_removed_ids[recipe.getId().toString()]) {
