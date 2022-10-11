@@ -1,26 +1,22 @@
-["Better Caves"."Underground Generation".Caves]
-"Cave Spawn Chance" = 90.0
-"Cave Region Size Custom Value" = 0.007
-
 ["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
 "Type 2 Cave Priority" = 7
 
 ["Better Caves"."Underground Generation".Caverns]
-"Cavern Spawn Chance" = 75.0
+"Cavern Spawn Chance" = 60.0
 "Cavern Region Size" = "Custom"
-"Cavern Region Size Custom Value" = 0.003
+"Cavern Region Size Custom Value" = 0.00425
 
 ["Better Caves"."Underground Generation".Caverns."Floored Caverns"]
-"Floored Cavern Maximum Altitude" = 45
-"Compression - Vertical" = 0.85
-"Compression - Horizontal" = 0.25
-"Floored Cavern Priority" = 15
+"Floored Cavern Maximum Altitude" = 42
+"Compression - Vertical" = 0.95
+"Compression - Horizontal" = 0.35
+"Floored Cavern Priority" = 10
 
 ["Better Caves"."Underground Generation".Caverns."Liquid Caverns"]
-"Liquid Cavern Maximum Altitude" = 45
-"Compression - Vertical" = 0.85
-"Compression - Horizontal" = 0.6
-"Liquid Cavern Priority" = 5
+"Liquid Cavern Maximum Altitude" = 42
+"Compression - Vertical" = 0.95
+"Compression - Horizontal" = 0.65
+"Liquid Cavern Priority" = 6
 
 ["Better Caves"."Underground Generation".Ravines]
 "Enable Ravines" = false
@@ -28,3 +24,6 @@
 
 ["Better Caves"."Underground Generation"."Water Regions"]
 "Water Region Spawn Chance" = 50.0
+
+["Better Caves"."Underground Generation".Miscellaneous]
+"Liquid Altitude" = 9

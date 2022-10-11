@@ -2,8 +2,6 @@
 [general]
 	#Defines if the SyncChunkWrite config should be not forcefully set to false. Note: SyncChunkWrite "May" Prevent data corruption. Though this was only enabled since 1.16 before it was always disabled. Downside of this is that HDDs/SSDs during pregen are at 100% usage ALL the time instead of less then 5%. This can lead to hardware failure much much much much more quickly. This is why the override is enabled by default
 	"Disable ChunkSyncOverride" = false
-	#Defines if the Profiler should run in the background or not
-	enable-profiler = false
 	#Defines how many milliseconds the Chunk Deleter gets per tick
 	#Range: 1 ~ 1000
 	"Deletion Time" = 10
@@ -23,6 +21,7 @@
 	#If deadlock issues happen, like the worldgen stops randomly, disabling this might fix it for you at the slight slowdown in worldgen
 	#If the config is changed the pregeneration needs to be restarted
 	"Multithreaded WorldGen" = true
+	info = false
 
 [client]
 
@@ -38,35 +37,4 @@
 		#Defines the Scale of the Overlay
 		#Range: 0.1 ~ 10.0
 		scale = 1.0
-
-	[client.profiler-overlay]
-		#Defines the Horizontal Alignment of the UI, left to right
-		#Allowed Values: START, CENTER, END
-		horizontal-alignment = "START"
-		#Reference to save which dimension is currently detailed
-		detailed-dimension = "minecraft:overworld"
-		#Defines if the Profiler Overlay should be enabled
-		profiler-overlay = false
-		#Defines the Vertical Alignment of the UI, top to bottom
-		#Allowed Values: START, CENTER, END
-		vertical-alignment = "START"
-		#Defines the Scale of the Overlay
-		#Range: 0.1 ~ 10.0
-		scale = 1.0
-
-	[client.MiniMap]
-		#If you have access to this feature if it should be enabled. This will just turn off the MiniMap and disable any data synchronization
-		enable-minimap = true
-		#This decides the LOD (Level Of Detail) of the MiniMap. This is here to ensure you can control how much GPU ram you will need
-		#There are 4 modes, Auto, MAX, High, Medium
-		#AUTO will basically ensure the minimap will never exceed 300MB of GPU ram per minimap
-		#MAX will basically apply no LOD. Which at max radius (1k chunks) will require 4GB of GPU Ram
-		#High is the first level of LOD. Which will only show 1/4th of the detail. Which will take at max radius 1GB of GPU ram
-		#Medium is the second level of LOD. Which will only show 1/16th of the detail. Which will take at max radius 250MB of GPU Ram
-		#Allowed Values: AUTO, MAX, HIGH, MEDIUM
-		lod = "AUTO"
-		#If you hover with your mouse over the MiniMap that it should show a large version of said miniMap
-		large-hover = true
-		#If you need to refresh the Supporter info set this to true and on the next game restart it will automatically update the info.
-		update-supporters = false
 

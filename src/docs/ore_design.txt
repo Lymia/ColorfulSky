@@ -39,11 +39,12 @@ Prosperity Ore is replaced with a recipe from smelting salt.
 Soulium should be similarly replaced with something commonish to the Nether.
 Ender Ore should be replaced with some other material, most likely.
 All Silent's Gems ores are replaced with a single Geode ore that drops random types
-Apatite should probably be replaced as well - Its uses are pretty narrow.
+Apatite should probably be replaced as well - Its uses are pretty narrow. Prismarine instead? Feels like the kinda thing that might be secretly phosphates.
 Figure out how to replace the two BetterEnd ores that don't really do anything.
 Chaos Crystals should be replaced, or droped from Geodes at an acceptable rate.
 Ender Essence is replaced with Aurora Crystals from Better End.
 Inert Crystal Ore is replaced with a Salt>Inert Crystal smelting recipe.
+Dimensional Shards maybe through recipies of some kind? It might honestly be one ore too many. Mb tie to unique ores of each dimension?
 
 Take care of the unique End trace ores. Maybe they don't need to be replaced?? (BetterEnd mod)
 Anthracite and Lignite are somewhat redundant with Coal. Candidates for removal for simplicity.

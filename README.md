@@ -60,6 +60,7 @@ Colorful Skies is a general purpose modpack.
 - [Ice and Fire: Dragons](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons)
 - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
 - [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs)
+- [Paragliders](https://www.curseforge.com/minecraft/mc-mods/paragliders)
 - [Progressive Bosses](https://www.curseforge.com/minecraft/mc-mods/progressive-bosses)
 - [Savage & Ravage](https://www.curseforge.com/minecraft/mc-mods/savage-and-ravage)
 - [Silent's Gear](https://www.curseforge.com/minecraft/mc-mods/silent-gear)
@@ -69,7 +70,7 @@ Colorful Skies is a general purpose modpack.
     - [Tetranomicon](https://www.curseforge.com/minecraft/mc-mods/tetranomicon)
 - [Tiny Chests](https://www.curseforge.com/minecraft/mc-mods/tinychest)
 - [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
-- [Wesley's Roguelike Dungeons](https://www.curseforge.com/minecraft/mc-mods/wesleys-roguelike-dungeons)
+- [Treasure2](https://www.curseforge.com/minecraft/mc-mods/treasure2)
 - [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
 
 ### Building Mods
@@ -88,6 +89,7 @@ Colorful Skies is a general purpose modpack.
 ### Magic Mods
 
 - [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
+    - [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo)
 - [Astral Sorcery](https://www.curseforge.com/minecraft/mc-mods/astral-sorcery)
 - [Blood Magic](https://www.curseforge.com/minecraft/mc-mods/blood-magic)
 - [Botania](https://www.curseforge.com/minecraft/mc-mods/botania)
@@ -116,6 +118,7 @@ Colorful Skies is a general purpose modpack.
     - [ExtraStorage](https://www.curseforge.com/minecraft/mc-mods/extrastorage)
     - [RSInfinityBooster](https://www.curseforge.com/minecraft/mc-mods/rsinfinitybooster)
     - [Refined Storage Large Patterns](https://www.curseforge.com/minecraft/mc-mods/rslargepatterns)
+    - [Refined Storage: Requestify](https://www.curseforge.com/minecraft/mc-mods/rs-requestify)
 - [RFTools](https://www.curseforge.com/minecraft/mc-mods/rftools-base)
 - [Thermal Expansion](https://www.curseforge.com/minecraft/mc-mods/thermal-expansion)
 - [Tinkers Construct](https://www.curseforge.com/minecraft/mc-mods/tinkers-construct)
@@ -143,6 +146,7 @@ Colorful Skies is a general purpose modpack.
 - [Iron Jetpacks](https://www.curseforge.com/minecraft/mc-mods/iron-jetpacks)
 - [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
 - [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass) & [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
+- [Seals](https://www.curseforge.com/minecraft/mc-mods/seals)
 - [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)

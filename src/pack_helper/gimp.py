@@ -1,6 +1,7 @@
 import math
 import os
 import os.path
+import multiprocessing
 import secrets
 import shutil
 import subprocess
@@ -150,6 +151,8 @@ class GimpContext(object):
                 (restore-session no)
                 (save-session-info no)
                 (trust-dirty-flag no)
+                (save-document-history no)
+                (undo-levels 0)
             """)
     
     def _run_script(self, script_code):
@@ -166,7 +169,7 @@ class GimpContext(object):
             f"({function_name})", "-b", "(gimp-quit 0)"
         ])
         
-    def execute_actions(self, actions, max_processes = 16, process_chunk = None):
+    def execute_actions(self, actions, max_processes = multiprocessing.cpu_count(), process_chunk = None):
         if process_chunk == None:
             process_chunk = max(math.ceil(len(actions) / max_processes), 4)
         

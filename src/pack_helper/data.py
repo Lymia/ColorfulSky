@@ -191,12 +191,16 @@ class DatapackModel(object):
         overlay = self._gimp_load_xcf(overlay_source)
         base = self._gimp_load_png(base_source)
 
+        target_path = f"{self._kubejs_dir}/assets/{target_path}"
+
         scope = overlay.mutable_scope()
         target = scope.get_layer_by_name(overlay_layer)
         new_layer = scope.new_layer(parent = target)
         scope.copy_image_to_layer(new_layer, base)
-        scope.save_png(f"{self._kubejs_dir}/assets/{target_path}", layer = target)
+        scope.save_png(target_path, layer = target)
         scope.delete_layer(new_layer)
+
+        make_parents(target_path)
 
         self._gimp_actions.append(scope)
 

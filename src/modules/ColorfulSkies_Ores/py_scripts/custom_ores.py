@@ -78,7 +78,8 @@ def add_unneeded(name, strata):
     ore_types[name].no_generation.add(strata)
 
 def add_strata(name, display_name, texture, parent_stone, *categories, 
-               is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe"):
+               is_custom=False, disabled=False, material="stone", harvest_tool="pickaxe",
+               override_texture=False):
     record = types.SimpleNamespace()
     record.name = name
     record.display_name = display_name
@@ -95,6 +96,7 @@ def add_strata(name, display_name, texture, parent_stone, *categories,
     record.categories = categories
     record.material = material
     record.harvest_tool = harvest_tool
+    record.override_texture = override_texture
     ore_stratas[record.name] = record
 
 # Built-in ore types
@@ -156,14 +158,14 @@ add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out
 # EE built-in strata
 add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld", "twilight")
 add_strata("andesite", "Andesite", "minecraft:block/andesite",  "minecraft:andesite", "overworld")
-add_strata("granite", "Granite", "minecraft:block/granite",  "minecraft:granite", "overworld")
-add_strata("diorite", "Diorite", "minecraft:block/diorite",  "minecraft:diorite", "overworld")
+add_strata("granite", "Granite", "minecraft:block/granite",  "minecraft:granite", "overworld", override_texture=True)
+add_strata("diorite", "Diorite", "minecraft:block/diorite",  "minecraft:diorite", "overworld", override_texture=True)
 add_strata("sand", "Sand", None, None, "overworld", disabled=True)
 add_strata("gravel", "Gravel", None, None, "overworld", disabled=True)
 add_strata("netherrack", "Netherrack", "minecraft:block/netherrack",  "minecraft:netherrack", "nether")
 add_strata("blackstone", "Blackstone", "minecraft:block/blackstone",  "minecraft:blackstone", "nether") # TODO: Sided.
 add_strata("basalt", "Basalt", "minecraft:block/basalt_side",  "minecraft:basalt", "nether") # TODO: Sided
-add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end")
+add_strata("end_stone", "End Stone", "minecraft:block/end_stone",  "minecraft:end_stone", "end", override_texture=True)
 add_strata("soul_soil", "Soul Soil", "minecraft:block/soul_soil",  "minecraft:soul_soil", "nether", disabled=True)
 
 add_strata("gabbro", "Gabbro", "create:block/palettes/gabbro/plain", "create:gabbro", "overworld", "twilight")
@@ -183,7 +185,7 @@ add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil",
 add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether")
 
 add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "end")
-add_strata("flavolite", "Flavolite", "betterendforge:block/flavolite", "betterendforge:flavolite", "end")
+add_strata("flavolite", "Flavolite", "betterendforge:block/flavolite", "betterendforge:flavolite", "end", override_texture=True)
 add_strata("sulphuric_rock", "Sulphuric Rock", "betterendforge:block/sulphuric_rock", "betterendforge:sulphuric_rock", "end")
 add_strata("violecite", "Violecite", "betterendforge:block/violecite", "betterendforge:violecite", "end")
 add_strata("ether_stone", "Ether Stone", "byg:block/ether_stone", "byg:ether_stone", "end")
@@ -200,8 +202,8 @@ add_strata("dacite", "Dacite", "byg:block/dacite", "byg:dacite", "overworld", is
 add_strata("red_rock", "Red Rock", "byg:block/red_rock", "byg:red_rock", "overworld", is_custom=True)
 add_strata("soapstone", "Soapstone", "byg:block/soapstone", "byg:soapstone", "overworld", is_custom=True)
 add_strata("q_limestone", "Limestone", "quark:block/limestone", "quark:limestone", "overworld", is_custom=True)
+add_strata("permafrost", "Permafrost", "quark:block/permafrost", "quark:permafrost", "overworld", is_custom=True)
 add_strata("shale", "Shale", "darkerdepths:block/shale", "darkerdepths:shale", "overworld", is_custom=True)
-add_strata("umbralith", "Umbralith", "betterendforge:block/umbralith", "betterendforge:umbralith", "end", is_custom=True)
 
 add_strata("travertine", "Travertine", "byg:block/travertine", "byg:travertine", "nether", is_custom=True)
 add_strata("quartzite", "Quartzite", "byg:block/quartzite_sand", "byg:quartzite_sand", "nether", is_custom=True, material="sand", harvest_tool="shovel")
@@ -211,6 +213,8 @@ add_strata("s_nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil
 add_strata("s_subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", is_custom=True, material="dirt", harvest_tool="shovel")
 add_strata("dullstone", "Dullstone", "infernalexp:block/dullstone", "infernalexp:dullstone", "nether", is_custom=True),
 add_strata("shimmerstone", "Shimmerstone", "infernalexp:block/glowdust_stone", "infernalexp:glowdust_stone", "nether", is_custom=True),
+
+add_strata("umbralith", "Umbralith", "betterendforge:block/umbralith", "betterendforge:umbralith", "end", is_custom=True)
 
 # Ore overrides
 for ore in ["coal", "iron", "gold", "diamond", "redstone", "lapis", "emerald"]:
@@ -222,6 +226,7 @@ add_ore_override("quartz", "netherrack", "minecraft:nether_quartz_ore", keep_tex
 for ore in ["gold", "iron", "coal", "lapis", "diamond", "redstone", "silver"]:
     add_ore_override(ore, "dd_limestone", f"darkerdepths:limestone_{ore}_ore")
     add_ore_override(ore, "aridrock", f"darkerdepths:aridrock_{ore}_ore")
+add_ore_override(ore, "netherrack", "tconstruct:cobalt_ore", keep_texture = True)
 
 # Unneeded ores
 add_unneeded("quartz", "quartzite")
@@ -364,8 +369,12 @@ def worldgen_for_ore(record, category):
         biome_list_id = "ovw"
     elif category == "twilight":
         biome_list_id = "twf"
+    elif category == "nether":
+        biome_list_id = "net"
+    elif category == "end":
+        biome_list_id = "end"
     else:
-        biome_list_id = "all"
+        raise Exception("??")
     return f"""add_gen_ore({
         repr(record.ore_block)}, {repr(ore_stratas[record.strata].parent_stone)},
         {data.cluster_size}, {data.cluster_count}, {data.min_y}, {data.max_y}, {biome_list_id}
@@ -377,10 +386,10 @@ def make_worldgen():
             accum += worldgen_for_ore(ore, category)
     datapack.add_startup_script("add_worldgen_ores", f"""
         {{
-            let twb = {repr(twilight_forest_biomes)}
-            let twf = {{ "blacklist": false, "values": twb }}
-            let ovw = {{ "blacklist": true, "values": twb }}
-            let all = {{ "blacklist": true, "values": [] }}
+            let twf = {{ "blacklist": false, "values": {repr(twilight_forest_biomes)} }}
+            let ovw = {{ "blacklist": true, "values": {repr(twilight_forest_biomes + ["#the_end", "#nether"])} }}
+            let net = {{ "blacklist": false, "values": ["#nether"] }}
+            let end = {{ "blacklist": false, "values": ["#the_end"] }}
             {accum}
         }}
     """)
@@ -391,11 +400,10 @@ def make_blocks():
         if ore.needs_new_block:
             otype = ore_types[ore.otype]
             strata = ore_stratas[ore.strata]
-            texture = f"{group(ore.ore_block)}:block/{path(ore.ore_block)}"
             accum += f"""gen_blk(
                 {repr(ore.ore_block)}, {repr(f"{strata.display_name} {otype.display_name} Ore")}, {otype.strength}, {otype.resistance},
                 {repr(strata.harvest_tool)}, {otype.harvest_level}, {repr(strata.material)},
-                {repr(texture)}
+                {repr(f"constellation:block/ores/{name_for_ore(otype, strata)}")}
             )\n"""
     datapack.add_startup_script("create_custom_ores", f"""
         onEvent('block.registry', event => {{
@@ -412,10 +420,8 @@ def make_textures():
         if strata.name in otype.keep_texture:
             continue
 
-        if ore.needs_new_block:
-            texture = f"{group(ore.ore_block)}:block/{path(ore.ore_block)}"
-        else:
-            texture = f"constellation:block/{name_for_ore(otype, strata)}"
+        texture = f"constellation:block/ores/{name_for_ore(otype, strata)}"
+        if not ore.needs_new_block:
             json = {
                 "parent": "block/cube_all",
                 "textures": {
@@ -423,10 +429,13 @@ def make_textures():
                 },
             }
             datapack.add_json_asset(f"{group(ore.ore_block)}/models/block/{path(ore.ore_block)}.json", json)
-            
+
         target_path = f"{group(texture)}/textures/{path(texture)}.png"
-        source_xcf = f"{mod_path}/ore_overlays.xcf"
-        base_png = moddata.find_texture(ore_stratas[ore.strata].texture)
+        source_xcf = f"{mod_path}/res/ore_overlays.xcf"
+        if strata.override_texture:
+            base_png = f"{mod_path}/res/base_{ore.strata}.png"
+        else:
+            base_png = moddata.find_texture(ore_stratas[ore.strata].texture)
         datapack.compose_texture(target_path, source_xcf, ore.otype, base_png)
 
 def make_loot_tables():
