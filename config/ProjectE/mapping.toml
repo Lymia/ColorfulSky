@@ -284,6 +284,10 @@
 		#ProjectE-Integration Recipe Mapper for Touhout Little Maid Altar Mapper. Required Mods: [touhou_little_maid]
 		enabled = true
 
+	[CraftingMapper.IceAndFireDragonForgeMapper]
+		#ProjectE-Integration Recipe Mapper for Ice And Fire Dragon Forge Mapper. Required Mods: [iceandfire]
+		enabled = true
+
 [ProjectEIntegrationRecipeMapper]
 
 	[ProjectEIntegrationRecipeMapper.IceAndFireDragonForgeMapper]

@@ -100,6 +100,7 @@ Colorful Skies is a general purpose modpack.
 - [Enigmatic Legacy](https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy)
 - [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)
 - [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte)
+- [Touhou Little Maid](https://www.curseforge.com/minecraft/mc-mods/touhou-little-maid)
 
 ### Tech Mods
 

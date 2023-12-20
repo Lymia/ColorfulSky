@@ -28,6 +28,7 @@
 
 - Make matrix enchanter work in recipies
 - Change Seven Rings to have funny message about enchanting. :)
+- Apotheosis opps
 
 - TODO: Ores to target: BYG gold ores. Cryptic Redstone ore.
 - Token Enchanting needs its gems updated.

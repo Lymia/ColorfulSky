@@ -47,4 +47,16 @@
 	#Shrine Lamp Max Range Of Absorb Power Point
 	#Range: > 0
 	ShrineLampMaxRange = 6
+	#Give the Memorizable Gensokyo book item for player first join
+	GivePatchouliBook = true
+
+[vanilla]
+	#Whether to replace the vanilla slime model with the yukkuri.
+	ReplaceSlimeModel = true
+	#Whether to replace the vanilla xp orb texture with the point items.
+	ReplaceXPTexture = true
+	#Whether to replace the vanilla totem texture with the life point.
+	ReplaceTotemTexture = true
+	#Whether to replace the vanilla bottle of xp texture with the point items.
+	ReplaceXPBottleTexture = true
 
