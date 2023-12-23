@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.bronze",
+  "colors": [
+    "a87544",
+    "a87544"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/bronze"
+  },
+  "count": 300,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

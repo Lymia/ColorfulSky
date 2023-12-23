@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.silver",
+  "colors": [
+    "d5d5d5",
+    "c0c0c0"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/silver"
+  },
+  "count": 300,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

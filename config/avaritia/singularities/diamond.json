@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.diamond",
+  "colors": [
+    "8fcdc9",
+    "45aca5"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/diamond"
+  },
+  "count": 300,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

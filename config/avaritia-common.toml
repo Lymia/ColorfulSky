@@ -1,0 +1,53 @@
+
+#Settings
+["Neutron Collector Ticks"]
+	#How many ticks the Neutron Collector product should be collected per time. Base is 1 speed = 355.55 sec, 2 = 177,775 sec
+	#Range: > -1
+	speed = 1
+
+["The speed of the Infinity Boots"]
+	#Disable if the Infinity Boots' speed boost is too ridiculous
+	enabled = true
+
+["Break the Bedrock"]
+	#Disable if you don't want the World Breaker to break unbreakable blocks.
+	enabled = true
+
+["Unlimited Balance"]
+	#Add clay singularity if there is Botania or Mekanism mod, but first reload the singularity config
+	enabled = true
+
+["Cost Modifier"]
+	#Added to the existing modifier to make prices more expensive or cheaper. Can be negative.
+	#Range: > 0
+	modifier = 0
+
+["Cost Multiplier"]
+	#Added to the existing multiplier to make prices more expensive or cheaper. Can be negative.
+	#Range: > 0
+	multiplier = 0
+
+["Matter Cluster Count"]
+	#Maximum amount of items in a matter cluster
+	#Range: > 0
+	size = 4096
+
+["Heaven amount arrows"]
+	#The number of arrows falling created by Infinity Bow
+	#Range: > 0
+	amount = 25
+
+["Hummer Radius"]
+	#Range of breaking radius
+	#Range: > 0
+	range = 8
+
+["Destroyer Radius"]
+	#Range of breaking radius
+	#Range: > 0
+	range = 8
+
+["Aoe Trash Defaults"]
+	#Use tooltip, example: grass_block
+	"Trash of matter clusters" = "[dirt, sand, gravel, netherrack]"
+

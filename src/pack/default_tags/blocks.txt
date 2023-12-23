@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Aug 19, 2022 9:46:12 AM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:17:06 AM
 
 #forge:ores/biotite
 - quark:biotite_ore
@@ -141,6 +141,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - quark:purpur_chest
 - quark:prismarine_chest
 - quark:mushroom_chest
+
+#mcwtrpdoors:bamboo_trapdoors
+- mcwtrpdoors:oak_bamboo_trapdoor
+- mcwtrpdoors:spruce_bamboo_trapdoor
+- mcwtrpdoors:birch_bamboo_trapdoor
+- mcwtrpdoors:jungle_bamboo_trapdoor
+- mcwtrpdoors:acacia_bamboo_trapdoor
+- mcwtrpdoors:dark_oak_bamboo_trapdoor
+- mcwtrpdoors:crimson_bamboo_trapdoor
+- mcwtrpdoors:warped_bamboo_trapdoor
 
 #forge:storage_blocks/emerald
 - minecraft:emerald_block
@@ -377,8 +387,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mekanism:block_copper
 - thermal:copper_block
 - emendatusenigmatica:copper_block
-- immersiveengineering:storage_copper
 - create:copper_block
+- immersiveengineering:storage_copper
 - tconstruct:copper_block
 
 #atmospheric:rosewood_logs
@@ -464,6 +474,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #silentgems:glowroses/onyx
 - silentgems:onyx_glowrose
+
+#mcwtrpdoors:bark_trapdoors
+- mcwtrpdoors:oak_bark_trapdoor
+- mcwtrpdoors:spruce_bark_trapdoor
+- mcwtrpdoors:birch_bark_trapdoor
+- mcwtrpdoors:jungle_bark_trapdoor
+- mcwtrpdoors:acacia_bark_trapdoor
+- mcwtrpdoors:dark_oak_bark_trapdoor
+- mcwtrpdoors:crimson_bark_trapdoor
+- mcwtrpdoors:warped_bark_trapdoor
 
 #upgrade_aquatic:river_logs
 - upgrade_aquatic:river_log
@@ -920,7 +940,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #minecraft:mineable/shovel
 - croptopia:salt_ore
-- croptopia:salt_ore
 
 #minecraft:logs/archwood
 - ars_nouveau:blue_archwood_log
@@ -1248,14 +1267,87 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:granite_window2
 - mcwwindows:stone_window
 - mcwwindows:stone_window2
+- mcwwindows:dark_prismarine_window2
+- mcwwindows:dark_prismarine_window
+- mcwwindows:prismarine_window2
+- mcwwindows:prismarine_window
+- mcwwindows:blackstone_window2
+- mcwwindows:blackstone_window
+- mcwwindows:oak_four_window
+- mcwwindows:oak_plank_four_window
+- mcwwindows:spruce_four_window
+- mcwwindows:spruce_plank_four_window
+- mcwwindows:birch_four_window
+- mcwwindows:birch_plank_four_window
+- mcwwindows:jungle_four_window
+- mcwwindows:jungle_plank_four_window
+- mcwwindows:acacia_four_window
+- mcwwindows:acacia_plank_four_window
+- mcwwindows:dark_oak_four_window
+- mcwwindows:dark_oak_plank_four_window
+- mcwwindows:stripped_oak_log_four_window
+- mcwwindows:stripped_spruce_log_four_window
+- mcwwindows:stripped_birch_log_four_window
+- mcwwindows:stripped_jungle_log_four_window
+- mcwwindows:stripped_acacia_log_four_window
+- mcwwindows:stripped_dark_oak_log_four_window
+- mcwwindows:crimson_stem_four_window
+- mcwwindows:warped_stem_four_window
+- mcwwindows:stripped_crimson_stem_four_window
+- mcwwindows:stripped_warped_stem_four_window
+- mcwwindows:crimson_planks_four_window
+- mcwwindows:warped_planks_four_window
+- mcwwindows:andesite_four_window
+- mcwwindows:diorite_four_window
+- mcwwindows:granite_four_window
+- mcwwindows:stone_four_window
+- mcwwindows:dark_prismarine_four_window
+- mcwwindows:prismarine_four_window
+- mcwwindows:blackstone_four_window
 - mcwwindows:stone_brick_arrow_slit
 - mcwwindows:cobblestone_arrow_slit
 - mcwwindows:ender_brick_arrow_slit
 - mcwwindows:nether_brick_arrow_slit
+- mcwwindows:blackstone_brick_arrow_slit
+- mcwwindows:prismarine_brick_arrow_slit
+- mcwwindows:dark_prismarine_brick_arrow_slit
 - mcwwindows:stone_brick_gothic
+- mcwwindows:blackstone_brick_gothic
+- mcwwindows:dark_prismarine_brick_gothic
 - mcwwindows:end_brick_gothic
 - mcwwindows:nether_brick_gothic
 - mcwwindows:prismarine_brick_gothic
+- mcwwindows:andesite_pane_window
+- mcwwindows:diorite_pane_window
+- mcwwindows:granite_pane_window
+- mcwwindows:stone_pane_window
+- mcwwindows:blackstone_pane_window
+- mcwwindows:prismarine_pane_window
+- mcwwindows:dark_prismarine_pane_window
+- mcwwindows:oak_pane_window
+- mcwwindows:stripped_oak_pane_window
+- mcwwindows:oak_plank_pane_window
+- mcwwindows:birch_pane_window
+- mcwwindows:stripped_birch_pane_window
+- mcwwindows:birch_plank_pane_window
+- mcwwindows:spruce_pane_window
+- mcwwindows:stripped_spruce_pane_window
+- mcwwindows:spruce_plank_pane_window
+- mcwwindows:jungle_pane_window
+- mcwwindows:stripped_jungle_pane_window
+- mcwwindows:jungle_plank_pane_window
+- mcwwindows:acacia_pane_window
+- mcwwindows:stripped_acacia_pane_window
+- mcwwindows:acacia_plank_pane_window
+- mcwwindows:dark_oak_pane_window
+- mcwwindows:stripped_dark_oak_pane_window
+- mcwwindows:dark_oak_plank_pane_window
+- mcwwindows:crimson_pane_window
+- mcwwindows:stripped_crimson_pane_window
+- mcwwindows:crimson_plank_pane_window
+- mcwwindows:warped_pane_window
+- mcwwindows:stripped_warped_pane_window
+- mcwwindows:warped_plank_pane_window
 - betterendforge:flavolite_wall
 - betterendforge:flavolite_bricks_wall
 - betterendforge:violecite_wall
@@ -1335,6 +1427,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:chiseled_fungal_imparius_wall
 - eidolon:smooth_stone_bricks_wall
 - iceandfire:dragon_bone_wall
+- minecraft:cobblestone_wall
+- minecraft:mossy_cobblestone_wall
+- minecraft:brick_wall
+- minecraft:prismarine_wall
+- minecraft:red_sandstone_wall
+- minecraft:mossy_stone_brick_wall
+- minecraft:granite_wall
+- minecraft:stone_brick_wall
+- minecraft:nether_brick_wall
+- minecraft:andesite_wall
+- minecraft:red_nether_brick_wall
+- minecraft:sandstone_wall
+- minecraft:end_stone_brick_wall
+- minecraft:diorite_wall
+- minecraft:blackstone_wall
+- minecraft:polished_blackstone_brick_wall
+- minecraft:polished_blackstone_wall
+- mcwdoors:jail_door
 - envirocore:litherite_wall
 - envirocore:litherite_brick_wall
 - envirocore:litherite_brick_small_wall
@@ -1367,6 +1477,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - envirocore:xerothium_brick_wall
 - envirocore:xerothium_brick_small_wall
 - envirocore:xerothium_cobble_wall
+- minecraft:cobblestone_wall
+- minecraft:mossy_cobblestone_wall
+- minecraft:brick_wall
+- minecraft:prismarine_wall
+- minecraft:red_sandstone_wall
+- minecraft:mossy_stone_brick_wall
+- minecraft:granite_wall
+- minecraft:stone_brick_wall
+- minecraft:nether_brick_wall
+- minecraft:andesite_wall
+- minecraft:red_nether_brick_wall
+- minecraft:sandstone_wall
+- minecraft:end_stone_brick_wall
+- minecraft:diorite_wall
+- minecraft:blackstone_wall
+- minecraft:polished_blackstone_brick_wall
+- minecraft:polished_blackstone_wall
+- mcwfences:oak_hedge
+- mcwfences:spruce_hedge
+- mcwfences:birch_hedge
+- mcwfences:jungle_hedge
+- mcwfences:acacia_hedge
+- mcwfences:dark_oak_hedge
 - elementalcraft:purerock_wall
 - elementalcraft:whiterock_brick_wall
 - elementalcraft:whiterock_wall
@@ -1508,6 +1641,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/black_diamond
 - silentgems:black_diamond_block
 
+#mcwfurnitures:modern_desk
+- mcwfurnitures:oak_modern_desk
+- mcwfurnitures:birch_modern_desk
+- mcwfurnitures:spruce_modern_desk
+- mcwfurnitures:jungle_modern_desk
+- mcwfurnitures:acacia_modern_desk
+- mcwfurnitures:dark_oak_modern_desk
+- mcwfurnitures:crimson_modern_desk
+- mcwfurnitures:warped_modern_desk
+- mcwfurnitures:stripped_oak_modern_desk
+- mcwfurnitures:stripped_birch_modern_desk
+- mcwfurnitures:stripped_spruce_modern_desk
+- mcwfurnitures:stripped_jungle_modern_desk
+- mcwfurnitures:stripped_acacia_modern_desk
+- mcwfurnitures:stripped_dark_oak_modern_desk
+- mcwfurnitures:stripped_crimson_modern_desk
+- mcwfurnitures:stripped_warped_modern_desk
+
 #forge:ores/yellow_diamond
 - silentgems:yellow_diamond_ore
 
@@ -1526,6 +1677,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - envirocore:xerothium_polished
 - envirocore:xerothium_tile
 - envirocore:xerothium_tile_small
+
+#mcwtrpdoors:beach_trapdoors
+- mcwtrpdoors:oak_beach_trapdoor
+- mcwtrpdoors:spruce_beach_trapdoor
+- mcwtrpdoors:birch_beach_trapdoor
+- mcwtrpdoors:acacia_beach_trapdoor
+- mcwtrpdoors:dark_oak_beach_trapdoor
+- mcwtrpdoors:crimson_beach_trapdoor
+- mcwtrpdoors:warped_beach_trapdoor
+- mcwtrpdoors:bamboo_beach_trapdoor
 
 #forge:fences/aluminum
 - immersiveengineering:alu_fence
@@ -1759,7 +1920,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_trapdoor
 - minecraft:oak_trapdoor
 - minecraft:spruce_trapdoor
-- mcwtrpdoors:bamboo_trapdoor
+- minecraft:warped_trapdoor
+- minecraft:crimson_trapdoor
 - mcwtrpdoors:oak_barn_trapdoor
 - mcwtrpdoors:oak_barred_trapdoor
 - mcwtrpdoors:oak_beach_trapdoor
@@ -1770,6 +1932,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:oak_paper_trapdoor
 - mcwtrpdoors:oak_tropical_trapdoor
 - mcwtrpdoors:oak_swamp_trapdoor
+- mcwtrpdoors:oak_blossom_trapdoor
+- mcwtrpdoors:bamboo_trapdoor
 - mcwtrpdoors:spruce_barn_trapdoor
 - mcwtrpdoors:spruce_barred_trapdoor
 - mcwtrpdoors:spruce_beach_trapdoor
@@ -1780,6 +1944,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:spruce_paper_trapdoor
 - mcwtrpdoors:spruce_tropical_trapdoor
 - mcwtrpdoors:spruce_swamp_trapdoor
+- mcwtrpdoors:spruce_blossom_trapdoor
 - mcwtrpdoors:birch_barn_trapdoor
 - mcwtrpdoors:birch_barred_trapdoor
 - mcwtrpdoors:birch_beach_trapdoor
@@ -1790,6 +1955,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:birch_mystic_trapdoor
 - mcwtrpdoors:birch_tropical_trapdoor
 - mcwtrpdoors:birch_swamp_trapdoor
+- mcwtrpdoors:birch_blossom_trapdoor
 - mcwtrpdoors:jungle_barn_trapdoor
 - mcwtrpdoors:jungle_barred_trapdoor
 - mcwtrpdoors:jungle_classic_trapdoor
@@ -1800,6 +1966,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:jungle_paper_trapdoor
 - mcwtrpdoors:jungle_tropical_trapdoor
 - mcwtrpdoors:jungle_swamp_trapdoor
+- mcwtrpdoors:jungle_blossom_trapdoor
 - mcwtrpdoors:acacia_barn_trapdoor
 - mcwtrpdoors:acacia_barred_trapdoor
 - mcwtrpdoors:acacia_beach_trapdoor
@@ -1810,6 +1977,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:acacia_mystic_trapdoor
 - mcwtrpdoors:acacia_paper_trapdoor
 - mcwtrpdoors:acacia_swamp_trapdoor
+- mcwtrpdoors:acacia_blossom_trapdoor
 - mcwtrpdoors:dark_oak_barn_trapdoor
 - mcwtrpdoors:dark_oak_barred_trapdoor
 - mcwtrpdoors:dark_oak_beach_trapdoor
@@ -1820,6 +1988,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_paper_trapdoor
 - mcwtrpdoors:dark_oak_tropical_trapdoor
 - mcwtrpdoors:dark_oak_swamp_trapdoor
+- mcwtrpdoors:dark_oak_blossom_trapdoor
 - mcwtrpdoors:crimson_barn_trapdoor
 - mcwtrpdoors:crimson_beach_trapdoor
 - mcwtrpdoors:crimson_classic_trapdoor
@@ -1830,6 +1999,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:crimson_paper_trapdoor
 - mcwtrpdoors:crimson_tropical_trapdoor
 - mcwtrpdoors:crimson_swamp_trapdoor
+- mcwtrpdoors:crimson_blossom_trapdoor
 - mcwtrpdoors:warped_barn_trapdoor
 - mcwtrpdoors:warped_barred_trapdoor
 - mcwtrpdoors:warped_beach_trapdoor
@@ -1840,6 +2010,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:warped_paper_trapdoor
 - mcwtrpdoors:warped_tropical_trapdoor
 - mcwtrpdoors:warped_swamp_trapdoor
+- mcwtrpdoors:warped_blossom_trapdoor
+- mcwtrpdoors:bamboo_barn_trapdoor
+- mcwtrpdoors:bamboo_barred_trapdoor
+- mcwtrpdoors:bamboo_beach_trapdoor
+- mcwtrpdoors:bamboo_cottage_trapdoor
+- mcwtrpdoors:bamboo_four_panel_trapdoor
+- mcwtrpdoors:bamboo_glass_trapdoor
+- mcwtrpdoors:bamboo_mystic_trapdoor
+- mcwtrpdoors:bamboo_paper_trapdoor
+- mcwtrpdoors:bamboo_tropical_trapdoor
+- mcwtrpdoors:bamboo_classic_trapdoor
+- mcwtrpdoors:bamboo_swamp_trapdoor
+- mcwtrpdoors:bamboo_blossom_trapdoor
+- mcwtrpdoors:oak_bamboo_trapdoor
+- mcwtrpdoors:spruce_bamboo_trapdoor
+- mcwtrpdoors:birch_bamboo_trapdoor
+- mcwtrpdoors:jungle_bamboo_trapdoor
+- mcwtrpdoors:acacia_bamboo_trapdoor
+- mcwtrpdoors:dark_oak_bamboo_trapdoor
+- mcwtrpdoors:crimson_bamboo_trapdoor
+- mcwtrpdoors:warped_bamboo_trapdoor
 - mcwtrpdoors:oak_bark_trapdoor
 - mcwtrpdoors:spruce_bark_trapdoor
 - mcwtrpdoors:birch_bark_trapdoor
@@ -1848,6 +2039,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_bark_trapdoor
 - mcwtrpdoors:crimson_bark_trapdoor
 - mcwtrpdoors:warped_bark_trapdoor
+- mcwtrpdoors:oak_barrel_trapdoor
+- mcwtrpdoors:spruce_barrel_trapdoor
+- mcwtrpdoors:birch_barrel_trapdoor
+- mcwtrpdoors:jungle_barrel_trapdoor
+- mcwtrpdoors:acacia_barrel_trapdoor
+- mcwtrpdoors:dark_oak_barrel_trapdoor
+- mcwtrpdoors:crimson_barrel_trapdoor
+- mcwtrpdoors:warped_barrel_trapdoor
+- mcwtrpdoors:bamboo_barrel_trapdoor
 - mcwtrpdoors:oak_ranch_trapdoor
 - mcwtrpdoors:spruce_ranch_trapdoor
 - mcwtrpdoors:birch_ranch_trapdoor
@@ -2075,6 +2275,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #lootr:shulkers
 - lootr:lootr_shulker
 
+#mcwfurnitures:lower_bookshelf_drawer
+- mcwfurnitures:oak_lower_bookshelf_drawer
+- mcwfurnitures:birch_lower_bookshelf_drawer
+- mcwfurnitures:spruce_lower_bookshelf_drawer
+- mcwfurnitures:jungle_lower_bookshelf_drawer
+- mcwfurnitures:acacia_lower_bookshelf_drawer
+- mcwfurnitures:dark_oak_lower_bookshelf_drawer
+- mcwfurnitures:crimson_lower_bookshelf_drawer
+- mcwfurnitures:warped_lower_bookshelf_drawer
+- mcwfurnitures:stripped_oak_lower_bookshelf_drawer
+- mcwfurnitures:stripped_birch_lower_bookshelf_drawer
+- mcwfurnitures:stripped_spruce_lower_bookshelf_drawer
+- mcwfurnitures:stripped_jungle_lower_bookshelf_drawer
+- mcwfurnitures:stripped_acacia_lower_bookshelf_drawer
+- mcwfurnitures:stripped_dark_oak_lower_bookshelf_drawer
+- mcwfurnitures:stripped_crimson_lower_bookshelf_drawer
+- mcwfurnitures:stripped_warped_lower_bookshelf_drawer
+
 #forge:storage_blocks/coral
 - silentgems:coral_block
 
@@ -2170,6 +2388,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_door
 - minecraft:acacia_door
 - minecraft:dark_oak_door
+- minecraft:warped_door
+- minecraft:crimson_door
 - mcwdoors:oak_japanese_door
 - mcwdoors:spruce_japanese_door
 - mcwdoors:birch_japanese_door
@@ -2178,6 +2398,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese_door
 - mcwdoors:crimson_japanese_door
 - mcwdoors:warped_japanese_door
+- mcwdoors:bamboo_japanese_door
 - mcwdoors:oak_japanese2_door
 - mcwdoors:spruce_japanese2_door
 - mcwdoors:birch_japanese2_door
@@ -2186,6 +2407,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese2_door
 - mcwdoors:crimson_japanese2_door
 - mcwdoors:warped_japanese2_door
+- mcwdoors:bamboo_japanese2_door
 - mcwdoors:oak_barn_door
 - mcwdoors:spruce_barn_door
 - mcwdoors:birch_barn_door
@@ -2194,6 +2416,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_door
 - mcwdoors:crimson_barn_door
 - mcwdoors:warped_barn_door
+- mcwdoors:bamboo_barn_door
 - mcwdoors:oak_barn_glass_door
 - mcwdoors:spruce_barn_glass_door
 - mcwdoors:birch_barn_glass_door
@@ -2202,6 +2425,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_glass_door
 - mcwdoors:crimson_barn_glass_door
 - mcwdoors:warped_barn_glass_door
+- mcwdoors:bamboo_barn_glass_door
 - mcwdoors:oak_modern_door
 - mcwdoors:spruce_modern_door
 - mcwdoors:birch_modern_door
@@ -2210,6 +2434,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_modern_door
 - mcwdoors:crimson_modern_door
 - mcwdoors:warped_modern_door
+- mcwdoors:bamboo_modern_door
 - mcwdoors:oak_cottage_door
 - mcwdoors:birch_cottage_door
 - mcwdoors:jungle_cottage_door
@@ -2217,6 +2442,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_cottage_door
 - mcwdoors:crimson_cottage_door
 - mcwdoors:warped_cottage_door
+- mcwdoors:bamboo_cottage_door
 - mcwdoors:spruce_classic_door
 - mcwdoors:birch_classic_door
 - mcwdoors:jungle_classic_door
@@ -2224,6 +2450,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_classic_door
 - mcwdoors:crimson_classic_door
 - mcwdoors:warped_classic_door
+- mcwdoors:bamboo_classic_door
 - mcwdoors:oak_beach_door
 - mcwdoors:spruce_beach_door
 - mcwdoors:birch_beach_door
@@ -2231,6 +2458,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_beach_door
 - mcwdoors:crimson_beach_door
 - mcwdoors:warped_beach_door
+- mcwdoors:bamboo_beach_door
 - mcwdoors:oak_paper_door
 - mcwdoors:spruce_paper_door
 - mcwdoors:jungle_paper_door
@@ -2238,6 +2466,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_paper_door
 - mcwdoors:crimson_paper_door
 - mcwdoors:warped_paper_door
+- mcwdoors:bamboo_paper_door
 - mcwdoors:oak_four_panel_door
 - mcwdoors:spruce_four_panel_door
 - mcwdoors:birch_four_panel_door
@@ -2245,6 +2474,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_four_panel_door
 - mcwdoors:crimson_four_panel_door
 - mcwdoors:warped_four_panel_door
+- mcwdoors:bamboo_four_panel_door
 - mcwdoors:oak_tropical_door
 - mcwdoors:spruce_tropical_door
 - mcwdoors:birch_tropical_door
@@ -2252,6 +2482,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_tropical_door
 - mcwdoors:crimson_tropical_door
 - mcwdoors:warped_tropical_door
+- mcwdoors:bamboo_tropical_door
 - mcwdoors:oak_glass_door
 - mcwdoors:spruce_glass_door
 - mcwdoors:birch_glass_door
@@ -2260,6 +2491,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_glass_door
 - mcwdoors:crimson_glass_door
 - mcwdoors:warped_glass_door
+- mcwdoors:bamboo_glass_door
 - mcwdoors:oak_stable_door
 - mcwdoors:spruce_stable_door
 - mcwdoors:birch_stable_door
@@ -2268,6 +2500,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_door
 - mcwdoors:crimson_stable_door
 - mcwdoors:warped_stable_door
+- mcwdoors:bamboo_stable_door
 - mcwdoors:oak_stable_head_door
 - mcwdoors:spruce_stable_head_door
 - mcwdoors:birch_stable_head_door
@@ -2276,6 +2509,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_head_door
 - mcwdoors:crimson_stable_head_door
 - mcwdoors:warped_stable_head_door
+- mcwdoors:bamboo_stable_head_door
 - mcwdoors:oak_western_door
 - mcwdoors:spruce_western_door
 - mcwdoors:birch_western_door
@@ -2284,6 +2518,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_western_door
 - mcwdoors:crimson_western_door
 - mcwdoors:warped_western_door
+- mcwdoors:bamboo_western_door
+- mcwdoors:oak_waffle_door
+- mcwdoors:spruce_waffle_door
+- mcwdoors:birch_waffle_door
+- mcwdoors:jungle_waffle_door
+- mcwdoors:acacia_waffle_door
+- mcwdoors:dark_oak_waffle_door
+- mcwdoors:crimson_waffle_door
+- mcwdoors:warped_waffle_door
+- mcwdoors:bamboo_waffle_door
 - mcwdoors:oak_mystic_door
 - mcwdoors:spruce_mystic_door
 - mcwdoors:birch_mystic_door
@@ -2291,6 +2535,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_mystic_door
 - mcwdoors:dark_oak_mystic_door
 - mcwdoors:crimson_mystic_door
+- mcwdoors:bamboo_mystic_door
 - mcwdoors:oak_bark_glass_door
 - mcwdoors:spruce_bark_glass_door
 - mcwdoors:birch_bark_glass_door
@@ -2299,6 +2544,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_bark_glass_door
 - mcwdoors:crimson_stem_glass_door
 - mcwdoors:warped_stem_glass_door
+- mcwdoors:bamboo_bark_glass_door
 - mcwdoors:oak_nether_door
 - mcwdoors:spruce_nether_door
 - mcwdoors:birch_nether_door
@@ -2306,6 +2552,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_nether_door
 - mcwdoors:dark_oak_nether_door
 - mcwdoors:warped_nether_door
+- mcwdoors:bamboo_nether_door
 - mcwdoors:oak_swamp_door
 - mcwdoors:spruce_swamp_door
 - mcwdoors:birch_swamp_door
@@ -2314,6 +2561,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_swamp_door
 - mcwdoors:warped_swamp_door
 - mcwdoors:crimson_swamp_door
+- mcwdoors:bamboo_swamp_door
+- mcwdoors:oak_bamboo_door
+- mcwdoors:spruce_bamboo_door
+- mcwdoors:birch_bamboo_door
+- mcwdoors:jungle_bamboo_door
+- mcwdoors:acacia_bamboo_door
+- mcwdoors:dark_oak_bamboo_door
+- mcwdoors:warped_bamboo_door
+- mcwdoors:crimson_bamboo_door
 - twilightforest:twilight_oak_door
 - twilightforest:canopy_door
 - twilightforest:mangrove_door
@@ -2353,6 +2609,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:stripped_crimson_stem
 - minecraft:crimson_hyphae
 - minecraft:stripped_crimson_hyphae
+
+#minecraft:needs_stone_tool
 
 #forge:purple_sand
 - byg:purple_sand
@@ -2526,6 +2784,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:winter_grass
 - byg:tall_prairie_grass
 - byg:short_grass
+
+#mcwbridges:stone_bridges
+- mcwbridges:brick_bridge
+- mcwbridges:sandstone_bridge
+- mcwbridges:stone_brick_bridge
+- mcwbridges:orange_sandstone_bridge
+- mcwbridges:blackstone_bridge
+- mcwbridges:mossy_stone_brick_bridge
 
 #byg:ground_yellow_spruce_sapling
 - #forge:dirt
@@ -2746,6 +3012,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - botania:white_double_flower
 - botania:yellow_double_flower
 
+#mcwfurnitures:chair
+- mcwfurnitures:oak_chair
+- mcwfurnitures:birch_chair
+- mcwfurnitures:spruce_chair
+- mcwfurnitures:jungle_chair
+- mcwfurnitures:acacia_chair
+- mcwfurnitures:dark_oak_chair
+- mcwfurnitures:crimson_chair
+- mcwfurnitures:warped_chair
+- mcwfurnitures:stripped_oak_chair
+- mcwfurnitures:stripped_birch_chair
+- mcwfurnitures:stripped_spruce_chair
+- mcwfurnitures:stripped_jungle_chair
+- mcwfurnitures:stripped_acacia_chair
+- mcwfurnitures:stripped_dark_oak_chair
+- mcwfurnitures:stripped_crimson_chair
+- mcwfurnitures:stripped_warped_chair
+
 #minecraft:carpets
 - minecraft:white_carpet
 - minecraft:orange_carpet
@@ -2793,6 +3077,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #byg:ground_iris
 - #forge:dirt
+
+#mcwfurnitures:glass_table
+- mcwfurnitures:oak_glass_table
+- mcwfurnitures:birch_glass_table
+- mcwfurnitures:spruce_glass_table
+- mcwfurnitures:jungle_glass_table
+- mcwfurnitures:acacia_glass_table
+- mcwfurnitures:dark_oak_glass_table
+- mcwfurnitures:crimson_glass_table
+- mcwfurnitures:warped_glass_table
+- mcwfurnitures:stripped_oak_glass_table
+- mcwfurnitures:stripped_birch_glass_table
+- mcwfurnitures:stripped_spruce_glass_table
+- mcwfurnitures:stripped_jungle_glass_table
+- mcwfurnitures:stripped_acacia_glass_table
+- mcwfurnitures:stripped_dark_oak_glass_table
+- mcwfurnitures:stripped_crimson_glass_table
+- mcwfurnitures:stripped_warped_glass_table
 
 #forge:storage_blocks/glowstone
 - minecraft:glowstone
@@ -3491,6 +3793,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #byg:ground_green_enchanted_sapling
 - #forge:dirt
 
+#mcwtrpdoors:four_panel_trapdoors
+- mcwtrpdoors:oak_four_panel_trapdoor
+- mcwtrpdoors:spruce_four_panel_trapdoor
+- mcwtrpdoors:birch_four_panel_trapdoor
+- mcwtrpdoors:jungle_four_panel_trapdoor
+- mcwtrpdoors:acacia_four_panel_trapdoor
+- mcwtrpdoors:crimson_four_panel_trapdoor
+- mcwtrpdoors:warped_four_panel_trapdoor
+- mcwtrpdoors:bamboo_four_panel_trapdoor
+
 #byg:green_enchanted_logs
 - byg:green_enchanted_log
 - byg:stripped_green_enchanted_log
@@ -4113,11 +4425,47 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/tyrian_steel
 - silentgear:tyrian_steel_block
 
+#mcwwindows:mosaic_glass
+- mcwwindows:white_mosaic_glass
+- mcwwindows:orange_mosaic_glass
+- mcwwindows:magenta_mosaic_glass
+- mcwwindows:light_blue_mosaic_glass
+- mcwwindows:yellow_mosaic_glass
+- mcwwindows:lime_mosaic_glass
+- mcwwindows:pink_mosaic_glass
+- mcwwindows:gray_mosaic_glass
+- mcwwindows:light_gray_mosaic_glass
+- mcwwindows:cyan_mosaic_glass
+- mcwwindows:purple_mosaic_glass
+- mcwwindows:blue_mosaic_glass
+- mcwwindows:brown_mosaic_glass
+- mcwwindows:green_mosaic_glass
+- mcwwindows:red_mosaic_glass
+- mcwwindows:black_mosaic_glass
+
 #minecraft:warped_stems
 - minecraft:warped_stem
 - minecraft:stripped_warped_stem
 - minecraft:warped_hyphae
 - minecraft:stripped_warped_hyphae
+
+#mcwfurnitures:striped_chair
+- mcwfurnitures:oak_striped_chair
+- mcwfurnitures:birch_striped_chair
+- mcwfurnitures:spruce_striped_chair
+- mcwfurnitures:jungle_striped_chair
+- mcwfurnitures:acacia_striped_chair
+- mcwfurnitures:dark_oak_striped_chair
+- mcwfurnitures:crimson_striped_chair
+- mcwfurnitures:warped_striped_chair
+- mcwfurnitures:stripped_oak_striped_chair
+- mcwfurnitures:stripped_birch_striped_chair
+- mcwfurnitures:stripped_spruce_striped_chair
+- mcwfurnitures:stripped_jungle_striped_chair
+- mcwfurnitures:stripped_acacia_striped_chair
+- mcwfurnitures:stripped_dark_oak_striped_chair
+- mcwfurnitures:stripped_crimson_striped_chair
+- mcwfurnitures:stripped_warped_striped_chair
 
 #botania:magnet_ring_blacklist
 - botania:mana_pool
@@ -4172,6 +4520,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #silentgems:glowroses/yellow_diamond
 - silentgems:yellow_diamond_glowrose
+
+#mcwwindows:blinds
+- mcwwindows:oak_blinds
+- mcwwindows:spruce_blinds
+- mcwwindows:birch_blinds
+- mcwwindows:jungle_blinds
+- mcwwindows:acacia_blinds
+- mcwwindows:dark_oak_blinds
+- mcwwindows:crimson_blinds
+- mcwwindows:warped_blinds
 
 #byg:ground_tall_prairie_grass
 - #forge:dirt
@@ -4258,13 +4616,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:imparius_vine
 - byg:imparius_vine_plant
 - twilightforest:iron_ladder
-- immersiveengineering:metal_ladder_none
-- immersiveengineering:metal_ladder_alu
-- immersiveengineering:metal_ladder_steel
 - bamboo_blocks:bamboo_ladder
 - upgrade_aquatic:driftwood_ladder
 - upgrade_aquatic:river_ladder
 - endergetic:poise_ladder
+- immersiveengineering:metal_ladder_none
+- immersiveengineering:metal_ladder_alu
+- immersiveengineering:metal_ladder_steel
 - tconstruct:seared_ladder
 - tconstruct:scorched_ladder
 - quark:acacia_ladder
@@ -4624,9 +4982,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - betterendforge:lucernia_fence
 - botania:dreamwood_fence
 - botania:livingwood_fence
-- immersiveengineering:alu_fence
-- immersiveengineering:steel_fence
-- immersiveengineering:treated_fence
 - #minecraft:wooden_fences
 - minecraft:nether_brick_fence
 - mcwfences:oak_picket_fence
@@ -4682,6 +5037,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwfences:railing_sandstone_wall
 - mcwfences:railing_red_sandstone_wall
 - mcwfences:railing_quartz_wall
+- mcwfences:modern_prismarine_wall
+- mcwfences:railing_prismarine_wall
 - feywild:autumn_tree_fence
 - feywild:spring_tree_fence
 - feywild:summer_tree_fence
@@ -4696,6 +5053,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - feywild:winter_stripped_wood_fence
 - ars_nouveau:archwood_fence
 - elementalcraft:whiterock_fence
+- immersiveengineering:alu_fence
+- immersiveengineering:steel_fence
+- immersiveengineering:treated_fence
 - tconstruct:scorched_bricks_fence
 - tconstruct:nahuatl_fence
 
@@ -4852,8 +5212,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:copper_violecite_ore
 - emendatusenigmatica:copper_raw_marble_ore
 - iceandfire:copper_ore
-- immersiveengineering:ore_copper
 - create:copper_ore
+- immersiveengineering:ore_copper
 - tconstruct:copper_ore
 
 #envirocore:ionite_slabs
@@ -4975,12 +5335,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:imparius_fence
 - eidolon:polished_planks_fence
 - #twilightforest:fences
-- immersiveengineering:treated_fence
 - ars_nouveau:archwood_fence
 - bamboo_blocks:bamboo_fence
 - upgrade_aquatic:driftwood_fence
 - upgrade_aquatic:river_fence
 - endergetic:poise_fence
+- immersiveengineering:treated_fence
 - tconstruct:greenheart_fence
 - tconstruct:skyroot_fence
 - tconstruct:bloodshroom_fence
@@ -4991,6 +5351,39 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #ftbessentials:ignore_rtp
 - #minecraft:leaves
 - minecraft:bedrock
+
+#mcwwindows:windows
+- mcwwindows:oak_window
+- mcwwindows:spruce_window
+- mcwwindows:birch_window
+- mcwwindows:jungle_window
+- mcwwindows:acacia_window
+- mcwwindows:dark_oak_window
+- mcwwindows:crimson_stem_window
+- mcwwindows:warped_stem_window
+- mcwwindows:oak_plank_window
+- mcwwindows:spruce_plank_window
+- mcwwindows:birch_plank_window
+- mcwwindows:jungle_plank_window
+- mcwwindows:acacia_plank_window
+- mcwwindows:dark_oak_plank_window
+- mcwwindows:crimson_planks_window
+- mcwwindows:warped_planks_window
+- mcwwindows:dark_prismarine_window
+- mcwwindows:prismarine_window
+- mcwwindows:blackstone_window
+- mcwwindows:stripped_oak_log_window
+- mcwwindows:stripped_spruce_log_window
+- mcwwindows:stripped_birch_log_window
+- mcwwindows:stripped_jungle_log_window
+- mcwwindows:stripped_acacia_log_window
+- mcwwindows:stripped_dark_oak_log_window
+- mcwwindows:stripped_crimson_stem_window
+- mcwwindows:stripped_warped_stem_window
+- mcwwindows:andesite_window
+- mcwwindows:diorite_window
+- mcwwindows:granite_window
+- mcwwindows:stone_window
 
 #twilightforest:transwood_logs
 - twilightforest:transformation_log
@@ -5057,92 +5450,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #biomesoplenty:mahogany_logs
 - decorative_blocks:mahogany_beam
 
-#minecraft:crosspillar
-- wrd:desert_cross
-- wrd:normal_cross
-- wrd:ice_cross
-- wrd:jungle_cross
-- wrd:nether_cross
-- wrd:gold_cross
-- wrd:middle_ind_catacombs
-- wrd:middle_ind_necropolis
-- wrd:gold_cross
-- wrd:gold_pillar
-- wrd:golden_bricks
-- wrd:temple_identifier
-- wrd:middle_ind_temple
-- wrd:ruins_identifier
-- wrd:middle_ind_ruins
-- wrd:gold_cross
-- wrd:gold_pillar
-- wrd:golden_bricks
-- wrd:golden_bricks_door
-- wrd:golden_bricks_keyhole
-- wrd:golden_bricks_keyhole_open
-- wrd:golden_bricks_open
-- wrd:middle_ind_labyrinth
-- wrd:labyrinth_identifier
-- wrd:maze_identifier
-- wrd:middle_ind_maze
-- wrd:mines_identifier
-- wrd:middle_ind_mines
-- wrd:middle_ind_tomb
-- wrd:tomb_identifier
-- wrd:glacier_identifier
-- wrd:middle_ind_glacier
-- wrd:frosthold_identifier
-- wrd:middle_ind_frost_hold
-- wrd:tombofice_identifier
-- wrd:middle_ind_tombofice
-- wrd:middle_ind_magmachambers
-- wrd:magmachambers_identifier
-- wrd:theforge_identifier
-- wrd:middle_ind_the_forge
-- wrd:middle_ind_fierytomb
-- wrd:fierytomb_identifier
-- wrd:desert_cross
-- wrd:normal_cross
-- wrd:ice_cross
-- wrd:jungle_cross
-- wrd:nether_cross
-- wrd:gold_cross
-- wrd:middle_ind_catacombs
-- wrd:middle_ind_necropolis
-- wrd:gold_cross
-- wrd:gold_pillar
-- wrd:golden_bricks
-- wrd:temple_identifier
-- wrd:middle_ind_temple
-- wrd:ruins_identifier
-- wrd:middle_ind_ruins
-- wrd:gold_cross
-- wrd:gold_pillar
-- wrd:golden_bricks
-- wrd:golden_bricks_door
-- wrd:golden_bricks_keyhole
-- wrd:golden_bricks_keyhole_open
-- wrd:golden_bricks_open
-- wrd:middle_ind_labyrinth
-- wrd:labyrinth_identifier
-- wrd:maze_identifier
-- wrd:middle_ind_maze
-- wrd:mines_identifier
-- wrd:middle_ind_mines
-- wrd:middle_ind_tomb
-- wrd:tomb_identifier
-- wrd:glacier_identifier
-- wrd:middle_ind_glacier
-- wrd:frosthold_identifier
-- wrd:middle_ind_frost_hold
-- wrd:tombofice_identifier
-- wrd:middle_ind_tombofice
-- wrd:middle_ind_magmachambers
-- wrd:magmachambers_identifier
-- wrd:theforge_identifier
-- wrd:middle_ind_the_forge
-- wrd:middle_ind_fierytomb
-- wrd:fierytomb_identifier
-
 #chisel:wool/green
 - chisel:wool/green/legacy
 - chisel:wool/green/llama
@@ -5163,6 +5470,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #elementalcraft:rune_affected/speed
 - #elementalcraft:rune_affected
+
+#mcwfurnitures:drawer_counter
+- mcwfurnitures:oak_drawer_counter
+- mcwfurnitures:birch_drawer_counter
+- mcwfurnitures:spruce_drawer_counter
+- mcwfurnitures:jungle_drawer_counter
+- mcwfurnitures:acacia_drawer_counter
+- mcwfurnitures:dark_oak_drawer_counter
+- mcwfurnitures:crimson_drawer_counter
+- mcwfurnitures:warped_drawer_counter
+- mcwfurnitures:stripped_oak_drawer_counter
+- mcwfurnitures:stripped_birch_drawer_counter
+- mcwfurnitures:stripped_spruce_drawer_counter
+- mcwfurnitures:stripped_jungle_drawer_counter
+- mcwfurnitures:stripped_acacia_drawer_counter
+- mcwfurnitures:stripped_dark_oak_drawer_counter
+- mcwfurnitures:stripped_crimson_drawer_counter
+- mcwfurnitures:stripped_warped_drawer_counter
 
 #forge:glass/magenta
 - minecraft:magenta_stained_glass
@@ -5504,6 +5829,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - savageandravage:gloomy_tile_vertical_slab
 - savageandravage:runed_gloomy_tiles
 
+#mcwtrpdoors:tropical_trapdoors
+- mcwtrpdoors:oak_tropical_trapdoor
+- mcwtrpdoors:spruce_tropical_trapdoor
+- mcwtrpdoors:birch_tropical_trapdoor
+- mcwtrpdoors:jungle_tropical_trapdoor
+- mcwtrpdoors:dark_oak_tropical_trapdoor
+- mcwtrpdoors:crimson_tropical_trapdoor
+- mcwtrpdoors:warped_tropical_trapdoor
+- mcwtrpdoors:bamboo_tropical_trapdoor
+
 #atmospheric:yucca_logs
 - decorative_blocks_abnormals:yucca_beam
 
@@ -5563,6 +5898,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:stripped_mahogany_wood
 
 #forge:stained_glass_panes
+- mcwwindows:white_mosaic_glass_pane
+- mcwwindows:orange_mosaic_glass_pane
+- mcwwindows:magenta_mosaic_glass_pane
+- mcwwindows:light_blue_mosaic_glass_pane
+- mcwwindows:yellow_mosaic_glass_pane
+- mcwwindows:lime_mosaic_glass_pane
+- mcwwindows:pink_mosaic_glass_pane
+- mcwwindows:gray_mosaic_glass_pane
+- mcwwindows:light_gray_mosaic_glass_pane
+- mcwwindows:cyan_mosaic_glass_pane
+- mcwwindows:purple_mosaic_glass_pane
+- mcwwindows:blue_mosaic_glass_pane
+- mcwwindows:brown_mosaic_glass_pane
+- mcwwindows:green_mosaic_glass_pane
+- mcwwindows:red_mosaic_glass_pane
+- mcwwindows:black_mosaic_glass_pane
 - minecraft:white_stained_glass_pane
 - minecraft:orange_stained_glass_pane
 - minecraft:magenta_stained_glass_pane
@@ -5603,6 +5954,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/queens_slime
 - tconstruct:queens_slime_block
+
+#mcwbridges:rope_stairs
+- mcwbridges:oak_rope_bridge_stair
+- mcwbridges:spruce_rope_bridge_stair
+- mcwbridges:birch_rope_bridge_stair
+- mcwbridges:jungle_rope_bridge_stair
+- mcwbridges:acacia_rope_bridge_stair
+- mcwbridges:dark_oak_rope_bridge_stair
+- mcwbridges:crimson_rope_bridge_stair
+- mcwbridges:warped_rope_bridge_stair
 
 #forge:ores/opal
 - silentgems:opal_ore
@@ -5660,33 +6021,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - croptopia:starfruit_crop
 - croptopia:walnut_crop
 - croptopia:cinnamon_leaves
-- croptopia:almond_crop
-- croptopia:apple_crop
-- croptopia:apricot_crop
-- croptopia:avocado_crop
-- croptopia:banana_crop
-- croptopia:cashew_crop
-- croptopia:cherry_crop
-- croptopia:coconut_crop
-- croptopia:date_crop
-- croptopia:dragonfruit_crop
-- croptopia:fig_crop
-- croptopia:grapefruit_crop
-- croptopia:kumquat_crop
-- croptopia:lemon_crop
-- croptopia:lime_crop
-- croptopia:mango_crop
-- croptopia:nectarine_crop
-- croptopia:nutmeg_crop
-- croptopia:orange_crop
-- croptopia:peach_crop
-- croptopia:pear_crop
-- croptopia:pecan_crop
-- croptopia:persimmon_crop
-- croptopia:plum_crop
-- croptopia:starfruit_crop
-- croptopia:walnut_crop
-- croptopia:cinnamon_leaves
+- mcwfences:oak_hedge
+- mcwfences:spruce_hedge
+- mcwfences:birch_hedge
+- mcwfences:jungle_hedge
+- mcwfences:acacia_hedge
+- mcwfences:dark_oak_hedge
 
 #silentgems:glowroses/jasper
 - silentgems:jasper_glowrose
@@ -5751,6 +6091,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - quark:basalt_pillar?
 - quark:basalt_speleothem?
 
+#mcwtrpdoors:mystic_trapdoors
+- mcwtrpdoors:oak_mystic_trapdoor
+- mcwtrpdoors:spruce_mystic_trapdoor
+- mcwtrpdoors:birch_mystic_trapdoor
+- mcwtrpdoors:jungle_mystic_trapdoor
+- mcwtrpdoors:acacia_mystic_trapdoor
+- mcwtrpdoors:dark_oak_mystic_trapdoor
+- mcwtrpdoors:crimson_mystic_trapdoor
+- mcwtrpdoors:bamboo_mystic_trapdoor
+
 #cavesandcliffs:moss_replaceable
 - #minecraft:base_stone_overworld
 - #cavesandcliffs:cave_vines
@@ -5785,6 +6135,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:crimson_berry_bush?
 - byg:blueberry_bush?
 
+#mcwfurnitures:bookshelf_cupboard
+- mcwfurnitures:oak_bookshelf_cupboard
+- mcwfurnitures:birch_bookshelf_cupboard
+- mcwfurnitures:spruce_bookshelf_cupboard
+- mcwfurnitures:jungle_bookshelf_cupboard
+- mcwfurnitures:acacia_bookshelf_cupboard
+- mcwfurnitures:dark_oak_bookshelf_cupboard
+- mcwfurnitures:crimson_bookshelf_cupboard
+- mcwfurnitures:warped_bookshelf_cupboard
+- mcwfurnitures:stripped_oak_bookshelf_cupboard
+- mcwfurnitures:stripped_birch_bookshelf_cupboard
+- mcwfurnitures:stripped_spruce_bookshelf_cupboard
+- mcwfurnitures:stripped_jungle_bookshelf_cupboard
+- mcwfurnitures:stripped_acacia_bookshelf_cupboard
+- mcwfurnitures:stripped_dark_oak_bookshelf_cupboard
+- mcwfurnitures:stripped_crimson_bookshelf_cupboard
+- mcwfurnitures:stripped_warped_bookshelf_cupboard
+
 #create:toolboxes
 - create:white_toolbox
 - create:orange_toolbox
@@ -5802,6 +6170,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:green_toolbox
 - create:red_toolbox
 - create:black_toolbox
+
+#minecraft:replaceable_plants
+- minecraft:grass
+- minecraft:fern
+- minecraft:dead_bush
+- minecraft:vine
+- minecraft:sunflower
+- minecraft:lilac
+- minecraft:rose_bush
+- minecraft:peony
+- minecraft:tall_grass
+- minecraft:large_fern
+- minecraft:grass
+- minecraft:fern
+- minecraft:dead_bush
+- minecraft:vine
+- minecraft:sunflower
+- minecraft:lilac
+- minecraft:rose_bush
+- minecraft:peony
+- minecraft:tall_grass
+- minecraft:large_fern
 
 #bloodmagic:teleposer_blacklist
 - minecraft:bedrock
@@ -6092,6 +6482,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - quark:polished_slate
 - quark:polished_myalite
 
+#mcwbridges:bamboo_bridges
+- mcwbridges:bamboo_bridge
+- mcwbridges:dry_bamboo_bridge
+
 #chisel:wool/brown
 - chisel:wool/brown/legacy
 - chisel:wool/brown/llama
@@ -6132,6 +6526,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #minecraft:base_stone_overworld
 - minecraft:dirt
 
+#mcwfurnitures:large_drawer
+- mcwfurnitures:oak_large_drawer
+- mcwfurnitures:birch_large_drawer
+- mcwfurnitures:spruce_large_drawer
+- mcwfurnitures:jungle_large_drawer
+- mcwfurnitures:acacia_large_drawer
+- mcwfurnitures:dark_oak_large_drawer
+- mcwfurnitures:crimson_large_drawer
+- mcwfurnitures:warped_large_drawer
+- mcwfurnitures:stripped_oak_large_drawer
+- mcwfurnitures:stripped_birch_large_drawer
+- mcwfurnitures:stripped_spruce_large_drawer
+- mcwfurnitures:stripped_jungle_large_drawer
+- mcwfurnitures:stripped_acacia_large_drawer
+- mcwfurnitures:stripped_dark_oak_large_drawer
+- mcwfurnitures:stripped_crimson_large_drawer
+- mcwfurnitures:stripped_warped_large_drawer
+
 #biomesoplenty:cherry_logs
 - decorative_blocks:cherry_beam
 
@@ -6170,6 +6582,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/sunstone
 - silentgems:sunstone_block
+
+#mcwfurnitures:triple_drawer
+- mcwfurnitures:oak_triple_drawer
+- mcwfurnitures:birch_triple_drawer
+- mcwfurnitures:spruce_triple_drawer
+- mcwfurnitures:jungle_triple_drawer
+- mcwfurnitures:acacia_triple_drawer
+- mcwfurnitures:dark_oak_triple_drawer
+- mcwfurnitures:crimson_triple_drawer
+- mcwfurnitures:warped_triple_drawer
+- mcwfurnitures:stripped_oak_triple_drawer
+- mcwfurnitures:stripped_birch_triple_drawer
+- mcwfurnitures:stripped_spruce_triple_drawer
+- mcwfurnitures:stripped_jungle_triple_drawer
+- mcwfurnitures:stripped_acacia_triple_drawer
+- mcwfurnitures:stripped_dark_oak_triple_drawer
+- mcwfurnitures:stripped_crimson_triple_drawer
+- mcwfurnitures:stripped_warped_triple_drawer
 
 #forge:storage_blocks/apatite
 - thermal:apatite_block
@@ -6210,6 +6640,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:birch_wood
 - minecraft:stripped_birch_log
 - minecraft:stripped_birch_wood
+
+#mcwtrpdoors:cottage_trapdoors
+- mcwtrpdoors:oak_cottage_trapdoor
+- mcwtrpdoors:birch_cottage_trapdoor
+- mcwtrpdoors:jungle_cottage_trapdoor
+- mcwtrpdoors:acacia_cottage_trapdoor
+- mcwtrpdoors:dark_oak_cottage_trapdoor
+- mcwtrpdoors:crimson_cottage_trapdoor
+- mcwtrpdoors:warped_cottage_trapdoor
+- mcwtrpdoors:bamboo_cottage_trapdoor
 
 #tconstruct:slimy_planks
 - tconstruct:greenheart_planks
@@ -6456,6 +6896,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:lapis_violecite_ore
 - emendatusenigmatica:lapis_raw_marble_ore
 
+#mcwfurnitures:double_drawer
+- mcwfurnitures:oak_double_drawer
+- mcwfurnitures:birch_double_drawer
+- mcwfurnitures:spruce_double_drawer
+- mcwfurnitures:jungle_double_drawer
+- mcwfurnitures:acacia_double_drawer
+- mcwfurnitures:dark_oak_double_drawer
+- mcwfurnitures:crimson_double_drawer
+- mcwfurnitures:warped_double_drawer
+- mcwfurnitures:stripped_oak_double_drawer
+- mcwfurnitures:stripped_birch_double_drawer
+- mcwfurnitures:stripped_spruce_double_drawer
+- mcwfurnitures:stripped_jungle_double_drawer
+- mcwfurnitures:stripped_acacia_double_drawer
+- mcwfurnitures:stripped_dark_oak_double_drawer
+- mcwfurnitures:stripped_crimson_double_drawer
+- mcwfurnitures:stripped_warped_double_drawer
+
 #forge:storage_blocks/slimesteel
 - tconstruct:slimesteel_block
 
@@ -6599,6 +7057,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - betterendforge:dragon_tree_bark
 - betterendforge:dragon_tree_stripped_log
 - betterendforge:dragon_tree_stripped_bark
+
+#mcwfurnitures:modern_wardrobe
+- mcwfurnitures:oak_modern_wardrobe
+- mcwfurnitures:birch_modern_wardrobe
+- mcwfurnitures:spruce_modern_wardrobe
+- mcwfurnitures:jungle_modern_wardrobe
+- mcwfurnitures:acacia_modern_wardrobe
+- mcwfurnitures:dark_oak_modern_wardrobe
+- mcwfurnitures:crimson_modern_wardrobe
+- mcwfurnitures:warped_modern_wardrobe
+- mcwfurnitures:stripped_oak_modern_wardrobe
+- mcwfurnitures:stripped_birch_modern_wardrobe
+- mcwfurnitures:stripped_spruce_modern_wardrobe
+- mcwfurnitures:stripped_jungle_modern_wardrobe
+- mcwfurnitures:stripped_acacia_modern_wardrobe
+- mcwfurnitures:stripped_dark_oak_modern_wardrobe
+- mcwfurnitures:stripped_crimson_modern_wardrobe
+- mcwfurnitures:stripped_warped_modern_wardrobe
 
 #woot:factory_blocks
 - woot:factory_a
@@ -6798,6 +7274,54 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:crimson_planks_window2
 - mcwwindows:warped_planks_window
 - mcwwindows:warped_planks_window2
+- mcwwindows:oak_four_window
+- mcwwindows:oak_plank_four_window
+- mcwwindows:spruce_four_window
+- mcwwindows:spruce_plank_four_window
+- mcwwindows:birch_four_window
+- mcwwindows:birch_plank_four_window
+- mcwwindows:jungle_four_window
+- mcwwindows:jungle_plank_four_window
+- mcwwindows:acacia_four_window
+- mcwwindows:acacia_plank_four_window
+- mcwwindows:dark_oak_four_window
+- mcwwindows:dark_oak_plank_four_window
+- mcwwindows:stripped_oak_log_four_window
+- mcwwindows:stripped_spruce_log_four_window
+- mcwwindows:stripped_birch_log_four_window
+- mcwwindows:stripped_jungle_log_four_window
+- mcwwindows:stripped_acacia_log_four_window
+- mcwwindows:stripped_dark_oak_log_four_window
+- mcwwindows:crimson_stem_four_window
+- mcwwindows:warped_stem_four_window
+- mcwwindows:stripped_crimson_stem_four_window
+- mcwwindows:stripped_warped_stem_four_window
+- mcwwindows:crimson_planks_four_window
+- mcwwindows:warped_planks_four_window
+- mcwwindows:oak_pane_window
+- mcwwindows:stripped_oak_pane_window
+- mcwwindows:oak_plank_pane_window
+- mcwwindows:birch_pane_window
+- mcwwindows:stripped_birch_pane_window
+- mcwwindows:birch_plank_pane_window
+- mcwwindows:spruce_pane_window
+- mcwwindows:stripped_spruce_pane_window
+- mcwwindows:spruce_plank_pane_window
+- mcwwindows:jungle_pane_window
+- mcwwindows:stripped_jungle_pane_window
+- mcwwindows:jungle_plank_pane_window
+- mcwwindows:acacia_pane_window
+- mcwwindows:stripped_acacia_pane_window
+- mcwwindows:acacia_plank_pane_window
+- mcwwindows:dark_oak_pane_window
+- mcwwindows:stripped_dark_oak_pane_window
+- mcwwindows:dark_oak_plank_pane_window
+- mcwwindows:crimson_pane_window
+- mcwwindows:stripped_crimson_pane_window
+- mcwwindows:crimson_plank_pane_window
+- mcwwindows:warped_pane_window
+- mcwwindows:stripped_warped_pane_window
+- mcwwindows:warped_plank_pane_window
 - mcwwindows:oak_log_parapet
 - mcwwindows:spruce_log_parapet
 - mcwwindows:birch_log_parapet
@@ -6822,6 +7346,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:dark_oak_blinds
 - mcwwindows:crimson_blinds
 - mcwwindows:warped_blinds
+- mcwwindows:oak_shutter
+- mcwwindows:spruce_shutter
+- mcwwindows:birch_shutter
+- mcwwindows:jungle_shutter
+- mcwwindows:acacia_shutter
+- mcwwindows:dark_oak_shutter
+- mcwwindows:crimson_shutter
+- mcwwindows:warped_shutter
+- mcwwindows:bamboo_shutter
+- mcwwindows:oak_louvered_shutter
+- mcwwindows:spruce_louvered_shutter
+- mcwwindows:birch_louvered_shutter
+- mcwwindows:jungle_louvered_shutter
+- mcwwindows:acacia_louvered_shutter
+- mcwwindows:dark_oak_louvered_shutter
+- mcwwindows:crimson_louvered_shutter
+- mcwwindows:warped_louvered_shutter
 - mcwwindows:oak_window
 - mcwwindows:spruce_window
 - mcwwindows:birch_window
@@ -6870,6 +7411,54 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:crimson_planks_window2
 - mcwwindows:warped_planks_window
 - mcwwindows:warped_planks_window2
+- mcwwindows:oak_four_window
+- mcwwindows:oak_plank_four_window
+- mcwwindows:spruce_four_window
+- mcwwindows:spruce_plank_four_window
+- mcwwindows:birch_four_window
+- mcwwindows:birch_plank_four_window
+- mcwwindows:jungle_four_window
+- mcwwindows:jungle_plank_four_window
+- mcwwindows:acacia_four_window
+- mcwwindows:acacia_plank_four_window
+- mcwwindows:dark_oak_four_window
+- mcwwindows:dark_oak_plank_four_window
+- mcwwindows:stripped_oak_log_four_window
+- mcwwindows:stripped_spruce_log_four_window
+- mcwwindows:stripped_birch_log_four_window
+- mcwwindows:stripped_jungle_log_four_window
+- mcwwindows:stripped_acacia_log_four_window
+- mcwwindows:stripped_dark_oak_log_four_window
+- mcwwindows:crimson_stem_four_window
+- mcwwindows:warped_stem_four_window
+- mcwwindows:stripped_crimson_stem_four_window
+- mcwwindows:stripped_warped_stem_four_window
+- mcwwindows:crimson_planks_four_window
+- mcwwindows:warped_planks_four_window
+- mcwwindows:oak_pane_window
+- mcwwindows:stripped_oak_pane_window
+- mcwwindows:oak_plank_pane_window
+- mcwwindows:birch_pane_window
+- mcwwindows:stripped_birch_pane_window
+- mcwwindows:birch_plank_pane_window
+- mcwwindows:spruce_pane_window
+- mcwwindows:stripped_spruce_pane_window
+- mcwwindows:spruce_plank_pane_window
+- mcwwindows:jungle_pane_window
+- mcwwindows:stripped_jungle_pane_window
+- mcwwindows:jungle_plank_pane_window
+- mcwwindows:acacia_pane_window
+- mcwwindows:stripped_acacia_pane_window
+- mcwwindows:acacia_plank_pane_window
+- mcwwindows:dark_oak_pane_window
+- mcwwindows:stripped_dark_oak_pane_window
+- mcwwindows:dark_oak_plank_pane_window
+- mcwwindows:crimson_pane_window
+- mcwwindows:stripped_crimson_pane_window
+- mcwwindows:crimson_plank_pane_window
+- mcwwindows:warped_pane_window
+- mcwwindows:stripped_warped_pane_window
+- mcwwindows:warped_plank_pane_window
 - mcwwindows:oak_log_parapet
 - mcwwindows:spruce_log_parapet
 - mcwwindows:birch_log_parapet
@@ -6894,6 +7483,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:dark_oak_blinds
 - mcwwindows:crimson_blinds
 - mcwwindows:warped_blinds
+- mcwwindows:oak_shutter
+- mcwwindows:spruce_shutter
+- mcwwindows:birch_shutter
+- mcwwindows:jungle_shutter
+- mcwwindows:acacia_shutter
+- mcwwindows:dark_oak_shutter
+- mcwwindows:crimson_shutter
+- mcwwindows:warped_shutter
+- mcwwindows:bamboo_shutter
+- mcwwindows:oak_louvered_shutter
+- mcwwindows:spruce_louvered_shutter
+- mcwwindows:birch_louvered_shutter
+- mcwwindows:jungle_louvered_shutter
+- mcwwindows:acacia_louvered_shutter
+- mcwwindows:dark_oak_louvered_shutter
+- mcwwindows:crimson_louvered_shutter
+- mcwwindows:warped_louvered_shutter
 - mcwtrpdoors:oak_barn_trapdoor
 - mcwtrpdoors:oak_barred_trapdoor
 - mcwtrpdoors:oak_beach_trapdoor
@@ -6904,6 +7510,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:oak_paper_trapdoor
 - mcwtrpdoors:oak_tropical_trapdoor
 - mcwtrpdoors:oak_swamp_trapdoor
+- mcwtrpdoors:oak_blossom_trapdoor
 - mcwtrpdoors:bamboo_trapdoor
 - mcwtrpdoors:spruce_barn_trapdoor
 - mcwtrpdoors:spruce_barred_trapdoor
@@ -6915,6 +7522,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:spruce_paper_trapdoor
 - mcwtrpdoors:spruce_tropical_trapdoor
 - mcwtrpdoors:spruce_swamp_trapdoor
+- mcwtrpdoors:spruce_blossom_trapdoor
 - mcwtrpdoors:birch_barn_trapdoor
 - mcwtrpdoors:birch_barred_trapdoor
 - mcwtrpdoors:birch_beach_trapdoor
@@ -6925,6 +7533,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:birch_mystic_trapdoor
 - mcwtrpdoors:birch_tropical_trapdoor
 - mcwtrpdoors:birch_swamp_trapdoor
+- mcwtrpdoors:birch_blossom_trapdoor
 - mcwtrpdoors:jungle_barn_trapdoor
 - mcwtrpdoors:jungle_barred_trapdoor
 - mcwtrpdoors:jungle_classic_trapdoor
@@ -6935,6 +7544,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:jungle_paper_trapdoor
 - mcwtrpdoors:jungle_tropical_trapdoor
 - mcwtrpdoors:jungle_swamp_trapdoor
+- mcwtrpdoors:jungle_blossom_trapdoor
 - mcwtrpdoors:acacia_barn_trapdoor
 - mcwtrpdoors:acacia_barred_trapdoor
 - mcwtrpdoors:acacia_beach_trapdoor
@@ -6945,6 +7555,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:acacia_mystic_trapdoor
 - mcwtrpdoors:acacia_paper_trapdoor
 - mcwtrpdoors:acacia_swamp_trapdoor
+- mcwtrpdoors:acacia_blossom_trapdoor
 - mcwtrpdoors:dark_oak_barn_trapdoor
 - mcwtrpdoors:dark_oak_barred_trapdoor
 - mcwtrpdoors:dark_oak_beach_trapdoor
@@ -6955,6 +7566,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_paper_trapdoor
 - mcwtrpdoors:dark_oak_tropical_trapdoor
 - mcwtrpdoors:dark_oak_swamp_trapdoor
+- mcwtrpdoors:dark_oak_blossom_trapdoor
 - mcwtrpdoors:crimson_barn_trapdoor
 - mcwtrpdoors:crimson_beach_trapdoor
 - mcwtrpdoors:crimson_classic_trapdoor
@@ -6965,6 +7577,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:crimson_paper_trapdoor
 - mcwtrpdoors:crimson_tropical_trapdoor
 - mcwtrpdoors:crimson_swamp_trapdoor
+- mcwtrpdoors:crimson_blossom_trapdoor
 - mcwtrpdoors:warped_barn_trapdoor
 - mcwtrpdoors:warped_barred_trapdoor
 - mcwtrpdoors:warped_beach_trapdoor
@@ -6975,6 +7588,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:warped_paper_trapdoor
 - mcwtrpdoors:warped_tropical_trapdoor
 - mcwtrpdoors:warped_swamp_trapdoor
+- mcwtrpdoors:warped_blossom_trapdoor
+- mcwtrpdoors:bamboo_barn_trapdoor
+- mcwtrpdoors:bamboo_barred_trapdoor
+- mcwtrpdoors:bamboo_beach_trapdoor
+- mcwtrpdoors:bamboo_cottage_trapdoor
+- mcwtrpdoors:bamboo_four_panel_trapdoor
+- mcwtrpdoors:bamboo_glass_trapdoor
+- mcwtrpdoors:bamboo_mystic_trapdoor
+- mcwtrpdoors:bamboo_paper_trapdoor
+- mcwtrpdoors:bamboo_tropical_trapdoor
+- mcwtrpdoors:bamboo_classic_trapdoor
+- mcwtrpdoors:bamboo_swamp_trapdoor
+- mcwtrpdoors:bamboo_blossom_trapdoor
+- mcwtrpdoors:oak_bamboo_trapdoor
+- mcwtrpdoors:spruce_bamboo_trapdoor
+- mcwtrpdoors:birch_bamboo_trapdoor
+- mcwtrpdoors:jungle_bamboo_trapdoor
+- mcwtrpdoors:acacia_bamboo_trapdoor
+- mcwtrpdoors:dark_oak_bamboo_trapdoor
+- mcwtrpdoors:crimson_bamboo_trapdoor
+- mcwtrpdoors:warped_bamboo_trapdoor
 - mcwtrpdoors:oak_bark_trapdoor
 - mcwtrpdoors:spruce_bark_trapdoor
 - mcwtrpdoors:birch_bark_trapdoor
@@ -6983,6 +7617,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_bark_trapdoor
 - mcwtrpdoors:crimson_bark_trapdoor
 - mcwtrpdoors:warped_bark_trapdoor
+- mcwtrpdoors:oak_barrel_trapdoor
+- mcwtrpdoors:spruce_barrel_trapdoor
+- mcwtrpdoors:birch_barrel_trapdoor
+- mcwtrpdoors:jungle_barrel_trapdoor
+- mcwtrpdoors:acacia_barrel_trapdoor
+- mcwtrpdoors:dark_oak_barrel_trapdoor
+- mcwtrpdoors:crimson_barrel_trapdoor
+- mcwtrpdoors:warped_barrel_trapdoor
+- mcwtrpdoors:bamboo_barrel_trapdoor
 - mcwtrpdoors:oak_ranch_trapdoor
 - mcwtrpdoors:spruce_ranch_trapdoor
 - mcwtrpdoors:birch_ranch_trapdoor
@@ -6991,6 +7634,440 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_ranch_trapdoor
 - mcwtrpdoors:crimson_ranch_trapdoor
 - mcwtrpdoors:warped_ranch_trapdoor
+- mcwfurnitures:oak_wardrobe
+- mcwfurnitures:oak_modern_wardrobe
+- mcwfurnitures:oak_double_wardrobe
+- mcwfurnitures:oak_bookshelf_cupboard
+- mcwfurnitures:oak_bookshelf
+- mcwfurnitures:oak_drawer
+- mcwfurnitures:oak_double_drawer
+- mcwfurnitures:oak_bookshelf_drawer
+- mcwfurnitures:oak_lower_bookshelf_drawer
+- mcwfurnitures:oak_large_drawer
+- mcwfurnitures:oak_lower_triple_drawer
+- mcwfurnitures:oak_triple_drawer
+- mcwfurnitures:oak_desk
+- mcwfurnitures:oak_covered_desk
+- mcwfurnitures:oak_modern_desk
+- mcwfurnitures:oak_table
+- mcwfurnitures:oak_end_table
+- mcwfurnitures:oak_coffee_table
+- mcwfurnitures:oak_glass_table
+- mcwfurnitures:oak_chair
+- mcwfurnitures:oak_modern_chair
+- mcwfurnitures:oak_striped_chair
+- mcwfurnitures:oak_stool_chair
+- mcwfurnitures:oak_counter
+- mcwfurnitures:oak_drawer_counter
+- mcwfurnitures:oak_double_drawer_counter
+- mcwfurnitures:oak_cupboard_counter
+- mcwfurnitures:stripped_oak_wardrobe
+- mcwfurnitures:stripped_oak_modern_wardrobe
+- mcwfurnitures:stripped_oak_double_wardrobe
+- mcwfurnitures:stripped_oak_bookshelf_cupboard
+- mcwfurnitures:stripped_oak_bookshelf
+- mcwfurnitures:stripped_oak_drawer
+- mcwfurnitures:stripped_oak_double_drawer
+- mcwfurnitures:stripped_oak_bookshelf_drawer
+- mcwfurnitures:stripped_oak_lower_bookshelf_drawer
+- mcwfurnitures:stripped_oak_large_drawer
+- mcwfurnitures:stripped_oak_lower_triple_drawer
+- mcwfurnitures:stripped_oak_triple_drawer
+- mcwfurnitures:stripped_oak_desk
+- mcwfurnitures:stripped_oak_covered_desk
+- mcwfurnitures:stripped_oak_modern_desk
+- mcwfurnitures:stripped_oak_table
+- mcwfurnitures:stripped_oak_end_table
+- mcwfurnitures:stripped_oak_coffee_table
+- mcwfurnitures:stripped_oak_glass_table
+- mcwfurnitures:stripped_oak_chair
+- mcwfurnitures:stripped_oak_modern_chair
+- mcwfurnitures:stripped_oak_striped_chair
+- mcwfurnitures:stripped_oak_stool_chair
+- mcwfurnitures:stripped_oak_counter
+- mcwfurnitures:stripped_oak_drawer_counter
+- mcwfurnitures:stripped_oak_double_drawer_counter
+- mcwfurnitures:stripped_oak_cupboard_counter
+- mcwfurnitures:birch_wardrobe
+- mcwfurnitures:birch_modern_wardrobe
+- mcwfurnitures:birch_double_wardrobe
+- mcwfurnitures:birch_bookshelf_cupboard
+- mcwfurnitures:birch_bookshelf
+- mcwfurnitures:birch_drawer
+- mcwfurnitures:birch_double_drawer
+- mcwfurnitures:birch_bookshelf_drawer
+- mcwfurnitures:birch_lower_bookshelf_drawer
+- mcwfurnitures:birch_large_drawer
+- mcwfurnitures:birch_lower_triple_drawer
+- mcwfurnitures:birch_triple_drawer
+- mcwfurnitures:birch_desk
+- mcwfurnitures:birch_covered_desk
+- mcwfurnitures:birch_modern_desk
+- mcwfurnitures:birch_table
+- mcwfurnitures:birch_end_table
+- mcwfurnitures:birch_coffee_table
+- mcwfurnitures:birch_glass_table
+- mcwfurnitures:birch_chair
+- mcwfurnitures:birch_modern_chair
+- mcwfurnitures:birch_striped_chair
+- mcwfurnitures:birch_stool_chair
+- mcwfurnitures:birch_counter
+- mcwfurnitures:birch_drawer_counter
+- mcwfurnitures:birch_double_drawer_counter
+- mcwfurnitures:birch_cupboard_counter
+- mcwfurnitures:stripped_birch_wardrobe
+- mcwfurnitures:stripped_birch_modern_wardrobe
+- mcwfurnitures:stripped_birch_double_wardrobe
+- mcwfurnitures:stripped_birch_bookshelf_cupboard
+- mcwfurnitures:stripped_birch_bookshelf
+- mcwfurnitures:stripped_birch_drawer
+- mcwfurnitures:stripped_birch_double_drawer
+- mcwfurnitures:stripped_birch_bookshelf_drawer
+- mcwfurnitures:stripped_birch_lower_bookshelf_drawer
+- mcwfurnitures:stripped_birch_large_drawer
+- mcwfurnitures:stripped_birch_lower_triple_drawer
+- mcwfurnitures:stripped_birch_triple_drawer
+- mcwfurnitures:stripped_birch_desk
+- mcwfurnitures:stripped_birch_covered_desk
+- mcwfurnitures:stripped_birch_modern_desk
+- mcwfurnitures:stripped_birch_table
+- mcwfurnitures:stripped_birch_end_table
+- mcwfurnitures:stripped_birch_coffee_table
+- mcwfurnitures:stripped_birch_glass_table
+- mcwfurnitures:stripped_birch_chair
+- mcwfurnitures:stripped_birch_modern_chair
+- mcwfurnitures:stripped_birch_striped_chair
+- mcwfurnitures:stripped_birch_stool_chair
+- mcwfurnitures:stripped_birch_counter
+- mcwfurnitures:stripped_birch_drawer_counter
+- mcwfurnitures:stripped_birch_double_drawer_counter
+- mcwfurnitures:stripped_birch_cupboard_counter
+- mcwfurnitures:spruce_wardrobe
+- mcwfurnitures:spruce_modern_wardrobe
+- mcwfurnitures:spruce_double_wardrobe
+- mcwfurnitures:spruce_bookshelf_cupboard
+- mcwfurnitures:spruce_bookshelf
+- mcwfurnitures:spruce_drawer
+- mcwfurnitures:spruce_double_drawer
+- mcwfurnitures:spruce_bookshelf_drawer
+- mcwfurnitures:spruce_lower_bookshelf_drawer
+- mcwfurnitures:spruce_large_drawer
+- mcwfurnitures:spruce_lower_triple_drawer
+- mcwfurnitures:spruce_triple_drawer
+- mcwfurnitures:spruce_desk
+- mcwfurnitures:spruce_covered_desk
+- mcwfurnitures:spruce_modern_desk
+- mcwfurnitures:spruce_table
+- mcwfurnitures:spruce_end_table
+- mcwfurnitures:spruce_coffee_table
+- mcwfurnitures:spruce_glass_table
+- mcwfurnitures:spruce_chair
+- mcwfurnitures:spruce_modern_chair
+- mcwfurnitures:spruce_striped_chair
+- mcwfurnitures:spruce_stool_chair
+- mcwfurnitures:spruce_counter
+- mcwfurnitures:spruce_drawer_counter
+- mcwfurnitures:spruce_double_drawer_counter
+- mcwfurnitures:spruce_cupboard_counter
+- mcwfurnitures:stripped_spruce_wardrobe
+- mcwfurnitures:stripped_spruce_modern_wardrobe
+- mcwfurnitures:stripped_spruce_double_wardrobe
+- mcwfurnitures:stripped_spruce_bookshelf_cupboard
+- mcwfurnitures:stripped_spruce_bookshelf
+- mcwfurnitures:stripped_spruce_drawer
+- mcwfurnitures:stripped_spruce_double_drawer
+- mcwfurnitures:stripped_spruce_bookshelf_drawer
+- mcwfurnitures:stripped_spruce_lower_bookshelf_drawer
+- mcwfurnitures:stripped_spruce_large_drawer
+- mcwfurnitures:stripped_spruce_lower_triple_drawer
+- mcwfurnitures:stripped_spruce_triple_drawer
+- mcwfurnitures:stripped_spruce_desk
+- mcwfurnitures:stripped_spruce_covered_desk
+- mcwfurnitures:stripped_spruce_modern_desk
+- mcwfurnitures:stripped_spruce_table
+- mcwfurnitures:stripped_spruce_end_table
+- mcwfurnitures:stripped_spruce_coffee_table
+- mcwfurnitures:stripped_spruce_glass_table
+- mcwfurnitures:stripped_spruce_chair
+- mcwfurnitures:stripped_spruce_modern_chair
+- mcwfurnitures:stripped_spruce_striped_chair
+- mcwfurnitures:stripped_spruce_stool_chair
+- mcwfurnitures:stripped_spruce_counter
+- mcwfurnitures:stripped_spruce_drawer_counter
+- mcwfurnitures:stripped_spruce_double_drawer_counter
+- mcwfurnitures:stripped_spruce_cupboard_counter
+- mcwfurnitures:jungle_wardrobe
+- mcwfurnitures:jungle_modern_wardrobe
+- mcwfurnitures:jungle_double_wardrobe
+- mcwfurnitures:jungle_bookshelf_cupboard
+- mcwfurnitures:jungle_bookshelf
+- mcwfurnitures:jungle_drawer
+- mcwfurnitures:jungle_double_drawer
+- mcwfurnitures:jungle_bookshelf_drawer
+- mcwfurnitures:jungle_lower_bookshelf_drawer
+- mcwfurnitures:jungle_large_drawer
+- mcwfurnitures:jungle_lower_triple_drawer
+- mcwfurnitures:jungle_triple_drawer
+- mcwfurnitures:jungle_desk
+- mcwfurnitures:jungle_covered_desk
+- mcwfurnitures:jungle_modern_desk
+- mcwfurnitures:jungle_table
+- mcwfurnitures:jungle_end_table
+- mcwfurnitures:jungle_coffee_table
+- mcwfurnitures:jungle_glass_table
+- mcwfurnitures:jungle_chair
+- mcwfurnitures:jungle_modern_chair
+- mcwfurnitures:jungle_striped_chair
+- mcwfurnitures:jungle_stool_chair
+- mcwfurnitures:jungle_counter
+- mcwfurnitures:jungle_drawer_counter
+- mcwfurnitures:jungle_double_drawer_counter
+- mcwfurnitures:jungle_cupboard_counter
+- mcwfurnitures:stripped_jungle_wardrobe
+- mcwfurnitures:stripped_jungle_modern_wardrobe
+- mcwfurnitures:stripped_jungle_double_wardrobe
+- mcwfurnitures:stripped_jungle_bookshelf_cupboard
+- mcwfurnitures:stripped_jungle_bookshelf
+- mcwfurnitures:stripped_jungle_drawer
+- mcwfurnitures:stripped_jungle_double_drawer
+- mcwfurnitures:stripped_jungle_bookshelf_drawer
+- mcwfurnitures:stripped_jungle_lower_bookshelf_drawer
+- mcwfurnitures:stripped_jungle_large_drawer
+- mcwfurnitures:stripped_jungle_lower_triple_drawer
+- mcwfurnitures:stripped_jungle_triple_drawer
+- mcwfurnitures:stripped_jungle_desk
+- mcwfurnitures:stripped_jungle_covered_desk
+- mcwfurnitures:stripped_jungle_modern_desk
+- mcwfurnitures:stripped_jungle_table
+- mcwfurnitures:stripped_jungle_end_table
+- mcwfurnitures:stripped_jungle_coffee_table
+- mcwfurnitures:stripped_jungle_glass_table
+- mcwfurnitures:stripped_jungle_chair
+- mcwfurnitures:stripped_jungle_modern_chair
+- mcwfurnitures:stripped_jungle_striped_chair
+- mcwfurnitures:stripped_jungle_stool_chair
+- mcwfurnitures:stripped_jungle_counter
+- mcwfurnitures:stripped_jungle_drawer_counter
+- mcwfurnitures:stripped_jungle_double_drawer_counter
+- mcwfurnitures:stripped_jungle_cupboard_counter
+- mcwfurnitures:dark_oak_wardrobe
+- mcwfurnitures:dark_oak_modern_wardrobe
+- mcwfurnitures:dark_oak_double_wardrobe
+- mcwfurnitures:dark_oak_bookshelf_cupboard
+- mcwfurnitures:dark_oak_bookshelf
+- mcwfurnitures:dark_oak_drawer
+- mcwfurnitures:dark_oak_double_drawer
+- mcwfurnitures:dark_oak_bookshelf_drawer
+- mcwfurnitures:dark_oak_lower_bookshelf_drawer
+- mcwfurnitures:dark_oak_large_drawer
+- mcwfurnitures:dark_oak_lower_triple_drawer
+- mcwfurnitures:dark_oak_triple_drawer
+- mcwfurnitures:dark_oak_desk
+- mcwfurnitures:dark_oak_covered_desk
+- mcwfurnitures:dark_oak_modern_desk
+- mcwfurnitures:dark_oak_table
+- mcwfurnitures:dark_oak_end_table
+- mcwfurnitures:dark_oak_coffee_table
+- mcwfurnitures:dark_oak_glass_table
+- mcwfurnitures:dark_oak_chair
+- mcwfurnitures:dark_oak_modern_chair
+- mcwfurnitures:dark_oak_striped_chair
+- mcwfurnitures:dark_oak_stool_chair
+- mcwfurnitures:dark_oak_counter
+- mcwfurnitures:dark_oak_drawer_counter
+- mcwfurnitures:dark_oak_double_drawer_counter
+- mcwfurnitures:dark_oak_cupboard_counter
+- mcwfurnitures:stripped_dark_oak_wardrobe
+- mcwfurnitures:stripped_dark_oak_modern_wardrobe
+- mcwfurnitures:stripped_dark_oak_double_wardrobe
+- mcwfurnitures:stripped_dark_oak_bookshelf_cupboard
+- mcwfurnitures:stripped_dark_oak_bookshelf
+- mcwfurnitures:stripped_dark_oak_drawer
+- mcwfurnitures:stripped_dark_oak_double_drawer
+- mcwfurnitures:stripped_dark_oak_bookshelf_drawer
+- mcwfurnitures:stripped_dark_oak_lower_bookshelf_drawer
+- mcwfurnitures:stripped_dark_oak_large_drawer
+- mcwfurnitures:stripped_dark_oak_lower_triple_drawer
+- mcwfurnitures:stripped_dark_oak_triple_drawer
+- mcwfurnitures:stripped_dark_oak_desk
+- mcwfurnitures:stripped_dark_oak_covered_desk
+- mcwfurnitures:stripped_dark_oak_modern_desk
+- mcwfurnitures:stripped_dark_oak_table
+- mcwfurnitures:stripped_dark_oak_end_table
+- mcwfurnitures:stripped_dark_oak_coffee_table
+- mcwfurnitures:stripped_dark_oak_glass_table
+- mcwfurnitures:stripped_dark_oak_chair
+- mcwfurnitures:stripped_dark_oak_modern_chair
+- mcwfurnitures:stripped_dark_oak_striped_chair
+- mcwfurnitures:stripped_dark_oak_stool_chair
+- mcwfurnitures:stripped_dark_oak_counter
+- mcwfurnitures:stripped_dark_oak_drawer_counter
+- mcwfurnitures:stripped_dark_oak_double_drawer_counter
+- mcwfurnitures:stripped_dark_oak_cupboard_counter
+- mcwfurnitures:acacia_wardrobe
+- mcwfurnitures:acacia_modern_wardrobe
+- mcwfurnitures:acacia_double_wardrobe
+- mcwfurnitures:acacia_bookshelf_cupboard
+- mcwfurnitures:acacia_bookshelf
+- mcwfurnitures:acacia_drawer
+- mcwfurnitures:acacia_double_drawer
+- mcwfurnitures:acacia_bookshelf_drawer
+- mcwfurnitures:acacia_lower_bookshelf_drawer
+- mcwfurnitures:acacia_large_drawer
+- mcwfurnitures:acacia_lower_triple_drawer
+- mcwfurnitures:acacia_triple_drawer
+- mcwfurnitures:acacia_desk
+- mcwfurnitures:acacia_covered_desk
+- mcwfurnitures:acacia_modern_desk
+- mcwfurnitures:acacia_table
+- mcwfurnitures:acacia_end_table
+- mcwfurnitures:acacia_coffee_table
+- mcwfurnitures:acacia_glass_table
+- mcwfurnitures:acacia_chair
+- mcwfurnitures:acacia_modern_chair
+- mcwfurnitures:acacia_striped_chair
+- mcwfurnitures:acacia_stool_chair
+- mcwfurnitures:acacia_counter
+- mcwfurnitures:acacia_drawer_counter
+- mcwfurnitures:acacia_double_drawer_counter
+- mcwfurnitures:acacia_cupboard_counter
+- mcwfurnitures:stripped_acacia_wardrobe
+- mcwfurnitures:stripped_acacia_modern_wardrobe
+- mcwfurnitures:stripped_acacia_double_wardrobe
+- mcwfurnitures:stripped_acacia_bookshelf_cupboard
+- mcwfurnitures:stripped_acacia_bookshelf
+- mcwfurnitures:stripped_acacia_drawer
+- mcwfurnitures:stripped_acacia_double_drawer
+- mcwfurnitures:stripped_acacia_bookshelf_drawer
+- mcwfurnitures:stripped_acacia_lower_bookshelf_drawer
+- mcwfurnitures:stripped_acacia_large_drawer
+- mcwfurnitures:stripped_acacia_lower_triple_drawer
+- mcwfurnitures:stripped_acacia_triple_drawer
+- mcwfurnitures:stripped_acacia_desk
+- mcwfurnitures:stripped_acacia_covered_desk
+- mcwfurnitures:stripped_acacia_modern_desk
+- mcwfurnitures:stripped_acacia_table
+- mcwfurnitures:stripped_acacia_end_table
+- mcwfurnitures:stripped_acacia_coffee_table
+- mcwfurnitures:stripped_acacia_glass_table
+- mcwfurnitures:stripped_acacia_chair
+- mcwfurnitures:stripped_acacia_modern_chair
+- mcwfurnitures:stripped_acacia_striped_chair
+- mcwfurnitures:stripped_acacia_stool_chair
+- mcwfurnitures:stripped_acacia_counter
+- mcwfurnitures:stripped_acacia_drawer_counter
+- mcwfurnitures:stripped_acacia_double_drawer_counter
+- mcwfurnitures:stripped_acacia_cupboard_counter
+- mcwfurnitures:warped_wardrobe
+- mcwfurnitures:warped_modern_wardrobe
+- mcwfurnitures:warped_double_wardrobe
+- mcwfurnitures:warped_bookshelf_cupboard
+- mcwfurnitures:warped_bookshelf
+- mcwfurnitures:warped_drawer
+- mcwfurnitures:warped_double_drawer
+- mcwfurnitures:warped_bookshelf_drawer
+- mcwfurnitures:warped_lower_bookshelf_drawer
+- mcwfurnitures:warped_large_drawer
+- mcwfurnitures:warped_lower_triple_drawer
+- mcwfurnitures:warped_triple_drawer
+- mcwfurnitures:warped_desk
+- mcwfurnitures:warped_covered_desk
+- mcwfurnitures:warped_modern_desk
+- mcwfurnitures:warped_table
+- mcwfurnitures:warped_end_table
+- mcwfurnitures:warped_coffee_table
+- mcwfurnitures:warped_glass_table
+- mcwfurnitures:warped_chair
+- mcwfurnitures:warped_modern_chair
+- mcwfurnitures:warped_striped_chair
+- mcwfurnitures:warped_stool_chair
+- mcwfurnitures:warped_counter
+- mcwfurnitures:warped_drawer_counter
+- mcwfurnitures:warped_double_drawer_counter
+- mcwfurnitures:warped_cupboard_counter
+- mcwfurnitures:stripped_warped_wardrobe
+- mcwfurnitures:stripped_warped_modern_wardrobe
+- mcwfurnitures:stripped_warped_double_wardrobe
+- mcwfurnitures:stripped_warped_bookshelf_cupboard
+- mcwfurnitures:stripped_warped_bookshelf
+- mcwfurnitures:stripped_warped_drawer
+- mcwfurnitures:stripped_warped_double_drawer
+- mcwfurnitures:stripped_warped_bookshelf_drawer
+- mcwfurnitures:stripped_warped_lower_bookshelf_drawer
+- mcwfurnitures:stripped_warped_large_drawer
+- mcwfurnitures:stripped_warped_lower_triple_drawer
+- mcwfurnitures:stripped_warped_triple_drawer
+- mcwfurnitures:stripped_warped_desk
+- mcwfurnitures:stripped_warped_covered_desk
+- mcwfurnitures:stripped_warped_modern_desk
+- mcwfurnitures:stripped_warped_table
+- mcwfurnitures:stripped_warped_end_table
+- mcwfurnitures:stripped_warped_coffee_table
+- mcwfurnitures:stripped_warped_glass_table
+- mcwfurnitures:stripped_warped_chair
+- mcwfurnitures:stripped_warped_modern_chair
+- mcwfurnitures:stripped_warped_striped_chair
+- mcwfurnitures:stripped_warped_stool_chair
+- mcwfurnitures:stripped_warped_counter
+- mcwfurnitures:stripped_warped_drawer_counter
+- mcwfurnitures:stripped_warped_double_drawer_counter
+- mcwfurnitures:stripped_warped_cupboard_counter
+- mcwfurnitures:crimson_wardrobe
+- mcwfurnitures:crimson_modern_wardrobe
+- mcwfurnitures:crimson_double_wardrobe
+- mcwfurnitures:crimson_bookshelf_cupboard
+- mcwfurnitures:crimson_bookshelf
+- mcwfurnitures:crimson_drawer
+- mcwfurnitures:crimson_double_drawer
+- mcwfurnitures:crimson_bookshelf_drawer
+- mcwfurnitures:crimson_lower_bookshelf_drawer
+- mcwfurnitures:crimson_large_drawer
+- mcwfurnitures:crimson_lower_triple_drawer
+- mcwfurnitures:crimson_triple_drawer
+- mcwfurnitures:crimson_desk
+- mcwfurnitures:crimson_covered_desk
+- mcwfurnitures:crimson_modern_desk
+- mcwfurnitures:crimson_table
+- mcwfurnitures:crimson_end_table
+- mcwfurnitures:crimson_coffee_table
+- mcwfurnitures:crimson_glass_table
+- mcwfurnitures:crimson_chair
+- mcwfurnitures:crimson_modern_chair
+- mcwfurnitures:crimson_striped_chair
+- mcwfurnitures:crimson_stool_chair
+- mcwfurnitures:crimson_counter
+- mcwfurnitures:crimson_drawer_counter
+- mcwfurnitures:crimson_double_drawer_counter
+- mcwfurnitures:crimson_cupboard_counter
+- mcwfurnitures:stripped_crimson_wardrobe
+- mcwfurnitures:stripped_crimson_modern_wardrobe
+- mcwfurnitures:stripped_crimson_double_wardrobe
+- mcwfurnitures:stripped_crimson_bookshelf_cupboard
+- mcwfurnitures:stripped_crimson_bookshelf
+- mcwfurnitures:stripped_crimson_drawer
+- mcwfurnitures:stripped_crimson_double_drawer
+- mcwfurnitures:stripped_crimson_bookshelf_drawer
+- mcwfurnitures:stripped_crimson_lower_bookshelf_drawer
+- mcwfurnitures:stripped_crimson_large_drawer
+- mcwfurnitures:stripped_crimson_lower_triple_drawer
+- mcwfurnitures:stripped_crimson_triple_drawer
+- mcwfurnitures:stripped_crimson_desk
+- mcwfurnitures:stripped_crimson_covered_desk
+- mcwfurnitures:stripped_crimson_modern_desk
+- mcwfurnitures:stripped_crimson_table
+- mcwfurnitures:stripped_crimson_end_table
+- mcwfurnitures:stripped_crimson_coffee_table
+- mcwfurnitures:stripped_crimson_glass_table
+- mcwfurnitures:stripped_crimson_chair
+- mcwfurnitures:stripped_crimson_modern_chair
+- mcwfurnitures:stripped_crimson_striped_chair
+- mcwfurnitures:stripped_crimson_stool_chair
+- mcwfurnitures:stripped_crimson_counter
+- mcwfurnitures:stripped_crimson_drawer_counter
+- mcwfurnitures:stripped_crimson_double_drawer_counter
+- mcwfurnitures:stripped_crimson_cupboard_counter
+- mcwlights:bamboo_tiki_torch
+- mcwlights:soul_bamboo_tiki_torch
 - mcwlights:classic_street_lamp
 - mcwlights:double_street_lamp
 - mcwlights:soul_classic_street_lamp
@@ -7059,6 +8136,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwlights:green_paper_lamp
 - mcwlights:red_paper_lamp
 - mcwlights:black_paper_lamp
+- mcwlights:wall_lamp
+- mcwlights:square_wall_lamp
 - mcwpaths:oak_planks_path
 - mcwpaths:spruce_planks_path
 - mcwpaths:birch_planks_path
@@ -7075,6 +8154,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese_door
 - mcwdoors:crimson_japanese_door
 - mcwdoors:warped_japanese_door
+- mcwdoors:bamboo_japanese_door
 - mcwdoors:oak_japanese2_door
 - mcwdoors:spruce_japanese2_door
 - mcwdoors:birch_japanese2_door
@@ -7083,6 +8163,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese2_door
 - mcwdoors:crimson_japanese2_door
 - mcwdoors:warped_japanese2_door
+- mcwdoors:bamboo_japanese2_door
 - mcwdoors:oak_barn_door
 - mcwdoors:spruce_barn_door
 - mcwdoors:birch_barn_door
@@ -7091,6 +8172,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_door
 - mcwdoors:crimson_barn_door
 - mcwdoors:warped_barn_door
+- mcwdoors:bamboo_barn_door
 - mcwdoors:oak_barn_glass_door
 - mcwdoors:spruce_barn_glass_door
 - mcwdoors:birch_barn_glass_door
@@ -7099,6 +8181,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_glass_door
 - mcwdoors:crimson_barn_glass_door
 - mcwdoors:warped_barn_glass_door
+- mcwdoors:bamboo_barn_glass_door
 - mcwdoors:oak_modern_door
 - mcwdoors:spruce_modern_door
 - mcwdoors:birch_modern_door
@@ -7107,6 +8190,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_modern_door
 - mcwdoors:crimson_modern_door
 - mcwdoors:warped_modern_door
+- mcwdoors:bamboo_modern_door
 - mcwdoors:oak_cottage_door
 - mcwdoors:birch_cottage_door
 - mcwdoors:jungle_cottage_door
@@ -7114,6 +8198,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_cottage_door
 - mcwdoors:crimson_cottage_door
 - mcwdoors:warped_cottage_door
+- mcwdoors:bamboo_cottage_door
 - mcwdoors:spruce_classic_door
 - mcwdoors:birch_classic_door
 - mcwdoors:jungle_classic_door
@@ -7121,6 +8206,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_classic_door
 - mcwdoors:crimson_classic_door
 - mcwdoors:warped_classic_door
+- mcwdoors:bamboo_classic_door
 - mcwdoors:oak_beach_door
 - mcwdoors:spruce_beach_door
 - mcwdoors:birch_beach_door
@@ -7128,6 +8214,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_beach_door
 - mcwdoors:crimson_beach_door
 - mcwdoors:warped_beach_door
+- mcwdoors:bamboo_beach_door
 - mcwdoors:oak_paper_door
 - mcwdoors:spruce_paper_door
 - mcwdoors:jungle_paper_door
@@ -7135,6 +8222,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_paper_door
 - mcwdoors:crimson_paper_door
 - mcwdoors:warped_paper_door
+- mcwdoors:bamboo_paper_door
 - mcwdoors:oak_four_panel_door
 - mcwdoors:spruce_four_panel_door
 - mcwdoors:birch_four_panel_door
@@ -7142,6 +8230,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_four_panel_door
 - mcwdoors:crimson_four_panel_door
 - mcwdoors:warped_four_panel_door
+- mcwdoors:bamboo_four_panel_door
 - mcwdoors:oak_tropical_door
 - mcwdoors:spruce_tropical_door
 - mcwdoors:birch_tropical_door
@@ -7149,6 +8238,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_tropical_door
 - mcwdoors:crimson_tropical_door
 - mcwdoors:warped_tropical_door
+- mcwdoors:bamboo_tropical_door
 - mcwdoors:oak_glass_door
 - mcwdoors:spruce_glass_door
 - mcwdoors:birch_glass_door
@@ -7157,6 +8247,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_glass_door
 - mcwdoors:crimson_glass_door
 - mcwdoors:warped_glass_door
+- mcwdoors:bamboo_glass_door
 - mcwdoors:oak_stable_door
 - mcwdoors:spruce_stable_door
 - mcwdoors:birch_stable_door
@@ -7165,6 +8256,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_door
 - mcwdoors:crimson_stable_door
 - mcwdoors:warped_stable_door
+- mcwdoors:bamboo_stable_door
 - mcwdoors:oak_stable_head_door
 - mcwdoors:spruce_stable_head_door
 - mcwdoors:birch_stable_head_door
@@ -7173,6 +8265,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_head_door
 - mcwdoors:crimson_stable_head_door
 - mcwdoors:warped_stable_head_door
+- mcwdoors:bamboo_stable_head_door
 - mcwdoors:oak_western_door
 - mcwdoors:spruce_western_door
 - mcwdoors:birch_western_door
@@ -7181,6 +8274,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_western_door
 - mcwdoors:crimson_western_door
 - mcwdoors:warped_western_door
+- mcwdoors:bamboo_western_door
+- mcwdoors:oak_waffle_door
+- mcwdoors:spruce_waffle_door
+- mcwdoors:birch_waffle_door
+- mcwdoors:jungle_waffle_door
+- mcwdoors:acacia_waffle_door
+- mcwdoors:dark_oak_waffle_door
+- mcwdoors:crimson_waffle_door
+- mcwdoors:warped_waffle_door
+- mcwdoors:bamboo_waffle_door
 - mcwdoors:oak_mystic_door
 - mcwdoors:spruce_mystic_door
 - mcwdoors:birch_mystic_door
@@ -7188,6 +8291,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_mystic_door
 - mcwdoors:dark_oak_mystic_door
 - mcwdoors:crimson_mystic_door
+- mcwdoors:bamboo_mystic_door
 - mcwdoors:oak_bark_glass_door
 - mcwdoors:spruce_bark_glass_door
 - mcwdoors:birch_bark_glass_door
@@ -7196,6 +8300,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_bark_glass_door
 - mcwdoors:crimson_stem_glass_door
 - mcwdoors:warped_stem_glass_door
+- mcwdoors:bamboo_bark_glass_door
 - mcwdoors:oak_nether_door
 - mcwdoors:spruce_nether_door
 - mcwdoors:birch_nether_door
@@ -7203,6 +8308,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_nether_door
 - mcwdoors:dark_oak_nether_door
 - mcwdoors:warped_nether_door
+- mcwdoors:bamboo_nether_door
 - mcwdoors:oak_swamp_door
 - mcwdoors:spruce_swamp_door
 - mcwdoors:birch_swamp_door
@@ -7211,6 +8317,70 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_swamp_door
 - mcwdoors:warped_swamp_door
 - mcwdoors:crimson_swamp_door
+- mcwdoors:bamboo_swamp_door
+- mcwdoors:oak_bamboo_door
+- mcwdoors:spruce_bamboo_door
+- mcwdoors:birch_bamboo_door
+- mcwdoors:jungle_bamboo_door
+- mcwdoors:acacia_bamboo_door
+- mcwdoors:dark_oak_bamboo_door
+- mcwdoors:warped_bamboo_door
+- mcwdoors:crimson_bamboo_door
+- mcwdoors:wooden_portcullis
+- mcwbridges:oak_log_bridge_middle
+- mcwbridges:birch_log_bridge_middle
+- mcwbridges:acacia_log_bridge_middle
+- mcwbridges:spruce_log_bridge_middle
+- mcwbridges:jungle_log_bridge_middle
+- mcwbridges:dark_oak_log_bridge_middle
+- mcwbridges:crimson_log_bridge_middle
+- mcwbridges:warped_log_bridge_middle
+- mcwbridges:rope_oak_bridge
+- mcwbridges:rope_birch_bridge
+- mcwbridges:rope_spruce_bridge
+- mcwbridges:rope_jungle_bridge
+- mcwbridges:rope_acacia_bridge
+- mcwbridges:rope_dark_oak_bridge
+- mcwbridges:rope_crimson_bridge
+- mcwbridges:rope_warped_bridge
+- mcwbridges:oak_rail_bridge
+- mcwbridges:spruce_rail_bridge
+- mcwbridges:birch_rail_bridge
+- mcwbridges:jungle_rail_bridge
+- mcwbridges:acacia_rail_bridge
+- mcwbridges:dark_oak_rail_bridge
+- mcwbridges:crimson_rail_bridge
+- mcwbridges:warped_rail_bridge
+- mcwbridges:bamboo_bridge
+- mcwbridges:dry_bamboo_bridge
+- mcwbridges:oak_bridge_pier
+- mcwbridges:spruce_bridge_pier
+- mcwbridges:birch_bridge_pier
+- mcwbridges:jungle_bridge_pier
+- mcwbridges:acacia_bridge_pier
+- mcwbridges:dark_oak_bridge_pier
+- mcwbridges:crimson_bridge_pier
+- mcwbridges:warped_bridge_pier
+- mcwbridges:bamboo_bridge_pier
+- mcwbridges:dry_bamboo_bridge_pier
+- mcwbridges:oak_log_bridge_stair
+- mcwbridges:spruce_log_bridge_stair
+- mcwbridges:birch_log_bridge_stair
+- mcwbridges:jungle_log_bridge_stair
+- mcwbridges:acacia_log_bridge_stair
+- mcwbridges:dark_oak_log_bridge_stair
+- mcwbridges:crimson_log_bridge_stair
+- mcwbridges:warped_log_bridge_stair
+- mcwbridges:oak_rope_bridge_stair
+- mcwbridges:spruce_rope_bridge_stair
+- mcwbridges:birch_rope_bridge_stair
+- mcwbridges:jungle_rope_bridge_stair
+- mcwbridges:acacia_rope_bridge_stair
+- mcwbridges:dark_oak_rope_bridge_stair
+- mcwbridges:crimson_rope_bridge_stair
+- mcwbridges:warped_rope_bridge_stair
+- mcwbridges:bamboo_bridge_stair
+- mcwbridges:dry_bamboo_bridge_stair
 - mcwfences:oak_picket_fence
 - mcwfences:spruce_picket_fence
 - mcwfences:birch_picket_fence
@@ -7321,6 +8491,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:black_sail
 - #minecraft:wool
 
+#forge:storage_blocks/bloodbrass
+- bloodsmeltery:bloodbrass_block
+
 #sereneseasons:spring_crops
 - minecraft:oak_sapling
 - minecraft:birch_sapling
@@ -7383,6 +8556,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:seared_chute
 - tconstruct:seared_duct
 
+#mcwfurnitures:drawer
+- mcwfurnitures:oak_drawer
+- mcwfurnitures:birch_drawer
+- mcwfurnitures:spruce_drawer
+- mcwfurnitures:jungle_drawer
+- mcwfurnitures:acacia_drawer
+- mcwfurnitures:dark_oak_drawer
+- mcwfurnitures:crimson_drawer
+- mcwfurnitures:warped_drawer
+- mcwfurnitures:stripped_oak_drawer
+- mcwfurnitures:stripped_birch_drawer
+- mcwfurnitures:stripped_spruce_drawer
+- mcwfurnitures:stripped_jungle_drawer
+- mcwfurnitures:stripped_acacia_drawer
+- mcwfurnitures:stripped_dark_oak_drawer
+- mcwfurnitures:stripped_crimson_drawer
+- mcwfurnitures:stripped_warped_drawer
+
 #forge:storage_blocks/benitoite
 - silentgems:benitoite_block
 
@@ -7406,6 +8597,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:stripped_red_archwood_wood
 - ars_nouveau:stripped_green_archwood_wood
 - ars_nouveau:stripped_purple_archwood_wood
+
+#mcwfurnitures:lower_triple_drawer
+- mcwfurnitures:oak_lower_triple_drawer
+- mcwfurnitures:birch_lower_triple_drawer
+- mcwfurnitures:spruce_lower_triple_drawer
+- mcwfurnitures:jungle_lower_triple_drawer
+- mcwfurnitures:acacia_lower_triple_drawer
+- mcwfurnitures:dark_oak_lower_triple_drawer
+- mcwfurnitures:crimson_lower_triple_drawer
+- mcwfurnitures:warped_lower_triple_drawer
+- mcwfurnitures:stripped_oak_lower_triple_drawer
+- mcwfurnitures:stripped_birch_lower_triple_drawer
+- mcwfurnitures:stripped_spruce_lower_triple_drawer
+- mcwfurnitures:stripped_jungle_lower_triple_drawer
+- mcwfurnitures:stripped_acacia_lower_triple_drawer
+- mcwfurnitures:stripped_dark_oak_lower_triple_drawer
+- mcwfurnitures:stripped_crimson_lower_triple_drawer
+- mcwfurnitures:stripped_warped_lower_triple_drawer
 
 #silentgems:glowroses/kyanite
 - silentgems:kyanite_glowrose
@@ -7452,6 +8661,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #botania:terra_plate_base
 - botania:livingrock
 - botania:shimmerrock
+
+#mcwfurnitures:table
+- mcwfurnitures:oak_table
+- mcwfurnitures:birch_table
+- mcwfurnitures:spruce_table
+- mcwfurnitures:jungle_table
+- mcwfurnitures:acacia_table
+- mcwfurnitures:dark_oak_table
+- mcwfurnitures:crimson_table
+- mcwfurnitures:warped_table
+- mcwfurnitures:stripped_oak_table
+- mcwfurnitures:stripped_birch_table
+- mcwfurnitures:stripped_spruce_table
+- mcwfurnitures:stripped_jungle_table
+- mcwfurnitures:stripped_acacia_table
+- mcwfurnitures:stripped_dark_oak_table
+- mcwfurnitures:stripped_crimson_table
+- mcwfurnitures:stripped_warped_table
 
 #forge:ores/garnet
 - silentgems:garnet_ore
@@ -7792,6 +9019,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwfences:nether_brick_railing_gate
 - mcwfences:end_brick_railing_gate
 - mcwfences:quartz_railing_gate
+- mcwfences:prismarine_railing_gate
 - tconstruct:greenheart_fence_gate
 - tconstruct:skyroot_fence_gate
 - tconstruct:bloodshroom_fence_gate
@@ -8824,12 +10052,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - iceandfire:amythest_ore
 - #forge:ores/ironwood
 - #forge:ores/knightmetal
-- immersiveengineering:ore_copper
-- immersiveengineering:ore_aluminum
-- immersiveengineering:ore_lead
-- immersiveengineering:ore_silver
-- immersiveengineering:ore_nickel
-- immersiveengineering:ore_uranium
 - ars_nouveau:arcane_ore
 - elementalcraft:crystalore
 - create:copper_ore
@@ -8840,6 +10062,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - draconicevolution:end_draconium_ore
 - draconicevolution:nether_draconium_ore
 - draconicevolution:overworld_draconium_ore
+- immersiveengineering:ore_copper
+- immersiveengineering:ore_aluminum
+- immersiveengineering:ore_lead
+- immersiveengineering:ore_silver
+- immersiveengineering:ore_nickel
+- immersiveengineering:ore_uranium
 - #forge:ores/inferium
 - #forge:ores/prosperity
 - #forge:ores/soulium
@@ -8907,6 +10135,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/nether_brick
 - jaopca:storage_blocks.nether_brick
+
+#mcwfurnitures:coffee_table
+- mcwfurnitures:oak_coffee_table
+- mcwfurnitures:birch_coffee_table
+- mcwfurnitures:spruce_coffee_table
+- mcwfurnitures:jungle_coffee_table
+- mcwfurnitures:acacia_coffee_table
+- mcwfurnitures:dark_oak_coffee_table
+- mcwfurnitures:crimson_coffee_table
+- mcwfurnitures:warped_coffee_table
+- mcwfurnitures:stripped_oak_coffee_table
+- mcwfurnitures:stripped_birch_coffee_table
+- mcwfurnitures:stripped_spruce_coffee_table
+- mcwfurnitures:stripped_jungle_coffee_table
+- mcwfurnitures:stripped_acacia_coffee_table
+- mcwfurnitures:stripped_dark_oak_coffee_table
+- mcwfurnitures:stripped_crimson_coffee_table
+- mcwfurnitures:stripped_warped_coffee_table
 
 #forge:storage_blocks/starmetal
 - astralsorcery:starmetal?
@@ -9492,6 +10738,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - chisel:planks/jungle/log_cabin
 - minecraft:jungle_planks
 
+#mcwtrpdoors:paper_trapdoors
+- mcwtrpdoors:oak_paper_trapdoor
+- mcwtrpdoors:spruce_paper_trapdoor
+- mcwtrpdoors:jungle_paper_trapdoor
+- mcwtrpdoors:acacia_paper_trapdoor
+- mcwtrpdoors:dark_oak_paper_trapdoor
+- mcwtrpdoors:crimson_paper_trapdoor
+- mcwtrpdoors:warped_paper_trapdoor
+- mcwtrpdoors:bamboo_paper_trapdoor
+
 #refinedstorage:storage_blocks/items/16384k
 - extrastorage:block_16384k
 
@@ -9755,6 +11011,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:cinnabar_block
 - emendatusenigmatica:cinnabar_block
 
+#mcwfurnitures:double_drawer_counter
+- mcwfurnitures:oak_double_drawer_counter
+- mcwfurnitures:birch_double_drawer_counter
+- mcwfurnitures:spruce_double_drawer_counter
+- mcwfurnitures:jungle_double_drawer_counter
+- mcwfurnitures:acacia_double_drawer_counter
+- mcwfurnitures:dark_oak_double_drawer_counter
+- mcwfurnitures:crimson_double_drawer_counter
+- mcwfurnitures:warped_double_drawer_counter
+- mcwfurnitures:stripped_oak_double_drawer_counter
+- mcwfurnitures:stripped_birch_double_drawer_counter
+- mcwfurnitures:stripped_spruce_double_drawer_counter
+- mcwfurnitures:stripped_jungle_double_drawer_counter
+- mcwfurnitures:stripped_acacia_double_drawer_counter
+- mcwfurnitures:stripped_dark_oak_double_drawer_counter
+- mcwfurnitures:stripped_crimson_double_drawer_counter
+- mcwfurnitures:stripped_warped_double_drawer_counter
+
 #forge:storage_blocks/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_block
 
@@ -9829,6 +11103,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #byg:ground_orange_oak_sapling
 - #forge:dirt
+
+#mcwfurnitures:end_table
+- mcwfurnitures:oak_end_table
+- mcwfurnitures:birch_end_table
+- mcwfurnitures:spruce_end_table
+- mcwfurnitures:jungle_end_table
+- mcwfurnitures:acacia_end_table
+- mcwfurnitures:dark_oak_end_table
+- mcwfurnitures:crimson_end_table
+- mcwfurnitures:warped_end_table
+- mcwfurnitures:stripped_oak_end_table
+- mcwfurnitures:stripped_birch_end_table
+- mcwfurnitures:stripped_spruce_end_table
+- mcwfurnitures:stripped_jungle_end_table
+- mcwfurnitures:stripped_acacia_end_table
+- mcwfurnitures:stripped_dark_oak_end_table
+- mcwfurnitures:stripped_crimson_end_table
+- mcwfurnitures:stripped_warped_end_table
 
 #forge:storage_blocks/azure_electrum
 - silentgear:azure_electrum_block
@@ -9912,6 +11204,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:metal_hospital_door
 - mcwdoors:metal_reinforced_door
 - mcwdoors:metal_windowed_door
+- mcwdoors:store_door
+- mcwdoors:sliding_glass_door
 - mcwdoors:jail_door
 - ars_nouveau:archwood_door
 - upgrade_aquatic:tooth_door
@@ -10012,7 +11306,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - twilightforest:potted_thorn
 - twilightforest:potted_green_thorn
 - twilightforest:potted_dead_thorn
-- immersiveengineering:potted_hemp
 - bamboo_blocks:potted_bamboo_torch
 - bamboo_blocks:potted_soul_bamboo_torch
 - bamboo_blocks:potted_ender_bamboo_torch
@@ -10024,6 +11317,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - endergetic:potted_poise_bush
 - endergetic:potted_tall_poise_bush
 - savageandravage:potted_creeper_spores
+- immersiveengineering:potted_hemp
 - quark:potted_beetroot
 - quark:potted_berries
 - quark:potted_blue_blossom_sapling
@@ -10118,6 +11412,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #byg:ground_flowering_jacaranda_bush
 - #forge:dirt
+
+#mcwtrpdoors:glass_trapdoors
+- mcwtrpdoors:oak_glass_trapdoor
+- mcwtrpdoors:spruce_glass_trapdoor
+- mcwtrpdoors:birch_glass_trapdoor
+- mcwtrpdoors:jungle_glass_trapdoor
+- mcwtrpdoors:acacia_glass_trapdoor
+- mcwtrpdoors:dark_oak_glass_trapdoor
+- mcwtrpdoors:crimson_glass_trapdoor
+- mcwtrpdoors:warped_glass_trapdoor
+- mcwtrpdoors:bamboo_glass_trapdoor
 
 #twilightforest:trophies
 - twilightforest:naga_trophy
@@ -10243,6 +11548,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/morganite
 - silentgems:morganite_block
+
+#mcwbridges:stone_piers
+- mcwbridges:stone_bridge_pier
+- mcwbridges:sandstone_bridge_pier
+- mcwbridges:brick_bridge_pier
+- mcwbridges:red_sandstone_bridge_pier
+- mcwbridges:blackstone_bridge_pier
+- mcwbridges:mossy_stone_bridge_pier
 
 #forge:storage_blocks/osmium
 - mekanism:block_osmium
@@ -10442,8 +11755,34 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #byg:ground_orchard_sapling
 - #forge:dirt
 
+#mcwfurnitures:covered_desk
+- mcwfurnitures:oak_covered_desk
+- mcwfurnitures:birch_covered_desk
+- mcwfurnitures:spruce_covered_desk
+- mcwfurnitures:jungle_covered_desk
+- mcwfurnitures:acacia_covered_desk
+- mcwfurnitures:dark_oak_covered_desk
+- mcwfurnitures:crimson_covered_desk
+- mcwfurnitures:warped_covered_desk
+- mcwfurnitures:stripped_oak_covered_desk
+- mcwfurnitures:stripped_birch_covered_desk
+- mcwfurnitures:stripped_spruce_covered_desk
+- mcwfurnitures:stripped_jungle_covered_desk
+- mcwfurnitures:stripped_acacia_covered_desk
+- mcwfurnitures:stripped_dark_oak_covered_desk
+- mcwfurnitures:stripped_crimson_covered_desk
+- mcwfurnitures:stripped_warped_covered_desk
+
 #endergetic:end_plantable
 - endergetic:eumus
+
+#mcwwindows:gothic
+- mcwwindows:stone_brick_gothic
+- mcwwindows:end_brick_gothic
+- mcwwindows:nether_brick_gothic
+- mcwwindows:prismarine_brick_gothic
+- mcwwindows:blackstone_brick_gothic
+- mcwwindows:dark_prismarine_brick_gothic
 
 #byg:ground_ebony_sapling
 - #forge:dirt
@@ -10536,6 +11875,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - envirocore:xerothium_tile_stairs
 - envirocore:xerothium_tile_small_stairs
 
+#mcwfurnitures:wadrobe
+- mcwfurnitures:oak_wardrobe
+- mcwfurnitures:birch_wardrobe
+- mcwfurnitures:spruce_wardrobe
+- mcwfurnitures:jungle_wardrobe
+- mcwfurnitures:acacia_wardrobe
+- mcwfurnitures:dark_oak_wardrobe
+- mcwfurnitures:crimson_wardrobe
+- mcwfurnitures:warped_wardrobe
+- mcwfurnitures:stripped_oak_wardrobe
+- mcwfurnitures:stripped_birch_wardrobe
+- mcwfurnitures:stripped_spruce_wardrobe
+- mcwfurnitures:stripped_jungle_wardrobe
+- mcwfurnitures:stripped_acacia_wardrobe
+- mcwfurnitures:stripped_dark_oak_wardrobe
+- mcwfurnitures:stripped_crimson_wardrobe
+- mcwfurnitures:stripped_warped_wardrobe
+
 #tconstruct:slimy_grass
 - #tconstruct:slimy_grass/earth
 - #tconstruct:slimy_grass/sky
@@ -10596,6 +11953,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #minecraft:corals
 - #minecraft:wall_corals
 
+#mcwfurnitures:double_wardrobe
+- mcwfurnitures:oak_double_wardrobe
+- mcwfurnitures:birch_double_wardrobe
+- mcwfurnitures:spruce_double_wardrobe
+- mcwfurnitures:jungle_double_wardrobe
+- mcwfurnitures:acacia_double_wardrobe
+- mcwfurnitures:dark_oak_double_wardrobe
+- mcwfurnitures:crimson_double_wardrobe
+- mcwfurnitures:warped_double_wardrobe
+- mcwfurnitures:stripped_oak_double_wardrobe
+- mcwfurnitures:stripped_birch_double_wardrobe
+- mcwfurnitures:stripped_spruce_double_wardrobe
+- mcwfurnitures:stripped_jungle_double_wardrobe
+- mcwfurnitures:stripped_acacia_double_wardrobe
+- mcwfurnitures:stripped_dark_oak_double_wardrobe
+- mcwfurnitures:stripped_crimson_double_wardrobe
+- mcwfurnitures:stripped_warped_double_wardrobe
+
 #minecraft:impermeable
 - minecraft:glass
 - minecraft:white_stained_glass
@@ -10614,6 +11989,41 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:green_stained_glass
 - minecraft:red_stained_glass
 - minecraft:black_stained_glass
+- minecraft:glass
+- minecraft:white_stained_glass
+- minecraft:orange_stained_glass
+- minecraft:magenta_stained_glass
+- minecraft:light_blue_stained_glass
+- minecraft:yellow_stained_glass
+- minecraft:lime_stained_glass
+- minecraft:pink_stained_glass
+- minecraft:gray_stained_glass
+- minecraft:light_gray_stained_glass
+- minecraft:cyan_stained_glass
+- minecraft:purple_stained_glass
+- minecraft:blue_stained_glass
+- minecraft:brown_stained_glass
+- minecraft:green_stained_glass
+- minecraft:red_stained_glass
+- minecraft:black_stained_glass
+- mcwwindows:white_mosaic_glass
+- mcwwindows:orange_mosaic_glass
+- mcwwindows:magenta_mosaic_glass
+- mcwwindows:light_blue_mosaic_glass
+- mcwwindows:yellow_mosaic_glass
+- mcwwindows:lime_mosaic_glass
+- mcwwindows:pink_mosaic_glass
+- mcwwindows:gray_mosaic_glass
+- mcwwindows:light_gray_mosaic_glass
+- mcwwindows:cyan_mosaic_glass
+- mcwwindows:purple_mosaic_glass
+- mcwwindows:blue_mosaic_glass
+- mcwwindows:brown_mosaic_glass
+- mcwwindows:green_mosaic_glass
+- mcwwindows:red_mosaic_glass
+- mcwwindows:black_mosaic_glass
+- mcwwindows:one_way_glass
+- mcwwindows:one_way_glass_pane
 - botania:elf_glass
 - botania:mana_glass
 - botania:bifrost
@@ -10928,6 +12338,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/ironwood
 - #forge:storage_blocks/knightmetal
 - #forge:storage_blocks/steeleaf
+- #forge:storage_blocks/drenched_iron
+- #forge:storage_blocks/swift_alloy
+- #forge:storage_blocks/fireite
+- create:copper_block
+- create:zinc_block
+- create:brass_block
+- draconicevolution:draconium_block
+- draconicevolution:awakened_draconium_block
 - immersiveengineering:storage_copper
 - immersiveengineering:storage_aluminum
 - immersiveengineering:storage_lead
@@ -10937,14 +12355,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - immersiveengineering:storage_constantan
 - immersiveengineering:storage_electrum
 - immersiveengineering:storage_steel
-- #forge:storage_blocks/drenched_iron
-- #forge:storage_blocks/swift_alloy
-- #forge:storage_blocks/fireite
-- create:copper_block
-- create:zinc_block
-- create:brass_block
-- draconicevolution:draconium_block
-- draconicevolution:awakened_draconium_block
 - #forge:storage_blocks/copper
 - #forge:storage_blocks/cobalt
 - #forge:storage_blocks/slimesteel
@@ -11012,6 +12422,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/rose_quartz
 - #forge:storage_blocks/tektite
 - #forge:storage_blocks/pearl
+- #forge:storage_blocks/bloodbrass
 - jaopca:storage_blocks.aeternium
 - jaopca:storage_blocks.brick
 - jaopca:storage_blocks.cloggrum
@@ -11265,6 +12676,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/redstone
 - minecraft:redstone_block
+
+#paraglider:statues
+- paraglider:horned_statue
+- #paraglider:statues/goddess
 
 #croptopia:cinnamon_logs
 - croptopia:cinnamon_log
@@ -12395,6 +13810,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - silentgems:chaos_iron_block
 - silentgems:chaos_gold_block
 - silentgems:chaos_silver_block
+- #forge:storage_blocks/bloodbrass
 
 #forge:ores/starmetal
 - astralsorcery:starmetal_ore?
@@ -12493,38 +13909,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:red_rockwool
 - thermal:black_rockwool
 
-#minecraft:blockidentifiers
-- wrd:prison_identifier
-- wrd:catacombs_identifier
-- wrd:necropolis_identifier
-- wrd:temple_identifier
-- wrd:ruins_identifier
-- wrd:labyrinth_identifier
-- wrd:maze_identifier
-- wrd:mines_identifier
-- wrd:tomb_identifier
-- wrd:glacier_identifier
-- wrd:frosthold_identifier
-- wrd:tombofice_identifier
-- wrd:magmachambers_identifier
-- wrd:theforge_identifier
-- wrd:fierytomb_identifier
-- wrd:prison_identifier
-- wrd:catacombs_identifier
-- wrd:necropolis_identifier
-- wrd:temple_identifier
-- wrd:ruins_identifier
-- wrd:labyrinth_identifier
-- wrd:maze_identifier
-- wrd:mines_identifier
-- wrd:tomb_identifier
-- wrd:glacier_identifier
-- wrd:frosthold_identifier
-- wrd:tombofice_identifier
-- wrd:magmachambers_identifier
-- wrd:theforge_identifier
-- wrd:fierytomb_identifier
-
 #forge:storage_blocks/tar
 - thermal:tar_block
 
@@ -12545,8 +13929,50 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #byg:ground_torch_ginger
 - #forge:dirt
 
+#mcwfurnitures:bookshelf_drawer
+- mcwfurnitures:oak_bookshelf_drawer
+- mcwfurnitures:birch_bookshelf_drawer
+- mcwfurnitures:spruce_bookshelf_drawer
+- mcwfurnitures:jungle_bookshelf_drawer
+- mcwfurnitures:acacia_bookshelf_drawer
+- mcwfurnitures:dark_oak_bookshelf_drawer
+- mcwfurnitures:crimson_bookshelf_drawer
+- mcwfurnitures:warped_bookshelf_drawer
+- mcwfurnitures:stripped_oak_bookshelf_drawer
+- mcwfurnitures:stripped_birch_bookshelf_drawer
+- mcwfurnitures:stripped_spruce_bookshelf_drawer
+- mcwfurnitures:stripped_jungle_bookshelf_drawer
+- mcwfurnitures:stripped_acacia_bookshelf_drawer
+- mcwfurnitures:stripped_dark_oak_bookshelf_drawer
+- mcwfurnitures:stripped_crimson_bookshelf_drawer
+- mcwfurnitures:stripped_warped_bookshelf_drawer
+
 #forge:pumpkins/carved
 - minecraft:carved_pumpkin
+
+#mcwwindows:parapets
+- mcwwindows:oak_log_parapet
+- mcwwindows:spruce_log_parapet
+- mcwwindows:birch_log_parapet
+- mcwwindows:jungle_log_parapet
+- mcwwindows:acacia_log_parapet
+- mcwwindows:dark_oak_log_parapet
+- mcwwindows:crimson_stem_parapet
+- mcwwindows:warped_stem_parapet
+- mcwwindows:oak_plank_parapet
+- mcwwindows:spruce_plank_parapet
+- mcwwindows:birch_plank_parapet
+- mcwwindows:jungle_plank_parapet
+- mcwwindows:acacia_plank_parapet
+- mcwwindows:dark_oak_plank_parapet
+- mcwwindows:crimson_plank_parapet
+- mcwwindows:warped_plank_parapet
+- mcwwindows:andesite_parapet
+- mcwwindows:diorite_parapet
+- mcwwindows:granite_parapet
+- mcwwindows:blackstone_parapet
+- mcwwindows:prismarine_parapet
+- mcwwindows:dark_prismarine_parapet
 
 #forge:plants
 - #minecraft:wall_corals
@@ -12998,6 +14424,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/kunzite
 - silentgems:kunzite_block
 
+#mcwbridges:bamboo_piers
+- mcwbridges:bamboo_bridge_pier
+- mcwbridges:dry_bamboo_bridge_pier
+
 #forge:storage_blocks/anthracite
 - byg:anthracite_block
 
@@ -13021,6 +14451,38 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:creeper_wall_head
 - minecraft:zombie_head
 - minecraft:zombie_wall_head
+
+#mcwwindows:shutters
+- mcwwindows:oak_shutter
+- mcwwindows:spruce_shutter
+- mcwwindows:birch_shutter
+- mcwwindows:jungle_shutter
+- mcwwindows:acacia_shutter
+- mcwwindows:dark_oak_shutter
+- mcwwindows:crimson_shutter
+- mcwwindows:warped_shutter
+- mcwwindows:bamboo_shutter
+- mcwwindows:oak_louvered_shutter
+- mcwwindows:spruce_louvered_shutter
+- mcwwindows:birch_louvered_shutter
+- mcwwindows:jungle_louvered_shutter
+- mcwwindows:acacia_louvered_shutter
+- mcwwindows:dark_oak_louvered_shutter
+- mcwwindows:crimson_louvered_shutter
+- mcwwindows:warped_louvered_shutter
+- mcwwindows:andesite_louvered_shutter
+- mcwwindows:diorite_louvered_shutter
+- mcwwindows:granite_louvered_shutter
+
+#mcwtrpdoors:barred_trapdoors
+- mcwtrpdoors:oak_barred_trapdoor
+- mcwtrpdoors:spruce_barred_trapdoor
+- mcwtrpdoors:birch_barred_trapdoor
+- mcwtrpdoors:jungle_barred_trapdoor
+- mcwtrpdoors:acacia_barred_trapdoor
+- mcwtrpdoors:dark_oak_barred_trapdoor
+- mcwtrpdoors:warped_barred_trapdoor
+- mcwtrpdoors:bamboo_barred_trapdoor
 
 #chisel:antiblock
 - chisel:antiblock/white
@@ -13132,6 +14594,32 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:basalt
 - minecraft:soul_soil
 
+#mcwbridges:stone_stairs
+- mcwbridges:stone_brick_bridge_stair
+- mcwbridges:sandstone_bridge_stair
+- mcwbridges:brick_bridge_stair
+- mcwbridges:red_sandstone_bridge_stair
+- mcwbridges:blackstone_bridge_stair
+- mcwbridges:mossy_stone_bridge_stair
+
+#mcwfurnitures:modern_chair
+- mcwfurnitures:oak_modern_chair
+- mcwfurnitures:birch_modern_chair
+- mcwfurnitures:spruce_modern_chair
+- mcwfurnitures:jungle_modern_chair
+- mcwfurnitures:acacia_modern_chair
+- mcwfurnitures:dark_oak_modern_chair
+- mcwfurnitures:crimson_modern_chair
+- mcwfurnitures:warped_modern_chair
+- mcwfurnitures:stripped_oak_modern_chair
+- mcwfurnitures:stripped_birch_modern_chair
+- mcwfurnitures:stripped_spruce_modern_chair
+- mcwfurnitures:stripped_jungle_modern_chair
+- mcwfurnitures:stripped_acacia_modern_chair
+- mcwfurnitures:stripped_dark_oak_modern_chair
+- mcwfurnitures:stripped_crimson_modern_chair
+- mcwfurnitures:stripped_warped_modern_chair
+
 #byg:ground_prickly_pear_cactus
 - #forge:sand
 
@@ -13169,6 +14657,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/clay
 - minecraft:clay
+- minecraft:clay
 
 #forge:ores/black_diamond
 - silentgems:black_diamond_ore
@@ -13193,6 +14682,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:stripped_bulbis_stem
 - byg:bulbis_wood
 - byg:stripped_bulbis_wood
+
+#mcwbridges:log_bridges
+- mcwbridges:oak_log_bridge_middle
+- mcwbridges:birch_log_bridge_middle
+- mcwbridges:acacia_log_bridge_middle
+- mcwbridges:spruce_log_bridge_middle
+- mcwbridges:jungle_log_bridge_middle
+- mcwbridges:dark_oak_log_bridge_middle
+- mcwbridges:crimson_log_bridge_middle
+- mcwbridges:warped_log_bridge_middle
 
 #byg:ground_indigo_jacaranda_sapling
 - #forge:dirt
@@ -13325,6 +14824,57 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #cavesandcliffs:moss_replaceable
 - minecraft:clay
 - minecraft:sand
+
+#mcwwindows:mosaic_glass_pane
+- mcwwindows:white_mosaic_glass_pane
+- mcwwindows:orange_mosaic_glass_pane
+- mcwwindows:magenta_mosaic_glass_pane
+- mcwwindows:light_blue_mosaic_glass_pane
+- mcwwindows:yellow_mosaic_glass_pane
+- mcwwindows:lime_mosaic_glass_pane
+- mcwwindows:pink_mosaic_glass_pane
+- mcwwindows:gray_mosaic_glass_pane
+- mcwwindows:light_gray_mosaic_glass_pane
+- mcwwindows:cyan_mosaic_glass_pane
+- mcwwindows:purple_mosaic_glass_pane
+- mcwwindows:blue_mosaic_glass_pane
+- mcwwindows:brown_mosaic_glass_pane
+- mcwwindows:green_mosaic_glass_pane
+- mcwwindows:red_mosaic_glass_pane
+- mcwwindows:black_mosaic_glass_pane
+
+#mcwwindows:windows_four
+- mcwwindows:oak_four_window
+- mcwwindows:oak_plank_four_window
+- mcwwindows:spruce_four_window
+- mcwwindows:spruce_plank_four_window
+- mcwwindows:birch_four_window
+- mcwwindows:birch_plank_four_window
+- mcwwindows:jungle_four_window
+- mcwwindows:jungle_plank_four_window
+- mcwwindows:acacia_four_window
+- mcwwindows:acacia_plank_four_window
+- mcwwindows:dark_oak_four_window
+- mcwwindows:dark_oak_plank_four_window
+- mcwwindows:stripped_oak_log_four_window
+- mcwwindows:stripped_spruce_log_four_window
+- mcwwindows:stripped_birch_log_four_window
+- mcwwindows:stripped_jungle_log_four_window
+- mcwwindows:stripped_acacia_log_four_window
+- mcwwindows:stripped_dark_oak_log_four_window
+- mcwwindows:crimson_stem_four_window
+- mcwwindows:warped_stem_four_window
+- mcwwindows:stripped_crimson_stem_four_window
+- mcwwindows:stripped_warped_stem_four_window
+- mcwwindows:crimson_planks_four_window
+- mcwwindows:warped_planks_four_window
+- mcwwindows:andesite_four_window
+- mcwwindows:diorite_four_window
+- mcwwindows:granite_four_window
+- mcwwindows:stone_four_window
+- mcwwindows:dark_prismarine_four_window
+- mcwwindows:prismarine_four_window
+- mcwwindows:blackstone_four_window
 
 #forge:glass_panes/pink
 - minecraft:pink_stained_glass_pane
@@ -13731,6 +15281,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:storage_blocks/amber
 - silentgems:amber_block
 
+#mcwwindows:arrow_slit
+- mcwwindows:stone_brick_arrow_slit
+- mcwwindows:cobblestone_arrow_slit
+- mcwwindows:nether_brick_arrow_slit
+- mcwwindows:ender_brick_arrow_slit
+- mcwwindows:blackstone_brick_arrow_slit
+- mcwwindows:prismarine_brick_arrow_slit
+- mcwwindows:dark_prismarine_brick_arrow_slit
+
 #envirocore:nanorite_walls
 - envirocore:nanorite_wall
 - envirocore:nanorite_brick_wall
@@ -13863,6 +15422,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - farmersdelight:brown_mushroom_colony
 - farmersdelight:red_mushroom_colony
 
+#mcwbridges:rope_bridges
+- mcwbridges:rope_oak_bridge
+- mcwbridges:rope_spruce_bridge
+- mcwbridges:rope_birch_bridge
+- mcwbridges:rope_jungle_bridge
+- mcwbridges:rope_acacia_bridge
+- mcwbridges:rope_dark_oak_bridge
+- mcwbridges:rope_crimson_bridge
+- mcwbridges:rope_warped_bridge
+
 #quark:ladders
 - bamboo_blocks:bamboo_ladder
 - upgrade_aquatic:driftwood_ladder
@@ -13885,6 +15454,22 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:ores/propserity
 
 #forge:glass_panes
+- mcwwindows:white_mosaic_glass_pane
+- mcwwindows:orange_mosaic_glass_pane
+- mcwwindows:magenta_mosaic_glass_pane
+- mcwwindows:light_blue_mosaic_glass_pane
+- mcwwindows:yellow_mosaic_glass_pane
+- mcwwindows:lime_mosaic_glass_pane
+- mcwwindows:pink_mosaic_glass_pane
+- mcwwindows:gray_mosaic_glass_pane
+- mcwwindows:light_gray_mosaic_glass_pane
+- mcwwindows:cyan_mosaic_glass_pane
+- mcwwindows:purple_mosaic_glass_pane
+- mcwwindows:blue_mosaic_glass_pane
+- mcwwindows:brown_mosaic_glass_pane
+- mcwwindows:green_mosaic_glass_pane
+- mcwwindows:red_mosaic_glass_pane
+- mcwwindows:black_mosaic_glass_pane
 - #forge:glass_panes/colorless
 - #forge:stained_glass_panes
 - elementalcraft:burnt_glass_pane
@@ -14084,8 +15669,25 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - tconstruct:seared_paver
 - #tconstruct:seared_bricks
 
+#paraglider:statues/goddess
+- paraglider:goddess_statue
+- paraglider:kakariko_goddess_statue
+- paraglider:goron_goddess_statue
+- paraglider:rito_goddess_statue
+
 #botania:livingwood
 - botania:livingwood
+
+#mcwtrpdoors:swamp_trapdoors
+- mcwtrpdoors:oak_swamp_trapdoor
+- mcwtrpdoors:spruce_swamp_trapdoor
+- mcwtrpdoors:birch_swamp_trapdoor
+- mcwtrpdoors:jungle_swamp_trapdoor
+- mcwtrpdoors:acacia_swamp_trapdoor
+- mcwtrpdoors:dark_oak_swamp_trapdoor
+- mcwtrpdoors:crimson_swamp_trapdoor
+- mcwtrpdoors:warped_swamp_trapdoor
+- mcwtrpdoors:bamboo_swamp_trapdoor
 
 #byg:nightshade_logs
 - byg:nightshade_log
@@ -14151,6 +15753,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - envirocore:aethium_tile_slab
 - envirocore:aethium_tile_small_slab
 
+#mcwtrpdoors:barn_trapdoors
+- mcwtrpdoors:oak_barn_trapdoor
+- mcwtrpdoors:spruce_barn_trapdoor
+- mcwtrpdoors:birch_barn_trapdoor
+- mcwtrpdoors:jungle_barn_trapdoor
+- mcwtrpdoors:acacia_barn_trapdoor
+- mcwtrpdoors:dark_oak_barn_trapdoor
+- mcwtrpdoors:crimson_barn_trapdoor
+- mcwtrpdoors:warped_barn_trapdoor
+- mcwtrpdoors:bamboo_barn_trapdoor
+
 #forge:storage_blocks/tin
 - mekanism:block_tin
 - thermal:tin_block
@@ -14165,17 +15778,45 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:granite_window2
 - mcwwindows:stone_window
 - mcwwindows:stone_window2
+- mcwwindows:dark_prismarine_window2
+- mcwwindows:dark_prismarine_window
+- mcwwindows:prismarine_window2
+- mcwwindows:prismarine_window
+- mcwwindows:blackstone_window2
+- mcwwindows:blackstone_window
+- mcwwindows:andesite_four_window
+- mcwwindows:diorite_four_window
+- mcwwindows:granite_four_window
+- mcwwindows:stone_four_window
+- mcwwindows:dark_prismarine_four_window
+- mcwwindows:prismarine_four_window
+- mcwwindows:blackstone_four_window
+- mcwwindows:andesite_pane_window
+- mcwwindows:diorite_pane_window
+- mcwwindows:granite_pane_window
+- mcwwindows:stone_pane_window
+- mcwwindows:blackstone_pane_window
+- mcwwindows:prismarine_pane_window
+- mcwwindows:dark_prismarine_pane_window
+- mcwwindows:granite_louvered_shutter
+- mcwwindows:andesite_louvered_shutter
+- mcwwindows:diorite_louvered_shutter
 - mcwwindows:andesite_parapet
 - mcwwindows:diorite_parapet
 - mcwwindows:granite_parapet
 - mcwwindows:stone_brick_gothic
 - mcwwindows:end_brick_gothic
 - mcwwindows:nether_brick_gothic
+- mcwwindows:blackstone_brick_gothic
+- mcwwindows:dark_prismarine_brick_gothic
 - mcwwindows:prismarine_brick_gothic
 - mcwwindows:stone_brick_arrow_slit
 - mcwwindows:cobblestone_arrow_slit
 - mcwwindows:nether_brick_arrow_slit
 - mcwwindows:ender_brick_arrow_slit
+- mcwwindows:blackstone_brick_arrow_slit
+- mcwwindows:prismarine_brick_arrow_slit
+- mcwwindows:dark_prismarine_brick_arrow_slit
 - mcwwindows:andesite_window
 - mcwwindows:andesite_window2
 - mcwwindows:diorite_window
@@ -14184,22 +15825,69 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwwindows:granite_window2
 - mcwwindows:stone_window
 - mcwwindows:stone_window2
+- mcwwindows:dark_prismarine_window2
+- mcwwindows:dark_prismarine_window
+- mcwwindows:prismarine_window2
+- mcwwindows:prismarine_window
+- mcwwindows:blackstone_window2
+- mcwwindows:blackstone_window
+- mcwwindows:andesite_four_window
+- mcwwindows:diorite_four_window
+- mcwwindows:granite_four_window
+- mcwwindows:stone_four_window
+- mcwwindows:dark_prismarine_four_window
+- mcwwindows:prismarine_four_window
+- mcwwindows:blackstone_four_window
+- mcwwindows:andesite_pane_window
+- mcwwindows:diorite_pane_window
+- mcwwindows:granite_pane_window
+- mcwwindows:stone_pane_window
+- mcwwindows:blackstone_pane_window
+- mcwwindows:prismarine_pane_window
+- mcwwindows:dark_prismarine_pane_window
+- mcwwindows:granite_louvered_shutter
+- mcwwindows:andesite_louvered_shutter
+- mcwwindows:diorite_louvered_shutter
 - mcwwindows:andesite_parapet
 - mcwwindows:diorite_parapet
 - mcwwindows:granite_parapet
 - mcwwindows:stone_brick_gothic
 - mcwwindows:end_brick_gothic
 - mcwwindows:nether_brick_gothic
+- mcwwindows:blackstone_brick_gothic
+- mcwwindows:dark_prismarine_brick_gothic
 - mcwwindows:prismarine_brick_gothic
 - mcwwindows:stone_brick_arrow_slit
 - mcwwindows:cobblestone_arrow_slit
 - mcwwindows:nether_brick_arrow_slit
 - mcwwindows:ender_brick_arrow_slit
+- mcwwindows:blackstone_brick_arrow_slit
+- mcwwindows:prismarine_brick_arrow_slit
+- mcwwindows:dark_prismarine_brick_arrow_slit
 - mcwtrpdoors:metal_trapdoor
 - mcwtrpdoors:metal_full_trapdoor
 - mcwtrpdoors:metal_warning_trapdoor
 - mcwlights:lava_lamp
 - mcwlights:garden_light
+- mcwlights:striped_lantern
+- mcwlights:covered_lantern
+- mcwlights:chain_lantern
+- mcwlights:tavern_lantern
+- mcwlights:festive_lantern
+- mcwlights:cross_lantern
+- mcwlights:bell_lantern
+- mcwlights:striped_wall_lantern
+- mcwlights:covered_wall_lantern
+- mcwlights:chain_wall_lantern
+- mcwlights:tavern_wall_lantern
+- mcwlights:festive_wall_lantern
+- mcwlights:cross_wall_lantern
+- mcwlights:bell_wall_lantern
+- mcwlights:wall_lantern
+- mcwlights:redstone_lamp_slab
+- mcwlights:glowstone_slab
+- mcwlights:shroomlight_slab
+- mcwlights:sea_lantern_slab
 - mcwpaths:andesite_diamond_paving
 - mcwpaths:andesite_basket_weave_paving
 - mcwpaths:andesite_square_paving
@@ -14248,18 +15936,48 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwpaths:mossy_cobblestone_honeycomb_paving
 - mcwpaths:mossy_cobblestone_clover_paving
 - mcwpaths:mossy_cobblestone_dumble_paving
-- mcwpaths:cobbled_deepslate_diamond_paving
-- mcwpaths:cobbled_deepslate_basket_weave_paving
-- mcwpaths:cobbled_deepslate_square_paving
-- mcwpaths:cobbled_deepslate_honeycomb_paving
-- mcwpaths:cobbled_deepslate_clover_paving
-- mcwpaths:cobbled_deepslate_dumble_paving
-- mcwpaths:deepslate_diamond_paving
-- mcwpaths:deepslate_basket_weave_paving
-- mcwpaths:deepslate_square_paving
-- mcwpaths:deepslate_honeycomb_paving
-- mcwpaths:deepslate_clover_paving
-- mcwpaths:deepslate_dumble_paving
+- mcwpaths:dark_prismarine_diamond_paving
+- mcwpaths:dark_prismarine_basket_weave_paving
+- mcwpaths:dark_prismarine_square_paving
+- mcwpaths:dark_prismarine_honeycomb_paving
+- mcwpaths:dark_prismarine_clover_paving
+- mcwpaths:dark_prismarine_dumble_paving
+- mcwpaths:blackstone_diamond_paving
+- mcwpaths:blackstone_basket_weave_paving
+- mcwpaths:blackstone_square_paving
+- mcwpaths:blackstone_honeycomb_paving
+- mcwpaths:blackstone_clover_paving
+- mcwpaths:blackstone_dumble_paving
+- mcwpaths:andesite_running_bond_path
+- mcwpaths:andesite_running_bond_slab
+- mcwpaths:andesite_running_bond
+- mcwpaths:diorite_running_bond_path
+- mcwpaths:diorite_running_bond_slab
+- mcwpaths:diorite_running_bond
+- mcwpaths:granite_running_bond_path
+- mcwpaths:granite_running_bond_slab
+- mcwpaths:granite_running_bond
+- mcwpaths:sandstone_running_bond_path
+- mcwpaths:sandstone_running_bond_slab
+- mcwpaths:sandstone_running_bond
+- mcwpaths:red_sandstone_running_bond_path
+- mcwpaths:red_sandstone_running_bond_slab
+- mcwpaths:red_sandstone_running_bond
+- mcwpaths:brick_running_bond_path
+- mcwpaths:brick_running_bond_slab
+- mcwpaths:brick_running_bond
+- mcwpaths:stone_running_bond_path
+- mcwpaths:stone_running_bond_slab
+- mcwpaths:stone_running_bond
+- mcwpaths:mossy_stone_running_bond_path
+- mcwpaths:mossy_stone_running_bond_slab
+- mcwpaths:mossy_stone_running_bond
+- mcwpaths:blackstone_running_bond_path
+- mcwpaths:blackstone_running_bond_slab
+- mcwpaths:blackstone_running_bond
+- mcwpaths:dark_prismarine_running_bond_path
+- mcwpaths:dark_prismarine_running_bond_slab
+- mcwpaths:dark_prismarine_running_bond
 - mcwdoors:metal_door
 - mcwdoors:metal_warning_door
 - mcwdoors:metal_hospital_door
@@ -14270,6 +15988,30 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:garage_silver_door
 - mcwdoors:garage_gray_door
 - mcwdoors:garage_black_door
+- mcwdoors:store_door
+- mcwdoors:sliding_glass_door
+- mcwdoors:iron_portcullis
+- mcwbridges:iron_bridge
+- mcwbridges:brick_bridge
+- mcwbridges:sandstone_bridge
+- mcwbridges:stone_brick_bridge
+- mcwbridges:orange_sandstone_bridge
+- mcwbridges:blackstone_bridge
+- mcwbridges:mossy_stone_brick_bridge
+- mcwbridges:iron_bridge_pier
+- mcwbridges:brick_bridge_pier
+- mcwbridges:sandstone_bridge_pier
+- mcwbridges:stone_bridge_pier
+- mcwbridges:red_sandstone_bridge_pier
+- mcwbridges:blackstone_bridge_pier
+- mcwbridges:mossy_stone_bridge_pier
+- mcwbridges:iron_bridge_stair
+- mcwbridges:stone_brick_bridge_stair
+- mcwbridges:sandstone_bridge_stair
+- mcwbridges:brick_bridge_stair
+- mcwbridges:red_sandstone_bridge_stair
+- mcwbridges:blackstone_bridge_stair
+- mcwbridges:mossy_stone_bridge_stair
 - mcwfences:modern_stone_brick_wall
 - mcwfences:modern_andesite_wall
 - mcwfences:modern_diorite_wall
@@ -14301,6 +16043,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwfences:nether_brick_railing_gate
 - mcwfences:end_brick_railing_gate
 - mcwfences:quartz_railing_gate
+- mcwfences:modern_prismarine_wall
+- mcwfences:railing_prismarine_wall
+- mcwfences:prismarine_railing_gate
+
+#mcwbridges:bamboo_stairs
+- mcwbridges:bamboo_bridge_stair
+- mcwbridges:dry_bamboo_bridge_stair
+
+#mcwbridges:wooden_piers
+- mcwbridges:oak_bridge_pier
+- mcwbridges:spruce_bridge_pier
+- mcwbridges:birch_bridge_pier
+- mcwbridges:jungle_bridge_pier
+- mcwbridges:acacia_bridge_pier
+- mcwbridges:dark_oak_bridge_pier
+- mcwbridges:crimson_bridge_pier
+- mcwbridges:warped_bridge_pier
 
 #minecraft:enderman_holdable
 - #minecraft:small_flowers
@@ -14405,6 +16164,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/fairy
 - #forge:storage_blocks/ebony_psimetal?
 - #forge:storage_blocks/ivory_psimetal?
+- #forge:storage_blocks/bloodbrass
 
 #byg:ground_magenta_tulip
 - #forge:dirt
@@ -14495,8 +16255,28 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - cavesandcliffs:cave_vines
 - cavesandcliffs:cave_vines_plant
 
+#mcwfurnitures:counter
+- mcwfurnitures:oak_counter
+- mcwfurnitures:birch_counter
+- mcwfurnitures:spruce_counter
+- mcwfurnitures:jungle_counter
+- mcwfurnitures:acacia_counter
+- mcwfurnitures:dark_oak_counter
+- mcwfurnitures:crimson_counter
+- mcwfurnitures:warped_counter
+- mcwfurnitures:stripped_oak_counter
+- mcwfurnitures:stripped_birch_counter
+- mcwfurnitures:stripped_spruce_counter
+- mcwfurnitures:stripped_jungle_counter
+- mcwfurnitures:stripped_acacia_counter
+- mcwfurnitures:stripped_dark_oak_counter
+- mcwfurnitures:stripped_crimson_counter
+- mcwfurnitures:stripped_warped_counter
+
 #forge:sheetmetals/electrum
 - immersiveengineering:sheetmetal_electrum
+
+#minecraft:needs_diamond_tool
 
 #chisel:wool/red
 - chisel:wool/red/legacy
@@ -14695,6 +16475,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/brick
 - jaopca:storage_blocks.brick
+
+#mcwbridges:log_stairs
+- mcwbridges:oak_log_bridge_stair
+- mcwbridges:spruce_log_bridge_stair
+- mcwbridges:birch_log_bridge_stair
+- mcwbridges:jungle_log_bridge_stair
+- mcwbridges:acacia_log_bridge_stair
+- mcwbridges:dark_oak_log_bridge_stair
+- mcwbridges:crimson_log_bridge_stair
+- mcwbridges:warped_log_bridge_stair
 
 #chisel:wool/gray
 - chisel:wool/gray/legacy
@@ -15163,6 +16953,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #tconstruct:greenheart_logs
 - #tconstruct:skyroot_logs
 
+#mcwfurnitures:stool_chair
+- mcwfurnitures:oak_stool_chair
+- mcwfurnitures:birch_stool_chair
+- mcwfurnitures:spruce_stool_chair
+- mcwfurnitures:jungle_stool_chair
+- mcwfurnitures:acacia_stool_chair
+- mcwfurnitures:dark_oak_stool_chair
+- mcwfurnitures:crimson_stool_chair
+- mcwfurnitures:warped_stool_chair
+- mcwfurnitures:stripped_oak_stool_chair
+- mcwfurnitures:stripped_birch_stool_chair
+- mcwfurnitures:stripped_spruce_stool_chair
+- mcwfurnitures:stripped_jungle_stool_chair
+- mcwfurnitures:stripped_acacia_stool_chair
+- mcwfurnitures:stripped_dark_oak_stool_chair
+- mcwfurnitures:stripped_crimson_stool_chair
+- mcwfurnitures:stripped_warped_stool_chair
+
+#minecraft:needs_iron_tool
+
 #forge:glass/light_gray
 - minecraft:light_gray_stained_glass
 - tconstruct:light_gray_clear_stained_glass
@@ -15173,6 +16983,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #twilightforest:ore_magnet/minecraft/netherrack
 - minecraft:nether_gold_ore
 - minecraft:nether_quartz_ore
+
+#mcwfurnitures:cupboard_counter
+- mcwfurnitures:oak_cupboard_counter
+- mcwfurnitures:birch_cupboard_counter
+- mcwfurnitures:spruce_cupboard_counter
+- mcwfurnitures:jungle_cupboard_counter
+- mcwfurnitures:acacia_cupboard_counter
+- mcwfurnitures:dark_oak_cupboard_counter
+- mcwfurnitures:crimson_cupboard_counter
+- mcwfurnitures:warped_cupboard_counter
+- mcwfurnitures:stripped_oak_cupboard_counter
+- mcwfurnitures:stripped_birch_cupboard_counter
+- mcwfurnitures:stripped_spruce_cupboard_counter
+- mcwfurnitures:stripped_jungle_cupboard_counter
+- mcwfurnitures:stripped_acacia_cupboard_counter
+- mcwfurnitures:stripped_dark_oak_cupboard_counter
+- mcwfurnitures:stripped_crimson_cupboard_counter
+- mcwfurnitures:stripped_warped_cupboard_counter
 
 #byg:ground_blue_sage
 - #forge:dirt
@@ -15387,6 +17215,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:osmium_violecite_ore
 - emendatusenigmatica:osmium_raw_marble_ore
 
+#mcwbridges:rail_bridges
+- mcwbridges:oak_rail_bridge
+- mcwbridges:spruce_rail_bridge
+- mcwbridges:birch_rail_bridge
+- mcwbridges:jungle_rail_bridge
+- mcwbridges:acacia_rail_bridge
+- mcwbridges:dark_oak_rail_bridge
+- mcwbridges:crimson_rail_bridge
+- mcwbridges:warped_rail_bridge
+
 #infernalexp:anger_warped_shroomloin_blocks
 - minecraft:warped_roots
 - minecraft:warped_fungus
@@ -15399,6 +17237,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/manasteel
 - botania:manasteel_block
+
+#mcwwindows:curtains
+- mcwwindows:white_curtain
+- mcwwindows:orange_curtain
+- mcwwindows:magenta_curtain
+- mcwwindows:light_blue_curtain
+- mcwwindows:yellow_curtain
+- mcwwindows:lime_curtain
+- mcwwindows:pink_curtain
+- mcwwindows:gray_curtain
+- mcwwindows:light_gray_curtain
+- mcwwindows:cyan_curtain
+- mcwwindows:purple_curtain
+- mcwwindows:blue_curtain
+- mcwwindows:brown_curtain
+- mcwwindows:green_curtain
+- mcwwindows:red_curtain
+- mcwwindows:black_curtain
 
 #envirocore:litherite_walls
 - envirocore:litherite_wall
@@ -15645,6 +17501,39 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:crimson_fungus
 - infernalexp:crimson_fungus_cap
 
+#mcwwindows:windows_two
+- mcwwindows:oak_window2
+- mcwwindows:spruce_window2
+- mcwwindows:birch_window2
+- mcwwindows:jungle_window2
+- mcwwindows:acacia_window2
+- mcwwindows:dark_oak_window2
+- mcwwindows:crimson_stem_window2
+- mcwwindows:warped_stem_window2
+- mcwwindows:oak_plank_window2
+- mcwwindows:spruce_plank_window2
+- mcwwindows:birch_plank_window2
+- mcwwindows:jungle_plank_window2
+- mcwwindows:acacia_plank_window2
+- mcwwindows:dark_oak_plank_window2
+- mcwwindows:crimson_planks_window2
+- mcwwindows:warped_planks_window2
+- mcwwindows:dark_prismarine_window2
+- mcwwindows:prismarine_window2
+- mcwwindows:blackstone_window2
+- mcwwindows:stripped_oak_log_window2
+- mcwwindows:stripped_spruce_log_window2
+- mcwwindows:stripped_birch_log_window2
+- mcwwindows:stripped_jungle_log_window2
+- mcwwindows:stripped_acacia_log_window2
+- mcwwindows:stripped_dark_oak_log_window2
+- mcwwindows:stripped_crimson_stem_window2
+- mcwwindows:stripped_warped_stem_window2
+- mcwwindows:andesite_window2
+- mcwwindows:diorite_window2
+- mcwwindows:granite_window2
+- mcwwindows:stone_window2
+
 #byg:ground_richea
 - #forge:dirt
 
@@ -15822,6 +17711,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:end_stone
 - twilightforest:root
 
+#mcwfurnitures:desk
+- mcwfurnitures:oak_desk
+- mcwfurnitures:birch_desk
+- mcwfurnitures:spruce_desk
+- mcwfurnitures:jungle_desk
+- mcwfurnitures:acacia_desk
+- mcwfurnitures:dark_oak_desk
+- mcwfurnitures:crimson_desk
+- mcwfurnitures:warped_desk
+- mcwfurnitures:stripped_oak_desk
+- mcwfurnitures:stripped_birch_desk
+- mcwfurnitures:stripped_spruce_desk
+- mcwfurnitures:stripped_jungle_desk
+- mcwfurnitures:stripped_acacia_desk
+- mcwfurnitures:stripped_dark_oak_desk
+- mcwfurnitures:stripped_crimson_desk
+- mcwfurnitures:stripped_warped_desk
+
 #minecraft:piglin_repellants
 - decorative_blocks:soul_chandelier
 - decorative_blocks:soul_brazier
@@ -15943,6 +17850,24 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:ores/euclase
 - silentgems:euclase_ore
+
+#mcwfurnitures:bookshelf
+- mcwfurnitures:oak_bookshelf
+- mcwfurnitures:birch_bookshelf
+- mcwfurnitures:spruce_bookshelf
+- mcwfurnitures:jungle_bookshelf
+- mcwfurnitures:acacia_bookshelf
+- mcwfurnitures:dark_oak_bookshelf
+- mcwfurnitures:crimson_bookshelf
+- mcwfurnitures:warped_bookshelf
+- mcwfurnitures:stripped_oak_bookshelf
+- mcwfurnitures:stripped_birch_bookshelf
+- mcwfurnitures:stripped_spruce_bookshelf
+- mcwfurnitures:stripped_jungle_bookshelf
+- mcwfurnitures:stripped_acacia_bookshelf
+- mcwfurnitures:stripped_dark_oak_bookshelf
+- mcwfurnitures:stripped_crimson_bookshelf
+- mcwfurnitures:stripped_warped_bookshelf
 
 #byg:jacaranda_logs
 - byg:jacaranda_log
@@ -16520,6 +18445,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/slag
 - thermal:slag_block
+
+#mcwtrpdoors:ranch_trapdoors
+- mcwtrpdoors:oak_ranch_trapdoor
+- mcwtrpdoors:spruce_ranch_trapdoor
+- mcwtrpdoors:birch_ranch_trapdoor
+- mcwtrpdoors:jungle_ranch_trapdoor
+- mcwtrpdoors:acacia_ranch_trapdoor
+- mcwtrpdoors:dark_oak_ranch_trapdoor
+- mcwtrpdoors:crimson_ranch_trapdoor
+- mcwtrpdoors:warped_ranch_trapdoor
 
 #forge:chests/personal
 - mekanism:personal_chest

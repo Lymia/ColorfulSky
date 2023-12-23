@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.lapis",
+  "colors": [
+    "224baf",
+    "5a82e2"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/lapis"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.quartz",
+  "colors": [
+    "94867d",
+    "ffffff"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/quartz"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}

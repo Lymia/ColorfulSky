@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Aug 22, 2022 8:12:13 AM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:17:06 AM
 
 #forge:molten/lapis
 - emendatusenigmatica:molten_lapis
@@ -15,10 +15,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #minecraft:water
 - minecraft:water
 - minecraft:flowing_water
-- wrd:poison
-- wrd:poison_flowing
-- wrd:icewater
-- wrd:icewater_flowing
 - cyclic:biomass
 - cyclic:biomass_flowing
 - cyclic:honey
@@ -105,6 +101,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:molten_starmetal
 - #forge:molten_pink_slime
 - #forge:molten_psimetal
+- #forge:molten_bloodbrass
 
 #forge:molten_tanzanite
 - jaopca:molten.tanzanite
@@ -162,15 +159,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten_aquamarine
 - jaopca:molten.aquamarine
 
+#forge:molten_bloodbrass
+- #bloodsmeltery:molten_bloodbrass
+
 #forge:molten/gold
 - emendatusenigmatica:molten_gold
 
 #forge:molten_enderium
 - emendatusenigmatica:molten_enderium
 - #tconstruct:molten_enderium
-
-#forge:molten_dragonstone
-- jaopca:molten.dragonstone
 
 #forge:tritium
 - mekanismgenerators:tritium
@@ -236,6 +233,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten_thallasium
 - emendatusenigmatica:molten_thallasium
 
+#bloodsmeltery:destructive_will
+- bloodsmeltery:destructive_will
+- bloodsmeltery:flowing_destructive_will
+
 #forge:molten/bronze
 - emendatusenigmatica:molten_bronze
 
@@ -245,6 +246,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:ender
 - thermal:ender
 - #tconstruct:molten_ender
+
+#bloodsmeltery:default_will
+- bloodsmeltery:default_will
+- bloodsmeltery:flowing_default_will
 
 #forge:molten/cinnabar
 - emendatusenigmatica:molten_cinnabar
@@ -271,6 +276,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:deuterium
 - mekanismgenerators:deuterium
 - mekanismgenerators:flowing_deuterium
+
+#bloodsmeltery:steadfast_will
+- bloodsmeltery:steadfast_will
+- bloodsmeltery:flowing_steadfast_will
 
 #forge:molten/peridot
 - emendatusenigmatica:molten_peridot
@@ -305,11 +314,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - jaopca:molten.yellow_diamond
 
 #bloodsmeltery:demon_will
-- bloodsmeltery:default_will
-- bloodsmeltery:corrosive_will
-- bloodsmeltery:destructive_will
-- bloodsmeltery:vengeful_will
-- bloodsmeltery:steadfast_will
+- #bloodsmeltery:default_will
+- #bloodsmeltery:corrosive_will
+- #bloodsmeltery:destructive_will
+- #bloodsmeltery:vengeful_will
+- #bloodsmeltery:steadfast_will
 
 #forge:molten_kunzite
 - jaopca:molten.kunzite
@@ -362,6 +371,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten_potassium_nitrate
 - emendatusenigmatica:molten_potassium_nitrate
 
+#bloodsmeltery:corrosive_will
+- bloodsmeltery:corrosive_will
+- bloodsmeltery:flowing_corrosive_will
+
 #forge:fusion_fuel
 - mekanismgenerators:fusion_fuel
 - mekanismgenerators:flowing_fusion_fuel
@@ -380,6 +393,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:molten_refined_glowstone
 - #tconstruct:molten_refined_glowstone
+
+#bloodsmeltery:vengeful_will
+- bloodsmeltery:vengeful_will
+- bloodsmeltery:flowing_vengeful_will
 
 #forge:molten/steel
 - emendatusenigmatica:molten_steel
@@ -472,6 +489,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:molten_bort
 - jaopca:molten.bort
+
+#bloodsmeltery:molten_bloodbrass
+- bloodsmeltery:molten_bloodbrass
+- bloodsmeltery:flowing_molten_bloodbrass
 
 #forge:molten_cloggrum
 - emendatusenigmatica:molten_cloggrum
@@ -591,7 +612,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - jaopca:molten.citrine
 - jaopca:molten.coral
 - jaopca:molten.crimson_iron
-- jaopca:molten.dragonstone
 - jaopca:molten.euclase
 - jaopca:molten.garnet
 - jaopca:molten.green_sapphire
@@ -1095,6 +1115,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:molten/utherium
 - emendatusenigmatica:molten_utherium
 
+#forge:monster_essence
+- #bloodsmeltery:demon_will
+
 #forge:molten_gold
 - emendatusenigmatica:molten_gold
 - #tconstruct:molten_gold
@@ -1238,6 +1261,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:molten_draconium
 - #forge:molten_draconium_awakened
 - #forge:molten_flux_infused
+- #forge:molten_bloodbrass
 
 #tconstruct:molten_zinc
 - tconstruct:molten_zinc
@@ -1291,6 +1315,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #tconstruct:molten_hepatizon
 - tconstruct:molten_hepatizon
 - tconstruct:flowing_molten_hepatizon
+
+#forge:demon_will
+- #bloodsmeltery:demon_will
 
 #forge:molten_flux_infused
 - materialis:molten_flux_infused

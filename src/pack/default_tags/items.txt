@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Aug 19, 2022 9:46:12 AM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:17:06 AM
 
 #bloodmagic:gravels/utherium
 - emendatusenigmatica:utherium_gravel
@@ -1320,6 +1320,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:stripped_warped_hyphae
 - decorative_blocks:warped_beam
 
+#paraglider:paragliders
+- paraglider:paraglider
+- paraglider:deku_leaf
+
 #forge:dusts/ender_pearl
 - thermal:ender_pearl_dust
 
@@ -1838,8 +1842,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mekanism:dust_gold
 - thermal:gold_dust
 - emendatusenigmatica:gold_dust
-- immersiveengineering:dust_gold
 - bloodmagic:goldsand
+- immersiveengineering:dust_gold
 
 #forge:rhubarb_pies
 - croptopia:rhubarb_pie
@@ -2373,6 +2377,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - eidolon:basic_belt
 - eidolon:gravity_belt
 - eidolon:resolute_belt
+- treasure2:pouch
 - ars_nouveau:belt_of_levitation
 - ars_nouveau:belt_of_unstable_gifts
 - cyclic:charm_ultimate?
@@ -3155,6 +3160,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:metal_hospital_door
 - mcwdoors:metal_reinforced_door
 - mcwdoors:metal_windowed_door
+- mcwdoors:store_door
+- mcwdoors:sliding_glass_door
 - mcwdoors:jail_door
 - ars_nouveau:archwood_door
 - upgrade_aquatic:tooth_door
@@ -3544,6 +3551,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:jams/blackberry_jam
 - croptopia:blackberry_jam
+
+#paraglider:statues
+- paraglider:horned_statue
+- #paraglider:statues/goddess
 
 #forge:storage_blocks/yellow_diamond
 - silentgems:yellow_diamond_block
@@ -4020,8 +4031,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:plates/iron
 - thermal:iron_plate
 - emendatusenigmatica:iron_plate
-- immersiveengineering:plate_iron
 - create:iron_sheet
+- immersiveengineering:plate_iron
 
 #forge:dusts/ammolite
 - jaopca:dusts.ammolite
@@ -5326,6 +5337,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:graphite_dust
 - emendatusenigmatica:lithium_dust
 - emendatusenigmatica:wood_dust
+- rftoolsbase:dimensionalshard
+- #forge:dusts/draconium_awakened
+- #forge:dusts/draconium
 - immersiveengineering:dust_copper
 - immersiveengineering:dust_aluminum
 - immersiveengineering:dust_lead
@@ -5337,9 +5351,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - immersiveengineering:dust_steel
 - immersiveengineering:dust_iron
 - immersiveengineering:dust_gold
-- rftoolsbase:dimensionalshard
-- #forge:dusts/draconium_awakened
-- #forge:dusts/draconium
 - #forge:dusts/flux_infused
 - #silentgems:corrupted_dusts
 - silentgems:chaos_dust
@@ -5527,6 +5538,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:baked_sweet_potatos
 - croptopia:baked_sweet_potato
+
+#treasure2:bracelet
+- treasure2:copper_bracelet
+- treasure2:silver_bracelet
+- treasure2:gold_bracelet
 
 #bloodmagic:fragments/lapis
 - emendatusenigmatica:lapis_fragment
@@ -6526,6 +6542,29 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - byg:polished_travertine_wall
 - byg:chiseled_travertine_wall
 - byg:chiseled_fungal_imparius_wall
+- minecraft:cobblestone_wall
+- minecraft:mossy_cobblestone_wall
+- minecraft:brick_wall
+- minecraft:prismarine_wall
+- minecraft:red_sandstone_wall
+- minecraft:mossy_stone_brick_wall
+- minecraft:granite_wall
+- minecraft:stone_brick_wall
+- minecraft:nether_brick_wall
+- minecraft:andesite_wall
+- minecraft:red_nether_brick_wall
+- minecraft:sandstone_wall
+- minecraft:end_stone_brick_wall
+- minecraft:diorite_wall
+- minecraft:blackstone_wall
+- minecraft:polished_blackstone_brick_wall
+- minecraft:polished_blackstone_wall
+- mcwfences:oak_hedge
+- mcwfences:spruce_hedge
+- mcwfences:birch_hedge
+- mcwfences:jungle_hedge
+- mcwfences:acacia_hedge
+- mcwfences:dark_oak_hedge
 - elementalcraft:purerock_wall
 - elementalcraft:whiterock_brick_wall
 - elementalcraft:whiterock_wall
@@ -7508,6 +7547,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:rubberwood_logs
 
+#treasure2:pouch
+- treasure2:copper_charm
+- treasure2:silver_charm
+- treasure2:gold_charm
+- minecraft:diamond
+- minecraft:emerald
+
 #forge:ores/citrine
 - silentgems:citrine_ore
 
@@ -7843,6 +7889,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwfences:railing_sandstone_wall
 - mcwfences:railing_red_sandstone_wall
 - mcwfences:railing_quartz_wall
+- mcwfences:modern_prismarine_wall
+- mcwfences:railing_prismarine_wall
 - ars_nouveau:archwood_fence
 - elementalcraft:whiterock_fence
 
@@ -8072,6 +8120,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - ars_nouveau:archwood_trapdoor
 - upgrade_aquatic:tooth_trapdoor
 - upgrade_aquatic:glass_trapdoor
+
+#treasure2:ring
+- treasure2:copper_ring
+- treasure2:silver_ring
+- treasure2:gold_ring
 
 #forge:ingots/gold
 - minecraft:gold_ingot
@@ -8422,6 +8475,18 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:fluid_reservoir
 - thermal:potion_infuser
 - eidolon:prestigious_palm
+- treasure2:pocket_watch
+- treasure2:sapphire_charm
+- treasure2:legendary_charm
+- treasure2:onyx_charm
+- treasure2:silver_charm
+- treasure2:diamond_charm
+- treasure2:topaz_charm
+- treasure2:ruby_charm
+- treasure2:gold_charm
+- treasure2:copper_charm
+- treasure2:emerald_charm
+- treasure2:mythical_charm
 - enigmaticlegacy:enigmatic_amulet
 - enigmaticlegacy:mega_sponge
 - enigmaticlegacy:monster_charm
@@ -8587,8 +8652,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:writable_book
 - tmechworks:book
 - astralsorcery:tome
-- immersiveengineering:manual
 - patchouli:guide_book
+- immersiveengineering:manual
 - #tconstruct:guides
 
 #mekanism:clumps/sulfur
@@ -10726,8 +10791,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mekanism:dust_iron
 - thermal:iron_dust
 - emendatusenigmatica:iron_dust
-- immersiveengineering:dust_iron
 - bloodmagic:ironsand
+- immersiveengineering:dust_iron
 
 #forge:armor/bronze
 
@@ -10764,6 +10829,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:lapis_chunk
 - emendatusenigmatica:quartz_chunk
 - emendatusenigmatica:redstone_chunk
+
+#paraglider:statues/goddess
+- paraglider:goddess_statue
+- paraglider:kakariko_goddess_statue
+- paraglider:goron_goddess_statue
+- paraglider:rito_goddess_statue
 
 #buzzier_bees:candle_base
 - quark:tallow
@@ -10834,6 +10905,99 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - eidolon:sanguine_amulet
 - eidolon:void_amulet
 - eidolon:glass_hand
+- treasure2:iron_necklace
+- treasure2:copper_necklace
+- treasure2:silver_necklace
+- treasure2:gold_necklace
+- treasure2:diamond_iron_necklace
+- treasure2:emerald_iron_necklace
+- treasure2:onyx_iron_necklace
+- treasure2:topaz_iron_necklace
+- treasure2:ruby_iron_necklace
+- treasure2:sapphire_iron_necklace
+- treasure2:white_pearl_iron_necklace
+- treasure2:black_pearl_iron_necklace
+- treasure2:diamond_copper_necklace
+- treasure2:emerald_copper_necklace
+- treasure2:onyx_copper_necklace
+- treasure2:topaz_copper_necklace
+- treasure2:ruby_copper_necklace
+- treasure2:sapphire_copper_necklace
+- treasure2:white_pearl_copper_necklace
+- treasure2:black_pearl_copper_necklace
+- treasure2:diamond_silver_necklace
+- treasure2:emerald_silver_necklace
+- treasure2:onyx_silver_necklace
+- treasure2:topaz_silver_necklace
+- treasure2:ruby_silver_necklace
+- treasure2:sapphire_silver_necklace
+- treasure2:white_pearl_silver_necklace
+- treasure2:black_pearl_silver_necklace
+- treasure2:diamond_gold_necklace
+- treasure2:emerald_gold_necklace
+- treasure2:onyx_gold_necklace
+- treasure2:topaz_gold_necklace
+- treasure2:ruby_gold_necklace
+- treasure2:sapphire_gold_necklace
+- treasure2:white_pearl_gold_necklace
+- treasure2:black_pearl_gold_necklace
+- treasure2:great_iron_necklace
+- treasure2:great_copper_necklace
+- treasure2:great_silver_necklace
+- treasure2:great_gold_necklace
+- treasure2:great_blood_necklace
+- treasure2:great_black_necklace
+- treasure2:great_diamond_iron_necklace
+- treasure2:great_emerald_iron_necklace
+- treasure2:great_onyx_iron_necklace
+- treasure2:great_topaz_iron_necklace
+- treasure2:great_ruby_iron_necklace
+- treasure2:great_sapphire_iron_necklace
+- treasure2:great_white_pearl_iron_necklace
+- treasure2:great_black_pearl_iron_necklace
+- treasure2:great_diamond_copper_necklace
+- treasure2:great_emerald_copper_necklace
+- treasure2:great_onyx_copper_necklace
+- treasure2:great_topaz_copper_necklace
+- treasure2:great_ruby_copper_necklace
+- treasure2:great_sapphire_copper_necklace
+- treasure2:great_white_pearl_copper_necklace
+- treasure2:great_black_pearl_copper_necklace
+- treasure2:great_diamond_silver_necklace
+- treasure2:great_emerald_silver_necklace
+- treasure2:great_onyx_silver_necklace
+- treasure2:great_topaz_silver_necklace
+- treasure2:great_ruby_silver_necklace
+- treasure2:great_sapphire_silver_necklace
+- treasure2:great_white_pearl_silver_necklace
+- treasure2:great_black_pearl_silver_necklace
+- treasure2:great_diamond_gold_necklace
+- treasure2:great_emerald_gold_necklace
+- treasure2:great_onyx_gold_necklace
+- treasure2:great_topaz_gold_necklace
+- treasure2:great_ruby_gold_necklace
+- treasure2:great_sapphire_gold_necklace
+- treasure2:great_white_pearl_gold_necklace
+- treasure2:great_black_pearl_gold_necklace
+- treasure2:great_diamond_blood_necklace
+- treasure2:great_emerald_blood_necklace
+- treasure2:great_onyx_blood_necklace
+- treasure2:great_topaz_blood_necklace
+- treasure2:great_ruby_blood_necklace
+- treasure2:great_sapphire_blood_necklace
+- treasure2:great_white_pearl_blood_necklace
+- treasure2:great_black_pearl_blood_necklace
+- treasure2:great_diamond_black_necklace
+- treasure2:great_emerald_black_necklace
+- treasure2:great_onyx_black_necklace
+- treasure2:great_topaz_black_necklace
+- treasure2:great_ruby_black_necklace
+- treasure2:great_sapphire_black_necklace
+- treasure2:great_white_pearl_black_necklace
+- treasure2:great_black_pearl_black_necklace
+- treasure2:gottschs_amulet_of_heavens
+- treasure2:medics_token
+- treasure2:salandaars_ward
 - ars_nouveau:amulet_of_mana_boost
 - ars_nouveau:amulet_of_mana_regen
 - cyclic:charm_ultimate?
@@ -11824,6 +11988,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:diamond_plate
 - emendatusenigmatica:emerald_plate
 - emendatusenigmatica:lapis_plate
+- create:copper_sheet
+- create:brass_sheet
+- create:iron_sheet
+- create:golden_sheet
 - immersiveengineering:plate_copper
 - immersiveengineering:plate_aluminum
 - immersiveengineering:plate_lead
@@ -11835,10 +12003,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - immersiveengineering:plate_steel
 - immersiveengineering:plate_iron
 - immersiveengineering:plate_gold
-- create:copper_sheet
-- create:brass_sheet
-- create:iron_sheet
-- create:golden_sheet
+- #forge:ingots/bloodbrass
+- #bloodmagic:slate
+- #bloodmagic:sigil
 - createaddition:zinc_sheet
 
 #create:crushed_ores/dimensional
@@ -11911,6 +12078,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #mekanism:crystals/charged_certus_quartz
 - emendatusenigmatica:charged_certus_quartz_crystal
+
+#treasure2:necklace
+- treasure2:copper_necklace
+- treasure2:silver_necklace
+- treasure2:gold_necklace
 
 #forge:storage_blocks/ametrine
 - byg:ametrine_block
@@ -12235,6 +12407,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:gems/chrysoprase
 - silentgems:chrysoprase
 
+#treasure2:gold
+- treasure2:gold_ring
+- treasure2:gold_necklace
+- treasure2:gold_bracelet
+
 #bloodmagic:fragments/cobalt
 - emendatusenigmatica:cobalt_fragment
 
@@ -12343,8 +12520,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:copper_ingot
 - emendatusenigmatica:copper_ingot
 - iceandfire:copper_ingot
-- immersiveengineering:ingot_copper
 - create:copper_ingot
+- immersiveengineering:ingot_copper
 - tconstruct:copper_ingot
 
 #tconstruct:casts/single_use/plate
@@ -13834,8 +14011,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:copper_raw_marble_ore
 - emendatusenigmatica:copper_chunk
 - iceandfire:copper_ore
-- immersiveengineering:ore_copper
 - create:copper_ore
+- immersiveengineering:ore_copper
 - tconstruct:copper_ore
 
 #forge:dusts/ametrine
@@ -14121,6 +14298,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:ruby_raw_marble_ore
 - emendatusenigmatica:ruby_chunk
 - silentgems:ruby_ore
+
+#treasure2:copper
+- treasure2:copper_ring
+- treasure2:copper_necklace
+- treasure2:copper_bracelet
 
 #forge:salsas
 - croptopia:salsa
@@ -14565,6 +14747,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mythicbotany:nidavellir_rune
 - mythicbotany:helheim_rune
 
+#forge:storage_blocks/bloodbrass
+- bloodsmeltery:bloodbrass_block
+
 #forge:gems/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_gem
 
@@ -14727,6 +14912,99 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #curios:bracelet
 - silentgear:bracelet
+- treasure2:iron_bracelet
+- treasure2:copper_bracelet
+- treasure2:silver_bracelet
+- treasure2:gold_bracelet
+- treasure2:diamond_iron_bracelet
+- treasure2:emerald_iron_bracelet
+- treasure2:onyx_iron_bracelet
+- treasure2:topaz_iron_bracelet
+- treasure2:ruby_iron_bracelet
+- treasure2:sapphire_iron_bracelet
+- treasure2:white_pearl_iron_bracelet
+- treasure2:black_pearl_iron_bracelet
+- treasure2:diamond_copper_bracelet
+- treasure2:emerald_copper_bracelet
+- treasure2:onyx_copper_bracelet
+- treasure2:topaz_copper_bracelet
+- treasure2:ruby_copper_bracelet
+- treasure2:sapphire_copper_bracelet
+- treasure2:white_pearl_copper_bracelet
+- treasure2:black_pearl_copper_bracelet
+- treasure2:diamond_silver_bracelet
+- treasure2:emerald_silver_bracelet
+- treasure2:onyx_silver_bracelet
+- treasure2:topaz_silver_bracelet
+- treasure2:ruby_silver_bracelet
+- treasure2:sapphire_silver_bracelet
+- treasure2:white_pearl_silver_bracelet
+- treasure2:black_pearl_silver_bracelet
+- treasure2:diamond_gold_bracelet
+- treasure2:emerald_gold_bracelet
+- treasure2:onyx_gold_bracelet
+- treasure2:topaz_gold_bracelet
+- treasure2:ruby_gold_bracelet
+- treasure2:sapphire_gold_bracelet
+- treasure2:white_pearl_gold_bracelet
+- treasure2:black_pearl_gold_bracelet
+- treasure2:great_iron_bracelet
+- treasure2:great_copper_bracelet
+- treasure2:great_silver_bracelet
+- treasure2:great_gold_bracelet
+- treasure2:great_blood_bracelet
+- treasure2:great_black_bracelet
+- treasure2:great_diamond_iron_bracelet
+- treasure2:great_emerald_iron_bracelet
+- treasure2:great_onyx_iron_bracelet
+- treasure2:great_topaz_iron_bracelet
+- treasure2:great_ruby_iron_bracelet
+- treasure2:great_sapphire_iron_bracelet
+- treasure2:great_white_pearl_iron_bracelet
+- treasure2:great_black_pearl_iron_bracelet
+- treasure2:great_diamond_copper_bracelet
+- treasure2:great_emerald_copper_bracelet
+- treasure2:great_onyx_copper_bracelet
+- treasure2:great_topaz_copper_bracelet
+- treasure2:great_ruby_copper_bracelet
+- treasure2:great_sapphire_copper_bracelet
+- treasure2:great_white_pearl_copper_bracelet
+- treasure2:great_black_pearl_copper_bracelet
+- treasure2:great_diamond_silver_bracelet
+- treasure2:great_emerald_silver_bracelet
+- treasure2:great_onyx_silver_bracelet
+- treasure2:great_topaz_silver_bracelet
+- treasure2:great_ruby_silver_bracelet
+- treasure2:great_sapphire_silver_bracelet
+- treasure2:great_white_pearl_silver_bracelet
+- treasure2:great_black_pearl_silver_bracelet
+- treasure2:great_diamond_gold_bracelet
+- treasure2:great_emerald_gold_bracelet
+- treasure2:great_onyx_gold_bracelet
+- treasure2:great_topaz_gold_bracelet
+- treasure2:great_ruby_gold_bracelet
+- treasure2:great_sapphire_gold_bracelet
+- treasure2:great_white_pearl_gold_bracelet
+- treasure2:great_black_pearl_gold_bracelet
+- treasure2:great_diamond_blood_bracelet
+- treasure2:great_emerald_blood_bracelet
+- treasure2:great_onyx_blood_bracelet
+- treasure2:great_topaz_blood_bracelet
+- treasure2:great_ruby_blood_bracelet
+- treasure2:great_sapphire_blood_bracelet
+- treasure2:great_white_pearl_blood_bracelet
+- treasure2:great_black_pearl_blood_bracelet
+- treasure2:great_diamond_black_bracelet
+- treasure2:great_emerald_black_bracelet
+- treasure2:great_onyx_black_bracelet
+- treasure2:great_topaz_black_bracelet
+- treasure2:great_ruby_black_bracelet
+- treasure2:great_sapphire_black_bracelet
+- treasure2:great_white_pearl_black_bracelet
+- treasure2:great_black_pearl_black_bracelet
+- treasure2:bracelet_of_wonder
+- treasure2:adephagias_bounty
+- treasure2:mirthas_torch
 - cyclic:charm_knockback_resistance?
 - cyclic:charm_crit?
 - cyclic:charm_creeper?
@@ -14940,11 +15218,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - sophisticatedbackpacks:gold_backpack
 - sophisticatedbackpacks:diamond_backpack
 - sophisticatedbackpacks:netherite_backpack
-- immersiveengineering:powerpack
 - cyclic:quiver_lightning?
 - cyclic:quiver_damage?
 - cyclic:charm_magicdefense?
 - cyclic:charm_invisible?
+- immersiveengineering:powerpack
 
 #forge:french_fries
 - croptopia:french_fries
@@ -15074,6 +15352,14 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - emendatusenigmatica:lumium_nugget
 - emendatusenigmatica:enderium_nugget
 - emendatusenigmatica:cast_iron_nugget
+- #forge:nuggets/drenched_iron
+- #forge:nuggets/swift_alloy
+- #forge:nuggets/fireite
+- create:copper_nugget
+- create:zinc_nugget
+- create:brass_nugget
+- #forge:nuggets/draconium_awakened
+- #forge:nuggets/draconium
 - immersiveengineering:nugget_copper
 - immersiveengineering:nugget_aluminum
 - immersiveengineering:nugget_lead
@@ -15083,14 +15369,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - immersiveengineering:nugget_constantan
 - immersiveengineering:nugget_electrum
 - immersiveengineering:nugget_steel
-- #forge:nuggets/drenched_iron
-- #forge:nuggets/swift_alloy
-- #forge:nuggets/fireite
-- create:copper_nugget
-- create:zinc_nugget
-- create:brass_nugget
-- #forge:nuggets/draconium_awakened
-- #forge:nuggets/draconium
 - #forge:nuggets/copper
 - #forge:nuggets/cobalt
 - #forge:nuggets/slimesteel
@@ -15154,6 +15432,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:nuggets/tektite
 - #forge:nuggets/pearl
 - silentgems:silver_nugget
+- #forge:nuggets/bloodbrass
 - jaopca:nuggets.ironwood
 - jaopca:nuggets.knightmetal
 - jaopca:nuggets.starmetal
@@ -16405,6 +16684,103 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mythicbotany:cursed_andwari_ring
 - mythicbotany:andwari_ring
 - eidolon:basic_ring
+- treasure2:iron_ring
+- treasure2:copper_ring
+- treasure2:silver_ring
+- treasure2:gold_ring
+- treasure2:diamond_iron_ring
+- treasure2:emerald_iron_ring
+- treasure2:onyx_iron_ring
+- treasure2:topaz_iron_ring
+- treasure2:ruby_iron_ring
+- treasure2:sapphire_iron_ring
+- treasure2:white_pearl_iron_ring
+- treasure2:black_pearl_iron_ring
+- treasure2:diamond_copper_ring
+- treasure2:emerald_copper_ring
+- treasure2:onyx_copper_ring
+- treasure2:topaz_copper_ring
+- treasure2:ruby_copper_ring
+- treasure2:sapphire_copper_ring
+- treasure2:white_pearl_copper_ring
+- treasure2:black_pearl_copper_ring
+- treasure2:diamond_silver_ring
+- treasure2:emerald_silver_ring
+- treasure2:onyx_silver_ring
+- treasure2:topaz_silver_ring
+- treasure2:ruby_silver_ring
+- treasure2:sapphire_silver_ring
+- treasure2:white_pearl_silver_ring
+- treasure2:black_pearl_silver_ring
+- treasure2:diamond_gold_ring
+- treasure2:emerald_gold_ring
+- treasure2:onyx_gold_ring
+- treasure2:topaz_gold_ring
+- treasure2:ruby_gold_ring
+- treasure2:sapphire_gold_ring
+- treasure2:white_pearl_gold_ring
+- treasure2:black_pearl_gold_ring
+- treasure2:great_iron_ring
+- treasure2:great_copper_ring
+- treasure2:great_silver_ring
+- treasure2:great_gold_ring
+- treasure2:great_blood_ring
+- treasure2:great_black_ring
+- treasure2:great_diamond_iron_ring
+- treasure2:great_emerald_iron_ring
+- treasure2:great_onyx_iron_ring
+- treasure2:great_topaz_iron_ring
+- treasure2:great_ruby_iron_ring
+- treasure2:great_sapphire_iron_ring
+- treasure2:great_white_pearl_iron_ring
+- treasure2:great_black_pearl_iron_ring
+- treasure2:great_diamond_copper_ring
+- treasure2:great_emerald_copper_ring
+- treasure2:great_onyx_copper_ring
+- treasure2:great_topaz_copper_ring
+- treasure2:great_ruby_copper_ring
+- treasure2:great_sapphire_copper_ring
+- treasure2:great_white_pearl_copper_ring
+- treasure2:great_black_pearl_copper_ring
+- treasure2:great_diamond_silver_ring
+- treasure2:great_emerald_silver_ring
+- treasure2:great_onyx_silver_ring
+- treasure2:great_topaz_silver_ring
+- treasure2:great_ruby_silver_ring
+- treasure2:great_sapphire_silver_ring
+- treasure2:great_white_pearl_silver_ring
+- treasure2:great_black_pearl_silver_ring
+- treasure2:great_diamond_gold_ring
+- treasure2:great_emerald_gold_ring
+- treasure2:great_onyx_gold_ring
+- treasure2:great_topaz_gold_ring
+- treasure2:great_ruby_gold_ring
+- treasure2:great_sapphire_gold_ring
+- treasure2:great_white_pearl_gold_ring
+- treasure2:great_black_pearl_gold_ring
+- treasure2:great_diamond_blood_ring
+- treasure2:great_emerald_blood_ring
+- treasure2:great_onyx_blood_ring
+- treasure2:great_topaz_blood_ring
+- treasure2:great_ruby_blood_ring
+- treasure2:great_sapphire_blood_ring
+- treasure2:great_white_pearl_blood_ring
+- treasure2:great_black_pearl_blood_ring
+- treasure2:great_diamond_black_ring
+- treasure2:great_emerald_black_ring
+- treasure2:great_onyx_black_ring
+- treasure2:great_topaz_black_ring
+- treasure2:great_ruby_black_ring
+- treasure2:great_sapphire_black_ring
+- treasure2:great_white_pearl_black_ring
+- treasure2:great_black_pearl_black_ring
+- treasure2:angels_ring
+- treasure2:ring_of_fortitude
+- treasure2:shadows_gift
+- treasure2:ring_of_life_death
+- treasure2:castle_ring
+- treasure2:peasants_fortune
+- treasure2:gottschs_ring_of_moon
 - ars_nouveau:ring_of_lesser_discount
 - ars_nouveau:ring_of_greater_discount
 - enigmaticlegacy:magnet_ring
@@ -16871,6 +17247,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:storage_blocks/clay
 - minecraft:clay
+- minecraft:clay
 
 #atmospheric:morado_logs
 - decorative_blocks_abnormals:morado_beam
@@ -17229,6 +17606,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/terrasteel?
 - #forge:storage_blocks/alfsteel
 - #forge:storage_blocks/flux_infused
+- #forge:storage_blocks/bloodbrass
 
 #forge:onion_rings
 - croptopia:onion_rings
@@ -17341,6 +17719,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - envirocore:erodium_tile_stairs
 - envirocore:erodium_tile_small_stairs
 
+#forge:ingots/bloodbrass
+- bloodsmeltery:bloodbrass_ingot
+
 #forge:crops/celery
 - croptopia:celery
 
@@ -17408,8 +17789,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:dusts/saltpeter
 - emendatusenigmatica:potassium_nitrate_dust
-- immersiveengineering:dust_saltpeter
 - bloodmagic:saltpeter
+- immersiveengineering:dust_saltpeter
 
 #environmental:slabfish_food
 - abnormals_delight:slabdish
@@ -17598,9 +17979,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - croptopia:blackbean
 
 #forge:clay
+- minecraft:clay
 - minecraft:clay_ball
-- minecraft:clay
-- minecraft:clay
 
 #bloodmagic:fragments/quartz
 - emendatusenigmatica:quartz_fragment
@@ -17896,8 +18276,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:plates/copper
 - thermal:copper_plate
 - emendatusenigmatica:copper_plate
-- immersiveengineering:plate_copper
 - create:copper_sheet
+- immersiveengineering:plate_copper
 
 #forge:supreme_pizzas
 - croptopia:supreme_pizza
@@ -18078,6 +18458,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #mekanism:crystals/fluorite
 - emendatusenigmatica:fluorite_crystal
 
+#bloodmagic:tartaric_gem
+- bloodmagic:soulgempetty
+- bloodmagic:soulgemlesser
+- bloodmagic:soulgemcommon
+- bloodmagic:soulgemgreater
+
 #forge:salad_ingredients
 - #forge:salad_ingredients/cabbage
 
@@ -18107,6 +18493,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #curios:an_focus
 - ars_nouveau:summon_focus
+- ars_elemental:fire_focus
+- ars_elemental:water_focus
+- ars_elemental:air_focus
+- ars_elemental:earth_focus
+- ars_elemental:necrotic_focus
 
 #forge:ingots
 - tmechworks:aluminum_ingot
@@ -18175,6 +18566,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:ingots/fiery
 - #forge:ingots/knightmetal
 - #forge:ingots/steeleaf
+- #forge:ingots/drenched_iron
+- #forge:ingots/swift_alloy
+- #forge:ingots/fireite
+- #create:create_ingots
+- #forge:ingots/draconium_awakened
+- #forge:ingots/draconium
 - immersiveengineering:ingot_copper
 - immersiveengineering:ingot_aluminum
 - immersiveengineering:ingot_lead
@@ -18184,12 +18581,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - immersiveengineering:ingot_constantan
 - immersiveengineering:ingot_electrum
 - immersiveengineering:ingot_steel
-- #forge:ingots/drenched_iron
-- #forge:ingots/swift_alloy
-- #forge:ingots/fireite
-- #create:create_ingots
-- #forge:ingots/draconium_awakened
-- #forge:ingots/draconium
 - tconstruct:seared_brick
 - tconstruct:scorched_brick
 - #forge:ingots/copper
@@ -18211,6 +18602,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:ingots/alfsteel
 - #forge:ingots/flux_infused
 - silentgems:silver_ingot
+- #forge:ingots/bloodbrass
 
 #forge:crops/oat
 - croptopia:oat
@@ -18223,8 +18615,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:copper_block
 - emendatusenigmatica:copper_block
 - iceandfire:copper_block
-- immersiveengineering:storage_copper
 - create:copper_block
+- immersiveengineering:storage_copper
 - tconstruct:copper_block
 
 #forge:bread/wheat
@@ -18639,7 +19031,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_trapdoor
 - minecraft:oak_trapdoor
 - minecraft:spruce_trapdoor
-- mcwtrpdoors:bamboo_trapdoor
+- minecraft:warped_trapdoor
+- minecraft:crimson_trapdoor
 - mcwtrpdoors:oak_barn_trapdoor
 - mcwtrpdoors:oak_barred_trapdoor
 - mcwtrpdoors:oak_beach_trapdoor
@@ -18650,6 +19043,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:oak_paper_trapdoor
 - mcwtrpdoors:oak_tropical_trapdoor
 - mcwtrpdoors:oak_swamp_trapdoor
+- mcwtrpdoors:oak_blossom_trapdoor
+- mcwtrpdoors:bamboo_trapdoor
 - mcwtrpdoors:spruce_barn_trapdoor
 - mcwtrpdoors:spruce_barred_trapdoor
 - mcwtrpdoors:spruce_beach_trapdoor
@@ -18660,6 +19055,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:spruce_paper_trapdoor
 - mcwtrpdoors:spruce_tropical_trapdoor
 - mcwtrpdoors:spruce_swamp_trapdoor
+- mcwtrpdoors:spruce_blossom_trapdoor
 - mcwtrpdoors:birch_barn_trapdoor
 - mcwtrpdoors:birch_barred_trapdoor
 - mcwtrpdoors:birch_beach_trapdoor
@@ -18670,6 +19066,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:birch_mystic_trapdoor
 - mcwtrpdoors:birch_tropical_trapdoor
 - mcwtrpdoors:birch_swamp_trapdoor
+- mcwtrpdoors:birch_blossom_trapdoor
 - mcwtrpdoors:jungle_barn_trapdoor
 - mcwtrpdoors:jungle_barred_trapdoor
 - mcwtrpdoors:jungle_classic_trapdoor
@@ -18680,6 +19077,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:jungle_paper_trapdoor
 - mcwtrpdoors:jungle_tropical_trapdoor
 - mcwtrpdoors:jungle_swamp_trapdoor
+- mcwtrpdoors:jungle_blossom_trapdoor
 - mcwtrpdoors:acacia_barn_trapdoor
 - mcwtrpdoors:acacia_barred_trapdoor
 - mcwtrpdoors:acacia_beach_trapdoor
@@ -18690,6 +19088,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:acacia_mystic_trapdoor
 - mcwtrpdoors:acacia_paper_trapdoor
 - mcwtrpdoors:acacia_swamp_trapdoor
+- mcwtrpdoors:acacia_blossom_trapdoor
 - mcwtrpdoors:dark_oak_barn_trapdoor
 - mcwtrpdoors:dark_oak_barred_trapdoor
 - mcwtrpdoors:dark_oak_beach_trapdoor
@@ -18700,6 +19099,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_paper_trapdoor
 - mcwtrpdoors:dark_oak_tropical_trapdoor
 - mcwtrpdoors:dark_oak_swamp_trapdoor
+- mcwtrpdoors:dark_oak_blossom_trapdoor
 - mcwtrpdoors:crimson_barn_trapdoor
 - mcwtrpdoors:crimson_beach_trapdoor
 - mcwtrpdoors:crimson_classic_trapdoor
@@ -18710,6 +19110,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:crimson_paper_trapdoor
 - mcwtrpdoors:crimson_tropical_trapdoor
 - mcwtrpdoors:crimson_swamp_trapdoor
+- mcwtrpdoors:crimson_blossom_trapdoor
 - mcwtrpdoors:warped_barn_trapdoor
 - mcwtrpdoors:warped_barred_trapdoor
 - mcwtrpdoors:warped_beach_trapdoor
@@ -18720,6 +19121,27 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:warped_paper_trapdoor
 - mcwtrpdoors:warped_tropical_trapdoor
 - mcwtrpdoors:warped_swamp_trapdoor
+- mcwtrpdoors:warped_blossom_trapdoor
+- mcwtrpdoors:bamboo_barn_trapdoor
+- mcwtrpdoors:bamboo_barred_trapdoor
+- mcwtrpdoors:bamboo_beach_trapdoor
+- mcwtrpdoors:bamboo_cottage_trapdoor
+- mcwtrpdoors:bamboo_four_panel_trapdoor
+- mcwtrpdoors:bamboo_glass_trapdoor
+- mcwtrpdoors:bamboo_mystic_trapdoor
+- mcwtrpdoors:bamboo_paper_trapdoor
+- mcwtrpdoors:bamboo_tropical_trapdoor
+- mcwtrpdoors:bamboo_classic_trapdoor
+- mcwtrpdoors:bamboo_swamp_trapdoor
+- mcwtrpdoors:bamboo_blossom_trapdoor
+- mcwtrpdoors:oak_bamboo_trapdoor
+- mcwtrpdoors:spruce_bamboo_trapdoor
+- mcwtrpdoors:birch_bamboo_trapdoor
+- mcwtrpdoors:jungle_bamboo_trapdoor
+- mcwtrpdoors:acacia_bamboo_trapdoor
+- mcwtrpdoors:dark_oak_bamboo_trapdoor
+- mcwtrpdoors:crimson_bamboo_trapdoor
+- mcwtrpdoors:warped_bamboo_trapdoor
 - mcwtrpdoors:oak_bark_trapdoor
 - mcwtrpdoors:spruce_bark_trapdoor
 - mcwtrpdoors:birch_bark_trapdoor
@@ -18728,6 +19150,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwtrpdoors:dark_oak_bark_trapdoor
 - mcwtrpdoors:crimson_bark_trapdoor
 - mcwtrpdoors:warped_bark_trapdoor
+- mcwtrpdoors:oak_barrel_trapdoor
+- mcwtrpdoors:spruce_barrel_trapdoor
+- mcwtrpdoors:birch_barrel_trapdoor
+- mcwtrpdoors:jungle_barrel_trapdoor
+- mcwtrpdoors:acacia_barrel_trapdoor
+- mcwtrpdoors:dark_oak_barrel_trapdoor
+- mcwtrpdoors:crimson_barrel_trapdoor
+- mcwtrpdoors:warped_barrel_trapdoor
+- mcwtrpdoors:bamboo_barrel_trapdoor
 - mcwtrpdoors:oak_ranch_trapdoor
 - mcwtrpdoors:spruce_ranch_trapdoor
 - mcwtrpdoors:birch_ranch_trapdoor
@@ -18940,6 +19371,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - minecraft:jungle_door
 - minecraft:acacia_door
 - minecraft:dark_oak_door
+- minecraft:warped_door
+- minecraft:crimson_door
 - mcwdoors:oak_japanese_door
 - mcwdoors:spruce_japanese_door
 - mcwdoors:birch_japanese_door
@@ -18948,6 +19381,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese_door
 - mcwdoors:crimson_japanese_door
 - mcwdoors:warped_japanese_door
+- mcwdoors:bamboo_japanese_door
 - mcwdoors:oak_japanese2_door
 - mcwdoors:spruce_japanese2_door
 - mcwdoors:birch_japanese2_door
@@ -18956,6 +19390,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_japanese2_door
 - mcwdoors:crimson_japanese2_door
 - mcwdoors:warped_japanese2_door
+- mcwdoors:bamboo_japanese2_door
 - mcwdoors:oak_barn_door
 - mcwdoors:spruce_barn_door
 - mcwdoors:birch_barn_door
@@ -18964,6 +19399,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_door
 - mcwdoors:crimson_barn_door
 - mcwdoors:warped_barn_door
+- mcwdoors:bamboo_barn_door
 - mcwdoors:oak_barn_glass_door
 - mcwdoors:spruce_barn_glass_door
 - mcwdoors:birch_barn_glass_door
@@ -18972,6 +19408,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_barn_glass_door
 - mcwdoors:crimson_barn_glass_door
 - mcwdoors:warped_barn_glass_door
+- mcwdoors:bamboo_barn_glass_door
 - mcwdoors:oak_modern_door
 - mcwdoors:spruce_modern_door
 - mcwdoors:birch_modern_door
@@ -18980,6 +19417,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_modern_door
 - mcwdoors:crimson_modern_door
 - mcwdoors:warped_modern_door
+- mcwdoors:bamboo_modern_door
 - mcwdoors:oak_cottage_door
 - mcwdoors:birch_cottage_door
 - mcwdoors:jungle_cottage_door
@@ -18987,6 +19425,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_cottage_door
 - mcwdoors:crimson_cottage_door
 - mcwdoors:warped_cottage_door
+- mcwdoors:bamboo_cottage_door
 - mcwdoors:spruce_classic_door
 - mcwdoors:birch_classic_door
 - mcwdoors:jungle_classic_door
@@ -18994,6 +19433,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_classic_door
 - mcwdoors:crimson_classic_door
 - mcwdoors:warped_classic_door
+- mcwdoors:bamboo_classic_door
 - mcwdoors:oak_beach_door
 - mcwdoors:spruce_beach_door
 - mcwdoors:birch_beach_door
@@ -19001,6 +19441,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_beach_door
 - mcwdoors:crimson_beach_door
 - mcwdoors:warped_beach_door
+- mcwdoors:bamboo_beach_door
 - mcwdoors:oak_paper_door
 - mcwdoors:spruce_paper_door
 - mcwdoors:jungle_paper_door
@@ -19008,6 +19449,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_paper_door
 - mcwdoors:crimson_paper_door
 - mcwdoors:warped_paper_door
+- mcwdoors:bamboo_paper_door
 - mcwdoors:oak_four_panel_door
 - mcwdoors:spruce_four_panel_door
 - mcwdoors:birch_four_panel_door
@@ -19015,6 +19457,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_four_panel_door
 - mcwdoors:crimson_four_panel_door
 - mcwdoors:warped_four_panel_door
+- mcwdoors:bamboo_four_panel_door
 - mcwdoors:oak_tropical_door
 - mcwdoors:spruce_tropical_door
 - mcwdoors:birch_tropical_door
@@ -19022,6 +19465,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_tropical_door
 - mcwdoors:crimson_tropical_door
 - mcwdoors:warped_tropical_door
+- mcwdoors:bamboo_tropical_door
 - mcwdoors:oak_glass_door
 - mcwdoors:spruce_glass_door
 - mcwdoors:birch_glass_door
@@ -19030,6 +19474,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_glass_door
 - mcwdoors:crimson_glass_door
 - mcwdoors:warped_glass_door
+- mcwdoors:bamboo_glass_door
 - mcwdoors:oak_stable_door
 - mcwdoors:spruce_stable_door
 - mcwdoors:birch_stable_door
@@ -19038,6 +19483,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_door
 - mcwdoors:crimson_stable_door
 - mcwdoors:warped_stable_door
+- mcwdoors:bamboo_stable_door
 - mcwdoors:oak_stable_head_door
 - mcwdoors:spruce_stable_head_door
 - mcwdoors:birch_stable_head_door
@@ -19046,6 +19492,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_stable_head_door
 - mcwdoors:crimson_stable_head_door
 - mcwdoors:warped_stable_head_door
+- mcwdoors:bamboo_stable_head_door
 - mcwdoors:oak_western_door
 - mcwdoors:spruce_western_door
 - mcwdoors:birch_western_door
@@ -19054,6 +19501,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_western_door
 - mcwdoors:crimson_western_door
 - mcwdoors:warped_western_door
+- mcwdoors:bamboo_western_door
+- mcwdoors:oak_waffle_door
+- mcwdoors:spruce_waffle_door
+- mcwdoors:birch_waffle_door
+- mcwdoors:jungle_waffle_door
+- mcwdoors:acacia_waffle_door
+- mcwdoors:dark_oak_waffle_door
+- mcwdoors:crimson_waffle_door
+- mcwdoors:warped_waffle_door
+- mcwdoors:bamboo_waffle_door
 - mcwdoors:oak_mystic_door
 - mcwdoors:spruce_mystic_door
 - mcwdoors:birch_mystic_door
@@ -19061,6 +19518,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_mystic_door
 - mcwdoors:dark_oak_mystic_door
 - mcwdoors:crimson_mystic_door
+- mcwdoors:bamboo_mystic_door
 - mcwdoors:oak_bark_glass_door
 - mcwdoors:spruce_bark_glass_door
 - mcwdoors:birch_bark_glass_door
@@ -19069,6 +19527,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_bark_glass_door
 - mcwdoors:crimson_stem_glass_door
 - mcwdoors:warped_stem_glass_door
+- mcwdoors:bamboo_bark_glass_door
 - mcwdoors:oak_nether_door
 - mcwdoors:spruce_nether_door
 - mcwdoors:birch_nether_door
@@ -19076,6 +19535,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:acacia_nether_door
 - mcwdoors:dark_oak_nether_door
 - mcwdoors:warped_nether_door
+- mcwdoors:bamboo_nether_door
 - mcwdoors:oak_swamp_door
 - mcwdoors:spruce_swamp_door
 - mcwdoors:birch_swamp_door
@@ -19084,6 +19544,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - mcwdoors:dark_oak_swamp_door
 - mcwdoors:warped_swamp_door
 - mcwdoors:crimson_swamp_door
+- mcwdoors:bamboo_swamp_door
+- mcwdoors:oak_bamboo_door
+- mcwdoors:spruce_bamboo_door
+- mcwdoors:birch_bamboo_door
+- mcwdoors:jungle_bamboo_door
+- mcwdoors:acacia_bamboo_door
+- mcwdoors:dark_oak_bamboo_door
+- mcwdoors:warped_bamboo_door
+- mcwdoors:crimson_bamboo_door
 - twilightforest:twilight_oak_door
 - twilightforest:canopy_door
 - twilightforest:mangrove_door
@@ -19387,8 +19856,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:plates/gold
 - thermal:gold_plate
 - emendatusenigmatica:gold_plate
-- immersiveengineering:plate_gold
 - create:golden_sheet
+- immersiveengineering:plate_gold
 
 #silentgems:glowroses/peridot
 - silentgems:peridot_glowrose
@@ -19468,6 +19937,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:shrimp
 - croptopia:shrimp
+
+#forge:nuggets/bloodbrass
+- bloodsmeltery:bloodbrass_nugget
 
 #forge:plates/tin
 - thermal:tin_plate
@@ -19589,8 +20061,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:copper_nugget
 - emendatusenigmatica:copper_nugget
 - iceandfire:copper_nugget
-- immersiveengineering:nugget_copper
 - create:copper_nugget
+- immersiveengineering:nugget_copper
 - tconstruct:copper_nugget
 
 #forge:crops/carrot
@@ -19989,7 +20461,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - extrabotany:potatochips
 - extrabotany:mask
 - eidolon:mind_shielding_plate
-- immersiveengineering:earmuffs
 - cyclic:glowing_helmet?
 - cyclic:charm_antipotion?
 - cyclic:charm_boostpotion?
@@ -20000,6 +20471,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - artifacts:snorkel
 - artifacts:superstitious_hat
 - artifacts:villager_hat
+- immersiveengineering:earmuffs
 
 #byg:lament_logs
 - byg:lament_log
@@ -20453,11 +20925,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:seeds/vanilla
 - #forge:seeds/yam
 - #forge:seeds/zucchini
-- immersiveengineering:seed
 - #forge:seeds/cabbage
 - #forge:seeds/rice
 - #forge:seeds/tomato
 - ars_nouveau:mana_bloom_crop
+- immersiveengineering:seed
 - silentgems:fluffy_puff_seeds
 
 #botania:rods
@@ -21830,12 +22302,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - iceandfire:amythest_ore
 - #forge:ores/ironwood
 - #forge:ores/knightmetal
-- immersiveengineering:ore_copper
-- immersiveengineering:ore_aluminum
-- immersiveengineering:ore_lead
-- immersiveengineering:ore_silver
-- immersiveengineering:ore_nickel
-- immersiveengineering:ore_uranium
 - ars_nouveau:arcane_ore
 - elementalcraft:crystalore
 - create:copper_ore
@@ -21844,6 +22310,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - rftoolsbase:dimensionalshard_nether
 - rftoolsbase:dimensionalshard_overworld
 - #forge:ores/draconium
+- immersiveengineering:ore_copper
+- immersiveengineering:ore_aluminum
+- immersiveengineering:ore_lead
+- immersiveengineering:ore_silver
+- immersiveengineering:ore_nickel
+- immersiveengineering:ore_uranium
 - #forge:ores/inferium
 - #forge:ores/prosperity
 - #forge:ores/soulium
@@ -22823,15 +23295,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/ironwood
 - #forge:storage_blocks/knightmetal
 - #forge:storage_blocks/steeleaf
-- immersiveengineering:storage_copper
-- immersiveengineering:storage_aluminum
-- immersiveengineering:storage_lead
-- immersiveengineering:storage_silver
-- immersiveengineering:storage_nickel
-- immersiveengineering:storage_uranium
-- immersiveengineering:storage_constantan
-- immersiveengineering:storage_electrum
-- immersiveengineering:storage_steel
 - ars_nouveau:mana_gem_block
 - #forge:storage_blocks/drenched_iron
 - #forge:storage_blocks/swift_alloy
@@ -22841,6 +23304,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - create:brass_block
 - #forge:storage_blocks/draconium
 - #forge:storage_blocks/draconium_awakened
+- immersiveengineering:storage_copper
+- immersiveengineering:storage_aluminum
+- immersiveengineering:storage_lead
+- immersiveengineering:storage_silver
+- immersiveengineering:storage_nickel
+- immersiveengineering:storage_uranium
+- immersiveengineering:storage_constantan
+- immersiveengineering:storage_electrum
+- immersiveengineering:storage_steel
 - #forge:storage_blocks/copper
 - #forge:storage_blocks/cobalt
 - #forge:storage_blocks/slimesteel
@@ -22910,6 +23382,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - #forge:storage_blocks/rose_quartz
 - #forge:storage_blocks/tektite
 - #forge:storage_blocks/pearl
+- #forge:storage_blocks/bloodbrass
 - jaopca:storage_blocks.aeternium
 - jaopca:storage_blocks.brick
 - jaopca:storage_blocks.cloggrum
@@ -23382,6 +23855,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 #forge:gears/lead
 - thermal:lead_gear
 - emendatusenigmatica:lead_gear
+
+#treasure2:other_adornment
+- treasure2:pocket_watch
 
 #forge:bellpeppers
 - croptopia:bellpepper
@@ -24591,6 +25067,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - chisel:concrete/brown/cuts
 - minecraft:brown_concrete
 
+#treasure2:charm
+- treasure2:copper_charm
+- treasure2:silver_charm
+- treasure2:gold_charm
+
 #mekanism:clumps/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_clump
 
@@ -24736,8 +25217,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 - thermal:sulfur_dust
 - emendatusenigmatica:sulfur_dust
 - eidolon:sulfur
-- immersiveengineering:dust_sulfur
 - bloodmagic:sulfur
+- immersiveengineering:dust_sulfur
 
 #forge:seeds/radish
 - croptopia:radish_seed
@@ -24763,6 +25244,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Aug
 
 #forge:chicken_and_dumplings
 - croptopia:chicken_and_dumplings
+
+#treasure2:silver
+- treasure2:silver_ring
+- treasure2:silver_necklace
+- treasure2:silver_bracelet
 
 #mekanism:dirty_dusts
 - mekanism:dirty_dust_iron

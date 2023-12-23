@@ -1,0 +1,12 @@
+{
+  "type": "overworldmirror:overworld_mirror",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": -129670888,
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:vanilla_layered",
+      "seed": -129670888
+    }
+  }
+}

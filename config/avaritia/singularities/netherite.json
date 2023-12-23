@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.netherite",
+  "colors": [
+    "31292a",
+    "654740"
+  ],
+  "ingredient": {
+    "item": "minecraft:netherite_block"
+  },
+  "count": 200,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": false
+}

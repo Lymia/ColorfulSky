@@ -1,0 +1,14 @@
+{
+  "name": "singularity.avaritia.nickel",
+  "colors": [
+    "c4c698",
+    "dee187"
+  ],
+  "ingredient": {
+    "tag": "forge:storage_blocks/nickel"
+  },
+  "count": 400,
+  "calculator": true,
+  "catalyst": true,
+  "enabled": true
+}
