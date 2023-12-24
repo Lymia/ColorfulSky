@@ -1,0 +1,12 @@
+version:2586
+resourcePacks:["inmemory:jaopca","vanilla","mod_resources","quark:emote_resources","packmenu","file/DP+Pack+16x+1.2.0.zip","openloader/resources/DarkpuppeyCompat","file/Exchange_Extended_v1.0.zip","file/Simple-CT-1.1.0.zip","file/FeywildReduxV1.1.zip","file/Glass+Panes+CTM+Fix+v1.0-1.18.zip"]
+incompatibleResourcePacks:["inmemory:jaopca","quark:emote_resources","file/DP+Pack+16x+1.2.0.zip","file/Simple-CT-1.1.0.zip","file/FeywildReduxV1.1.zip","file/Glass+Panes+CTM+Fix+v1.0-1.18.zip"]
+key_pi.key.open_pi:key.keyboard.unknown
+key_pi.key.et_gui:key.keyboard.unknown
+key_pi.key.et_world:key.keyboard.unknown
+key_Strip World:key.keyboard.unknown
+key_Dress World:key.keyboard.unknown
+key_Open Config:key.keyboard.unknown
+key_Add Block:key.keyboard.unknown
+key_Remove Block:key.keyboard.unknown
+key_Cycle Profile:key.keyboard.unknown

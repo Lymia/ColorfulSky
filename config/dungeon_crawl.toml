@@ -22,7 +22,7 @@
 	#----------------------------------------------------------------------------------------------------+
 	# Makes the entire dungeon solid, preventing caves, ravines, etc... from interfering with the dungeon.
 	#
-	solid = false
+	solid = true
 
 ["Dungeon Placement"]
 	#----------------------------------------------------------------------------------------------------+
