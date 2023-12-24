@@ -5,11 +5,11 @@
 		#True if using blacklists, false if using whitelists for dragons and structure gen.
 		"Use Dimension Blacklist" = false
 		#Whitelist dragon gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		whitelistDimensionsDragons = ["minecraft:overworld"]
+		whitelistDimensionsDragons = ["overworldmirror:overworld"]
 		#Whitelisted feature(cyclops caves, hydra dens, etc) gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		whitelistDimensionsFeature = ["minecraft:overworld"]
+		whitelistDimensionsFeature = ["overworldmirror:overworld"]
 		#Whitelist mob spawn (troll, hippogryph, etc) dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
-		whitelistDimensionsMobs = ["minecraft:overworld"]
+		whitelistDimensionsMobs = ["overworldmirror:overworld"]
 		#Blacklisted dragon gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
 		blacklistDimensionsDragons = ["minecraft:the_nether", "minecraft:the_end"]
 		#Blacklisted feature(cyclops caves, hydra dens, etc) gen dimensions. Use the format like "minecraft:the_nether" or "rats:ratlantis" 
@@ -19,30 +19,30 @@
 
 	[Generation.Ores]
 		#Whether to generate copper ore or not
-		"Generate Copper Ore" = true
+		"Generate Copper Ore" = false
 		#Whether to generate silver ore or not
-		"Generate Silver Ore" = true
+		"Generate Silver Ore" = false
 		#Whether to generate sapphire ore or not
-		"Generate Sapphire Ore" = true
+		"Generate Sapphire Ore" = false
 		#Whether to generate amethyst ore or not
-		"Generate Amethyst Ore" = true
+		"Generate Amethyst Ore" = false
 
 	[Generation.Dragon]
 		#Whether to generate dragon skeletons or not
 		"Generate Dragon Skeletons" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Skeleton Chance" = 300
+		"Generate Dragon Skeleton Chance" = 100
 		#Whether to generate dragon caves or not
 		"Generate Dragon Caves" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Cave Chance" = 180
+		"Generate Dragon Cave Chance" = 100
 		#Whether to generate dragon roosts or not
 		"Generate Dragon Roosts" = true
 		#1 out of this number chance per chunk for generation
 		#Range: 1 ~ 10000
-		"Generate Dragon Roost Chance" = 360
+		"Generate Dragon Roost Chance" = 150
 		#1 out of this number chance per block that gold will generate in dragon lairs.
 		#Range: 1 ~ 10000
 		"Dragon Den Gold Amount" = 4
@@ -53,10 +53,10 @@
 	[Generation.Structures-Features]
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from spawn.
 		#Range: 1 ~ 10000
-		"Dangerous World Gen Dist From Spawn" = 800
+		"Dangerous World Gen Dist From Spawn" = 1
 		#How far away dangerous structures(dragon roosts, cyclops caves, etc.) must be from the last generated structure.
 		#Range: 1 ~ 10000
-		"Dangerous World Gen Dist Seperation" = 300
+		"Dangerous World Gen Dist Seperation" = 150
 		#Whether to generate glacier biomes or not
 		"Generate Glaciers" = true
 		#Glacier Spawn Weight. Higher number = more common
@@ -78,9 +78,9 @@
 	[Dragons.Griefing]
 		#Dragon griefing - 2 is no griefing, 1 is breaking weak blocks, 0 is default
 		#Range: 0 ~ 2
-		"Dragon Griefing" = 0
+		"Dragon Griefing" = 1
 		#True if tamed dragons can follow the griefing rules.
-		"Tamed Dragon Griefing" = true
+		"Tamed Dragon Griefing" = false
 		#The percentage chance for a block to drop as an item when a dragon breaks it.
 		#Range: 0.0 ~ 1.0
 		"Dragon Block Breaking Drop Chance" = 0.10000000149011612
