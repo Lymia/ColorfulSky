@@ -35,7 +35,8 @@ shutil.copytree("../defaultconfigs", "../build_dist/overrides/defaultconfigs")
 shutil.copytree("../kubejs", "../build_dist/overrides/kubejs")
 shutil.copytree("../openloader", "../build_dist/overrides/openloader")
 shutil.copytree("../packmenu", "../build_dist/overrides/packmenu")
-shutil.copyfile("options.txt", "../build_dist/overrides/options.txt")
+shutil.copytree("../tlm_custom_pack", "../build_dist/overrides/tlm_custom_pack") # included for multiplayer reasons
+shutil.copyfile("pack/options.txt", "../build_dist/overrides/options.txt")
 
 print("- Removing transient configurations")
 delete_file("../build_dist/overrides/config/oculus.properties")
@@ -44,7 +45,7 @@ shutil.rmtree("../build_dist/overrides/config/brandon3055/ResourceCache", ignore
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ProjectIntelligence", ignore_errors=True)
 
 print("- Generating manifest...")
-manifest = json.loads(open("manifest.json", "r").read())
+manifest = json.loads(open("pack/manifest.json", "r").read())
 manifest["name"] = "Colorful Skies"
 manifest["version"] = "1.0"
 manifest["author"] = "AuroraAmissa"
