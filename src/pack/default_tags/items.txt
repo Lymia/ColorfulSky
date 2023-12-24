@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:17:06 AM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:09:10 PM
 
 #bloodmagic:gravels/utherium
 - emendatusenigmatica:utherium_gravel
@@ -2377,7 +2377,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - eidolon:basic_belt
 - eidolon:gravity_belt
 - eidolon:resolute_belt
-- treasure2:pouch
 - ars_nouveau:belt_of_levitation
 - ars_nouveau:belt_of_unstable_gifts
 - cyclic:charm_ultimate?
@@ -5539,11 +5538,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #forge:baked_sweet_potatos
 - croptopia:baked_sweet_potato
 
-#treasure2:bracelet
-- treasure2:copper_bracelet
-- treasure2:silver_bracelet
-- treasure2:gold_bracelet
-
 #bloodmagic:fragments/lapis
 - emendatusenigmatica:lapis_fragment
 
@@ -7547,13 +7541,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #forge:rubberwood_logs
 
-#treasure2:pouch
-- treasure2:copper_charm
-- treasure2:silver_charm
-- treasure2:gold_charm
-- minecraft:diamond
-- minecraft:emerald
-
 #forge:ores/citrine
 - silentgems:citrine_ore
 
@@ -8121,11 +8108,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - upgrade_aquatic:tooth_trapdoor
 - upgrade_aquatic:glass_trapdoor
 
-#treasure2:ring
-- treasure2:copper_ring
-- treasure2:silver_ring
-- treasure2:gold_ring
-
 #forge:ingots/gold
 - minecraft:gold_ingot
 
@@ -8475,18 +8457,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - thermal:fluid_reservoir
 - thermal:potion_infuser
 - eidolon:prestigious_palm
-- treasure2:pocket_watch
-- treasure2:sapphire_charm
-- treasure2:legendary_charm
-- treasure2:onyx_charm
-- treasure2:silver_charm
-- treasure2:diamond_charm
-- treasure2:topaz_charm
-- treasure2:ruby_charm
-- treasure2:gold_charm
-- treasure2:copper_charm
-- treasure2:emerald_charm
-- treasure2:mythical_charm
 - enigmaticlegacy:enigmatic_amulet
 - enigmaticlegacy:mega_sponge
 - enigmaticlegacy:monster_charm
@@ -10905,99 +10875,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - eidolon:sanguine_amulet
 - eidolon:void_amulet
 - eidolon:glass_hand
-- treasure2:iron_necklace
-- treasure2:copper_necklace
-- treasure2:silver_necklace
-- treasure2:gold_necklace
-- treasure2:diamond_iron_necklace
-- treasure2:emerald_iron_necklace
-- treasure2:onyx_iron_necklace
-- treasure2:topaz_iron_necklace
-- treasure2:ruby_iron_necklace
-- treasure2:sapphire_iron_necklace
-- treasure2:white_pearl_iron_necklace
-- treasure2:black_pearl_iron_necklace
-- treasure2:diamond_copper_necklace
-- treasure2:emerald_copper_necklace
-- treasure2:onyx_copper_necklace
-- treasure2:topaz_copper_necklace
-- treasure2:ruby_copper_necklace
-- treasure2:sapphire_copper_necklace
-- treasure2:white_pearl_copper_necklace
-- treasure2:black_pearl_copper_necklace
-- treasure2:diamond_silver_necklace
-- treasure2:emerald_silver_necklace
-- treasure2:onyx_silver_necklace
-- treasure2:topaz_silver_necklace
-- treasure2:ruby_silver_necklace
-- treasure2:sapphire_silver_necklace
-- treasure2:white_pearl_silver_necklace
-- treasure2:black_pearl_silver_necklace
-- treasure2:diamond_gold_necklace
-- treasure2:emerald_gold_necklace
-- treasure2:onyx_gold_necklace
-- treasure2:topaz_gold_necklace
-- treasure2:ruby_gold_necklace
-- treasure2:sapphire_gold_necklace
-- treasure2:white_pearl_gold_necklace
-- treasure2:black_pearl_gold_necklace
-- treasure2:great_iron_necklace
-- treasure2:great_copper_necklace
-- treasure2:great_silver_necklace
-- treasure2:great_gold_necklace
-- treasure2:great_blood_necklace
-- treasure2:great_black_necklace
-- treasure2:great_diamond_iron_necklace
-- treasure2:great_emerald_iron_necklace
-- treasure2:great_onyx_iron_necklace
-- treasure2:great_topaz_iron_necklace
-- treasure2:great_ruby_iron_necklace
-- treasure2:great_sapphire_iron_necklace
-- treasure2:great_white_pearl_iron_necklace
-- treasure2:great_black_pearl_iron_necklace
-- treasure2:great_diamond_copper_necklace
-- treasure2:great_emerald_copper_necklace
-- treasure2:great_onyx_copper_necklace
-- treasure2:great_topaz_copper_necklace
-- treasure2:great_ruby_copper_necklace
-- treasure2:great_sapphire_copper_necklace
-- treasure2:great_white_pearl_copper_necklace
-- treasure2:great_black_pearl_copper_necklace
-- treasure2:great_diamond_silver_necklace
-- treasure2:great_emerald_silver_necklace
-- treasure2:great_onyx_silver_necklace
-- treasure2:great_topaz_silver_necklace
-- treasure2:great_ruby_silver_necklace
-- treasure2:great_sapphire_silver_necklace
-- treasure2:great_white_pearl_silver_necklace
-- treasure2:great_black_pearl_silver_necklace
-- treasure2:great_diamond_gold_necklace
-- treasure2:great_emerald_gold_necklace
-- treasure2:great_onyx_gold_necklace
-- treasure2:great_topaz_gold_necklace
-- treasure2:great_ruby_gold_necklace
-- treasure2:great_sapphire_gold_necklace
-- treasure2:great_white_pearl_gold_necklace
-- treasure2:great_black_pearl_gold_necklace
-- treasure2:great_diamond_blood_necklace
-- treasure2:great_emerald_blood_necklace
-- treasure2:great_onyx_blood_necklace
-- treasure2:great_topaz_blood_necklace
-- treasure2:great_ruby_blood_necklace
-- treasure2:great_sapphire_blood_necklace
-- treasure2:great_white_pearl_blood_necklace
-- treasure2:great_black_pearl_blood_necklace
-- treasure2:great_diamond_black_necklace
-- treasure2:great_emerald_black_necklace
-- treasure2:great_onyx_black_necklace
-- treasure2:great_topaz_black_necklace
-- treasure2:great_ruby_black_necklace
-- treasure2:great_sapphire_black_necklace
-- treasure2:great_white_pearl_black_necklace
-- treasure2:great_black_pearl_black_necklace
-- treasure2:gottschs_amulet_of_heavens
-- treasure2:medics_token
-- treasure2:salandaars_ward
 - ars_nouveau:amulet_of_mana_boost
 - ars_nouveau:amulet_of_mana_regen
 - cyclic:charm_ultimate?
@@ -12079,11 +11956,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 #mekanism:crystals/charged_certus_quartz
 - emendatusenigmatica:charged_certus_quartz_crystal
 
-#treasure2:necklace
-- treasure2:copper_necklace
-- treasure2:silver_necklace
-- treasure2:gold_necklace
-
 #forge:storage_blocks/ametrine
 - byg:ametrine_block
 - silentgems:ametrine_block
@@ -12406,11 +12278,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #forge:gems/chrysoprase
 - silentgems:chrysoprase
-
-#treasure2:gold
-- treasure2:gold_ring
-- treasure2:gold_necklace
-- treasure2:gold_bracelet
 
 #bloodmagic:fragments/cobalt
 - emendatusenigmatica:cobalt_fragment
@@ -14299,11 +14166,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - emendatusenigmatica:ruby_chunk
 - silentgems:ruby_ore
 
-#treasure2:copper
-- treasure2:copper_ring
-- treasure2:copper_necklace
-- treasure2:copper_bracelet
-
 #forge:salsas
 - croptopia:salsa
 
@@ -14912,99 +14774,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #curios:bracelet
 - silentgear:bracelet
-- treasure2:iron_bracelet
-- treasure2:copper_bracelet
-- treasure2:silver_bracelet
-- treasure2:gold_bracelet
-- treasure2:diamond_iron_bracelet
-- treasure2:emerald_iron_bracelet
-- treasure2:onyx_iron_bracelet
-- treasure2:topaz_iron_bracelet
-- treasure2:ruby_iron_bracelet
-- treasure2:sapphire_iron_bracelet
-- treasure2:white_pearl_iron_bracelet
-- treasure2:black_pearl_iron_bracelet
-- treasure2:diamond_copper_bracelet
-- treasure2:emerald_copper_bracelet
-- treasure2:onyx_copper_bracelet
-- treasure2:topaz_copper_bracelet
-- treasure2:ruby_copper_bracelet
-- treasure2:sapphire_copper_bracelet
-- treasure2:white_pearl_copper_bracelet
-- treasure2:black_pearl_copper_bracelet
-- treasure2:diamond_silver_bracelet
-- treasure2:emerald_silver_bracelet
-- treasure2:onyx_silver_bracelet
-- treasure2:topaz_silver_bracelet
-- treasure2:ruby_silver_bracelet
-- treasure2:sapphire_silver_bracelet
-- treasure2:white_pearl_silver_bracelet
-- treasure2:black_pearl_silver_bracelet
-- treasure2:diamond_gold_bracelet
-- treasure2:emerald_gold_bracelet
-- treasure2:onyx_gold_bracelet
-- treasure2:topaz_gold_bracelet
-- treasure2:ruby_gold_bracelet
-- treasure2:sapphire_gold_bracelet
-- treasure2:white_pearl_gold_bracelet
-- treasure2:black_pearl_gold_bracelet
-- treasure2:great_iron_bracelet
-- treasure2:great_copper_bracelet
-- treasure2:great_silver_bracelet
-- treasure2:great_gold_bracelet
-- treasure2:great_blood_bracelet
-- treasure2:great_black_bracelet
-- treasure2:great_diamond_iron_bracelet
-- treasure2:great_emerald_iron_bracelet
-- treasure2:great_onyx_iron_bracelet
-- treasure2:great_topaz_iron_bracelet
-- treasure2:great_ruby_iron_bracelet
-- treasure2:great_sapphire_iron_bracelet
-- treasure2:great_white_pearl_iron_bracelet
-- treasure2:great_black_pearl_iron_bracelet
-- treasure2:great_diamond_copper_bracelet
-- treasure2:great_emerald_copper_bracelet
-- treasure2:great_onyx_copper_bracelet
-- treasure2:great_topaz_copper_bracelet
-- treasure2:great_ruby_copper_bracelet
-- treasure2:great_sapphire_copper_bracelet
-- treasure2:great_white_pearl_copper_bracelet
-- treasure2:great_black_pearl_copper_bracelet
-- treasure2:great_diamond_silver_bracelet
-- treasure2:great_emerald_silver_bracelet
-- treasure2:great_onyx_silver_bracelet
-- treasure2:great_topaz_silver_bracelet
-- treasure2:great_ruby_silver_bracelet
-- treasure2:great_sapphire_silver_bracelet
-- treasure2:great_white_pearl_silver_bracelet
-- treasure2:great_black_pearl_silver_bracelet
-- treasure2:great_diamond_gold_bracelet
-- treasure2:great_emerald_gold_bracelet
-- treasure2:great_onyx_gold_bracelet
-- treasure2:great_topaz_gold_bracelet
-- treasure2:great_ruby_gold_bracelet
-- treasure2:great_sapphire_gold_bracelet
-- treasure2:great_white_pearl_gold_bracelet
-- treasure2:great_black_pearl_gold_bracelet
-- treasure2:great_diamond_blood_bracelet
-- treasure2:great_emerald_blood_bracelet
-- treasure2:great_onyx_blood_bracelet
-- treasure2:great_topaz_blood_bracelet
-- treasure2:great_ruby_blood_bracelet
-- treasure2:great_sapphire_blood_bracelet
-- treasure2:great_white_pearl_blood_bracelet
-- treasure2:great_black_pearl_blood_bracelet
-- treasure2:great_diamond_black_bracelet
-- treasure2:great_emerald_black_bracelet
-- treasure2:great_onyx_black_bracelet
-- treasure2:great_topaz_black_bracelet
-- treasure2:great_ruby_black_bracelet
-- treasure2:great_sapphire_black_bracelet
-- treasure2:great_white_pearl_black_bracelet
-- treasure2:great_black_pearl_black_bracelet
-- treasure2:bracelet_of_wonder
-- treasure2:adephagias_bounty
-- treasure2:mirthas_torch
 - cyclic:charm_knockback_resistance?
 - cyclic:charm_crit?
 - cyclic:charm_creeper?
@@ -16684,103 +16453,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - mythicbotany:cursed_andwari_ring
 - mythicbotany:andwari_ring
 - eidolon:basic_ring
-- treasure2:iron_ring
-- treasure2:copper_ring
-- treasure2:silver_ring
-- treasure2:gold_ring
-- treasure2:diamond_iron_ring
-- treasure2:emerald_iron_ring
-- treasure2:onyx_iron_ring
-- treasure2:topaz_iron_ring
-- treasure2:ruby_iron_ring
-- treasure2:sapphire_iron_ring
-- treasure2:white_pearl_iron_ring
-- treasure2:black_pearl_iron_ring
-- treasure2:diamond_copper_ring
-- treasure2:emerald_copper_ring
-- treasure2:onyx_copper_ring
-- treasure2:topaz_copper_ring
-- treasure2:ruby_copper_ring
-- treasure2:sapphire_copper_ring
-- treasure2:white_pearl_copper_ring
-- treasure2:black_pearl_copper_ring
-- treasure2:diamond_silver_ring
-- treasure2:emerald_silver_ring
-- treasure2:onyx_silver_ring
-- treasure2:topaz_silver_ring
-- treasure2:ruby_silver_ring
-- treasure2:sapphire_silver_ring
-- treasure2:white_pearl_silver_ring
-- treasure2:black_pearl_silver_ring
-- treasure2:diamond_gold_ring
-- treasure2:emerald_gold_ring
-- treasure2:onyx_gold_ring
-- treasure2:topaz_gold_ring
-- treasure2:ruby_gold_ring
-- treasure2:sapphire_gold_ring
-- treasure2:white_pearl_gold_ring
-- treasure2:black_pearl_gold_ring
-- treasure2:great_iron_ring
-- treasure2:great_copper_ring
-- treasure2:great_silver_ring
-- treasure2:great_gold_ring
-- treasure2:great_blood_ring
-- treasure2:great_black_ring
-- treasure2:great_diamond_iron_ring
-- treasure2:great_emerald_iron_ring
-- treasure2:great_onyx_iron_ring
-- treasure2:great_topaz_iron_ring
-- treasure2:great_ruby_iron_ring
-- treasure2:great_sapphire_iron_ring
-- treasure2:great_white_pearl_iron_ring
-- treasure2:great_black_pearl_iron_ring
-- treasure2:great_diamond_copper_ring
-- treasure2:great_emerald_copper_ring
-- treasure2:great_onyx_copper_ring
-- treasure2:great_topaz_copper_ring
-- treasure2:great_ruby_copper_ring
-- treasure2:great_sapphire_copper_ring
-- treasure2:great_white_pearl_copper_ring
-- treasure2:great_black_pearl_copper_ring
-- treasure2:great_diamond_silver_ring
-- treasure2:great_emerald_silver_ring
-- treasure2:great_onyx_silver_ring
-- treasure2:great_topaz_silver_ring
-- treasure2:great_ruby_silver_ring
-- treasure2:great_sapphire_silver_ring
-- treasure2:great_white_pearl_silver_ring
-- treasure2:great_black_pearl_silver_ring
-- treasure2:great_diamond_gold_ring
-- treasure2:great_emerald_gold_ring
-- treasure2:great_onyx_gold_ring
-- treasure2:great_topaz_gold_ring
-- treasure2:great_ruby_gold_ring
-- treasure2:great_sapphire_gold_ring
-- treasure2:great_white_pearl_gold_ring
-- treasure2:great_black_pearl_gold_ring
-- treasure2:great_diamond_blood_ring
-- treasure2:great_emerald_blood_ring
-- treasure2:great_onyx_blood_ring
-- treasure2:great_topaz_blood_ring
-- treasure2:great_ruby_blood_ring
-- treasure2:great_sapphire_blood_ring
-- treasure2:great_white_pearl_blood_ring
-- treasure2:great_black_pearl_blood_ring
-- treasure2:great_diamond_black_ring
-- treasure2:great_emerald_black_ring
-- treasure2:great_onyx_black_ring
-- treasure2:great_topaz_black_ring
-- treasure2:great_ruby_black_ring
-- treasure2:great_sapphire_black_ring
-- treasure2:great_white_pearl_black_ring
-- treasure2:great_black_pearl_black_ring
-- treasure2:angels_ring
-- treasure2:ring_of_fortitude
-- treasure2:shadows_gift
-- treasure2:ring_of_life_death
-- treasure2:castle_ring
-- treasure2:peasants_fortune
-- treasure2:gottschs_ring_of_moon
 - ars_nouveau:ring_of_lesser_discount
 - ars_nouveau:ring_of_greater_discount
 - enigmaticlegacy:magnet_ring
@@ -23856,9 +23528,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - thermal:lead_gear
 - emendatusenigmatica:lead_gear
 
-#treasure2:other_adornment
-- treasure2:pocket_watch
-
 #forge:bellpeppers
 - croptopia:bellpepper
 - #forge:fruits/bellpepper
@@ -25067,11 +24736,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - chisel:concrete/brown/cuts
 - minecraft:brown_concrete
 
-#treasure2:charm
-- treasure2:copper_charm
-- treasure2:silver_charm
-- treasure2:gold_charm
-
 #mekanism:clumps/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_clump
 
@@ -25244,11 +24908,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #forge:chicken_and_dumplings
 - croptopia:chicken_and_dumplings
-
-#treasure2:silver
-- treasure2:silver_ring
-- treasure2:silver_necklace
-- treasure2:silver_bracelet
 
 #mekanism:dirty_dusts
 - mekanism:dirty_dust_iron

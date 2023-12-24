@@ -24,10 +24,10 @@ Colorful Skies is a general purpose modpack.
 ### Optimization & Graphics Mods
 
 - [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)
+- [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
 - [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)
 - [Radon](https://www.curseforge.com/minecraft/mc-mods/radon)
 - [Roadrunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner)
-- [Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)
 
 ### Resource Packs
 
@@ -44,7 +44,6 @@ Colorful Skies is a general purpose modpack.
 - [Emendatus Enigmatica](https://www.curseforge.com/minecraft/mc-mods/emendatus-enigmatica)
 - [Infernal Expansion](https://www.curseforge.com/minecraft/mc-mods/infernal-expansion)
 - [Oh The Biomes You'll Go](https://www.curseforge.com/minecraft/mc-mods/oh-the-biomes-youll-go)
-- [Orcinus's Caves](https://www.curseforge.com/minecraft/mc-mods/orcinuss-caves)
 - [Sky Villages](https://www.curseforge.com/minecraft/mc-mods/sky-villages-forge)
 - [Stoneholm, Underground Villages](https://www.curseforge.com/minecraft/mc-mods/stoneholm-forge)
 - [The Endergetic Expansion](https://www.curseforge.com/minecraft/mc-mods/endergetic)
@@ -70,7 +69,6 @@ Colorful Skies is a general purpose modpack.
     - [Tetranomicon](https://www.curseforge.com/minecraft/mc-mods/tetranomicon)
 - [Tiny Chests](https://www.curseforge.com/minecraft/mc-mods/tinychest)
 - [The Twilight Forest](https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest)
-- [Treasure2](https://www.curseforge.com/minecraft/mc-mods/treasure2)
 - [When Dungeons Arise](https://www.curseforge.com/minecraft/mc-mods/when-dungeons-arise)
 
 ### Building Mods
@@ -90,6 +88,7 @@ Colorful Skies is a general purpose modpack.
 
 - [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
     - [Ars Creo](https://www.curseforge.com/minecraft/mc-mods/ars-creo)
+    - [Ars Elemental](https://www.curseforge.com/minecraft/mc-mods/ars-elemental)
 - [Astral Sorcery](https://www.curseforge.com/minecraft/mc-mods/astral-sorcery)
 - [Blood Magic](https://www.curseforge.com/minecraft/mc-mods/blood-magic)
 - [Botania](https://www.curseforge.com/minecraft/mc-mods/botania)
@@ -104,7 +103,7 @@ Colorful Skies is a general purpose modpack.
 
 ### Tech Mods
 
-- [Compact Machines](https://www.curseforge.com/minecraft/mc-mods/compact-machines)
+- [Avaritia](https://www.curseforge.com/minecraft/mc-mods/avaritia-universal)
 - [Create](https://www.curseforge.com/minecraft/mc-mods/create)
 - [Cyclic](https://www.curseforge.com/minecraft/mc-mods/cyclic)
 - [Draconic Evolution](https://www.curseforge.com/minecraft/mc-mods/draconic-evolution)

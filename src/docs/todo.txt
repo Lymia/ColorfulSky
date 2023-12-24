@@ -38,8 +38,10 @@
 - Update manifest again!!
 
 - Loot rework
-- See if I have a better way to make caverns work. One of the mods in particular is crusty...
 - Nuke most machines from having EMC values.
 - Configure Slice of Life
 - Finish retexturing Silent's Gems
 - Silent's Gems in Geodes and Geodes in ores.
+
+- Finished mirrored world
+- Mod balancing

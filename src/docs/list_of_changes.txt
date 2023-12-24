@@ -5,3 +5,4 @@
 - Removed Aluminum entirely, replacing it with gold (in the case of Immersive Engineering) and other materials (in the case of mechworks).
 - Removed Cinnabar entirely, in favor of [figure out in favor of what].
 - Removed Niter ore entirely, in favor of the sand-based recipe.
+- Added a (much?) harder Mirrored World.
