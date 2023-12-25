@@ -20,12 +20,12 @@ progressionRuleDefault = false
 #Disable the uncrafting function of the uncrafting table. Provided as an option when interaction with other mods produces exploitable recipes.
 disableUncrafting = true
 #If true, Keepsake Caskets that are spawned when a player dies will not be accessible by other players. Use this if you dont want people taking from other people's death caskets. NOTE: server operators will still be able to open locked caskets.
-uuid_locking = false
+uuid_locking = true
 
 #Settings that are not reversible without consequences.
 ["Dimension Settings"]
 	#If true, Twilight Forest will generate as a void except for Major Structures
-	skylightForest = true
+	skylightForest = false
 	#If true, players spawning for the first time will spawn in the Twilight Forest.
 	newPlayersSpawnInTF = false
 	#If true, giant Twilight Oaks will also spawn in void worlds
@@ -43,11 +43,11 @@ uuid_locking = false
 	#For example: "minecraft:iron_ore 0.7 8 1 24" would add a stalactite equal to the default iron ore stalactite.
 	["Dimension Settings"."Custom Hollow Hill Stalactites"]
 		#Blocks generating as stalactites in all hills
-		smallHill = []
+		smallHill = ["emendatusenigmatica:nickel_ore 0.5 6 1 20", "emendatusenigmatica:lead_ore 0.5 6 1 20", "emendatusenigmatica:osmium_ore 0.5 6 1 10", "emendatusenigmatica:silver_ore 0.5 6 1 10"]
 		#Blocks generating as stalactites in medium and large hills
-		mediumHill = []
+		mediumHill = ["emendatusenigmatica:nickel_ore 0.5 6 1 20", "emendatusenigmatica:lead_ore 0.5 6 1 20", "emendatusenigmatica:osmium_ore 0.5 6 1 10", "emendatusenigmatica:silver_ore 0.5 6 1 10"]
 		#Blocks generating as stalactites in large hills only
-		largeHill = []
+		largeHill = ["emendatusenigmatica:nickel_ore 0.5 6 1 20", "emendatusenigmatica:lead_ore 0.5 6 1 20", "emendatusenigmatica:osmium_ore 0.5 6 1 10", "emendatusenigmatica:silver_ore 0.5 6 1 10"]
 		#If true, default stalactites and stalactites defined by other mods will not be used.
 		useConfigOnly = false
 

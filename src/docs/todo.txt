@@ -1,4 +1,5 @@
 - Backport Silent's Gear 1.17+ design to 1.16
+
 - Rebalance all material stats for both TiC and Silent's Gear.
 - Finish work on ore textures
     - Do the Silent's Gems rework already.

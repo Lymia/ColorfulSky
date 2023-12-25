@@ -21,7 +21,7 @@
   "customGenerator": {
     "vanillaEndIntegration [default: true]": true,
     "useNewGenerator [default: true]": true,
-    "noRingVoid [default: false]": false,
+    "noRingVoid [default: false]": true,
     "generateCentralIsland [default: true]": true,
     "endCityFailChance [default: 5]": 5,
     "layers": {

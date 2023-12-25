@@ -37,7 +37,7 @@
 	#Range: 0.0 ~ 5.0
 	PlayerDeathLossPowerPoint = 1.0
 	#Give a soul spell item for player first join
-	GiveSoulSpell = true
+	GiveSoulSpell = false
 	#Shrine Lamp Effect Cost (Power Point/Per Hour)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ShrineLampEffectCost = 0.9

@@ -5,7 +5,7 @@ whitelist = ["forge:(ingots|nuggets)\\/(copper|aluminum|lead|nickel|silver|tin|u
 #Allowed Values: USE_WHITELIST, USE_BLACKLIST, USE_BOTH_LISTS, USE_NO_LIST
 listMode = "USE_BOTH_LISTS"
 #Preferred Mods
-preferredMods = ["minecraft", "cavesandcliffs", "thermal", "mekanism", "immersiveengineering", "stalwart_dungeons", "japoca"]
+preferredMods = ["minecraft", "cavesandcliffs", "emendatusenigmatica", "thermal", "mekanism", "immersiveengineering", "stalwart_dungeons", "japoca"]
 #Blacklisted Mods
 blacklistMods = []
 #Tag names that should be unified even if they are different
