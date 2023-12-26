@@ -22,7 +22,7 @@ dimension_whitelist = []
 #list of dimensions that loot chests should not be replaced in [default: blank, allowing all dimensions, format e.g., minecraft:overworld]
 dimension_blacklist = []
 #list of loot tables which shouldn't be converted [in the format of modid:loot_table]
-loot_table_blacklist = []
+loot_table_blacklist = ["minecraft:chests/village/village_armorer", "minecraft:chests/village/village_butcher", "minecraft:chests/village/village_cartographer", "minecraft:chests/village/village_desert_house", "minecraft:chests/village/village_fisher", "minecraft:chests/village/village_fletcher", "minecraft:chests/village/village_mason", "minecraft:chests/village/village_plains_house", "minecraft:chests/village/village_savanna_house", "minecraft:chests/village/village_shepherd", "minecraft:chests/village/village_snowy_house", "minecraft:chests/village/village_taiga_house", "minecraft:chests/village/village_tannery", "minecraft:chests/village/village_temple", "minecraft:chests/village/village_toolsmith", "minecraft:chests/village/village_weaponsmith", "minecraft:chests/igloo_chest", "minecraft:chests/ruined_portal", "minecraft:chests/shipwreck_map", "minecraft:chests/shipwreck_supply", "minecraft:chests/shipwreck_treasure", "minecraft:chests/underwater_ruin_big", "minecraft:chests/underwater_ruin_small"]
 #list of modids which shouldn't be converted [in the format of modid, modid]
 loot_mod_blacklist = ["byg", "charm", "immersiveengineering", "mowziesmobs", "skyvillages", "stoneholm"]
 #prevent the destruction of Lootr chests except while sneaking in creative mode
@@ -39,9 +39,9 @@ blast_immune = false
 #Range: > 0
 decay_value = 12000
 #list of loot tables which will decay [default blank, meaning no chests decay, in the format of 'modid:loot_table']
-decay_loot_tables = []
+decay_loot_tables = ["minecraft:chests/abandoned_mineshaft", "minecraft:chests/bastion_bridge", "minecraft:chests/bastion_hoglin_stable", "minecraft:chests/bastion_other", "minecraft:chests/bastion_treasure", "minecraft:chests/desert_pyramid", "minecraft:chests/end_city_treasure", "minecraft:chests/jungle_temple", "minecraft:chests/nether_bridge", "minecraft:chests/pillager_outpost", "minecraft:chests/simple_dungeon", "minecraft:chests/stronghold_corridor", "minecraft:chests/stronghold_crossing", "minecraft:chests/stronghold_library", "minecraft:chests/woodland_mansion"]
 #list of mod IDs whose loot tables will decay [default blank, meaning no chests decay, in the format of 'modid', 'modid']
-decay_modids = ["artifacts", "betterdungeons", "betterstrongholds", "bloodmagic", "dungeoncrawl", "dungeons_arise", "dungeons_plus", "eidolon", "elementalcraft", "iceandfire", "infernalexp", "minecraft", "repurposed_structures", "savageandravage", "twilightforest", "yungsextras"]
+decay_modids = ["artifacts", "betterdungeons", "betterstrongholds", "bloodmagic", "dungeoncrawl", "dungeons_arise", "dungeons_plus", "eidolon", "elementalcraft", "iceandfire", "infernalexp", "repurposed_structures", "savageandravage", "twilightforest", "yungsextras"]
 #list of dimensions where loot chests should automatically decay [default: blank, e.g., minecraft:overworld]
 decay_dimensions = ["overworldmirror:overworld"]
 #overriding decay_loot_tables, decay_modids and decay_dimensions: all chests will decay after being opened for the first time
@@ -62,3 +62,4 @@ disable_notifications = false
 #maximum time (in ticks) remaining on a chest before a notification for refreshing or decaying is sent to a player (default 30 seconds, -1 for no delay)
 #Range: > -1
 notification_delay = -1
+
