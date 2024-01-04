@@ -81,6 +81,7 @@ class DatapackModel(object):
         self._removed_names = []
         self._unified_names = []
         self._hidden_names = []
+        self._removed_recipes = []
         self._i18n_strings = {}
 
         self._has_config = set([])
@@ -164,6 +165,8 @@ class DatapackModel(object):
         self._hidden_names.append(name)
         self._removed_names.append(name)
         self.tags.remove_name(name)
+    def remove_recipe(self, name):
+        self._removed_recipes.append(name)
 
     def add_client_script(self, name, script, priority = 0):
         """Adds a KubeJS client script."""
@@ -186,6 +189,8 @@ class DatapackModel(object):
         """Adds a translation string to override."""
         self._i18n_strings.setdefault(lang, {}).setdefault(group, {})[name] = value
 
+    def copy_asset(self, dst, src):
+        self._copy_from_if_not_exists(f"{self._kubejs_dir}/assets/{dst}", src)
     def compose_texture(self, target_path, overlay_source, overlay_layer, base_source):
         """Composes a texture using GIMP."""
         overlay = self._gimp_load_xcf(overlay_source)
@@ -246,7 +251,19 @@ class DatapackModel(object):
         """
         self.add_client_script("remove_unused", json)
 
-        json = f"remove_items({repr(sorted(set(self._removed_names)))})"
+        removed_tags = set({})
+        for kind in self.tags._tags:
+            for tag in self.tags._tags[kind]:
+                if len(self.tags._tags[kind][tag]) == 0:
+                    removed_tags.add(f"#{tag}")
+        removed_tags = list(removed_tags)
+
+        json = f"""
+            remove_items({repr(sorted(set(self._removed_names)))})
+            remove_all_recipes({repr(sorted(set(self._removed_names + removed_tags)))})
+            let recipes = {repr(sorted(set(self._removed_recipes)))}
+            recipes.forEach(remove_recipe_by_id)
+        """
         self.add_server_script("remove_unused", json)
     def _finalize(self):
         self._generate_tags(self.tags)

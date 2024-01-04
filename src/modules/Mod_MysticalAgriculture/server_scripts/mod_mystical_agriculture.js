@@ -39,7 +39,7 @@ remove_seed_list.forEach(x => remove_recipe_by_id(`mysticalagriculture:essence/c
 // Remove unwanted essence recipies
 disable_essence_recipe_list.forEach(x => remove_recipe_by_id(`mysticalagriculture:essence/${x}`))
 // Replace essences with ones that are still accessible
-run_on_recipies(e => {
+run_on_recipes(e => {
     replacements_list.forEach(x => e.replaceInput(`mysticalagriculture:${x[0]}_essence`, `mysticalagriculture:${x[1]}_essence`))
 })
 

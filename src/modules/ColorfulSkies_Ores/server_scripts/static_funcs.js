@@ -28,7 +28,7 @@ let bind_recipies = function(preferred_list) {
         // Unify smelting recipes
         remove_recipe_by_processing_output("minecraft:smelting", `#forge:ingots/${kind}`)
         remove_recipe_by_processing_output("minecraft:blasting", `#forge:ingots/${kind}`)
-        run_on_recipies(e => {
+        run_on_recipes(e => {
             ["ores", "dusts", "chunks"].forEach(type => {
                 if (tag_exists(`forge:${type}/${kind}`)) {
                     e.recipes.minecraft.smelting(ingotItem, `#forge:${type}/${kind}`).xp(0.5)
@@ -41,7 +41,7 @@ let bind_recipies = function(preferred_list) {
         // TODO
     }
     let unify_one = function(tag, item) {
-        run_on_recipies(e => {
+        run_on_recipes(e => {
             e.replaceInput(`#${tag}`, item)
             ingredient.of(`#${tag}`).stacks.forEach(stack => {
                 e.replaceInput(stack.getId(), item)

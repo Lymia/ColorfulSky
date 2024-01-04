@@ -1,8 +1,8 @@
 ["Better Caves"."Underground Generation".Caves."Type 1 Caves"]
-"Type 1 Cave Maximum Altitude" = 60
+"Type 1 Cave Maximum Altitude" = 30
 
 ["Better Caves"."Underground Generation".Caves."Type 2 Caves"]
-"Type 2 Cave Maximum Altitude" = 60
+"Type 2 Cave Maximum Altitude" = 30
 
 ["Better Caves"."Underground Generation".Caves."Surface Caves"]
 "Surface Cave Minimum Altitude" = 25
@@ -22,4 +22,4 @@
 "Water Region Spawn Chance" = 100.0
 
 ["Better Caves"."Underground Generation".Miscellaneous]
-"Liquid Altitude" = 7
+"Liquid Altitude" = 5

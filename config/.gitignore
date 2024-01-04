@@ -4,3 +4,5 @@ environmental
 oculus.properties
 .*
 touhou_little_maid/*
+/cpm.json
+/firstperson.json

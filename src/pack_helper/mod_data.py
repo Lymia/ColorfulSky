@@ -19,6 +19,7 @@ class Mod(Enum):
     TwilightForest = 27
     EmendatusEnigmatica = 28
     InfernalExpansion = 29
+    SilentGems = 30
 
 mod_prefixes = {
     Mod.DraconicEvolution: "Draconic-Evolution",
@@ -30,6 +31,7 @@ mod_prefixes = {
     Mod.TwilightForest: "twilightforest",
     Mod.EmendatusEnigmatica: "EmendatusEnigmatica",
     Mod.InfernalExpansion: "infernal-expansion",
+    Mod.SilentGems: "SilentGems",
 }
 fixed_paths = {
     Mod.ColorfulSkyOres: "../openloader/resources/ColorfulSkyOres",
@@ -81,5 +83,7 @@ class ModData(object):
             if os.path.exists(path):
                 return path
         raise Exception(f"Path {rpath} not found in any .jar")
+    def find_asset(self, rpath):
+        return self.find_path(f"assets/{rpath}")
     def find_texture(self, name):
         return self.find_path(f"assets/{group(name)}/textures/{path(name)}.png")

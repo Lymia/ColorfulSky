@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Dec 23, 2023 10:09:10 PM
+To refresh this file, delete it and run /reload command again! Last updated: Dec 27, 2023 4:56:20 AM
 
 #bloodmagic:gravels/utherium
 - emendatusenigmatica:utherium_gravel
@@ -1290,6 +1290,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - #forge:vegetables/zucchini
 - croptopia:zucchini
 - #forge:crops/zucchini
+
+#rftoolsutility:living/living
+- #rftoolsutility:living/lowyield
+- #rftoolsutility:living/averageyield
+- #rftoolsutility:living/highyield
 
 #forge:ores/netherite_scrap
 - minecraft:ancient_debris
@@ -9317,6 +9322,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - minecraft:crimson_nylium
 - minecraft:warped_nylium
 
+#rftoolsutility:living/highyield
+- #forge:crops
+- #minecraft:fishes
+- minecraft:beef
+- minecraft:porkchop
+- minecraft:mutton
+- minecraft:chicken
+- minecraft:rabbit
+- minecraft:chorus_fruit
+
 #forge:snicker_doodles
 - croptopia:snicker_doodle
 
@@ -11036,6 +11051,15 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 - refinedstorage:silicon
 - emendatusenigmatica:silicon_gem
 - tinyredstone:silicon
+
+#rftoolsutility:living/averageyield
+- minecraft:melon
+- minecraft:sugar_cane
+- minecraft:chorus_flower
+- minecraft:pumpkin
+- minecraft:cocoa_beans
+- minecraft:apple
+- minecraft:rabbit_foot
 
 #forge:ingots/drenched_iron
 - elementalcraft:drenched_iron_ingot
@@ -20374,6 +20398,17 @@ To refresh this file, delete it and run /reload command again! Last updated: Dec
 
 #forge:saplings/fig
 - croptopia:fig_sapling
+
+#rftoolsutility:living/lowyield
+- #minecraft:leaves
+- #minecraft:saplings
+- #minecraft:flowers
+- #forge:mushrooms
+- #forge:seeds
+- minecraft:cactus
+- minecraft:vine
+- minecraft:lily_pad
+- minecraft:rabbit_hide
 
 #byg:blue_enchanted_logs
 - byg:blue_enchanted_log

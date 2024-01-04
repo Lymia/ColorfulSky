@@ -6,3 +6,4 @@
 - Removed Cinnabar entirely, in favor of [figure out in favor of what].
 - Removed Niter ore entirely, in favor of the sand-based recipe.
 - Added a (much?) harder Mirrored World.
+- Removed pretty much all the custom Silent's Gems stuff (chaos gems, etc) in favor of Better End materials.

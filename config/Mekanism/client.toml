@@ -21,7 +21,7 @@
 	#If true, don't render Cables/Pipes/Tubes as transparent and don't render their contents.
 	opaqueTransmitters = false
 	#Christmas/New Years greetings in chat.
-	holidays = true
+	holidays = false
 	#Color of energy in item durability display.
 	energyColor = 3997338
 	#Align HUD (text) with left (if true) or right (if false)

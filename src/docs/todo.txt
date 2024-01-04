@@ -1,11 +1,7 @@
-- Backport Silent's Gear 1.17+ design to 1.16
-
 - Rebalance all material stats for both TiC and Silent's Gear.
 - Finish work on ore textures
-    - Do the Silent's Gems rework already.
 - Unify ore processing
 - Do another sweep for EMC exploits.
-- Basic quests toolchain.
 - Mystical Agriculture/etc recipes
     - Consider removing armor/weapons/augments (and corresponding documentation)
     - Consider rebalancing essence costs.
@@ -46,3 +42,7 @@
 
 - Finished mirrored world
 - Mod balancing
+- Replace Woot with Hostile Neural Networks
+- Drop Chaos Crystals and Dimenional Shards from the Mirrored World
+
+- Basic quests toolchain.

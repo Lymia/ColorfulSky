@@ -39,6 +39,8 @@ shutil.copytree("../tlm_custom_pack", "../build_dist/overrides/tlm_custom_pack")
 shutil.copyfile("pack/options.txt", "../build_dist/overrides/options.txt")
 
 print("- Removing transient configurations")
+delete_file("../build_dist/overrides/config/cpm.properties")
+delete_file("../build_dist/overrides/config/firstperson.json")
 delete_file("../build_dist/overrides/config/oculus.properties")
 delete_file("../build_dist/overrides/config/ProjectE/mappingdump.json")
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ResourceCache", ignore_errors=True)

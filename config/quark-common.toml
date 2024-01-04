@@ -1944,12 +1944,12 @@
 		"Shiny Animal Chance" = 2048
 
 [oddities]
-	Backpack = true
+	Backpack = false
 	Crate = true
 	Magnets = false
 	"Matrix Enchanting" = true
-	Pipes = true
-	"Totem Of Holding" = true
+	Pipes = false
+	"Totem Of Holding" = false
 
 	[oddities.backpack]
 		#Set this to true to allow the backpacks to be unequipped even with items in them
@@ -2008,9 +2008,9 @@
 		#Set to false to disable the ability to influence enchantment outcomes with candles (requires the Tallow and Candles module enabled)
 		"Allow Influencing" = true
 		#The max amount of candles that can influence a single enchantment
-		"Influence Max" = 6
+		"Influence Max" = 8
 		#How much each candle influences an enchantment. This works as a multiplier to its weight
-		"Influence Power" = 0.125
+		"Influence Power" = 0.3
 		#If you set this to false, the vanilla Enchanting Table will no longer automatically convert to the Matrix Enchanting table. You'll have to add a recipe for the Matrix Enchanting Table to make use of this.
 		"Automatically Convert" = false
 
