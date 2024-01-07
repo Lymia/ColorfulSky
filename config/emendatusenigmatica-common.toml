@@ -4,7 +4,7 @@
 
 	["Coal Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 60]
 		#Range: 0 ~ 256
 		overworld_base = 60
@@ -17,13 +17,13 @@
 		#Configure the ore Vein Size [Default: 17]
 		#Range: 0 ~ 64
 		overworld_size = 17
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Coal Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -40,13 +40,13 @@
 		#Ore Vein Size [Default: 17]
 		#Range: 0 ~ 64
 		nether_size = 17
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Coal Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -63,19 +63,19 @@
 		#Ore Vein Size [Default: 17]
 		#Range: 0 ~ 64
 		end_size = 17
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Iron Config"]
 
 	["Iron Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		overworld_base = 32
@@ -88,13 +88,13 @@
 		#Configure the ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		overworld_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Iron Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -111,13 +111,13 @@
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		nether_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Iron Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -134,19 +134,19 @@
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		end_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Gold Config"]
 
 	["Gold Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 16]
 		#Range: 0 ~ 256
 		overworld_base = 16
@@ -159,13 +159,13 @@
 		#Configure the ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		overworld_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Gold Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -182,13 +182,13 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		nether_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Gold Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -205,19 +205,19 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		end_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Diamond Config"]
 
 	["Diamond Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 8]
 		#Range: 0 ~ 256
 		overworld_base = 8
@@ -230,13 +230,13 @@
 		#Configure the ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		overworld_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Diamond Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -253,13 +253,13 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		nether_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Diamond Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -276,19 +276,19 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		end_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Emerald Config"]
 
 	["Emerald Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 156]
 		#Range: 0 ~ 256
 		overworld_base = 156
@@ -301,13 +301,13 @@
 		#Configure the ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		overworld_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Emerald Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -324,13 +324,13 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		nether_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Emerald Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -347,19 +347,19 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		end_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Lapis Lazuli Config"]
 
 	["Lapis Lazuli Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 8]
 		#Range: 0 ~ 256
 		overworld_base = 8
@@ -372,13 +372,13 @@
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		overworld_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Lapis Lazuli Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -395,13 +395,13 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		nether_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Lapis Lazuli Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -418,19 +418,19 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		end_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Redstone Config"]
 
 	["Redstone Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 8]
 		#Range: 0 ~ 256
 		overworld_base = 8
@@ -443,13 +443,13 @@
 		#Configure the ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		overworld_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Redstone Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -466,13 +466,13 @@
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		nether_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Redstone Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -489,19 +489,19 @@
 		#Ore Vein Size [Default: 11]
 		#Range: 0 ~ 64
 		end_size = 11
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Nether Quartz Config"]
 
 	["Nether Quartz Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 60]
 		#Range: 0 ~ 256
 		overworld_base = 60
@@ -514,13 +514,13 @@
 		#Configure the ore Vein Size [Default: 14]
 		#Range: 0 ~ 64
 		overworld_size = 14
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Nether Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -537,13 +537,13 @@
 		#Ore Vein Size [Default: 14]
 		#Range: 0 ~ 64
 		nether_size = 14
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Nether Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -560,19 +560,19 @@
 		#Ore Vein Size [Default: 14]
 		#Range: 0 ~ 64
 		end_size = 14
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Copper Config"]
 
 	["Copper Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 52]
 		#Range: 0 ~ 256
 		overworld_base = 52
@@ -585,13 +585,13 @@
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		overworld_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Copper Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -608,13 +608,13 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		nether_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Copper Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -631,19 +631,19 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		end_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Aluminum Config"]
 
 	["Aluminum Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 60]
 		#Range: 0 ~ 256
 		overworld_base = 60
@@ -656,13 +656,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Aluminum Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -679,13 +679,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Aluminum Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -702,19 +702,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Silver Config"]
 
 	["Silver Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 34]
 		#Range: 0 ~ 256
 		overworld_base = 34
@@ -727,13 +727,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Silver Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -750,13 +750,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Silver Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -773,19 +773,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Lead Config"]
 
 	["Lead Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 36]
 		#Range: 0 ~ 256
 		overworld_base = 36
@@ -798,13 +798,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Lead Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -821,13 +821,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Lead Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -844,19 +844,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Nickel Config"]
 
 	["Nickel Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		overworld_base = 32
@@ -869,13 +869,13 @@
 		#Configure the ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		overworld_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Nickel Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -892,13 +892,13 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		nether_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Nickel Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -915,19 +915,19 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		end_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Uranium Config"]
 
 	["Uranium Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 12]
 		#Range: 0 ~ 256
 		overworld_base = 12
@@ -940,13 +940,13 @@
 		#Configure the ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		overworld_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Uranium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -963,13 +963,13 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		nether_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Uranium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -986,19 +986,19 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		end_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Osmium Config"]
 
 	["Osmium Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		overworld_base = 32
@@ -1011,13 +1011,13 @@
 		#Configure the ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		overworld_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Osmium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1034,13 +1034,13 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		nether_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Osmium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1057,19 +1057,19 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		end_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Tin Config"]
 
 	["Tin Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 47]
 		#Range: 0 ~ 256
 		overworld_base = 47
@@ -1082,13 +1082,13 @@
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		overworld_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Tin Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1105,13 +1105,13 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		nether_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Tin Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1128,19 +1128,19 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		end_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Zinc Config"]
 
 	["Zinc Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 42]
 		#Range: 0 ~ 256
 		overworld_base = 42
@@ -1153,13 +1153,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Zinc Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1176,13 +1176,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Zinc Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1199,19 +1199,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Cobalt Config"]
 
 	["Cobalt Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		overworld_base = 32
@@ -1224,13 +1224,13 @@
 		#Configure the ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		overworld_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Cobalt Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1247,13 +1247,13 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		nether_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Cobalt Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1270,19 +1270,19 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		end_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Iridium Config"]
 
 	["Iridium Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 12]
 		#Range: 0 ~ 256
 		overworld_base = 12
@@ -1295,13 +1295,13 @@
 		#Configure the ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		overworld_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Iridium Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1318,13 +1318,13 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		nether_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Iridium Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1341,19 +1341,19 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		end_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Certus Quartz Config"]
 
 	["Certus Quartz Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 32]
 		#Range: 0 ~ 256
 		overworld_base = 32
@@ -1366,13 +1366,13 @@
 		#Configure the ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		overworld_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Certus Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1389,13 +1389,13 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		nether_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Certus Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1412,19 +1412,19 @@
 		#Ore Vein Size [Default: 8]
 		#Range: 0 ~ 64
 		end_size = 8
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Charged Certus Quartz Config"]
 
 	["Charged Certus Quartz Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 16]
 		#Range: 0 ~ 256
 		overworld_base = 16
@@ -1437,13 +1437,13 @@
 		#Configure the ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		overworld_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Charged Certus Quartz Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1460,13 +1460,13 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		nether_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Charged Certus Quartz Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1483,19 +1483,19 @@
 		#Ore Vein Size [Default: 4]
 		#Range: 0 ~ 64
 		end_size = 4
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Fluorite Config"]
 
 	["Fluorite Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 16]
 		#Range: 0 ~ 256
 		overworld_base = 16
@@ -1508,13 +1508,13 @@
 		#Configure the ore Vein Size [Default: 9]
 		#Range: 0 ~ 64
 		overworld_size = 9
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Fluorite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1531,13 +1531,13 @@
 		#Ore Vein Size [Default: 9]
 		#Range: 0 ~ 64
 		nether_size = 9
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Fluorite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1554,19 +1554,19 @@
 		#Ore Vein Size [Default: 9]
 		#Range: 0 ~ 64
 		end_size = 9
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Bitumen Config"]
 
 	["Bitumen Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 100]
 		#Range: 0 ~ 256
 		overworld_base = 100
@@ -1579,13 +1579,13 @@
 		#Configure the ore Vein Size [Default: 18]
 		#Range: 0 ~ 64
 		overworld_size = 18
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Bitumen Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1602,13 +1602,13 @@
 		#Ore Vein Size [Default: 18]
 		#Range: 0 ~ 64
 		nether_size = 18
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Bitumen Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1625,19 +1625,19 @@
 		#Ore Vein Size [Default: 18]
 		#Range: 0 ~ 64
 		end_size = 18
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Cinnabar Config"]
 
 	["Cinnabar Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 10]
 		#Range: 0 ~ 256
 		overworld_base = 10
@@ -1650,13 +1650,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Cinnabar Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1673,13 +1673,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Cinnabar Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1696,19 +1696,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Apatite Config"]
 
 	["Apatite Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 96]
 		#Range: 0 ~ 256
 		overworld_base = 96
@@ -1721,13 +1721,13 @@
 		#Configure the ore Vein Size [Default: 22]
 		#Range: 0 ~ 64
 		overworld_size = 22
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Apatite Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1744,13 +1744,13 @@
 		#Ore Vein Size [Default: 22]
 		#Range: 0 ~ 64
 		nether_size = 22
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Apatite Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1767,19 +1767,19 @@
 		#Ore Vein Size [Default: 22]
 		#Range: 0 ~ 64
 		end_size = 22
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Sulfur Config"]
 
 	["Sulfur Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 8]
 		#Range: 0 ~ 256
 		overworld_base = 8
@@ -1792,13 +1792,13 @@
 		#Configure the ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		overworld_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Sulfur Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1815,13 +1815,13 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		nether_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Sulfur Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1838,19 +1838,19 @@
 		#Ore Vein Size [Default: 7]
 		#Range: 0 ~ 64
 		end_size = 7
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Potassium Nitrate Config"]
 
 	["Potassium Nitrate Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 25]
 		#Range: 0 ~ 256
 		overworld_base = 25
@@ -1863,13 +1863,13 @@
 		#Configure the ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		overworld_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Potassium Nitrate Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1886,13 +1886,13 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		nether_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Potassium Nitrate Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1909,19 +1909,19 @@
 		#Ore Vein Size [Default: 5]
 		#Range: 0 ~ 64
 		end_size = 5
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Arcane Config"]
 
 	["Arcane Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 33]
 		#Range: 0 ~ 256
 		overworld_base = 33
@@ -1934,13 +1934,13 @@
 		#Configure the ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		overworld_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Arcane Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -1957,13 +1957,13 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		nether_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Arcane Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -1980,19 +1980,19 @@
 		#Ore Vein Size [Default: 6]
 		#Range: 0 ~ 64
 		end_size = 6
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Dimensional Shard Config"]
 
 	["Dimensional Shard Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 10]
 		#Range: 0 ~ 256
 		overworld_base = 10
@@ -2005,13 +2005,13 @@
 		#Configure the ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
 		overworld_size = 2
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Dimensional Shard Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -2028,13 +2028,13 @@
 		#Ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
 		nether_size = 2
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Dimensional Shard Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2051,19 +2051,19 @@
 		#Ore Vein Size [Default: 2]
 		#Range: 0 ~ 64
 		end_size = 2
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Ruby Config"]
 
 	["Ruby Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 20]
 		#Range: 0 ~ 256
 		overworld_base = 20
@@ -2076,13 +2076,13 @@
 		#Configure the ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		overworld_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Ruby Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -2099,13 +2099,13 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		nether_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Ruby Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2122,19 +2122,19 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		end_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Sapphire Config"]
 
 	["Sapphire Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 20]
 		#Range: 0 ~ 256
 		overworld_base = 20
@@ -2147,13 +2147,13 @@
 		#Configure the ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		overworld_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Sapphire Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -2170,13 +2170,13 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		nether_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Sapphire Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2193,19 +2193,19 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		end_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 ["Peridot Config"]
 
 	["Peridot Config".Overworld]
 		#Activate/Deactivate the Ore Gen in The Overworld [Default: true]
-		generate_in_the_overworld = false
+		generate_in_the_overworld = true
 		#Baseline Y-Level [Default: 20]
 		#Range: 0 ~ 256
 		overworld_base = 20
@@ -2218,13 +2218,13 @@
 		#Configure the ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		overworld_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		overworld_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		overworld_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		overworld_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		overworld_use_spread = true
 
 	["Peridot Config"."The Nether"]
 		#Activate/Deactivate the Ore Gen in The Nether [Default: false]
@@ -2241,13 +2241,13 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		nether_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		nether_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		nether_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		nether_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		nether_use_spread = true
 
 	["Peridot Config"."The End"]
 		#Activate/Deactivate the Ore Gen in The End [Default: false]
@@ -2264,17 +2264,17 @@
 		#Ore Vein Size [Default: 12]
 		#Range: 0 ~ 64
 		end_size = 12
+		#Use spread mechanic instead of random range [Default: true]
+		end_use_spread = true
 		#List of biome IDs in which the ore is not allowed to generate.
 		#To blacklist all biomes from a single mod, use 'modid:*'
 		end_biome_blacklist = []
 		#Invert Blacklist to Whitelist [Default: false]
 		end_biome_list_invert = false
-		#Use spread mechanic instead of random range [Default: true]
-		end_use_spread = true
 
 #World Gen - Ore Generation on Strata Stone Type
 ["Stratum Config: minecraft_stone"]
-	active = false
+	active = true
 
 ["Stratum Config: minecraft_andesite"]
 	active = false

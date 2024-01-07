@@ -14,11 +14,11 @@ Common: Quartz, Gold, Sulfur
 Uncommon: Lapis, Cobalt, Crimson Iron
 Rare: Uranium, Geode
 
-[ End (8 ores) ]
+[ End (9 ores) ]
 Common: Thallasium, Azure Silver, Osmium
 Uncommon: Zinc, Arcane Gem, Silver
 Rare: Fluorite, Emerald, Geode
-Trace: Rock Crystal
+Biome: Ametrine, Amber
 
 [ Twilight Forest (9 ores) ]
 Common: Coal, Iron, Nickel

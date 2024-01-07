@@ -31,9 +31,9 @@ modules = pack_helper.modules.ModuleLoader()
 modules.execute_init()
 
 print("- Loading exported tags...")
-pack_helper.tags.parse_config(datapack, "pack/default_tags/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"])
-pack_helper.tags.parse_config(datapack, "pack/default_tags/items.txt", strict = False, no_generate = True, kinds = ["items"])
-pack_helper.tags.parse_config(datapack, "pack/default_tags/fluids.txt", strict = False, no_generate = True, kinds = ["fluids"])
+pack_helper.tags.parse_config(datapack, "pack/default_tags/blocks.txt", strict = False, no_generate = True, kinds = ["blocks"], ignore_jaopca = True)
+pack_helper.tags.parse_config(datapack, "pack/default_tags/items.txt", strict = False, no_generate = True, kinds = ["items"], ignore_jaopca = True)
+pack_helper.tags.parse_config(datapack, "pack/default_tags/fluids.txt", strict = False, no_generate = True, kinds = ["fluids"], ignore_jaopca = True)
 
 print("- Creating Draconic Evolution resource pack compatibility...")
 pack = make_pack("DarkpuppeyCompat", "Darkpuppey's Modded Overhauls - 1.16.5 Compatibility Patch", "resources")
@@ -43,6 +43,7 @@ pack_helper.fix_models.generate_model_fixes("run/dp", moddata.unpack_jar(Mod.Dra
 print("- Running modules...")
 modules.execute_early(datapack, moddata)
 modules.execute(datapack, moddata)
+modules.execute_late(datapack, moddata)
 
 print("- Processing images...")
 pack_helper.gimp.reset("run")

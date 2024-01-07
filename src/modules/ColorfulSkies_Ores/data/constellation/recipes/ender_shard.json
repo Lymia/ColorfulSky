@@ -1,0 +1,19 @@
+{
+   "type": "minecraft:crafting_shaped",
+   "pattern": [
+      " c ",
+      "cBc",
+      " c "
+   ],
+   "key": {
+      "c": {
+         "item": "byg:therium_shard"
+      },
+      "B": {
+         "item": "betterendforge:smaragdant_crystal_shard"
+      }
+   },
+   "result": {
+      "item": "betterendforge:ender_shard"
+   }
+}

@@ -129,8 +129,6 @@ add_type("sulfur", "Sulfur", 3, 3, 1, "gem", "nether",
          drop_name="emendatusenigmatica:sulfur_gem", min_count=3, max_count=5)
 add_type("arcane", "Source Gem", 3, 3, 1, "gem", "twilight", "end",
          drop_name="emendatusenigmatica:arcane_gem")
-add_type("dimensional", "Dimensional Shard", 3, 3, 1, "gem", "twilight", "nether", "end",
-         drop_name="emendatusenigmatica:dimensional_gem", min_count=4, max_count=5)
 add_type("cobalt", "Cobalt", 3, 3, 2, "ingot", "nether")
 add_type("tin", "Tin", 3, 3, 1, "ingot", "overworld")
 
@@ -141,19 +139,18 @@ add_type("tin", "Tin", 3, 3, 1, "ingot", "overworld")
 # TODO: Rock Crystal (maybe?)
 
 # Unused ore types
-add_type("aluminum", "Aluminum", 3, 3, 1, "ingot", "overworld", "twilight", "end", disabled = True)
-add_type("apatite", "Apatite", 3, 3, 1, "gem", "overworld",
-         drop_name="emendatusenigmatica:apatite_gem", min_count=4, max_count=9,
-         disabled = True)
+add_type("aluminum", "Aluminum", 3, 3, 1, "-", "-", disabled = True)
+add_type("apatite", "Apatite", 3, 3, 1, "-", "-", disabled = True)
 add_type("bitumen", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("cinnabar", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("charged_certus_quartz", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("iridium", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("peridot", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
+add_type("peridot", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("potassium_nitrate", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("ruby", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
-add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True) # TODO: Figure out how to handle this and Silent's Gems
+add_type("ruby", "-", 3, 3, 0, "-", "-", disabled = True)
+add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True)
+add_type("dimensional_shard", "-", 0, 0, 0, "-", "-", disabled=True)
 
 # EE built-in strata
 add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld", "twilight")
@@ -182,7 +179,7 @@ add_strata("mossy_stone", "Mossy Stone", "byg:block/mossy_stone", "byg:mossy_sto
 add_strata("subzero_ash", "Subzero Ash", "byg:block/subzero_ash", "byg:subzero_ash_block", "nether", disabled=True)
 add_strata("blue_netherrack", "Blue Netherrack", "byg:block/blue_netherrack", "byg:blue_netherrack", "nether")
 add_strata("nylium_soul_soil", "Nylium Soul Soil", "byg:block/nylium_soul_soil", "byg:nylium_soul_soil", "nether", disabled=True)
-add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether")
+add_strata("brimstone", "Brimstone", "byg:block/brimstone", "byg:brimstone", "nether") # TODO: Sided
 
 add_strata("cryptic_stone", "Cryptic Stone", "byg:block/cryptic_stone", "byg:cryptic_stone", "end")
 add_strata("flavolite", "Flavolite", "betterendforge:block/flavolite", "betterendforge:flavolite", "end", override_texture=True)
@@ -227,11 +224,12 @@ for ore in ["gold", "iron", "coal", "lapis", "diamond", "redstone", "silver"]:
     add_ore_override(ore, "dd_limestone", f"darkerdepths:limestone_{ore}_ore")
     add_ore_override(ore, "aridrock", f"darkerdepths:aridrock_{ore}_ore")
 add_ore_override(ore, "netherrack", "tconstruct:cobalt_ore", keep_texture = True)
+add_ore_override("gold", "brimstone", "byg:brimstone_nether_gold_ore")
+add_ore_override("quartz", "brimstone", "byg:brimstone_nether_quartz_ore")
+add_ore_override("coal", "ether_stone", "byg:anthracite_ore")
 
 # Unneeded ores
-add_unneeded("quartz", "quartzite")
-add_unneeded("coal", "brimstone") # Lignite
-add_unneeded("coal", "ether_stone") # Anthracite
+add_unneeded("quartz", "quartzite") # There is so so much quartz already
 
 ####################
 # Worldgen configs #
@@ -256,7 +254,6 @@ add_worldgen('cobalt', 8, 6, (40, 80), target = 'nether')
 # TODO: Crimson Iron
 add_worldgen('uranium', 8, 5, (25, 45), target = 'nether')
 # TODO: Geode
-add_worldgen('dimensional', 3, 5, (10, 60), target = 'nether')
 
 # TODO: Thallasium
 # TODO: Azure Silver
@@ -266,7 +263,6 @@ add_worldgen('arcane', 6, 11, (10, 90), target = 'end')
 add_worldgen('silver', 13, 21, (10, 90), target = 'end')
 add_worldgen('fluorite', 8, 11, (10, 90), target = 'end')
 # TODO: Geode
-add_worldgen('dimensional', 3, 7, (10, 60), target = 'end')
 add_worldgen('emerald', 3, 7, (10, 60), target = 'end')
 
 add_worldgen('coal', 13, 17, (0, 64), target = 'twilight')
@@ -278,7 +274,6 @@ add_worldgen('arcane', 6, 6, (0, 25), target = 'twilight')
 add_worldgen('diamond', 8, 3, (0, 15), target = 'twilight')
 add_worldgen('silver', 8, 7, (10, 35), target = 'twilight')
 # TODO: Geode
-add_worldgen('dimensional', 3, 5, (0, 16), target = 'twilight')
 
 ###########################
 # Ore list generator code #

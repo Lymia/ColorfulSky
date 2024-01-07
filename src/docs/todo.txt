@@ -5,7 +5,7 @@
 - Mystical Agriculture/etc recipes
     - Consider removing armor/weapons/augments (and corresponding documentation)
     - Consider rebalancing essence costs.
-    - Prosperity Shards should not be a ore, tbh.
+    - Prosperity Shards should not be a ore, tbh. This needs fix.
 - Remove documentation for removed items in Cyclic
 - Do another round of material unifications.
 - WRD needs way better rewards, maybe try to cut off the darker depths thing too.
@@ -46,3 +46,6 @@
 - Drop Chaos Crystals and Dimenional Shards from the Mirrored World
 
 - Basic quests toolchain.
+- Modded biome/dimension-specific materials for Mythical Agriculture
+- BetterEnd sulfur needs unification. Sulfur in general is a mess.
+- Twilight Forest doors are a mess. Mangroves are conflicting.

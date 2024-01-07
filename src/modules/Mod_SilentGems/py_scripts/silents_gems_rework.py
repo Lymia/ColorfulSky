@@ -67,6 +67,7 @@ def apply_rework():
     datapack.remove_name("silentgems:glowrose_fertilizer")
     datapack.remove_name("silentgems:slime_crystal")
     datapack.remove_name("silentgems:ender_slime_crystal")
+    datapack.remove_name("silentgems:ender_crystal_shard")
     for gem in silents_gems_unused + silents_gems_used:
         datapack.remove_name(f"silentgems:{gem}_ore")
         datapack.remove_name(f"silentgems:{gem}_glowrose")

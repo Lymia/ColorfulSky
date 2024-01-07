@@ -12,7 +12,7 @@
     "hasSpikes [default: true]": true,
     "customObsidianSpikes [default: true]": true
   },
-  "hasDragonFights [default: true]": true,
+  "hasDragonFights [default: true]": false,
   "swapOverworldToEnd [default: false]": false,
   "chorusPlant": {
     "changeChorusPlant [default: true]": true,
@@ -21,7 +21,7 @@
   "customGenerator": {
     "vanillaEndIntegration [default: true]": true,
     "useNewGenerator [default: true]": true,
-    "noRingVoid [default: false]": false,
+    "noRingVoid [default: false]": true,
     "generateCentralIsland [default: true]": true,
     "endCityFailChance [default: 5]": 5,
     "layers": {
@@ -50,7 +50,7 @@
         "hasCentralIsland [default: false]": false
       }
     },
-    "voidRingSize [default: 1000]": 1000
+    "voidRingSize [default: 1000]": 300
   },
   "generateObsidianPlatform [default: true]": true,
   "spawn": {

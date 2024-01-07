@@ -25,7 +25,7 @@ let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remo
             if (stack.getId) {
                 if (list[stack.getId().toString()]) return true
             } else if (stack.getTag) {
-                if (list["#"+stack.getTag()]) return true
+                if (list[`#${stack.getTag()}`]) return true
             }
         }
         return false

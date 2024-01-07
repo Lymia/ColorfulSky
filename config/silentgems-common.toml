@@ -30,7 +30,7 @@
 			[entity.enderSlime.spawn.spawn]
 				#Spawn weight of ender slimes in The End. Set to zero to disable spawns.
 				#Range: > 0
-				weight = 3
+				weight = 0
 				#Smallest possible group size
 				#Range: > 1
 				minGroupSize = 1

@@ -1,5 +1,7 @@
 import glob
 import importlib.util
+import json
+import json5
 import os.path
 import pack_helper.tags
 import sys
@@ -29,6 +31,7 @@ class Module(object):
         
         self.py_scripts = []
         self.py_init_scripts = []
+        self.py_late_scripts = []
         
         self.js_common_scripts = []
         self.js_client_scripts = []
@@ -40,6 +43,7 @@ class Module(object):
         # Load Python scripts
         self._load_scripts_py(self.py_scripts, "py_scripts")
         self._load_scripts_py(self.py_init_scripts, "py_init_scripts")
+        self._load_scripts_py(self.py_late_scripts, "py_late_scripts")
         
         # Load KubeJS scripts
         self._load_scripts_js(self.js_common_scripts, "common_scripts")
@@ -100,11 +104,21 @@ class Module(object):
         self._copy_data(datapack, "assets")
         self._copy_data(datapack, "data")
     
+    def execute_late(self, datapack, moddata):
+        # Execute any late scripts in the module
+        for script in self.py_late_scripts:
+            script.execute(datapack, moddata)
+    
     def _copy_data(self, datapack, kind):
         if os.path.exists(f"{self.path}/{kind}"):
             print(f"  - Copying {kind} from '{self.path}/{kind}'")
             for short_path, file_path in self.find_all_files(kind):
-                datapack._copy_data(short_path, kind, file_path)
+                if short_path.endswith(".json") or short_path.endswith(".json5"):
+                    # reencode json
+                    data = json.dumps(json5.loads(open(file_path).read()), indent=True)
+                    datapack._write_data(short_path, kind, data)
+                else:
+                    datapack._copy_data(short_path, kind, file_path)
     
     def _copy_scripts_js(self, datapack, target, kind):
         for script in target:
@@ -133,6 +147,9 @@ class ModuleLoader(object):
     def execute_early(self, datapack, moddata):
         for module in self.modules:
             module.execute_early(datapack, moddata)
+    def execute_late(self, datapack, moddata):
+        for module in self.modules:
+            module.execute_late(datapack, moddata)
     def execute(self, datapack, moddata):
         for module in self.modules:
             module.execute(datapack, moddata)

@@ -1,0 +1,15 @@
+{
+   "type": "minecraft:crafting_shaped",
+   "pattern": [
+      "cc",
+      "cc"
+   ],
+   "key": {
+      "c": {
+         "item": "byg:therium_shard"
+      }
+   },
+   "result": {
+      "item": "byg:therium_crystal"
+   }
+}

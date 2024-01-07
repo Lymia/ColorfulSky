@@ -47,6 +47,8 @@ class TagConfig(object):
     def get_tag(self, kind, tag):
         assert(tag != None)
         return self._tags.setdefault(kind, {}).setdefault(tag, set({}))
+    def list_tags(self, kind):
+        return list(self._tags[kind].keys())
 
     def remove_name(self, name):
         for kind_name in self._tags:
@@ -138,6 +140,8 @@ class DatapackModel(object):
         self._copy_from_maybe_rename(f"{self._kubejs_dir}/{prefix}", extension, source)
     def _copy_data(self, name, kind, source):
         self._copy_from_if_not_exists(f"{self._kubejs_dir}/{kind}/{name}", source)
+    def _write_data(self, name, kind, data):
+        self._write_if_not_exists(f"{self._kubejs_dir}/{kind}/{name}", data)
 
     def _load_toml(self, short_name, source):
         self._mark_config_exists(short_name)
@@ -180,10 +184,10 @@ class DatapackModel(object):
 
     def add_json_asset(self, name, json_data):
         """Adds an JSON resource pack file."""
-        self._write_if_not_exists(f"{self._kubejs_dir}/assets/{name}", json.dumps(json_data))
+        self._write_if_not_exists(f"{self._kubejs_dir}/assets/{name}", json.dumps(json_data, indent = True))
     def add_json_data(self, name, json_data):
         """Adds an JSON data pack file."""
-        self._write_if_not_exists(f"{self._kubejs_dir}/data/{name}", json.dumps(json_data))
+        self._write_if_not_exists(f"{self._kubejs_dir}/data/{name}", json.dumps(json_data, indent = True))
 
     def add_i18n(self, group, name, value, lang = "en_us"):
         """Adds a translation string to override."""
@@ -270,7 +274,7 @@ class DatapackModel(object):
         self._make_remove_unused()
         for lang in self._i18n_strings:
             for group in self._i18n_strings[lang]:
-                data = json.dumps(self._i18n_strings[lang][group])
+                data = json.dumps(self._i18n_strings[lang][group], indent = True)
                 self._write_if_not_exists(f"{self._kubejs_dir}/assets/{group}/lang/en_us.json", data)
 
         # Copy kubejs configuration
@@ -281,6 +285,6 @@ class DatapackModel(object):
 
         # Write generated configuration
         for config in self._config_json:
-            self._write_file(f"{self._config_dir}/{config}", json.dumps(self._config_json[config]))
+            self._write_file(f"{self._config_dir}/{config}", json.dumps(self._config_json[config], indent=True))
         for config in self._config_toml:
             self._write_file(f"{self._config_dir}/{config}", toml.dumps(self._config_toml[config]))

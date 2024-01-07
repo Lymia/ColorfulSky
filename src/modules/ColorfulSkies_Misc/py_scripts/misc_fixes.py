@@ -1,3 +1,5 @@
+from pack_helper.utils import *
+
 remove_items_list = [
     # Cyclic
     # TODO: Remove entires for these from the book.
@@ -32,92 +34,33 @@ remove_items_list = [
     "projecte:catalytic_lens",
     "projecte:nova_cataclysm", # big boom :(
     
-    # Mystical Agriculture
-    "projecte:prosperity_ore", # We use a recipe instead of an ore for this.
-    "projecte:inferium_ore", # We just let mob drops cover this.
-    
-    # Redundant ores
-    "ars_nouveau:arcane_ore",
-    "create:copper_ore",
-    "create:zinc_ore",
-    "darkerdepths:silver_ore",
-    "draconicevolution:end_draconium_ore",
-    "draconicevolution:nether_draconium_ore",
-    "draconicevolution:overworld_draconium_ore",
-    "eidolon:lead_ore",
-    "immersiveengineering:ore_copper",
-    "immersiveengineering:ore_lead",
-    "immersiveengineering:ore_silver",
-    "immersiveengineering:ore_nickel",
-    "immersiveengineering:ore_uranium",
-    "mekanism:copper_ore",
-    "mekanism:tin_ore",
-    "mekanism:osmium_ore",
-    "mekanism:uranium_ore",
-    "mekanism:fluorite_ore",
-    "mekanism:lead_ore",
-    "rftoolsbase:dimensionalshard_overworld",
-    "rftoolsbase:dimensionalshard_nether",
-    "rftoolsbase:dimensionalshard_end",
-    "silentgear:bort_ore",
-    "silentgear:deepslate_bort_ore",
-    "silentgems:silver_ore",
-    "tconstruct:copper_ore",
-    "thermal:nickel_ore",
-    "thermal:silver_ore",
-    "thermal:lead_ore",
-    "thermal:tin_ore",
-    "thermal:copper_ore",
-    "thermal:sulfur_ore",
-    "thermal:niter_ore",
-    "thermal:cinnabar_ore",
-    "tmechworks:aluminum_ore",
-    "tmechworks:copper_ore",
-    
     # Remove Bort
     "silentgear:bort",
     "silentgear:bort_block",
     
-    # Remove aluminium
-    "immersiveengineering:sheetmetal_aluminum",
-    "immersiveengineering:slab_sheetmetal_aluminum",
-    "immersiveengineering:ore_aluminum",
-    "immersiveengineering:storage_aluminum",
-    "immersiveengineering:slab_storage_aluminum",
-    "chisel:metals/aluminum/caution",
-    "chisel:metals/aluminum/crate",
-    "chisel:metals/aluminum/thermal",
-    "chisel:metals/aluminum/machine",
-    "chisel:metals/aluminum/badgreggy",
-    "chisel:metals/aluminum/bolted",
-    "chisel:metals/aluminum/scaffold",
-    "immersiveengineering:plate_aluminum",
-    "immersiveengineering:dust_aluminum",
-    "immersiveengineering:nugget_aluminum",
-    "immersiveengineering:ingot_aluminum",
-    "immersiveengineering:stick_aluminum",
-    "immersiveengineering:wire_aluminum",
-    "tmechworks:aluminum_block",
-    "tmechworks:aluminum_ingot",
-    "tmechworks:aluminum_nugget",
+    # Remove Quark Brimstone
+    "quark:brimstone",
+    "quark:brimstone_slab",
+    "quark:brimstone_stairs",
+    "quark:brimstone_wall",
+    "quark:brimstone_bricks",
+    "quark:brimstone_bricks_slab",
+    "quark:brimstone_bricks_stairs",
+    "quark:brimstone_bricks_wall",
+    "quark:brimstone_vertical_slab",
+    "quark:brimstone_bricks_vertical_slab",
     
-    # Remove ender biotite
-    "quark:biotite_ore",
-    "quark:biotite_block",
-    "quark:biotite_block_slab",
-    "quark:biotite_block_stairs",
-    "quark:smooth_biotite",
-    "quark:smooth_biotite_slab",
-    "quark:smooth_biotite_stairs",
-    "quark:chiseled_biotite_block",
-    "quark:biotite_pillar",
-    "quark:biotite_bricks",
-    "quark:biotite_block_vertical_slab",
-    "quark:smooth_biotite_vertical_slab",
-    "quark:biotite",
+    # Useless documentation
+    "valkyrielib:info_tablet",
+    "theoneprobe:probenote",
+    "silentgear:guide_book",
 ]
 hide_items_list = [
     "silentgems:soul_gem", # spam
+]
+change_i18n = [
+    # Conflict with BYG Brimstone
+    ("betterendforge:brimstone", "Hydrothermal Brimstone"),
 ]
 
 def add_fixes():
@@ -125,5 +68,8 @@ def add_fixes():
         datapack.remove_name(item)
     for item in hide_items_list:
         datapack.hide_name(item)
+    for entry in change_i18n:
+        item, name = entry
+        datapack.add_i18n(group(item), f"block.{group(item)}.{path(item)}", name)
 
 add_fixes()

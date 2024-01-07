@@ -4,7 +4,7 @@ import os.path
 
 from pack_helper.utils import *
 
-def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["blocks", "items"]):
+def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["blocks", "items"], ignore_jaopca = False):
     flag_no_generate = no_generate
     flag_override = False
     flag_kinds = kinds
@@ -50,6 +50,8 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
             if head == '-':
                 assert(current_tag != None)
                 tag = args[0]
+                if ignore_jaopca and tag.startswith("jaopca:"):
+                    continue
                 if tag[0] == '!':
                     datapack.tags.remove_tag(flag_kinds, tag[1:], current_tag, generated = not flag_no_generate)
                 else:
