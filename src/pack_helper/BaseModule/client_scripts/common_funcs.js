@@ -2,9 +2,19 @@
 
 let hide_events = function(is_hide, hide_list) {
     let doAll = function(f) { hide_list.forEach(f) }
+    let hideTarget = function(e) {
+        hide_list.forEach(id => {
+            e.hide(id)
+            e.hide(x => {
+                console.log(x)
+                if (IngredientJS.of(x).getId() == id) return true
+                return false
+            })
+        })
+    }
     
-    onEvent('jei.hide.items', e => { doAll(x => e.hide(x)) })
-    onEvent('jei.hide.fluids', e => { doAll(x => e.hide(x)) })
+    onEvent('jei.hide.items', hideTarget)
+    onEvent('jei.hide.fluids', hideTarget)
 
     if (!is_hide) onEvent('item.tooltip', tooltip => {
         doAll(x => tooltip.addAdvanced(x, (item, advanced, text) => {

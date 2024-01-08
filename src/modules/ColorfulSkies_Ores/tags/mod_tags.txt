@@ -1,0 +1,4 @@
+$flags ITEM
+
+#silentgems:teleporter_catalyst
+- betterendforge:ender_shard

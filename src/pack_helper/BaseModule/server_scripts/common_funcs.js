@@ -1,13 +1,16 @@
 // priority: 1000
 
-let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remove_recipe_by_id, remove_recipe_by_processing_output, run_on_recipes
+let replace_ingredient, remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remove_recipe_by_id, remove_recipe_by_processing_output, run_on_recipes
 
 {
     let recipe_removed_ids = []
+    let raw_replace_ingredient = []
     let raw_recipe_removed_outputs = []
     let raw_recipe_removed_inputs = []
     let raw_recipe_removed_processing_outputs = {}
     let recipe_closure = []
+    
+    let debug_output = false
 
     let check_recipe_has_output = function(recipe, list, check_chance) {
         let len = recipe.outputItems.size()
@@ -18,28 +21,49 @@ let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remo
         }
         return false
     }
+    let get_ingredient = function(list, stack) {
+        if (stack.getId) {
+            return list[stack.getId().toString()]
+        } else if (stack.getTag) {
+            return list[`#${stack.getTag()}`]
+        } else {
+            return false
+        }
+    }
     let check_recipe_has_input = function(recipe, list) {
         let len = recipe.inputItems.size()
         for (let i = 0; i < len; i++) {
             let stack = recipe.inputItems.get(i)
-            if (stack.getId) {
-                if (list[stack.getId().toString()]) return true
-            } else if (stack.getTag) {
-                if (list[`#${stack.getTag()}`]) return true
-            }
+            if (get_ingredient(list, stack)) return true
         }
         return false
     }
-
-    remove_recipe_by_output = function(value) {
-        raw_recipe_removed_outputs.push(value)
+    let replace_input = function(recipe, list) {
+        let len = recipe.inputItems.size()
+        let changed = false
+        for (let i = 0; i < len; i++) {
+            let stack = recipe.inputItems.get(i)
+            let replace_with = get_ingredient(list, stack)
+            if (replace_with) {
+                recipe.inputItems.set(i, Ingredient.of(replace_with).withCount(stack.getCount()))
+                changed = true
+            }
+        }
+        return changed
     }
-    remove_recipe_by_input = function(value) {
-        raw_recipe_removed_inputs.push(value)
+
+    replace_ingredient = function(src, dst) {
+        raw_replace_ingredient.push([src, dst])
     }
     remove_recipe_by_item = function(value) {
         remove_recipe_by_output(value)
         remove_recipe_by_input(value)
+    }
+    remove_recipe_by_input = function(value) {
+        raw_recipe_removed_inputs.push(value)
+    }
+    remove_recipe_by_output = function(value) {
+        raw_recipe_removed_outputs.push(value)
     }
     remove_recipe_by_id = function(value) {
         recipe_removed_ids[value] = true
@@ -53,10 +77,17 @@ let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remo
     }
 
     onEvent("recipes", e => {
+        let recipe_replace_ingredient = {}
         let recipe_removed_outputs = {}
         let recipe_removed_inputs = {}
         let recipe_removed_processing_outputs = {}
         
+        raw_replace_ingredient.forEach(i => {
+            let src = i[0]
+            let dst = i[1]
+            if (src.startsWith("#")) recipe_replace_ingredient[new String(src)] = dst
+            ingredient.of(src).stacks.forEach(value => recipe_replace_ingredient[value.getId().toString()] = dst)
+        })
         raw_recipe_removed_outputs.forEach(i => 
             ingredient.of(i).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
         )
@@ -74,15 +105,25 @@ let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remo
         // delete recipes (efficiently)
         console.log("Applying recipe processing...")
         e.forEachRecipeAsync(true, recipe => {
+            let changed = replace_input(recipe, recipe_replace_ingredient)
+            
             if (recipe_removed_ids[recipe.getId().toString()]) {
+                if (debug_output) console.log(`removed by id: ${recipe}`)
                 recipe.setGroup("constellation:removed")
                 return
             } else if (check_recipe_has_output(recipe, recipe_removed_outputs, false)) {
+                if (debug_output) console.log(`removed by output: ${recipe}`)
                 recipe.setGroup("constellation:removed")
                 return
             } else if (check_recipe_has_input(recipe, recipe_removed_inputs)) {
+                if (debug_output) console.log(`removed by input: ${recipe}`)
                 recipe.setGroup("constellation:removed")
                 return
+            }
+            
+            if (changed) {
+                recipe.serializeInputs = true
+                recipe.save()
             }
             
             let process_list = recipe_removed_processing_outputs[recipe.getType()]
@@ -99,9 +140,3 @@ let remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remo
     })
 }
 
-let remove_items = function(remove_list) {
-    remove_list.forEach(remove_recipe_by_output)
-}
-let remove_all_recipes = function(remove_list) {
-    remove_list.forEach(remove_recipe_by_item)
-}

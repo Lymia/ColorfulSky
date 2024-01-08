@@ -85,6 +85,7 @@ class DatapackModel(object):
         self._hidden_names = []
         self._removed_recipes = []
         self._i18n_strings = {}
+        self._replaced_ingredients = []
 
         self._has_config = set([])
         self._config_toml = {}
@@ -169,6 +170,8 @@ class DatapackModel(object):
         self._hidden_names.append(name)
         self._removed_names.append(name)
         self.tags.remove_name(name)
+    def replace_ingredient(self, src, dst):
+        self._replaced_ingredients.append([src, dst])
     def remove_recipe(self, name):
         self._removed_recipes.append(name)
 
@@ -263,10 +266,10 @@ class DatapackModel(object):
         removed_tags = list(removed_tags)
 
         json = f"""
-            remove_items({repr(sorted(set(self._removed_names)))})
-            remove_all_recipes({repr(sorted(set(self._removed_names + removed_tags)))})
-            let recipes = {repr(sorted(set(self._removed_recipes)))}
-            recipes.forEach(remove_recipe_by_id)
+            ({repr(sorted(set(self._removed_names)))}).forEach(remove_recipe_by_output);
+            ({repr(sorted(set(self._removed_names + removed_tags)))}).forEach(remove_recipe_by_item);
+            ({repr(sorted(set(self._removed_recipes)))}).forEach(remove_recipe_by_id);
+            ({repr(sorted(self._replaced_ingredients))}).forEach(x => replace_ingredient(x[0], x[1]));
         """
         self.add_server_script("remove_unused", json)
     def _finalize(self):

@@ -1,8 +1,4 @@
 unused_ores = [
-    # Replaced
-    "silentgems:ender_ore",
-    "betterendforge:ender_ore",
-    
     # Not used due to the silent's gems rework
     "silentgems:multi_ore_classic",
     "silentgems:multi_ore_dark",
@@ -57,6 +53,11 @@ unused_ores = [
     "quark:biotite_block_vertical_slab",
     "quark:smooth_biotite_vertical_slab",
     "quark:biotite",
+    
+    # Replace Ender Crystal with custom recipe
+    "silentgems:ender_crystal",
+    "silentgems:ender_ore",
+    "betterendforge:ender_ore",
 
     # Redundant ores
     "ars_nouveau:arcane_ore",
@@ -97,6 +98,11 @@ unused_ores = [
     "tmechworks:aluminum_ore",
     "tmechworks:copper_ore",
 ]
+replace_ores = [
+    ("silentgems:ender_crystal", "betterendforge:ender_shard"),
+]
 
 for unused in unused_ores:
     datapack.remove_name(unused)
+for entry in replace_ores:
+    datapack.replace_ingredient(entry[0], entry[1])

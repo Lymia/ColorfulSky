@@ -169,7 +169,7 @@ class GimpContext(object):
             f"({function_name})", "-b", "(gimp-quit 0)"
         ])
         
-    def execute_actions(self, actions, max_processes = multiprocessing.cpu_count(), process_chunk = None):
+    def execute_actions(self, actions, max_processes = max(multiprocessing.cpu_count() - 2, 1), process_chunk = None):
         if process_chunk == None:
             process_chunk = max(math.ceil(len(actions) / max_processes), 4)
         
