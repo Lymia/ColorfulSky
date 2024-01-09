@@ -55,21 +55,13 @@ remove_items_list = [
     "theoneprobe:probenote",
     "silentgear:guide_book",
 ]
-hide_items_list = [
-    "silentgems:soul_gem", # spam
-]
 change_i18n = [
     # Conflict with BYG Brimstone
     ("betterendforge:brimstone", "Hydrothermal Brimstone"),
 ]
 
-def add_fixes():
-    for item in remove_items_list:
-        datapack.remove_name(item)
-    for item in hide_items_list:
-        datapack.hide_name(item)
-    for entry in change_i18n:
-        item, name = entry
-        datapack.add_i18n(group(item), f"block.{group(item)}.{path(item)}", name)
-
-add_fixes()
+for item in remove_items_list:
+    datapack.remove_name(item)
+for entry in change_i18n:
+    item, name = entry
+    datapack.add_i18n(group(item), f"block.{group(item)}.{path(item)}", name)

@@ -252,11 +252,11 @@ class DatapackModel(object):
 
     def _make_remove_unused(self):
         json = f"""
-            hide_events(false, {repr(sorted(set(self._removed_names)))})
-            hide_events(true, {repr(sorted(set(self._hidden_names)))})
-            unify_events({repr(sorted(set(self._unified_names)))})
+            ({repr(sorted(set(self._removed_names + self._hidden_names)))}).forEach(jei_hide_by_id);
+            ({repr(sorted(set(self._removed_names)))}).forEach(mark_as_removed);
+            ({repr(sorted(set(self._unified_names)))}).forEach(mark_as_unified);
         """
-        self.add_client_script("remove_unused", json)
+        self.add_client_script("pack_data", json)
 
         removed_tags = set({})
         for kind in self.tags._tags:
@@ -271,7 +271,7 @@ class DatapackModel(object):
             ({repr(sorted(set(self._removed_recipes)))}).forEach(remove_recipe_by_id);
             ({repr(sorted(self._replaced_ingredients))}).forEach(x => replace_ingredient(x[0], x[1]));
         """
-        self.add_server_script("remove_unused", json)
+        self.add_server_script("pack_data", json)
     def _finalize(self):
         self._generate_tags(self.tags)
         self._make_remove_unused()

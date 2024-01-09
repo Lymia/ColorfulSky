@@ -1,6 +1,4 @@
-// priority: 1000
-
-let remove_seed_list = [
+remove_seed_list = [
     "coal",
     "rubber",
     "silicon",
@@ -62,4 +60,18 @@ let remove_seed_list = [
     "slimesteel",
     "pig_iron",
     "tinkers_bronze",
-];
+]
+replacements_list = [
+    ("coal", "fire"), # stone
+    ("aquamarine", "water"), # marble
+    ("netherite", "wither_skeleton"), # pigstep!!
+    ("gold", "blaze"), # pigstep!!
+    ("diamond", "starmetal"), # heart of the sea
+]
+
+for seed in remove_seed_list:
+    datapack.remove_name(f"mysticalagriculture:{seed}_seed")
+    datapack.remove_name(f"mysticalagriculture:{seed}_essence")
+for entry in replacements_list:
+    src, dst = entry
+    datapack.replace_ingredient(f"mysticalagriculture:{src}_essence", f"mysticalagriculture:{dst}_essence")

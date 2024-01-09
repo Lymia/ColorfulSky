@@ -1,7 +1,12 @@
 // priority: 1000
 
-let replace_ingredient, remove_recipe_by_item, remove_recipe_by_input, remove_recipe_by_output, remove_recipe_by_id, remove_recipe_by_processing_output, run_on_recipes
-
+let replace_ingredient
+let remove_recipe_by_item
+let remove_recipe_by_input
+let remove_recipe_by_output
+let remove_recipe_by_id
+let remove_recipe_by_processing_output
+let run_on_recipes
 {
     let recipe_removed_ids = []
     let raw_replace_ingredient = []
@@ -78,23 +83,25 @@ let replace_ingredient, remove_recipe_by_item, remove_recipe_by_input, remove_re
 
     onEvent("recipes", e => {
         let recipe_replace_ingredient = {}
-        let recipe_removed_outputs = {}
-        let recipe_removed_inputs = {}
-        let recipe_removed_processing_outputs = {}
-        
         raw_replace_ingredient.forEach(i => {
             let src = i[0]
             let dst = i[1]
             if (src.startsWith("#")) recipe_replace_ingredient[new String(src)] = dst
             ingredient.of(src).stacks.forEach(value => recipe_replace_ingredient[value.getId().toString()] = dst)
         })
+        
+        let recipe_removed_outputs = {}
         raw_recipe_removed_outputs.forEach(i => 
             ingredient.of(i).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
         )
+        
+        let recipe_removed_inputs = {}
         raw_recipe_removed_inputs.forEach(function(i) {
             if (i.startsWith("#")) recipe_removed_inputs[new String(i)] = true
             ingredient.of(i).stacks.forEach(value => recipe_removed_inputs[value.getId().toString()] = true)
         })
+        
+        let recipe_removed_processing_outputs = {}        
         for (kind in raw_recipe_removed_processing_outputs) {
             recipe_removed_processing_outputs[kind] = {}
             raw_recipe_removed_processing_outputs[kind].forEach(i =>
