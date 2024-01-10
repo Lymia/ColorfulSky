@@ -70,7 +70,7 @@ replacements_list = [
 ]
 
 for seed in remove_seed_list:
-    datapack.remove_name(f"mysticalagriculture:{seed}_seed")
+    datapack.remove_name(f"mysticalagriculture:{seed}_seeds")
     datapack.remove_name(f"mysticalagriculture:{seed}_essence")
 for entry in replacements_list:
     src, dst = entry

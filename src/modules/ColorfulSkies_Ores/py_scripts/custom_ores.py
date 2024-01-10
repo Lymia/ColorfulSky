@@ -110,13 +110,15 @@ add_type("diamond", "Diamond", 3, 3, 2, "gem", "overworld", "twilight",
 add_type("emerald", "Emerald", 3, 3, 2, "gem", "end",
          drop_name="minecraft:emerald")
 add_type("lapis", "Lapis", 3, 3, 1, "gem", "overworld", "nether",
-         drop_name="minecraft:lapis_lazuli", min_count=4, max_count=9)
+         drop_name="minecraft:lapis_lazuli",
+         min_count=4, max_count=9)
 add_type("redstone", "Redstone", 3, 3, 2, "gem", "overworld",
-         drop_name="minecraft:redstone", min_count=4, max_count=5)
+         drop_name="minecraft:redstone",
+         min_count=4, max_count=5)
 add_type("quartz", "Quartz", 3, 3, 2, "gem", "nether",
          drop_name="minecraft:quartz")
 add_type("copper", "Copper", 3, 3, 1, "ingot", "overworld",
-         min_count=2, max_count=3)
+         min_count=2, max_count=4)
 add_type("silver", "Silver", 3, 3, 2, "ingot", "twilight", "end")
 add_type("lead", "Lead", 3, 3, 2, "ingot", "twilight")
 add_type("nickel", "Nickel", 3, 3, 2, "ingot", "twilight")
@@ -124,9 +126,11 @@ add_type("uranium", "Uranium", 3, 3, 2, "ingot", "nether")
 add_type("osmium", "Osmium", 3, 3, 1, "ingot", "twilight", "end")
 add_type("zinc", "Zinc", 3, 3, 2, "ingot", "overworld", "end")
 add_type("fluorite", "Fluorite", 3, 3, 1, "gem", "end",
-         drop_name="emendatusenigmatica:fluorite_gem", min_count=2, max_count=4)
+         drop_name="emendatusenigmatica:fluorite_gem",
+         min_count=2, max_count=4)
 add_type("sulfur", "Sulfur", 3, 3, 1, "gem", "nether",
-         drop_name="emendatusenigmatica:sulfur_gem", min_count=3, max_count=5)
+         drop_name="emendatusenigmatica:sulfur_gem",
+         min_count=3, max_count=5)
 add_type("arcane", "Source Gem", 3, 3, 1, "gem", "twilight", "end",
          drop_name="emendatusenigmatica:arcane_gem")
 add_type("cobalt", "Cobalt", 3, 3, 2, "ingot", "nether")
@@ -150,7 +154,7 @@ add_type("peridot", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("potassium_nitrate", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("ruby", "-", 3, 3, 0, "-", "-", disabled = True)
 add_type("sapphire", "-", 3, 3, 0, "-", "-", disabled = True)
-add_type("dimensional_shard", "-", 0, 0, 0, "-", "-", disabled=True)
+add_type("dimensional", "-", 0, 0, 0, "-", "-", disabled=True)
 
 # EE built-in strata
 add_strata("stone", "Stone", "minecraft:block/stone", "minecraft:stone", "overworld", "twilight")

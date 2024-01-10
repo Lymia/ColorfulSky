@@ -54,6 +54,9 @@ remove_items_list = [
     "valkyrielib:info_tablet",
     "theoneprobe:probenote",
     "silentgear:guide_book",
+    
+    # Misc. Unused items
+    "ftblibrary:fluid_container",
 ]
 change_i18n = [
     # Conflict with BYG Brimstone

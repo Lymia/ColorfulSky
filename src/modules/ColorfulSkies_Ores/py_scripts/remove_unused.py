@@ -97,6 +97,10 @@ unused_ores = [
     "thermal:cinnabar_ore",
     "tmechworks:aluminum_ore",
     "tmechworks:copper_ore",
+    
+    # JAOPCA's "happy accidents"
+    "jaopca:colorfulsky_raw_ore.aluminum",
+    "jaopca:colorfulsky_raw_ore.iridium",
 ]
 replace_ores = [
     ("silentgems:ender_crystal", "betterendforge:ender_shard"),

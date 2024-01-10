@@ -28,7 +28,7 @@ let run_on_recipes
     }
     let get_ingredient = function(list, stack) {
         if (stack.getId) {
-            return list[stack.getId().toString()]
+            return list[jstr(stack.getId().toString())]
         } else if (stack.getTag) {
             return list[`#${stack.getTag()}`]
         } else {
@@ -86,26 +86,26 @@ let run_on_recipes
         raw_replace_ingredient.forEach(i => {
             let src = i[0]
             let dst = i[1]
-            if (src.startsWith("#")) recipe_replace_ingredient[new String(src)] = dst
-            ingredient.of(src).stacks.forEach(value => recipe_replace_ingredient[value.getId().toString()] = dst)
+            if (src.startsWith("#")) recipe_replace_ingredient[jstr(src)] = dst
+            ingredient.of(src).stacks.forEach(value => recipe_replace_ingredient[jstr(value.getId().toString())] = dst)
         })
         
         let recipe_removed_outputs = {}
         raw_recipe_removed_outputs.forEach(i => 
-            ingredient.of(i).stacks.forEach(value => recipe_removed_outputs[value.getId().toString()] = true)
+            ingredient.of(i).stacks.forEach(value => recipe_removed_outputs[jstr(value.getId().toString())] = true)
         )
         
         let recipe_removed_inputs = {}
         raw_recipe_removed_inputs.forEach(function(i) {
-            if (i.startsWith("#")) recipe_removed_inputs[new String(i)] = true
-            ingredient.of(i).stacks.forEach(value => recipe_removed_inputs[value.getId().toString()] = true)
+            if (i.startsWith("#")) recipe_removed_inputs[jstr(new String(i))] = true
+            ingredient.of(i).stacks.forEach(value => recipe_removed_inputs[jstr(value.getId().toString())] = true)
         })
         
         let recipe_removed_processing_outputs = {}        
         for (kind in raw_recipe_removed_processing_outputs) {
             recipe_removed_processing_outputs[kind] = {}
             raw_recipe_removed_processing_outputs[kind].forEach(i =>
-                ingredient.of(i).stacks.forEach(value => recipe_removed_processing_outputs[kind][value.getId().toString()] = true)
+                ingredient.of(i).stacks.forEach(value => recipe_removed_processing_outputs[kind][jstr(value.getId().toString())] = true)
             )
         }
         
@@ -133,7 +133,7 @@ let run_on_recipes
                 recipe.save()
             }
             
-            let process_list = recipe_removed_processing_outputs[recipe.getType()]
+            let process_list = recipe_removed_processing_outputs[jstr(recipe.getType())]
             if (process_list && check_recipe_has_output(recipe, process_list, true)) {
                 recipe.setGroup("constellation:removed")
                 return

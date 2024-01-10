@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import os.path
@@ -11,6 +12,10 @@ class TagConfig(object):
         self._should_override = set({})
         self._no_generate = set({})
         self._tags = {}
+        self._original_tags = {}
+        
+    def store_original(self):
+        self._original_tags = copy.deepcopy(self._tags)
 
     def mark_override(self, tag):
         self._should_override.add(tag)
@@ -65,6 +70,10 @@ class TagConfig(object):
         return self.get_tag("items", tag)
     def get_fluid_tag(self, tag):
         return self.get_tag("fluids", tag)
+    def get_slurry_tag(self, tag):
+        return self.get_tag("slurries", tag)
+    def get_gas_tag(self, tag):
+        return self.get_tag("gases", tag)
 
     def add_block_tag(self, name, tag):
         self.add_tag("blocks", name, tag)
@@ -246,9 +255,11 @@ class DatapackModel(object):
     def _generate_tags(self, tags):
         for kind in tags._tags:
             for tag in tags._tags[kind]:
+                original = tags._original_tags[kind][tag] if tag in tags._original_tags[kind] else set([])
                 if tag in tags._should_override or len(tags._tags[kind][tag]) != 0:
-                    if tag not in tags._no_generate:
-                        self._generate_tag_file(tag, kind, tags._tags[kind][tag], tag in tags._should_override)
+                    if original != tags._tags[kind][tag]:
+                        if tag not in tags._no_generate:
+                            self._generate_tag_file(tag, kind, tags._tags[kind][tag], tag in tags._should_override)
 
     def _make_remove_unused(self):
         json = f"""

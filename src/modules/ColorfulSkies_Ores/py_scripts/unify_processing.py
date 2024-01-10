@@ -30,16 +30,19 @@ ore_processing_gems = [
 ]
 ore_processing_dust = ["redstone"]
 
-tag_slurries = ["aluminum", "nickel", "silver", "thallasium", "zinc"]
+tag_slurries = [
+    "aluminum", "apatite", "arcane", "bitumen", "certus_quartz", "charged_certus_quartz", "cinnabar", "cloggrum", "coal", "cobalt",
+    "diamond", "dimensional", "emerald", "fluorite", "froststeel", "iesnium", "iridium", "lapis_lazuli", "nebu", "nickel", "peridot",
+    "potassium_nitrate", "quartz", "redstone", "regalium", "ruby", "sapphire", "silver", "sulfur", "thallasium", "utherium", "zinc",
+]
 
 # Definitions for unused technical mod items
 unused_gears = [
     "lapis", "quartz", "enderium", "emerald", "uranium", "osmium", "zinc", "brass", "steel", "cast_iron", "redstone",
 ]
 unused_materials = [
-    "certus_quartz", "charged_certus_quartz", "fluix", "potassium_nitrate",
-    "iesnium", "regalium", "utherium", "froststeel", "cloggrum", "nebu",
-    "cast_iron", "iridium", "cobalt", "aluminum",
+    "certus_quartz", "charged_certus_quartz", "fluix", "potassium_nitrate", "iesnium", "regalium", "utherium", "froststeel",
+    "cloggrum", "nebu","cast_iron", "iridium", "cobalt", "aluminum", "ender",
 ]
 
 ########
@@ -47,7 +50,7 @@ unused_materials = [
 ########
 
 def delete_item(item, tag):
-    if item in datapack.tags.get_item_tag(tag) or item in datapack.tags.get_fluid_tag(tag):
+    if item in datapack.tags.get_item_tag(tag) or item in datapack.tags.get_fluid_tag(tag) or item in datapack.tags.get_slurry_tag(tag):
         datapack.remove_name(item)
 def unify_tags():
     accum = ""
@@ -81,6 +84,17 @@ def unify_tags():
         for item in items:
             if item != preferred[tag]:
                 datapack.unify_name(item)
+            
+    # Mark clusters as ores
+    for kind in unify_list:
+        cluster_name = f"emendatusenigmatica:{kind}_cluster"
+        if cluster_name in datapack.tags.get_item_tag(f"forge:clusters/{kind}"):
+            datapack.tags.add_item_tag(cluster_name, f"forge:ores/{kind}")
+
+    # Mark slurries as slurries
+    for kind in tag_slurries:
+        datapack.tags.add_tag("slurries", f"emendatusenigmatica:dirty_{kind}", f"mekanism:dirty/{kind}")
+        datapack.tags.add_tag("slurries", f"emendatusenigmatica:clean_{kind}", f"mekanism:clean/{kind}")
                 
     # Removed unused items
     for kind in unused_materials + unused_gears:
@@ -93,6 +107,8 @@ def unify_tags():
         delete_item(f"emendatusenigmatica:{kind}_fragment", f"bloodmagic:fragments/{kind}")
         delete_item(f"emendatusenigmatica:{kind}_gravel", f"bloodmagic:gravels/{kind}")
         delete_item(f"emendatusenigmatica:{kind}_crushed", f"create:crushed_ores/{kind}")
+        delete_item(f"emendatusenigmatica:clean_{kind}", f"mekanism:clean/{kind}")
+        delete_item(f"emendatusenigmatica:dirty_{kind}", f"mekanism:dirty/{kind}")
     for kind in unused_materials:
         delete_item(f"emendatusenigmatica:{kind}_ingot", f"forge:ingots/{kind}")
         delete_item(f"emendatusenigmatica:{kind}_block", f"forge:storage_blocks/{kind}")
@@ -105,17 +121,6 @@ def unify_tags():
         delete_item(f"emendatusenigmatica:{kind}_rod", f"forge:rods/{kind}")
         delete_item(f"emendatusenigmatica:molten_{kind}", f"forge:molten/{kind}")
         delete_item(f"emendatusenigmatica:molten_{kind}_bucket", f"forge:buckets/{kind}")
-            
-    # Mark clusters as ores
-    for kind in unify_list:
-        cluster_name = f"emendatusenigmatica:{kind}_cluster"
-        if cluster_name in datapack.tags.get_item_tag(f"forge:clusters/{kind}"):
-            datapack.tags.add_item_tag(cluster_name, f"forge:ores/{kind}")
-
-    # Mark slurries as slurries
-    for kind in tag_slurries:
-        datapack.tags.add_tag("slurries", f"emendatusenigmatica:dirty_{kind}", f"mekanism:dirty/{kind}")
-        datapack.tags.add_tag("slurries", f"emendatusenigmatica:clean_{kind}", f"mekanism:clean/{kind}")
     
     # Unify smelting recipies
     for kind in unify_list:

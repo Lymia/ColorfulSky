@@ -14,7 +14,7 @@ let jei_filter_id
         filter_by_id[name] = predicate
     }
     
-    let do_hide = function(registry, t) {
+    let do_hide = function(registry, t, get_id) {
         console.log(`Hiding JEI items for ${registry}`)
         
         let ingredientManager = global.jeiRuntime.getIngredientManager()
@@ -36,10 +36,10 @@ let jei_filter_id
         {
             let list = ingredientManager.getAllIngredients(targetRegistry)
             list.forEach(raw_item => {
-                let item = Ingredient.of(raw_item)
-                if (item.getId && t.hide_by_id[item.getId()]) {
-                    let predicate = filter_by_id[item.getId()]
-                    if (predicate && predicate(item)) return;
+                let item_id = get_id(raw_item)
+                if (t.hide_by_id[item_id]) {
+                    let predicate = filter_by_id[item_id]
+                    if (predicate && predicate(raw_item)) return;
                     to_remove.push(raw_item)
                 }
             })
@@ -49,17 +49,19 @@ let jei_filter_id
         if (to_remove.length > 0) ingredientManager.removeIngredientsAtRuntime(targetRegistry, to_remove)
         console.log(`(total: ${total_count}, removed: ${to_remove.length})`)
     }
+
     onEvent('jei.hide.custom', function(e) {
         let hide_by_id = {}
-        raw_hide_by_id.forEach(i => ingredient.of(i).stacks.forEach(value => hide_by_id[value.getId().toString()] = true))
+        raw_hide_by_id.forEach(i => {
+            hide_by_id[jstr(i)] = true
+            ingredient.of(i).stacks.forEach(value => hide_by_id[jstr(value.getId().toString())] = true)
+        })
         
         let t = { hide_by_id: hide_by_id }
-        do_hide("net.minecraft.item.ItemStack", t)
-        do_hide("net.minecraftforge.fluids.FluidStack", t)
-        do_hide("mekanism.api.chemical.gas.GasStack", t)
-        do_hide("mekanism.api.chemical.infuse.InfusionStack", t)
-        do_hide("mekanism.api.chemical.pigment.PigmentStack", t)
-        do_hide("mekanism.api.chemical.slurry.SlurryStack", t)
+        do_hide("net.minecraft.item.ItemStack", t, x => jstr(Ingredient.of(x).getId()))
+        do_hide("net.minecraftforge.fluids.FluidStack", t, x => jstr(x.getFluid().getRegistryName().toString()))
+        do_hide("mekanism.api.chemical.gas.GasStack", t, x => jstr(x.getTypeRegistryName().toString()))
+        do_hide("mekanism.api.chemical.slurry.SlurryStack", t, x => jstr(x.getTypeRegistryName().toString()))
         
         console.log("jei.hide.custom finished")
     })

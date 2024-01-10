@@ -1,3 +1,4 @@
+import copy
 import json
 import os
 import os.path
@@ -21,7 +22,7 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                 flag_no_generate = False
                 flag_override = False
                 flag_kinds.clear()
-                for flag in words[1:]:
+                for flag in args:
                     if flag == "NO_GENERATE":
                         flag_no_generate = True
                     elif flag == "OVERRIDE":
@@ -37,6 +38,18 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                     else:
                         raise Exception(f"Unknown tag flag: {flag}")
                 continue
+            
+            if head == "$clear":
+                for kind in flag_kinds:
+                    datapack.tags._tags[kind][args[0]].clear()
+                continue
+            if head == "$copy":
+                src = args[0]
+                dst = args[1]
+                for kind in flag_kinds:
+                    datapack.tags._tags[kind][dst] = copy.deepcopy(datapack.tags._tags[kind][src])
+                continue
+            
             if head.startswith('#'):
                 tag = head[1:]
                 if flag_no_generate:

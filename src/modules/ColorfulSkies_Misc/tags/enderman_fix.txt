@@ -1,0 +1,63 @@
+$flags BLOCK OVERRIDE
+
+$clear minecraft:enderman_holdable
+#minecraft:enderman_holdable
+- minecraft:grass_block
+- minecraft:dirt
+- minecraft:coarse_dirt
+- minecraft:podzol
+- minecraft:sand
+- minecraft:red_sand
+- minecraft:gravel
+- minecraft:brown_mushroom
+- minecraft:red_mushroom
+- minecraft:tnt
+- minecraft:cactus
+- minecraft:clay
+- minecraft:pumpkin
+- minecraft:carved_pumpkin
+- minecraft:melon
+- minecraft:mycelium
+- minecraft:crimson_fungus
+- minecraft:crimson_nylium
+- minecraft:crimson_roots
+- minecraft:warped_fungus
+- minecraft:warped_nylium
+- minecraft:warped_roots
+- #constellation:enderman_dirt
+- croptopia:salt_ore
+- byg:meadow_dirt
+- byg:mud_bricks
+- byg:mud_block
+- byg:meadow_grass_block
+- byg:peat
+- #constellation:enderman_sand
+- savageandravage:spore_bomb
+- #tconstruct:congealed_slime
+- tconstruct:grout
+- tconstruct:nether_grout
+- tconstruct:ichor_slime_sapling
+- tconstruct:blood_slime_sapling
+- #tconstruct:slimy_soil
+- quark:glowcelium
+- quark:glowshroom
+- silentgems:corrupted_stone
+- silentgems:corrupted_dirt
+- #minecraft:small_flowers
+
+$copy forge:dirt constellation:enderman_dirt
+#constellation:enderman_dirt
+- !byg:ether_soil
+- !byg:ether_phylium
+- !byg:vermilion_sculk
+- !byg:ivis_phylium
+- !byg:nightshade_phylium
+- !byg:shulkren_phylium
+- !byg:bulbis_phycelium
+- !byg:imparius_phylium
+
+$copy forge:sand constellation:enderman_sand
+#constellation:enderman_sand
+- minecraft:sand
+- !byg:end_sand
+- !#forge:sand/colorless

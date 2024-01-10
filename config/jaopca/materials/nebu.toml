@@ -7,11 +7,10 @@
 	#Is the storage block of this material small (2x2).
 	isSmallStorageBlock = false
 	#The module blacklist of this material.
-	moduleBlacklist = []
+	moduleBlacklist = ["storage_blocks", "dusts", "molten", "mekanism"]
 	#Should items of this material have the enchanted glow.
 	hasEffect = false
 	#The model type of the material.
-	modelType = "dust"
-	#The color of this material.
-	color = 16777215
+	modelType = "metallic"
+	color = 16711935
 
