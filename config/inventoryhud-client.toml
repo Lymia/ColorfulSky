@@ -55,7 +55,7 @@
 	#Range: -5 ~ 5
 	potGap = 0
 	#Potion HUD horizontal mode
-	potHor = false
+	potHor = true
 	#Potion HUD mini mode
 	potMini = true
 	#Potion HUD alpha
@@ -75,7 +75,7 @@
 	invVal = "BOTTOM"
 	#Potion HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPotionPos = 20
+	yPotionPos = 6
 	#OffHand vertical align
 	#Allowed Values: TOP, CENTER, BOTTOM
 	offVal = "BOTTOM"
@@ -114,7 +114,7 @@
 	invPosX = -103
 	#Potion HUD horizontal align
 	#Allowed Values: LEFT, MIDDLE, RIGHT
-	potHalign = "LEFT"
+	potHalign = "MIDDLE"
 	#InvIcon position (Y)
 	#Range: -9999 ~ 9999
 	invPosY = 20

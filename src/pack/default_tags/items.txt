@@ -1,11 +1,7 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jan 6, 2024 5:22:35 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jan 11, 2024 10:23:21 AM
 
 #bloodmagic:gravels/utherium
 - emendatusenigmatica:utherium_gravel
-
-#tis3d:keys
-- tis3d:key
-- tis3d:skeleton_key
 
 #forge:crops/tea_leaves
 - croptopia:tea_leaves
@@ -71,7 +67,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:seeds/basil
 
 #forge:dyes/gray
-- woot:gray_dyeplate
 - minecraft:gray_dye
 
 #forge:dusts/alexandrite
@@ -109,10 +104,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #biomesoplenty:hellbark_logs
 - decorative_blocks:hellbark_beam
-
-#feywild:seasonal_books
-- feywild:schematics_seasonal_rune_crafting
-- #feywild:deadly_books
 
 #forge:eton_mess
 - croptopia:eton_mess
@@ -241,9 +232,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - croptopia:eggplant_parmesan
 - croptopia:potato_soup
 - croptopia:toast_sandwich
-
-#forge:dusts/pearl
-- jaopca:dusts.pearl
 
 #nourish:fats
 - croptopia:olive
@@ -501,9 +489,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - envirocore:litherite_tile
 - envirocore:litherite_tile_small
 
-#forge:dusts/cats_eye
-- jaopca:dusts.cats_eye
-
 #chisel:emerald
 - chisel:emerald/panel
 - chisel:emerald/panelclassic
@@ -645,7 +630,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - thermal:netherite_dust
 
 #forge:dyes/light_gray
-- woot:light_gray_dyeplate
 - minecraft:light_gray_dye
 
 #croptopia:beef_replacements
@@ -939,9 +923,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:apatite_gem
 - silentgems:apatite
 
-#forge:dusts/pyrope
-- jaopca:dusts.pyrope
-
 #elementalcraft:infusable/leggings
 - minecraft:iron_leggings
 - minecraft:golden_leggings
@@ -1023,8 +1004,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #minecraft:mushrooms
 - minecraft:red_mushroom
 - minecraft:brown_mushroom
-- minecraft:red_mushroom
-- minecraft:brown_mushroom
 
 #forge:raw_duck
 - abnormals_delight:duck_fillet
@@ -1043,13 +1022,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:cobalt_rod
 
 #minecraft:smooth_stones
-- minecraft:smooth_stone
-- infernalexp:smooth_glowstone
-- infernalexp:smooth_dimstone
-- infernalexp:smooth_dullstone
-- minecraft:smooth_sandstone
-- minecraft:smooth_red_sandstone
-- minecraft:smooth_quartz
 - minecraft:smooth_stone
 - infernalexp:smooth_glowstone
 - infernalexp:smooth_dimstone
@@ -1184,13 +1156,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:sheetmetals/silver
 - immersiveengineering:sheetmetal_silver
 
-#feywild:schematics
-- feywild:schematics_elemental_rune_crafting
-- feywild:schematics_seasonal_rune_crafting
-- feywild:schematics_deadly_rune_crafting
-- feywild:schematics_yggdrasil_rune_crafting
-- feywild:schematics_gem_transmutation
-
 #forge:crops/sadiroot
 
 #forge:hoes
@@ -1275,9 +1240,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:ingots/azure_silver
 - silentgear:azure_silver_ingot
-
-#forge:dusts/zircon
-- jaopca:dusts.zircon
 
 #bloodmagic:fragments/cinnabar
 - emendatusenigmatica:cinnabar_fragment
@@ -1451,11 +1413,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:crimson_fungus
 - minecraft:warped_fungus
 - infernalexp:luminous_fungus
-- minecraft:red_mushroom
-- minecraft:brown_mushroom
-- minecraft:crimson_fungus
-- minecraft:warped_fungus
-- infernalexp:luminous_fungus
 
 #forge:storage_blocks/refined_glowstone
 - mekanism:block_refined_glowstone
@@ -1601,6 +1558,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:jellyshroom_fence
 - betterendforge:lucernia_fence
 - silentgear:netherwood_fence
+- integrateddynamics:menril_fence
 - byg:aspen_fence
 - byg:baobab_fence
 - byg:blue_enchanted_fence
@@ -2601,6 +2559,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:pink_wool
 
 #forge:torches
+- integrateddynamics:menril_torch
+- integrateddynamics:menril_torch_stone
 - gaiadimension:pyrite_torch?
 - minecraft:soul_torch
 - minecraft:redstone_torch
@@ -3157,6 +3117,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:lucernia_door
 - betterendforge:thallasium_door
 - betterendforge:terminite_door
+- integrateddynamics:menril_door
 - #minecraft:wooden_doors
 - minecraft:iron_door
 - mcwdoors:metal_door
@@ -3317,9 +3278,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - envirocore:xerothium_polished_stairs
 - envirocore:xerothium_tile_stairs
 - envirocore:xerothium_tile_small_stairs
-
-#forge:dusts/euclase
-- jaopca:dusts.euclase
 
 #forge:seeds/blueberry
 - croptopia:blueberry_seed
@@ -3641,7 +3599,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - byg:imbued_nightshade_log
 - #byg:imparius_stems
 - #twilightforest:logs
-- #feywild:fey_logs
 - ars_nouveau:blue_archwood_log
 - ars_nouveau:red_archwood_log
 - ars_nouveau:green_archwood_log
@@ -3988,7 +3945,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:crops/corn
 
 #forge:dyes/green
-- woot:green_dyeplate
 - minecraft:green_dye
 
 #chisel:antiblock
@@ -4028,6 +3984,13 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:cantaloupe_seeds
 - croptopia:cantaloupe_seed
 - #forge:seeds/cantaloupe
+
+#integrateddynamics:menril_logs
+- integrateddynamics:menril_log
+- integrateddynamics:menril_log_filled
+- integrateddynamics:menril_log_stripped
+- integrateddynamics:menril_wood
+- integrateddynamics:menril_wood_stripped
 
 #bloodmagic:fragments/azure_silver
 - jaopca:bloodmagic_fragments.azure_silver
@@ -4824,6 +4787,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:tenanea_leaves
 - betterendforge:lucernia_leaves
 - silentgear:netherwood_leaves
+- integrateddynamics:menril_leaves
 - byg:baobab_leaves
 - byg:blooming_witch_hazel_leaves
 - byg:blue_enchanted_leaves
@@ -4891,10 +4855,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - twilightforest:sorting_leaves
 - twilightforest:thorn_leaves
 - twilightforest:beanstalk_leaves
-- feywild:spring_tree_leaves
-- feywild:summer_tree_leaves
-- feywild:autumn_tree_leaves
-- feywild:winter_tree_leaves
 - upgrade_aquatic:river_leaves
 - #tconstruct:slimy_leaves
 - quark:blue_blossom_leaves
@@ -5001,7 +4961,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - materialis:battlewrench
 
 #forge:dyes/white
-- woot:white_dyeplate
 - minecraft:white_dye
 
 #forge:fruits/mulberry
@@ -5187,7 +5146,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #minecraft:planks/archwood
 - ars_nouveau:archwood_planks
-- ars_nouveau:archwood_planks
 
 #forge:crops/tomato
 - croptopia:tomato
@@ -5360,55 +5318,23 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:chaos_dust
 - createaddition:diamond_grit
 - create:powdered_obsidian
-- jaopca:dusts.agate
 - jaopca:dusts.alexandrite
-- jaopca:dusts.amber
 - jaopca:dusts.amethyst
 - jaopca:dusts.ametrine
 - jaopca:dusts.ammolite
 - jaopca:dusts.aquamarine
-- jaopca:dusts.benitoite
-- jaopca:dusts.biotite
 - jaopca:dusts.bitumen
 - jaopca:dusts.black_diamond
-- jaopca:dusts.bort
 - jaopca:dusts.carnelian
-- jaopca:dusts.cats_eye
-- jaopca:dusts.charged_certus_quartz
-- jaopca:dusts.chrysoprase
 - jaopca:dusts.citrine
-- jaopca:dusts.coral
-- jaopca:dusts.euclase
-- jaopca:dusts.garnet
-- jaopca:dusts.green_sapphire
 - jaopca:dusts.heliodor
 - jaopca:dusts.iolite
 - jaopca:dusts.ironwood
-- jaopca:dusts.jade
-- jaopca:dusts.jasper
 - jaopca:dusts.knightmetal
-- jaopca:dusts.kunzite
 - jaopca:dusts.kyanite
-- jaopca:dusts.lepidolite
-- jaopca:dusts.malachite
 - jaopca:dusts.moldavite
-- jaopca:dusts.moonstone
-- jaopca:dusts.morganite
-- jaopca:dusts.onyx
-- jaopca:dusts.opal
-- jaopca:dusts.pearl
-- jaopca:dusts.phosphophyllite
-- jaopca:dusts.pyrope
-- jaopca:dusts.rose_quartz
-- jaopca:dusts.sodalite
-- jaopca:dusts.spinel
-- jaopca:dusts.sunstone
-- jaopca:dusts.tanzanite
-- jaopca:dusts.tektite
 - jaopca:dusts.topaz
 - jaopca:dusts.turquoise
-- jaopca:dusts.yellow_diamond
-- jaopca:dusts.zircon
 
 #forge:cantaloupes
 - croptopia:cantaloupe
@@ -5575,9 +5501,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgear:paxel_blueprint
 - silentgear:paxel_template
 
-#forge:dusts/bort
-- jaopca:dusts.bort
-
 #minecraft:planks
 - minecraft:oak_planks
 - minecraft:spruce_planks
@@ -5599,6 +5522,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:lucernia_planks
 - silentgear:netherwood_planks
 - mowziesmobs:painted_acacia
+- integrateddynamics:menril_planks
 - byg:aspen_planks
 - byg:baobab_planks
 - byg:blue_enchanted_planks
@@ -5821,9 +5745,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #ars_nouveau:sylph/denied_drop
 - minecraft:dirt
 - #forge:seeds
-
-#forge:dusts/amber
-- jaopca:dusts.amber
 
 #tconstruct:structure_debug/foundry
 - #tconstruct:structure_debug/general
@@ -6159,9 +6080,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #mekanism:clumps/froststeel
 - emendatusenigmatica:froststeel_clump
-
-#forge:dusts/biotite
-- jaopca:dusts.biotite
 
 #forge:cooked_fishes/lionfish
 - upgrade_aquatic:cooked_lionfish
@@ -6712,9 +6630,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:clusters/charged_certus_quartz
 - emendatusenigmatica:charged_certus_quartz_cluster
 
-#feywild:yggdrasil_books
-- feywild:schematics_yggdrasil_rune_crafting
-
 #forge:gems
 - #forge:gems/bort
 - #forge:gems/dragonstone
@@ -6943,9 +6858,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #silentgear:rods/rough
 - silentgear:rough_rod
 
-#forge:dusts/moonstone
-- jaopca:dusts.moonstone
-
 #mekanism:clumps/certus_quartz
 - emendatusenigmatica:certus_quartz_clump
 
@@ -6994,7 +6906,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - immersiveengineering:ingot_constantan
 
 #minecraft:fences/wooden
-- ars_nouveau:archwood_fence
 - ars_nouveau:archwood_fence
 
 #forge:pepperoni
@@ -8285,7 +8196,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - byg:blueberries
 
 #forge:dyes/light_blue
-- woot:light_blue_dyeplate
 - minecraft:light_blue_dye
 
 #tconstruct:casts/single_use/rod
@@ -8323,7 +8233,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:tanzanite_glowrose
 
 #forge:dyes/pink
-- woot:pink_dyeplate
 - minecraft:pink_dye
 
 #silentgear:blueprints/elytra
@@ -8399,9 +8308,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #mekanism:shards/utherium
 - emendatusenigmatica:utherium_shard
-
-#forge:dusts/coral
-- jaopca:dusts.coral
 
 #forge:buckets/gold
 - emendatusenigmatica:molten_gold_bucket
@@ -8619,9 +8525,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:gems/silicon
 - emendatusenigmatica:silicon_gem
 
-#forge:storage_blocks/ender
-- jaopca:storage_blocks.ender
-
 #minecraft:lectern_books
 - minecraft:written_book
 - minecraft:writable_book
@@ -8773,9 +8676,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:nuggets/apatite
 - silentgems:apatite_shard
 
-#forge:dusts/charged_certus_quartz
-- jaopca:dusts.charged_certus_quartz
-
 #fabric:swords
 - byg:pendorite_sword
 - byg:pendorite_battleaxe
@@ -8784,7 +8684,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:potassium_nitrate_shard
 
 #forge:dyes/brown
-- woot:brown_dyeplate
 - minecraft:brown_dye
 
 #chisel:basalt
@@ -8920,6 +8819,54 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:zinc_plate
 - createaddition:zinc_sheet
 
+#integrateddynamics:parts
+- integratedterminals:part_terminal_storage
+- integratedterminals:part_terminal_crafting_job
+- integratedcrafting:part_interface_crafting
+- integratedcrafting:part_crafting_writer
+- integrateddynamics:part_audio_reader
+- integrateddynamics:part_audio_writer
+- integrateddynamics:part_block_reader
+- integrateddynamics:part_connector_mono_directional
+- integrateddynamics:part_connector_omni_directional
+- integrateddynamics:part_display_panel
+- integrateddynamics:part_dynamic_light_panel
+- integrateddynamics:part_effect_writer
+- integrateddynamics:part_entity_reader
+- integrateddynamics:part_entity_writer
+- integrateddynamics:part_extradimensional_reader
+- integrateddynamics:part_fluid_reader
+- integrateddynamics:part_inventory_reader
+- integrateddynamics:part_inventory_writer
+- integrateddynamics:part_machine_reader
+- integrateddynamics:part_machine_writer
+- integrateddynamics:part_network_reader
+- integrateddynamics:part_redstone_reader
+- integrateddynamics:part_redstone_writer
+- integrateddynamics:part_static_light_panel
+- integrateddynamics:part_world_reader
+- integratedtunnels:part_interface_energy
+- integratedtunnels:part_interface_filter_energy
+- integratedtunnels:part_importer_energy
+- integratedtunnels:part_exporter_energy
+- integratedtunnels:part_importer_world_energy
+- integratedtunnels:part_exporter_world_energy
+- integratedtunnels:part_interface_item
+- integratedtunnels:part_interface_filter_item
+- integratedtunnels:part_importer_item
+- integratedtunnels:part_exporter_item
+- integratedtunnels:part_importer_world_item
+- integratedtunnels:part_exporter_world_item
+- integratedtunnels:part_interface_fluid
+- integratedtunnels:part_interface_filter_fluid
+- integratedtunnels:part_importer_fluid
+- integratedtunnels:part_exporter_fluid
+- integratedtunnels:part_importer_world_fluid
+- integratedtunnels:part_exporter_world_fluid
+- integratedtunnels:part_importer_world_block
+- integratedtunnels:part_exporter_world_block
+- integratedtunnels:part_player_simulator
+
 #bloodmagic:fragments/copper
 - emendatusenigmatica:copper_fragment
 
@@ -9038,15 +8985,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:crops/basil
 
 #minecraft:mushroom_hyphae
-- minecraft:brown_mushroom_block
-- minecraft:red_mushroom_block
-- minecraft:crimson_hyphae
-- minecraft:warped_hyphae
-- minecraft:stripped_crimson_hyphae
-- minecraft:stripped_warped_hyphae
-- minecraft:nether_wart_block
-- minecraft:warped_wart_block
-- minecraft:shroomlight
 - minecraft:brown_mushroom_block
 - minecraft:red_mushroom_block
 - minecraft:crimson_hyphae
@@ -9461,9 +9399,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:green_stained_glass
 - tconstruct:green_clear_stained_glass
 
-#forge:dusts/morganite
-- jaopca:dusts.morganite
-
 #refinedstorage:storage_blocks/items/4096k
 - extrastorage:block_4096k
 
@@ -9720,6 +9655,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - botania:sunny_quartz_stairs
 - botania:white_pavement_stairs
 - botania:yellow_pavement_stairs
+- integrateddynamics:crystalized_chorus_block_stairs
+- integrateddynamics:crystalized_chorus_brick_stairs
+- integrateddynamics:crystalized_menril_block_stairs
+- integrateddynamics:crystalized_menril_brick_stairs
+- integrateddynamics:menril_planks_stairs
 - byg:aspen_stairs
 - byg:baobab_stairs
 - byg:blue_enchanted_stairs
@@ -10153,7 +10093,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:bitumen_gravel
 
 #forge:dyes/yellow
-- woot:yellow_dyeplate
 - mekanism:dust_sulfur
 - minecraft:yellow_dye
 
@@ -10447,9 +10386,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:chunks/potassium_nitrate
 - emendatusenigmatica:potassium_nitrate_chunk
 
-#forge:dusts/sunstone
-- jaopca:dusts.sunstone
-
 #mekanism:dirty_dusts/cloggrum
 - emendatusenigmatica:cloggrum_dirty_dust
 
@@ -10469,9 +10405,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:nuggets/aquamarine
 - silentgems:aquamarine_shard
-
-#forge:dusts/jasper
-- jaopca:dusts.jasper
 
 #forge:bookshelves
 - betterendforge:mossy_glowshroom_bookshelf
@@ -10842,9 +10775,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:servo
 - numina:component_servo
-
-#forge:dusts/phosphophyllite
-- jaopca:dusts.phosphophyllite
 
 #forge:nutmegs
 - croptopia:nutmeg
@@ -11250,6 +11180,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:lucernia_bark
 - betterendforge:lucernia_stripped_log
 - betterendforge:lucernia_stripped_bark
+- integrateddynamics:menril_log
+- integrateddynamics:menril_log_filled
 - #croptopia:cinnamon_logs
 - #byg:aspen_logs
 - #byg:baobab_logs
@@ -11286,7 +11218,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #twilightforest:transwood_logs
 - #twilightforest:mining_logs
 - #twilightforest:sortwood_logs
-- #feywild:fey_logs
 - ars_nouveau:blue_archwood_log
 - ars_nouveau:red_archwood_log
 - ars_nouveau:green_archwood_log
@@ -11343,6 +11274,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:lucernia_slab
 - silentgear:netherwood_slab
 - mowziesmobs:painted_acacia_slab
+- integrateddynamics:menril_slab
 - byg:aspen_slab
 - byg:baobab_slab
 - byg:blue_enchanted_slab
@@ -11484,7 +11416,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:music_disc_ward
 - minecraft:music_disc_11
 - minecraft:music_disc_wait
-- feywild:feywild_music_disc
 
 #mekanism:clumps/thallasium
 - emendatusenigmatica:thallasium_clump
@@ -11752,18 +11683,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #create:crushed_ores/emerald
 - emendatusenigmatica:emerald_crushed
 
-#forge:dusts/tektite
-- jaopca:dusts.tektite
-
 #mekanism:crystals/emerald
 - emendatusenigmatica:emerald_crystal
 
 #silents_mechanisms:coal_generator_fuels
 - silentgear:netherwood_charcoal
 - silentgear:netherwood_charcoal_block
-
-#forge:storage_blocks/nebu
-- jaopca:storage_blocks.nebu
 
 #forge:wires/steel
 - immersiveengineering:wire_steel
@@ -11794,9 +11719,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - botania:brown_petal
 - botania:brown_mushroom
 - extrabotany:universalpetal
-
-#forge:dusts/rose_quartz
-- jaopca:dusts.rose_quartz
 
 #tconstruct:casts/multi_use/repair_kit
 - tconstruct:repair_kit_cast
@@ -12161,7 +12083,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:black_fluffy_block
 
 #forge:dyes/orange
-- woot:orange_dyeplate
 - minecraft:orange_dye
 
 #forge:gingers
@@ -12228,24 +12149,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:glass_panes/red
 - minecraft:red_stained_glass_pane
 - tconstruct:red_clear_stained_glass_pane
-
-#tis3d:modules
-- tis3d:audio_module
-- tis3d:display_module
-- tis3d:execution_module
-- tis3d:facade_module
-- tis3d:infrared_module
-- tis3d:keypad_module
-- tis3d:queue_module
-- tis3d:random_module
-- tis3d:random_access_memory_module
-- tis3d:read_only_memory_module
-- tis3d:redstone_module
-- tis3d:sequencer_module
-- tis3d:serial_port_module
-- tis3d:stack_module
-- tis3d:terminal_module
-- tis3d:timer_module
 
 #forge:fruits/pecan
 - croptopia:pecan
@@ -12586,14 +12489,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:chunks/gold
 - emendatusenigmatica:gold_chunk
 
-#tis3d:books
-- tis3d:code_book
-- tis3d:manual
-- minecraft:book
-- minecraft:enchanted_book
-- minecraft:writable_book
-- minecraft:written_book
-
 #silentgems:glowroses/phosphophyllite
 - silentgems:phosphophyllite_glowrose
 
@@ -12621,7 +12516,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - tconstruct:scorched_ingot_gauge
 
 #forge:dyes/purple
-- woot:purple_dyeplate
 - minecraft:purple_dye
 
 #silentgems:gems/dark
@@ -12720,9 +12614,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:silver_block
 
 #minecraft:mushroom_stem
-- minecraft:mushroom_stem
-- minecraft:crimson_stem
-- minecraft:warped_stem
 - minecraft:mushroom_stem
 - minecraft:crimson_stem
 - minecraft:warped_stem
@@ -13308,9 +13199,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:seeds/hops
 - croptopia:hops_seed
 
-#forge:dusts/green_sapphire
-- jaopca:dusts.green_sapphire
-
 #forge:beetroot_salads
 - croptopia:beetroot_salad
 
@@ -13538,9 +13426,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:hardened_netherrack
 - silentgems:hardened_end_stone
 
-#forge:dusts/benitoite
-- jaopca:dusts.benitoite
-
 #tconstruct:casts/multi_use
 - #constructsarmory:casts/multi_use/head_plate
 - #constructsarmory:casts/multi_use/body_plate
@@ -13757,6 +13642,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:umbrella_tree_sapling
 - betterendforge:lucernia_sapling
 - silentgear:netherwood_sapling
+- integrateddynamics:menril_sapling
 - croptopia:almond_sapling
 - croptopia:apple_sapling
 - croptopia:apricot_sapling
@@ -13838,10 +13724,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - twilightforest:sorting_sapling
 - twilightforest:hollow_oak_sapling
 - twilightforest:rainboak_sapling
-- feywild:spring_tree_sapling
-- feywild:summer_tree_sapling
-- feywild:autumn_tree_sapling
-- feywild:winter_tree_sapling
 - ars_nouveau:blue_archwood_sapling
 - ars_nouveau:red_archwood_sapling
 - ars_nouveau:green_archwood_sapling
@@ -14196,6 +14078,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:tools/wrench
 - mekanism:configurator
 - thermal:wrench
+- integrateddynamics:wrench
 - cyclic:cable_wrench?
 - rftoolsbase:smartwrench
 - rftoolsbase:smartwrench_select
@@ -14316,9 +14199,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #biomesoplenty:cherry_logs
 - decorative_blocks:cherry_beam
-
-#forge:dusts/yellow_diamond
-- jaopca:dusts.yellow_diamond
 
 #silentgems:chaos_orbs
 - silentgems:chaos_potato
@@ -15856,9 +15736,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - thermal:emerald_dust
 - emendatusenigmatica:emerald_dust
 
-#forge:dusts/lepidolite
-- jaopca:dusts.lepidolite
-
 #charm:crafting_tables
 - minecraft:crafting_table
 
@@ -16606,9 +16483,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #bloodmagic:gravels/silver
 - emendatusenigmatica:silver_gravel
 
-#forge:dusts/chrysoprase
-- jaopca:dusts.chrysoprase
-
 #forge:grapefruits
 - croptopia:grapefruit
 - #forge:fruits/grapefruit
@@ -16988,9 +16862,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:fuels/bio
 - mekanism:bio_fuel
 
-#forge:storage_blocks/froststeel
-- jaopca:storage_blocks.froststeel
-
 #forge:tuna
 - croptopia:tuna
 
@@ -17256,10 +17127,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgear:ring_blueprint
 - silentgear:ring_template
 
-#feywild:deadly_books
-- feywild:schematics_deadly_rune_crafting
-- #feywild:yggdrasil_books
-
 #forge:buckets/cloggrum
 - emendatusenigmatica:molten_cloggrum_bucket
 
@@ -17442,9 +17309,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - byg:witch_hazel_wood
 - byg:stripped_witch_hazel_wood
 
-#forge:dusts/tanzanite
-- jaopca:dusts.tanzanite
-
 #byg:purple_dye
 - byg:allium_flower_bush
 - byg:alpine_bellflower
@@ -17505,9 +17369,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:vegetables/squash
 - croptopia:squash
 - #forge:crops/squash
-
-#forge:dusts/spinel
-- jaopca:dusts.spinel
 
 #mekanism:clumps/apatite
 - emendatusenigmatica:apatite_clump
@@ -17850,12 +17711,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:quartz_dust
 
 #minecraft:fox_food
-- croptopia:blackberry
-- croptopia:blueberry
-- croptopia:cranberry
-- croptopia:elderberry
-- croptopia:raspberry
-- croptopia:strawberry
 - croptopia:blackberry
 - croptopia:blueberry
 - croptopia:cranberry
@@ -18487,6 +18342,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:blossom_berry
 - betterendforge:shadow_berry_raw
 - silentgear:nether_banana
+- integrateddynamics:menril_berries
 - #forge:bellpeppers
 - #forge:blackberries
 - #forge:blueberries
@@ -18540,22 +18396,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - mekanism:dirty_dust_uranium
 
 #minecraft:logs/archwood
-- ars_nouveau:blue_archwood_log
-- ars_nouveau:red_archwood_log
-- ars_nouveau:green_archwood_log
-- ars_nouveau:purple_archwood_log
-- ars_nouveau:blue_archwood_wood
-- ars_nouveau:red_archwood_wood
-- ars_nouveau:green_archwood_wood
-- ars_nouveau:purple_archwood_wood
-- ars_nouveau:stripped_blue_archwood_log
-- ars_nouveau:stripped_red_archwood_log
-- ars_nouveau:stripped_green_archwood_log
-- ars_nouveau:stripped_purple_archwood_log
-- ars_nouveau:stripped_blue_archwood_wood
-- ars_nouveau:stripped_red_archwood_wood
-- ars_nouveau:stripped_green_archwood_wood
-- ars_nouveau:stripped_purple_archwood_wood
 - ars_nouveau:blue_archwood_log
 - ars_nouveau:red_archwood_log
 - ars_nouveau:green_archwood_log
@@ -19032,6 +18872,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:jellyshroom_door
 - betterendforge:lucernia_door
 - silentgear:netherwood_door
+- integrateddynamics:menril_door
 - byg:aspen_door
 - byg:baobab_door
 - byg:blue_enchanted_door
@@ -19274,7 +19115,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:molten_potassium_nitrate_bucket
 
 #forge:dyes/magenta
-- woot:magenta_dyeplate
 - minecraft:magenta_dye
 
 #upgrade_aquatic:brain_fans_corals
@@ -19306,11 +19146,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - byg:cobbled_ether_stone
 
 #forge:dyes/cyan
-- woot:cyan_dyeplate
 - minecraft:cyan_dye
-
-#forge:dusts/opal
-- jaopca:dusts.opal
 
 #forge:ores_cluster/copper
 - emendatusenigmatica:copper_cluster
@@ -19536,10 +19372,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - botania:white_double_flower
 - botania:yellow_double_flower
 
-#feywild:elemental_books
-- feywild:schematics_elemental_rune_crafting
-- #feywild:seasonal_books
-
 #mekanism:clumps/ironwood
 - jaopca:mekanism_clumps.ironwood
 
@@ -19727,7 +19559,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:golden_leggings
 
 #forge:dyes/black
-- woot:black_dyeplate
 - minecraft:black_dye
 
 #forge:dusts/starmetal
@@ -19748,7 +19579,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #refinedstorage:parts/fluids/1048576k
 
 #minecraft:crops
-- ars_nouveau:mana_bloom_crop
 - ars_nouveau:mana_bloom_crop
 
 #forge:nuggets/copper
@@ -19790,15 +19620,10 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - croptopia:currant_seed
 - #forge:seeds/currant
 
-#tis3d:computers
-- tis3d:casing
-- tis3d:controller
-
 #forge:fences/steel
 - immersiveengineering:steel_fence
 
 #forge:dyes/blue
-- woot:blue_dyeplate
 - minecraft:blue_dye
 
 #forge:glass_panes/brown
@@ -19928,9 +19753,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:storage_blocks/blaze_gold
 - silentgear:blaze_gold_block
 
-#forge:dusts/kunzite
-- jaopca:dusts.kunzite
-
 #forge:storage_blocks/citrine
 - silentgems:citrine_block
 
@@ -20028,9 +19850,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:glass/cyan
 - minecraft:cyan_stained_glass
 - tconstruct:cyan_clear_stained_glass
-
-#forge:dusts/sodalite
-- jaopca:dusts.sodalite
 
 #forge:leather
 - minecraft:leather
@@ -20297,9 +20116,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:chunks/lapis
 - emendatusenigmatica:lapis_chunk
 
-#forge:dusts/garnet
-- jaopca:dusts.garnet
-
 #farmersdelight:wild_crops
 - farmersdelight:wild_carrots
 - farmersdelight:wild_potatoes
@@ -20536,9 +20352,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - croptopia:persimmon_sapling
 - #forge:saplings/persimmon
 
-#forge:dusts/jade
-- jaopca:dusts.jade
-
 #forge:fruits/strawberry
 - croptopia:strawberry
 
@@ -20741,17 +20554,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - envirocore:kyronite_tile_slab
 - envirocore:kyronite_tile_small_slab
 
-#woot:factory_blocks
-- woot:factory_a
-- woot:factory_b
-- woot:factory_c
-- woot:factory_d
-- woot:factory_e
-- woot:factory_connect
-- woot:factory_ctr_base_pri
-- woot:factory_ctr_base_sec
-- woot:factory_upgrade
-
 #silentgear:blueprints/arrow
 - silentgear:arrow_blueprint
 - silentgear:arrow_template
@@ -20780,9 +20582,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - croptopia:milk_bottle
 - croptopia:soy_milk
 - minecraft:milk_bucket
-
-#forge:dusts/agate
-- jaopca:dusts.agate
 
 #forge:blackberry_seeds
 - croptopia:blackberry_seed
@@ -22410,12 +22209,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - croptopia:pork_jerky
 - croptopia:bacon
 - croptopia:cooked_bacon
-- croptopia:ham_sandwich
-- croptopia:pepperoni
-- croptopia:pork_and_beans
-- croptopia:pork_jerky
-- croptopia:bacon
-- croptopia:cooked_bacon
 
 #projecte:nbt_whitelist
 
@@ -22792,11 +22585,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - minecraft:bubble_coral_block
 - minecraft:fire_coral_block
 - minecraft:horn_coral_block
-- minecraft:tube_coral_block
-- minecraft:brain_coral_block
-- minecraft:bubble_coral_block
-- minecraft:fire_coral_block
-- minecraft:horn_coral_block
 
 #forge:crops/blackberry
 - croptopia:blackberry
@@ -22989,6 +22777,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:sapphire_block
 - emendatusenigmatica:peridot_block
 - emendatusenigmatica:coke_block
+- integrateddynamics:crystalized_chorus_block
+- integrateddynamics:crystalized_menril_block
 - byg:ametrine_block
 - byg:pendorite_block
 - byg:anthracite_block
@@ -23092,21 +22882,16 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:storage_blocks/bloodbrass
 - jaopca:storage_blocks.aeternium
 - jaopca:storage_blocks.brick
-- jaopca:storage_blocks.cloggrum
 - jaopca:storage_blocks.dragonstone
-- jaopca:storage_blocks.ender
 - jaopca:storage_blocks.ender_pearl
-- jaopca:storage_blocks.froststeel
 - jaopca:storage_blocks.graphite
 - jaopca:storage_blocks.hellforged
 - jaopca:storage_blocks.hop_graphite
 - jaopca:storage_blocks.lithium
 - jaopca:storage_blocks.mana_diamond
-- jaopca:storage_blocks.nebu
 - jaopca:storage_blocks.nether_brick
 - jaopca:storage_blocks.netherite_scrap
 - jaopca:storage_blocks.obsidian
-- jaopca:storage_blocks.pink_slime
 - jaopca:storage_blocks.prismarine
 - jaopca:storage_blocks.refined_radiance
 - jaopca:storage_blocks.regalium
@@ -23462,9 +23247,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:coins/copper
 - thermal:copper_coin
 
-#forge:dusts/malachite
-- jaopca:dusts.malachite
-
 #upgrade_aquatic:dead_acan_fans_corals
 - upgrade_aquatic:dead_acan_coral
 - upgrade_aquatic:dead_acan_coral_fan
@@ -23596,6 +23378,7 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - betterendforge:jellyshroom_stairs
 - betterendforge:lucernia_stairs
 - silentgear:netherwood_stairs
+- integrateddynamics:menril_planks_stairs
 - byg:aspen_stairs
 - byg:baobab_stairs
 - byg:blue_enchanted_stairs
@@ -23728,7 +23511,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - astralsorcery:starmetal_ingot
 
 #forge:dyes/lime
-- woot:lime_dyeplate
 - minecraft:lime_dye
 
 #forge:dusts/draconium
@@ -23826,18 +23608,11 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - tconstruct:nugget_sand_cast
 - tconstruct:nugget_red_sand_cast
 
-#forge:dusts/onyx
-- jaopca:dusts.onyx
-
-#forge:storage_blocks/cloggrum
-- jaopca:storage_blocks.cloggrum
-
 #forge:kale_seeds
 - croptopia:kale_seed
 - #forge:seeds/kale
 
 #minecraft:bee_growables
-- ars_nouveau:mana_bloom_crop
 - ars_nouveau:mana_bloom_crop
 
 #forge:olive_seeds
@@ -23875,22 +23650,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:garnet_shard
 
 #forge:dyes
-- #forge:dyes/white
-- #forge:dyes/orange
-- #forge:dyes/magenta
-- #forge:dyes/light_blue
-- #forge:dyes/yellow
-- #forge:dyes/lime
-- #forge:dyes/pink
-- #forge:dyes/gray
-- #forge:dyes/light_gray
-- #forge:dyes/cyan
-- #forge:dyes/purple
-- #forge:dyes/blue
-- #forge:dyes/brown
-- #forge:dyes/green
-- #forge:dyes/red
-- #forge:dyes/black
 - #forge:dyes/white
 - #forge:dyes/orange
 - #forge:dyes/magenta
@@ -23945,7 +23704,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - silentgems:benitoite_glowrose
 
 #forge:dyes/red
-- woot:red_dyeplate
 - minecraft:red_dye
 
 #elementalcraft:grove_shrine_blacklist
@@ -24202,9 +23960,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - botania:elementium_hoe
 - minecraft:diamond_hoe
 - minecraft:netherite_hoe
-
-#forge:storage_blocks/pink_slime
-- jaopca:storage_blocks.pink_slime
 
 #silentgear:blueprints/sword
 - silentgear:sword_blueprint
@@ -24665,16 +24420,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - chisel:wool/magenta/legacy
 - chisel:wool/magenta/llama
 - minecraft:magenta_wool
-
-#feywild:fey_logs
-- feywild:spring_tree_log
-- feywild:spring_tree_wood
-- feywild:summer_tree_log
-- feywild:summer_tree_wood
-- feywild:autumn_tree_log
-- feywild:autumn_tree_wood
-- feywild:winter_tree_log
-- feywild:winter_tree_wood
 
 #forge:glass_panes/purple
 - minecraft:purple_stained_glass_pane

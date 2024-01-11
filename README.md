@@ -8,15 +8,18 @@ Colorful Skies is a general purpose modpack.
 
 ### Vanilla Improvements
 
-- [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis) (Deadly and Potion modules only)
+- [Apotheosis](https://www.curseforge.com/minecraft/mc-mods/apotheosis)
 - [Caves & Cliffs Backport](https://www.curseforge.com/minecraft/mc-mods/caves-and-cliffs-backport)
 - [Charm Reforged](https://www.curseforge.com/minecraft/mc-mods/charm-reforged)
 - [Cosmetic Armor Reworked](https://www.curseforge.com/minecraft/mc-mods/cosmetic-armor-reworked)
 - [Croptopia](https://www.curseforge.com/minecraft/mc-mods/croptopia-fabric)
+- [Customizable Player Models](https://www.curseforge.com/minecraft/mc-mods/custom-player-models)
 - [Farmer's Delight](https://www.curseforge.com/minecraft/mc-mods/farmers-delight)
+- [First Person Model](https://www.curseforge.com/minecraft/mc-mods/first-person-model)
 - [Just Enough Items](https://www.curseforge.com/minecraft/mc-mods/jei)
 - [More Waterlogging](https://www.curseforge.com/minecraft/mc-mods/more-waterlogging)
 - [Mouse Tweaks](https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks)
+- [Not Enough Animations](https://www.curseforge.com/minecraft/mc-mods/not-enough-animations)
 - [Quark](https://www.curseforge.com/minecraft/mc-mods/quark)
 - [Serene Seasons](https://www.curseforge.com/minecraft/mc-mods/serene-seasons)
 - Various small mods by [Serilum](https://www.curseforge.com/members/serilum/projects)
@@ -25,14 +28,14 @@ Colorful Skies is a general purpose modpack.
 
 - [FerriteCore](https://www.curseforge.com/minecraft/mc-mods/ferritecore)
 - [Embeddium](https://www.curseforge.com/minecraft/mc-mods/embeddium)
+- [ModernFix](https://www.curseforge.com/minecraft/mc-mods/modernfix)
 - [Oculus](https://www.curseforge.com/minecraft/mc-mods/oculus)
-- [Radon](https://www.curseforge.com/minecraft/mc-mods/radon)
 - [Roadrunner](https://www.curseforge.com/minecraft/mc-mods/roadrunner)
+- [Starlight x Create](https://www.curseforge.com/minecraft/mc-mods/starlight-x-create)
 
 ### Resource Packs
 
-- [Darkpuppey's Modded Overhauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
-- [Feywild Redux](https://www.curseforge.com/minecraft/texture-packs/feywild-redux)
+- [Darkpuppey's Modded Over hauls!](https://www.curseforge.com/minecraft/texture-packs/darkpuppeys-modded-overhauls)
 - [Glass Panes CTM Fix](https://www.curseforge.com/minecraft/texture-packs/glass-panes-ctm-fix)
 - [ProjectE Retexture](https://www.curseforge.com/minecraft/texture-packs/projecte-retexture)
 - [Simple Connected Textures](https://www.curseforge.com/minecraft/texture-packs/simple-ct)
@@ -55,7 +58,6 @@ Colorful Skies is a general purpose modpack.
 - [Artifacts](https://www.curseforge.com/minecraft/mc-mods/artifacts)
 - [Dungeon Crawl](https://www.curseforge.com/minecraft/mc-mods/dungeon-crawl)
 - [Dungeons Plus](https://www.curseforge.com/minecraft/mc-mods/dungeons-plus)
-- [Feywilds](https://www.curseforge.com/minecraft/mc-mods/feywild)
 - [Ice and Fire: Dragons](https://www.curseforge.com/minecraft/mc-mods/ice-and-fire-dragons)
 - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr)
 - [Mowzie's Mobs](https://www.curseforge.com/minecraft/mc-mods/mowzies-mobs)
@@ -81,6 +83,7 @@ Colorful Skies is a general purpose modpack.
 - [Immersive Cooking](https://www.curseforge.com/minecraft/mc-mods/immersive-cooking)
 - [Macaw's](https://www.curseforge.com/members/sketch_macaw/projects) building blocks series
 - [MorePaths](https://www.curseforge.com/minecraft/mc-mods/morepaths)
+- [Plushie Mod](https://www.curseforge.com/minecraft/mc-mods/plushie-mod)
 - [Simply Light](https://www.curseforge.com/minecraft/mc-mods/simply-light)
 - [Tinkers' Mechworks](https://www.curseforge.com/minecraft/mc-mods/tinkers-mechworks)
 
@@ -97,6 +100,7 @@ Colorful Skies is a general purpose modpack.
 - [Eidolon](https://www.curseforge.com/minecraft/mc-mods/eidolon)
 - [ElementalCraft](https://www.curseforge.com/minecraft/mc-mods/elemental-craft)
 - [Enigmatic Legacy](https://www.curseforge.com/minecraft/mc-mods/enigmatic-legacy)
+- [Mahou Tsukai](https://www.curseforge.com/minecraft/mc-mods/mahou-tsukai)
 - [Mystical Agriculture](https://www.curseforge.com/minecraft/mc-mods/mystical-agriculture)
 - [ProjectE](https://www.curseforge.com/minecraft/mc-mods/projecte)
 - [Touhou Little Maid](https://www.curseforge.com/minecraft/mc-mods/touhou-little-maid)
@@ -126,15 +130,20 @@ Colorful Skies is a general purpose modpack.
     - [Construct's Armory](https://www.curseforge.com/minecraft/mc-mods/constructs-armory)
     - [Materialis](https://www.curseforge.com/minecraft/mc-mods/materialis)
     - [Tinkers Planner](https://www.curseforge.com/minecraft/mc-mods/tinkers-planner)
-- [TIS-3D](https://www.curseforge.com/minecraft/mc-mods/tis-3d)
 - [Woot](https://www.curseforge.com/minecraft/mc-mods/woot)
 - [XNet](https://www.curseforge.com/minecraft/mc-mods/xnet)
 
 ### Automation & Control Mods
+
+- [Integrated Dynamics](https://www.curseforge.com/minecraft/mc-mods/integrated-dynamics)
+    - [Integrated NBT](https://www.curseforge.com/minecraft/mc-mods/integrated-nbt)
+    - [Integrated Proxy](https://www.curseforge.com/minecraft/mc-mods/integrated-proxy)
+    - [Integrated Additions](https://www.curseforge.com/minecraft/mc-mods/integrated-additions)
 - [Ranged Wireless Redstone](https://www.curseforge.com/minecraft/mc-mods/ranged-wireless-redstone)
 - [Redstone Pen](https://www.curseforge.com/minecraft/mc-mods/redstone-pen)
 - [Tiny Gates](https://www.curseforge.com/minecraft/mc-mods/tiny-gates)
 - [Tiny Redstone](https://www.curseforge.com/minecraft/mc-mods/tiny-redstone)
+- [Tiny Pipes](https://www.curseforge.com/minecraft/mc-mods/tiny-pipes)
 
 ### Utility Mods
 
@@ -147,7 +156,6 @@ Colorful Skies is a general purpose modpack.
 - [Morph-o-Tool](https://www.curseforge.com/minecraft/mc-mods/morph-o-tool)
 - [Nature's Compass](https://www.curseforge.com/minecraft/mc-mods/natures-compass) & [Explorer's Compass](https://www.curseforge.com/minecraft/mc-mods/explorers-compass)
 - [Seals](https://www.curseforge.com/minecraft/mc-mods/seals)
-- [Shrink.](https://www.curseforge.com/minecraft/mc-mods/shrink_)
 - [Sophisticated Backpacks](https://www.curseforge.com/minecraft/mc-mods/sophisticated-backpacks)
 - [Storage Drawers](https://www.curseforge.com/minecraft/mc-mods/storage-drawers)
 - [/tank/null](https://www.curseforge.com/minecraft/mc-mods/tank-null)

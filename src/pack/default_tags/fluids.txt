@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jan 6, 2024 5:22:35 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jan 11, 2024 10:23:21 AM
 
 #forge:molten/lapis
 - emendatusenigmatica:molten_lapis
@@ -25,6 +25,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - create:honey
 - create:flowing_chocolate
 - create:chocolate
+- mahoutsukai:murky_still
+- mahoutsukai:murky_flow
 - createaddition:flowing_seed_oil
 - createaddition:seed_oil
 
@@ -50,9 +52,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:sulfur_dioxide
 - mekanism:sulfur_dioxide
 - mekanism:flowing_sulfur_dioxide
-
-#forge:molten_moonstone
-- jaopca:molten.moonstone
 
 #forge:hydrogen
 - mekanism:hydrogen
@@ -103,12 +102,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - #forge:molten_psimetal
 - #forge:molten_bloodbrass
 
-#forge:molten_tanzanite
-- jaopca:molten.tanzanite
-
-#forge:molten_tektite
-- jaopca:molten.tektite
-
 #forge:glowstone
 - thermal:glowstone
 
@@ -140,9 +133,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:molten_fairy
 - materialis:molten_fairy
-
-#forge:molten_pearl
-- jaopca:molten.pearl
 
 #forge:molten_lapis
 - emendatusenigmatica:molten_lapis
@@ -194,9 +184,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:ethanol
 - immersiveengineering:ethanol
 
-#forge:molten_malachite
-- jaopca:molten.malachite
-
 #forge:uranium_oxide
 - mekanism:uranium_oxide
 - mekanism:flowing_uranium_oxide
@@ -208,9 +195,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_iron
 - emendatusenigmatica:molten_iron
 - #tconstruct:molten_iron
-
-#forge:molten_garnet
-- jaopca:molten.garnet
 
 #tconstruct:molten_steel
 - tconstruct:molten_steel
@@ -239,9 +223,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:molten/bronze
 - emendatusenigmatica:molten_bronze
-
-#forge:molten_rose_quartz
-- jaopca:molten.rose_quartz
 
 #forge:ender
 - thermal:ender
@@ -295,12 +276,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_ammolite
 - jaopca:molten.ammolite
 
-#forge:molten_sunstone
-- jaopca:molten.sunstone
-
-#forge:molten_jasper
-- jaopca:molten.jasper
-
 #forge:latex
 - thermal:latex
 
@@ -310,21 +285,12 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten/copper
 - emendatusenigmatica:molten_copper
 
-#forge:molten_yellow_diamond
-- jaopca:molten.yellow_diamond
-
 #bloodsmeltery:demon_will
 - #bloodsmeltery:default_will
 - #bloodsmeltery:corrosive_will
 - #bloodsmeltery:destructive_will
 - #bloodsmeltery:vengeful_will
 - #bloodsmeltery:steadfast_will
-
-#forge:molten_kunzite
-- jaopca:molten.kunzite
-
-#forge:molten_sodalite
-- jaopca:molten.sodalite
 
 #tconstruct:molten_tin
 - tconstruct:molten_tin
@@ -333,9 +299,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #tconstruct:molten_quartz
 - tconstruct:molten_quartz
 - tconstruct:flowing_molten_quartz
-
-#forge:molten_euclase
-- jaopca:molten.euclase
 
 #forge:molten_alfsteel
 - materialis:molten_alfsteel
@@ -384,9 +347,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #materialis:molten_pink_slime
 - materialis:molten_pink_slime
-
-#forge:molten_green_sapphire
-- jaopca:molten.green_sapphire
 
 #forge:molten_ancient_debris
 - emendatusenigmatica:molten_ancient_debris
@@ -440,9 +400,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - emendatusenigmatica:molten_lumium
 - #tconstruct:molten_lumium
 
-#forge:molten_zircon
-- jaopca:molten.zircon
-
 #forge:bioethanol
 - mekanismgenerators:bioethanol
 - mekanismgenerators:flowing_bioethanol
@@ -486,9 +443,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 
 #forge:molten/constantan
 - emendatusenigmatica:molten_constantan
-
-#forge:molten_bort
-- jaopca:molten.bort
 
 #bloodsmeltery:molten_bloodbrass
 - bloodsmeltery:molten_bloodbrass
@@ -554,9 +508,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - tconstruct:magma
 - tconstruct:flowing_magma
 
-#forge:molten_onyx
-- jaopca:molten.onyx
-
 #forge:molten/nickel
 - emendatusenigmatica:molten_nickel
 
@@ -594,57 +545,26 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - immersivepetroleum:gasoline
 
 #forge:molten
-- jaopca:molten.agate
 - jaopca:molten.alexandrite
-- jaopca:molten.amber
 - jaopca:molten.amethyst
 - jaopca:molten.ametrine
 - jaopca:molten.ammolite
 - jaopca:molten.aquamarine
 - jaopca:molten.azure_silver
-- jaopca:molten.benitoite
-- jaopca:molten.biotite
 - jaopca:molten.black_diamond
-- jaopca:molten.bort
 - jaopca:molten.carnelian
-- jaopca:molten.cats_eye
-- jaopca:molten.chrysoprase
 - jaopca:molten.citrine
-- jaopca:molten.coral
 - jaopca:molten.crimson_iron
-- jaopca:molten.euclase
-- jaopca:molten.garnet
-- jaopca:molten.green_sapphire
 - jaopca:molten.heliodor
 - jaopca:molten.iolite
 - jaopca:molten.ironwood
-- jaopca:molten.jade
-- jaopca:molten.jasper
 - jaopca:molten.knightmetal
-- jaopca:molten.kunzite
 - jaopca:molten.kyanite
-- jaopca:molten.lepidolite
-- jaopca:molten.malachite
 - jaopca:molten.mana
 - jaopca:molten.moldavite
-- jaopca:molten.moonstone
-- jaopca:molten.morganite
 - jaopca:molten.niter
-- jaopca:molten.onyx
-- jaopca:molten.opal
-- jaopca:molten.pearl
-- jaopca:molten.phosphophyllite
-- jaopca:molten.pyrope
-- jaopca:molten.rose_quartz
-- jaopca:molten.sodalite
-- jaopca:molten.spinel
-- jaopca:molten.sunstone
-- jaopca:molten.tanzanite
-- jaopca:molten.tektite
 - jaopca:molten.topaz
 - jaopca:molten.turquoise
-- jaopca:molten.yellow_diamond
-- jaopca:molten.zircon
 
 #materialis:molten_elementium
 - materialis:molten_elementium
@@ -747,9 +667,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - tconstruct:molten_refined_obsidian
 - tconstruct:flowing_molten_refined_obsidian
 
-#forge:molten_lepidolite
-- jaopca:molten.lepidolite
-
 #forge:superheated_sodium
 - mekanism:superheated_sodium
 - mekanism:flowing_superheated_sodium
@@ -757,9 +674,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_copper
 - emendatusenigmatica:molten_copper
 - #tconstruct:molten_copper
-
-#forge:molten_cats_eye
-- jaopca:molten.cats_eye
 
 #forge:molten/fluorite
 - emendatusenigmatica:molten_fluorite
@@ -800,17 +714,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_rose_gold
 - #tconstruct:molten_rose_gold
 
-#forge:molten_benitoite
-- jaopca:molten.benitoite
-
 #materialis:molten_utherium
 - materialis:molten_utherium
-
-#forge:molten_jade
-- jaopca:molten.jade
-
-#forge:molten_agate
-- jaopca:molten.agate
 
 #forge:magma
 - cyclic:magma
@@ -884,15 +789,9 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:herbicide
 - immersiveengineering:herbicide
 
-#forge:molten_opal
-- jaopca:molten.opal
-
 #forge:molten_steel
 - emendatusenigmatica:molten_steel
 - #tconstruct:molten_steel
-
-#forge:molten_chrysoprase
-- jaopca:molten.chrysoprase
 
 #tconstruct:molten_aluminum
 - tconstruct:molten_aluminum
@@ -953,9 +852,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #materialis:molten_forgotten_metal
 - materialis:molten_forgotten_metal
 
-#forge:molten_amber
-- jaopca:molten.amber
-
 #tconstruct:molten_enderium
 - tconstruct:molten_enderium
 - tconstruct:flowing_molten_enderium
@@ -978,14 +874,8 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten/silver
 - emendatusenigmatica:molten_silver
 
-#forge:molten_spinel
-- jaopca:molten.spinel
-
 #forge:napalm
 - immersivepetroleum:napalm
-
-#forge:molten_biotite
-- jaopca:molten.biotite
 
 #forge:molten/zinc
 - emendatusenigmatica:molten_zinc
@@ -1004,9 +894,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #tconstruct:molten_osmium
 - tconstruct:molten_osmium
 - tconstruct:flowing_molten_osmium
-
-#forge:molten_coral
-- jaopca:molten.coral
 
 #tconstruct:molten_refined_glowstone
 - tconstruct:molten_refined_glowstone
@@ -1095,9 +982,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_iolite
 - jaopca:molten.iolite
 
-#forge:molten_morganite
-- jaopca:molten.morganite
-
 #forge:diesel
 - immersivepetroleum:diesel
 - immersivepetroleum:diesel_sulfur
@@ -1142,9 +1026,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 - tconstruct:molten_pig_iron
 - tconstruct:flowing_molten_pig_iron
 
-#forge:molten_pyrope
-- jaopca:molten.pyrope
-
 #forge:lubricant
 - immersivepetroleum:lubricant
 
@@ -1180,9 +1061,6 @@ To refresh this file, delete it and run /reload command again! Last updated: Jan
 #forge:molten_signalum
 - emendatusenigmatica:molten_signalum
 - #tconstruct:molten_signalum
-
-#forge:molten_phosphophyllite
-- jaopca:molten.phosphophyllite
 
 #forge:molten_mana
 - jaopca:molten.mana

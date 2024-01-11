@@ -46,7 +46,7 @@
 	#Makes angered neutral mobs stop being angry when the targeted player dies nearby.
 	forgive_dead_players = true
 	#Whether the player should keep items in their inventory after death
-	keep_inventory = false
+	keep_inventory = true
 	#Whether to log admin commands to server log
 	log_admin_commands = true
 	#Determines the number at which the chain command block acts as a "chain"
@@ -96,7 +96,7 @@
 #A collection of misc configs
 [misc]
 	#If gamerules should be saved to config on world unload
-	save_gamerules = true
+	save_gamerules = false
 	#A comma separated list of commands to run on world join, @p is replaced with joining player name, command is run by the server
 	#Example: default_commands = ["/tellraw @p [\"\",{\"text\":\"Hi \"},{\"text\":\"@p\",\"color\":\"aqua\"}]"]
 	default_commands = []

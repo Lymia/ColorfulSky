@@ -39,12 +39,13 @@ shutil.copytree("../tlm_custom_pack", "../build_dist/overrides/tlm_custom_pack")
 shutil.copyfile("pack/options.txt", "../build_dist/overrides/options.txt")
 
 print("- Removing transient configurations")
-delete_file("../build_dist/overrides/config/cpm.properties")
 delete_file("../build_dist/overrides/config/firstperson.json")
 delete_file("../build_dist/overrides/config/oculus.properties")
 delete_file("../build_dist/overrides/config/ProjectE/mappingdump.json")
+delete_file("../build_dist/overrides/config/startupQoL")
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ResourceCache", ignore_errors=True)
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ProjectIntelligence", ignore_errors=True)
+shutil.rmtree("../build_dist/overrides/config/touhou_little_maid", ignore_errors=True)
 
 print("- Generating manifest...")
 manifest = json.loads(open("pack/manifest.json", "r").read())
@@ -55,7 +56,6 @@ manifest["files"] += [
     {'projectID': 411890, 'fileID': 3094111, 'required': True}, # Darkpuppey's Modded Overhauls
     {'projectID': 515892, 'fileID': 3427177, 'required': True}, # ProjectE Retexture
     {'projectID': 490095, 'fileID': 3376785, 'required': True}, # Simple CT
-    {'projectID': 548052, 'fileID': 3758577, 'required': True}, # Feywild Redux
     {'projectID': 436186, 'fileID': 3623594, 'required': True}, # Glass Panes CTM Fix
 ]
 open("../build_dist/manifest.json", "w").write(json.dumps(manifest))
