@@ -63,6 +63,9 @@ class TagConfig(object):
                 if name in tag_data:
                     self.force_generate(tag)
                     tag_data.remove(name)
+                if f"{name}?" in tag_data:
+                    self.force_generate(tag)
+                    tag_data.remove(f"{name}?")
 
     def get_block_tag(self, tag):
         return self.get_tag("blocks", tag)
@@ -246,7 +249,8 @@ class DatapackModel(object):
         self._gimp_actions = []
 
     def _generate_tag_file(self, tag, kind, values, override):
-        values = sorted(list(values))
+        values = sorted(list(set(map(lambda x: (x[:-1], False) if x.endswith("?") else (x, True), values))))
+        values = list(map(lambda x: {"id": x[0], "required": False} if not x[1] else x[0], values))
         json_str = json.dumps({
             "replace": override,
             "values": values

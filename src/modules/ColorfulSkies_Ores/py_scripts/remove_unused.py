@@ -9,8 +9,8 @@ unused_ores = [
     "silentgear:bort_block",
     
     # Mystical Agriculture
-    "projecte:prosperity_ore", # We use a recipe instead of an ore for this.
-    "projecte:inferium_ore", # We just let mob drops cover this.    
+    "mysticalagriculture:prosperity_ore", # We use a recipe instead of an ore for this.
+    "mysticalagriculture:inferium_ore", # We just let mob drops cover this.    
     
     # Remove aluminium
     "immersiveengineering:sheetmetal_aluminum",

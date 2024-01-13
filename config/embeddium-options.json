@@ -3,7 +3,7 @@
     "cloud_quality": "DEFAULT",
     "weather_quality": "DEFAULT",
     "leaves_quality": "DEFAULT",
-    "enable_vignette": true,
+    "enable_vignette": false,
     "enable_clouds": true,
     "smooth_lighting": "HIGH"
   },
@@ -17,7 +17,7 @@
     "use_compact_vertex_format": true,
     "use_block_face_culling": true,
     "allow_direct_memory_access": true,
-    "ignore_driver_blacklist": false,
+    "ignore_driver_blacklist": true,
     "translucency_sorting": true,
     "disable_incompatible_mod_warnings": false
   },

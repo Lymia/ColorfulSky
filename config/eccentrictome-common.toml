@@ -6,7 +6,7 @@
 	#Disable overlay previewing tome conversion
 	disable_overlay = false
 	#Whitelisted items
-	items = ["tconstruct:encyclopedia", "astralsorcery:tome", "immersiveengineering:manual", "patchouli:guide_book", "eidolon:codex", "silentgear:guide_book", "botania:lexicon", "draconicevolution:info_tablet", "rftoolsbase:manual", "croptopia:guide", "solcarrot:food_book", "ars_nouveau:worn_notebook", "tmechworks:book", "betterendforge:guidebook", "tetra:holo", "iceandfire:bestiary", "tconstruct:tinkers_gadgetry", "tconstruct:materials_and_you", "tconstruct:puny_smelting", "tconstruct:mighty_smelting", "tconstruct:fantastic_foundry", "enigmaticlegacy:the_acknowledgment", "tis3d:manual"]
+	items = ["tconstruct:encyclopedia", "astralsorcery:tome", "immersiveengineering:manual", "patchouli:guide_book", "eidolon:codex", "silentgear:guide_book", "botania:lexicon", "draconicevolution:info_tablet", "rftoolsbase:manual", "croptopia:guide", "solcarrot:food_book", "ars_nouveau:worn_notebook", "tmechworks:book", "betterendforge:guidebook", "tetra:holo", "iceandfire:bestiary", "tconstruct:tinkers_gadgetry", "tconstruct:materials_and_you", "tconstruct:puny_smelting", "tconstruct:mighty_smelting", "tconstruct:fantastic_foundry", "enigmaticlegacy:the_acknowledgment", "tis3d:manual", "mahoutsukai:guidebook", "integrateddynamics:on_the_dynamics_of_integration"]
 	#Whitelisted names
 	names = []
 	#Mod aliases

@@ -135,6 +135,8 @@ add_type("arcane", "Source Gem", 3, 3, 1, "gem", "twilight", "end",
          drop_name="emendatusenigmatica:arcane_gem")
 add_type("cobalt", "Cobalt", 3, 3, 2, "ingot", "nether")
 add_type("tin", "Tin", 3, 3, 1, "ingot", "overworld")
+add_type("geode", "Geode", 3, 3, 1, "gem", "overworld", "twilight", "nether", "end",
+         drop_name="tetra:geode", is_custom=True)
 
 # TODO: Crimson Iron
 # TODO: Geode
@@ -248,7 +250,7 @@ add_worldgen('tin', 7, 11, (20, 40), target = 'overworld')
 add_worldgen('zinc', 7, 11, (30, 50), target = 'overworld')
 add_worldgen('lapis', 7, 5, (0, 20), target = 'overworld')
 add_worldgen('diamond', 9, 3, (0, 16), target = 'overworld')
-# TODO: Geode
+add_worldgen('geode', 3, 8, (0, 64), target = 'overworld')
 
 add_worldgen('quartz', 17, 21, (20, 128), target = 'nether')
 add_worldgen('gold', 13, 17, (20, 128), target = 'nether')
@@ -257,7 +259,7 @@ add_worldgen('lapis', 13, 9, (10, 60), target = 'nether')
 add_worldgen('cobalt', 8, 6, (40, 80), target = 'nether')
 # TODO: Crimson Iron
 add_worldgen('uranium', 8, 5, (25, 45), target = 'nether')
-# TODO: Geode
+add_worldgen('geode', 3, 16, (0, 128), target = 'nether')
 
 # TODO: Thallasium
 # TODO: Azure Silver
@@ -266,7 +268,7 @@ add_worldgen('zinc', 8, 17, (10, 90), target = 'end')
 add_worldgen('arcane', 6, 11, (10, 90), target = 'end')
 add_worldgen('silver', 13, 21, (10, 90), target = 'end')
 add_worldgen('fluorite', 8, 11, (10, 90), target = 'end')
-# TODO: Geode
+add_worldgen('geode', 3, 9, (10, 90), target = 'end')
 add_worldgen('emerald', 3, 7, (10, 60), target = 'end')
 
 add_worldgen('coal', 13, 17, (0, 64), target = 'twilight')
@@ -277,7 +279,7 @@ add_worldgen('osmium', 8, 9, (10, 20), target = 'twilight')
 add_worldgen('arcane', 6, 6, (0, 25), target = 'twilight')
 add_worldgen('diamond', 8, 3, (0, 15), target = 'twilight')
 add_worldgen('silver', 8, 7, (10, 35), target = 'twilight')
-# TODO: Geode
+add_worldgen('geode', 3, 8, (0, 64), target = 'twilight')
 
 ###########################
 # Ore list generator code #
