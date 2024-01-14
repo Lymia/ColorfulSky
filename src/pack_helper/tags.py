@@ -10,14 +10,14 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
     flag_override = False
     flag_kinds = kinds
     current_tag = None
-    
+
     with open(f, 'r') as fd:
         for line in fd.readlines():
             line = line.strip()
             words = line.split(" ")
             head = words[0]
             args = words[1:]
-            
+
             if head == '$flags':
                 flag_no_generate = False
                 flag_override = False
@@ -38,7 +38,7 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                     else:
                         raise Exception(f"Unknown tag flag: {flag}")
                 continue
-            
+
             if head == "$clear":
                 for kind in flag_kinds:
                     datapack.tags._tags[kind][args[0]].clear()
@@ -49,7 +49,7 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                 for kind in flag_kinds:
                     datapack.tags._tags[kind][dst] = copy.deepcopy(datapack.tags._tags[kind][src])
                 continue
-            
+
             if head.startswith('#'):
                 tag = head[1:]
                 if flag_no_generate:
@@ -61,7 +61,7 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                 current_tag = tag
                 continue
             if head == '-':
-                assert(current_tag != None)
+                assert (current_tag is not None)
                 tag = args[0]
                 if ignore_jaopca and tag.startswith("jaopca:"):
                     continue
@@ -70,7 +70,7 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
                 else:
                     datapack.tags.add_tag(flag_kinds, tag, current_tag, generated = not flag_no_generate)
                 continue
-            
+
             if not strict:
                 continue
             if head.startswith('//'):

@@ -10,18 +10,18 @@ import time
 from pack_helper.utils import *
 
 def reset():
-    shutil.rmtree(f"run/gimp", ignore_errors=True)
+    shutil.rmtree(f"run/gimp", ignore_errors = True)
 
 def _join_ln(l):
     if len(l) == 0:
         return ""
     else:
-        return "\n"+"\n".join(l)+"\n"
+        return "\n" + "\n".join(l) + "\n"
 def _join(l):
     if len(l) == 0:
         return ""
     else:
-        return "\n"+"".join(l)
+        return "\n" + "".join(l)
 def _str(s):
     if s == None:
         return "nil"
@@ -43,24 +43,24 @@ class GimpAstElement(object):
         return self._elem_code
     def _hash(self):
         return [type(self).__name__]
-        
+
 class GimpImageElement(GimpAstElement):
     def __init__(self, elem_name, elem_code, kind, path):
         super().__init__(elem_name, elem_code)
         self._img_name = self._elem_name
         self._kind = kind
         self._path = path
-        
+
     def load_xcf(path):
         path_str = repr(path).replace("'", '"')
         return GimpImageElement("xcf_image", f"(cs-load-xcf {path_str})", "xcf", path)
     def load_png(path):
         path_str = repr(path).replace("'", '"')
         return GimpImageElement("png_image", f"(cs-load-png {path_str})", "png", path)
-    
+
     def mutable_scope(self):
         return _GimpImageMutableScope("xcf_mutable_scope", self)
-    
+
     def _hash(self):
         with open(self._path, "rb") as fd:
             return [type(self).__name__, self._kind, hashlib.sha3_256(fd.read()).hexdigest()]
@@ -81,7 +81,7 @@ class _GimpImageMutableScope(GimpAstElement):
         self._new_layers = set([])
     def _serialize(self):
         return f"(let (({self._elem_name} {self._parent_elem})){_join_ln(self._commands)}{_join(self._commands_tail)})"
-    
+
     def get_layer_by_name(self, name):
         layer_name = f"layer-tok{secrets.token_hex(8)}"
         self._commands.append(f"(let (({layer_name} (cs-maybe-layer-by-name {self._elem_name} {_str(name)})))")
@@ -97,7 +97,7 @@ class _GimpImageMutableScope(GimpAstElement):
         self._command_hashes.append(["new_layer", _layer_hash(parent)])
         self._new_layers.add(layer_name)
         return layer_name
-    
+
     def delete_layer(self, layer):
         self._commands.append(f"(gimp-image-remove-layer {self._elem_name} {layer})")
         self._new_layers.remove(layer)
@@ -112,7 +112,7 @@ class _GimpImageMutableScope(GimpAstElement):
 
     def _save_png(self, path, layer = None):
         self._commands.append(f"(cs-png-save {self._elem_name} {_null(layer)} {_str(path)})")
-    
+
     def _hash(self):
         val = [type(self).__name__]
 
@@ -137,7 +137,7 @@ def _resolve_tree(actions):
                 recurse(parent)
     for action in actions:
         recurse(action)
-        
+
     accum_head = ""
     accum_tail = ""
     resolved = set({})
@@ -146,7 +146,7 @@ def _resolve_tree(actions):
         new_vars = []
         new_commands = []
         new_resolved = []
-        
+
         for action in action_list:
             if all(map(lambda x: x._elem_name in resolved, action._parents)):
                 new_resolved.append(action._elem_name)
@@ -156,7 +156,7 @@ def _resolve_tree(actions):
                     new_commands.append(action._serialize())
             else:
                 new_actions.append(action)
-                
+
         if len(new_commands) != 0:
             accum_tail = f"{_join_ln(new_commands)}{accum_tail}"
         if len(new_vars) != 0:
@@ -166,7 +166,7 @@ def _resolve_tree(actions):
         action_list = new_actions
         for name in new_resolved:
             resolved.add(name)
-        
+
     return f"(begin\n{accum_head}{accum_tail}\n)"
 
 def _hash_node(node):
@@ -182,7 +182,7 @@ class GimpContext(object):
         self._scripts_path = f"run/gimp/scripts_{secrets.token_hex(8)}"
         os.makedirs(self._scripts_path, exist_ok = True)
         os.makedirs(f"run/gimp_cache", exist_ok = True)
-        
+
         # Create gimprc
         self._gimprc_path = f"run/gimp/config_{secrets.token_hex(8)}.gimprc"
         static_scripts = f"{os.path.dirname(__file__)}/gimp_scripts"
@@ -195,27 +195,28 @@ class GimpContext(object):
                 (save-document-history no)
                 (undo-levels 0)
             """)
-    
+
     def _run_script(self, script_code):
         script_path = f"{self._scripts_path}/script_{secrets.token_hex(8)}.scm"
         function_name = f"run-script-{secrets.token_hex(8)}"
-        
+
         script_data = f"(define ({function_name})\n{script_code}\n)"
         with open_mkdir(script_path) as fd:
             fd.write(script_data)
 
         return subprocess.Popen([
-            shutil.which("gimp"), 
-            "--console-messages", f"--gimprc={self._gimprc_path}", "-idf", "-b", 
+            shutil.which("gimp"),
+            "--console-messages", f"--gimprc={self._gimprc_path}", "-idf", "-b",
             f"({function_name})", "-b", "(gimp-quit 0)"
         ])
-        
-    def execute_actions(self, raw_actions, max_processes = max(multiprocessing.cpu_count() - 2, 1), process_chunk = None):
+
+    def execute_actions(self, raw_actions, max_processes = max(multiprocessing.cpu_count() - 2, 1),
+                        process_chunk = None):
         actions = []
         copy_actions = []
         for entry in raw_actions:
             node, target, layer = entry
-            
+
             cache_file = f"run/gimp_cache/{_hash_node(node)}.png"
             if os.path.exists(cache_file):
                 shutil.copyfile(cache_file, target)
@@ -223,26 +224,26 @@ class GimpContext(object):
                 node._save_png(cache_file, layer)
                 for del_layer in node._new_layers.copy():
                     node.delete_layer(del_layer)
-                
+
                 actions.append(node)
                 copy_actions.append((cache_file, target))
-        
+
         if len(actions) == 0:
             return
-        
+
         if process_chunk == None:
             process_chunk = max(math.ceil(len(actions) / max_processes), 4)
-        
+
         processes = []
         while len(actions) != 0:
             cur_actions = actions[:process_chunk]
             actions = actions[process_chunk:]
-            
+
             processes.append(self._run_script(_resolve_tree(cur_actions)))
             while len(processes) > max_processes:
                 processes = list(filter(lambda x: x.poll() == None, processes))
                 time.sleep(1.0)
-                
+
         for process in processes:
             process.wait()
 

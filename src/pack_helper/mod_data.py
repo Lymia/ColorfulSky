@@ -2,11 +2,10 @@ import fnmatch
 import glob
 import json
 import os
-import shutil
 import urllib.request
 import zipfile
 
-from pack_helper.utils import *
+from pack_helper.utils import group,path
 
 def _retrieve_minecraft_jar():
     if not os.path.exists("run/minecraft.jar"):
@@ -27,20 +26,20 @@ class _ZipDataIndex(object):
     def __init__(self):
         self._zip_files = []
         self._index = {}
-        
+
     def add_jar(self, jar):
         idx = len(self._zip_files)
         zip_file = zipfile.ZipFile(jar)
-        
+
         self._zip_files.append(zip_file)
         for name in zip_file.namelist():
             if not name in self._index:
                 self._index[name] = idx
-    
+
     def read(self, path):
         zip_file = self._zip_files[self._index[path]]
         return zip_file.read(path)
-    
+
     def glob(self, pattern):
         return list(filter(lambda x: fnmatch.fnmatchcase(x, pattern), self._index.keys()))
 
@@ -53,7 +52,7 @@ def _load_jars():
 
 class ModData(object):
     unpacked = {}
-    
+
     def __init__(self):
         os.makedirs("run/extracted", exist_ok = True)
         self._extracted_id = 0
@@ -77,7 +76,7 @@ class ModData(object):
         return self.find_path(f"assets/{path}")
     def find_texture(self, name):
         return self.find_path(f"assets/{group(name)}/textures/{path(name)}.png")
-    
+
     def read_path(self, path):
         return self._idx.read(path)
     def read_asset(self, path):
