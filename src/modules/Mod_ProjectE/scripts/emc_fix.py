@@ -204,11 +204,24 @@ emc_table = {
     # TODO: Upgrade Aquatic
     # TODO: Woot
 }
+remove_recipe_list = [
+    # Botania Mana Infusion
+    "botania:mana_infusion/flint_to_gunpowder", # large increase in EMC
+    "botania:mana_infusion/gunpowder_to_flint",
+    "botania:mana_infusion/glowstone_to_redstone", # large increase in EMC
+    "botania:mana_infusion/redstone_to_glowstone",
+    # Mekanism crushing
+    "mekanism:crushing/flint_to_gunpowder", # large increase in EMC
+    # Misc
+    "byg:magma_block_from_magmatic_stone", # difficult to solve increase in EMC
+]
 
-def make_emc_config():
-    config = datapack.get_json_config("ProjectE/custom_emc.json", create = True)
-    config["entries"] = []
-    for entry in emc_table:
-        config["entries"].append({ "item": entry, "emc": emc_table[entry] })
+# Apply EMC fixes
+config = datapack.get_json_config("ProjectE/custom_emc.json", create = True)
+config["entries"] = []
+for entry in emc_table:
+    config["entries"].append({ "item": entry, "emc": emc_table[entry] })
 
-make_emc_config()
+# Remove recipe list
+for recipe in remove_recipe_list:
+    datapack.remove_recipe(recipe)

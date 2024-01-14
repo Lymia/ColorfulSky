@@ -1,3 +1,8 @@
+// side: client
+{
+    jei_filter_id("silentgems:soul_gem", item => Ingredient.of(item).getNbt().SGems_SoulGem == "minecraft:zombie")
+}
+
 onEvent('item.tooltip', tooltip => {
     let activeGems = [
         "black_diamond", "alexandrite", "turquoise", "heliodor", "iolite",

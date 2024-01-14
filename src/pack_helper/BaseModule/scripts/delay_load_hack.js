@@ -1,4 +1,5 @@
 // priority: 100000
+// side: startup
 
 console.log("Sleeping for 3 seconds to allow JAOPCA to run. Hopefully.")
 

@@ -1,3 +1,5 @@
+// side: server
+
 onEvent('recipes', e => {
     function unifyMetalRecipies(name, ingotItem, dustItem, blockItem, nuggetItem) {
         if (nuggetItem) e.replaceInput(`#forge:nuggets/${name}`, `#forge:nuggets/${name}`)

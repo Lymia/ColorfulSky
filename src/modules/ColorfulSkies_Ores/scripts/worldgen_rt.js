@@ -1,4 +1,5 @@
 // priority: 1000
+// side: startup
 
 let add_gen_ore
 

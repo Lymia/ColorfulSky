@@ -1,4 +1,5 @@
 // priority: 1000
+// side: server
 
 // TODO: Rewrite this to use the faster recipe system.
 

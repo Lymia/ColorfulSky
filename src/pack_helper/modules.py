@@ -6,11 +6,12 @@ import os.path
 import pack_helper.tags
 import sys
 
-class Script(object):
-    def __init__(self, mod, py_mod_name, script_file):
+class _Script(object):
+    def __init__(self, mod, py_mod_name, script_file, priority):
         self.mod = mod
         self.py_mod_name = py_mod_name
         self.script_file = script_file
+        self.priority = priority
         
     def execute(self, datapack, moddata):
         spec = importlib.util.spec_from_file_location(self.py_mod_name, self.script_file)
@@ -22,6 +23,31 @@ class Script(object):
         
         spec.loader.exec_module(py_module)
 
+def _script_name(script_path):
+    return script_path.split("/")[-1].split(".")[0]
+def _load_py(module, script_path, meta):
+    script_name = _script_name(script_path)
+    priority = int(meta["priority"]) if "priority" in meta else 0
+    return _Script(module, f"modules.{module.module_name}.{script_name}", script_path, priority)
+def _script_meta(script_path):
+    with open(script_path) as fs:
+        script = fs.read()
+        
+    meta = {}
+    for line in script.split("\n"):
+        if line.startswith("#"):
+            line = line[1:]
+        elif line.startswith("//"):
+            line = line[2:]
+        else:
+            break
+        if not ":" in line:
+            break
+        
+        split = line.strip().split(":")
+        meta[split[0].strip()] = split[1].strip()
+    return meta
+
 class Module(object):
     def __init__(self, path):
         if path[-1] == "/":
@@ -31,45 +57,68 @@ class Module(object):
         
         self.py_scripts = []
         self.py_init_scripts = []
+        self.py_early_scripts = []
         self.py_late_scripts = []
         
-        self.js_common_scripts = []
         self.js_client_scripts = []
         self.js_server_scripts = []
         self.js_startup_scripts = []
         
         self.tags = []
         
-        # Load Python scripts
-        self._load_scripts_py(self.py_scripts, "py_scripts")
-        self._load_scripts_py(self.py_init_scripts, "py_init_scripts")
-        self._load_scripts_py(self.py_late_scripts, "py_late_scripts")
-        
-        # Load KubeJS scripts
-        self._load_scripts_js(self.js_common_scripts, "common_scripts")
-        self._load_scripts_js(self.js_client_scripts, "client_scripts")
-        self._load_scripts_js(self.js_server_scripts, "server_scripts")
-        self._load_scripts_js(self.js_startup_scripts, "startup_scripts")
+        # Load scripts
+        for script in sorted(glob.glob(f"{self.path}/scripts/*")):
+            if script.endswith("/__pycache__"):
+                continue
+
+            meta = _script_meta(script)
+            if script.endswith(".py"):
+                if not "timing" in meta or meta["timing"] == "normal":
+                    self.py_scripts.append(_load_py(self, script, meta))
+                elif meta["timing"] == "init":
+                    self.py_init_scripts.append(_load_py(self, script, meta))
+                elif meta["timing"] == "early":
+                    self.py_early_scripts.append(_load_py(self, script, meta))
+                elif meta["timing"] == "late":
+                    self.py_late_scripts.append(_load_py(self, script, meta))
+                else:
+                    timing = meta["timing"]
+                    raise Exception(f"Invalid timing: {timing}")
+            elif script.endswith(".js"):
+                if not "side" in meta or meta["side"] == "common":
+                    self.js_client_scripts.append(script)
+                    self.js_server_scripts.append(script)
+                    self.js_startup_scripts.append(script)
+                elif meta["side"] == "client":
+                    self.js_client_scripts.append(script)
+                elif meta["side"] == "server":
+                    self.js_server_scripts.append(script)
+                elif meta["side"] == "startup":
+                    self.js_startup_scripts.append(script)
+                else:
+                    side = meta["side"]
+                    raise Exception(f"Invalid side: {side}")
+            else:
+                raise Exception(f"Invalid extension: {script}")
+            
+        # Sort python scripts by priority
+        self.py_scripts.sort(key = lambda x: (x.priority, x.py_mod_name))
+        self.py_init_scripts.sort(key = lambda x: (x.priority, x.py_mod_name))
+        self.py_early_scripts.sort(key = lambda x: (x.priority, x.py_mod_name))
+        self.py_late_scripts.sort(key = lambda x: (x.priority, x.py_mod_name))
         
         # Load tags
         for tags_path in glob.glob(f"{self.path}/tags/*.txt"):
             self.tags.append(tags_path)
-            
-    def _load_scripts_py(self, target, kind):
-        for script_path in glob.glob(f"{self.path}/{kind}/*.py"):
-            script_name = os.path.basename(script_path)[:-3]
-            target.append(Script(self, f"modules.{self.module_name}.{script_name}", script_path))
-    def _load_scripts_js(self, target, kind):
-        for script_path in glob.glob(f"{self.path}/{kind}/*.js"):
-            script_name = os.path.basename(script_path)[:-3]
-            target.append((script_name, script_path))
-    
+
     def execute_init(self):
-        sys.path.append(f"{self.path}/py_path/")
+        sys.path.append(f"{self.path}/path/")
+        for script in self.py_init_scripts:
+            script.execute(datapack, moddata)
     
     def execute_early(self, datapack, moddata):
         # Execute any early scripts in the module
-        for script in self.py_init_scripts:
+        for script in self.py_early_scripts:
             script.execute(datapack, moddata)
         
         # Load tags
@@ -90,12 +139,6 @@ class Module(object):
             script.execute(datapack, moddata)
         
         # Copy Javascript scripts
-        for script in self.js_common_scripts:
-            script_name, script_path = script
-            print(f"  - Copying '{script_path}'")
-            datapack._kubejs_copy_script(f"client_scripts/{self.module_name}-{script_name}", ".js", script_path)
-            datapack._kubejs_copy_script(f"server_scripts/{self.module_name}-{script_name}", ".js", script_path)
-            datapack._kubejs_copy_script(f"startup_scripts/{self.module_name}-{script_name}", ".js", script_path)
         self._copy_scripts_js(datapack, self.js_client_scripts, "client_scripts")
         self._copy_scripts_js(datapack, self.js_server_scripts, "server_scripts")
         self._copy_scripts_js(datapack, self.js_startup_scripts, "startup_scripts")
@@ -121,9 +164,9 @@ class Module(object):
                     datapack._copy_data(short_path, kind, file_path)
     
     def _copy_scripts_js(self, datapack, target, kind):
-        for script in target:
-            script_name, script_path = script
-            print(f"  - Copying '{script_path}'")
+        for script_path in target:
+            print(f"  - Copying '{script_path}' for '{kind}'")
+            script_name = _script_name(script_path)
             datapack._kubejs_copy_script(f"{kind}/{self.module_name}-{script_name}", ".js", script_path)
     
     def find_all_files(self, kind):

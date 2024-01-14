@@ -1,4 +1,5 @@
 // priority: 1000
+// side: client
 
 let found_in_events = function(location_list) {
     onEvent('item.tooltip', tooltip => {

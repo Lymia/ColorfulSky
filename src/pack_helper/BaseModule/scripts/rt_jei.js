@@ -1,4 +1,5 @@
 // priority: 1000
+// side: client
 
 let jei_hide_by_id
 let jei_filter_id

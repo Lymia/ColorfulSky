@@ -1,3 +1,5 @@
+// side: startup
+
 onEvent('worldgen.remove', e => {
     e.removeOres(ore => { ore.blocks = [
         // remove vanilla ores

@@ -1,4 +1,5 @@
 // priority: 1000
+// side: server
 
 let replace_ingredient
 let remove_recipe_by_item
