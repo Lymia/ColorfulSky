@@ -4,107 +4,16 @@ import os
 import os.path
 import toml
 
-from pack_helper.gimp import *
-from pack_helper.utils import *
+from pack_helper.utils import open_mkdir, js_minify_simple
 
-class TagConfig(object):
-    def __init__(self):
-        self._should_override = set({})
-        self._no_generate = set({})
-        self._tags = {}
-        self._original_tags = {}
-
-    def store_original(self):
-        self._original_tags = copy.deepcopy(self._tags)
-
-    def mark_override(self, tag):
-        self._should_override.add(tag)
-    def mark_no_generate(self, tag):
-        self._no_generate.add(tag)
-    def force_generate(self, tag):
-        self.mark_override(tag)
-        if tag in self._no_generate:
-            self._no_generate.remove(tag)
-
-    def add_tag(self, kind, name, tag, generated = True):
-        if type(kind) == str:
-            kind = [kind]
-        if type(tag) == str:
-            tag = [tag]
-        for k in kind:
-            for t in tag:
-                if generated:
-                    if t in self._no_generate:
-                        self._no_generate.remove(t)
-                self.get_tag(k, t).add(name)
-    def remove_tag(self, kind, name, tag, generated = True):
-        if type(kind) == str:
-            kind = [kind]
-        if type(tag) == str:
-            tag = [tag]
-        for t in tag:
-            for k in kind:
-                tag_data = self.get_tag(k, t)
-                if name in tag_data:
-                    if generated:
-                        self.force_generate(t)
-                    tag_data.remove(name)
-    def get_tag(self, kind, tag):
-        assert (tag != None)
-        return self._tags.setdefault(kind, {}).setdefault(tag, set({}))
-    def list_tags(self, kind):
-        return list(self._tags[kind].keys())
-
-    def remove_name(self, name):
-        for kind_name in self._tags:
-            kind = self._tags[kind_name]
-            for tag in kind:
-                tag_data = kind[tag]
-                if name in tag_data:
-                    self.force_generate(tag)
-                    tag_data.remove(name)
-                if f"{name}?" in tag_data:
-                    self.force_generate(tag)
-                    tag_data.remove(f"{name}?")
-
-    def get_block_tag(self, tag):
-        return self.get_tag("blocks", tag)
-    def get_item_tag(self, tag):
-        return self.get_tag("items", tag)
-    def get_fluid_tag(self, tag):
-        return self.get_tag("fluids", tag)
-    def get_slurry_tag(self, tag):
-        return self.get_tag("slurries", tag)
-    def get_gas_tag(self, tag):
-        return self.get_tag("gases", tag)
-
-    def add_block_tag(self, name, tag):
-        self.add_tag("blocks", name, tag)
-    def add_item_tag(self, name, tag):
-        self.add_tag("items", name, tag)
-    def add_both_tag(self, name, tag):
-        self.add_tag(["blocks", "items"], name, tag)
-
-class DatapackModel(object):
-    def __init__(self, kubejs_dir, config_dir, openloader_dir):
+class DatapackWriter(object):
+    def __init__(self, kubejs_dir, config_dir):
         self._kubejs_dir = kubejs_dir
         self._config_dir = config_dir
-        self._openloader_dir = openloader_dir
 
-        self.tags = TagConfig()
-        self._removed_names = []
-        self._unified_names = []
-        self._hidden_names = []
-        self._removed_recipes = []
-        self._i18n_strings = {}
-        self._replaced_ingredients = []
-
-        self._has_config = set([])
+        self._has_config = set({})
         self._config_toml = {}
         self._config_json = {}
-
-        self._gimp_loaded = {}
-        self._gimp_actions = []
 
     ##
     ## Private methods
@@ -135,11 +44,6 @@ class DatapackModel(object):
         with open(source, "rb") as fd:
             data = fd.read()
         self._write_maybe_rename(prefix, extension, data)
-
-    def _gimp_load_xcf(self, path):
-        return self._gimp_loaded.setdefault(path, GimpImageElement.load_xcf(path))
-    def _gimp_load_png(self, path):
-        return self._gimp_loaded.setdefault(path, GimpImageElement.load_png(path))
 
     def _mark_config_exists(self, path):
         if path in self._has_config:

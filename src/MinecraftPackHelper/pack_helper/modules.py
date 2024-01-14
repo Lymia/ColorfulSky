@@ -184,9 +184,9 @@ class ModuleLoader(object):
         for script_path in sorted(glob.glob(f"modules/*")):
             self.modules.append(Module(script_path))
 
-    def execute_init(self):
+    def execute_init(self, datapack, moddata):
         for module in self.modules:
-            module.execute_init()
+            module.execute_init(datapack, moddata)
     def execute_early(self, datapack, moddata):
         for module in self.modules:
             module.execute_early(datapack, moddata)

@@ -2,7 +2,7 @@ import os
 import pack_helper.update.tags
 import shutil
 
-_test_mode = True
+_test_mode = False
 
 def do_update():
     shutil.rmtree("pack/base_content", ignore_errors = True)
@@ -17,8 +17,7 @@ def _kubejs_export():
 
     _intervention()
     print("Please launch this modpack and join a world, and allow kubejs to create its tag export, then press enter.")
-    print(
-        "WARNING: Do not join a world you care about! Many important scripts are missing and this *will* corrupt your save if you aren't careful.")
+    print("WARNING: Do not join a world you care about! It *will* corrupt your save.")
     print("")
 
     _wait()

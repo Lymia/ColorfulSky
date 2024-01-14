@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 # TODO: Compress textures in resource packs
 
 import cursepy
@@ -12,9 +10,10 @@ import shutil
 
 from pack_helper.utils import *
 
+os.chdir(os.path.dirname(os.path.realpath(__file__)) + "/../..")
+
 current_version = "Alpha 1"
 
-os.chdir(os.path.dirname(os.path.realpath(__file__)))
 set_release()
 
 import build  # lazy way!
@@ -42,7 +41,7 @@ print("- Removing transient configurations")
 delete_file("../build_dist/overrides/config/firstperson.json")
 delete_file("../build_dist/overrides/config/oculus.properties")
 delete_file("../build_dist/overrides/config/ProjectE/mappingdump.json")
-delete_file("../build_dist/overrides/config/startupQoL")
+shutil.rmtree("../build_dist/overrides/config/startupQoL", ignore_errors = True)
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ResourceCache", ignore_errors = True)
 shutil.rmtree("../build_dist/overrides/config/brandon3055/ProjectIntelligence", ignore_errors = True)
 shutil.rmtree("../build_dist/overrides/config/touhou_little_maid", ignore_errors = True)

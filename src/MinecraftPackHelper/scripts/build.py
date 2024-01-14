@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import os
 import pack_helper.data
 import pack_helper.gimp
@@ -10,6 +8,8 @@ import shutil
 
 from pack_helper.utils import *
 
+os.chdir(os.path.dirname(os.path.realpath(__file__)) + "/../..")
+
 print("- Removing old files...")
 shutil.rmtree("../kubejs", ignore_errors = True)
 
@@ -17,7 +17,6 @@ print("Generating configuration files...")
 if is_release():
     shutil.rmtree("run", ignore_errors = True)
 os.makedirs("run", exist_ok = True)
-os.chdir(os.path.dirname(os.path.realpath(__file__)))
 
 datapack = pack_helper.data.DatapackModel("../kubejs", "../config", "../openloader")
 
