@@ -171,13 +171,13 @@ def apply_rework():
     # Copy assets to fix coloring
     for entry in override_graphics:
         dst, src = entry
-        datapack.copy_asset(f"silentgems/textures/block/gem/{dst}_block.png", moddata.find_asset(f"silentgems/textures/block/gem/{src}_block.png"))
-        datapack.copy_asset(f"silentgems/textures/block/glass/{dst}.png", moddata.find_asset(f"silentgems/textures/block/glass/{src}.png") )
-        datapack.copy_asset(f"silentgems/textures/block/teleporter/redstone/{dst}.png", moddata.find_asset(f"silentgems/textures/block/teleporter/redstone/{src}.png"))
-        datapack.copy_asset(f"silentgems/textures/block/teleporter/standard/{dst}.png", moddata.find_asset(f"silentgems/textures/block/teleporter/standard/{src}.png"))
-        datapack.copy_asset(f"silentgems/textures/item/chaos_gem/{dst}.png", moddata.find_asset(f"silentgems/textures/item/chaos_gem/{src}.png"))
-        datapack.copy_asset(f"silentgems/textures/models/armor/{dst}_layer_1.png", moddata.find_asset(f"silentgems/textures/models/armor/{src}_layer_1.png"))
-        datapack.copy_asset(f"silentgems/textures/models/armor/{dst}_layer_2.png", moddata.find_asset(f"silentgems/textures/models/armor/{src}_layer_2.png"))
+        datapack.write_asset(f"silentgems/textures/block/gem/{dst}_block.png", moddata.read_asset(f"silentgems/textures/block/gem/{src}_block.png"))
+        datapack.write_asset(f"silentgems/textures/block/glass/{dst}.png", moddata.read_asset(f"silentgems/textures/block/glass/{src}.png") )
+        datapack.write_asset(f"silentgems/textures/block/teleporter/redstone/{dst}.png", moddata.read_asset(f"silentgems/textures/block/teleporter/redstone/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/block/teleporter/standard/{dst}.png", moddata.read_asset(f"silentgems/textures/block/teleporter/standard/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/item/chaos_gem/{dst}.png", moddata.read_asset(f"silentgems/textures/item/chaos_gem/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_1.png", moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_1.png"))
+        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_2.png", moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_2.png"))
            
     # Add new I18N from new version
     for key in traits_i18n:

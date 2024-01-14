@@ -210,6 +210,8 @@ class DatapackModel(object):
 
     def copy_asset(self, dst, src):
         self._copy_from_if_not_exists(f"{self._kubejs_dir}/assets/{dst}", src)
+    def write_asset(self, dst, src):
+        self._write_if_not_exists(f"{self._kubejs_dir}/assets/{dst}", src)
     def compose_texture(self, target_path, overlay_source, overlay_layer, base_source):
         """Composes a texture using GIMP."""
         overlay = self._gimp_load_xcf(overlay_source)

@@ -27,8 +27,8 @@ def make_pack(name, description, kind):
     path = f"../openloader/{kind}/{name}"
     shutil.rmtree(path, ignore_errors=True)
     os.makedirs(path)
-    if os.path.exists(f"pack_readmes/{name}.md"):
-        shutil.copyfile(f"pack_readmes/{name}.md", f"{path}/README.md")
+    if os.path.exists(f"pack/readmes/{name}.md"):
+        shutil.copyfile(f"pack/readmes/{name}.md", f"{path}/README.md")
     with open(f"{path}/pack.mcmeta", "w") as fd:
         fd.write(json.dumps({
             "pack": {

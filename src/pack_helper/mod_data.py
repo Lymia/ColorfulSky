@@ -1,43 +1,14 @@
+import fnmatch
+import glob
 import json
 import os
-import os.path
 import shutil
 import urllib.request
+import zipfile
 
-from enum import Enum
 from pack_helper.utils import *
 
-class Mod(Enum):
-    Vanilla = 0
-    ColorfulSkyOres = 10
-    DraconicEvolution = 21
-    Create = 22
-    Quark = 23
-    BYG = 24
-    BetterEnd = 25
-    DarkerDepths = 26
-    TwilightForest = 27
-    EmendatusEnigmatica = 28
-    InfernalExpansion = 29
-    SilentGems = 30
-
-mod_prefixes = {
-    Mod.DraconicEvolution: "Draconic-Evolution",
-    Mod.Create: "create-mc",
-    Mod.Quark: "Quark-",
-    Mod.BYG: "byg-",
-    Mod.BetterEnd: "betterendforge",
-    Mod.DarkerDepths: "darkerdepths",
-    Mod.TwilightForest: "twilightforest",
-    Mod.EmendatusEnigmatica: "EmendatusEnigmatica",
-    Mod.InfernalExpansion: "infernal-expansion",
-    Mod.SilentGems: "SilentGems",
-}
-fixed_paths = {
-    Mod.ColorfulSkyOres: "../openloader/resources/ColorfulSkyOres",
-}
-
-def retrieve_minecraft_jar(target):
+def _retrieve_minecraft_jar():
     if not os.path.exists("run/minecraft.jar"):
         print(f"  - Downloading Minecraft .jar")
         manifest = urllib.request.urlopen("https://launchermeta.mojang.com/mc/game/version_manifest.json").read()
@@ -52,38 +23,65 @@ def retrieve_minecraft_jar(target):
     else:
         return "run/minecraft.jar"
 
+class _ZipDataIndex(object):
+    def __init__(self):
+        self._zip_files = []
+        self._index = {}
+        
+    def add_jar(self, jar):
+        idx = len(self._zip_files)
+        zip_file = zipfile.ZipFile(jar)
+        
+        self._zip_files.append(zip_file)
+        for name in zip_file.namelist():
+            if not name in self._index:
+                self._index[name] = idx
+    
+    def read(self, path):
+        zip_file = self._zip_files[self._index[path]]
+        return zip_file.read(path)
+    
+    def glob(self, pattern):
+        return list(filter(lambda x: fnmatch.fnmatchcase(x, pattern), self._index.keys()))
+
+def _load_jars():
+    idx = _ZipDataIndex()
+    idx.add_jar(_retrieve_minecraft_jar())
+    for path in glob.glob("../mods/*.jar"):
+        idx.add_jar(path)
+    return idx
+
 class ModData(object):
     unpacked = {}
     
-    def __init__(self, target):
-        os.makedirs(target, exist_ok = True)
-        self.target = target
-        
-    def find_jar(self, mod):
-        if mod == Mod.Vanilla:
-            return retrieve_minecraft_jar(self.target)
+    def __init__(self):
+        os.makedirs("run/extracted", exist_ok = True)
+        self._extracted_id = 0
+        self._idx = _load_jars()
+        self._extract_cache = {}
+
+    def find_path(self, path):
+        if not path in self._extract_cache:
+            self._extracted_id = self._extracted_id + 1
+            id = self._extracted_id
+            name = path.split("/")[-1]
+            target_path = f"run/extracted/{id}_{name}"
+            with open(target_path, "wb") as fd:
+                fd.write(self._idx.read(path))
+            self._extract_cache[path] = target_path
+            return target_path
         else:
-            return find_mod(mod_prefixes[mod])
-    def unpack_jar(self, mod):
-        if mod in fixed_paths:
-            return fixed_paths[mod]
-        elif mod in self.unpacked:
-            return self.unpacked[mod]
-        else:
-            unpack_dir = f"{self.target}/{mod.name}"
-            if not os.path.exists(unpack_dir):
-                print(f"  - Unpacking {mod.name} to {unpack_dir}...")
-                shutil.unpack_archive(self.find_jar(mod), unpack_dir, "zip")
-            self.unpacked[mod] = unpack_dir
-            return unpack_dir
-        
-    def find_path(self, rpath):
-        for mod in Mod:
-            path = f"{self.unpack_jar(mod)}/{rpath}"
-            if os.path.exists(path):
-                return path
-        raise Exception(f"Path {rpath} not found in any .jar")
-    def find_asset(self, rpath):
-        return self.find_path(f"assets/{rpath}")
+            return self._extract_cache[path]
+
+    def find_asset(self, path):
+        return self.find_path(f"assets/{path}")
     def find_texture(self, name):
         return self.find_path(f"assets/{group(name)}/textures/{path(name)}.png")
+    
+    def read_path(self, path):
+        return self._idx.read(path)
+    def read_asset(self, path):
+        return self._idx.read(f"assets/{path}")
+
+    def glob(self, pattern):
+        return self._idx.glob(pattern)
