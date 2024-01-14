@@ -1,6 +1,6 @@
+import hashlib
 import math
 import os
-import os.path
 import multiprocessing
 import secrets
 import shutil
@@ -9,8 +9,8 @@ import time
 
 from pack_helper.utils import *
 
-def reset(run_path):
-    shutil.rmtree(f"{run_path}/gimp", ignore_errors=True)
+def reset():
+    shutil.rmtree(f"run/gimp", ignore_errors=True)
 
 def _join_ln(l):
     if len(l) == 0:
@@ -41,56 +41,91 @@ class GimpAstElement(object):
         self._bind = True
     def _serialize(self):
         return self._elem_code
+    def _hash(self):
+        return [type(self).__name__]
         
 class GimpImageElement(GimpAstElement):
-    def __init__(self, elem_name, elem_code):
+    def __init__(self, elem_name, elem_code, kind, path):
         super().__init__(elem_name, elem_code)
         self._img_name = self._elem_name
+        self._kind = kind
+        self._path = path
         
     def load_xcf(path):
         path_str = repr(path).replace("'", '"')
-        return GimpImageElement("xcf_image", f"(cs-load-xcf {path_str})")
+        return GimpImageElement("xcf_image", f"(cs-load-xcf {path_str})", "xcf", path)
     def load_png(path):
         path_str = repr(path).replace("'", '"')
-        return GimpImageElement("png_image", f"(cs-load-png {path_str})")
+        return GimpImageElement("png_image", f"(cs-load-png {path_str})", "png", path)
     
     def mutable_scope(self):
-        return GimpImageMutableScope("xcf_mutable_scope", self._elem_name, self)
-        
-class GimpImageMutableScope(GimpAstElement):
-    def __init__(self, elem_name, elem_code, parent_elem):
-        super().__init__(elem_name, elem_code, parent_elem)
+        return _GimpImageMutableScope("xcf_mutable_scope", self)
+    
+    def _hash(self):
+        with open(self._path, "rb") as fd:
+            return [type(self).__name__, self._kind, hashlib.sha3_256(fd.read()).hexdigest()]
+
+def _layer_hash(name):
+    return "$None" if name == None else name.split("-tok")[0]
+
+class _GimpImageMutableScope(GimpAstElement):
+    def __init__(self, elem_name, parent_elem):
+        super().__init__(elem_name, "", parent_elem)
         self._bind = False
         self._parent_elem = parent_elem._elem_name
+        self._parent_elem_cmd = parent_elem._hash()
         self._commands = []
         self._commands_tail = []
         self._img_name = self._elem_name
+        self._command_hashes = []
+        self._new_layers = set([])
     def _serialize(self):
         return f"(let (({self._elem_name} {self._parent_elem})){_join_ln(self._commands)}{_join(self._commands_tail)})"
     
     def get_layer_by_name(self, name):
-        layer_name = f"layer-{secrets.token_hex(8)}"
+        layer_name = f"layer-tok{secrets.token_hex(8)}"
         self._commands.append(f"(let (({layer_name} (cs-maybe-layer-by-name {self._elem_name} {_str(name)})))")
         self._commands_tail.append(")")
+        self._command_hashes.append(["get_layer_by_name", name])
         return layer_name
-
     def new_layer(self, parent = None):
-        layer_name = f"new-layer-{secrets.token_hex(8)}"
+        layer_name = f"new-layer-tok{secrets.token_hex(8)}"
         self._commands.append(f"(let (({layer_name} (cs-new-layer {self._elem_name} {_str(layer_name)})))")
         if parent != None:
             self.attach_to_group(parent, layer_name)
         self._commands_tail.append(")")
+        self._command_hashes.append(["new_layer", _layer_hash(parent)])
+        self._new_layers.add(layer_name)
         return layer_name
+    
     def delete_layer(self, layer):
         self._commands.append(f"(gimp-image-remove-layer {self._elem_name} {layer})")
+        self._new_layers.remove(layer)
+        self._command_hashes.append(["delete_layer", _layer_hash(layer)])
     def attach_to_group(self, parent, child):
         self._commands.append(f"(cs-append-layer {self._elem_name} {parent} {child})")
+        self._command_hashes.append(["attach_to_group", _layer_hash(parent), _layer_hash(child)])
     def copy_image_to_layer(self, layer, image, source_layer = None):
         self._commands.append(f"(cs-transfer-image-to-layer {image._elem_name} {_str(source_layer)} {layer})")
         self._parents.append(image)
-    def save_png(self, path, layer = None):
+        self._command_hashes.append(["attach_to_group", _layer_hash(layer), _layer_hash(source_layer)] + image._hash())
+
+    def _save_png(self, path, layer = None):
         self._commands.append(f"(cs-png-save {self._elem_name} {_null(layer)} {_str(path)})")
-        
+    
+    def _hash(self):
+        val = [type(self).__name__]
+
+        cmd = self._parent_elem_cmd
+        val.append(str(len(cmd)))
+        val = val + cmd
+
+        for cmd in self._command_hashes:
+            val.append(str(len(cmd)))
+            val = val + cmd
+
+        return val
+
 def _resolve_tree(actions):
     action_list = []
     seen = set({})
@@ -134,16 +169,22 @@ def _resolve_tree(actions):
         
     return f"(begin\n{accum_head}{accum_tail}\n)"
 
+def _hash_node(node):
+    cmd = node._hash()
+    hash_str = f"{len(cmd)}$"
+    for s in cmd:
+        hash_str += f"{len(s)}${s}"
+    return hashlib.sha3_256(hash_str.encode("utf-8")).hexdigest()
+
 class GimpContext(object):
-    def __init__(self, run_path):
-        self._run_path = run_path
-        
+    def __init__(self):
         # Create temporary directories
-        self._scripts_path = f"{run_path}/gimp/scripts_{secrets.token_hex(8)}"
+        self._scripts_path = f"run/gimp/scripts_{secrets.token_hex(8)}"
         os.makedirs(self._scripts_path, exist_ok = True)
+        os.makedirs(f"run/gimp_cache", exist_ok = True)
         
         # Create gimprc
-        self._gimprc_path = f"{run_path}/gimp/config_{secrets.token_hex(8)}.gimprc"
+        self._gimprc_path = f"run/gimp/config_{secrets.token_hex(8)}.gimprc"
         static_scripts = f"{os.path.dirname(__file__)}/gimp_scripts"
         with open_mkdir(self._gimprc_path) as fd:
             fd.write(f"""
@@ -169,7 +210,26 @@ class GimpContext(object):
             f"({function_name})", "-b", "(gimp-quit 0)"
         ])
         
-    def execute_actions(self, actions, max_processes = max(multiprocessing.cpu_count() - 2, 1), process_chunk = None):
+    def execute_actions(self, raw_actions, max_processes = max(multiprocessing.cpu_count() - 2, 1), process_chunk = None):
+        actions = []
+        copy_actions = []
+        for entry in raw_actions:
+            node, target, layer = entry
+            
+            cache_file = f"run/gimp_cache/{_hash_node(node)}.png"
+            if os.path.exists(cache_file):
+                shutil.copyfile(cache_file, target)
+            else:
+                node._save_png(cache_file, layer)
+                for del_layer in node._new_layers.copy():
+                    node.delete_layer(del_layer)
+                
+                actions.append(node)
+                copy_actions.append((cache_file, target))
+        
+        if len(actions) == 0:
+            return
+        
         if process_chunk == None:
             process_chunk = max(math.ceil(len(actions) / max_processes), 4)
         
@@ -185,3 +245,7 @@ class GimpContext(object):
                 
         for process in processes:
             process.wait()
+
+        for entry in copy_actions:
+            src, dst = entry
+            shutil.copyfile(src, dst)

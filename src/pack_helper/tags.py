@@ -78,13 +78,3 @@ def parse_config(datapack, f, strict = True, no_generate = False, kinds = ["bloc
             if head.strip() == '':
                 continue
             raise Exception(f"Tag config parse failure: {line}")
-
-def add_from_json(datapack, tag, is_block, json):
-    if "replace" in json and json["replace"]:
-        datapack.tags.mark_override(tag)
-    if "values" in json:
-        for name in json["values"]:
-            if is_block:
-                datapack.tags.add_block_tag(name, tag)
-            else:
-                datapack.tags.add_item_tag(name, tag)

@@ -138,7 +138,7 @@ class ModuleLoader(object):
 
     def __init__(self):
         self.modules.append(Module(f"{os.path.dirname(__file__)}/BaseModule"))
-        for script_path in glob.glob(f"modules/*"):
+        for script_path in sorted(glob.glob(f"modules/*")):
             self.modules.append(Module(script_path))
 
     def execute_init(self):

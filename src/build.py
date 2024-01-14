@@ -44,8 +44,8 @@ modules.execute(datapack, moddata)
 modules.execute_late(datapack, moddata)
 
 print("- Processing images...")
-pack_helper.gimp.reset("run")
-gimp = pack_helper.gimp.GimpContext("run")
+pack_helper.gimp.reset()
+gimp = pack_helper.gimp.GimpContext()
 datapack._finalize_gimp(gimp)
 
 print("- Writing configuration...")

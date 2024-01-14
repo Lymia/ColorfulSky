@@ -220,15 +220,13 @@ class DatapackModel(object):
         target_path = f"{self._kubejs_dir}/assets/{target_path}"
 
         scope = overlay.mutable_scope()
-        target = scope.get_layer_by_name(overlay_layer)
-        new_layer = scope.new_layer(parent = target)
+        target_layer = scope.get_layer_by_name(overlay_layer)
+        new_layer = scope.new_layer(parent = target_layer)
         scope.copy_image_to_layer(new_layer, base)
-        scope.save_png(target_path, layer = target)
-        scope.delete_layer(new_layer)
 
         make_parents(target_path)
 
-        self._gimp_actions.append(scope)
+        self._gimp_actions.append((scope, target_path, target_layer))
 
     def get_json_config(self, path, create = False):
         """Returns a mutable object containing a JSON configuration file."""
