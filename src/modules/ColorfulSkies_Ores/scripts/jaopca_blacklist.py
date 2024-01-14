@@ -1,5 +1,7 @@
 # timing: late
 
+from pack_helper.ctx import *
+
 config = datapack.get_toml_config("jaopca/main.toml")
 
 for tag in datapack.tags.list_tags("blocks"):

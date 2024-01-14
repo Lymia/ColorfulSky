@@ -3,6 +3,7 @@ import json
 import shutil
 import zipfile
 
+from pack_helper.ctx import *
 from pack_helper.utils import *
 
 replacements = [

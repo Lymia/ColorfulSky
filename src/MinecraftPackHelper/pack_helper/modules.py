@@ -3,6 +3,7 @@ import importlib.util
 import json
 import json5
 import os.path
+import pack_helper.ctx
 import pack_helper.tags
 import sys
 
@@ -17,9 +18,9 @@ class _Script(object):
         spec = importlib.util.spec_from_file_location(self.py_mod_name, self.script_file)
         py_module = importlib.util.module_from_spec(spec)
 
-        py_module.datapack = datapack
-        py_module.moddata = moddata
-        py_module.mod_path = self.mod.path
+        pack_helper.ctx.datapack = datapack
+        pack_helper.ctx.moddata = moddata
+        pack_helper.ctx.mod_path = self.mod.path
 
         spec.loader.exec_module(py_module)
 

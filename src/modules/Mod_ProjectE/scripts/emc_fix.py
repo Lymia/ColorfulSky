@@ -1,5 +1,7 @@
 import json
 
+from pack_helper.ctx import *
+
 emc_table = {
     # Adjustments to account for modded worldgen and biomes making some materials cheap.
     "minecraft:gravel": 1,
