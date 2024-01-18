@@ -1,0 +1,370 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: MC_Pitman
+
+Description: No description given
+
+Version: 3
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Tree: true
+
+Frequency: 1
+
+Rarity: 100.0
+
+MaxSpawn: 0
+
+RotateRandomly: true
+
+SpawnHeight: highestSolidBlock
+
+SpawnHeightOffset: 0
+
+SpawnHeightVariance: 0
+
+##############################
+# Height Limits for the BO3. #
+##############################
+
+MinHeight: 63
+
+MaxHeight: 130
+
+######################
+# Extrusion settings #
+######################
+
+ExtrudeMode: None
+
+ExtrudeThroughBlocks: otg:air
+
+MaxBranchDepth: 10
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                      Source block settings                      | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+SourceBlocks: otg:dirt,minecraft:sand,otg:stained_clay,otg:sandstone,otg:air,otg:stone,otg:long_grass,minecraft:granite,minecraft:diorite,minecraft:andesite,minecraft:coarse_dirt,minecraft:grass_block,minecraft:podzol,minecraft:water,minecraft:terracotta,minecraft:clay,minecraft:red_sand,minecraft:gravel,minecraft:grass,minecraft:fern,minecraft:dead_bush,minecraft:dandelion,minecraft:poppy,minecraft:brown_mushroom,minecraft:red_mushroom
+
+MaxPercentageOutsideSourceBlock: 0
+
+OutsideSourceBlock: placeAnyway
+
+DoReplaceBlocks: true
+
+IsOTGPlus: false
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+B(-4,7,0,minecraft:spruce_leaves)
+B(-3,6,-1,minecraft:spruce_leaves)
+B(-3,7,0,minecraft:spruce_wood)
+B(-3,7,1,minecraft:spruce_leaves)
+B(-3,10,-1,minecraft:spruce_leaves)
+B(-3,11,2,minecraft:spruce_leaves)
+B(-3,12,0,minecraft:spruce_leaves)
+B(-3,15,0,minecraft:spruce_leaves)
+B(-3,16,-1,minecraft:spruce_leaves)
+B(-3,20,0,minecraft:spruce_leaves)
+B(-3,22,0,minecraft:spruce_leaves)
+B(-2,5,-2,minecraft:spruce_leaves)
+B(-2,5,-1,minecraft:spruce_leaves)
+B(-2,7,-1,minecraft:spruce_leaves)
+B(-2,7,0,minecraft:spruce_wood)
+B(-2,7,1,minecraft:spruce_leaves)
+B(-2,7,2,minecraft:spruce_leaves)
+B(-2,8,0,minecraft:spruce_leaves)
+B(-2,10,-2,minecraft:spruce_leaves)
+B(-2,10,-1,minecraft:spruce_leaves)
+B(-2,10,0,minecraft:spruce_leaves)
+B(-2,11,-2,minecraft:spruce_leaves)
+B(-2,11,1,minecraft:spruce_leaves)
+B(-2,11,2,minecraft:spruce_leaves)
+B(-2,12,1,minecraft:spruce_leaves)
+B(-2,12,3,minecraft:spruce_leaves)
+B(-2,13,-3,minecraft:spruce_leaves)
+B(-2,13,0,minecraft:spruce_leaves)
+B(-2,16,-1,minecraft:spruce_leaves)
+B(-2,16,0,minecraft:spruce_wood)
+B(-2,16,1,minecraft:spruce_leaves)
+B(-2,17,-2,minecraft:spruce_leaves)
+B(-2,17,0,minecraft:spruce_leaves)
+B(-2,19,0,minecraft:spruce_leaves)
+B(-2,19,2,minecraft:spruce_leaves)
+B(-2,20,-2,minecraft:spruce_leaves)
+B(-2,21,-1,minecraft:spruce_leaves)
+B(-2,21,1,minecraft:spruce_leaves)
+B(-2,22,0,minecraft:spruce_wood)
+B(-2,22,2,minecraft:spruce_leaves)
+B(-2,23,0,minecraft:spruce_leaves)
+B(-2,23,1,minecraft:spruce_leaves)
+B(-1,4,0,minecraft:spruce_leaves)
+B(-1,5,-1,minecraft:spruce_leaves)
+B(-1,5,1,minecraft:spruce_leaves)
+B(-1,5,2,minecraft:spruce_leaves)
+B(-1,6,-2,minecraft:spruce_leaves)
+B(-1,6,-1,minecraft:spruce_leaves)
+B(-1,6,0,minecraft:spruce_leaves)
+B(-1,7,2,minecraft:spruce_leaves)
+B(-1,8,-1,minecraft:spruce_leaves)
+B(-1,8,0,minecraft:spruce_wood)
+B(-1,8,1,minecraft:spruce_leaves)
+B(-1,9,0,minecraft:spruce_leaves)
+B(-1,10,-3,minecraft:spruce_leaves)
+B(-1,11,-1,minecraft:spruce_leaves)
+B(-1,11,0,minecraft:spruce_leaves)
+B(-1,11,2,minecraft:spruce_leaves)
+B(-1,13,-4,minecraft:spruce_leaves)
+B(-1,13,-3,minecraft:spruce_wood)
+B(-1,13,-1,minecraft:spruce_leaves)
+B(-1,13,0,minecraft:spruce_leaves)
+B(-1,13,1,minecraft:spruce_leaves)
+B(-1,13,3,minecraft:spruce_leaves)
+B(-1,14,-2,minecraft:spruce_leaves)
+B(-1,15,0,minecraft:spruce_leaves)
+B(-1,15,1,minecraft:spruce_leaves)
+B(-1,16,-3,minecraft:spruce_leaves)
+B(-1,16,-2,minecraft:spruce_leaves)
+B(-1,16,-1,minecraft:spruce_leaves)
+B(-1,16,0,minecraft:spruce_wood)
+B(-1,17,2,minecraft:spruce_leaves)
+B(-1,18,1,minecraft:spruce_leaves)
+B(-1,19,0,minecraft:spruce_leaves)
+B(-1,19,2,minecraft:spruce_leaves)
+B(-1,20,-3,minecraft:spruce_leaves)
+B(-1,20,-2,minecraft:spruce_leaves)
+B(-1,20,0,minecraft:spruce_leaves)
+B(-1,20,1,minecraft:spruce_leaves)
+B(-1,21,-2,minecraft:spruce_leaves)
+B(-1,21,-1,minecraft:spruce_leaves)
+B(-1,23,-1,minecraft:spruce_leaves)
+B(-1,23,0,minecraft:spruce_wood)
+B(-1,23,1,minecraft:spruce_leaves)
+B(-1,23,2,minecraft:spruce_leaves)
+B(-1,24,0,minecraft:spruce_leaves)
+B(-1,26,0,minecraft:spruce_leaves)
+B(0,0,0,minecraft:spruce_wood)
+B(0,1,0,minecraft:spruce_wood)
+B(0,2,0,minecraft:spruce_wood)
+B(0,3,0,minecraft:spruce_wood)
+B(0,4,-2,minecraft:spruce_leaves)
+B(0,4,-1,minecraft:spruce_leaves)
+B(0,4,0,minecraft:spruce_wood)
+B(0,5,0,minecraft:spruce_wood)
+B(0,5,1,minecraft:spruce_wood)
+B(0,5,2,minecraft:spruce_wood)
+B(0,5,3,minecraft:spruce_leaves)
+B(0,6,-3,minecraft:spruce_leaves)
+B(0,6,-1,minecraft:spruce_leaves)
+B(0,6,0,minecraft:spruce_wood)
+B(0,6,1,minecraft:spruce_leaves)
+B(0,7,-1,minecraft:spruce_leaves)
+B(0,7,0,minecraft:spruce_wood)
+B(0,7,1,minecraft:spruce_leaves)
+B(0,7,2,minecraft:spruce_leaves)
+B(0,8,0,minecraft:spruce_wood)
+B(0,8,3,minecraft:spruce_leaves)
+B(0,9,-2,minecraft:spruce_leaves)
+B(0,9,-1,minecraft:spruce_leaves)
+B(0,9,0,minecraft:spruce_wood)
+B(0,9,1,minecraft:spruce_leaves)
+B(0,10,-1,minecraft:spruce_wood)
+B(0,10,0,minecraft:spruce_wood)
+B(0,11,-2,minecraft:spruce_leaves)
+B(0,11,-1,minecraft:spruce_leaves)
+B(0,11,0,minecraft:spruce_wood)
+B(0,11,1,minecraft:spruce_leaves)
+B(0,12,-1,minecraft:spruce_leaves)
+B(0,12,0,minecraft:spruce_wood)
+B(0,12,1,minecraft:spruce_leaves)
+B(0,12,3,minecraft:spruce_leaves)
+B(0,13,-3,minecraft:spruce_leaves)
+B(0,13,-1,minecraft:spruce_leaves)
+B(0,13,0,minecraft:spruce_wood)
+B(0,13,1,minecraft:spruce_leaves)
+B(0,13,2,minecraft:spruce_leaves)
+B(0,14,-3,minecraft:spruce_leaves)
+B(0,14,-2,minecraft:spruce_wood)
+B(0,14,-1,minecraft:spruce_wood)
+B(0,14,0,minecraft:spruce_wood)
+B(0,14,1,minecraft:spruce_leaves)
+B(0,15,-2,minecraft:spruce_leaves)
+B(0,15,-1,minecraft:spruce_leaves)
+B(0,15,0,minecraft:spruce_wood)
+B(0,16,-4,minecraft:spruce_leaves)
+B(0,16,0,minecraft:spruce_wood)
+B(0,16,1,minecraft:spruce_leaves)
+B(0,16,2,minecraft:spruce_leaves)
+B(0,17,-1,minecraft:spruce_leaves)
+B(0,17,0,minecraft:spruce_wood)
+B(0,17,1,minecraft:spruce_leaves)
+B(0,18,-2,minecraft:spruce_leaves)
+B(0,18,-1,minecraft:spruce_leaves)
+B(0,18,0,minecraft:spruce_wood)
+B(0,18,1,minecraft:spruce_leaves)
+B(0,18,2,minecraft:spruce_leaves)
+B(0,19,-2,minecraft:spruce_leaves)
+B(0,19,0,minecraft:spruce_wood)
+B(0,19,1,minecraft:spruce_leaves)
+B(0,19,2,minecraft:spruce_wood)
+B(0,19,3,minecraft:spruce_leaves)
+B(0,20,-1,minecraft:spruce_leaves)
+B(0,20,0,minecraft:spruce_wood)
+B(0,20,1,minecraft:spruce_wood)
+B(0,20,2,minecraft:spruce_leaves)
+B(0,21,0,minecraft:spruce_wood)
+B(0,22,-2,minecraft:spruce_leaves)
+B(0,22,-1,minecraft:spruce_leaves)
+B(0,22,0,minecraft:spruce_wood)
+B(0,22,1,minecraft:spruce_leaves)
+B(0,23,0,minecraft:spruce_wood)
+B(0,24,-1,minecraft:spruce_leaves)
+B(0,24,0,minecraft:spruce_wood)
+B(0,24,1,minecraft:spruce_leaves)
+B(0,25,-1,minecraft:spruce_leaves)
+B(0,25,0,minecraft:spruce_wood)
+B(0,26,0,minecraft:spruce_wood)
+B(0,26,1,minecraft:spruce_leaves)
+B(0,27,0,minecraft:spruce_leaves)
+B(1,5,-1,minecraft:spruce_leaves)
+B(1,5,0,minecraft:spruce_leaves)
+B(1,5,1,minecraft:spruce_leaves)
+B(1,5,2,minecraft:spruce_leaves)
+B(1,6,0,minecraft:spruce_leaves)
+B(1,6,3,minecraft:spruce_leaves)
+B(1,7,-2,minecraft:spruce_leaves)
+B(1,7,1,minecraft:spruce_leaves)
+B(1,8,0,minecraft:spruce_leaves)
+B(1,8,3,minecraft:spruce_leaves)
+B(1,8,4,minecraft:spruce_leaves)
+B(1,9,-3,minecraft:spruce_leaves)
+B(1,9,-2,minecraft:spruce_wood)
+B(1,9,-1,minecraft:spruce_leaves)
+B(1,9,1,minecraft:spruce_leaves)
+B(1,9,2,minecraft:spruce_leaves)
+B(1,10,-1,minecraft:spruce_leaves)
+B(1,10,0,minecraft:spruce_leaves)
+B(1,10,3,minecraft:spruce_leaves)
+B(1,11,0,minecraft:spruce_leaves)
+B(1,11,1,minecraft:spruce_wood)
+B(1,11,2,minecraft:spruce_leaves)
+B(1,12,-3,minecraft:spruce_leaves)
+B(1,12,-2,minecraft:spruce_leaves)
+B(1,12,0,minecraft:spruce_leaves)
+B(1,12,1,minecraft:spruce_leaves)
+B(1,14,-1,minecraft:spruce_leaves)
+B(1,14,0,minecraft:spruce_leaves)
+B(1,15,-3,minecraft:spruce_leaves)
+B(1,15,0,minecraft:spruce_leaves)
+B(1,15,2,minecraft:spruce_leaves)
+B(1,16,-2,minecraft:spruce_leaves)
+B(1,16,1,minecraft:spruce_leaves)
+B(1,18,-1,minecraft:spruce_leaves)
+B(1,18,0,minecraft:spruce_wood)
+B(1,18,3,minecraft:spruce_leaves)
+B(1,19,-3,minecraft:spruce_leaves)
+B(1,19,-2,minecraft:spruce_leaves)
+B(1,19,0,minecraft:spruce_leaves)
+B(1,19,2,minecraft:spruce_leaves)
+B(1,20,1,minecraft:spruce_leaves)
+B(1,21,-2,minecraft:spruce_leaves)
+B(1,22,-1,minecraft:spruce_leaves)
+B(1,22,0,minecraft:spruce_leaves)
+B(1,23,0,minecraft:spruce_leaves)
+B(1,23,2,minecraft:spruce_leaves)
+B(1,24,0,minecraft:spruce_leaves)
+B(1,25,-1,minecraft:spruce_leaves)
+B(1,25,0,minecraft:spruce_leaves)
+B(2,5,-2,minecraft:spruce_leaves)
+B(2,5,0,minecraft:spruce_leaves)
+B(2,5,1,minecraft:spruce_leaves)
+B(2,7,-3,minecraft:spruce_leaves)
+B(2,7,-2,minecraft:spruce_leaves)
+B(2,7,0,minecraft:spruce_leaves)
+B(2,7,4,minecraft:spruce_leaves)
+B(2,8,1,minecraft:spruce_leaves)
+B(2,8,3,minecraft:spruce_leaves)
+B(2,9,-4,minecraft:spruce_leaves)
+B(2,9,-3,minecraft:spruce_wood)
+B(2,9,-2,minecraft:spruce_leaves)
+B(2,9,1,minecraft:spruce_leaves)
+B(2,9,2,minecraft:spruce_leaves)
+B(2,10,-3,minecraft:spruce_leaves)
+B(2,10,-1,minecraft:spruce_leaves)
+B(2,10,0,minecraft:spruce_leaves)
+B(2,10,2,minecraft:spruce_wood)
+B(2,10,3,minecraft:spruce_wood)
+B(2,10,4,minecraft:spruce_leaves)
+B(2,11,1,minecraft:spruce_leaves)
+B(2,11,3,minecraft:spruce_leaves)
+B(2,12,-2,minecraft:spruce_leaves)
+B(2,12,0,minecraft:spruce_leaves)
+B(2,14,1,minecraft:spruce_leaves)
+B(2,15,-3,minecraft:spruce_leaves)
+B(2,17,-2,minecraft:spruce_leaves)
+B(2,17,-1,minecraft:spruce_leaves)
+B(2,17,0,minecraft:spruce_wood)
+B(2,17,1,minecraft:spruce_leaves)
+B(2,18,0,minecraft:spruce_leaves)
+B(2,23,1,minecraft:spruce_leaves)
+B(3,5,-1,minecraft:spruce_leaves)
+B(3,5,2,minecraft:spruce_leaves)
+B(3,7,-2,minecraft:spruce_leaves)
+B(3,7,0,minecraft:spruce_leaves)
+B(3,7,2,minecraft:spruce_leaves)
+B(3,8,1,minecraft:spruce_leaves)
+B(3,9,-3,minecraft:spruce_leaves)
+B(3,9,-1,minecraft:spruce_leaves)
+B(3,10,0,minecraft:spruce_leaves)
+B(3,10,2,minecraft:spruce_leaves)
+B(3,10,3,minecraft:spruce_leaves)
+B(3,12,0,minecraft:spruce_leaves)
+B(3,16,0,minecraft:spruce_leaves)
+B(3,17,0,minecraft:spruce_leaves)
+B(4,6,1,minecraft:spruce_leaves)
+B(4,7,-1,minecraft:spruce_leaves)
+B(4,10,1,minecraft:spruce_leaves)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO3 checks                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+BlockCheck(0,-1,0,otg:dirt,minecraft:grass_block)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

@@ -1,0 +1,10 @@
+#Whether to actually set the biome underground to the proper cave biome rather than the surface biome. If this is disabled, cave biome features will still generate, but the biome will be considered as the surface biome.
+use_real_biomes = true
+#A list of dimensions to generate cave biomes in.
+whitelisted_dimensions = ["minecraft:overworld"]
+#Whether to generate the generic cave biome underground. This causes problems, and is generally not recommended except for debugging purposes.
+generate_cave_biome = false
+#Whether to print extra debugging information to the log.
+#This should be enabled unless the developer asks you to.
+is_debug_mode = true
+

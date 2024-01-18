@@ -49,3 +49,5 @@
 - Modded biome/dimension-specific materials for Mythical Agriculture
 - BetterEnd sulfur needs unification. Sulfur in general is a mess.
 - Twilight Forest doors are a mess. Mangroves are conflicting.
+
+- Shadowed biomes: Meneglin, Archwood Forest

@@ -1,0 +1,146 @@
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                            BO4 object                           | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+Author: Unknown
+
+Description: No description given
+
+SettingsMode: WriteWithoutComments
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                          Main settings                          | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+FixedRotation: 
+
+Frequency: 0
+
+SpawnHeight: highestBlock
+
+UseCenterForHighestBlock: true
+
+##############################
+# Height Limits for the BO4. #
+##############################
+
+MinHeight: 0
+
+MaxHeight: 255
+
+InheritBO3: 
+
+InheritBO3Rotation: NORTH
+
+OverrideChildSettings: true
+
+OverrideParentHeight: false
+
+CanOverride: false
+
+BranchFrequency: 0
+
+BranchFrequencyGroup: 
+
+MustBeBelowOther: false
+
+MustBeInside: 
+
+CannotBeInside: 
+
+ReplacesBO3: 
+
+MustBeInsideWorldBorders: false
+
+CanSpawnOnWater: true
+
+SpawnOnWaterOnly: false
+
+SpawnUnderWater: false
+
+SpawnAtWaterLevel: false
+
+HeightOffset: 0
+
+RemoveAir: true
+
+ReplaceAbove: 
+
+ReplaceBelow: 
+
+ReplaceWithBiomeBlocks: true
+
+ReplaceWithSurfaceBlock: GRASS
+
+ReplaceWithGroundBlock: DIRT
+
+ReplaceWithStoneBlock: STONE
+
+SmoothRadius: 0
+
+SmoothHeightOffset: 0
+
+SmoothStartTop: false
+
+SmoothStartWood: false
+
+SmoothingSurfaceBlock: 
+
+SmoothingGroundBlock: 
+
+BO3Group: 
+
+IsSpawnPoint: false
+
+DoReplaceBlocks: true
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                              Blocks                             | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+B(-8,33,-7,minecraft:dirt)
+B(-8,34,-7,minecraft:dirt)
+B(-8,35,-7,minecraft:dirt)
+B(-8,36,-7,minecraft:grass_block)
+B(-8,32,-6,minecraft:stone)
+B(-8,33,-6,minecraft:dirt)
+B(-8,34,-6,minecraft:dirt)
+B(-8,35,-6,minecraft:grass_block)
+B(-8,31,-5,minecraft:cobblestone)
+B(-8,32,-5,minecraft:stone)
+B(-8,33,-5,minecraft:dirt)
+B(-8,34,-5,minecraft:dirt)
+B(-8,35,-5,minecraft:grass_block)
+B(-8,33,-4,minecraft:dirt)
+B(-8,34,-4,minecraft:dirt)
+B(-8,35,-4,minecraft:grass_block)
+B(-8,35,-3,minecraft:grass_block)
+B(-7,35,-7,minecraft:grass_block)
+B(-7,35,-6,minecraft:grass_block)
+B(-7,34,-5,minecraft:dirt)
+B(-7,35,-5,minecraft:grass_block)
+B(-7,35,-4,minecraft:grass_block)
+B(-6,35,-4,minecraft:grass_block)
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Branches                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+
+
+#######################################################################
+# +-----------------------------------------------------------------+ #
+# |                             Entities                            | #
+# +-----------------------------------------------------------------+ #
+#######################################################################
+

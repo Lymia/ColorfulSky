@@ -430,5 +430,19 @@
       "generation_chance [default: 1.0]": 1.0,
       "has_caves [default: true]": true
     }
+  },
+  "otg": {
+    "ffh7_premium.sky": {
+      "enabled [default: true]": true,
+      "fog_density [default: 1.0]": 1.0,
+      "generation_chance [default: 1.0]": 1.0,
+      "has_caves [default: true]": true
+    },
+    "ffh7_premium.the_void": {
+      "enabled [default: true]": true,
+      "fog_density [default: 1.0]": 1.0,
+      "generation_chance [default: 1.0]": 1.0,
+      "has_caves [default: true]": true
+    }
   }
 }

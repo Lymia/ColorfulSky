@@ -30,8 +30,8 @@ formal_rename = [
     ("topaz", "topaz", "Topaz"),
     ("carnelian", "carnelian", "Carnelian"),
     ("ruby", "ruby", "Ruby"),
-    ("opal", "white_diamond", "White Diamond"), # Renamed in 1.17+
-    ("rose_quartz", "rhodonite", "Rhodonite"), # Conflict with Create
+    ("opal", "white_diamond", "White Diamond"),  # Renamed in 1.17+
+    ("rose_quartz", "rhodonite", "Rhodonite"),  # Conflict with Create
 ]
 override_graphics = [
     ("alexandrite", "amethyst"),
@@ -86,11 +86,11 @@ def apply_rework():
         datapack.remove_name(f"silentgems:chaos_{gem}")
         datapack.remove_name(f"silentgems:{gem}_block")
         datapack.remove_name(f"silentgems:{gem}_bricks")
-    
+
     # Remove materials for unused items
     for gem in silents_gems_unused + silents_gems_renamed:
         datapack.add_json_data(f"silentgems/silentgear_materials/{gem}.json", {
-            "conditions": [{ "type": "forge:false" }],
+            "conditions": [{"type": "forge:false"}],
             "availability": {},
             "crafting_items": {},
             "name": {
@@ -99,34 +99,36 @@ def apply_rework():
             "stats": {},
             "traits": {},
         })
-        
+
     # Rename materials and modify game data as needed
     for entry in formal_rename:
         original, new_name, display_name = entry
-        
+
         datapack.add_i18n("silentgems", f"block.silentgems.{original}_lamp_lit", f"{display_name} Lamp")
         datapack.add_i18n("silentgems", f"block.silentgems.{original}_lamp_inverted", f"Inverted {display_name} Lamp")
-        
+
         if original != new_name:
             datapack.add_i18n("silentgems", f"gem.silentgems.{original}", display_name)
-            
+
             # retag gem
             datapack.tags.add_tag("items", f"silentgems:{original}", f"forge:gems/{new_name}")
             datapack.tags.add_tag("items", f"#forge:gems/{new_name}", f"forge:gems")
             datapack.tags.remove_tag("items", f"silentgems:{original}", f"forge:gems/{original}")
             # retag storage block
-            datapack.tags.add_tag(["items", "blocks"], f"silentgems:{original}_block", f"forge:storage_blocks/{new_name}")
+            datapack.tags.add_tag(["items", "blocks"], f"silentgems:{original}_block",
+                                  f"forge:storage_blocks/{new_name}")
             datapack.tags.add_tag(["items", "blocks"], f"#forge:storage_blocks/{new_name}", f"forge:storage_blocks")
-            datapack.tags.remove_tag(["items", "blocks"], f"silentgems:{original}_block", f"forge:storage_blocks/{original}")
+            datapack.tags.remove_tag(["items", "blocks"], f"silentgems:{original}_block",
+                                     f"forge:storage_blocks/{original}")
             # retag shard
             datapack.tags.add_tag("items", f"silentgems:{original}_shard", f"forge:nuggets/{new_name}")
             datapack.tags.add_tag("items", f"#forge:nuggets/{new_name}", f"forge:nuggets")
             datapack.tags.remove_tag("items", f"silentgems:{original}_shard", f"forge:nuggets/{original}")
-    
+
     # Create recipies for renamed entries
     for entry in formal_rename:
         original, new_name, display_name = entry
-        
+
         datapack.add_json_data(f"silentgems/recipes/bricks/{original}.json", {
             "type": "minecraft:crafting_shaped",
             "group": "classic_gem_bricks",
@@ -137,10 +139,10 @@ def apply_rework():
             ],
             "key": {
                 "g": {
-                "tag": f"forge:gem/{new_name}"
+                    "tag": f"forge:gem/{new_name}"
                 },
                 "#": {
-                "item": "minecraft:stone_bricks"
+                    "item": "minecraft:stone_bricks"
                 }
             },
             "result": {
@@ -158,10 +160,10 @@ def apply_rework():
             ],
             "key": {
                 "g": {
-                "tag": f"forge:gem/{new_name}"
+                    "tag": f"forge:gem/{new_name}"
                 },
                 "#": {
-                "item": "minecraft:glass"
+                    "item": "minecraft:glass"
                 }
             },
             "result": {
@@ -169,18 +171,25 @@ def apply_rework():
                 "count": 12
             }
         })
-            
+
     # Copy assets to fix coloring
     for entry in override_graphics:
         dst, src = entry
-        datapack.write_asset(f"silentgems/textures/block/gem/{dst}_block.png", moddata.read_asset(f"silentgems/textures/block/gem/{src}_block.png"))
-        datapack.write_asset(f"silentgems/textures/block/glass/{dst}.png", moddata.read_asset(f"silentgems/textures/block/glass/{src}.png") )
-        datapack.write_asset(f"silentgems/textures/block/teleporter/redstone/{dst}.png", moddata.read_asset(f"silentgems/textures/block/teleporter/redstone/{src}.png"))
-        datapack.write_asset(f"silentgems/textures/block/teleporter/standard/{dst}.png", moddata.read_asset(f"silentgems/textures/block/teleporter/standard/{src}.png"))
-        datapack.write_asset(f"silentgems/textures/item/chaos_gem/{dst}.png", moddata.read_asset(f"silentgems/textures/item/chaos_gem/{src}.png"))
-        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_1.png", moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_1.png"))
-        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_2.png", moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_2.png"))
-           
+        datapack.write_asset(f"silentgems/textures/block/gem/{dst}_block.png",
+                             moddata.read_asset(f"silentgems/textures/block/gem/{src}_block.png"))
+        datapack.write_asset(f"silentgems/textures/block/glass/{dst}.png",
+                             moddata.read_asset(f"silentgems/textures/block/glass/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/block/teleporter/redstone/{dst}.png",
+                             moddata.read_asset(f"silentgems/textures/block/teleporter/redstone/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/block/teleporter/standard/{dst}.png",
+                             moddata.read_asset(f"silentgems/textures/block/teleporter/standard/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/item/chaos_gem/{dst}.png",
+                             moddata.read_asset(f"silentgems/textures/item/chaos_gem/{src}.png"))
+        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_1.png",
+                             moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_1.png"))
+        datapack.write_asset(f"silentgems/textures/models/armor/{dst}_layer_2.png",
+                             moddata.read_asset(f"silentgems/textures/models/armor/{src}_layer_2.png"))
+
     # Add new I18N from new version
     for key in traits_i18n:
         datapack.add_i18n("silentgems", key, traits_i18n[key])

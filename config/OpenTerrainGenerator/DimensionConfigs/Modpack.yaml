@@ -1,0 +1,10 @@
+Version: 1
+ModpackName: "Colorful Skies"
+Overworld:
+  PresetFolderName: "Far From Home 7 Premium"
+Dimensions:
+- PresetFolderName: "VanillaVistas"
+  Seed: 140055
+GameRules:
+  KeepInventory: true
+  SpectatorsGenerateChunks: true
