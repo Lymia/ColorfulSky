@@ -1,4 +1,4 @@
-To refresh this file, delete it and run /reload command again! Last updated: Jan 11, 2024 10:23:21 AM
+To refresh this file, delete it and run /reload command again! Last updated: Jan 18, 2024 3:53:42 PM
 
 #mekanism:waste_barrel_decay_blacklist
 - mekanism:plutonium

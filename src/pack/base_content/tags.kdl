@@ -10,6 +10,973 @@ tag "abundance:jacaranda_logs" "blocks,items" {
 tag "abundance:redbud_logs" "blocks,items" {
   name "decorative_blocks_abnormals:redbud_beam"
 }
+tag "adorn:benches" "blocks,items" {
+  name "adorn:acacia_bench"
+  name "adorn:biomemakeover/blighted_balsa_bench" optional=true
+  name "adorn:biomemakeover/swamp_cypress_bench" optional=true
+  name "adorn:biomemakeover/willow_bench" optional=true
+  name "adorn:biomesoplenty/cherry_bench" optional=true
+  name "adorn:biomesoplenty/dead_bench" optional=true
+  name "adorn:biomesoplenty/fir_bench" optional=true
+  name "adorn:biomesoplenty/hellbark_bench" optional=true
+  name "adorn:biomesoplenty/jacaranda_bench" optional=true
+  name "adorn:biomesoplenty/magic_bench" optional=true
+  name "adorn:biomesoplenty/mahogany_bench" optional=true
+  name "adorn:biomesoplenty/palm_bench" optional=true
+  name "adorn:biomesoplenty/redwood_bench" optional=true
+  name "adorn:biomesoplenty/umbran_bench" optional=true
+  name "adorn:biomesoplenty/willow_bench" optional=true
+  name "adorn:birch_bench"
+  name "adorn:byg/aspen_bench" optional=true
+  name "adorn:byg/baobab_bench" optional=true
+  name "adorn:byg/blue_enchanted_bench" optional=true
+  name "adorn:byg/bulbis_bench" optional=true
+  name "adorn:byg/cherry_bench" optional=true
+  name "adorn:byg/cika_bench" optional=true
+  name "adorn:byg/cypress_bench" optional=true
+  name "adorn:byg/ebony_bench" optional=true
+  name "adorn:byg/embur_bench" optional=true
+  name "adorn:byg/ether_bench" optional=true
+  name "adorn:byg/fir_bench" optional=true
+  name "adorn:byg/green_enchanted_bench" optional=true
+  name "adorn:byg/holly_bench" optional=true
+  name "adorn:byg/jacaranda_bench" optional=true
+  name "adorn:byg/lament_bench" optional=true
+  name "adorn:byg/mahogany_bench" optional=true
+  name "adorn:byg/mangrove_bench" optional=true
+  name "adorn:byg/maple_bench" optional=true
+  name "adorn:byg/nightshade_bench" optional=true
+  name "adorn:byg/palm_bench" optional=true
+  name "adorn:byg/pine_bench" optional=true
+  name "adorn:byg/rainbow_eucalyptus_bench" optional=true
+  name "adorn:byg/redwood_bench" optional=true
+  name "adorn:byg/skyris_bench" optional=true
+  name "adorn:byg/sythian_bench" optional=true
+  name "adorn:byg/willow_bench" optional=true
+  name "adorn:byg/witch_hazel_bench" optional=true
+  name "adorn:byg/zelkova_bench" optional=true
+  name "adorn:cinderscapes/scorched_bench" optional=true
+  name "adorn:cinderscapes/umbral_bench" optional=true
+  name "adorn:crimson_bench"
+  name "adorn:dark_oak_bench"
+  name "adorn:jungle_bench"
+  name "adorn:oak_bench"
+  name "adorn:spruce_bench"
+  name "adorn:terrestria/cypress_bench" optional=true
+  name "adorn:terrestria/hemlock_bench" optional=true
+  name "adorn:terrestria/japanese_maple_bench" optional=true
+  name "adorn:terrestria/rainbow_eucalyptus_bench" optional=true
+  name "adorn:terrestria/redwood_bench" optional=true
+  name "adorn:terrestria/rubber_bench" optional=true
+  name "adorn:terrestria/sakura_bench" optional=true
+  name "adorn:terrestria/willow_bench" optional=true
+  name "adorn:terrestria/yucca_palm_bench" optional=true
+  name "adorn:traverse/fir_bench" optional=true
+  name "adorn:warped_bench"
+  name "adorn:woods_and_mires/pine_bench" optional=true
+}
+tag "adorn:chairs" "blocks,items" {
+  name "adorn:acacia_chair"
+  name "adorn:biomemakeover/blighted_balsa_chair" optional=true
+  name "adorn:biomemakeover/swamp_cypress_chair" optional=true
+  name "adorn:biomemakeover/willow_chair" optional=true
+  name "adorn:biomesoplenty/cherry_chair" optional=true
+  name "adorn:biomesoplenty/dead_chair" optional=true
+  name "adorn:biomesoplenty/fir_chair" optional=true
+  name "adorn:biomesoplenty/hellbark_chair" optional=true
+  name "adorn:biomesoplenty/jacaranda_chair" optional=true
+  name "adorn:biomesoplenty/magic_chair" optional=true
+  name "adorn:biomesoplenty/mahogany_chair" optional=true
+  name "adorn:biomesoplenty/palm_chair" optional=true
+  name "adorn:biomesoplenty/redwood_chair" optional=true
+  name "adorn:biomesoplenty/umbran_chair" optional=true
+  name "adorn:biomesoplenty/willow_chair" optional=true
+  name "adorn:birch_chair"
+  name "adorn:byg/aspen_chair" optional=true
+  name "adorn:byg/baobab_chair" optional=true
+  name "adorn:byg/blue_enchanted_chair" optional=true
+  name "adorn:byg/bulbis_chair" optional=true
+  name "adorn:byg/cherry_chair" optional=true
+  name "adorn:byg/cika_chair" optional=true
+  name "adorn:byg/cypress_chair" optional=true
+  name "adorn:byg/ebony_chair" optional=true
+  name "adorn:byg/embur_chair" optional=true
+  name "adorn:byg/ether_chair" optional=true
+  name "adorn:byg/fir_chair" optional=true
+  name "adorn:byg/green_enchanted_chair" optional=true
+  name "adorn:byg/holly_chair" optional=true
+  name "adorn:byg/jacaranda_chair" optional=true
+  name "adorn:byg/lament_chair" optional=true
+  name "adorn:byg/mahogany_chair" optional=true
+  name "adorn:byg/mangrove_chair" optional=true
+  name "adorn:byg/maple_chair" optional=true
+  name "adorn:byg/nightshade_chair" optional=true
+  name "adorn:byg/palm_chair" optional=true
+  name "adorn:byg/pine_chair" optional=true
+  name "adorn:byg/rainbow_eucalyptus_chair" optional=true
+  name "adorn:byg/redwood_chair" optional=true
+  name "adorn:byg/skyris_chair" optional=true
+  name "adorn:byg/sythian_chair" optional=true
+  name "adorn:byg/willow_chair" optional=true
+  name "adorn:byg/witch_hazel_chair" optional=true
+  name "adorn:byg/zelkova_chair" optional=true
+  name "adorn:cinderscapes/scorched_chair" optional=true
+  name "adorn:cinderscapes/umbral_chair" optional=true
+  name "adorn:crimson_chair"
+  name "adorn:dark_oak_chair"
+  name "adorn:jungle_chair"
+  name "adorn:oak_chair"
+  name "adorn:spruce_chair"
+  name "adorn:terrestria/yucca_palm_chair" optional=true
+  name "adorn:terrestria_cypress_chair" optional=true
+  name "adorn:terrestria_hemlock_chair" optional=true
+  name "adorn:terrestria_japanese_maple_chair" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_chair" optional=true
+  name "adorn:terrestria_redwood_chair" optional=true
+  name "adorn:terrestria_rubber_chair" optional=true
+  name "adorn:terrestria_sakura_chair" optional=true
+  name "adorn:terrestria_willow_chair" optional=true
+  name "adorn:traverse/fir_chair" optional=true
+  name "adorn:warped_chair"
+  name "adorn:woods_and_mires/pine_chair" optional=true
+}
+tag "adorn:chimneys" "blocks,items" {
+  name "adorn:brick_chimney"
+  name "adorn:cobblestone_chimney"
+  name "adorn:magmatic_prismarine_chimney"
+  name "adorn:nether_brick_chimney"
+  name "adorn:prismarine_chimney"
+  name "adorn:red_nether_brick_chimney"
+  name "adorn:soulful_prismarine_chimney"
+  name "adorn:stone_brick_chimney"
+}
+tag "adorn:coffee_tables" "blocks,items" {
+  name "adorn:acacia_coffee_table"
+  name "adorn:biomemakeover/blighted_balsa_coffee_table" optional=true
+  name "adorn:biomemakeover/swamp_cypress_coffee_table" optional=true
+  name "adorn:biomemakeover/willow_coffee_table" optional=true
+  name "adorn:biomesoplenty/cherry_coffee_table" optional=true
+  name "adorn:biomesoplenty/dead_coffee_table" optional=true
+  name "adorn:biomesoplenty/fir_coffee_table" optional=true
+  name "adorn:biomesoplenty/hellbark_coffee_table" optional=true
+  name "adorn:biomesoplenty/jacaranda_coffee_table" optional=true
+  name "adorn:biomesoplenty/magic_coffee_table" optional=true
+  name "adorn:biomesoplenty/mahogany_coffee_table" optional=true
+  name "adorn:biomesoplenty/palm_coffee_table" optional=true
+  name "adorn:biomesoplenty/redwood_coffee_table" optional=true
+  name "adorn:biomesoplenty/umbran_coffee_table" optional=true
+  name "adorn:biomesoplenty/willow_coffee_table" optional=true
+  name "adorn:birch_coffee_table"
+  name "adorn:byg/aspen_coffee_table" optional=true
+  name "adorn:byg/baobab_coffee_table" optional=true
+  name "adorn:byg/blue_enchanted_coffee_table" optional=true
+  name "adorn:byg/bulbis_coffee_table" optional=true
+  name "adorn:byg/cherry_coffee_table" optional=true
+  name "adorn:byg/cika_coffee_table" optional=true
+  name "adorn:byg/cypress_coffee_table" optional=true
+  name "adorn:byg/ebony_coffee_table" optional=true
+  name "adorn:byg/embur_coffee_table" optional=true
+  name "adorn:byg/ether_coffee_table" optional=true
+  name "adorn:byg/fir_coffee_table" optional=true
+  name "adorn:byg/green_enchanted_coffee_table" optional=true
+  name "adorn:byg/holly_coffee_table" optional=true
+  name "adorn:byg/jacaranda_coffee_table" optional=true
+  name "adorn:byg/lament_coffee_table" optional=true
+  name "adorn:byg/mahogany_coffee_table" optional=true
+  name "adorn:byg/mangrove_coffee_table" optional=true
+  name "adorn:byg/maple_coffee_table" optional=true
+  name "adorn:byg/nightshade_coffee_table" optional=true
+  name "adorn:byg/palm_coffee_table" optional=true
+  name "adorn:byg/pine_coffee_table" optional=true
+  name "adorn:byg/rainbow_eucalyptus_coffee_table" optional=true
+  name "adorn:byg/redwood_coffee_table" optional=true
+  name "adorn:byg/skyris_coffee_table" optional=true
+  name "adorn:byg/sythian_coffee_table" optional=true
+  name "adorn:byg/willow_coffee_table" optional=true
+  name "adorn:byg/witch_hazel_coffee_table" optional=true
+  name "adorn:byg/zelkova_coffee_table" optional=true
+  name "adorn:cinderscapes/scorched_coffee_table" optional=true
+  name "adorn:cinderscapes/umbral_coffee_table" optional=true
+  name "adorn:crimson_coffee_table"
+  name "adorn:dark_oak_coffee_table"
+  name "adorn:jungle_coffee_table"
+  name "adorn:oak_coffee_table"
+  name "adorn:spruce_coffee_table"
+  name "adorn:terrestria/yucca_palm_table" optional=true
+  name "adorn:terrestria_cypress_coffee_table" optional=true
+  name "adorn:terrestria_hemlock_coffee_table" optional=true
+  name "adorn:terrestria_japanese_maple_coffee_table" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_coffee_table" optional=true
+  name "adorn:terrestria_redwood_coffee_table" optional=true
+  name "adorn:terrestria_rubber_coffee_table" optional=true
+  name "adorn:terrestria_sakura_coffee_table" optional=true
+  name "adorn:terrestria_willow_coffee_table" optional=true
+  name "adorn:traverse/fir_coffee_table" optional=true
+  name "adorn:warped_coffee_table"
+  name "adorn:woods_and_mires/pine_coffee_table" optional=true
+}
+tag "adorn:drawers" "blocks,items" {
+  name "adorn:acacia_drawer"
+  name "adorn:biomemakeover/blighted_balsa_drawer" optional=true
+  name "adorn:biomemakeover/swamp_cypress_drawer" optional=true
+  name "adorn:biomemakeover/willow_drawer" optional=true
+  name "adorn:biomesoplenty/cherry_drawer" optional=true
+  name "adorn:biomesoplenty/dead_drawer" optional=true
+  name "adorn:biomesoplenty/fir_drawer" optional=true
+  name "adorn:biomesoplenty/hellbark_drawer" optional=true
+  name "adorn:biomesoplenty/jacaranda_drawer" optional=true
+  name "adorn:biomesoplenty/magic_drawer" optional=true
+  name "adorn:biomesoplenty/mahogany_drawer" optional=true
+  name "adorn:biomesoplenty/palm_drawer" optional=true
+  name "adorn:biomesoplenty/redwood_drawer" optional=true
+  name "adorn:biomesoplenty/umbran_drawer" optional=true
+  name "adorn:biomesoplenty/willow_drawer" optional=true
+  name "adorn:birch_drawer"
+  name "adorn:byg/aspen_drawer" optional=true
+  name "adorn:byg/baobab_drawer" optional=true
+  name "adorn:byg/blue_enchanted_drawer" optional=true
+  name "adorn:byg/bulbis_drawer" optional=true
+  name "adorn:byg/cherry_drawer" optional=true
+  name "adorn:byg/cika_drawer" optional=true
+  name "adorn:byg/cypress_drawer" optional=true
+  name "adorn:byg/ebony_drawer" optional=true
+  name "adorn:byg/embur_drawer" optional=true
+  name "adorn:byg/ether_drawer" optional=true
+  name "adorn:byg/fir_drawer" optional=true
+  name "adorn:byg/green_enchanted_drawer" optional=true
+  name "adorn:byg/holly_drawer" optional=true
+  name "adorn:byg/jacaranda_drawer" optional=true
+  name "adorn:byg/lament_drawer" optional=true
+  name "adorn:byg/mahogany_drawer" optional=true
+  name "adorn:byg/mangrove_drawer" optional=true
+  name "adorn:byg/maple_drawer" optional=true
+  name "adorn:byg/nightshade_drawer" optional=true
+  name "adorn:byg/palm_drawer" optional=true
+  name "adorn:byg/pine_drawer" optional=true
+  name "adorn:byg/rainbow_eucalyptus_drawer" optional=true
+  name "adorn:byg/redwood_drawer" optional=true
+  name "adorn:byg/skyris_drawer" optional=true
+  name "adorn:byg/sythian_drawer" optional=true
+  name "adorn:byg/willow_drawer" optional=true
+  name "adorn:byg/witch_hazel_drawer" optional=true
+  name "adorn:byg/zelkova_drawer" optional=true
+  name "adorn:cinderscapes/scorched_drawer" optional=true
+  name "adorn:cinderscapes/umbral_drawer" optional=true
+  name "adorn:crimson_drawer"
+  name "adorn:dark_oak_drawer"
+  name "adorn:jungle_drawer"
+  name "adorn:oak_drawer"
+  name "adorn:spruce_drawer"
+  name "adorn:terrestria/yucca_palm_drawer" optional=true
+  name "adorn:terrestria_cypress_drawer" optional=true
+  name "adorn:terrestria_hemlock_drawer" optional=true
+  name "adorn:terrestria_japanese_maple_drawer" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_drawer" optional=true
+  name "adorn:terrestria_redwood_drawer" optional=true
+  name "adorn:terrestria_rubber_drawer" optional=true
+  name "adorn:terrestria_sakura_drawer" optional=true
+  name "adorn:terrestria_willow_drawer" optional=true
+  name "adorn:traverse/fir_drawer" optional=true
+  name "adorn:warped_drawer"
+  name "adorn:woods_and_mires/pine_drawer" optional=true
+}
+tag "adorn:kitchen_blocks" "blocks,items" {
+  tag "adorn:kitchen_counters"
+  tag "adorn:kitchen_cupboards"
+  tag "adorn:kitchen_sinks"
+}
+tag "adorn:kitchen_counters" "blocks,items" {
+  name "adorn:acacia_kitchen_counter"
+  name "adorn:biomemakeover/blighted_balsa_kitchen_counter" optional=true
+  name "adorn:biomemakeover/swamp_cypress_kitchen_counter" optional=true
+  name "adorn:biomemakeover/willow_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/cherry_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/dead_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/fir_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/hellbark_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/jacaranda_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/magic_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/mahogany_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/palm_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/redwood_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/umbran_kitchen_counter" optional=true
+  name "adorn:biomesoplenty/willow_kitchen_counter" optional=true
+  name "adorn:birch_kitchen_counter"
+  name "adorn:byg/aspen_kitchen_counter" optional=true
+  name "adorn:byg/baobab_kitchen_counter" optional=true
+  name "adorn:byg/blue_enchanted_kitchen_counter" optional=true
+  name "adorn:byg/bulbis_kitchen_counter" optional=true
+  name "adorn:byg/cherry_kitchen_counter" optional=true
+  name "adorn:byg/cika_kitchen_counter" optional=true
+  name "adorn:byg/cypress_kitchen_counter" optional=true
+  name "adorn:byg/ebony_kitchen_counter" optional=true
+  name "adorn:byg/embur_kitchen_counter" optional=true
+  name "adorn:byg/ether_kitchen_counter" optional=true
+  name "adorn:byg/fir_kitchen_counter" optional=true
+  name "adorn:byg/green_enchanted_kitchen_counter" optional=true
+  name "adorn:byg/holly_kitchen_counter" optional=true
+  name "adorn:byg/jacaranda_kitchen_counter" optional=true
+  name "adorn:byg/lament_kitchen_counter" optional=true
+  name "adorn:byg/mahogany_kitchen_counter" optional=true
+  name "adorn:byg/mangrove_kitchen_counter" optional=true
+  name "adorn:byg/maple_kitchen_counter" optional=true
+  name "adorn:byg/nightshade_kitchen_counter" optional=true
+  name "adorn:byg/palm_kitchen_counter" optional=true
+  name "adorn:byg/pine_kitchen_counter" optional=true
+  name "adorn:byg/rainbow_eucalyptus_kitchen_counter" optional=true
+  name "adorn:byg/redwood_kitchen_counter" optional=true
+  name "adorn:byg/skyris_kitchen_counter" optional=true
+  name "adorn:byg/sythian_kitchen_counter" optional=true
+  name "adorn:byg/willow_kitchen_counter" optional=true
+  name "adorn:byg/witch_hazel_kitchen_counter" optional=true
+  name "adorn:byg/zelkova_kitchen_counter" optional=true
+  name "adorn:cinderscapes/scorched_kitchen_counter" optional=true
+  name "adorn:cinderscapes/umbral_kitchen_counter" optional=true
+  name "adorn:crimson_kitchen_counter"
+  name "adorn:dark_oak_kitchen_counter"
+  name "adorn:jungle_kitchen_counter"
+  name "adorn:oak_kitchen_counter"
+  name "adorn:spruce_kitchen_counter"
+  name "adorn:terrestria/yucca_palm_kitchen_counter" optional=true
+  name "adorn:terrestria_cypress_kitchen_counter" optional=true
+  name "adorn:terrestria_hemlock_kitchen_counter" optional=true
+  name "adorn:terrestria_japanese_maple_kitchen_counter" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_kitchen_counter" optional=true
+  name "adorn:terrestria_redwood_kitchen_counter" optional=true
+  name "adorn:terrestria_rubber_kitchen_counter" optional=true
+  name "adorn:terrestria_sakura_kitchen_counter" optional=true
+  name "adorn:terrestria_willow_kitchen_counter" optional=true
+  name "adorn:traverse/fir_kitchen_counter" optional=true
+  name "adorn:warped_kitchen_counter"
+  name "adorn:woods_and_mires/pine_kitchen_counter" optional=true
+}
+tag "adorn:kitchen_cupboards" "blocks,items" {
+  name "adorn:acacia_kitchen_cupboard"
+  name "adorn:biomemakeover/blighted_balsa_kitchen_cupboard" optional=true
+  name "adorn:biomemakeover/swamp_cypress_kitchen_cupboard" optional=true
+  name "adorn:biomemakeover/willow_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/cherry_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/dead_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/fir_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/hellbark_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/jacaranda_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/magic_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/mahogany_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/palm_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/redwood_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/umbran_kitchen_cupboard" optional=true
+  name "adorn:biomesoplenty/willow_kitchen_cupboard" optional=true
+  name "adorn:birch_kitchen_cupboard"
+  name "adorn:byg/aspen_kitchen_cupboard" optional=true
+  name "adorn:byg/baobab_kitchen_cupboard" optional=true
+  name "adorn:byg/blue_enchanted_kitchen_cupboard" optional=true
+  name "adorn:byg/bulbis_kitchen_cupboard" optional=true
+  name "adorn:byg/cherry_kitchen_cupboard" optional=true
+  name "adorn:byg/cika_kitchen_cupboard" optional=true
+  name "adorn:byg/cypress_kitchen_cupboard" optional=true
+  name "adorn:byg/ebony_kitchen_cupboard" optional=true
+  name "adorn:byg/embur_kitchen_cupboard" optional=true
+  name "adorn:byg/ether_kitchen_cupboard" optional=true
+  name "adorn:byg/fir_kitchen_cupboard" optional=true
+  name "adorn:byg/green_enchanted_kitchen_cupboard" optional=true
+  name "adorn:byg/holly_kitchen_cupboard" optional=true
+  name "adorn:byg/jacaranda_kitchen_cupboard" optional=true
+  name "adorn:byg/lament_kitchen_cupboard" optional=true
+  name "adorn:byg/mahogany_kitchen_cupboard" optional=true
+  name "adorn:byg/mangrove_kitchen_cupboard" optional=true
+  name "adorn:byg/maple_kitchen_cupboard" optional=true
+  name "adorn:byg/nightshade_kitchen_cupboard" optional=true
+  name "adorn:byg/palm_kitchen_cupboard" optional=true
+  name "adorn:byg/pine_kitchen_cupboard" optional=true
+  name "adorn:byg/rainbow_eucalyptus_kitchen_cupboard" optional=true
+  name "adorn:byg/redwood_kitchen_cupboard" optional=true
+  name "adorn:byg/skyris_kitchen_cupboard" optional=true
+  name "adorn:byg/sythian_kitchen_cupboard" optional=true
+  name "adorn:byg/willow_kitchen_cupboard" optional=true
+  name "adorn:byg/witch_hazel_kitchen_cupboard" optional=true
+  name "adorn:byg/zelkova_kitchen_cupboard" optional=true
+  name "adorn:cinderscapes/scorched_cupboard" optional=true
+  name "adorn:cinderscapes/umbral_cupboard" optional=true
+  name "adorn:crimson_kitchen_cupboard"
+  name "adorn:dark_oak_kitchen_cupboard"
+  name "adorn:jungle_kitchen_cupboard"
+  name "adorn:oak_kitchen_cupboard"
+  name "adorn:spruce_kitchen_cupboard"
+  name "adorn:terrestria/yucca_palm_kitchen_cupboard" optional=true
+  name "adorn:terrestria_cypress_kitchen_cupboard" optional=true
+  name "adorn:terrestria_hemlock_kitchen_cupboard" optional=true
+  name "adorn:terrestria_japanese_maple_kitchen_cupboard" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_kitchen_cupboard" optional=true
+  name "adorn:terrestria_redwood_kitchen_cupboard" optional=true
+  name "adorn:terrestria_rubber_kitchen_cupboard" optional=true
+  name "adorn:terrestria_sakura_kitchen_cupboard" optional=true
+  name "adorn:terrestria_willow_kitchen_cupboard" optional=true
+  name "adorn:traverse/fir_kitchen_cupboard" optional=true
+  name "adorn:warped_kitchen_cupboard"
+  name "adorn:woods_and_mires/pine_kitchen_cupboard" optional=true
+}
+tag "adorn:kitchen_sinks" "blocks,items" {
+  name "adorn:acacia_kitchen_sink"
+  name "adorn:biomemakeover/blighted_balsa_sink" optional=true
+  name "adorn:biomemakeover/swamp_cypress_sink" optional=true
+  name "adorn:biomemakeover/willow_sink" optional=true
+  name "adorn:biomesoplenty/cherry_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/dead_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/fir_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/hellbark_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/jacaranda_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/magic_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/mahogany_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/palm_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/redwood_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/umbran_kitchen_sink" optional=true
+  name "adorn:biomesoplenty/willow_kitchen_sink" optional=true
+  name "adorn:birch_kitchen_sink"
+  name "adorn:byg/aspen_kitchen_sink" optional=true
+  name "adorn:byg/baobab_kitchen_sink" optional=true
+  name "adorn:byg/blue_enchanted_kitchen_sink" optional=true
+  name "adorn:byg/bulbis_kitchen_sink" optional=true
+  name "adorn:byg/cherry_kitchen_sink" optional=true
+  name "adorn:byg/cika_kitchen_sink" optional=true
+  name "adorn:byg/cypress_kitchen_sink" optional=true
+  name "adorn:byg/ebony_kitchen_sink" optional=true
+  name "adorn:byg/embur_kitchen_sink" optional=true
+  name "adorn:byg/ether_kitchen_sink" optional=true
+  name "adorn:byg/fir_kitchen_sink" optional=true
+  name "adorn:byg/green_enchanted_kitchen_sink" optional=true
+  name "adorn:byg/holly_kitchen_sink" optional=true
+  name "adorn:byg/jacaranda_kitchen_sink" optional=true
+  name "adorn:byg/lament_kitchen_sink" optional=true
+  name "adorn:byg/mahogany_kitchen_sink" optional=true
+  name "adorn:byg/mangrove_kitchen_sink" optional=true
+  name "adorn:byg/maple_kitchen_sink" optional=true
+  name "adorn:byg/nightshade_kitchen_sink" optional=true
+  name "adorn:byg/palm_kitchen_sink" optional=true
+  name "adorn:byg/pine_kitchen_sink" optional=true
+  name "adorn:byg/rainbow_eucalyptus_kitchen_sink" optional=true
+  name "adorn:byg/redwood_kitchen_sink" optional=true
+  name "adorn:byg/skyris_kitchen_sink" optional=true
+  name "adorn:byg/sythian_kitchen_sink" optional=true
+  name "adorn:byg/willow_kitchen_sink" optional=true
+  name "adorn:byg/witch_hazel_kitchen_sink" optional=true
+  name "adorn:byg/zelkova_kitchen_sink" optional=true
+  name "adorn:cinderscapes/scorched_kitchen_sink" optional=true
+  name "adorn:cinderscapes/umbral_kitchen_sink" optional=true
+  name "adorn:crimson_kitchen_sink"
+  name "adorn:dark_oak_kitchen_sink"
+  name "adorn:jungle_kitchen_sink"
+  name "adorn:oak_kitchen_sink"
+  name "adorn:spruce_kitchen_sink"
+  name "adorn:terrestria/yucca_palm_kitchen_sink" optional=true
+  name "adorn:terrestria_cypress_kitchen_sink" optional=true
+  name "adorn:terrestria_hemlock_kitchen_sink" optional=true
+  name "adorn:terrestria_japanese_maple_kitchen_sink" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_kitchen_sink" optional=true
+  name "adorn:terrestria_redwood_kitchen_sink" optional=true
+  name "adorn:terrestria_rubber_kitchen_sink" optional=true
+  name "adorn:terrestria_sakura_kitchen_sink" optional=true
+  name "adorn:terrestria_willow_kitchen_sink" optional=true
+  name "adorn:traverse/fir_kitchen_sink" optional=true
+  name "adorn:warped_kitchen_sink"
+  name "adorn:woods_and_mires/pine_kitchen_sink" optional=true
+}
+tag "adorn:platforms" "blocks,items" {
+  tag "adorn:stone_platforms"
+  tag "adorn:wooden_platforms"
+}
+tag "adorn:posts" "blocks,items" {
+  tag "adorn:stone_posts"
+  tag "adorn:wooden_posts"
+}
+tag "adorn:shelves" "blocks,items" {
+  tag "adorn:wooden_shelves"
+  name "adorn:iron_shelf"
+}
+tag "adorn:sofas" "blocks,items" {
+  name "adorn:black_sofa"
+  name "adorn:blue_sofa"
+  name "adorn:brown_sofa"
+  name "adorn:cyan_sofa"
+  name "adorn:gray_sofa"
+  name "adorn:green_sofa"
+  name "adorn:light_blue_sofa"
+  name "adorn:light_gray_sofa"
+  name "adorn:lime_sofa"
+  name "adorn:magenta_sofa"
+  name "adorn:orange_sofa"
+  name "adorn:pink_sofa"
+  name "adorn:purple_sofa"
+  name "adorn:red_sofa"
+  name "adorn:white_sofa"
+  name "adorn:yellow_sofa"
+}
+tag "adorn:steps" "blocks,items" {
+  tag "adorn:stone_steps"
+  tag "adorn:wooden_steps"
+}
+tag "adorn:stone_platforms" "blocks,items" {
+  name "adorn:andesite_platform"
+  name "adorn:basalt_platform"
+  name "adorn:biomesoplenty/black_sandstone_platform" optional=true
+  name "adorn:biomesoplenty/mud_brick_platform" optional=true
+  name "adorn:biomesoplenty/orange_sandstone_platform" optional=true
+  name "adorn:biomesoplenty/white_sandstone_platform" optional=true
+  name "adorn:brick_platform"
+  name "adorn:byg/chiseled_red_rock_brick_platform" optional=true
+  name "adorn:byg/cracked_red_rock_brick_platform" optional=true
+  name "adorn:byg/dacite_brick_platform" optional=true
+  name "adorn:byg/dacite_cobblestone_platform" optional=true
+  name "adorn:byg/dacite_platform" optional=true
+  name "adorn:byg/mossy_red_rock_brick_platform" optional=true
+  name "adorn:byg/mossy_stone_platform" optional=true
+  name "adorn:byg/polished_soapstone_platform" optional=true
+  name "adorn:byg/red_rock_brick_platform" optional=true
+  name "adorn:byg/red_rock_platform" optional=true
+  name "adorn:byg/rocky_stone_platform" optional=true
+  name "adorn:byg/scoria_cobblestone_platform" optional=true
+  name "adorn:byg/scoria_stone_platform" optional=true
+  name "adorn:byg/scoria_stonebrick_platform" optional=true
+  name "adorn:byg/soapstone_brick_platform" optional=true
+  name "adorn:byg/soapstone_platform" optional=true
+  name "adorn:byg/soapstone_tile_platform" optional=true
+  name "adorn:cobblestone_platform"
+  name "adorn:diorite_platform"
+  name "adorn:granite_platform"
+  name "adorn:nether_brick_platform"
+  name "adorn:red_sandstone_platform"
+  name "adorn:sandstone_platform"
+  name "adorn:stone_brick_platform"
+  name "adorn:stone_platform"
+  name "adorn:terrestria/basalt_brick_platform" optional=true
+  name "adorn:terrestria/mossy_basalt_brick_platform" optional=true
+  name "adorn:terrestria/mossy_basalt_platform" optional=true
+  name "adorn:terrestria/smooth_basalt_platform" optional=true
+  name "adorn:terrestria_basalt_cobblestone_platform" optional=true
+  name "adorn:terrestria_basalt_platform" optional=true
+}
+tag "adorn:stone_posts" "blocks,items" {
+  name "adorn:andesite_post"
+  name "adorn:basalt_post"
+  name "adorn:biomesoplenty/black_sandstone_post" optional=true
+  name "adorn:biomesoplenty/mud_brick_post" optional=true
+  name "adorn:biomesoplenty/orange_sandstone_post" optional=true
+  name "adorn:biomesoplenty/white_sandstone_post" optional=true
+  name "adorn:brick_post"
+  name "adorn:byg/chiseled_red_rock_brick_post" optional=true
+  name "adorn:byg/cracked_red_rock_brick_post" optional=true
+  name "adorn:byg/dacite_brick_post" optional=true
+  name "adorn:byg/dacite_cobblestone_post" optional=true
+  name "adorn:byg/dacite_post" optional=true
+  name "adorn:byg/mossy_red_rock_brick_post" optional=true
+  name "adorn:byg/mossy_stone_post" optional=true
+  name "adorn:byg/polished_soapstone_post" optional=true
+  name "adorn:byg/red_rock_brick_post" optional=true
+  name "adorn:byg/red_rock_post" optional=true
+  name "adorn:byg/rocky_stone_post" optional=true
+  name "adorn:byg/scoria_cobblestone_post" optional=true
+  name "adorn:byg/scoria_stone_post" optional=true
+  name "adorn:byg/scoria_stonebrick_post" optional=true
+  name "adorn:byg/soapstone_brick_post" optional=true
+  name "adorn:byg/soapstone_post" optional=true
+  name "adorn:byg/soapstone_tile_post" optional=true
+  name "adorn:cobblestone_post"
+  name "adorn:diorite_post"
+  name "adorn:granite_post"
+  name "adorn:nether_brick_post"
+  name "adorn:red_sandstone_post"
+  name "adorn:sandstone_post"
+  name "adorn:stone_brick_post"
+  name "adorn:stone_post"
+  name "adorn:terrestria/basalt_brick_post" optional=true
+  name "adorn:terrestria/mossy_basalt_brick_post" optional=true
+  name "adorn:terrestria/mossy_basalt_post" optional=true
+  name "adorn:terrestria/smooth_basalt_post" optional=true
+  name "adorn:terrestria_basalt_cobblestone_post" optional=true
+  name "adorn:terrestria_basalt_post" optional=true
+}
+tag "adorn:stone_steps" "blocks,items" {
+  name "adorn:andesite_step"
+  name "adorn:basalt_step"
+  name "adorn:biomesoplenty/black_sandstone_step" optional=true
+  name "adorn:biomesoplenty/mud_brick_step" optional=true
+  name "adorn:biomesoplenty/orange_sandstone_step" optional=true
+  name "adorn:biomesoplenty/white_sandstone_step" optional=true
+  name "adorn:brick_step"
+  name "adorn:byg/chiseled_red_rock_brick_step" optional=true
+  name "adorn:byg/cracked_red_rock_brick_step" optional=true
+  name "adorn:byg/dacite_brick_step" optional=true
+  name "adorn:byg/dacite_cobblestone_step" optional=true
+  name "adorn:byg/dacite_step" optional=true
+  name "adorn:byg/mossy_red_rock_brick_step" optional=true
+  name "adorn:byg/mossy_stone_step" optional=true
+  name "adorn:byg/polished_soapstone_step" optional=true
+  name "adorn:byg/red_rock_brick_step" optional=true
+  name "adorn:byg/red_rock_step" optional=true
+  name "adorn:byg/rocky_stone_step" optional=true
+  name "adorn:byg/scoria_cobblestone_step" optional=true
+  name "adorn:byg/scoria_stone_step" optional=true
+  name "adorn:byg/scoria_stonebrick_step" optional=true
+  name "adorn:byg/soapstone_brick_step" optional=true
+  name "adorn:byg/soapstone_step" optional=true
+  name "adorn:byg/soapstone_tile_step" optional=true
+  name "adorn:cobblestone_step"
+  name "adorn:diorite_step"
+  name "adorn:granite_step"
+  name "adorn:nether_brick_step"
+  name "adorn:red_sandstone_step"
+  name "adorn:sandstone_step"
+  name "adorn:stone_brick_step"
+  name "adorn:stone_step"
+  name "adorn:terrestria/basalt_brick_step" optional=true
+  name "adorn:terrestria/mossy_basalt_brick_step" optional=true
+  name "adorn:terrestria/mossy_basalt_step" optional=true
+  name "adorn:terrestria/smooth_basalt_step" optional=true
+  name "adorn:terrestria_basalt_cobblestone_step" optional=true
+  name "adorn:terrestria_basalt_step" optional=true
+}
+tag "adorn:table_lamps" "blocks,items" {
+  name "adorn:black_table_lamp"
+  name "adorn:blue_table_lamp"
+  name "adorn:brown_table_lamp"
+  name "adorn:cyan_table_lamp"
+  name "adorn:gray_table_lamp"
+  name "adorn:green_table_lamp"
+  name "adorn:light_blue_table_lamp"
+  name "adorn:light_gray_table_lamp"
+  name "adorn:lime_table_lamp"
+  name "adorn:magenta_table_lamp"
+  name "adorn:orange_table_lamp"
+  name "adorn:pink_table_lamp"
+  name "adorn:purple_table_lamp"
+  name "adorn:red_table_lamp"
+  name "adorn:white_table_lamp"
+  name "adorn:yellow_table_lamp"
+}
+tag "adorn:tables" "blocks,items" {
+  name "adorn:acacia_table"
+  name "adorn:biomemakeover/blighted_balsa_table" optional=true
+  name "adorn:biomemakeover/swamp_cypress_table" optional=true
+  name "adorn:biomemakeover/willow_table" optional=true
+  name "adorn:biomesoplenty/cherry_table" optional=true
+  name "adorn:biomesoplenty/dead_table" optional=true
+  name "adorn:biomesoplenty/fir_table" optional=true
+  name "adorn:biomesoplenty/hellbark_table" optional=true
+  name "adorn:biomesoplenty/jacaranda_table" optional=true
+  name "adorn:biomesoplenty/magic_table" optional=true
+  name "adorn:biomesoplenty/mahogany_table" optional=true
+  name "adorn:biomesoplenty/palm_table" optional=true
+  name "adorn:biomesoplenty/redwood_table" optional=true
+  name "adorn:biomesoplenty/umbran_table" optional=true
+  name "adorn:biomesoplenty/willow_table" optional=true
+  name "adorn:birch_table"
+  name "adorn:byg/aspen_table" optional=true
+  name "adorn:byg/baobab_table" optional=true
+  name "adorn:byg/blue_enchanted_table" optional=true
+  name "adorn:byg/bulbis_table" optional=true
+  name "adorn:byg/cherry_table" optional=true
+  name "adorn:byg/cika_table" optional=true
+  name "adorn:byg/cypress_table" optional=true
+  name "adorn:byg/ebony_table" optional=true
+  name "adorn:byg/embur_table" optional=true
+  name "adorn:byg/ether_table" optional=true
+  name "adorn:byg/fir_table" optional=true
+  name "adorn:byg/green_enchanted_table" optional=true
+  name "adorn:byg/holly_table" optional=true
+  name "adorn:byg/jacaranda_table" optional=true
+  name "adorn:byg/lament_table" optional=true
+  name "adorn:byg/mahogany_table" optional=true
+  name "adorn:byg/mangrove_table" optional=true
+  name "adorn:byg/maple_table" optional=true
+  name "adorn:byg/nightshade_table" optional=true
+  name "adorn:byg/palm_table" optional=true
+  name "adorn:byg/pine_table" optional=true
+  name "adorn:byg/rainbow_eucalyptus_table" optional=true
+  name "adorn:byg/redwood_table" optional=true
+  name "adorn:byg/skyris_table" optional=true
+  name "adorn:byg/sythian_table" optional=true
+  name "adorn:byg/willow_table" optional=true
+  name "adorn:byg/witch_hazel_table" optional=true
+  name "adorn:byg/zelkova_table" optional=true
+  name "adorn:cinderscapes/scorched_table" optional=true
+  name "adorn:cinderscapes/umbral_table" optional=true
+  name "adorn:crimson_table"
+  name "adorn:dark_oak_table"
+  name "adorn:jungle_table"
+  name "adorn:oak_table"
+  name "adorn:spruce_table"
+  name "adorn:terrestria/yucca_palm_table" optional=true
+  name "adorn:terrestria_cypress_table" optional=true
+  name "adorn:terrestria_hemlock_table" optional=true
+  name "adorn:terrestria_japanese_maple_table" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_table" optional=true
+  name "adorn:terrestria_redwood_table" optional=true
+  name "adorn:terrestria_rubber_table" optional=true
+  name "adorn:terrestria_sakura_table" optional=true
+  name "adorn:terrestria_willow_table" optional=true
+  name "adorn:traverse/fir_table" optional=true
+  name "adorn:warped_table"
+  name "adorn:woods_and_mires/pine_table" optional=true
+}
+tag "adorn:wooden_platforms" "blocks,items" {
+  name "adorn:acacia_platform"
+  name "adorn:biomemakeover/blighted_balsa_platform" optional=true
+  name "adorn:biomemakeover/swamp_cypress_platform" optional=true
+  name "adorn:biomemakeover/willow_platform" optional=true
+  name "adorn:biomesoplenty/cherry_platform" optional=true
+  name "adorn:biomesoplenty/dead_platform" optional=true
+  name "adorn:biomesoplenty/fir_platform" optional=true
+  name "adorn:biomesoplenty/hellbark_platform" optional=true
+  name "adorn:biomesoplenty/jacaranda_platform" optional=true
+  name "adorn:biomesoplenty/magic_platform" optional=true
+  name "adorn:biomesoplenty/mahogany_platform" optional=true
+  name "adorn:biomesoplenty/palm_platform" optional=true
+  name "adorn:biomesoplenty/redwood_platform" optional=true
+  name "adorn:biomesoplenty/umbran_platform" optional=true
+  name "adorn:biomesoplenty/willow_platform" optional=true
+  name "adorn:birch_platform"
+  name "adorn:byg/aspen_platform" optional=true
+  name "adorn:byg/baobab_platform" optional=true
+  name "adorn:byg/blue_enchanted_platform" optional=true
+  name "adorn:byg/bulbis_platform" optional=true
+  name "adorn:byg/cherry_platform" optional=true
+  name "adorn:byg/cika_platform" optional=true
+  name "adorn:byg/cypress_platform" optional=true
+  name "adorn:byg/ebony_platform" optional=true
+  name "adorn:byg/embur_platform" optional=true
+  name "adorn:byg/ether_platform" optional=true
+  name "adorn:byg/fir_platform" optional=true
+  name "adorn:byg/green_enchanted_platform" optional=true
+  name "adorn:byg/holly_platform" optional=true
+  name "adorn:byg/jacaranda_platform" optional=true
+  name "adorn:byg/lament_platform" optional=true
+  name "adorn:byg/mahogany_platform" optional=true
+  name "adorn:byg/mangrove_platform" optional=true
+  name "adorn:byg/maple_platform" optional=true
+  name "adorn:byg/nightshade_platform" optional=true
+  name "adorn:byg/palm_platform" optional=true
+  name "adorn:byg/pine_platform" optional=true
+  name "adorn:byg/rainbow_eucalyptus_platform" optional=true
+  name "adorn:byg/redwood_platform" optional=true
+  name "adorn:byg/skyris_platform" optional=true
+  name "adorn:byg/sythian_platform" optional=true
+  name "adorn:byg/willow_platform" optional=true
+  name "adorn:byg/witch_hazel_platform" optional=true
+  name "adorn:byg/zelkova_platform" optional=true
+  name "adorn:cinderscapes/scorched_platform" optional=true
+  name "adorn:cinderscapes/umbral_platform" optional=true
+  name "adorn:crimson_platform"
+  name "adorn:dark_oak_platform"
+  name "adorn:jungle_platform"
+  name "adorn:oak_platform"
+  name "adorn:spruce_platform"
+  name "adorn:terrestria/yucca_palm_platform" optional=true
+  name "adorn:terrestria_cypress_platform" optional=true
+  name "adorn:terrestria_hemlock_platform" optional=true
+  name "adorn:terrestria_japanese_maple_platform" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_platform" optional=true
+  name "adorn:terrestria_redwood_platform" optional=true
+  name "adorn:terrestria_rubber_platform" optional=true
+  name "adorn:terrestria_sakura_platform" optional=true
+  name "adorn:terrestria_willow_platform" optional=true
+  name "adorn:traverse/fir_platform" optional=true
+  name "adorn:warped_platform"
+  name "adorn:woods_and_mires/pine_platform" optional=true
+}
+tag "adorn:wooden_posts" "blocks,items" {
+  name "adorn:acacia_post"
+  name "adorn:biomemakeover/blighted_balsa_post" optional=true
+  name "adorn:biomemakeover/swamp_cypress_post" optional=true
+  name "adorn:biomemakeover/willow_post" optional=true
+  name "adorn:biomesoplenty/cherry_post" optional=true
+  name "adorn:biomesoplenty/dead_post" optional=true
+  name "adorn:biomesoplenty/fir_post" optional=true
+  name "adorn:biomesoplenty/hellbark_post" optional=true
+  name "adorn:biomesoplenty/jacaranda_post" optional=true
+  name "adorn:biomesoplenty/magic_post" optional=true
+  name "adorn:biomesoplenty/mahogany_post" optional=true
+  name "adorn:biomesoplenty/palm_post" optional=true
+  name "adorn:biomesoplenty/redwood_post" optional=true
+  name "adorn:biomesoplenty/umbran_post" optional=true
+  name "adorn:biomesoplenty/willow_post" optional=true
+  name "adorn:birch_post"
+  name "adorn:byg/aspen_post" optional=true
+  name "adorn:byg/baobab_post" optional=true
+  name "adorn:byg/blue_enchanted_post" optional=true
+  name "adorn:byg/bulbis_post" optional=true
+  name "adorn:byg/cherry_post" optional=true
+  name "adorn:byg/cika_post" optional=true
+  name "adorn:byg/cypress_post" optional=true
+  name "adorn:byg/ebony_post" optional=true
+  name "adorn:byg/embur_post" optional=true
+  name "adorn:byg/ether_post" optional=true
+  name "adorn:byg/fir_post" optional=true
+  name "adorn:byg/green_enchanted_post" optional=true
+  name "adorn:byg/holly_post" optional=true
+  name "adorn:byg/jacaranda_post" optional=true
+  name "adorn:byg/lament_post" optional=true
+  name "adorn:byg/mahogany_post" optional=true
+  name "adorn:byg/mangrove_post" optional=true
+  name "adorn:byg/maple_post" optional=true
+  name "adorn:byg/nightshade_post" optional=true
+  name "adorn:byg/palm_post" optional=true
+  name "adorn:byg/pine_post" optional=true
+  name "adorn:byg/rainbow_eucalyptus_post" optional=true
+  name "adorn:byg/redwood_post" optional=true
+  name "adorn:byg/skyris_post" optional=true
+  name "adorn:byg/sythian_post" optional=true
+  name "adorn:byg/willow_post" optional=true
+  name "adorn:byg/witch_hazel_post" optional=true
+  name "adorn:byg/zelkova_post" optional=true
+  name "adorn:cinderscapes/scorched_post" optional=true
+  name "adorn:cinderscapes/umbral_post" optional=true
+  name "adorn:crimson_post"
+  name "adorn:dark_oak_post"
+  name "adorn:jungle_post"
+  name "adorn:oak_post"
+  name "adorn:spruce_post"
+  name "adorn:terrestria/yucca_palm_post" optional=true
+  name "adorn:terrestria_cypress_post" optional=true
+  name "adorn:terrestria_hemlock_post" optional=true
+  name "adorn:terrestria_japanese_maple_post" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_post" optional=true
+  name "adorn:terrestria_redwood_post" optional=true
+  name "adorn:terrestria_rubber_post" optional=true
+  name "adorn:terrestria_sakura_post" optional=true
+  name "adorn:terrestria_willow_post" optional=true
+  name "adorn:traverse/fir_post" optional=true
+  name "adorn:warped_post"
+  name "adorn:woods_and_mires/pine_post" optional=true
+}
+tag "adorn:wooden_shelves" "blocks,items" {
+  name "adorn:acacia_shelf"
+  name "adorn:biomemakeover/blighted_balsa_shelf" optional=true
+  name "adorn:biomemakeover/swamp_cypress_shelf" optional=true
+  name "adorn:biomemakeover/willow_shelf" optional=true
+  name "adorn:biomesoplenty/cherry_shelf" optional=true
+  name "adorn:biomesoplenty/dead_shelf" optional=true
+  name "adorn:biomesoplenty/fir_shelf" optional=true
+  name "adorn:biomesoplenty/hellbark_shelf" optional=true
+  name "adorn:biomesoplenty/jacaranda_shelf" optional=true
+  name "adorn:biomesoplenty/magic_shelf" optional=true
+  name "adorn:biomesoplenty/mahogany_shelf" optional=true
+  name "adorn:biomesoplenty/palm_shelf" optional=true
+  name "adorn:biomesoplenty/redwood_shelf" optional=true
+  name "adorn:biomesoplenty/umbran_shelf" optional=true
+  name "adorn:biomesoplenty/willow_shelf" optional=true
+  name "adorn:birch_shelf"
+  name "adorn:byg/aspen_shelf" optional=true
+  name "adorn:byg/baobab_shelf" optional=true
+  name "adorn:byg/blue_enchanted_shelf" optional=true
+  name "adorn:byg/bulbis_shelf" optional=true
+  name "adorn:byg/cherry_shelf" optional=true
+  name "adorn:byg/cika_shelf" optional=true
+  name "adorn:byg/cypress_shelf" optional=true
+  name "adorn:byg/ebony_shelf" optional=true
+  name "adorn:byg/embur_shelf" optional=true
+  name "adorn:byg/ether_shelf" optional=true
+  name "adorn:byg/fir_shelf" optional=true
+  name "adorn:byg/green_enchanted_shelf" optional=true
+  name "adorn:byg/holly_shelf" optional=true
+  name "adorn:byg/jacaranda_shelf" optional=true
+  name "adorn:byg/lament_shelf" optional=true
+  name "adorn:byg/mahogany_shelf" optional=true
+  name "adorn:byg/mangrove_shelf" optional=true
+  name "adorn:byg/maple_shelf" optional=true
+  name "adorn:byg/nightshade_shelf" optional=true
+  name "adorn:byg/palm_shelf" optional=true
+  name "adorn:byg/pine_shelf" optional=true
+  name "adorn:byg/rainbow_eucalyptus_shelf" optional=true
+  name "adorn:byg/redwood_shelf" optional=true
+  name "adorn:byg/skyris_shelf" optional=true
+  name "adorn:byg/sythian_shelf" optional=true
+  name "adorn:byg/willow_shelf" optional=true
+  name "adorn:byg/witch_hazel_shelf" optional=true
+  name "adorn:byg/zelkova_shelf" optional=true
+  name "adorn:cinderscapes/scorched_shelf" optional=true
+  name "adorn:cinderscapes/umbral_shelf" optional=true
+  name "adorn:crimson_shelf"
+  name "adorn:dark_oak_shelf"
+  name "adorn:jungle_shelf"
+  name "adorn:oak_shelf"
+  name "adorn:spruce_shelf"
+  name "adorn:terrestria/yucca_palm_shelf" optional=true
+  name "adorn:terrestria_cypress_shelf" optional=true
+  name "adorn:terrestria_hemlock_shelf" optional=true
+  name "adorn:terrestria_japanese_maple_shelf" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_shelf" optional=true
+  name "adorn:terrestria_redwood_shelf" optional=true
+  name "adorn:terrestria_rubber_shelf" optional=true
+  name "adorn:terrestria_sakura_shelf" optional=true
+  name "adorn:terrestria_willow_shelf" optional=true
+  name "adorn:traverse/fir_shelf" optional=true
+  name "adorn:warped_shelf"
+  name "adorn:woods_and_mires/pine_shelf" optional=true
+}
+tag "adorn:wooden_steps" "blocks,items" {
+  name "adorn:acacia_step"
+  name "adorn:biomemakeover/blighted_balsa_step" optional=true
+  name "adorn:biomemakeover/swamp_cypress_step" optional=true
+  name "adorn:biomemakeover/willow_step" optional=true
+  name "adorn:biomesoplenty/cherry_step" optional=true
+  name "adorn:biomesoplenty/dead_step" optional=true
+  name "adorn:biomesoplenty/fir_step" optional=true
+  name "adorn:biomesoplenty/hellbark_step" optional=true
+  name "adorn:biomesoplenty/jacaranda_step" optional=true
+  name "adorn:biomesoplenty/magic_step" optional=true
+  name "adorn:biomesoplenty/mahogany_step" optional=true
+  name "adorn:biomesoplenty/palm_step" optional=true
+  name "adorn:biomesoplenty/redwood_step" optional=true
+  name "adorn:biomesoplenty/umbran_step" optional=true
+  name "adorn:biomesoplenty/willow_step" optional=true
+  name "adorn:birch_step"
+  name "adorn:byg/aspen_step" optional=true
+  name "adorn:byg/baobab_step" optional=true
+  name "adorn:byg/blue_enchanted_step" optional=true
+  name "adorn:byg/bulbis_step" optional=true
+  name "adorn:byg/cherry_step" optional=true
+  name "adorn:byg/cika_step" optional=true
+  name "adorn:byg/cypress_step" optional=true
+  name "adorn:byg/ebony_step" optional=true
+  name "adorn:byg/embur_step" optional=true
+  name "adorn:byg/ether_step" optional=true
+  name "adorn:byg/fir_step" optional=true
+  name "adorn:byg/green_enchanted_step" optional=true
+  name "adorn:byg/holly_step" optional=true
+  name "adorn:byg/jacaranda_step" optional=true
+  name "adorn:byg/lament_step" optional=true
+  name "adorn:byg/mahogany_step" optional=true
+  name "adorn:byg/mangrove_step" optional=true
+  name "adorn:byg/maple_step" optional=true
+  name "adorn:byg/nightshade_step" optional=true
+  name "adorn:byg/palm_step" optional=true
+  name "adorn:byg/pine_step" optional=true
+  name "adorn:byg/rainbow_eucalyptus_step" optional=true
+  name "adorn:byg/redwood_step" optional=true
+  name "adorn:byg/skyris_step" optional=true
+  name "adorn:byg/sythian_step" optional=true
+  name "adorn:byg/willow_step" optional=true
+  name "adorn:byg/witch_hazel_step" optional=true
+  name "adorn:byg/zelkova_step" optional=true
+  name "adorn:cinderscapes/scorched_step" optional=true
+  name "adorn:cinderscapes/umbral_step" optional=true
+  name "adorn:crimson_step"
+  name "adorn:dark_oak_step"
+  name "adorn:jungle_step"
+  name "adorn:oak_step"
+  name "adorn:spruce_step"
+  name "adorn:terrestria/yucca_palm_step" optional=true
+  name "adorn:terrestria_cypress_step" optional=true
+  name "adorn:terrestria_hemlock_step" optional=true
+  name "adorn:terrestria_japanese_maple_step" optional=true
+  name "adorn:terrestria_rainbow_eucalyptus_step" optional=true
+  name "adorn:terrestria_redwood_step" optional=true
+  name "adorn:terrestria_rubber_step" optional=true
+  name "adorn:terrestria_sakura_step" optional=true
+  name "adorn:terrestria_willow_step" optional=true
+  name "adorn:traverse/fir_step" optional=true
+  name "adorn:warped_step"
+  name "adorn:woods_and_mires/pine_step" optional=true
+}
 tag "allurement:unusable_on_horse_armor" "enchantments" {
   name "allurement:alleviating"
   name "allurement:vengeance"
@@ -2358,6 +3325,65 @@ tag "charm:chests/wooden" "blocks,items" {
   name "minecraft:chest"
   name "minecraft:trapped_chest"
 }
+tag "charm:crafting_table" "items" {
+  name "variant_crafting_tables:acacia_crafting_table"
+  name "variant_crafting_tables:araucaria_crafting_table"
+  name "variant_crafting_tables:aspen_crafting_table"
+  name "variant_crafting_tables:azure_crafting_table"
+  name "variant_crafting_tables:bamboo_crafting_table"
+  name "variant_crafting_tables:birch_crafting_table"
+  name "variant_crafting_tables:bop_cherry_crafting_table"
+  name "variant_crafting_tables:bop_dead_crafting_table"
+  name "variant_crafting_tables:bop_fir_crafting_table"
+  name "variant_crafting_tables:bop_hellbark_crafting_table"
+  name "variant_crafting_tables:bop_jacaranda_crafting_table"
+  name "variant_crafting_tables:bop_magic_crafting_table"
+  name "variant_crafting_tables:bop_mahogany_crafting_table"
+  name "variant_crafting_tables:bop_palm_crafting_table"
+  name "variant_crafting_tables:bop_redwood_crafting_table"
+  name "variant_crafting_tables:bop_umbran_crafting_table"
+  name "variant_crafting_tables:bop_willow_crafting_table"
+  name "variant_crafting_tables:brown_mushroom_crafting_table"
+  name "variant_crafting_tables:canopy_crafting_table"
+  name "variant_crafting_tables:cherry_crafting_table"
+  name "variant_crafting_tables:crimson_crafting_table"
+  name "variant_crafting_tables:cypress_crafting_table"
+  name "variant_crafting_tables:dark_oak_crafting_table"
+  name "variant_crafting_tables:darkwood_crafting_table"
+  name "variant_crafting_tables:driftwood_crafting_table"
+  name "variant_crafting_tables:fairy_ring_mushroom_crafting_table"
+  name "variant_crafting_tables:glowshroom_crafting_table"
+  name "variant_crafting_tables:grimwood_crafting_table"
+  name "variant_crafting_tables:heidiphyllum_crafting_table"
+  name "variant_crafting_tables:jacaranda_crafting_table"
+  name "variant_crafting_tables:jungle_crafting_table"
+  name "variant_crafting_tables:kousa_crafting_table"
+  name "variant_crafting_tables:liriodendrites_crafting_table"
+  name "variant_crafting_tables:mangrove_crafting_table"
+  name "variant_crafting_tables:maple_crafting_table"
+  name "variant_crafting_tables:metasequoia_crafting_table"
+  name "variant_crafting_tables:minewood_crafting_table"
+  name "variant_crafting_tables:morado_crafting_table"
+  name "variant_crafting_tables:petrified_crafting_table"
+  name "variant_crafting_tables:poise_crafting_table"
+  name "variant_crafting_tables:protojuniperoxylon_crafting_table"
+  name "variant_crafting_tables:protopiceoxylon_crafting_table"
+  name "variant_crafting_tables:red_mushroom_crafting_table"
+  name "variant_crafting_tables:redbud_crafting_table"
+  name "variant_crafting_tables:river_crafting_table"
+  name "variant_crafting_tables:rosewood_crafting_table"
+  name "variant_crafting_tables:sortingwood_crafting_table"
+  name "variant_crafting_tables:spruce_crafting_table"
+  name "variant_crafting_tables:timewood_crafting_table"
+  name "variant_crafting_tables:transwood_crafting_table"
+  name "variant_crafting_tables:twilight_mangrove_crafting_table"
+  name "variant_crafting_tables:twilight_oak_crafting_table"
+  name "variant_crafting_tables:warped_crafting_table"
+  name "variant_crafting_tables:willow_crafting_table"
+  name "variant_crafting_tables:wisteria_crafting_table"
+  name "variant_crafting_tables:yucca_crafting_table"
+  name "variant_crafting_tables:zamites_crafting_table"
+}
 tag "charm:crafting_tables" "items" {
   name "minecraft:crafting_table"
 }
@@ -4635,505 +5661,30 @@ tag "create:wrench_pickup" "blocks" {
   name "minecraft:tripwire"
   name "minecraft:tripwire_hook"
 }
-tag "croptopia:advancements_drinks" "items" {
-  name "croptopia:apple_juice"
-  name "croptopia:banana_smoothie"
-  name "croptopia:beer"
-  name "croptopia:coffee"
-  name "croptopia:cranberry_juice"
-  name "croptopia:fruit_smoothie"
-  name "croptopia:grape_juice"
-  name "croptopia:kale_smoothie"
-  name "croptopia:lemonade"
-  name "croptopia:limeade"
-  name "croptopia:mead"
-  name "croptopia:melon_juice"
-  name "croptopia:orange_juice"
-  name "croptopia:pineapple_juice"
-  name "croptopia:pumpkin_spice_latte"
-  name "croptopia:rum"
-  name "croptopia:saguaro_juice"
-  name "croptopia:soy_milk"
-  name "croptopia:strawberry_smoothie"
-  name "croptopia:tea"
-  name "croptopia:tomato_juice"
-  name "croptopia:wine"
+tag "culturaldelights:all_eggplants" "items" {
+  name "culturaldelights:cut_eggplant"
+  name "culturaldelights:eggplant"
+  name "culturaldelights:white_eggplant"
 }
-tag "croptopia:advancements_food_big" "items" {
-  name "croptopia:ajvar"
-  name "croptopia:ajvar_toast"
-  name "croptopia:anchovy_pizza"
-  name "croptopia:apple_pie"
-  name "croptopia:banana_cream_pie"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:beef_stew"
-  name "croptopia:beef_stir_fry"
-  name "croptopia:beef_wellington"
-  name "croptopia:borscht"
-  name "croptopia:brownies"
-  name "croptopia:buttered_green_beans"
-  name "croptopia:cabbage_roll"
-  name "croptopia:caesar_salad"
-  name "croptopia:candied_kumquats"
-  name "croptopia:carnitas"
-  name "croptopia:cashew_chicken"
-  name "croptopia:cheese_cake"
-  name "croptopia:cheese_pizza"
-  name "croptopia:cherry_pie"
-  name "croptopia:chicken_and_noodles"
-  name "croptopia:chili_relleno"
-  name "croptopia:chocolate_ice_cream"
-  name "croptopia:cornish_pasty"
-  name "croptopia:crab_legs"
-  name "croptopia:deep_fried_shrimp"
-  name "croptopia:eggplant_parmesan"
-  name "croptopia:eton_mess"
-  name "croptopia:fajitas"
-  name "croptopia:figgy_pudding"
-  name "croptopia:fish_and_chips"
-  name "croptopia:fried_chicken"
-  name "croptopia:fruit_cake"
-  name "croptopia:fruit_salad"
-  name "croptopia:goulash"
-  name "croptopia:grilled_eggplant"
-  name "croptopia:grilled_oysters"
-  name "croptopia:horchata"
-  name "croptopia:lemon_chicken"
-  name "croptopia:lemon_coconut_bar"
-  name "croptopia:mango_ice_cream"
-  name "croptopia:nether_wart_stew"
-  name "croptopia:nougat"
-  name "croptopia:onion_rings"
-  name "croptopia:peanut_butter"
-  name "croptopia:peanut_butter_with_celery"
-  name "croptopia:pecan_ice_cream"
-  name "croptopia:pecan_pie"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:potato_soup"
-  name "croptopia:protein_bar"
-  name "croptopia:pumpkin_bars"
-  name "croptopia:pumpkin_soup"
-  name "croptopia:quesadilla"
-  name "croptopia:ratatouille"
-  name "croptopia:refried_beans"
-  name "croptopia:roasted_asparagus"
-  name "croptopia:roasted_radishes"
-  name "croptopia:roasted_squash"
-  name "croptopia:roasted_turnips"
-  name "croptopia:rum_raisin_ice_cream"
-  name "croptopia:salsa"
-  name "croptopia:scones"
-  name "croptopia:shepherds_pie"
-  name "croptopia:steamed_broccoli"
-  name "croptopia:steamed_clams"
-  name "croptopia:sticky_toffee_pudding"
-  name "croptopia:stir_fry"
-  name "croptopia:strawberry_ice_cream"
-  name "croptopia:stuffed_artichoke"
-  name "croptopia:stuffed_poblanos"
-  name "croptopia:supreme_pizza"
-  name "croptopia:taco"
-  name "croptopia:tamales"
-  name "croptopia:toast_sandwich"
-  name "croptopia:tofuburger"
-  name "croptopia:tostada"
-  name "croptopia:trail_mix"
-  name "croptopia:treacle_tart"
-  name "croptopia:tres_leche_cake"
-  name "croptopia:trifle"
-  name "croptopia:vanilla_ice_cream"
+tag "culturaldelights:avocado_logs" "items" {
+  name "culturaldelights:avocado_log"
+  name "culturaldelights:avocado_wood"
 }
-tag "croptopia:advancements_food_crafted" "items" {
-  name "croptopia:ajvar"
-  name "croptopia:ajvar_toast"
-  name "croptopia:almond_brittle"
-  name "croptopia:anchovy_pizza"
-  name "croptopia:apple_pie"
-  name "croptopia:apricot_jam"
-  name "croptopia:artichoke_dip"
-  name "croptopia:avocado_toast"
-  name "croptopia:bacon"
-  name "croptopia:baked_beans"
-  name "croptopia:baked_sweet_potato"
-  name "croptopia:baked_yam"
-  name "croptopia:banana_cream_pie"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:beef_jerky"
-  name "croptopia:beef_stew"
-  name "croptopia:beef_stir_fry"
-  name "croptopia:beef_wellington"
-  name "croptopia:beetroot_salad"
-  name "croptopia:blackberry_jam"
-  name "croptopia:blt"
-  name "croptopia:blueberry_jam"
-  name "croptopia:borscht"
-  name "croptopia:brownies"
-  name "croptopia:burrito"
-  name "croptopia:butter"
-  name "croptopia:buttered_green_beans"
-  name "croptopia:buttered_toast"
-  name "croptopia:cabbage_roll"
-  name "croptopia:caesar_salad"
-  name "croptopia:candied_kumquats"
-  name "croptopia:candied_nuts"
-  name "croptopia:candy_corn"
-  name "croptopia:carnitas"
-  name "croptopia:cashew_chicken"
-  name "croptopia:cheese"
-  name "croptopia:cheese_pizza"
-  name "croptopia:cheeseburger"
-  name "croptopia:cheesy_asparagus"
-  name "croptopia:cherry_jam"
-  name "croptopia:cherry_pie"
-  name "croptopia:chicken_and_dumplings"
-  name "croptopia:chicken_and_noodles"
-  name "croptopia:chicken_and_rice"
-  name "croptopia:chili_relleno"
-  name "croptopia:chimichanga"
-  name "croptopia:chocolate"
-  name "croptopia:chocolate_ice_cream"
-  name "croptopia:churros"
-  name "croptopia:cooked_bacon"
-  name "croptopia:cooked_calamari"
-  name "croptopia:cooked_shrimp"
-  name "croptopia:cooked_tuna"
-  name "croptopia:corn_bread"
-  name "croptopia:cornish_pasty"
-  name "croptopia:crab_legs"
-  name "croptopia:crema"
-  name "croptopia:cucumber_salad"
-  name "croptopia:deep_fried_shrimp"
-  name "croptopia:doughnut"
-  name "croptopia:egg_roll"
-  name "croptopia:eggplant_parmesan"
-  name "croptopia:elderberry_jam"
-  name "croptopia:enchilada"
-  name "croptopia:eton_mess"
-  name "croptopia:fajitas"
-  name "croptopia:figgy_pudding"
-  name "croptopia:fish_and_chips"
-  name "croptopia:french_fries"
-  name "croptopia:fried_calamari"
-  name "croptopia:fried_chicken"
-  name "croptopia:fruit_cake"
-  name "croptopia:fruit_salad"
-  name "croptopia:goulash"
-  name "croptopia:grape_jam"
-  name "croptopia:grilled_cheese"
-  name "croptopia:grilled_eggplant"
-  name "croptopia:grilled_oysters"
-  name "croptopia:ham_sandwich"
-  name "croptopia:hamburger"
-  name "croptopia:horchata"
-  name "croptopia:kale_chips"
-  name "croptopia:kiwi_sorbet"
-  name "croptopia:leafy_salad"
-  name "croptopia:leek_soup"
-  name "croptopia:lemon_chicken"
-  name "croptopia:lemon_coconut_bar"
-  name "croptopia:mango_ice_cream"
-  name "croptopia:mashed_potatoes"
-  name "croptopia:meringue"
-  name "croptopia:nether_wart_stew"
-  name "croptopia:nougat"
-  name "croptopia:nutty_cookie"
-  name "croptopia:oatmeal"
-  name "croptopia:onion_rings"
-  name "croptopia:peach_jam"
-  name "croptopia:peanut_butter"
-  name "croptopia:peanut_butter_and_jam"
-  name "croptopia:peanut_butter_with_celery"
-  name "croptopia:pecan_ice_cream"
-  name "croptopia:pecan_pie"
-  name "croptopia:pepperoni"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:pizza"
-  name "croptopia:popcorn"
-  name "croptopia:pork_and_beans"
-  name "croptopia:pork_jerky"
-  name "croptopia:potato_chips"
-  name "croptopia:potato_soup"
-  name "croptopia:protein_bar"
-  name "croptopia:pumpkin_bars"
-  name "croptopia:pumpkin_soup"
-  name "croptopia:quesadilla"
-  name "croptopia:raisin_oatmeal_cookie"
-  name "croptopia:raisins"
-  name "croptopia:raspberry_jam"
-  name "croptopia:ratatouille"
-  name "croptopia:refried_beans"
-  name "croptopia:rhubarb_crisp"
-  name "croptopia:roasted_asparagus"
-  name "croptopia:roasted_nuts"
-  name "croptopia:roasted_pumpkin_seeds"
-  name "croptopia:roasted_radishes"
-  name "croptopia:roasted_squash"
-  name "croptopia:roasted_sunflower_seeds"
-  name "croptopia:roasted_turnips"
-  name "croptopia:rum_raisin_ice_cream"
-  name "croptopia:salsa"
-  name "croptopia:saucy_chips"
-  name "croptopia:scones"
-  name "croptopia:scrambled_eggs"
-  name "croptopia:shepherds_pie"
-  name "croptopia:snicker_doodle"
-  name "croptopia:spaghetti_squash"
-  name "croptopia:steamed_broccoli"
-  name "croptopia:steamed_clams"
-  name "croptopia:steamed_crab"
-  name "croptopia:steamed_green_beans"
-  name "croptopia:steamed_rice"
-  name "croptopia:sticky_toffee_pudding"
-  name "croptopia:stir_fry"
-  name "croptopia:strawberry_ice_cream"
-  name "croptopia:strawberry_jam"
-  name "croptopia:stuffed_artichoke"
-  name "croptopia:stuffed_poblanos"
-  name "croptopia:supreme_pizza"
-  name "croptopia:sushi"
-  name "croptopia:sweet_potato_fries"
-  name "croptopia:taco"
-  name "croptopia:tamales"
-  name "croptopia:toast"
-  name "croptopia:toast_sandwich"
-  name "croptopia:toast_with_jam"
-  name "croptopia:tofu"
-  name "croptopia:tofu_and_dumplings"
-  name "croptopia:tofuburger"
-  name "croptopia:tortilla"
-  name "croptopia:tostada"
-  name "croptopia:trail_mix"
-  name "croptopia:treacle_tart"
-  name "croptopia:tres_leche_cake"
-  name "croptopia:trifle"
-  name "croptopia:vanilla_ice_cream"
-  name "croptopia:veggie_salad"
-  name "croptopia:yam_jam"
-  name "croptopia:yoghurt"
+tag "culturaldelights:avocados" "items" {
+  name "culturaldelights:avocado"
+  name "culturaldelights:cut_avocado"
 }
-tag "croptopia:advancements_saplings" "items" {
-  name "croptopia:almond_sapling"
-  name "croptopia:apple_sapling"
-  name "croptopia:apricot_sapling"
-  name "croptopia:avocado_sapling"
-  name "croptopia:banana_sapling"
-  name "croptopia:cashew_sapling"
-  name "croptopia:cherry_sapling"
-  name "croptopia:cinnamon_sapling"
-  name "croptopia:coconut_sapling"
-  name "croptopia:date_sapling"
-  name "croptopia:dragonfruit_sapling"
-  name "croptopia:fig_sapling"
-  name "croptopia:grapefruit_sapling"
-  name "croptopia:kumquat_sapling"
-  name "croptopia:lemon_sapling"
-  name "croptopia:lime_sapling"
-  name "croptopia:mango_sapling"
-  name "croptopia:nectarine_sapling"
-  name "croptopia:nutmeg_sapling"
-  name "croptopia:orange_sapling"
-  name "croptopia:peach_sapling"
-  name "croptopia:pear_sapling"
-  name "croptopia:pecan_sapling"
-  name "croptopia:persimmon_sapling"
-  name "croptopia:plum_sapling"
-  name "croptopia:starfruit_sapling"
-  name "croptopia:walnut_sapling"
+tag "culturaldelights:cucumbers" "items" {
+  name "culturaldelights:cucumber"
+  name "culturaldelights:cut_cucumber"
 }
-tag "croptopia:advancements_seeds" "items" {
-  name "croptopia:artichoke_seed"
-  name "croptopia:asparagus_seed"
-  name "croptopia:barley_seed"
-  name "croptopia:basil_seed"
-  name "croptopia:bellpepper_seed"
-  name "croptopia:blackbean_seed"
-  name "croptopia:blackberry_seed"
-  name "croptopia:blueberry_seed"
-  name "croptopia:broccoli_seed"
-  name "croptopia:cabbage_seed"
-  name "croptopia:cantaloupe_seed"
-  name "croptopia:cauliflower_seed"
-  name "croptopia:celery_seed"
-  name "croptopia:chile_pepper_seed"
-  name "croptopia:corn_seed"
-  name "croptopia:cranberry_seed"
-  name "croptopia:cucumber_seed"
-  name "croptopia:currant_seed"
-  name "croptopia:eggplant_seed"
-  name "croptopia:elderberry_seed"
-  name "croptopia:garlic_seed"
-  name "croptopia:ginger_seed"
-  name "croptopia:grape_seed"
-  name "croptopia:greenbean_seed"
-  name "croptopia:honeydew_seed"
-  name "croptopia:hops_seed"
-  name "croptopia:kale_seed"
-  name "croptopia:kiwi_seed"
-  name "croptopia:leek_seed"
-  name "croptopia:lettuce_seed"
-  name "croptopia:mustard_seed"
-  name "croptopia:oat_seed"
-  name "croptopia:olive_seed"
-  name "croptopia:onion_seed"
-  name "croptopia:peanut_seed"
-  name "croptopia:pepper_seed"
-  name "croptopia:pineapple_seed"
-  name "croptopia:radish_seed"
-  name "croptopia:raspberry_seed"
-  name "croptopia:rhubarb_seed"
-  name "croptopia:rice_seed"
-  name "croptopia:rutabaga_seed"
-  name "croptopia:saguaro_seed"
-  name "croptopia:soybean_seed"
-  name "croptopia:squash_seed"
-  name "croptopia:strawberry_seed"
-  name "croptopia:tea_seed"
-  name "croptopia:tomatillo_seed"
-  name "croptopia:tomato_seed"
-  name "croptopia:turmeric_seed"
-  name "croptopia:turnip_seed"
-  name "croptopia:vanilla_seeds"
-  name "croptopia:yam_seed"
-  name "croptopia:zucchini_seed"
+tag "culturaldelights:regular_eggplants" "items" {
+  name "culturaldelights:cut_eggplant"
+  name "culturaldelights:eggplant"
 }
-tag "croptopia:beef_mutton" "items" {
-  name "minecraft:beef"
-  name "minecraft:mutton"
-}
-tag "croptopia:beef_replacements" "items" {
-  name "croptopia:tofu"
-  name "minecraft:beef"
-}
-tag "croptopia:chicken_replacements" "items" {
-  name "croptopia:tofu"
-  name "minecraft:chicken"
-}
-tag "croptopia:cinnamon_logs" "blocks,items" {
-  name "croptopia:cinnamon_log"
-  name "croptopia:cinnamon_wood"
-  name "croptopia:stripped_cinnamon_log"
-  name "croptopia:stripped_cinnamon_wood"
-}
-tag "croptopia:crops" "blocks" {
-  name "croptopia:apple_crop"
-  name "croptopia:apricot_crop"
-  name "croptopia:artichoke_crop"
-  name "croptopia:asparagus_crop"
-  name "croptopia:avocado_crop"
-  name "croptopia:banana_crop"
-  name "croptopia:barley_crop"
-  name "croptopia:basil_crop"
-  name "croptopia:bellpepper_crop"
-  name "croptopia:blackbean_crop"
-  name "croptopia:blackberry_crop"
-  name "croptopia:blueberry_crop"
-  name "croptopia:broccoli_crop"
-  name "croptopia:cabbage_crop"
-  name "croptopia:cantaloupe_crop"
-  name "croptopia:cauliflower_crop"
-  name "croptopia:celery_crop"
-  name "croptopia:cherry_crop"
-  name "croptopia:chile_pepper_crop"
-  name "croptopia:coconut_crop"
-  name "croptopia:coffee_crop"
-  name "croptopia:corn_crop"
-  name "croptopia:cranberry_crop"
-  name "croptopia:cucumber_crop"
-  name "croptopia:currant_crop"
-  name "croptopia:date_crop"
-  name "croptopia:dragonfruit_crop"
-  name "croptopia:eggplant_crop"
-  name "croptopia:elderberry_crop"
-  name "croptopia:fig_crop"
-  name "croptopia:garlic_crop"
-  name "croptopia:ginger_crop"
-  name "croptopia:grape_crop"
-  name "croptopia:grapefruit_crop"
-  name "croptopia:greenbean_crop"
-  name "croptopia:greenonion_crop"
-  name "croptopia:honeydew_crop"
-  name "croptopia:hops_crop"
-  name "croptopia:kale_crop"
-  name "croptopia:kiwi_crop"
-  name "croptopia:kumquat_crop"
-  name "croptopia:leek_crop"
-  name "croptopia:lemon_crop"
-  name "croptopia:lettuce_crop"
-  name "croptopia:lime_crop"
-  name "croptopia:mango_crop"
-  name "croptopia:mustard_crop"
-  name "croptopia:nectarine_crop"
-  name "croptopia:nutmeg_crop"
-  name "croptopia:oat_crop"
-  name "croptopia:olive_crop"
-  name "croptopia:onion_crop"
-  name "croptopia:orange_crop"
-  name "croptopia:peach_crop"
-  name "croptopia:peanut_crop"
-  name "croptopia:pear_crop"
-  name "croptopia:persimmon_crop"
-  name "croptopia:pineapple_crop"
-  name "croptopia:plum_crop"
-  name "croptopia:radish_crop"
-  name "croptopia:raspberry_crop"
-  name "croptopia:rhubarb_crop"
-  name "croptopia:rice_crop"
-  name "croptopia:rutabaga_crop"
-  name "croptopia:saguaro_crop"
-  name "croptopia:soybean_crop"
-  name "croptopia:spinach_crop"
-  name "croptopia:squash_crop"
-  name "croptopia:starfruit_crop"
-  name "croptopia:strawberry_crop"
-  name "croptopia:sweetpotato_crop"
-  name "croptopia:tomatillo_crop"
-  name "croptopia:tomato_crop"
-  name "croptopia:turmeric_crop"
-  name "croptopia:turnip_crop"
-  name "croptopia:yam_crop"
-  name "croptopia:zucchini_crop"
-}
-tag "croptopia:fishes" "items" {
-  name "minecraft:cod"
-  name "minecraft:pufferfish"
-  name "minecraft:salmon"
-  name "minecraft:tropical_fish"
-}
-tag "croptopia:flourable" "items" {
-  name "croptopia:barley"
-  name "croptopia:corn"
-  name "croptopia:oat"
-  name "minecraft:wheat"
-}
-tag "croptopia:meat_replacements" "items" {
-  name "croptopia:tofu"
-  name "minecraft:beef"
-  name "minecraft:chicken"
-  name "minecraft:porkchop"
-}
-tag "croptopia:melons" "items" {
-  name "croptopia:cantaloupe"
-  name "croptopia:honeydew"
-  name "minecraft:melon_slice"
-}
-tag "croptopia:nuts" "items" {
-  name "croptopia:almond"
-  name "croptopia:cashew"
-  name "croptopia:peanut"
-  name "croptopia:pecan"
-  name "croptopia:walnut"
-}
-tag "croptopia:peppers" "items" {
-  name "croptopia:bellpepper"
-  name "croptopia:chile_pepper"
-}
-tag "croptopia:pork_replacements" "items" {
-  name "croptopia:tofu"
-  name "minecraft:porkchop"
-}
-tag "croptopia:sauces" "items" {
-  name "croptopia:artichoke_dip"
-  name "croptopia:salsa"
+tag "culturaldelights:smoked_regular_eggplants" "items" {
+  name "culturaldelights:smoked_cut_eggplant"
+  name "culturaldelights:smoked_eggplant"
 }
 tag "curios:an_focus" "items" {
   name "ars_elemental:air_focus"
@@ -5558,67 +6109,6 @@ tag "darkerdepths:underground_base_blocks" "blocks" {
 tag "decorative_blocks:thatch" "fluids" {
   name "decorative_blocks:flowing_thatch"
   name "decorative_blocks:thatch"
-}
-tag "dehydration:hydrating_drinks" "items" {
-  name "croptopia:banana_smoothie"
-  name "croptopia:beer"
-  name "croptopia:chocolate_milkshake"
-  name "croptopia:coffee"
-  name "croptopia:fruit_smoothie"
-  name "croptopia:kale_smoothie"
-  name "croptopia:kiwi_sorbet"
-  name "croptopia:lemonade"
-  name "croptopia:limeade"
-  name "croptopia:mead"
-  name "croptopia:milk_bottle"
-  name "croptopia:pumpkin_spice_latte"
-  name "croptopia:rum"
-  name "croptopia:soy_milk"
-  name "croptopia:strawberry_smoothie"
-  name "croptopia:tea"
-  name "croptopia:water_bottle"
-  name "croptopia:wine"
-}
-tag "dehydration:hydrating_foods" "items" {
-  name "croptopia:apricot"
-  name "croptopia:artichoke_dip"
-  name "croptopia:banana"
-  name "croptopia:blackberry"
-  name "croptopia:blueberry"
-  name "croptopia:cantaloupe"
-  name "croptopia:cherry"
-  name "croptopia:cranberry"
-  name "croptopia:dragonfruit"
-  name "croptopia:grape"
-  name "croptopia:grapefruit"
-  name "croptopia:honeydew"
-  name "croptopia:kumquat"
-  name "croptopia:lemon"
-  name "croptopia:lime"
-  name "croptopia:mango"
-  name "croptopia:nectarine"
-  name "croptopia:orange"
-  name "croptopia:peach"
-  name "croptopia:pear"
-  name "croptopia:persimmon"
-  name "croptopia:plum"
-  name "croptopia:raspberry"
-  name "croptopia:salsa"
-  name "croptopia:soy_milk"
-  name "croptopia:starfruit"
-  name "croptopia:strawberry"
-  name "minecraft:apple"
-}
-tag "dehydration:hydrating_stew" "items" {
-  name "croptopia:apple_juice"
-  name "croptopia:cranberry_juice"
-  name "croptopia:grape_juice"
-  name "croptopia:leek_soup"
-  name "croptopia:melon_juice"
-  name "croptopia:orange_juice"
-  name "croptopia:pineapple_juice"
-  name "croptopia:saguaro_juice"
-  name "croptopia:tomato_juice"
 }
 tag "elementalcraft:container_tools" "blocks" {
   tag "elementalcraft:instruments"
@@ -6675,54 +7165,6 @@ tag "forge:alloys/elite" "items" {
 tag "forge:alloys/ultimate" "items" {
   name "mekanism:alloy_atomic"
 }
-tag "forge:almond_brittles" "items" {
-  name "croptopia:almond_brittle"
-}
-tag "forge:almond_saplings" "items" {
-  tag "forge:saplings/almond"
-  name "croptopia:almond_sapling"
-}
-tag "forge:almonds" "items" {
-  tag "forge:crops/almond"
-  tag "forge:fruits/almond"
-  tag "forge:nuts/almond"
-  name "croptopia:almond"
-}
-tag "forge:anchovies" "items" {
-  name "croptopia:anchovy"
-}
-tag "forge:anchovy_pizzas" "items" {
-  name "croptopia:anchovy_pizza"
-}
-tag "forge:apple_juices" "items" {
-  tag "forge:juices/apple_juice"
-  name "croptopia:apple_juice"
-}
-tag "forge:apple_pies" "items" {
-  name "croptopia:apple_pie"
-}
-tag "forge:apple_saplings" "items" {
-  tag "forge:saplings/apple"
-  name "croptopia:apple_sapling"
-}
-tag "forge:apples" "items" {
-  tag "forge:crops/apple"
-  tag "forge:fruits/apple"
-  name "minecraft:apple"
-}
-tag "forge:apricot_jams" "items" {
-  tag "forge:jams/apricot_jam"
-  name "croptopia:apricot_jam"
-}
-tag "forge:apricot_saplings" "items" {
-  tag "forge:saplings/apricot"
-  name "croptopia:apricot_sapling"
-}
-tag "forge:apricots" "items" {
-  tag "forge:crops/apricot"
-  tag "forge:fruits/apricot"
-  name "croptopia:apricot"
-}
 tag "forge:armor/diamond" "items" {
   name "minecraft:diamond_boots"
   name "minecraft:diamond_chestplate"
@@ -6747,38 +7189,8 @@ tag "forge:armor/netherite" "items" {
   name "minecraft:netherite_helmet"
   name "minecraft:netherite_leggings"
 }
-tag "forge:artichoke_dips" "items" {
-  name "croptopia:artichoke_dip"
-}
-tag "forge:artichoke_seeds" "items" {
-  tag "forge:seeds/artichoke"
-  name "croptopia:artichoke_seed"
-}
-tag "forge:artichokes" "items" {
-  tag "forge:crops/artichoke"
-  tag "forge:vegetables/artichoke"
-  name "croptopia:artichoke"
-}
-tag "forge:asparagus" "items" {
-  tag "forge:crops/asparagus"
-  tag "forge:vegetables/asparagus"
-  name "croptopia:asparagus"
-}
-tag "forge:asparagus_seeds" "items" {
-  tag "forge:seeds/asparagus"
-  name "croptopia:asparagus_seed"
-}
 tag "forge:asphalt" "blocks,items" {
   name "immersivepetroleum:asphalt"
-}
-tag "forge:avocado_saplings" "items" {
-  tag "forge:saplings/avocado"
-  name "croptopia:avocado_sapling"
-}
-tag "forge:avocados" "items" {
-  tag "forge:crops/avocado"
-  tag "forge:fruits/avocado"
-  name "croptopia:avocado"
 }
 tag "forge:axes" "items" {
   name "bloodmagic:soulaxe"
@@ -6795,42 +7207,6 @@ tag "forge:axes" "items" {
   name "silentgear:mattock"
   name "silentgear:paxel"
   name "silentgear:saw"
-}
-tag "forge:baked_beans" "items" {
-  name "croptopia:baked_beans"
-}
-tag "forge:baked_sweet_potatos" "items" {
-  name "croptopia:baked_sweet_potato"
-}
-tag "forge:baked_yams" "items" {
-  name "croptopia:baked_yam"
-}
-tag "forge:banana_cream_pies" "items" {
-  name "croptopia:banana_cream_pie"
-}
-tag "forge:banana_nut_breads" "items" {
-  name "croptopia:banana_nut_bread"
-}
-tag "forge:banana_saplings" "items" {
-  tag "forge:saplings/banana"
-  name "croptopia:banana_sapling"
-}
-tag "forge:banana_smoothies" "items" {
-  name "croptopia:banana_smoothie"
-}
-tag "forge:bananas" "items" {
-  tag "forge:crops/banana"
-  tag "forge:fruits/banana"
-  name "croptopia:banana"
-}
-tag "forge:barley" "items" {
-  tag "forge:crops/barley"
-  tag "forge:grain/barley"
-  name "croptopia:barley"
-}
-tag "forge:barley_seeds" "items" {
-  tag "forge:seeds/barley"
-  name "croptopia:barley_seed"
 }
 tag "forge:barrels" "blocks" {
   tag "forge:barrels/wooden"
@@ -6850,40 +7226,11 @@ tag "forge:barrels/wooden" "blocks,items" {
   name "betterendforge:tenanea_barrel"
   name "betterendforge:umbrella_tree_barrel"
 }
-tag "forge:basil" "items" {
-  tag "forge:crops/basil"
-  name "croptopia:basil"
-}
-tag "forge:basil_seeds" "items" {
-  tag "forge:seeds/basil"
-  name "croptopia:basil_seed"
-}
 tag "forge:batteries" "items" {
   name "mekanism:energy_tablet"
 }
 tag "forge:beacon_payment" "items" {
   tag "create:create_ingots"
-}
-tag "forge:beef_jerkies" "items" {
-  name "croptopia:beef_jerky"
-}
-tag "forge:beef_wellington" "items" {
-  name "croptopia:beef_wellington"
-}
-tag "forge:beers" "items" {
-  name "croptopia:beer"
-}
-tag "forge:beetroot_salads" "items" {
-  name "croptopia:beetroot_salad"
-}
-tag "forge:bellpepper_seeds" "items" {
-  tag "forge:seeds/bellpepper"
-  name "croptopia:bellpepper_seed"
-}
-tag "forge:bellpeppers" "items" {
-  tag "forge:crops/bellpepper"
-  tag "forge:fruits/bellpepper"
-  name "croptopia:bellpepper"
 }
 tag "forge:biodiesel" "fluids" {
   name "immersiveengineering:biodiesel"
@@ -6903,49 +7250,12 @@ tag "forge:bitumen" "items" {
 tag "forge:black_sand" "blocks,items" {
   name "byg:black_sand"
 }
-tag "forge:blackbean_seeds" "items" {
-  tag "forge:seeds/blackbean"
-  name "croptopia:blackbean_seed"
-}
-tag "forge:blackbeans" "items" {
-  tag "forge:crops/blackbean"
-  name "croptopia:blackbean"
-}
-tag "forge:blackberries" "items" {
-  tag "forge:crops/blackberry"
-  tag "forge:fruits/blackberry"
-  name "croptopia:blackberry"
-}
-tag "forge:blackberry_jams" "items" {
-  tag "forge:jams/blackberry_jam"
-  name "croptopia:blackberry_jam"
-}
-tag "forge:blackberry_seeds" "items" {
-  tag "forge:seeds/blackberry"
-  name "croptopia:blackberry_seed"
-}
 tag "forge:blackstone" "items" {
   name "minecraft:blackstone"
   name "minecraft:gilded_blackstone"
 }
-tag "forge:blts" "items" {
-  name "croptopia:blt"
-}
 tag "forge:blue_sand" "blocks,items" {
   name "byg:blue_sand"
-}
-tag "forge:blueberries" "items" {
-  tag "forge:crops/blueberry"
-  tag "forge:fruits/blueberry"
-  name "croptopia:blueberry"
-}
-tag "forge:blueberry_jams" "items" {
-  tag "forge:jams/blueberry_jam"
-  name "croptopia:blueberry_jam"
-}
-tag "forge:blueberry_seeds" "items" {
-  tag "forge:seeds/blueberry"
-  name "croptopia:blueberry_seed"
 }
 tag "forge:bone_block" "items" {
   name "minecraft:bone_block"
@@ -7055,9 +7365,6 @@ tag "forge:boots" "items" {
   name "byg:ametrine_boots"
   name "silentgear:boots"
 }
-tag "forge:borscht" "items" {
-  name "croptopia:borscht"
-}
 tag "forge:bows" "items" {
   name "silentgear:bow"
 }
@@ -7070,18 +7377,6 @@ tag "forge:bread/wheat" "items" {
 tag "forge:brine" "fluids" {
   name "mekanism:brine"
   name "mekanism:flowing_brine"
-}
-tag "forge:broccoli" "items" {
-  tag "forge:crops/broccoli"
-  tag "forge:vegetables/broccoli"
-  name "croptopia:broccoli"
-}
-tag "forge:broccoli_seeds" "items" {
-  tag "forge:seeds/broccoli"
-  name "croptopia:broccoli_seed"
-}
-tag "forge:brownies" "items" {
-  name "croptopia:brownies"
 }
 tag "forge:buckets" "items" {
   name "emendatusenigmatica:molten_aluminum_bucket"
@@ -7308,24 +7603,6 @@ tag "forge:bushes" "blocks" {
   name "byg:scorched_bush"
   name "byg:warped_bush"
 }
-tag "forge:buttered_toasts" "items" {
-  name "croptopia:buttered_toast"
-}
-tag "forge:butters" "items" {
-  name "croptopia:butter"
-}
-tag "forge:cabbage" "items" {
-  tag "forge:crops/cabbage"
-  tag "forge:vegetables/cabbage"
-  name "croptopia:cabbage"
-}
-tag "forge:cabbage_rolls" "items" {
-  name "croptopia:cabbage_roll"
-}
-tag "forge:cabbage_seeds" "items" {
-  tag "forge:seeds/cabbage"
-  name "croptopia:cabbage_seed"
-}
 tag "forge:cactus" "blocks" {
   name "byg:golden_spined_cactus" optional=true
   name "byg:mini_cactus" optional=true
@@ -7335,92 +7612,8 @@ tag "forge:cactus" "blocks" {
   name "byg:warped_cactus" optional=true
   name "minecraft:cactus"
 }
-tag "forge:caesar_salads" "items" {
-  name "croptopia:caesar_salad"
-}
-tag "forge:calamari" "items" {
-  name "croptopia:calamari"
-}
-tag "forge:candied_kumquats" "items" {
-  name "croptopia:candied_kumquats"
-}
-tag "forge:candied_nuts" "items" {
-  name "croptopia:candied_nuts"
-}
-tag "forge:candy_corns" "items" {
-  name "croptopia:candy_corn"
-}
-tag "forge:cantaloupe_seeds" "items" {
-  tag "forge:seeds/cantaloupe"
-  name "croptopia:cantaloupe_seed"
-}
-tag "forge:cantaloupes" "items" {
-  tag "forge:crops/cantaloupe"
-  tag "forge:fruits/cantaloupe"
-  name "croptopia:cantaloupe"
-}
-tag "forge:caramel" "items" {
-  name "croptopia:caramel"
-}
-tag "forge:cashew_chickens" "items" {
-  name "croptopia:cashew_chicken"
-}
-tag "forge:cashew_saplings" "items" {
-  tag "forge:saplings/cashew"
-  name "croptopia:cashew_sapling"
-}
-tag "forge:cashews" "items" {
-  tag "forge:crops/cashew"
-  name "croptopia:cashew"
-}
-tag "forge:cauliflower" "items" {
-  tag "forge:crops/cauliflower"
-  tag "forge:vegetables/cauliflower"
-  name "croptopia:cauliflower"
-}
-tag "forge:cauliflower_seeds" "items" {
-  tag "forge:seeds/cauliflower"
-  name "croptopia:cauliflower_seed"
-}
-tag "forge:celery" "items" {
-  tag "forge:crops/celery"
-  tag "forge:vegetables/celery"
-  name "croptopia:celery"
-}
-tag "forge:celery_seeds" "items" {
-  tag "forge:seeds/celery"
-  name "croptopia:celery_seed"
-}
 tag "forge:charcoal" "items" {
   name "minecraft:charcoal"
-}
-tag "forge:cheese_cakes" "items" {
-  name "croptopia:cheese_cake"
-}
-tag "forge:cheese_pizzas" "items" {
-  name "croptopia:cheese_pizza"
-}
-tag "forge:cheeseburgers" "items" {
-  name "croptopia:cheeseburger"
-}
-tag "forge:cheeses" "items" {
-  name "croptopia:cheese"
-}
-tag "forge:cherries" "items" {
-  tag "forge:crops/cherry"
-  tag "forge:fruits/cherry"
-  name "croptopia:cherry"
-}
-tag "forge:cherry_jams" "items" {
-  tag "forge:jams/cherry_jam"
-  name "croptopia:cherry_jam"
-}
-tag "forge:cherry_pies" "items" {
-  name "croptopia:cherry_pie"
-}
-tag "forge:cherry_saplings" "items" {
-  tag "forge:saplings/cherry"
-  name "croptopia:cherry_sapling"
 }
 tag "forge:chestplates" "items" {
   name "byg:ametrine_chestplate"
@@ -7540,23 +7733,6 @@ tag "forge:chests/wooden" "blocks,items" {
   name "upgrade_aquatic:river_chest"
   name "upgrade_aquatic:river_trapped_chest"
 }
-tag "forge:chicken_and_dumplings" "items" {
-  name "croptopia:chicken_and_dumplings"
-}
-tag "forge:chicken_and_noodles" "items" {
-  name "croptopia:chicken_and_noodles"
-}
-tag "forge:chicken_and_rice" "items" {
-  name "croptopia:chicken_and_rice"
-}
-tag "forge:chile_pepper_seeds" "items" {
-  tag "forge:seeds/chilepepper"
-  name "croptopia:chile_pepper_seed"
-}
-tag "forge:chile_peppers" "items" {
-  tag "forge:crops/chile_pepper"
-  name "croptopia:chile_pepper"
-}
 tag "forge:chlorine" "fluids" {
   name "mekanism:chlorine"
   name "mekanism:flowing_chlorine"
@@ -7564,12 +7740,6 @@ tag "forge:chlorine" "fluids" {
 tag "forge:chocolate" "fluids" {
   name "create:chocolate"
   name "create:flowing_chocolate"
-}
-tag "forge:chocolate_milkshakes" "items" {
-  name "croptopia:chocolate_milkshake"
-}
-tag "forge:chocolates" "items" {
-  name "croptopia:chocolate"
 }
 tag "forge:chunks" "items" {
   name "emendatusenigmatica:aluminum_chunk"
@@ -7701,14 +7871,6 @@ tag "forge:chunks/uranium" "items" {
 tag "forge:chunks/zinc" "items" {
   name "emendatusenigmatica:zinc_chunk"
 }
-tag "forge:cinnamon" "items" {
-  tag "forge:crops/cinnamon"
-  name "croptopia:cinnamon"
-}
-tag "forge:cinnamon_saplings" "items" {
-  tag "forge:saplings/cinnamon"
-  name "croptopia:cinnamon_sapling"
-}
 tag "forge:circuits" "items" {
   tag "forge:circuits/advanced"
   tag "forge:circuits/basic"
@@ -7726,9 +7888,6 @@ tag "forge:circuits/elite" "items" {
 }
 tag "forge:circuits/ultimate" "items" {
   name "mekanism:ultimate_control_circuit"
-}
-tag "forge:clams" "items" {
-  name "croptopia:clam"
 }
 tag "forge:clay" "items" {
   name "minecraft:clay"
@@ -7900,26 +8059,6 @@ tag "forge:cobblestone" "blocks,items" {
   name "minecraft:mossy_cobblestone"
   name "quark:cobbedstone"
 }
-tag "forge:coconut_saplings" "items" {
-  tag "forge:saplings/coconut"
-  name "croptopia:coconut_sapling"
-}
-tag "forge:coconuts" "items" {
-  tag "forge:crops/coconut"
-  tag "forge:fruits/coconut"
-  name "croptopia:coconut"
-}
-tag "forge:coffee_beans" "items" {
-  tag "forge:crops/coffee_beans"
-  name "croptopia:coffee_beans"
-}
-tag "forge:coffee_seeds" "items" {
-  tag "forge:seeds/coffee_beans"
-  name "croptopia:coffee_seed"
-}
-tag "forge:coffees" "items" {
-  name "croptopia:coffee"
-}
 tag "forge:coins" "items" {
   tag "forge:coins/bronze"
   tag "forge:coins/constantan"
@@ -7985,19 +8124,12 @@ tag "forge:coins/tin" "items" {
 tag "forge:concrete" "fluids" {
   name "immersiveengineering:concrete"
 }
-tag "forge:cooked_anchovies" "items" {
-  name "croptopia:cooked_anchovy"
-}
 tag "forge:cooked_bacon" "items" {
-  name "croptopia:cooked_bacon"
   name "farmersdelight:cooked_bacon"
 }
 tag "forge:cooked_beef" "items" {
   name "farmersdelight:beef_patty"
   name "minecraft:cooked_beef"
-}
-tag "forge:cooked_calamari" "items" {
-  name "croptopia:cooked_calamari"
 }
 tag "forge:cooked_chicken" "items" {
   name "farmersdelight:cooked_chicken_cuts"
@@ -8047,51 +8179,67 @@ tag "forge:cooked_pork" "items" {
 tag "forge:cooked_rabbit" "items" {
   name "minecraft:cooked_rabbit"
 }
-tag "forge:cooked_shrimp" "items" {
-  name "croptopia:cooked_shrimp"
-}
-tag "forge:cooked_tuna" "items" {
-  name "croptopia:cooked_tuna"
-}
 tag "forge:cooked_venison" "items" {
   name "abnormals_delight:cooked_venison_shanks"
 }
-tag "forge:cooking_pots" "items" {
-  name "croptopia:cooking_pot"
-}
-tag "forge:corn" "items" {
-  tag "forge:crops/corn"
-  tag "forge:grain/corn"
-  name "croptopia:corn"
-}
-tag "forge:corn_breads" "items" {
-  name "croptopia:corn_bread"
-}
-tag "forge:corn_seeds" "items" {
-  tag "forge:seeds/corn"
-  name "croptopia:corn_seed"
-}
-tag "forge:cornish_pasty" "items" {
-  name "croptopia:cornish_pasty"
-}
-tag "forge:crab_legs" "items" {
-  name "croptopia:crab_legs"
-}
-tag "forge:crabs" "items" {
-  name "croptopia:crab"
-}
-tag "forge:cranberries" "items" {
-  tag "forge:crops/cranberry"
-  tag "forge:fruits/cranberry"
-  name "croptopia:cranberry"
-}
-tag "forge:cranberry_juices" "items" {
-  tag "forge:juices/cranberry_juice"
-  name "croptopia:cranberry_juice"
-}
-tag "forge:cranberry_seeds" "items" {
-  tag "forge:seeds/cranberry"
-  name "croptopia:cranberry_seed"
+tag "forge:crafting_tables" "blocks,items" {
+  name "variant_crafting_tables:acacia_crafting_table"
+  name "variant_crafting_tables:araucaria_crafting_table"
+  name "variant_crafting_tables:aspen_crafting_table"
+  name "variant_crafting_tables:azure_crafting_table"
+  name "variant_crafting_tables:bamboo_crafting_table"
+  name "variant_crafting_tables:birch_crafting_table"
+  name "variant_crafting_tables:bop_cherry_crafting_table"
+  name "variant_crafting_tables:bop_dead_crafting_table"
+  name "variant_crafting_tables:bop_fir_crafting_table"
+  name "variant_crafting_tables:bop_hellbark_crafting_table"
+  name "variant_crafting_tables:bop_jacaranda_crafting_table"
+  name "variant_crafting_tables:bop_magic_crafting_table"
+  name "variant_crafting_tables:bop_mahogany_crafting_table"
+  name "variant_crafting_tables:bop_palm_crafting_table"
+  name "variant_crafting_tables:bop_redwood_crafting_table"
+  name "variant_crafting_tables:bop_umbran_crafting_table"
+  name "variant_crafting_tables:bop_willow_crafting_table"
+  name "variant_crafting_tables:brown_mushroom_crafting_table"
+  name "variant_crafting_tables:canopy_crafting_table"
+  name "variant_crafting_tables:cherry_crafting_table"
+  name "variant_crafting_tables:crimson_crafting_table"
+  name "variant_crafting_tables:cypress_crafting_table"
+  name "variant_crafting_tables:dark_oak_crafting_table"
+  name "variant_crafting_tables:darkwood_crafting_table"
+  name "variant_crafting_tables:driftwood_crafting_table"
+  name "variant_crafting_tables:fairy_ring_mushroom_crafting_table"
+  name "variant_crafting_tables:glowshroom_crafting_table"
+  name "variant_crafting_tables:grimwood_crafting_table"
+  name "variant_crafting_tables:heidiphyllum_crafting_table"
+  name "variant_crafting_tables:jacaranda_crafting_table"
+  name "variant_crafting_tables:jungle_crafting_table"
+  name "variant_crafting_tables:kousa_crafting_table"
+  name "variant_crafting_tables:liriodendrites_crafting_table"
+  name "variant_crafting_tables:mangrove_crafting_table"
+  name "variant_crafting_tables:maple_crafting_table"
+  name "variant_crafting_tables:metasequoia_crafting_table"
+  name "variant_crafting_tables:minewood_crafting_table"
+  name "variant_crafting_tables:morado_crafting_table"
+  name "variant_crafting_tables:petrified_crafting_table"
+  name "variant_crafting_tables:poise_crafting_table"
+  name "variant_crafting_tables:protojuniperoxylon_crafting_table"
+  name "variant_crafting_tables:protopiceoxylon_crafting_table"
+  name "variant_crafting_tables:red_mushroom_crafting_table"
+  name "variant_crafting_tables:redbud_crafting_table"
+  name "variant_crafting_tables:river_crafting_table"
+  name "variant_crafting_tables:rosewood_crafting_table"
+  name "variant_crafting_tables:sortingwood_crafting_table"
+  name "variant_crafting_tables:spruce_crafting_table"
+  name "variant_crafting_tables:timewood_crafting_table"
+  name "variant_crafting_tables:transwood_crafting_table"
+  name "variant_crafting_tables:twilight_mangrove_crafting_table"
+  name "variant_crafting_tables:twilight_oak_crafting_table"
+  name "variant_crafting_tables:warped_crafting_table"
+  name "variant_crafting_tables:willow_crafting_table"
+  name "variant_crafting_tables:wisteria_crafting_table"
+  name "variant_crafting_tables:yucca_crafting_table"
+  name "variant_crafting_tables:zamites_crafting_table"
 }
 tag "forge:creepers" "entity_types" {
   name "minecraft:creeper"
@@ -8121,32 +8269,6 @@ tag "forge:crop_blocks" "blocks" {
   name "minecraft:sugar_cane"
 }
 tag "forge:crops" "items" {
-  tag "forge:almonds"
-  tag "forge:apples"
-  tag "forge:apricots"
-  tag "forge:artichokes"
-  tag "forge:asparagus"
-  tag "forge:avocados"
-  tag "forge:bananas"
-  tag "forge:barley"
-  tag "forge:basil"
-  tag "forge:bellpeppers"
-  tag "forge:blackbeans"
-  tag "forge:blackberries"
-  tag "forge:blueberries"
-  tag "forge:broccoli"
-  tag "forge:cabbage"
-  tag "forge:cantaloupes"
-  tag "forge:cashews"
-  tag "forge:cauliflower"
-  tag "forge:celery"
-  tag "forge:cherries"
-  tag "forge:chile_peppers"
-  tag "forge:cinnamon"
-  tag "forge:coconuts"
-  tag "forge:coffee_beans"
-  tag "forge:corn"
-  tag "forge:cranberries"
   tag "forge:crops/beetroot"
   tag "forge:crops/cabbage"
   tag "forge:crops/carrot"
@@ -8156,347 +8278,41 @@ tag "forge:crops" "items" {
   tag "forge:crops/rice"
   tag "forge:crops/tomato"
   tag "forge:crops/wheat"
-  tag "forge:cucumbers"
-  tag "forge:currants"
-  tag "forge:dates"
-  tag "forge:dragonfruits"
-  tag "forge:eggplants"
-  tag "forge:elderberries"
-  tag "forge:figs"
-  tag "forge:garlic"
-  tag "forge:gingers"
-  tag "forge:grapefruits"
-  tag "forge:grapes"
-  tag "forge:greenbeans"
-  tag "forge:greenonions"
-  tag "forge:honeydew"
-  tag "forge:hops"
-  tag "forge:kale"
-  tag "forge:kiwis"
-  tag "forge:kumquats"
-  tag "forge:leek"
-  tag "forge:lemons"
-  tag "forge:lettuce"
-  tag "forge:limes"
-  tag "forge:mangos"
-  tag "forge:mustard"
-  tag "forge:nectarines"
-  tag "forge:nutmegs"
-  tag "forge:oat"
-  tag "forge:olives"
-  tag "forge:onions"
-  tag "forge:oranges"
-  tag "forge:peaches"
-  tag "forge:peanuts"
-  tag "forge:pears"
-  tag "forge:pecans"
-  tag "forge:pepper"
-  tag "forge:persimmons"
-  tag "forge:pineapples"
-  tag "forge:plums"
-  tag "forge:radishes"
-  tag "forge:raspberries"
-  tag "forge:rhubarb"
-  tag "forge:rice"
-  tag "forge:rutabagas"
-  tag "forge:saguaros"
-  tag "forge:soybeans"
-  tag "forge:spinach"
-  tag "forge:squashes"
-  tag "forge:starfruits"
-  tag "forge:strawberries"
-  tag "forge:sweetpotatos"
-  tag "forge:tea_leaves"
-  tag "forge:tomatillos"
-  tag "forge:tomatoes"
-  tag "forge:turmeric"
-  tag "forge:turnips"
-  tag "forge:vanilla"
-  tag "forge:walnuts"
-  tag "forge:yams"
-  tag "forge:zucchini"
   name "byg:blueberries"
   name "byg:crimson_berries"
   name "byg:green_apple"
   name "silentgems:fluffy_puff"
 }
-tag "forge:crops/almond" "items" {
-  name "croptopia:almond"
-}
-tag "forge:crops/apple" "items" {
-  name "minecraft:apple"
-}
-tag "forge:crops/apricot" "items" {
-  name "croptopia:apricot"
-}
-tag "forge:crops/artichoke" "items" {
-  name "croptopia:artichoke"
-}
-tag "forge:crops/asparagus" "items" {
-  name "croptopia:asparagus"
-}
-tag "forge:crops/avocado" "items" {
-  name "croptopia:avocado"
-}
-tag "forge:crops/banana" "items" {
-  name "croptopia:banana"
-}
-tag "forge:crops/barley" "items" {
-  name "croptopia:barley"
-}
-tag "forge:crops/basil" "items" {
-  name "croptopia:basil"
-}
 tag "forge:crops/beetroot" "items" {
   name "minecraft:beetroot"
 }
-tag "forge:crops/bellpepper" "items" {
-  name "croptopia:bellpepper"
-}
-tag "forge:crops/blackbean" "items" {
-  name "croptopia:blackbean"
-}
-tag "forge:crops/blackberry" "items" {
-  name "croptopia:blackberry"
-}
-tag "forge:crops/blueberry" "items" {
-  name "croptopia:blueberry"
-}
-tag "forge:crops/broccoli" "items" {
-  name "croptopia:broccoli"
-}
 tag "forge:crops/cabbage" "items" {
-  name "croptopia:cabbage"
   name "farmersdelight:cabbage"
   name "farmersdelight:cabbage_leaf"
-}
-tag "forge:crops/cantaloupe" "items" {
-  name "croptopia:cantaloupe"
 }
 tag "forge:crops/carrot" "items" {
   name "minecraft:carrot"
 }
-tag "forge:crops/cashew" "items" {
-  name "croptopia:cashew"
-}
-tag "forge:crops/cauliflower" "items" {
-  name "croptopia:cauliflower"
-}
-tag "forge:crops/celery" "items" {
-  name "croptopia:celery"
-}
-tag "forge:crops/cherry" "items" {
-  name "croptopia:cherry"
-}
-tag "forge:crops/chile_pepper" "items" {
-  name "croptopia:chile_pepper"
-}
-tag "forge:crops/cinnamon" "items" {
-  name "croptopia:cinnamon"
-}
-tag "forge:crops/coconut" "items" {
-  name "croptopia:coconut"
-}
-tag "forge:crops/coffee_beans" "items" {
-  name "croptopia:coffee_beans"
-}
 tag "forge:crops/corn" "items" {
-  name "croptopia:corn"
-}
-tag "forge:crops/cranberry" "items" {
-  name "croptopia:cranberry"
-}
-tag "forge:crops/cucumber" "items" {
-  name "croptopia:cucumber"
-}
-tag "forge:crops/currant" "items" {
-  name "croptopia:currant"
-}
-tag "forge:crops/date" "items" {
-  name "croptopia:date"
-}
-tag "forge:crops/dragonfruit" "items" {
-  name "croptopia:dragonfruit"
-}
-tag "forge:crops/eggplant" "items" {
-  name "croptopia:eggplant"
-}
-tag "forge:crops/elderberry" "items" {
-  name "croptopia:elderberry"
-}
-tag "forge:crops/fig" "items" {
-  name "croptopia:fig"
-}
-tag "forge:crops/garlic" "items" {
-  name "croptopia:garlic"
-}
-tag "forge:crops/ginger" "items" {
-  name "croptopia:ginger"
-}
-tag "forge:crops/grape" "items" {
-  name "croptopia:grape"
-}
-tag "forge:crops/grapefruit" "items" {
-  name "croptopia:grapefruit"
-}
-tag "forge:crops/greenbean" "items" {
-  name "croptopia:greenbean"
-}
-tag "forge:crops/greenonion" "items" {
-  name "croptopia:greenonion"
-}
-tag "forge:crops/honeydew" "items" {
-  name "croptopia:honeydew"
-}
-tag "forge:crops/hops" "items" {
-  name "croptopia:hops"
-}
-tag "forge:crops/kale" "items" {
-  name "croptopia:kale"
-}
-tag "forge:crops/kiwi" "items" {
-  name "croptopia:kiwi"
-}
-tag "forge:crops/kumquat" "items" {
-  name "croptopia:kumquat"
-}
-tag "forge:crops/leek" "items" {
-  name "croptopia:leek"
-}
-tag "forge:crops/lemon" "items" {
-  name "croptopia:lemon"
-}
-tag "forge:crops/lettuce" "items" {
-  name "croptopia:lettuce"
-}
-tag "forge:crops/lime" "items" {
-  name "croptopia:lime"
-}
-tag "forge:crops/mango" "items" {
-  name "croptopia:mango"
-}
-tag "forge:crops/mustard" "items" {
-  name "croptopia:mustard"
-}
-tag "forge:crops/nectarine" "items" {
-  name "croptopia:nectarine"
+  name "culturaldelights:corn_cob"
 }
 tag "forge:crops/nether_wart" "items" {
   name "minecraft:nether_wart"
 }
-tag "forge:crops/nutmeg" "items" {
-  name "croptopia:nutmeg"
-}
-tag "forge:crops/oat" "items" {
-  name "croptopia:oat"
-}
-tag "forge:crops/oats" "items" {
-  name "croptopia:oat"
-}
-tag "forge:crops/olive" "items" {
-  name "croptopia:olive"
-}
 tag "forge:crops/onion" "items" {
-  name "croptopia:onion"
   name "farmersdelight:onion"
-}
-tag "forge:crops/orange" "items" {
-  name "croptopia:orange"
-}
-tag "forge:crops/peach" "items" {
-  name "croptopia:peach"
-}
-tag "forge:crops/peanut" "items" {
-  name "croptopia:peanut"
-}
-tag "forge:crops/pear" "items" {
-  name "croptopia:pear"
-}
-tag "forge:crops/pecan" "items" {
-  name "croptopia:pecan"
-}
-tag "forge:crops/pepper" "items" {
-  name "croptopia:pepper"
-}
-tag "forge:crops/persimmon" "items" {
-  name "croptopia:persimmon"
-}
-tag "forge:crops/pineapple" "items" {
-  name "croptopia:pineapple"
-}
-tag "forge:crops/plum" "items" {
-  name "croptopia:plum"
 }
 tag "forge:crops/potato" "items" {
   name "minecraft:potato"
 }
-tag "forge:crops/radish" "items" {
-  name "croptopia:radish"
-}
-tag "forge:crops/raspberry" "items" {
-  name "croptopia:raspberry"
-}
-tag "forge:crops/rhubarb" "items" {
-  name "croptopia:rhubarb"
-}
 tag "forge:crops/rice" "items" {
-  name "croptopia:rice"
   name "farmersdelight:rice"
 }
-tag "forge:crops/rutabaga" "items" {
-  name "croptopia:rutabaga"
-}
-tag "forge:crops/saguaro" "items" {
-  name "croptopia:saguaro"
-}
-tag "forge:crops/soybean" "items" {
-  name "croptopia:soybean"
-}
-tag "forge:crops/spinach" "items" {
-  name "croptopia:spinach"
-}
-tag "forge:crops/squash" "items" {
-  name "croptopia:squash"
-}
-tag "forge:crops/starfruit" "items" {
-  name "croptopia:starfruit"
-}
-tag "forge:crops/strawberry" "items" {
-  name "croptopia:strawberry"
-}
-tag "forge:crops/sweetpotato" "items" {
-  name "croptopia:sweetpotato"
-}
-tag "forge:crops/tea_leaves" "items" {
-  name "croptopia:tea_leaves"
-}
-tag "forge:crops/tomatillo" "items" {
-  name "croptopia:tomatillo"
-}
 tag "forge:crops/tomato" "items" {
-  name "croptopia:tomato"
   name "farmersdelight:tomato"
-}
-tag "forge:crops/turmeric" "items" {
-  name "croptopia:turmeric"
-}
-tag "forge:crops/turnip" "items" {
-  name "croptopia:turnip"
-}
-tag "forge:crops/vanilla" "items" {
-  name "croptopia:vanilla"
-}
-tag "forge:crops/walnut" "items" {
-  name "croptopia:walnut"
 }
 tag "forge:crops/wheat" "items" {
   name "minecraft:wheat"
-}
-tag "forge:crops/yam" "items" {
-  name "croptopia:yam"
-}
-tag "forge:crops/zucchini" "items" {
-  name "croptopia:zucchini"
 }
 tag "forge:crossbows" "items" {
   name "silentgear:crossbow"
@@ -8504,36 +8320,6 @@ tag "forge:crossbows" "items" {
 tag "forge:crude_oil" "fluids" {
   name "immersivepetroleum:oil"
   name "thermal:crude_oil"
-}
-tag "forge:cucumber_salads" "items" {
-  name "croptopia:cucumber_salad"
-}
-tag "forge:cucumber_seeds" "items" {
-  tag "forge:seeds/cucumber"
-  name "croptopia:cucumber_seed"
-}
-tag "forge:cucumbers" "items" {
-  tag "forge:crops/cucumber"
-  tag "forge:vegetables/cucumber"
-  name "croptopia:cucumber"
-}
-tag "forge:currant_seeds" "items" {
-  tag "forge:seeds/currant"
-  name "croptopia:currant_seed"
-}
-tag "forge:currants" "items" {
-  tag "forge:crops/currant"
-  tag "forge:fruits/currant"
-  name "croptopia:currant"
-}
-tag "forge:date_saplings" "items" {
-  tag "forge:saplings/date"
-  name "croptopia:date_sapling"
-}
-tag "forge:dates" "items" {
-  tag "forge:crops/date"
-  tag "forge:fruits/date"
-  name "croptopia:date"
 }
 tag "forge:dead_plants" "blocks" {
   name "biomesoplenty:dead_branch" optional=true
@@ -8550,9 +8336,6 @@ tag "forge:dead_plants" "blocks" {
   name "minecraft:dead_horn_coral_fan"
   name "minecraft:dead_tube_coral"
   name "minecraft:dead_tube_coral_fan"
-}
-tag "forge:deep_fried_shrimp" "items" {
-  name "croptopia:deep_fried_shrimp"
 }
 tag "forge:demon_will" "fluids" {
   tag "bloodsmeltery:demon_will"
@@ -8606,21 +8389,6 @@ tag "forge:dirt" "blocks,items" {
 }
 tag "forge:doors" "blocks,items" {
   name "ars_nouveau:archwood_door"
-}
-tag "forge:doughnuts" "items" {
-  name "croptopia:doughnut"
-}
-tag "forge:doughs" "items" {
-  name "croptopia:dough"
-}
-tag "forge:dragonfruit_saplings" "items" {
-  tag "forge:saplings/dragonfruit"
-  name "croptopia:dragonfruit_sapling"
-}
-tag "forge:dragonfruits" "items" {
-  tag "forge:crops/dragonfruit"
-  tag "forge:fruits/dragonfruit"
-  name "croptopia:dragonfruit"
 }
 tag "forge:drill_fuel" "fluids" {
   tag "forge:biodiesel"
@@ -9121,18 +8889,6 @@ tag "forge:dyes/yellow" "items" {
   name "mekanism:dust_sulfur"
   name "minecraft:yellow_dye"
 }
-tag "forge:egg_rolls" "items" {
-  name "croptopia:egg_roll"
-}
-tag "forge:eggplant_seeds" "items" {
-  tag "forge:seeds/eggplant"
-  name "croptopia:eggplant_seed"
-}
-tag "forge:eggplants" "items" {
-  tag "forge:crops/eggplant"
-  tag "forge:vegetables/eggplant"
-  name "croptopia:eggplant"
-}
 tag "forge:eggs" "items" {
   name "iceandfire:deathworm_egg"
   name "iceandfire:deathworm_egg_giant"
@@ -9140,19 +8896,6 @@ tag "forge:eggs" "items" {
   name "iceandfire:myrmex_desert_egg"
   name "iceandfire:myrmex_jungle_egg"
   name "minecraft:egg"
-}
-tag "forge:elderberries" "items" {
-  tag "forge:crops/elderberry"
-  tag "forge:fruits/elderberry"
-  name "croptopia:elderberry"
-}
-tag "forge:elderberry_jams" "items" {
-  tag "forge:jams/elderberry_jam"
-  name "croptopia:elderberry_jam"
-}
-tag "forge:elderberry_seeds" "items" {
-  tag "forge:seeds/elderberry"
-  name "croptopia:elderberry_seed"
 }
 tag "forge:elytra" "items" {
   name "minecraft:elytra"
@@ -9238,9 +8981,6 @@ tag "forge:ethanol" "fluids" {
 tag "forge:ethene" "fluids" {
   name "mekanism:ethene"
   name "mekanism:flowing_ethene"
-}
-tag "forge:eton_mess" "items" {
-  name "croptopia:eton_mess"
 }
 tag "forge:experience" "fluids" {
   name "cofh_core:experience"
@@ -9460,30 +9200,12 @@ tag "forge:fences/wooden" "items" {
 tag "forge:fiber_hemp" "items" {
   name "immersiveengineering:hemp_fiber"
 }
-tag "forge:fig_saplings" "items" {
-  tag "forge:saplings/fig"
-  name "croptopia:fig_sapling"
-}
-tag "forge:figgy_pudding" "items" {
-  name "croptopia:figgy_pudding"
-}
-tag "forge:figs" "items" {
-  tag "forge:crops/fig"
-  tag "forge:fruits/fig"
-  name "croptopia:fig"
-}
-tag "forge:fish_and_chips" "items" {
-  name "croptopia:fish_and_chips"
-}
 tag "forge:fishing_rods" "items" {
   name "aquaculture:diamond_fishing_rod" optional=true
   name "aquaculture:gold_fishing_rod" optional=true
   name "aquaculture:iron_fishing_rod" optional=true
   name "aquaculture:neptunium_fishing_rod" optional=true
   name "minecraft:fishing_rod"
-}
-tag "forge:flour" "items" {
-  name "croptopia:flour"
 }
 tag "forge:flowers" "blocks" {
   name "byg:alpine_bellflower"
@@ -9538,9 +9260,6 @@ tag "forge:flowers" "blocks" {
   name "byg:yellow_daffodil"
   name "byg:yellow_tulip"
 }
-tag "forge:food_press" "items" {
-  name "croptopia:food_press"
-}
 tag "forge:foods/fish/cooked" "items" {
   name "minecraft:cooked_cod"
   name "minecraft:cooked_salmon"
@@ -9564,62 +9283,8 @@ tag "forge:foods/meat/raw" "items" {
   name "minecraft:porkchop"
   name "minecraft:rabbit"
 }
-tag "forge:french_fries" "items" {
-  name "croptopia:french_fries"
-}
-tag "forge:fried_calamari" "items" {
-  name "croptopia:fried_calamari"
-}
-tag "forge:fried_chickens" "items" {
-  name "croptopia:fried_chicken"
-}
-tag "forge:fruit_salads" "items" {
-  name "croptopia:fruit_salad"
-}
-tag "forge:fruit_smoothies" "items" {
-  name "croptopia:fruit_smoothie"
-}
 tag "forge:fruits" "items" {
-  tag "forge:almonds"
-  tag "forge:apples"
-  tag "forge:apricots"
-  tag "forge:avocados"
-  tag "forge:bananas"
-  tag "forge:bellpeppers"
-  tag "forge:blackberries"
-  tag "forge:blueberries"
-  tag "forge:cantaloupes"
-  tag "forge:cherries"
-  tag "forge:coconuts"
-  tag "forge:cranberries"
-  tag "forge:currants"
-  tag "forge:dates"
-  tag "forge:dragonfruits"
-  tag "forge:elderberries"
-  tag "forge:figs"
   tag "forge:fruits/mulberry"
-  tag "forge:grapefruits"
-  tag "forge:grapes"
-  tag "forge:honeydew"
-  tag "forge:kiwis"
-  tag "forge:kumquats"
-  tag "forge:lemons"
-  tag "forge:limes"
-  tag "forge:mangos"
-  tag "forge:nectarines"
-  tag "forge:olives"
-  tag "forge:oranges"
-  tag "forge:peaches"
-  tag "forge:pears"
-  tag "forge:pecans"
-  tag "forge:persimmons"
-  tag "forge:pineapples"
-  tag "forge:plums"
-  tag "forge:raspberries"
-  tag "forge:saguaros"
-  tag "forge:starfruits"
-  tag "forge:strawberries"
-  tag "forge:walnuts"
   name "betterendforge:blossom_berry"
   name "betterendforge:shadow_berry_raw"
   name "byg:baobab_fruit"
@@ -9630,128 +9295,8 @@ tag "forge:fruits" "items" {
   name "integrateddynamics:menril_berries"
   name "silentgear:nether_banana"
 }
-tag "forge:fruits/almond" "items" {
-  name "croptopia:almond"
-}
-tag "forge:fruits/apple" "items" {
-  name "minecraft:apple"
-}
-tag "forge:fruits/apricot" "items" {
-  name "croptopia:apricot"
-}
-tag "forge:fruits/avocado" "items" {
-  name "croptopia:avocado"
-}
-tag "forge:fruits/banana" "items" {
-  name "croptopia:banana"
-}
-tag "forge:fruits/bellpepper" "items" {
-  name "croptopia:bellpepper"
-}
-tag "forge:fruits/blackberry" "items" {
-  name "croptopia:blackberry"
-}
-tag "forge:fruits/blueberry" "items" {
-  name "croptopia:blueberry"
-}
-tag "forge:fruits/cantaloupe" "items" {
-  name "croptopia:cantaloupe"
-}
-tag "forge:fruits/cherry" "items" {
-  name "croptopia:cherry"
-}
-tag "forge:fruits/coconut" "items" {
-  name "croptopia:coconut"
-}
-tag "forge:fruits/cranberry" "items" {
-  name "croptopia:cranberry"
-}
-tag "forge:fruits/currant" "items" {
-  name "croptopia:currant"
-}
-tag "forge:fruits/date" "items" {
-  name "croptopia:date"
-}
-tag "forge:fruits/dragonfruit" "items" {
-  name "croptopia:dragonfruit"
-}
-tag "forge:fruits/elderberry" "items" {
-  name "croptopia:elderberry"
-}
-tag "forge:fruits/fig" "items" {
-  name "croptopia:fig"
-}
-tag "forge:fruits/grape" "items" {
-  name "croptopia:grape"
-}
-tag "forge:fruits/grapefruit" "items" {
-  name "croptopia:grapefruit"
-}
-tag "forge:fruits/honeydew" "items" {
-  name "croptopia:honeydew"
-}
-tag "forge:fruits/kiwi" "items" {
-  name "croptopia:kiwi"
-}
-tag "forge:fruits/kumquat" "items" {
-  name "croptopia:kumquat"
-}
-tag "forge:fruits/lemon" "items" {
-  name "croptopia:lemon"
-}
-tag "forge:fruits/lime" "items" {
-  name "croptopia:lime"
-}
-tag "forge:fruits/mango" "items" {
-  name "croptopia:mango"
-}
 tag "forge:fruits/mulberry" "items" {
   name "upgrade_aquatic:mulberry"
-}
-tag "forge:fruits/nectarine" "items" {
-  name "croptopia:nectarine"
-}
-tag "forge:fruits/olive" "items" {
-  name "croptopia:olive"
-}
-tag "forge:fruits/orange" "items" {
-  name "croptopia:orange"
-}
-tag "forge:fruits/peach" "items" {
-  name "croptopia:peach"
-}
-tag "forge:fruits/pear" "items" {
-  name "croptopia:pear"
-}
-tag "forge:fruits/pecan" "items" {
-  name "croptopia:pecan"
-}
-tag "forge:fruits/persimmon" "items" {
-  name "croptopia:persimmon"
-}
-tag "forge:fruits/pineapple" "items" {
-  name "croptopia:pineapple"
-}
-tag "forge:fruits/plum" "items" {
-  name "croptopia:plum"
-}
-tag "forge:fruits/raspberry" "items" {
-  name "croptopia:raspberry"
-}
-tag "forge:fruits/saguaro" "items" {
-  name "croptopia:saguaro"
-}
-tag "forge:fruits/starfruit" "items" {
-  name "croptopia:starfruit"
-}
-tag "forge:fruits/strawberry" "items" {
-  name "croptopia:strawberry"
-}
-tag "forge:fruits/walnut" "items" {
-  name "croptopia:walnut"
-}
-tag "forge:frying_pans" "items" {
-  name "croptopia:frying_pan"
 }
 tag "forge:fuels" "items" {
   tag "forge:fuels/bio"
@@ -9762,15 +9307,6 @@ tag "forge:fuels/bio" "items" {
 tag "forge:fusion_fuel" "fluids" {
   name "mekanismgenerators:flowing_fusion_fuel"
   name "mekanismgenerators:fusion_fuel"
-}
-tag "forge:garlic" "items" {
-  tag "forge:crops/garlic"
-  tag "forge:vegetables/garlic"
-  name "croptopia:garlic"
-}
-tag "forge:garlic_seeds" "items" {
-  tag "forge:seeds/garlic"
-  name "croptopia:garlic_seed"
 }
 tag "forge:gasoline" "fluids" {
   name "immersivepetroleum:gasoline"
@@ -10262,15 +9798,6 @@ tag "forge:gems/yellow_diamond" "items" {
 tag "forge:gems/zircon" "items" {
   name "silentgems:zircon"
 }
-tag "forge:ginger_seeds" "items" {
-  tag "forge:seeds/ginger"
-  name "croptopia:ginger_seed"
-}
-tag "forge:gingers" "items" {
-  tag "forge:crops/ginger"
-  tag "forge:vegetables/ginger"
-  name "croptopia:ginger"
-}
 tag "forge:glass" "blocks" {
   name "cavesandcliffs:tinted_glass"
 }
@@ -10490,70 +10017,21 @@ tag "forge:glass_panes/yellow" "blocks,items" {
   name "minecraft:yellow_stained_glass_pane"
   name "tconstruct:yellow_clear_stained_glass_pane"
 }
-tag "forge:glowing_calamari" "items" {
-  name "croptopia:glowing_calamari"
-}
 tag "forge:glowstone" "fluids" {
   name "thermal:glowstone"
 }
 tag "forge:glowstone" "items" {
   name "minecraft:glowstone"
 }
-tag "forge:goulashes" "items" {
-  name "croptopia:goulash"
-}
 tag "forge:grain" "items" {
-  tag "forge:barley"
-  tag "forge:corn"
   tag "forge:grain/rice"
   tag "forge:grain/wheat"
-  tag "forge:oat"
-  tag "forge:rice"
-}
-tag "forge:grain/barley" "items" {
-  name "croptopia:barley"
-}
-tag "forge:grain/corn" "items" {
-  name "croptopia:corn"
-}
-tag "forge:grain/oat" "items" {
-  name "croptopia:oat"
-}
-tag "forge:grain/oats" "items" {
-  name "croptopia:oat"
 }
 tag "forge:grain/rice" "items" {
-  name "croptopia:rice"
   name "farmersdelight:rice"
 }
 tag "forge:grain/wheat" "items" {
   name "minecraft:wheat"
-}
-tag "forge:grape_jams" "items" {
-  tag "forge:jams/grape_jam"
-  name "croptopia:grape_jam"
-}
-tag "forge:grape_juices" "items" {
-  tag "forge:juices/grape_juice"
-  name "croptopia:grape_juice"
-}
-tag "forge:grape_seeds" "items" {
-  tag "forge:seeds/grape"
-  name "croptopia:grape_seed"
-}
-tag "forge:grapefruit_saplings" "items" {
-  tag "forge:saplings/grapefruit"
-  name "croptopia:grapefruit_sapling"
-}
-tag "forge:grapefruits" "items" {
-  tag "forge:crops/grapefruit"
-  tag "forge:fruits/grapefruit"
-  name "croptopia:grapefruit"
-}
-tag "forge:grapes" "items" {
-  tag "forge:crops/grape"
-  tag "forge:fruits/grape"
-  name "croptopia:grape"
 }
 tag "forge:grass" "blocks" {
   name "byg:beach_grass"
@@ -10571,38 +10049,8 @@ tag "forge:grass" "blocks" {
 tag "forge:gravel" "blocks,items" {
   name "minecraft:gravel"
 }
-tag "forge:greenbean_seeds" "items" {
-  tag "forge:seeds/greenbean"
-  name "croptopia:greenbean_seed"
-}
-tag "forge:greenbeans" "items" {
-  tag "forge:crops/greenbean"
-  tag "forge:vegetables/greenbean"
-  name "croptopia:greenbean"
-}
-tag "forge:greenonion_seeds" "items" {
-  tag "forge:seeds/greenonion"
-  name "croptopia:greenonion_seed"
-}
-tag "forge:greenonions" "items" {
-  tag "forge:crops/greenonion"
-  tag "forge:vegetables/greenonion"
-  name "croptopia:greenonion"
-}
-tag "forge:grilled_cheeses" "items" {
-  name "croptopia:grilled_cheese"
-}
-tag "forge:grilled_oysters" "items" {
-  name "croptopia:grilled_oysters"
-}
 tag "forge:gunpowder" "items" {
   name "minecraft:gunpowder"
-}
-tag "forge:ham_sandwiches" "items" {
-  name "croptopia:ham_sandwich"
-}
-tag "forge:hamburgers" "items" {
-  name "croptopia:hamburger"
 }
 tag "forge:hammers" "items" {
   name "silentgear:hammer"
@@ -10660,23 +10108,6 @@ tag "forge:honey" "fluids" {
   name "create:honey"
   name "cyclic:honey"
   name "inspirations:honey" optional=true
-}
-tag "forge:honeydew" "items" {
-  tag "forge:crops/honeydew"
-  tag "forge:fruits/honeydew"
-  name "croptopia:honeydew"
-}
-tag "forge:honeydew_seeds" "items" {
-  tag "forge:seeds/honeydew"
-  name "croptopia:honeydew_seed"
-}
-tag "forge:hops" "items" {
-  tag "forge:crops/hops"
-  name "croptopia:hops"
-}
-tag "forge:hops_seeds" "items" {
-  tag "forge:seeds/hops"
-  name "croptopia:hops_seed"
 }
 tag "forge:hydrofluoric_acid" "fluids" {
   name "mekanism:flowing_hydrofluoric_acid"
@@ -11151,180 +10582,23 @@ tag "forge:inlays/arcane_gold" "items" {
 tag "forge:inlays/pewter" "items" {
   name "eidolon:pewter_inlay" optional=true
 }
-tag "forge:jams" "items" {
-  tag "forge:apricot_jams"
-  tag "forge:blackberry_jams"
-  tag "forge:blueberry_jams"
-  tag "forge:cherry_jams"
-  tag "forge:elderberry_jams"
-  tag "forge:grape_jams"
-  tag "forge:peach_jams"
-  tag "forge:raspberry_jams"
-  tag "forge:strawberry_jams"
-}
-tag "forge:jams/apricot_jam" "items" {
-  name "croptopia:apricot_jam"
-}
-tag "forge:jams/blackberry_jam" "items" {
-  name "croptopia:blackberry_jam"
-}
-tag "forge:jams/blueberry_jam" "items" {
-  name "croptopia:blueberry_jam"
-}
-tag "forge:jams/cherry_jam" "items" {
-  name "croptopia:cherry_jam"
-}
-tag "forge:jams/elderberry_jam" "items" {
-  name "croptopia:elderberry_jam"
-}
-tag "forge:jams/grape_jam" "items" {
-  name "croptopia:grape_jam"
-}
-tag "forge:jams/peach_jam" "items" {
-  name "croptopia:peach_jam"
-}
-tag "forge:jams/raspberry_jam" "items" {
-  name "croptopia:raspberry_jam"
-}
-tag "forge:jams/strawberry_jam" "items" {
-  name "croptopia:strawberry_jam"
-}
-tag "forge:juices" "items" {
-  tag "forge:apple_juices"
-  tag "forge:cranberry_juices"
-  tag "forge:grape_juices"
-  tag "forge:melon_juices"
-  tag "forge:orange_juices"
-  tag "forge:pineapple_juices"
-  tag "forge:saguaro_juices"
-  tag "forge:tomato_juices"
-}
-tag "forge:juices/apple_juice" "items" {
-  name "croptopia:apple_juice"
-}
-tag "forge:juices/cranberry_juice" "items" {
-  name "croptopia:cranberry_juice"
-}
-tag "forge:juices/grape_juice" "items" {
-  name "croptopia:grape_juice"
-}
-tag "forge:juices/melon_juice" "items" {
-  name "croptopia:melon_juice"
-}
-tag "forge:juices/orange_juice" "items" {
-  name "croptopia:orange_juice"
-}
-tag "forge:juices/pineapple_juice" "items" {
-  name "croptopia:pineapple_juice"
-}
-tag "forge:juices/saguaro_juice" "items" {
-  name "croptopia:saguaro_juice"
-}
-tag "forge:juices/tomato_juice" "items" {
-  name "croptopia:tomato_juice"
-}
-tag "forge:kale" "items" {
-  tag "forge:crops/kale"
-  tag "forge:vegetables/kale"
-  name "croptopia:kale"
-}
-tag "forge:kale_chips" "items" {
-  name "croptopia:kale_chips"
-}
-tag "forge:kale_seeds" "items" {
-  tag "forge:seeds/kale"
-  name "croptopia:kale_seed"
-}
-tag "forge:kale_smoothies" "items" {
-  name "croptopia:kale_smoothie"
-}
-tag "forge:kiwi_seeds" "items" {
-  tag "forge:seeds/kiwi"
-  name "croptopia:kiwi_seed"
-}
-tag "forge:kiwis" "items" {
-  tag "forge:crops/kiwi"
-  tag "forge:fruits/kiwi"
-  name "croptopia:kiwi"
-}
 tag "forge:knives" "items" {
-  name "croptopia:knife"
   name "silentgear:dagger"
   name "silentgear:knife"
-}
-tag "forge:kumquat_saplings" "items" {
-  tag "forge:saplings/kumquat"
-  name "croptopia:kumquat_sapling"
-}
-tag "forge:kumquats" "items" {
-  tag "forge:crops/kumquat"
-  tag "forge:fruits/kumquat"
-  name "croptopia:kumquat"
 }
 tag "forge:latex" "fluids" {
   name "thermal:latex"
 }
-tag "forge:leafy_salads" "items" {
-  name "croptopia:leafy_salad"
-}
 tag "forge:leather" "items" {
   name "minecraft:leather"
-}
-tag "forge:leek" "items" {
-  tag "forge:crops/leek"
-  tag "forge:vegetables/leek"
-  name "croptopia:leek"
-}
-tag "forge:leek_seeds" "items" {
-  tag "forge:seeds/leek"
-  name "croptopia:leek_seed"
-}
-tag "forge:leek_soups" "items" {
-  name "croptopia:leek_soup"
 }
 tag "forge:leggings" "items" {
   name "byg:ametrine_leggings"
   name "silentgear:leggings"
 }
-tag "forge:lemon_chickens" "items" {
-  name "croptopia:lemon_chicken"
-}
-tag "forge:lemon_saplings" "items" {
-  tag "forge:saplings/lemon"
-  name "croptopia:lemon_sapling"
-}
-tag "forge:lemonades" "items" {
-  name "croptopia:lemonade"
-}
-tag "forge:lemons" "items" {
-  tag "forge:crops/lemon"
-  tag "forge:fruits/lemon"
-  name "croptopia:lemon"
-}
-tag "forge:lettuce" "items" {
-  tag "forge:crops/lettuce"
-  tag "forge:vegetables/lettuce"
-  name "croptopia:lettuce"
-}
-tag "forge:lettuce_seeds" "items" {
-  tag "forge:seeds/lettuce"
-  name "croptopia:lettuce_seed"
-}
 tag "forge:life" "fluids" {
   name "bloodmagic:life_essence_fluid"
   name "bloodmagic:life_essence_fluid_flowing"
-}
-tag "forge:lime_saplings" "items" {
-  tag "forge:saplings/lime"
-  name "croptopia:lime_sapling"
-}
-tag "forge:limeades" "items" {
-  name "croptopia:limeade"
-}
-tag "forge:limes" "items" {
-  tag "forge:crops/lime"
-  tag "forge:fruits/lime"
-  name "croptopia:lime"
 }
 tag "forge:lithium" "fluids" {
   name "mekanism:flowing_lithium"
@@ -11380,18 +10654,6 @@ tag "forge:magma" "fluids" {
 tag "forge:magma_block" "items" {
   name "minecraft:magma_block"
 }
-tag "forge:mango_ice_creams" "items" {
-  name "croptopia:mango_ice_cream"
-}
-tag "forge:mango_saplings" "items" {
-  tag "forge:saplings/mango"
-  name "croptopia:mango_sapling"
-}
-tag "forge:mangos" "items" {
-  tag "forge:crops/mango"
-  tag "forge:fruits/mango"
-  name "croptopia:mango"
-}
 tag "forge:marble" "blocks" {
   name "astralsorcery:marble_arch"
   name "astralsorcery:marble_bricks"
@@ -11400,12 +10662,6 @@ tag "forge:marble" "blocks" {
   name "astralsorcery:marble_pillar"
   name "astralsorcery:marble_raw"
   name "astralsorcery:marble_runed"
-}
-tag "forge:mashed_potatoes" "items" {
-  name "croptopia:mashed_potatoes"
-}
-tag "forge:meads" "items" {
-  name "croptopia:mead"
 }
 tag "forge:meats" "items" {
   name "minecraft:beef"
@@ -11416,18 +10672,6 @@ tag "forge:meats" "items" {
   name "minecraft:cooked_porkchop"
   name "minecraft:mutton"
   name "minecraft:porkchop"
-}
-tag "forge:melon_juices" "items" {
-  tag "forge:juices/melon_juice"
-  name "croptopia:melon_juice"
-}
-tag "forge:melons" "items" {
-  name "croptopia:cantaloupe"
-  name "croptopia:honeydew"
-  name "minecraft:melon_slice"
-}
-tag "forge:meringue" "items" {
-  name "croptopia:meringue"
 }
 tag "forge:milk" "fluids" {
   name "minecraft:flowing_milk" optional=true
@@ -11442,17 +10686,6 @@ tag "forge:milk/milk" "items" {
 }
 tag "forge:milk/milk_bottle" "items" {
   name "farmersdelight:milk_bottle"
-}
-tag "forge:milk_bottles" "items" {
-  name "croptopia:milk_bottle"
-}
-tag "forge:milks" "items" {
-  name "croptopia:milk_bottle"
-  name "croptopia:soy_milk"
-  name "minecraft:milk_bucket"
-}
-tag "forge:molasses" "items" {
-  name "croptopia:molasses"
 }
 tag "forge:molten/aluminum" "fluids" {
   name "emendatusenigmatica:molten_aluminum"
@@ -11879,9 +11112,6 @@ tag "forge:molten_zinc" "fluids" {
 tag "forge:monster_essence" "fluids" {
   tag "bloodsmeltery:demon_will"
 }
-tag "forge:mortar_and_pestles" "items" {
-  name "croptopia:mortar_and_pestle"
-}
 tag "forge:mushrooms" "blocks" {
   name "aoa3:blue_glowshroom" optional=true
   name "aoa3:green_glowshroom" optional=true
@@ -11980,26 +11210,8 @@ tag "forge:mushrooms" "items" {
   name "byg:wood_blewit"
   name "quark:glowshroom"
 }
-tag "forge:mustard" "items" {
-  tag "forge:crops/mustard"
-  tag "forge:vegetables/mustard"
-  name "croptopia:mustard"
-}
-tag "forge:mustard_seeds" "items" {
-  tag "forge:seeds/mustard"
-  name "croptopia:mustard_seed"
-}
 tag "forge:napalm" "fluids" {
   name "immersivepetroleum:napalm"
-}
-tag "forge:nectarine_saplings" "items" {
-  tag "forge:saplings/nectarine"
-  name "croptopia:nectarine_sapling"
-}
-tag "forge:nectarines" "items" {
-  tag "forge:crops/nectarine"
-  tag "forge:fruits/nectarine"
-  name "croptopia:nectarine"
 }
 tag "forge:nether_grass" "items" {
   name "minecraft:crimson_nylium"
@@ -12016,12 +11228,6 @@ tag "forge:netherrack" "blocks,items" {
   name "byg:overgrown_netherrack"
   name "byg:sythian_nylium"
   name "minecraft:netherrack"
-}
-tag "forge:noodles" "items" {
-  name "croptopia:noodle"
-}
-tag "forge:nougats" "items" {
-  name "croptopia:nougat"
 }
 tag "forge:nuggets" "items" {
   tag "forge:nuggets/agate"
@@ -12526,90 +11732,11 @@ tag "forge:nuggets/zinc" "items" {
 tag "forge:nuggets/zircon" "items" {
   name "silentgems:zircon_shard"
 }
-tag "forge:nutmeg_saplings" "items" {
-  tag "forge:saplings/nutmeg"
-  name "croptopia:nutmeg_sapling"
-}
-tag "forge:nutmegs" "items" {
-  tag "forge:crops/nutmeg"
-  name "croptopia:nutmeg"
-}
-tag "forge:nuts" "items" {
-  tag "forge:almonds"
-  tag "forge:pecans"
-  tag "forge:walnuts"
-}
-tag "forge:nuts/almond" "items" {
-  name "croptopia:almond"
-}
-tag "forge:nuts/pecan" "items" {
-  name "croptopia:pecan"
-}
-tag "forge:nuts/walnut" "items" {
-  name "croptopia:walnut"
-}
-tag "forge:nutty_cookies" "items" {
-  name "croptopia:nutty_cookie"
-}
-tag "forge:oat" "items" {
-  tag "forge:crops/oat"
-  tag "forge:grain/oat"
-  name "croptopia:oat"
-}
-tag "forge:oat_seeds" "items" {
-  tag "forge:seeds/oat"
-  name "croptopia:oat_seed"
-}
-tag "forge:oatmeals" "items" {
-  name "croptopia:oatmeal"
-}
-tag "forge:oats" "items" {
-  tag "forge:crops/oats"
-  tag "forge:grain/oats"
-  name "croptopia:oat"
-}
 tag "forge:obsidian" "blocks,items" {
   name "minecraft:obsidian"
 }
 tag "forge:obsidian" "items" {
   name "minecraft:crying_obsidian"
-}
-tag "forge:olive_oils" "items" {
-  name "croptopia:olive_oil"
-}
-tag "forge:olive_seeds" "items" {
-  tag "forge:seeds/olive"
-  name "croptopia:olive_seed"
-}
-tag "forge:olives" "items" {
-  tag "forge:crops/olive"
-  tag "forge:fruits/olive"
-  name "croptopia:olive"
-}
-tag "forge:onion_rings" "items" {
-  name "croptopia:onion_rings"
-}
-tag "forge:onion_seeds" "items" {
-  tag "forge:seeds/onion"
-  name "croptopia:onion_seed"
-}
-tag "forge:onions" "items" {
-  tag "forge:crops/onion"
-  tag "forge:vegetables/onion"
-  name "croptopia:onion"
-}
-tag "forge:orange_juices" "items" {
-  tag "forge:juices/orange_juice"
-  name "croptopia:orange_juice"
-}
-tag "forge:orange_saplings" "items" {
-  tag "forge:saplings/orange"
-  name "croptopia:orange_sapling"
-}
-tag "forge:oranges" "items" {
-  tag "forge:crops/orange"
-  tag "forge:fruits/orange"
-  name "croptopia:orange"
 }
 tag "forge:ores" "blocks" {
   name "cavesandcliffs:copper_ore"
@@ -15266,70 +14393,15 @@ tag "forge:oxygen" "fluids" {
   name "mekanism:flowing_oxygen"
   name "mekanism:oxygen"
 }
-tag "forge:oysters" "items" {
-  name "croptopia:oyster"
-}
 tag "forge:paper" "items" {
   name "minecraft:paper"
   name "silentgems:fluffy_fabric"
-}
-tag "forge:paprika" "items" {
-  name "croptopia:paprika"
 }
 tag "forge:pasta" "items" {
   tag "forge:pasta/raw_pasta"
 }
 tag "forge:pasta/raw_pasta" "items" {
   name "farmersdelight:raw_pasta"
-}
-tag "forge:peach_jams" "items" {
-  tag "forge:jams/peach_jam"
-  name "croptopia:peach_jam"
-}
-tag "forge:peach_saplings" "items" {
-  tag "forge:saplings/peach"
-  name "croptopia:peach_sapling"
-}
-tag "forge:peaches" "items" {
-  tag "forge:crops/peach"
-  tag "forge:fruits/peach"
-  name "croptopia:peach"
-}
-tag "forge:peanut_butter_and_jam" "items" {
-  name "croptopia:peanut_butter_and_jam"
-}
-tag "forge:peanut_seeds" "items" {
-  tag "forge:seeds/peanut"
-  name "croptopia:peanut_seed"
-}
-tag "forge:peanuts" "items" {
-  tag "forge:crops/peanut"
-  name "croptopia:peanut"
-}
-tag "forge:pear_saplings" "items" {
-  tag "forge:saplings/pear"
-  name "croptopia:pear_sapling"
-}
-tag "forge:pears" "items" {
-  tag "forge:crops/pear"
-  tag "forge:fruits/pear"
-  name "croptopia:pear"
-}
-tag "forge:pecan_ice_creams" "items" {
-  name "croptopia:pecan_ice_cream"
-}
-tag "forge:pecan_pies" "items" {
-  name "croptopia:pecan_pie"
-}
-tag "forge:pecan_saplings" "items" {
-  tag "forge:saplings/pecan"
-  name "croptopia:pecan_sapling"
-}
-tag "forge:pecans" "items" {
-  tag "forge:crops/pecan"
-  tag "forge:fruits/pecan"
-  tag "forge:nuts/pecan"
-  name "croptopia:pecan"
 }
 tag "forge:pellets/antimatter" "items" {
   name "mekanism:pellet_antimatter"
@@ -15339,26 +14411,6 @@ tag "forge:pellets/plutonium" "items" {
 }
 tag "forge:pellets/polonium" "items" {
   name "mekanism:pellet_polonium"
-}
-tag "forge:pepper" "items" {
-  tag "forge:crops/pepper"
-  name "croptopia:pepper"
-}
-tag "forge:pepper_seeds" "items" {
-  tag "forge:seeds/pepper"
-  name "croptopia:pepper_seed"
-}
-tag "forge:pepperoni" "items" {
-  name "croptopia:pepperoni"
-}
-tag "forge:persimmon_saplings" "items" {
-  tag "forge:saplings/persimmon"
-  name "croptopia:persimmon_sapling"
-}
-tag "forge:persimmons" "items" {
-  tag "forge:crops/persimmon"
-  tag "forge:fruits/persimmon"
-  name "croptopia:persimmon"
 }
 tag "forge:pickaxes" "items" {
   name "bloodmagic:soulpickaxe"
@@ -15373,27 +14425,8 @@ tag "forge:pickaxes" "items" {
   name "silentgear:paxel"
   name "silentgear:pickaxe"
 }
-tag "forge:pineapple_juices" "items" {
-  tag "forge:juices/pineapple_juice"
-  name "croptopia:pineapple_juice"
-}
-tag "forge:pineapple_pepperoni_pizzas" "items" {
-  name "croptopia:pineapple_pepperoni_pizza"
-}
-tag "forge:pineapple_seeds" "items" {
-  tag "forge:seeds/pineapple"
-  name "croptopia:pineapple_seed"
-}
-tag "forge:pineapples" "items" {
-  tag "forge:crops/pineapple"
-  tag "forge:fruits/pineapple"
-  name "croptopia:pineapple"
-}
 tag "forge:pink_sand" "blocks,items" {
   name "byg:pink_sand"
-}
-tag "forge:pizzas" "items" {
-  name "croptopia:pizza"
 }
 tag "forge:planks" "blocks,items" {
   name "ars_nouveau:archwood_planks"
@@ -15704,83 +14737,15 @@ tag "forge:plates/zinc" "items" {
   name "createaddition:zinc_sheet"
   name "emendatusenigmatica:zinc_plate"
 }
-tag "forge:plum_saplings" "items" {
-  tag "forge:saplings/plum"
-  name "croptopia:plum_sapling"
-}
-tag "forge:plums" "items" {
-  tag "forge:crops/plum"
-  tag "forge:fruits/plum"
-  name "croptopia:plum"
-}
-tag "forge:popcorn" "items" {
-  name "croptopia:popcorn"
-}
-tag "forge:pork_and_beanss" "items" {
-  name "croptopia:pork_and_beans"
-}
-tag "forge:pork_jerkies" "items" {
-  name "croptopia:pork_jerky"
-}
-tag "forge:potato_chips" "items" {
-  name "croptopia:potato_chips"
-}
-tag "forge:potatoes" "items" {
-  name "croptopia:sweetpotato"
-  name "minecraft:potato"
-}
 tag "forge:potion" "fluids" {
   name "cofh_core:potion"
   name "immersiveengineering:potion"
-}
-tag "forge:protein_bars" "items" {
-  name "croptopia:protein_bar"
-}
-tag "forge:pumpkin_bars" "items" {
-  name "croptopia:pumpkin_bars"
-}
-tag "forge:pumpkin_soups" "items" {
-  name "croptopia:pumpkin_soup"
-}
-tag "forge:pumpkin_spice_lattes" "items" {
-  name "croptopia:pumpkin_spice_latte"
 }
 tag "forge:pumpkins/carved" "blocks,items" {
   name "minecraft:carved_pumpkin"
 }
 tag "forge:purple_sand" "blocks,items" {
   name "byg:purple_sand"
-}
-tag "forge:radish_seeds" "items" {
-  tag "forge:seeds/radish"
-  name "croptopia:radish_seed"
-}
-tag "forge:radishes" "items" {
-  tag "forge:crops/radish"
-  tag "forge:vegetables/radish"
-  name "croptopia:radish"
-}
-tag "forge:raisin_oatmeal_cookies" "items" {
-  name "croptopia:raisin_oatmeal_cookie"
-}
-tag "forge:raisins" "items" {
-  name "croptopia:raisins"
-}
-tag "forge:raspberries" "items" {
-  tag "forge:crops/raspberry"
-  tag "forge:fruits/raspberry"
-  name "croptopia:raspberry"
-}
-tag "forge:raspberry_jams" "items" {
-  tag "forge:jams/raspberry_jam"
-  name "croptopia:raspberry_jam"
-}
-tag "forge:raspberry_seeds" "items" {
-  tag "forge:seeds/raspberry"
-  name "croptopia:raspberry_seed"
-}
-tag "forge:ravioli" "items" {
-  name "croptopia:ravioli"
 }
 tag "forge:raw_bacon" "items" {
   name "farmersdelight:bacon"
@@ -15922,36 +14887,6 @@ tag "forge:relocation_not_supported" "tile_entity_types" {
   name "immersiveengineering:turretchem"
   name "immersiveengineering:turretgun"
   name "immersiveengineering:watermill"
-}
-tag "forge:rhubarb" "items" {
-  tag "forge:crops/rhubarb"
-  tag "forge:vegetables/rhubarb"
-  name "croptopia:rhubarb"
-}
-tag "forge:rhubarb_pies" "items" {
-  name "croptopia:rhubarb_pie"
-}
-tag "forge:rhubarb_seeds" "items" {
-  tag "forge:seeds/rhubarb"
-  name "croptopia:rhubarb_seed"
-}
-tag "forge:rice" "items" {
-  tag "forge:crops/rice"
-  tag "forge:grain/rice"
-  name "croptopia:rice"
-}
-tag "forge:rice_seeds" "items" {
-  tag "forge:seeds/rice"
-  name "croptopia:rice_seed"
-}
-tag "forge:roasted_nuts" "items" {
-  name "croptopia:roasted_nuts"
-}
-tag "forge:roasted_pumpkin_seeds" "items" {
-  name "croptopia:roasted_pumpkin_seeds"
-}
-tag "forge:roasted_sunflower_seeds" "items" {
-  name "croptopia:roasted_sunflower_seeds"
 }
 tag "forge:rods" "items" {
   tag "forge:rods/blaze"
@@ -16130,6 +15065,7 @@ tag "forge:rods/steel" "items" {
   name "immersiveengineering:stick_steel"
 }
 tag "forge:rods/stone" "items" {
+  name "adorn:stone_rod"
   name "cb_microblock:stone_rod"
   name "silentgear:stone_rod"
 }
@@ -16150,36 +15086,17 @@ tag "forge:rods/wooden" "items" {
 tag "forge:rods/zinc" "items" {
   name "emendatusenigmatica:zinc_rod"
 }
-tag "forge:roe" "items" {
-  name "croptopia:roe"
+tag "forge:rollmatout/bottle_foods" "items" {
+  name "farmersdelight:milk_bottle"
+  name "minecraft:potion"
 }
-tag "forge:rum_raisin_ice_creams" "items" {
-  name "croptopia:rum_raisin_ice_cream"
+tag "forge:rollmatout/bowl_foods" "items" {
+  name "farmersdelight:cooked_rice"
 }
-tag "forge:rums" "items" {
-  name "croptopia:rum"
-}
-tag "forge:rutabaga_seeds" "items" {
-  tag "forge:seeds/rutabaga"
-  name "croptopia:rutabaga_seed"
-}
-tag "forge:rutabagas" "items" {
-  tag "forge:crops/rutabaga"
-  tag "forge:vegetables/rutabaga"
-  name "croptopia:rutabaga"
-}
-tag "forge:saguaro_juices" "items" {
-  tag "forge:juices/saguaro_juice"
-  name "croptopia:saguaro_juice"
-}
-tag "forge:saguaro_seeds" "items" {
-  tag "forge:seeds/saguaro"
-  name "croptopia:saguaro_seed"
-}
-tag "forge:saguaros" "items" {
-  tag "forge:crops/saguaro"
-  tag "forge:fruits/saguaro"
-  name "croptopia:saguaro"
+tag "forge:rollmatout/bucket_foods" "items" {
+  name "minecraft:lava_bucket"
+  name "minecraft:milk_bucket"
+  name "minecraft:water_bucket"
 }
 tag "forge:salad_ingredients" "items" {
   tag "forge:salad_ingredients/cabbage"
@@ -16188,17 +15105,8 @@ tag "forge:salad_ingredients/cabbage" "items" {
   name "farmersdelight:cabbage"
   name "farmersdelight:cabbage_leaf"
 }
-tag "forge:salsas" "items" {
-  name "croptopia:salsa"
-}
 tag "forge:salt" "items" {
   tag "forge:dusts/salt"
-}
-tag "forge:salt_ores" "items" {
-  name "croptopia:salt_ore"
-}
-tag "forge:salts" "items" {
-  name "croptopia:salt"
 }
 tag "forge:sand" "blocks,items" {
   tag "forge:sand/colorless"
@@ -16318,33 +15226,6 @@ tag "forge:saplings" "blocks,items" {
   name "byg:zelkova_sapling"
 }
 tag "forge:saplings" "items" {
-  tag "forge:saplings/almond"
-  tag "forge:saplings/apple"
-  tag "forge:saplings/apricot"
-  tag "forge:saplings/avocado"
-  tag "forge:saplings/banana"
-  tag "forge:saplings/cashew"
-  tag "forge:saplings/cherry"
-  tag "forge:saplings/cinnamon"
-  tag "forge:saplings/coconut"
-  tag "forge:saplings/date"
-  tag "forge:saplings/dragonfruit"
-  tag "forge:saplings/fig"
-  tag "forge:saplings/grapefruit"
-  tag "forge:saplings/kumquat"
-  tag "forge:saplings/lemon"
-  tag "forge:saplings/lime"
-  tag "forge:saplings/mango"
-  tag "forge:saplings/nectarine"
-  tag "forge:saplings/nutmeg"
-  tag "forge:saplings/orange"
-  tag "forge:saplings/peach"
-  tag "forge:saplings/pear"
-  tag "forge:saplings/pecan"
-  tag "forge:saplings/persimmon"
-  tag "forge:saplings/plum"
-  tag "forge:saplings/starfruit"
-  tag "forge:saplings/walnut"
   name "betterendforge:dragon_tree_sapling"
   name "betterendforge:helix_tree_sapling"
   name "betterendforge:hydralux_sapling"
@@ -16354,90 +15235,6 @@ tag "forge:saplings" "items" {
   name "betterendforge:pythadendron_sapling"
   name "betterendforge:tenanea_sapling"
   name "betterendforge:umbrella_tree_sapling"
-}
-tag "forge:saplings/almond" "items" {
-  name "croptopia:almond_sapling"
-}
-tag "forge:saplings/apple" "items" {
-  name "croptopia:apple_sapling"
-}
-tag "forge:saplings/apricot" "items" {
-  name "croptopia:apricot_sapling"
-}
-tag "forge:saplings/avocado" "items" {
-  name "croptopia:avocado_sapling"
-}
-tag "forge:saplings/banana" "items" {
-  name "croptopia:banana_sapling"
-}
-tag "forge:saplings/cashew" "items" {
-  name "croptopia:cashew_sapling"
-}
-tag "forge:saplings/cherry" "items" {
-  name "croptopia:cherry_sapling"
-}
-tag "forge:saplings/cinnamon" "items" {
-  name "croptopia:cinnamon_sapling"
-}
-tag "forge:saplings/coconut" "items" {
-  name "croptopia:coconut_sapling"
-}
-tag "forge:saplings/date" "items" {
-  name "croptopia:date_sapling"
-}
-tag "forge:saplings/dragonfruit" "items" {
-  name "croptopia:dragonfruit_sapling"
-}
-tag "forge:saplings/fig" "items" {
-  name "croptopia:fig_sapling"
-}
-tag "forge:saplings/grapefruit" "items" {
-  name "croptopia:grapefruit_sapling"
-}
-tag "forge:saplings/kumquat" "items" {
-  name "croptopia:kumquat_sapling"
-}
-tag "forge:saplings/lemon" "items" {
-  name "croptopia:lemon_sapling"
-}
-tag "forge:saplings/lime" "items" {
-  name "croptopia:lime_sapling"
-}
-tag "forge:saplings/mango" "items" {
-  name "croptopia:mango_sapling"
-}
-tag "forge:saplings/nectarine" "items" {
-  name "croptopia:nectarine_sapling"
-}
-tag "forge:saplings/nutmeg" "items" {
-  name "croptopia:nutmeg_sapling"
-}
-tag "forge:saplings/orange" "items" {
-  name "croptopia:orange_sapling"
-}
-tag "forge:saplings/peach" "items" {
-  name "croptopia:peach_sapling"
-}
-tag "forge:saplings/pear" "items" {
-  name "croptopia:pear_sapling"
-}
-tag "forge:saplings/pecan" "items" {
-  name "croptopia:pecan_sapling"
-}
-tag "forge:saplings/persimmon" "items" {
-  name "croptopia:persimmon_sapling"
-}
-tag "forge:saplings/plum" "items" {
-  name "croptopia:plum_sapling"
-}
-tag "forge:saplings/starfruit" "items" {
-  name "croptopia:starfruit_sapling"
-}
-tag "forge:saplings/walnut" "items" {
-  name "croptopia:walnut_sapling"
-}
-tag "forge:saucy_chips" "items" {
-  name "croptopia:saucy_chips"
 }
 tag "forge:sawblades" "items" {
   name "immersiveengineering:sawblade"
@@ -16481,78 +15278,14 @@ tag "forge:scales/sea_serpent" "items" {
   name "iceandfire:sea_serpent_scales_red"
   name "iceandfire:sea_serpent_scales_teal"
 }
-tag "forge:scones" "items" {
-  name "croptopia:scones"
-}
-tag "forge:scrambled_eggs" "items" {
-  name "croptopia:scrambled_eggs"
-}
-tag "forge:sea_lettuce" "items" {
-  name "croptopia:sea_lettuce"
-}
 tag "forge:seeds" "items" {
-  tag "forge:seeds/artichoke"
-  tag "forge:seeds/asparagus"
-  tag "forge:seeds/barley"
-  tag "forge:seeds/basil"
   tag "forge:seeds/beetroot"
-  tag "forge:seeds/bellpepper"
-  tag "forge:seeds/blackbean"
-  tag "forge:seeds/blackberry"
-  tag "forge:seeds/blueberry"
-  tag "forge:seeds/broccoli"
   tag "forge:seeds/cabbage"
-  tag "forge:seeds/cantaloupe"
-  tag "forge:seeds/cauliflower"
-  tag "forge:seeds/celery"
-  tag "forge:seeds/chilepepper"
-  tag "forge:seeds/coffee_beans"
-  tag "forge:seeds/corn"
-  tag "forge:seeds/cranberry"
-  tag "forge:seeds/cucumber"
-  tag "forge:seeds/currant"
-  tag "forge:seeds/eggplant"
-  tag "forge:seeds/elderberry"
-  tag "forge:seeds/garlic"
-  tag "forge:seeds/ginger"
-  tag "forge:seeds/grape"
-  tag "forge:seeds/greenbean"
-  tag "forge:seeds/greenonion"
-  tag "forge:seeds/honeydew"
-  tag "forge:seeds/hops"
-  tag "forge:seeds/kale"
-  tag "forge:seeds/kiwi"
-  tag "forge:seeds/leek"
-  tag "forge:seeds/lettuce"
   tag "forge:seeds/melon"
-  tag "forge:seeds/mustard"
-  tag "forge:seeds/oat"
-  tag "forge:seeds/olive"
-  tag "forge:seeds/onion"
-  tag "forge:seeds/peanut"
-  tag "forge:seeds/pepper"
-  tag "forge:seeds/pineapple"
   tag "forge:seeds/pumpkin"
-  tag "forge:seeds/radish"
-  tag "forge:seeds/raspberry"
-  tag "forge:seeds/rhubarb"
   tag "forge:seeds/rice"
-  tag "forge:seeds/rutabaga"
-  tag "forge:seeds/saguaro"
-  tag "forge:seeds/soybean"
-  tag "forge:seeds/spinach"
-  tag "forge:seeds/squash"
-  tag "forge:seeds/strawberry"
-  tag "forge:seeds/sweetpotato"
-  tag "forge:seeds/tea_leaves"
-  tag "forge:seeds/tomatillo"
   tag "forge:seeds/tomato"
-  tag "forge:seeds/turmeric"
-  tag "forge:seeds/turnip"
-  tag "forge:seeds/vanilla"
   tag "forge:seeds/wheat"
-  tag "forge:seeds/yam"
-  tag "forge:seeds/zucchini"
   name "ars_nouveau:mana_bloom_crop"
   name "betterendforge:amber_root_seed"
   name "betterendforge:blossom_berry_seed"
@@ -16572,105 +15305,11 @@ tag "forge:seeds" "items" {
   name "silentgear:fluffy_seeds"
   name "silentgems:fluffy_puff_seeds"
 }
-tag "forge:seeds/artichoke" "items" {
-  name "croptopia:artichoke_seed"
-}
-tag "forge:seeds/asparagus" "items" {
-  name "croptopia:asparagus_seed"
-}
-tag "forge:seeds/barley" "items" {
-  name "croptopia:barley_seed"
-}
-tag "forge:seeds/basil" "items" {
-  name "croptopia:basil_seed"
-}
 tag "forge:seeds/beetroot" "items" {
   name "minecraft:beetroot_seeds"
 }
-tag "forge:seeds/bellpepper" "items" {
-  name "croptopia:bellpepper_seed"
-}
-tag "forge:seeds/blackbean" "items" {
-  name "croptopia:blackbean_seed"
-}
-tag "forge:seeds/blackberry" "items" {
-  name "croptopia:blackberry_seed"
-}
-tag "forge:seeds/blueberry" "items" {
-  name "croptopia:blueberry_seed"
-}
-tag "forge:seeds/broccoli" "items" {
-  name "croptopia:broccoli_seed"
-}
 tag "forge:seeds/cabbage" "items" {
-  name "croptopia:cabbage_seed"
   name "farmersdelight:cabbage_seeds"
-}
-tag "forge:seeds/cantaloupe" "items" {
-  name "croptopia:cantaloupe_seed"
-}
-tag "forge:seeds/cauliflower" "items" {
-  name "croptopia:cauliflower_seed"
-}
-tag "forge:seeds/celery" "items" {
-  name "croptopia:celery_seed"
-}
-tag "forge:seeds/chilepepper" "items" {
-  name "croptopia:chile_pepper_seed"
-}
-tag "forge:seeds/coffee_beans" "items" {
-  name "croptopia:coffee_seed"
-}
-tag "forge:seeds/corn" "items" {
-  name "croptopia:corn_seed"
-}
-tag "forge:seeds/cranberry" "items" {
-  name "croptopia:cranberry_seed"
-}
-tag "forge:seeds/cucumber" "items" {
-  name "croptopia:cucumber_seed"
-}
-tag "forge:seeds/currant" "items" {
-  name "croptopia:currant_seed"
-}
-tag "forge:seeds/eggplant" "items" {
-  name "croptopia:eggplant_seed"
-}
-tag "forge:seeds/elderberry" "items" {
-  name "croptopia:elderberry_seed"
-}
-tag "forge:seeds/garlic" "items" {
-  name "croptopia:garlic_seed"
-}
-tag "forge:seeds/ginger" "items" {
-  name "croptopia:ginger_seed"
-}
-tag "forge:seeds/grape" "items" {
-  name "croptopia:grape_seed"
-}
-tag "forge:seeds/greenbean" "items" {
-  name "croptopia:greenbean_seed"
-}
-tag "forge:seeds/greenonion" "items" {
-  name "croptopia:greenonion_seed"
-}
-tag "forge:seeds/honeydew" "items" {
-  name "croptopia:honeydew_seed"
-}
-tag "forge:seeds/hops" "items" {
-  name "croptopia:hops_seed"
-}
-tag "forge:seeds/kale" "items" {
-  name "croptopia:kale_seed"
-}
-tag "forge:seeds/kiwi" "items" {
-  name "croptopia:kiwi_seed"
-}
-tag "forge:seeds/leek" "items" {
-  name "croptopia:leek_seed"
-}
-tag "forge:seeds/lettuce" "items" {
-  name "croptopia:lettuce_seed"
 }
 tag "forge:seeds/mana_bloom" "items" {
   name "ars_nouveau:mana_bloom_crop"
@@ -16678,91 +15317,17 @@ tag "forge:seeds/mana_bloom" "items" {
 tag "forge:seeds/melon" "items" {
   name "minecraft:melon_seeds"
 }
-tag "forge:seeds/mustard" "items" {
-  name "croptopia:mustard_seed"
-}
-tag "forge:seeds/oat" "items" {
-  name "croptopia:oat_seed"
-}
-tag "forge:seeds/olive" "items" {
-  name "croptopia:olive_seed"
-}
-tag "forge:seeds/onion" "items" {
-  name "croptopia:onion_seed"
-}
-tag "forge:seeds/peanut" "items" {
-  name "croptopia:peanut_seed"
-}
-tag "forge:seeds/pepper" "items" {
-  name "croptopia:pepper_seed"
-}
-tag "forge:seeds/pineapple" "items" {
-  name "croptopia:pineapple_seed"
-}
 tag "forge:seeds/pumpkin" "items" {
   name "minecraft:pumpkin_seeds"
 }
-tag "forge:seeds/radish" "items" {
-  name "croptopia:radish_seed"
-}
-tag "forge:seeds/raspberry" "items" {
-  name "croptopia:raspberry_seed"
-}
-tag "forge:seeds/rhubarb" "items" {
-  name "croptopia:rhubarb_seed"
-}
 tag "forge:seeds/rice" "items" {
-  name "croptopia:rice_seed"
   name "farmersdelight:rice"
 }
-tag "forge:seeds/rutabaga" "items" {
-  name "croptopia:rutabaga_seed"
-}
-tag "forge:seeds/saguaro" "items" {
-  name "croptopia:saguaro_seed"
-}
-tag "forge:seeds/soybean" "items" {
-  name "croptopia:soybean_seed"
-}
-tag "forge:seeds/spinach" "items" {
-  name "croptopia:spinach_seed"
-}
-tag "forge:seeds/squash" "items" {
-  name "croptopia:squash_seed"
-}
-tag "forge:seeds/strawberry" "items" {
-  name "croptopia:strawberry_seed"
-}
-tag "forge:seeds/sweetpotato" "items" {
-  name "croptopia:sweetpotato_seed"
-}
-tag "forge:seeds/tea_leaves" "items" {
-  name "croptopia:tea_seed"
-}
-tag "forge:seeds/tomatillo" "items" {
-  name "croptopia:tomatillo_seed"
-}
 tag "forge:seeds/tomato" "items" {
-  name "croptopia:tomato_seed"
   name "farmersdelight:tomato_seeds"
-}
-tag "forge:seeds/turmeric" "items" {
-  name "croptopia:turmeric_seed"
-}
-tag "forge:seeds/turnip" "items" {
-  name "croptopia:turnip_seed"
-}
-tag "forge:seeds/vanilla" "items" {
-  name "croptopia:vanilla_seeds"
 }
 tag "forge:seeds/wheat" "items" {
   name "minecraft:wheat_seeds"
-}
-tag "forge:seeds/yam" "items" {
-  name "croptopia:yam_seed"
-}
-tag "forge:seeds/zucchini" "items" {
-  name "croptopia:zucchini_seed"
 }
 tag "forge:servo" "items" {
   name "numina:component_servo"
@@ -16841,9 +15406,6 @@ tag "forge:sheetmetals/steel" "blocks,items" {
 tag "forge:sheetmetals/uranium" "blocks,items" {
   name "immersiveengineering:sheetmetal_uranium"
 }
-tag "forge:shepherds_pie" "items" {
-  name "croptopia:shepherds_pie"
-}
 tag "forge:shields" "items" {
   name "silentgear:shield"
 }
@@ -16860,9 +15422,6 @@ tag "forge:shovels" "items" {
   name "silentgear:mattock"
   name "silentgear:paxel"
   name "silentgear:shovel"
-}
-tag "forge:shrimp" "items" {
-  name "croptopia:shrimp"
 }
 tag "forge:sickles" "items" {
   name "silentgear:sickle"
@@ -16913,9 +15472,6 @@ tag "forge:slimes" "entity_types" {
   name "tconstruct:sky_slime"
   name "tconstruct:terracube"
 }
-tag "forge:snicker_doodles" "items" {
-  name "croptopia:snicker_doodle"
-}
 tag "forge:snow_block" "items" {
   name "minecraft:snow_block"
 }
@@ -16930,44 +15486,8 @@ tag "forge:soul_sand" "items" {
   name "minecraft:soul_sand"
   name "minecraft:soul_soil"
 }
-tag "forge:soy_milks" "items" {
-  name "croptopia:soy_milk"
-}
-tag "forge:soy_sauces" "items" {
-  name "croptopia:soy_sauce"
-}
-tag "forge:soybean_seeds" "items" {
-  tag "forge:seeds/soybean"
-  name "croptopia:soybean_seed"
-}
-tag "forge:soybeans" "items" {
-  tag "forge:crops/soybean"
-  tag "forge:vegetables/soybean"
-  name "croptopia:soybean"
-}
-tag "forge:spaghetti_squashs" "items" {
-  name "croptopia:spaghetti_squash"
-}
-tag "forge:spinach" "items" {
-  tag "forge:crops/spinach"
-  tag "forge:vegetables/spinach"
-  name "croptopia:spinach"
-}
-tag "forge:spinach_seeds" "items" {
-  tag "forge:seeds/spinach"
-  name "croptopia:spinach_seed"
-}
 tag "forge:sponge" "items" {
   name "minecraft:sponge"
-}
-tag "forge:squash_seeds" "items" {
-  tag "forge:seeds/squash"
-  name "croptopia:squash_seed"
-}
-tag "forge:squashes" "items" {
-  tag "forge:crops/squash"
-  tag "forge:vegetables/squash"
-  name "croptopia:squash"
 }
 tag "forge:stained_glass" "blocks,items" {
   name "minecraft:black_stained_glass"
@@ -17055,30 +15575,9 @@ tag "forge:stained_glass_panes" "blocks,items" {
   name "tconstruct:white_clear_stained_glass_pane"
   name "tconstruct:yellow_clear_stained_glass_pane"
 }
-tag "forge:starfruit_saplings" "items" {
-  tag "forge:saplings/starfruit"
-  name "croptopia:starfruit_sapling"
-}
-tag "forge:starfruits" "items" {
-  tag "forge:crops/starfruit"
-  tag "forge:fruits/starfruit"
-  name "croptopia:starfruit"
-}
 tag "forge:steam" "fluids" {
   name "mekanism:flowing_steam"
   name "mekanism:steam"
-}
-tag "forge:steamed_clams" "items" {
-  name "croptopia:steamed_clams"
-}
-tag "forge:steamed_crabs" "items" {
-  name "croptopia:steamed_crab"
-}
-tag "forge:steamed_rices" "items" {
-  name "croptopia:steamed_rice"
-}
-tag "forge:sticky_toffee_pudding" "items" {
-  name "croptopia:sticky_toffee_pudding"
 }
 tag "forge:stone" "blocks" {
   name "betterendforge:umbralith"
@@ -17890,25 +16389,6 @@ tag "forge:storage_blocks/zinc" "blocks,items" {
 tag "forge:storage_blocks/zircon" "blocks,items" {
   name "silentgems:zircon_block"
 }
-tag "forge:strawberries" "items" {
-  tag "forge:crops/strawberry"
-  tag "forge:fruits/strawberry"
-  name "croptopia:strawberry"
-}
-tag "forge:strawberry_ice_creams" "items" {
-  name "croptopia:strawberry_ice_cream"
-}
-tag "forge:strawberry_jams" "items" {
-  tag "forge:jams/strawberry_jam"
-  name "croptopia:strawberry_jam"
-}
-tag "forge:strawberry_seeds" "items" {
-  tag "forge:seeds/strawberry"
-  name "croptopia:strawberry_seed"
-}
-tag "forge:strawberry_smoothies" "items" {
-  name "croptopia:strawberry_smoothie"
-}
 tag "forge:string" "items" {
   name "minecraft:string"
   name "silentgear:flax_string"
@@ -17948,24 +16428,6 @@ tag "forge:supports_conduit" "blocks" {
   name "upgrade_aquatic:prismarine_coral_shower"
   name "upgrade_aquatic:prismarine_rod_bundle"
 }
-tag "forge:supreme_pizzas" "items" {
-  name "croptopia:supreme_pizza"
-}
-tag "forge:sushis" "items" {
-  name "croptopia:sushi"
-}
-tag "forge:sweet_potato_friess" "items" {
-  name "croptopia:sweet_potato_fries"
-}
-tag "forge:sweetpotato_seeds" "items" {
-  tag "forge:seeds/sweetpotato"
-  name "croptopia:sweetpotato_seed"
-}
-tag "forge:sweetpotatos" "items" {
-  tag "forge:crops/sweetpotato"
-  tag "forge:vegetables/sweetpotato"
-  name "croptopia:sweetpotato"
-}
 tag "forge:swords" "items" {
   name "bloodmagic:soulsword"
   name "byg:pendorite_battleaxe"
@@ -17981,9 +16443,6 @@ tag "forge:swords" "items" {
   name "silentgear:machete"
   name "silentgear:sword"
 }
-tag "forge:tacos" "items" {
-  name "croptopia:taco"
-}
 tag "forge:tallow" "items" {
   name "quark:tallow"
 }
@@ -17993,17 +16452,6 @@ tag "forge:tar" "items" {
 tag "forge:tea" "fluids" {
   name "create:flowing_tea"
   name "create:tea"
-}
-tag "forge:tea" "items" {
-  name "croptopia:tea"
-}
-tag "forge:tea_leaves" "items" {
-  tag "forge:crops/tea_leaves"
-  name "croptopia:tea_leaves"
-}
-tag "forge:tea_seeds" "items" {
-  tag "forge:seeds/tea_leaves"
-  name "croptopia:tea_seed"
 }
 tag "forge:terracotta" "items" {
   name "minecraft:black_terracotta"
@@ -18023,43 +16471,6 @@ tag "forge:terracotta" "items" {
   name "minecraft:terracotta"
   name "minecraft:white_terracotta"
   name "minecraft:yellow_terracotta"
-}
-tag "forge:toast_with_jam" "items" {
-  name "croptopia:toast_with_jam"
-}
-tag "forge:toasts" "items" {
-  name "croptopia:toast"
-}
-tag "forge:tofu" "items" {
-  name "croptopia:tofu"
-}
-tag "forge:tofu_and_dumplings" "items" {
-  name "croptopia:tofu_and_dumplings"
-}
-tag "forge:tofuburgers" "items" {
-  name "croptopia:tofuburger"
-}
-tag "forge:tomatillo_seeds" "items" {
-  tag "forge:seeds/tomatillo"
-  name "croptopia:tomatillo_seed"
-}
-tag "forge:tomatillos" "items" {
-  tag "forge:crops/tomatillo"
-  tag "forge:vegetables/tomatillo"
-  name "croptopia:tomatillo"
-}
-tag "forge:tomato_juices" "items" {
-  tag "forge:juices/tomato_juice"
-  name "croptopia:tomato_juice"
-}
-tag "forge:tomato_seeds" "items" {
-  tag "forge:seeds/tomato"
-  name "croptopia:tomato_seed"
-}
-tag "forge:tomatoes" "items" {
-  tag "forge:crops/tomato"
-  tag "forge:vegetables/tomato"
-  name "croptopia:tomato"
 }
 tag "forge:tools" "items" {
   tag "forge:tools/axes"
@@ -18108,7 +16519,6 @@ tag "forge:tools/knives" "items" {
   name "aquaculture:neptunium_fillet_knife" optional=true
   name "aquaculture:stone_fillet_knife" optional=true
   name "aquaculture:wooden_fillet_knife" optional=true
-  name "croptopia:knife"
   name "farmersdelight:diamond_knife"
   name "farmersdelight:flint_knife"
   name "farmersdelight:golden_knife"
@@ -18166,15 +16576,6 @@ tag "forge:torches" "blocks,items" {
   name "minecraft:soul_torch"
   name "minecraft:torch"
 }
-tag "forge:tortillas" "items" {
-  name "croptopia:tortilla"
-}
-tag "forge:trail_mixes" "items" {
-  name "croptopia:trail_mix"
-}
-tag "forge:treacle_tarts" "items" {
-  name "croptopia:treacle_tart"
-}
 tag "forge:treated_wood" "blocks,items" {
   name "immersiveengineering:treated_wood_horizontal"
   name "immersiveengineering:treated_wood_packaged"
@@ -18185,38 +16586,9 @@ tag "forge:treated_wood_slab" "blocks,items" {
   name "immersiveengineering:slab_treated_wood_packaged"
   name "immersiveengineering:slab_treated_wood_vertical"
 }
-tag "forge:trifle" "items" {
-  name "croptopia:trifle"
-}
 tag "forge:tritium" "fluids" {
   name "mekanismgenerators:flowing_tritium"
   name "mekanismgenerators:tritium"
-}
-tag "forge:tuna" "items" {
-  name "croptopia:tuna"
-}
-tag "forge:tuna_rolls" "items" {
-  name "croptopia:tuna_roll"
-}
-tag "forge:tuna_sandwiches" "items" {
-  name "croptopia:tuna_sandwich"
-}
-tag "forge:turmeric" "items" {
-  tag "forge:crops/turmeric"
-  name "croptopia:turmeric"
-}
-tag "forge:turmeric_seeds" "items" {
-  tag "forge:seeds/turmeric"
-  name "croptopia:turmeric_seed"
-}
-tag "forge:turnip_seeds" "items" {
-  tag "forge:seeds/turnip"
-  name "croptopia:turnip_seed"
-}
-tag "forge:turnips" "items" {
-  tag "forge:crops/turnip"
-  tag "forge:vegetables/turnip"
-  name "croptopia:turnip"
 }
 tag "forge:uranium_hexafluoride" "fluids" {
   name "mekanism:flowing_uranium_hexafluoride"
@@ -18226,154 +16598,28 @@ tag "forge:uranium_oxide" "fluids" {
   name "mekanism:flowing_uranium_oxide"
   name "mekanism:uranium_oxide"
 }
-tag "forge:vanilla" "items" {
-  tag "forge:crops/vanilla"
-  name "croptopia:vanilla"
-}
-tag "forge:vanilla_ice_creams" "items" {
-  name "croptopia:vanilla_ice_cream"
-}
-tag "forge:vanilla_seeds" "items" {
-  tag "forge:seeds/vanilla"
-  name "croptopia:vanilla_seeds"
-}
 tag "forge:vegetables" "items" {
-  tag "forge:artichokes"
-  tag "forge:asparagus"
-  tag "forge:broccoli"
-  tag "forge:cabbage"
-  tag "forge:cauliflower"
-  tag "forge:celery"
-  tag "forge:cucumbers"
-  tag "forge:eggplants"
-  tag "forge:garlic"
-  tag "forge:gingers"
-  tag "forge:greenbeans"
-  tag "forge:greenonions"
-  tag "forge:kale"
-  tag "forge:leek"
-  tag "forge:lettuce"
-  tag "forge:mustard"
-  tag "forge:onions"
-  tag "forge:radishes"
-  tag "forge:rhubarb"
-  tag "forge:rutabagas"
-  tag "forge:soybeans"
-  tag "forge:spinach"
-  tag "forge:squashes"
-  tag "forge:sweetpotatos"
-  tag "forge:tomatillos"
-  tag "forge:tomatoes"
-  tag "forge:turnips"
   tag "forge:vegetables/beetroot"
   tag "forge:vegetables/carrot"
   tag "forge:vegetables/onion"
   tag "forge:vegetables/potato"
   tag "forge:vegetables/tomato"
-  tag "forge:yams"
-  tag "forge:zucchini"
   name "betterendforge:amber_root_raw"
-}
-tag "forge:vegetables/artichoke" "items" {
-  name "croptopia:artichoke"
-}
-tag "forge:vegetables/asparagus" "items" {
-  name "croptopia:asparagus"
 }
 tag "forge:vegetables/beetroot" "items" {
   name "minecraft:beetroot"
 }
-tag "forge:vegetables/broccoli" "items" {
-  name "croptopia:broccoli"
-}
-tag "forge:vegetables/cabbage" "items" {
-  name "croptopia:cabbage"
-}
 tag "forge:vegetables/carrot" "items" {
   name "minecraft:carrot"
 }
-tag "forge:vegetables/cauliflower" "items" {
-  name "croptopia:cauliflower"
-}
-tag "forge:vegetables/celery" "items" {
-  name "croptopia:celery"
-}
-tag "forge:vegetables/cucumber" "items" {
-  name "croptopia:cucumber"
-}
-tag "forge:vegetables/eggplant" "items" {
-  name "croptopia:eggplant"
-}
-tag "forge:vegetables/garlic" "items" {
-  name "croptopia:garlic"
-}
-tag "forge:vegetables/ginger" "items" {
-  name "croptopia:ginger"
-}
-tag "forge:vegetables/greenbean" "items" {
-  name "croptopia:greenbean"
-}
-tag "forge:vegetables/greenonion" "items" {
-  name "croptopia:greenonion"
-}
-tag "forge:vegetables/kale" "items" {
-  name "croptopia:kale"
-}
-tag "forge:vegetables/leek" "items" {
-  name "croptopia:leek"
-}
-tag "forge:vegetables/lettuce" "items" {
-  name "croptopia:lettuce"
-}
-tag "forge:vegetables/mustard" "items" {
-  name "croptopia:mustard"
-}
 tag "forge:vegetables/onion" "items" {
-  name "croptopia:onion"
   name "farmersdelight:onion"
 }
 tag "forge:vegetables/potato" "items" {
   name "minecraft:potato"
 }
-tag "forge:vegetables/radish" "items" {
-  name "croptopia:radish"
-}
-tag "forge:vegetables/rhubarb" "items" {
-  name "croptopia:rhubarb"
-}
-tag "forge:vegetables/rutabaga" "items" {
-  name "croptopia:rutabaga"
-}
-tag "forge:vegetables/soybean" "items" {
-  name "croptopia:soybean"
-}
-tag "forge:vegetables/spinach" "items" {
-  name "croptopia:spinach"
-}
-tag "forge:vegetables/squash" "items" {
-  name "croptopia:squash"
-}
-tag "forge:vegetables/sweetpotato" "items" {
-  name "croptopia:sweetpotato"
-}
-tag "forge:vegetables/tomatillo" "items" {
-  name "croptopia:tomatillo"
-}
 tag "forge:vegetables/tomato" "items" {
-  name "croptopia:tomato"
   name "farmersdelight:tomato"
-}
-tag "forge:vegetables/turnip" "items" {
-  name "croptopia:turnip"
-}
-tag "forge:vegetables/yam" "items" {
-  name "croptopia:yam"
-}
-tag "forge:vegetables/zucchini" "items" {
-  name "croptopia:zucchini"
-}
-tag "forge:veggie_salads" "items" {
-  name "croptopia:veggie_salad"
 }
 tag "forge:vines" "blocks" {
   name "biomesoplenty:spanish_moss" optional=true
@@ -18397,20 +16643,6 @@ tag "forge:vines" "blocks" {
   name "tconstruct:ender_slime_vine" optional=true
   name "tconstruct:sky_slime_vine" optional=true
 }
-tag "forge:walnut_saplings" "items" {
-  tag "forge:saplings/walnut"
-  name "croptopia:walnut_sapling"
-}
-tag "forge:walnuts" "items" {
-  tag "forge:crops/walnut"
-  tag "forge:fruits/walnut"
-  tag "forge:nuts/walnut"
-  name "croptopia:walnut"
-}
-tag "forge:water_bottles" "items" {
-  name "croptopia:water_bottle"
-  name "minecraft:water_bucket"
-}
 tag "forge:wg_stone" "blocks" {
   name "create:dolomite"
   name "create:gabbro"
@@ -18420,9 +16652,6 @@ tag "forge:wg_stone" "blocks" {
 }
 tag "forge:white_sand" "blocks,items" {
   name "byg:white_sand"
-}
-tag "forge:wines" "items" {
-  name "croptopia:wine"
 }
 tag "forge:wires" "items" {
   tag "forge:wires/aluminum"
@@ -18607,32 +16836,8 @@ tag "forge:workbenches" "blocks,items" {
 tag "forge:wrenches" "items" {
   name "mekanism:configurator"
 }
-tag "forge:yam_jam" "items" {
-  name "croptopia:yam_jam"
-}
-tag "forge:yam_seeds" "items" {
-  tag "forge:seeds/yam"
-  name "croptopia:yam_seed"
-}
-tag "forge:yams" "items" {
-  tag "forge:crops/yam"
-  tag "forge:vegetables/yam"
-  name "croptopia:yam"
-}
 tag "forge:yellow_cake_uranium" "items" {
   name "mekanism:yellow_cake_uranium"
-}
-tag "forge:yoghurts" "items" {
-  name "croptopia:yoghurt"
-}
-tag "forge:zucchini" "items" {
-  tag "forge:crops/zucchini"
-  tag "forge:vegetables/zucchini"
-  name "croptopia:zucchini"
-}
-tag "forge:zucchini_seeds" "items" {
-  tag "forge:seeds/zucchini"
-  name "croptopia:zucchini_seed"
 }
 tag "ftbchunks:edit_whitelist" "blocks" {
   name "gravestone:gravestone" optional=true
@@ -21204,9 +19409,6 @@ tag "minecraft:arrows" "items" {
   name "minecraft:tipped_arrow"
   name "silentgear:arrow"
 }
-tag "minecraft:azalea_root_replaceable" "blocks" {
-  name "croptopia:salt_ore"
-}
 tag "minecraft:bamboo_plantable_on" "blocks" {
   tag "forge:sand"
   tag "minecraft:sand"
@@ -21743,6 +19945,8 @@ tag "minecraft:carpets" "blocks,items" {
   name "minecraft:yellow_carpet"
 }
 tag "minecraft:climbable" "blocks" {
+  name "adorn:chain_link_fence"
+  name "adorn:stone_ladder"
   name "bamboo_blocks:bamboo_ladder"
   name "betterendforge:bulb_vine"
   name "betterendforge:dense_vine"
@@ -21898,90 +20102,6 @@ tag "minecraft:crimson_stems" "items" {
   name "decorative_blocks:crimson_beam"
 }
 tag "minecraft:crops" "blocks" {
-  name "croptopia:almond_crop"
-  name "croptopia:apple_crop"
-  name "croptopia:apricot_crop"
-  name "croptopia:artichoke_crop"
-  name "croptopia:asparagus_crop"
-  name "croptopia:avocado_crop"
-  name "croptopia:banana_crop"
-  name "croptopia:barley_crop"
-  name "croptopia:basil_crop"
-  name "croptopia:bellpepper_crop"
-  name "croptopia:blackbean_crop"
-  name "croptopia:blackberry_crop"
-  name "croptopia:blueberry_crop"
-  name "croptopia:broccoli_crop"
-  name "croptopia:cabbage_crop"
-  name "croptopia:cantaloupe_crop"
-  name "croptopia:cashew_crop"
-  name "croptopia:cauliflower_crop"
-  name "croptopia:celery_crop"
-  name "croptopia:cherry_crop"
-  name "croptopia:chile_pepper_crop"
-  name "croptopia:coconut_crop"
-  name "croptopia:coffee_crop"
-  name "croptopia:corn_crop"
-  name "croptopia:cranberry_crop"
-  name "croptopia:cucumber_crop"
-  name "croptopia:currant_crop"
-  name "croptopia:date_crop"
-  name "croptopia:dragonfruit_crop"
-  name "croptopia:eggplant_crop"
-  name "croptopia:elderberry_crop"
-  name "croptopia:fig_crop"
-  name "croptopia:garlic_crop"
-  name "croptopia:ginger_crop"
-  name "croptopia:grape_crop"
-  name "croptopia:grapefruit_crop"
-  name "croptopia:greenbean_crop"
-  name "croptopia:greenonion_crop"
-  name "croptopia:honeydew_crop"
-  name "croptopia:hops_crop"
-  name "croptopia:kale_crop"
-  name "croptopia:kiwi_crop"
-  name "croptopia:kumquat_crop"
-  name "croptopia:leek_crop"
-  name "croptopia:lemon_crop"
-  name "croptopia:lettuce_crop"
-  name "croptopia:lime_crop"
-  name "croptopia:mango_crop"
-  name "croptopia:mustard_crop"
-  name "croptopia:nectarine_crop"
-  name "croptopia:nutmeg_crop"
-  name "croptopia:oat_crop"
-  name "croptopia:olive_crop"
-  name "croptopia:onion_crop"
-  name "croptopia:orange_crop"
-  name "croptopia:peach_crop"
-  name "croptopia:peanut_crop"
-  name "croptopia:pear_crop"
-  name "croptopia:pecan_crop"
-  name "croptopia:pepper_crop"
-  name "croptopia:persimmon_crop"
-  name "croptopia:pineapple_crop"
-  name "croptopia:plum_crop"
-  name "croptopia:radish_crop"
-  name "croptopia:raspberry_crop"
-  name "croptopia:rhubarb_crop"
-  name "croptopia:rice_crop"
-  name "croptopia:rutabaga_crop"
-  name "croptopia:saguaro_crop"
-  name "croptopia:soybean_crop"
-  name "croptopia:spinach_crop"
-  name "croptopia:squash_crop"
-  name "croptopia:starfruit_crop"
-  name "croptopia:strawberry_crop"
-  name "croptopia:sweetpotato_crop"
-  name "croptopia:tea_crop"
-  name "croptopia:tomatillo_crop"
-  name "croptopia:tomato_crop"
-  name "croptopia:turmeric_crop"
-  name "croptopia:turnip_crop"
-  name "croptopia:vanilla_crop"
-  name "croptopia:walnut_crop"
-  name "croptopia:yam_crop"
-  name "croptopia:zucchini_crop"
   name "farmersdelight:cabbages"
   name "farmersdelight:onions"
   name "farmersdelight:rice_upper_crop"
@@ -22151,9 +20271,6 @@ tag "minecraft:dragon_immune" "blocks" {
   name "twilightforest:stronghold_shield"
   name "twilightforest:vanishing_block"
 }
-tag "minecraft:dripstone_replaceable_blocks" "blocks" {
-  name "croptopia:salt_ore"
-}
 tag "minecraft:enderman_holdable" "blocks" {
   tag "forge:dirt"
   tag "forge:sand"
@@ -22166,7 +20283,6 @@ tag "minecraft:enderman_holdable" "blocks" {
   name "byg:mud_block"
   name "byg:mud_bricks"
   name "byg:peat"
-  name "croptopia:salt_ore"
   name "minecraft:brown_mushroom"
   name "minecraft:cactus"
   name "minecraft:carved_pumpkin"
@@ -22322,6 +20438,174 @@ tag "minecraft:fences" "blocks,items" {
   name "mcwfences:warped_picket_fence"
   name "mcwfences:warped_stockade_fence"
   name "mcwfences:warped_wired_fence"
+  name "mcwfencesbyg:aspen_highley_gate"
+  name "mcwfencesbyg:aspen_horse_fence"
+  name "mcwfencesbyg:aspen_picket_fence"
+  name "mcwfencesbyg:aspen_pyramid_gate"
+  name "mcwfencesbyg:aspen_stockade_fence"
+  name "mcwfencesbyg:aspen_wired_fence"
+  name "mcwfencesbyg:baobab_highley_gate"
+  name "mcwfencesbyg:baobab_horse_fence"
+  name "mcwfencesbyg:baobab_picket_fence"
+  name "mcwfencesbyg:baobab_pyramid_gate"
+  name "mcwfencesbyg:baobab_stockade_fence"
+  name "mcwfencesbyg:baobab_wired_fence"
+  name "mcwfencesbyg:blue_enchanted_highley_gate"
+  name "mcwfencesbyg:blue_enchanted_horse_fence"
+  name "mcwfencesbyg:blue_enchanted_picket_fence"
+  name "mcwfencesbyg:blue_enchanted_pyramid_gate"
+  name "mcwfencesbyg:blue_enchanted_stockade_fence"
+  name "mcwfencesbyg:blue_enchanted_wired_fence"
+  name "mcwfencesbyg:bulbis_highley_gate"
+  name "mcwfencesbyg:bulbis_horse_fence"
+  name "mcwfencesbyg:bulbis_picket_fence"
+  name "mcwfencesbyg:bulbis_pyramid_gate"
+  name "mcwfencesbyg:bulbis_stockade_fence"
+  name "mcwfencesbyg:bulbis_wired_fence"
+  name "mcwfencesbyg:cherry_highley_gate"
+  name "mcwfencesbyg:cherry_horse_fence"
+  name "mcwfencesbyg:cherry_picket_fence"
+  name "mcwfencesbyg:cherry_pyramid_gate"
+  name "mcwfencesbyg:cherry_stockade_fence"
+  name "mcwfencesbyg:cherry_wired_fence"
+  name "mcwfencesbyg:cika_highley_gate"
+  name "mcwfencesbyg:cika_horse_fence"
+  name "mcwfencesbyg:cika_picket_fence"
+  name "mcwfencesbyg:cika_pyramid_gate"
+  name "mcwfencesbyg:cika_stockade_fence"
+  name "mcwfencesbyg:cika_wired_fence"
+  name "mcwfencesbyg:cypress_highley_gate"
+  name "mcwfencesbyg:cypress_horse_fence"
+  name "mcwfencesbyg:cypress_picket_fence"
+  name "mcwfencesbyg:cypress_pyramid_gate"
+  name "mcwfencesbyg:cypress_stockade_fence"
+  name "mcwfencesbyg:cypress_wired_fence"
+  name "mcwfencesbyg:ebony_highley_gate"
+  name "mcwfencesbyg:ebony_horse_fence"
+  name "mcwfencesbyg:ebony_picket_fence"
+  name "mcwfencesbyg:ebony_pyramid_gate"
+  name "mcwfencesbyg:ebony_stockade_fence"
+  name "mcwfencesbyg:ebony_wired_fence"
+  name "mcwfencesbyg:ether_highley_gate"
+  name "mcwfencesbyg:ether_horse_fence"
+  name "mcwfencesbyg:ether_picket_fence"
+  name "mcwfencesbyg:ether_pyramid_gate"
+  name "mcwfencesbyg:ether_stockade_fence"
+  name "mcwfencesbyg:ether_wired_fence"
+  name "mcwfencesbyg:fir_highley_gate"
+  name "mcwfencesbyg:fir_horse_fence"
+  name "mcwfencesbyg:fir_picket_fence"
+  name "mcwfencesbyg:fir_pyramid_gate"
+  name "mcwfencesbyg:fir_stockade_fence"
+  name "mcwfencesbyg:fir_wired_fence"
+  name "mcwfencesbyg:green_enchanted_highley_gate"
+  name "mcwfencesbyg:green_enchanted_horse_fence"
+  name "mcwfencesbyg:green_enchanted_picket_fence"
+  name "mcwfencesbyg:green_enchanted_pyramid_gate"
+  name "mcwfencesbyg:green_enchanted_stockade_fence"
+  name "mcwfencesbyg:green_enchanted_wired_fence"
+  name "mcwfencesbyg:holly_highley_gate"
+  name "mcwfencesbyg:holly_horse_fence"
+  name "mcwfencesbyg:holly_picket_fence"
+  name "mcwfencesbyg:holly_pyramid_gate"
+  name "mcwfencesbyg:holly_stockade_fence"
+  name "mcwfencesbyg:holly_wired_fence"
+  name "mcwfencesbyg:imparius_highley_gate"
+  name "mcwfencesbyg:imparius_horse_fence"
+  name "mcwfencesbyg:imparius_picket_fence"
+  name "mcwfencesbyg:imparius_pyramid_gate"
+  name "mcwfencesbyg:imparius_stockade_fence"
+  name "mcwfencesbyg:imparius_wired_fence"
+  name "mcwfencesbyg:jacaranda_highley_gate"
+  name "mcwfencesbyg:jacaranda_horse_fence"
+  name "mcwfencesbyg:jacaranda_picket_fence"
+  name "mcwfencesbyg:jacaranda_pyramid_gate"
+  name "mcwfencesbyg:jacaranda_stockade_fence"
+  name "mcwfencesbyg:jacaranda_wired_fence"
+  name "mcwfencesbyg:lament_highley_gate"
+  name "mcwfencesbyg:lament_horse_fence"
+  name "mcwfencesbyg:lament_picket_fence"
+  name "mcwfencesbyg:lament_pyramid_gate"
+  name "mcwfencesbyg:lament_stockade_fence"
+  name "mcwfencesbyg:lament_wired_fence"
+  name "mcwfencesbyg:mahogany_highley_gate"
+  name "mcwfencesbyg:mahogany_horse_fence"
+  name "mcwfencesbyg:mahogany_picket_fence"
+  name "mcwfencesbyg:mahogany_pyramid_gate"
+  name "mcwfencesbyg:mahogany_stockade_fence"
+  name "mcwfencesbyg:mahogany_wired_fence"
+  name "mcwfencesbyg:mangrove_highley_gate"
+  name "mcwfencesbyg:mangrove_horse_fence"
+  name "mcwfencesbyg:mangrove_picket_fence"
+  name "mcwfencesbyg:mangrove_pyramid_gate"
+  name "mcwfencesbyg:mangrove_stockade_fence"
+  name "mcwfencesbyg:mangrove_wired_fence"
+  name "mcwfencesbyg:maple_highley_gate"
+  name "mcwfencesbyg:maple_horse_fence"
+  name "mcwfencesbyg:maple_picket_fence"
+  name "mcwfencesbyg:maple_pyramid_gate"
+  name "mcwfencesbyg:maple_stockade_fence"
+  name "mcwfencesbyg:maple_wired_fence"
+  name "mcwfencesbyg:nightshade_highley_gate"
+  name "mcwfencesbyg:nightshade_horse_fence"
+  name "mcwfencesbyg:nightshade_picket_fence"
+  name "mcwfencesbyg:nightshade_pyramid_gate"
+  name "mcwfencesbyg:nightshade_stockade_fence"
+  name "mcwfencesbyg:nightshade_wired_fence"
+  name "mcwfencesbyg:palm_highley_gate"
+  name "mcwfencesbyg:palm_horse_fence"
+  name "mcwfencesbyg:palm_picket_fence"
+  name "mcwfencesbyg:palm_pyramid_gate"
+  name "mcwfencesbyg:palm_stockade_fence"
+  name "mcwfencesbyg:palm_wired_fence"
+  name "mcwfencesbyg:pine_highley_gate"
+  name "mcwfencesbyg:pine_horse_fence"
+  name "mcwfencesbyg:pine_picket_fence"
+  name "mcwfencesbyg:pine_pyramid_gate"
+  name "mcwfencesbyg:pine_stockade_fence"
+  name "mcwfencesbyg:pine_wired_fence"
+  name "mcwfencesbyg:rainbow_eucalyptus_highley_gate"
+  name "mcwfencesbyg:rainbow_eucalyptus_horse_fence"
+  name "mcwfencesbyg:rainbow_eucalyptus_picket_fence"
+  name "mcwfencesbyg:rainbow_eucalyptus_pyramid_gate"
+  name "mcwfencesbyg:rainbow_eucalyptus_stockade_fence"
+  name "mcwfencesbyg:rainbow_eucalyptus_wired_fence"
+  name "mcwfencesbyg:redwood_highley_gate"
+  name "mcwfencesbyg:redwood_horse_fence"
+  name "mcwfencesbyg:redwood_picket_fence"
+  name "mcwfencesbyg:redwood_pyramid_gate"
+  name "mcwfencesbyg:redwood_stockade_fence"
+  name "mcwfencesbyg:redwood_wired_fence"
+  name "mcwfencesbyg:skyris_highley_gate"
+  name "mcwfencesbyg:skyris_horse_fence"
+  name "mcwfencesbyg:skyris_picket_fence"
+  name "mcwfencesbyg:skyris_pyramid_gate"
+  name "mcwfencesbyg:skyris_stockade_fence"
+  name "mcwfencesbyg:skyris_wired_fence"
+  name "mcwfencesbyg:sythian_highley_gate"
+  name "mcwfencesbyg:sythian_horse_fence"
+  name "mcwfencesbyg:sythian_picket_fence"
+  name "mcwfencesbyg:sythian_pyramid_gate"
+  name "mcwfencesbyg:sythian_stockade_fence"
+  name "mcwfencesbyg:sythian_wired_fence"
+  name "mcwfencesbyg:willow_highley_gate"
+  name "mcwfencesbyg:willow_horse_fence"
+  name "mcwfencesbyg:willow_picket_fence"
+  name "mcwfencesbyg:willow_pyramid_gate"
+  name "mcwfencesbyg:willow_stockade_fence"
+  name "mcwfencesbyg:willow_wired_fence"
+  name "mcwfencesbyg:witch_hazel_highley_gate"
+  name "mcwfencesbyg:witch_hazel_horse_fence"
+  name "mcwfencesbyg:witch_hazel_picket_fence"
+  name "mcwfencesbyg:witch_hazel_pyramid_gate"
+  name "mcwfencesbyg:witch_hazel_stockade_fence"
+  name "mcwfencesbyg:witch_hazel_wired_fence"
+  name "mcwfencesbyg:zelkova_highley_gate"
+  name "mcwfencesbyg:zelkova_horse_fence"
+  name "mcwfencesbyg:zelkova_picket_fence"
+  name "mcwfencesbyg:zelkova_pyramid_gate"
+  name "mcwfencesbyg:zelkova_stockade_fence"
+  name "mcwfencesbyg:zelkova_wired_fence"
   name "minecraft:nether_brick_fence"
 }
 tag "minecraft:fences/wooden" "blocks,items" {
@@ -22335,14 +20619,6 @@ tag "minecraft:fire" "blocks" {
   name "minecraft:soul_fire"
 }
 tag "minecraft:fishes" "items" {
-  name "croptopia:anchovy"
-  name "croptopia:calamari"
-  name "croptopia:clam"
-  name "croptopia:crab"
-  name "croptopia:oyster"
-  name "croptopia:roe"
-  name "croptopia:shrimp"
-  name "croptopia:tuna"
   name "minecraft:cod"
   name "minecraft:cooked_cod"
   name "minecraft:cooked_salmon"
@@ -22520,14 +20796,6 @@ tag "minecraft:flowers" "blocks,items" {
 }
 tag "minecraft:flowers" "items" {
   tag "silentgems:glowroses"
-}
-tag "minecraft:fox_food" "items" {
-  name "croptopia:blackberry"
-  name "croptopia:blueberry"
-  name "croptopia:cranberry"
-  name "croptopia:elderberry"
-  name "croptopia:raspberry"
-  name "croptopia:strawberry"
 }
 tag "minecraft:fungus" "items" {
   name "infernalexp:luminous_fungus"
@@ -22799,33 +21067,6 @@ tag "minecraft:leaves" "blocks" {
   name "ars_nouveau:red_archwood_leaves"
   name "cavesandcliffs:azalea_leaves"
   name "cavesandcliffs:flowering_azalea_leaves"
-  name "croptopia:almond_crop"
-  name "croptopia:apple_crop"
-  name "croptopia:apricot_crop"
-  name "croptopia:avocado_crop"
-  name "croptopia:banana_crop"
-  name "croptopia:cashew_crop"
-  name "croptopia:cherry_crop"
-  name "croptopia:cinnamon_leaves"
-  name "croptopia:coconut_crop"
-  name "croptopia:date_crop"
-  name "croptopia:dragonfruit_crop"
-  name "croptopia:fig_crop"
-  name "croptopia:grapefruit_crop"
-  name "croptopia:kumquat_crop"
-  name "croptopia:lemon_crop"
-  name "croptopia:lime_crop"
-  name "croptopia:mango_crop"
-  name "croptopia:nectarine_crop"
-  name "croptopia:nutmeg_crop"
-  name "croptopia:orange_crop"
-  name "croptopia:peach_crop"
-  name "croptopia:pear_crop"
-  name "croptopia:pecan_crop"
-  name "croptopia:persimmon_crop"
-  name "croptopia:plum_crop"
-  name "croptopia:starfruit_crop"
-  name "croptopia:walnut_crop"
 }
 tag "minecraft:leaves" "blocks,items" {
   tag "tconstruct:slimy_leaves"
@@ -22890,6 +21131,7 @@ tag "minecraft:leaves" "blocks,items" {
   name "byg:yellow_birch_leaves"
   name "byg:yellow_spruce_leaves"
   name "byg:zelkova_leaves"
+  name "culturaldelights:avocado_leaves"
   name "integrateddynamics:menril_leaves"
   name "minecraft:acacia_leaves"
   name "minecraft:birch_leaves"
@@ -23027,6 +21269,7 @@ tag "minecraft:logs" "blocks,items" {
   name "betterendforge:umbrella_tree_stripped_bark"
   name "betterendforge:umbrella_tree_stripped_log"
   name "byg:imbued_nightshade_log"
+  name "culturaldelights:avocado_log"
 }
 tag "minecraft:logs" "items" {
   name "ars_nouveau:stripped_blue_archwood_log"
@@ -23037,6 +21280,7 @@ tag "minecraft:logs" "items" {
   name "ars_nouveau:stripped_purple_archwood_wood"
   name "ars_nouveau:stripped_red_archwood_log"
   name "ars_nouveau:stripped_red_archwood_wood"
+  name "culturaldelights:avocado_wood"
 }
 tag "minecraft:logs/archwood" "blocks,items" {
   name "ars_nouveau:blue_archwood_log"
@@ -23087,7 +21331,6 @@ tag "minecraft:logs_that_burn" "blocks,items" {
   tag "byg:witch_hazel_logs"
   tag "byg:withering_oak_logs"
   tag "byg:zelkova_logs"
-  tag "croptopia:cinnamon_logs"
   tag "endergetic:poise_stems"
   tag "minecraft:acacia_logs"
   tag "minecraft:birch_logs"
@@ -24235,33 +22478,6 @@ tag "minecraft:mineable/axe" "blocks" {
   name "mcwwindows:warped_stem_window2"
 }
 tag "minecraft:mineable/hoe" "blocks" {
-  name "croptopia:almond_crop"
-  name "croptopia:apple_crop"
-  name "croptopia:apricot_crop"
-  name "croptopia:avocado_crop"
-  name "croptopia:banana_crop"
-  name "croptopia:cashew_crop"
-  name "croptopia:cherry_crop"
-  name "croptopia:cinnamon_leaves"
-  name "croptopia:coconut_crop"
-  name "croptopia:date_crop"
-  name "croptopia:dragonfruit_crop"
-  name "croptopia:fig_crop"
-  name "croptopia:grapefruit_crop"
-  name "croptopia:kumquat_crop"
-  name "croptopia:lemon_crop"
-  name "croptopia:lime_crop"
-  name "croptopia:mango_crop"
-  name "croptopia:nectarine_crop"
-  name "croptopia:nutmeg_crop"
-  name "croptopia:orange_crop"
-  name "croptopia:peach_crop"
-  name "croptopia:pear_crop"
-  name "croptopia:pecan_crop"
-  name "croptopia:persimmon_crop"
-  name "croptopia:plum_crop"
-  name "croptopia:starfruit_crop"
-  name "croptopia:walnut_crop"
   name "mcwfences:acacia_hedge"
   name "mcwfences:birch_hedge"
   name "mcwfences:dark_oak_hedge"
@@ -24500,9 +22716,6 @@ tag "minecraft:mineable/pickaxe" "blocks" {
   name "mcwwindows:stone_window"
   name "mcwwindows:stone_window2"
 }
-tag "minecraft:mineable/shovel" "blocks" {
-  name "croptopia:salt_ore"
-}
 tag "minecraft:mushroom_grow_block" "blocks" {
   name "byg:bulbis_phycelium"
   name "byg:embur_nylium"
@@ -24554,6 +22767,9 @@ tag "minecraft:music_discs" "items" {
 tag "minecraft:non_flammable_wood" "blocks" {
   name "minecraft:crimson_wall_sign"
   name "minecraft:warped_wall_sign"
+  name "variant_crafting_tables:bop_hellbark_crafting_table"
+  name "variant_crafting_tables:crimson_crafting_table"
+  name "variant_crafting_tables:warped_crafting_table"
 }
 tag "minecraft:non_flammable_wood" "blocks,items" {
   tag "tconstruct:bloodshroom_logs"
@@ -24644,14 +22860,6 @@ tag "minecraft:oak_logs" "blocks,items" {
 }
 tag "minecraft:oak_logs" "items" {
   name "decorative_blocks:oak_beam"
-}
-tag "minecraft:piglin_food" "items" {
-  name "croptopia:bacon"
-  name "croptopia:cooked_bacon"
-  name "croptopia:ham_sandwich"
-  name "croptopia:pepperoni"
-  name "croptopia:pork_and_beans"
-  name "croptopia:pork_jerky"
 }
 tag "minecraft:piglin_loved" "items" {
   tag "mekanism:clumps/gold"
@@ -25030,33 +23238,6 @@ tag "minecraft:saplings" "blocks,items" {
   name "byg:withering_oak_sapling"
   name "byg:yellow_birch_sapling"
   name "byg:zelkova_sapling"
-  name "croptopia:almond_sapling"
-  name "croptopia:apple_sapling"
-  name "croptopia:apricot_sapling"
-  name "croptopia:avocado_sapling"
-  name "croptopia:banana_sapling"
-  name "croptopia:cashew_sapling"
-  name "croptopia:cherry_sapling"
-  name "croptopia:cinnamon_sapling"
-  name "croptopia:coconut_sapling"
-  name "croptopia:date_sapling"
-  name "croptopia:dragonfruit_sapling"
-  name "croptopia:fig_sapling"
-  name "croptopia:grapefruit_sapling"
-  name "croptopia:kumquat_sapling"
-  name "croptopia:lemon_sapling"
-  name "croptopia:lime_sapling"
-  name "croptopia:mango_sapling"
-  name "croptopia:nectarine_sapling"
-  name "croptopia:nutmeg_sapling"
-  name "croptopia:orange_sapling"
-  name "croptopia:peach_sapling"
-  name "croptopia:pear_sapling"
-  name "croptopia:pecan_sapling"
-  name "croptopia:persimmon_sapling"
-  name "croptopia:plum_sapling"
-  name "croptopia:starfruit_sapling"
-  name "croptopia:walnut_sapling"
   name "integrateddynamics:menril_sapling"
   name "minecraft:acacia_sapling"
   name "minecraft:birch_sapling"
@@ -28325,428 +26506,6 @@ tag "mythicbotany:ritua_runes" "items" {
 }
 tag "nether_extension:netherite_gear" "items" {
   name "farmersdelight:netherite_knife"
-}
-tag "nourish:carbohydrates" "items" {
-  name "croptopia:apple_pie"
-  name "croptopia:avocado_toast"
-  name "croptopia:baked_sweet_potato"
-  name "croptopia:baked_yam"
-  name "croptopia:banana_cream_pie"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:barley"
-  name "croptopia:beer"
-  name "croptopia:blt"
-  name "croptopia:brownies"
-  name "croptopia:burrito"
-  name "croptopia:buttered_toast"
-  name "croptopia:carnitas"
-  name "croptopia:cheese_pizza"
-  name "croptopia:cheeseburger"
-  name "croptopia:cherry_pie"
-  name "croptopia:chicken_and_dumplings"
-  name "croptopia:chicken_and_noodles"
-  name "croptopia:chicken_and_rice"
-  name "croptopia:chimichanga"
-  name "croptopia:churros"
-  name "croptopia:corn"
-  name "croptopia:cornish_pasty"
-  name "croptopia:doughnut"
-  name "croptopia:egg_roll"
-  name "croptopia:eggplant_parmesan"
-  name "croptopia:enchilada"
-  name "croptopia:fajitas"
-  name "croptopia:fish_and_chips"
-  name "croptopia:french_fries"
-  name "croptopia:grilled_cheese"
-  name "croptopia:ham_sandwich"
-  name "croptopia:hamburger"
-  name "croptopia:hops"
-  name "croptopia:horchata"
-  name "croptopia:oat"
-  name "croptopia:oatmeal"
-  name "croptopia:peanut_butter_and_jam"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:pizza"
-  name "croptopia:popcorn"
-  name "croptopia:potato_chips"
-  name "croptopia:potato_soup"
-  name "croptopia:quesadilla"
-  name "croptopia:refried_beans"
-  name "croptopia:rice"
-  name "croptopia:saucy_chips"
-  name "croptopia:scones"
-  name "croptopia:shepherds_pie"
-  name "croptopia:snicker_doodle"
-  name "croptopia:spaghetti_squash"
-  name "croptopia:steamed_rice"
-  name "croptopia:supreme_pizza"
-  name "croptopia:sweet_potato_fries"
-  name "croptopia:sweetpotato"
-  name "croptopia:taco"
-  name "croptopia:toast"
-  name "croptopia:toast_sandwich"
-  name "croptopia:toast_with_jam"
-  name "croptopia:tofu_and_dumplings"
-  name "croptopia:tofuburger"
-  name "croptopia:tortilla"
-  name "croptopia:tostada"
-  name "croptopia:treacle_tart"
-  name "croptopia:tres_leche_cake"
-  name "croptopia:trifle"
-  name "croptopia:tuna_sandwich"
-  name "croptopia:yam"
-  name "croptopia:yam_jam"
-}
-tag "nourish:fats" "items" {
-  name "croptopia:apple_pie"
-  name "croptopia:avocado"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:brownies"
-  name "croptopia:butter"
-  name "croptopia:buttered_green_beans"
-  name "croptopia:candy_corn"
-  name "croptopia:cheese"
-  name "croptopia:cheese_cake"
-  name "croptopia:cheese_pizza"
-  name "croptopia:cheeseburger"
-  name "croptopia:cherry_pie"
-  name "croptopia:chocolate"
-  name "croptopia:chocolate_ice_cream"
-  name "croptopia:chocolate_milkshake"
-  name "croptopia:churros"
-  name "croptopia:egg_roll"
-  name "croptopia:eton_mess"
-  name "croptopia:figgy_pudding"
-  name "croptopia:grilled_cheese"
-  name "croptopia:horchata"
-  name "croptopia:olive"
-  name "croptopia:peanut"
-  name "croptopia:peanut_butter_and_jam"
-  name "croptopia:pepperoni"
-  name "croptopia:pizza"
-  name "croptopia:scones"
-  name "croptopia:scrambled_eggs"
-  name "croptopia:snicker_doodle"
-  name "croptopia:soy_milk"
-  name "croptopia:soybean"
-  name "croptopia:sticky_toffee_pudding"
-  name "croptopia:supreme_pizza"
-  name "croptopia:sushi"
-  name "croptopia:tofu"
-  name "croptopia:tofu_and_dumplings"
-  name "croptopia:tofuburger"
-  name "croptopia:tres_leche_cake"
-  name "croptopia:trifle"
-  name "croptopia:tuna_sandwich"
-  name "croptopia:yoghurt"
-}
-tag "nourish:fruit" "items" {
-  name "croptopia:almond"
-  name "croptopia:apple_juice"
-  name "croptopia:apple_pie"
-  name "croptopia:apricot"
-  name "croptopia:apricot_jam"
-  name "croptopia:avocado"
-  name "croptopia:avocado_toast"
-  name "croptopia:banana"
-  name "croptopia:banana_cream_pie"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:banana_smoothie"
-  name "croptopia:blackberry"
-  name "croptopia:blackberry_jam"
-  name "croptopia:blueberry"
-  name "croptopia:blueberry_jam"
-  name "croptopia:cantaloupe"
-  name "croptopia:cashew"
-  name "croptopia:cherry"
-  name "croptopia:cherry_jam"
-  name "croptopia:cherry_pie"
-  name "croptopia:coconut"
-  name "croptopia:cranberry"
-  name "croptopia:cranberry_juice"
-  name "croptopia:currant"
-  name "croptopia:date"
-  name "croptopia:dragonfruit"
-  name "croptopia:elderberry"
-  name "croptopia:elderberry_jam"
-  name "croptopia:eton_mess"
-  name "croptopia:fig"
-  name "croptopia:figgy_pudding"
-  name "croptopia:fruit_cake"
-  name "croptopia:fruit_salad"
-  name "croptopia:fruit_smoothie"
-  name "croptopia:grape"
-  name "croptopia:grape_jam"
-  name "croptopia:grape_juice"
-  name "croptopia:grapefruit"
-  name "croptopia:honeydew"
-  name "croptopia:kiwi"
-  name "croptopia:kiwi_sorbet"
-  name "croptopia:kumquat"
-  name "croptopia:lemon"
-  name "croptopia:lemon_coconut_bar"
-  name "croptopia:lemonade"
-  name "croptopia:lime"
-  name "croptopia:limeade"
-  name "croptopia:mango"
-  name "croptopia:mango_ice_cream"
-  name "croptopia:melon_juice"
-  name "croptopia:nectarine"
-  name "croptopia:nutmeg"
-  name "croptopia:orange"
-  name "croptopia:orange_juice"
-  name "croptopia:peach"
-  name "croptopia:peach_jam"
-  name "croptopia:peanut_butter_and_jam"
-  name "croptopia:pear"
-  name "croptopia:pecan"
-  name "croptopia:persimmon"
-  name "croptopia:pineapple"
-  name "croptopia:pineapple_juice"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:plum"
-  name "croptopia:quesadilla"
-  name "croptopia:raisins"
-  name "croptopia:raspberry"
-  name "croptopia:raspberry_jam"
-  name "croptopia:rum_raisin_ice_cream"
-  name "croptopia:saguaro"
-  name "croptopia:saguaro_juice"
-  name "croptopia:scones"
-  name "croptopia:starfruit"
-  name "croptopia:strawberry"
-  name "croptopia:strawberry_ice_cream"
-  name "croptopia:strawberry_jam"
-  name "croptopia:strawberry_smoothie"
-  name "croptopia:toast_with_jam"
-  name "croptopia:treacle_tart"
-  name "croptopia:walnut"
-}
-tag "nourish:protein" "items" {
-  name "croptopia:almond"
-  name "croptopia:asparagus"
-  name "croptopia:bacon"
-  name "croptopia:baked_beans"
-  name "croptopia:beef_jerky"
-  name "croptopia:beef_stew"
-  name "croptopia:beef_stir_fry"
-  name "croptopia:beef_wellington"
-  name "croptopia:blackbean"
-  name "croptopia:blt"
-  name "croptopia:broccoli"
-  name "croptopia:carnitas"
-  name "croptopia:cashew"
-  name "croptopia:cheese"
-  name "croptopia:cheese_pizza"
-  name "croptopia:cheeseburger"
-  name "croptopia:chicken_and_dumplings"
-  name "croptopia:chicken_and_noodles"
-  name "croptopia:chicken_and_rice"
-  name "croptopia:cooked_bacon"
-  name "croptopia:eggplant_parmesan"
-  name "croptopia:enchilada"
-  name "croptopia:fajitas"
-  name "croptopia:fish_and_chips"
-  name "croptopia:fried_chicken"
-  name "croptopia:fruit_cake"
-  name "croptopia:ham_sandwich"
-  name "croptopia:hamburger"
-  name "croptopia:lemon_chicken"
-  name "croptopia:peanut"
-  name "croptopia:peanut_butter"
-  name "croptopia:pecan"
-  name "croptopia:pepperoni"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:pizza"
-  name "croptopia:pork_and_beans"
-  name "croptopia:pork_jerky"
-  name "croptopia:quesadilla"
-  name "croptopia:scrambled_eggs"
-  name "croptopia:shepherds_pie"
-  name "croptopia:soy_milk"
-  name "croptopia:soybean"
-  name "croptopia:stuffed_poblanos"
-  name "croptopia:supreme_pizza"
-  name "croptopia:sushi"
-  name "croptopia:taco"
-  name "croptopia:tamales"
-  name "croptopia:tofu"
-  name "croptopia:tofu_and_dumplings"
-  name "croptopia:tofuburger"
-  name "croptopia:tuna_sandwich"
-  name "croptopia:walnut"
-  name "croptopia:yoghurt"
-}
-tag "nourish:sweets" "items" {
-  name "croptopia:apple_juice"
-  name "croptopia:apple_pie"
-  name "croptopia:apricot_jam"
-  name "croptopia:banana_cream_pie"
-  name "croptopia:banana_nut_bread"
-  name "croptopia:banana_smoothie"
-  name "croptopia:blackberry_jam"
-  name "croptopia:blueberry_jam"
-  name "croptopia:brownies"
-  name "croptopia:candy_corn"
-  name "croptopia:cheese_cake"
-  name "croptopia:cherry_jam"
-  name "croptopia:cherry_pie"
-  name "croptopia:chocolate"
-  name "croptopia:chocolate_ice_cream"
-  name "croptopia:chocolate_milkshake"
-  name "croptopia:churros"
-  name "croptopia:cranberry_juice"
-  name "croptopia:elderberry_jam"
-  name "croptopia:eton_mess"
-  name "croptopia:figgy_pudding"
-  name "croptopia:fruit_cake"
-  name "croptopia:fruit_smoothie"
-  name "croptopia:grape_jam"
-  name "croptopia:grape_juice"
-  name "croptopia:horchata"
-  name "croptopia:kale_smoothie"
-  name "croptopia:kiwi_sorbet"
-  name "croptopia:lemon_coconut_bar"
-  name "croptopia:lemonade"
-  name "croptopia:limeade"
-  name "croptopia:mango_ice_cream"
-  name "croptopia:melon_juice"
-  name "croptopia:orange_juice"
-  name "croptopia:peach_jam"
-  name "croptopia:pineapple_juice"
-  name "croptopia:pumpkin_spice_latte"
-  name "croptopia:raspberry_jam"
-  name "croptopia:rhubarb_crisp"
-  name "croptopia:rum_raisin_ice_cream"
-  name "croptopia:saguaro_juice"
-  name "croptopia:scones"
-  name "croptopia:snicker_doodle"
-  name "croptopia:sticky_toffee_pudding"
-  name "croptopia:strawberry_ice_cream"
-  name "croptopia:strawberry_jam"
-  name "croptopia:strawberry_smoothie"
-  name "croptopia:treacle_tart"
-  name "croptopia:tres_leche_cake"
-  name "croptopia:trifle"
-  name "croptopia:vanilla_ice_cream"
-  name "croptopia:yam_jam"
-}
-tag "nourish:vegetables" "items" {
-  name "croptopia:ajvar"
-  name "croptopia:ajvar_toast"
-  name "croptopia:artichoke"
-  name "croptopia:artichoke_dip"
-  name "croptopia:asparagus"
-  name "croptopia:beef_stew"
-  name "croptopia:beef_stir_fry"
-  name "croptopia:bellpepper"
-  name "croptopia:blt"
-  name "croptopia:broccoli"
-  name "croptopia:burrito"
-  name "croptopia:buttered_green_beans"
-  name "croptopia:cabbage"
-  name "croptopia:caesar_salad"
-  name "croptopia:carnitas"
-  name "croptopia:cauliflower"
-  name "croptopia:celery"
-  name "croptopia:cheesy_asparagus"
-  name "croptopia:chili_relleno"
-  name "croptopia:corn"
-  name "croptopia:cornish_pasty"
-  name "croptopia:cucumber"
-  name "croptopia:cucumber_salad"
-  name "croptopia:eggplant"
-  name "croptopia:eggplant_parmesan"
-  name "croptopia:enchilada"
-  name "croptopia:fajitas"
-  name "croptopia:french_fries"
-  name "croptopia:garlic"
-  name "croptopia:greenbean"
-  name "croptopia:greenonion"
-  name "croptopia:grilled_eggplant"
-  name "croptopia:kale"
-  name "croptopia:kale_chips"
-  name "croptopia:kale_smoothie"
-  name "croptopia:leafy_salad"
-  name "croptopia:leek"
-  name "croptopia:leek_soup"
-  name "croptopia:lettuce"
-  name "croptopia:nether_wart_stew"
-  name "croptopia:olive"
-  name "croptopia:onion"
-  name "croptopia:onion_rings"
-  name "croptopia:peanut_butter"
-  name "croptopia:peanut_butter_with_celery"
-  name "croptopia:potato_chips"
-  name "croptopia:potato_soup"
-  name "croptopia:radish"
-  name "croptopia:ratatouille"
-  name "croptopia:refried_beans"
-  name "croptopia:rhubarb"
-  name "croptopia:rhubarb_crisp"
-  name "croptopia:roasted_asparagus"
-  name "croptopia:roasted_radishes"
-  name "croptopia:roasted_squash"
-  name "croptopia:roasted_turnips"
-  name "croptopia:rutabaga"
-  name "croptopia:salsa"
-  name "croptopia:shepherds_pie"
-  name "croptopia:soybean"
-  name "croptopia:spaghetti_squash"
-  name "croptopia:spinach"
-  name "croptopia:squash"
-  name "croptopia:steamed_broccoli"
-  name "croptopia:steamed_green_beans"
-  name "croptopia:stir_fry"
-  name "croptopia:stuffed_artichoke"
-  name "croptopia:stuffed_poblanos"
-  name "croptopia:sweet_potato_fries"
-  name "croptopia:sweetpotato"
-  name "croptopia:taco"
-  name "croptopia:tamales"
-  name "croptopia:tofu"
-  name "croptopia:tofuburger"
-  name "croptopia:tomatillo"
-  name "croptopia:tomato"
-  name "croptopia:tomato_juice"
-  name "croptopia:tostada"
-  name "croptopia:turnip"
-  name "croptopia:veggie_salad"
-  name "croptopia:yam"
-  name "croptopia:zucchini"
-}
-tag "origins:meat" "items" {
-  name "croptopia:bacon"
-  name "croptopia:beef_jerky"
-  name "croptopia:beef_stew"
-  name "croptopia:beef_stir_fry"
-  name "croptopia:beef_wellington"
-  name "croptopia:blt"
-  name "croptopia:carnitas"
-  name "croptopia:cashew_chicken"
-  name "croptopia:cheeseburger"
-  name "croptopia:chicken_and_dumplings"
-  name "croptopia:chicken_and_noodles"
-  name "croptopia:chicken_and_rice"
-  name "croptopia:cooked_bacon"
-  name "croptopia:cornish_pasty"
-  name "croptopia:enchilada"
-  name "croptopia:fajitas"
-  name "croptopia:fish_and_chips"
-  name "croptopia:fried_chicken"
-  name "croptopia:hamburger"
-  name "croptopia:lemon_chicken"
-  name "croptopia:pineapple_pepperoni_pizza"
-  name "croptopia:pork_and_beans"
-  name "croptopia:pork_jerky"
-  name "croptopia:potato_soup"
-  name "croptopia:quesadilla"
-  name "croptopia:shepherds_pie"
-  name "croptopia:stuffed_poblanos"
-  name "croptopia:supreme_pizza"
-  name "croptopia:sushi"
-  name "croptopia:taco"
-  name "croptopia:tamales"
 }
 tag "paraglider:paragliders" "items" {
   name "paraglider:deku_leaf"

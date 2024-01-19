@@ -25,7 +25,6 @@ $clear minecraft:enderman_holdable
 - minecraft:warped_nylium
 - minecraft:warped_roots
 - #constellation:enderman_dirt
-- croptopia:salt_ore
 - byg:meadow_dirt
 - byg:mud_bricks
 - byg:mud_block

@@ -449,7 +449,9 @@ def make_loot_tables():
             count_func = otype.min_count
         else:
             count_func = { "min": otype.min_count, "max": otype.max_count, "type": "minecraft:uniform" }
+
         # TODO: Instead of this cluster/chunk hack, make a seperate raw ore type, probably?
+        cluster_name = f"emendatusenigmatica:{otype.name}_cluster" if not otype.custom else "minecraft:dirt"
         json = {
             "type": "minecraft:block",
             "pools": [
@@ -469,7 +471,7 @@ def make_loot_tables():
                                     }],
                                 },
                             }],
-                            "name": f"emendatusenigmatica:{otype.name}_cluster",
+                            "name": cluster_name,
                         },
                         {
                             "type": "minecraft:item",
